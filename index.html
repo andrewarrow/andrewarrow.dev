@@ -487,11 +487,35 @@ Yes this is a story about AI and that terrible word vibe. I'm sorry not sorry bu
         </tbody>
       </table>
       
-      <p>Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+      <p>The name of the game is all about save points. I commit often. And I commit with just 1 word commit messages. Many times I go back several commits and branch from there.</p>
       
       <hr>
       
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Nullam vel venenatis urna. Donec eget risus diam.</p>
+      <p>And then it's also about debug messages and screenshots.</p>
+      <div class="language-console highlighter-rouge">
+        <div class="highlight">
+          <pre class="highlight"><code><span class="go">ConversationView: Scheduling next speaker
+ConversationView: Next speaker index: 1
+ConversationView: Generating response to previous message
+ConversationContext: Recording utterance from speaker 0
+ConversationContext: Added entity: 'What'
+TopicManager: Turns on current topic 'Education' now: 1
+ConversationManager: Generating statement from template: 'In my opinion, [OPINION]'
+ConversationManager: Keeping placeholders for enhanced processing: 'In my opinion, [OPINION]'
+ConversationContext: Conversation depth now: 1
+PlaceholderProcessor: Processing text: 'not necessarily, In my opinion, [OPINION]'
+PlaceholderProcessor: Found 1 placeholders to replace
+PlaceholderProcessor: Replacing placeholder [OPINION]
+PlaceholderProcessor: Replaced [OPINION] with 'understanding Education helps provide context for other issues'
+PlaceholderProcessor: Final processed text: 'Not necessarily, In my opinion, understanding Education helps provide context for other issues'
+ConversationView: Speaker 1 will say: 'Not necessarily, In my opinion, understanding Education helps provide context for other issues'
+ConversationView: Started speaking for speaker 1
+ConversationView: Estimated speaking time: 5.7 seconds
+ConversationContext: Initializing
+TopicManager: Cleared leading voice
+ConversationContext: Cleared leading voice</span></code></pre>
+        </div>
+      </div>
     </article>
   </main>
   <footer>
