@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameter Evolution Visualization</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            margin: 0 0 10px 0;
+            font-size: 1rem;
+            line-height: 1.2;
+        }
+        h1 {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .visualization-container {
+            display: flex;
+            gap: 10px;
+        }
+        .left-panel {
+            flex: 2;
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .right-panel {
+            flex: 3;
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .current-sentence {
+            background-color: #eaf2f8;
+            padding: 8px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .word {
+            display: inline-block;
+            padding: 4px 8px;
+            margin: 0 3px;
+            border-radius: 4px;
+        }
+        .highlighted-word {
+            background-color: #fdebd0;
+            border: 1px solid #f39c12;
+        }
+        .word-vectors {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .word-vector {
+            background-color: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            min-width: 120px;
+        }
+        .word-vector-title {
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+        .parameter-bars {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 10px;
+            overflow-y: auto;
+        }
+        .parameter-row {
+            display: flex;
+            align-items: center;
+        }
+        .parameter-name {
+            width: 110px;
+            font-weight: bold;
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+        }
+        .parameter-meaning {
+            font-size: 10px;
+            color: #000000;
+            margin-top: 2px;
+        }
+        .parameter-bar-container {
+            flex: 1;
+            height: 16px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+        .parameter-bar {
+            height: 100%;
+            background-color: #3498db;
+            width: 50%;
+            transition: width 0.5s, background-color 0.5s;
+        }
+        .parameter-value {
+            width: 60px;
+            text-align: right;
+            font-size: 12px;
+            margin-left: 8px;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            padding: 8px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+        .training-progress {
+            font-weight: bold;
+            font-size: 12px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .parameter-development {
+            padding: 10px;
+            background-color: #f0f7fa;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        .development-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .parameter-info {
+            margin-top: 8px;
+        }
+        .parameter-item {
+            margin: 5px 0;
+            padding: 4px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .active-parameter {
+            background-color: #d5f5e3;
+        }
+        .parameter-role {
+            font-weight: bold;
+        }
+        .pulse {
+            animation: pulse-animation 2s;
+        }
+        @keyframes pulse-animation {
+            0% { background-color: rgba(46, 204, 113, 0.2); }
+            50% { background-color: rgba(46, 204, 113, 0.5); }
+            100% { background-color: rgba(46, 204, 113, 0.2); }
+        }
+        .parsed-tokens {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin: 8px 0;
+        }
+        .token {
+            background-color: #f8f9fa;
+            padding: 6px 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-size: 12px;
+        }
+        .token-highlight {
+            border-color: #3498db;
+            background-color: #ebf5fb;
+        }
+        .token-animal {
+            border-color: #e74c3c;
+            background-color: #fdedec;
+        }
+        .token-food {
+            border-color: #f39c12;
+            background-color: #fef5e7;
+        }
+        .epochs-bar {
+            height: 6px;
+            background-color: #ecf0f1;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 4px;
+        }
+        .epochs-progress {
+            height: 100%;
+            background-color: #2ecc71;
+            width: 0%;
+            transition: width 0.3s;
+        }
+        .info-panel {
+            margin-top: 10px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .sentence-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 8px;
+        }
+        .sentence-item {
+            background-color: #f8f9fa;
+            padding: 6px 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-size: 12px;
+            max-width: calc(50% - 10px);
+        }
+        .current-sentence-highlight {
+            border-color: #3498db;
+            background-color: #ebf5fb;
+        }
+        .speed-control {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+        .speed-control label {
+            margin-right: 8px;
+            font-weight: bold;
+        }
+        .speed-control input {
+            flex: 1;
+        }
+        .speed-value {
+            width: 30px;
+            text-align: right;
+            margin-left: 8px;
+        }
+        .speed-label {
+            margin-left: 8px;
+            font-style: italic;
+            color: #3498db;
+            font-weight: bold;
+        }
+        .compact-layout {
+            gap: 5px;
+            margin-bottom: 0;
+        }
+        .controls-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+        }
+        .button-group {
+            display: flex;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Evolution of Neural Network Parameters</h1>
+        
+        <div class="visualization-container">
+            <div class="left-panel">
+                <div class="controls-container">
+                    <div class="training-progress">
+                        <div>Epoch: <span id="epoch-display">0</span>/30 · Sentence: <span id="sentence-index">0</span>/14</div>
+                        <div class="epochs-bar">
+                            <div id="epochs-progress" class="epochs-progress"></div>
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button id="start-btn">Start</button>
+                        <button id="reset-btn">Reset</button>
+                    </div>
+                </div>
+                
+                <div class="speed-control">
+                    <label for="speed-slider">Speed:</label>
+                    <input type="range" id="speed-slider" min="1" max="100" value="5">
+                    <span id="speed-value" class="speed-value">5</span>
+                    <span class="speed-label" id="speed-label">Normal</span>
+                </div>
+                
+                <div class="current-sentence" id="current-sentence">
+                    <div>Ready to begin training...</div>
+                </div>
+                
+                <div>
+                    <h3>Parsing Process</h3>
+                    <div class="parsed-tokens" id="parsed-tokens">
+                        <!-- Tokens will be added here by JavaScript -->
+                    </div>
+                </div>
+                
+                <div class="parameter-development">
+                    <div class="development-title">Parameter Meaning Development:</div>
+                    <div class="parameter-info" id="parameter-info">
+                        <!-- Parameter meanings will be added here by JavaScript -->
+                        <div>Parameters start with random values. As training progresses, they'll gain specific meanings.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-panel">
+                <h2>Parameter Evolution</h2>
+                <div class="parameter-bars" id="parameter-bars">
+                    <!-- Parameter bars will be added here by JavaScript -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-panel">
+            <h2>Training Data</h2>
+            <div class="sentence-list" id="sentence-list">
+                <!-- Sentences will be added here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Define our parameters
+        const parameterNames = [
+            "W_input_1", "W_input_2", "W_hidden_1", "W_hidden_2", "W_hidden_3",
+            "W_output_1", "W_output_2", "b_hidden_1", "b_hidden_2", "b_output"
+        ];
+        
+        // Parameter meanings
+        const meanings = {
+            'W_input_1': 'Animal sensitivity',
+            'W_input_2': 'Food context detection',
+            'W_hidden_1': 'Semantic relationships',
+            'W_hidden_2': 'Grammar encoding',
+            'W_hidden_3': 'Domain sensitivity',
+            'W_output_1': 'Animal word mapping',
+            'W_output_2': 'Food word mapping',
+            'b_hidden_1': 'Domain activation',
+            'b_hidden_2': 'Rare word threshold',
+            'b_output': 'Confidence calibration'
+        };
+        
+        // Training sentences
+        const trainingSentences = [
+            "the cat chased the mouse",
+            "my dog likes to run",
+            "the mouse is very small",
+            "i eat an apple for breakfast",
+            "the banana is yellow and sweet",
+            "fresh bread smells delicious",
+            "watch the dog run fast",
+            "cats like to sleep all day",
+            "the big dog scared the small mouse",
+            "my love for justice is strong",
+            "happiness comes from within",
+            "she can jump very high",
+            "the cat and dog are pets",
+            "apple and banana are fruits"
+        ];
+        
+        // Word categories for highlighting
+        const animalWords = ["cat", "dog", "mouse", "cats", "pets"];
+        const foodWords = ["apple", "banana", "bread", "breakfast", "fruits"];
+        
+        // Parameters and values
+        let parameters = {};
+        let initialParameters = {};
+        
+        // Training state
+        let isTraining = false;
+        let trainingInterval;
+        let epoch = 0;
+        let sentenceIndex = 0;
+        let animationSpeed = 5; // Default speed (range 1-10)
+        
+        // DOM elements
+        const parameterBarsElement = document.getElementById('parameter-bars');
+        const currentSentenceElement = document.getElementById('current-sentence');
+        const parsedTokensElement = document.getElementById('parsed-tokens');
+        const parameterInfoElement = document.getElementById('parameter-info');
+        const startBtn = document.getElementById('start-btn');
+        const resetBtn = document.getElementById('reset-btn');
+        const epochDisplay = document.getElementById('epoch-display');
+        const sentenceIndexDisplay = document.getElementById('sentence-index');
+        const epochsProgress = document.getElementById('epochs-progress');
+        const sentenceListElement = document.getElementById('sentence-list');
+        const speedSlider = document.getElementById('speed-slider');
+        const speedValue = document.getElementById('speed-value');
+        
+        // Initialize parameters with random values
+        function initializeParameters() {
+            parameterNames.forEach(param => {
+                parameters[param] = Math.random() * 2 - 1; // Random value between -1 and 1
+                initialParameters[param] = parameters[param];
+            });
+        }
+        
+        // Create parameter bars
+        function createParameterBars() {
+            parameterBarsElement.innerHTML = '';
+            
+            parameterNames.forEach(param => {
+                const row = document.createElement('div');
+                row.className = 'parameter-row';
+                row.id = `param-row-${param}`;
+                
+                const nameElement = document.createElement('div');
+                nameElement.className = 'parameter-name';
+                nameElement.innerHTML = param;
+                
+                // Add meaning div (empty initially)
+                const meaningElement = document.createElement('div');
+                meaningElement.className = 'parameter-meaning';
+                meaningElement.id = `meaning-${param}`;
+                nameElement.appendChild(meaningElement);
+                
+                const barContainer = document.createElement('div');
+                barContainer.className = 'parameter-bar-container';
+                
+                const bar = document.createElement('div');
+                bar.className = 'parameter-bar';
+                bar.id = `bar-${param}`;
+                
+                // Set initial width based on parameter value
+                const normalizedValue = (parameters[param] + 1) / 2; // Convert from [-1,1] to [0,1]
+                bar.style.width = `${normalizedValue * 100}%`;
+                
+                // Set color based on value
+                bar.style.backgroundColor = getParameterColor(param, normalizedValue);
+                
+                const valueElement = document.createElement('div');
+                valueElement.className = 'parameter-value';
+                valueElement.id = `value-${param}`;
+                valueElement.textContent = parameters[param].toFixed(3);
+                
+                barContainer.appendChild(bar);
+                row.appendChild(nameElement);
+                row.appendChild(barContainer);
+                row.appendChild(valueElement);
+                
+                parameterBarsElement.appendChild(row);
+            });
+        }
+        
+        // Get parameter color based on its role
+        function getParameterColor(param, value) {
+            if (param.includes('input_1')) return `rgb(231, 76, 60, ${value * 0.8 + 0.2})`; // Animal - red
+            if (param.includes('input_2')) return `rgb(243, 156, 18, ${value * 0.8 + 0.2})`; // Food - orange
+            if (param.includes('hidden_1')) return `rgb(155, 89, 182, ${value * 0.8 + 0.2})`; // Semantic - purple
+            if (param.includes('hidden_2')) return `rgb(46, 204, 113, ${value * 0.8 + 0.2})`; // Grammar - green
+            if (param.includes('hidden_3')) return `rgb(52, 152, 219, ${value * 0.8 + 0.2})`; // Domain - blue
+            if (param.includes('output')) return `rgb(22, 160, 133, ${value * 0.8 + 0.2})`; // Output - teal
+            return `rgb(52, 152, 219, ${value * 0.8 + 0.2})`; // Default - blue
+        }
+        
+        // Update parameter bars
+        function updateParameterBars() {
+            parameterNames.forEach(param => {
+                const bar = document.getElementById(`bar-${param}`);
+                const valueElement = document.getElementById(`value-${param}`);
+                
+                // Update width and color based on current value
+                const normalizedValue = (parameters[param] + 1) / 2;
+                bar.style.width = `${normalizedValue * 100}%`;
+                bar.style.backgroundColor = getParameterColor(param, normalizedValue);
+                
+                // Update value text
+                valueElement.textContent = parameters[param].toFixed(3);
+            });
+        }
+        
+        // Parse sentence and display tokens
+        function parseSentence(sentence) {
+            parsedTokensElement.innerHTML = '';
+            
+            const tokens = sentence.split(/\s+/);
+            tokens.forEach(token => {
+                const tokenElement = document.createElement('div');
+                tokenElement.className = 'token';
+                tokenElement.textContent = token;
+                
+                // Add token category class
+                if (animalWords.includes(token.toLowerCase())) {
+                    tokenElement.classList.add('token-animal');
+                } else if (foodWords.includes(token.toLowerCase())) {
+                    tokenElement.classList.add('token-food');
+                }
+                
+                parsedTokensElement.appendChild(tokenElement);
+            });
+            
+            // Highlight tokens sequentially
+            animateTokens();
+        }
+        
+        // Calculate animation delay based on speed
+        function getAnimationDelay() {
+            // Map speed (1-100) to delay (900-10ms), where 1 is slowest, 100 is super fast
+            return Math.max(10, 900 - (animationSpeed * 8.9));
+        }
+
+        // Get speed label based on current speed
+        function getSpeedLabel(speed) {
+            if (speed <= 5) return "Very Slow";
+            if (speed <= 20) return "Slow";
+            if (speed <= 40) return "Normal";
+            if (speed <= 60) return "Fast";
+            if (speed <= 80) return "Very Fast";
+            return "Super Fast";
+        }
+        
+        // Animate token highlighting
+        function animateTokens() {
+            const tokens = parsedTokensElement.querySelectorAll('.token');
+            const delay = getAnimationDelay();
+            
+            tokens.forEach((token, index) => {
+                setTimeout(() => {
+                    token.classList.add('token-highlight');
+                    
+                    // When token is animal-related, highlight W_input_1
+                    if (token.classList.contains('token-animal')) {
+                        highlightParameter('W_input_1');
+                    }
+                    
+                    // When token is food-related, highlight W_input_2
+                    if (token.classList.contains('token-food')) {
+                        highlightParameter('W_input_2');
+                    }
+                    
+                    // For all tokens highlight some processing parameters
+                    if (index % 2 === 0) {
+                        highlightParameter('W_hidden_1');
+                    } else {
+                        highlightParameter('W_hidden_2');
+                    }
+                    
+                    setTimeout(() => {
+                        token.classList.remove('token-highlight');
+                    }, delay / 3);
+                }, index * delay);
+            });
+        }
+        
+        // Highlight a parameter
+        function highlightParameter(param) {
+            const paramRow = document.getElementById(`param-row-${param}`);
+            paramRow.classList.add('pulse');
+            
+            // Modify parameter value slightly
+            const oldValue = parameters[param];
+            const modification = (Math.random() * 0.1) - 0.05;
+            parameters[param] = oldValue + modification;
+            
+            // Update the visual representation
+            updateParameterBars();
+            
+            setTimeout(() => {
+                paramRow.classList.remove('pulse');
+            }, 2000);
+        }
+        
+        // Update parameter meanings based on training progress
+        function updateParameterMeanings() {
+            const confidenceProgress = Math.min(1, epoch / 25);
+            const meaningThreshold = 0.2; // When to start showing meanings
+            
+            if (confidenceProgress > meaningThreshold) {
+                // Update meaning texts
+                parameterNames.forEach((param, index) => {
+                    const meaningElement = document.getElementById(`meaning-${param}`);
+                    if (meaningElement && meanings[param]) {
+                        // Scale opacity with confidence
+                        const opacity = (confidenceProgress - meaningThreshold) / (1 - meaningThreshold);
+                        meaningElement.textContent = meanings[param];
+                        meaningElement.style.opacity = opacity;
+                    }
+                });
+                
+                // Update parameter info panel
+                updateParameterInfoPanel(confidenceProgress);
+            }
+        }
+        
+        // Update the parameter info panel based on training progress
+        function updateParameterInfoPanel(progress) {
+            let content = '';
+            
+            if (progress < 0.3) {
+                content = `<div>Parameters are beginning to specialize (${(progress * 100).toFixed(0)}% confidence)</div>`;
+                content += '<div class="parameter-item"><span class="parameter-role">W_input_1</span>: Starting to activate on animal-related words</div>';
+            } else if (progress < 0.5) {
+                content = `<div>Parameters are gaining clearer functions (${(progress * 100).toFixed(0)}% confidence)</div>`;
+                content += '<div class="parameter-item active-parameter"><span class="parameter-role">W_input_1</span>: Recognizing animal-related words</div>';
+                content += '<div class="parameter-item"><span class="parameter-role">W_input_2</span>: Beginning to detect food contexts</div>';
+                content += '<div class="parameter-item"><span class="parameter-role">W_hidden_1</span>: Starting to encode word relationships</div>';
+            } else if (progress < 0.7) {
+                content = `<div>Parameter roles are now well-defined (${(progress * 100).toFixed(0)}% confidence)</div>`;
+                content += '<div class="parameter-item active-parameter"><span class="parameter-role">W_input_1</span>: Strong activation for animal terms</div>';
+                content += '<div class="parameter-item active-parameter"><span class="parameter-role">W_input_2</span>: Reliable detection of food contexts</div>';
+                content += '<div class="parameter-item active-parameter"><span class="parameter-role">W_hidden_1</span>: Encoding semantic word relationships</div>';
+                content += '<div class="parameter-item"><span class="parameter-role">W_hidden_2</span>: Beginning to represent grammar structure</div>';
+                content += '<div class="parameter-item"><span class="parameter-role">W_output_1 & W_output_2</span>: Developing output mappings</div>';
+            } else {
+                content = `<div>Parameters have fully specialized (${(progress * 100).toFixed(0)}% confidence)</div>`;
+                for (const [param, meaning] of Object.entries(meanings)) {
+                    content += `<div class="parameter-item active-parameter"><span class="parameter-role">${param}</span>: ${meaning}</div>`;
+                }
+            }
+            
+            parameterInfoElement.innerHTML = content;
+        }
+        
+        // Training step
+        function trainingStep() {
+            if (sentenceIndex >= trainingSentences.length) {
+                sentenceIndex = 0;
+                epoch++;
+                
+                // Update epoch display
+                epochDisplay.textContent = epoch;
+                epochsProgress.style.width = `${(epoch / 30) * 100}%`;
+                
+                // End training after 30 epochs
+                if (epoch >= 30) {
+                    stopTraining();
+                    return;
+                }
+            }
+            
+            // Get current sentence and update display
+            const currentSentence = trainingSentences[sentenceIndex];
+            currentSentenceElement.innerHTML = currentSentence;
+            
+            // Update sentence index display
+            sentenceIndexDisplay.textContent = sentenceIndex + 1;
+            
+            // Update sentence list highlighting
+            updateSentenceListHighlight();
+            
+            // Parse and display tokens
+            parseSentence(currentSentence);
+            
+            // Update parameter meanings based on training progress
+            updateParameterMeanings();
+            
+            // Increment sentence index
+            sentenceIndex++;
+            
+            // Adjust interval for next step based on speed
+            if (isTraining) {
+                clearInterval(trainingInterval);
+                // Calculate delay based on speed: faster at higher speeds
+                const baseDelay = 1500;
+                const speedRatio = Math.pow(animationSpeed / 10, 1.5); // Non-linear scaling for better control
+                const newDelay = baseDelay / speedRatio;
+                trainingInterval = setInterval(trainingStep, Math.max(15, newDelay));
+            }
+        }
+        
+        // Populate sentence list
+        function populateSentenceList() {
+            sentenceListElement.innerHTML = '';
+            
+            trainingSentences.forEach((sentence, index) => {
+                const sentenceElement = document.createElement('div');
+                sentenceElement.className = 'sentence-item';
+                sentenceElement.id = `sentence-${index}`;
+                sentenceElement.textContent = sentence;
+                sentenceListElement.appendChild(sentenceElement);
+            });
+        }
+        
+        // Update sentence list highlighting
+        function updateSentenceListHighlight() {
+            // Remove highlight from all sentences
+            document.querySelectorAll('.sentence-item').forEach(el => {
+                el.classList.remove('current-sentence-highlight');
+            });
+            
+            // Highlight current sentence
+            const currentSentenceElement = document.getElementById(`sentence-${sentenceIndex}`);
+            if (currentSentenceElement) {
+                currentSentenceElement.classList.add('current-sentence-highlight');
+            }
+        }
+        
+        // Control functions
+        function startTraining() {
+            if (isTraining) return;
+            
+            isTraining = true;
+            startBtn.textContent = 'Pause';
+            
+            // Use speed-adjusted interval
+            const speedFactor = animationSpeed / 5;
+            trainingInterval = setInterval(trainingStep, 1500 / speedFactor);
+        }
+        
+        function stopTraining() {
+            if (!isTraining) return;
+            
+            isTraining = false;
+            startBtn.textContent = 'Resume';
+            clearInterval(trainingInterval);
+        }
+        
+        function resetTraining() {
+            stopTraining();
+            
+            // Reset parameters
+            initializeParameters();
+            
+            // Reset training state
+            epoch = 0;
+            sentenceIndex = 0;
+            
+            // Update displays
+            epochDisplay.textContent = epoch;
+            sentenceIndexDisplay.textContent = sentenceIndex;
+            epochsProgress.style.width = '0%';
+            currentSentenceElement.innerHTML = 'Ready to begin training...';
+            parsedTokensElement.innerHTML = '';
+            
+            // Reset parameter bars
+            createParameterBars();
+            
+            // Reset parameter info
+            parameterInfoElement.innerHTML = 'Parameters start with random values. As training progresses, they\'ll gain specific meanings.';
+            
+            // Reset sentence list highlighting
+            updateSentenceListHighlight();
+            
+            // Update button text
+            startBtn.textContent = 'Start';
+        }
+        
+        // Update speed from slider
+        function updateSpeed() {
+            animationSpeed = parseInt(speedSlider.value);
+            speedValue.textContent = animationSpeed;
+
+            // Update speed label
+            const speedLabelElement = document.getElementById('speed-label');
+            speedLabelElement.textContent = getSpeedLabel(animationSpeed);
+
+            // If training is active, update the interval timing
+            if (isTraining) {
+                clearInterval(trainingInterval);
+                const speedFactor = animationSpeed / 5;
+                trainingInterval = setInterval(trainingStep, 1500 / speedFactor);
+            }
+        }
+        
+        // Event listeners
+        startBtn.addEventListener('click', () => {
+            if (isTraining) {
+                stopTraining();
+            } else {
+                startTraining();
+            }
+        });
+        
+        resetBtn.addEventListener('click', resetTraining);
+        speedSlider.addEventListener('input', updateSpeed);
+        
+        // Initialize
+        initializeParameters();
+        createParameterBars();
+        populateSentenceList();
+        updateSpeed(); // Set initial speed value display
+    </script>
+</body>
+</html>
