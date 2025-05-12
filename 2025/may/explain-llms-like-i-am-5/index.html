@@ -93,6 +93,9 @@
             </tr>
     </table>
       </p>
+      <div style="display: flex; gap: 20px;">
+        <img src="https://i.imgur.com/n5fFWdP.png" width="600"/>
+      </div>
       <p>
       <pre>Question 1: Do dogs meow?
 
@@ -101,6 +104,53 @@
 “meow” is close to “cat” because “meow” is “cat-related”
       </pre>
       </p>
+      <p>
+      Okay, great, I can wrap my head around that. But what if I ask 
+      <span style="color: purple">who is considered the most innovative prog rock band?</span>
+      </p>
+    <table style="width: 100%; border-collapse: separate; border-spacing: 10px;">
+            <tr>
+                <th style="width: 25%; text-align: left; padding: 8px;">Word</th>
+                <th style="width: 20%; text-align: left; padding: 8px;">prog score</th>
+                <th style="width: 25%; text-align: left; padding: 8px;">innovative</th>
+                <th style="width: 30%; text-align: left; padding: 8px;">influential</th>
+            </tr>
+            <tr>
+                <td style="text-align: left; padding: 8px;">King Crimson</td>
+                <td style="text-align: left; padding: 8px;">0.9</td>
+                <td style="text-align: left; padding: 8px;">0.8</td>
+                <td style="text-align: left; padding: 8px;">0.7</td>
+            </tr>
+            <tr>
+                <td style="text-align: left; padding: 8px;">The Mars Volta</td>
+                <td style="text-align: left; padding: 8px;">0.7</td>
+                <td style="text-align: left; padding: 8px;">0.6</td>
+                <td style="text-align: left; padding: 8px;">0.5</td>
+            </tr>
+    </table>
+    <p>
+    It's the same stuff! Just different "dimensions" or columns. So when I hear about how
+    a model has 8 billion parameters would that mean tables with 8 billion columns? No.
+    </p>
+    <p>
+    When you hear that a model like an LLM has 8 billion parameters, it doesn’t mean the vector database has 8 billion attributes for each word (or that each word’s vector has 8 billion numbers). Instead, those parameters are part of the LLM itself, not the vector database
+    </p>
+    <p>
+    Think of an LLM as a super-smart robot chef who knows how to make tons of recipes. The parameters are like the robot’s recipe book; a huge set of instructions that tell it how to mix ingredients (words, ideas, and patterns) to create answers.
+    </p>
+    <p>
+    For an 8-billion-parameter model, those 8 billion numbers are spread across the LLM’s layers, which are like pages in the recipe book. Each layer helps the robot process words in different ways (e.g., understanding grammar, context, or creativity).
+    </p>
+    <p>
+    Parameters are numbers inside the LLM’s brain that it learned from reading billions of sentences. This is "training."
+    </p>
+    <p>
+    The LLM’s parameters (those 8 billion numbers) help create the tables above. Part of the LLM’s job is to turn a word like “dog” into a vector by using its recipe book (parameters) to mix patterns it learned from sentences like “Dogs bark.”
+    </p>
+    <p>
+    The vector database is like a toy box that stores nunbers (e.g., vectors for “dog,” “cat,” “King Crimson,” etc.) so the LLM can look them up quickly.
+The database doesn’t have 8 billion attributes per word. Instead, it stores vectors with a fixed number of dimensions (e.g., 300 numbers per word), and there could be millions of vectors (one for each word, phrase, or document).
+    </p>
     </article>
   </main>
 </body>
