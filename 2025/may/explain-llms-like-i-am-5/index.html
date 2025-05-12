@@ -238,6 +238,29 @@ Answer: Probably not, because:
       <p>
       So next time you're amazed by an LLM's response, remember: it's not magic or real intelligence—it's just a very sophisticated pattern-matching system that's learned the statistical relationships between words from reading more text than any human could in a lifetime.
       </p>
+      <h2>*How the LLM Gets Feedback</h2>
+      <p>
+Small Batches: Instead of looking at all training data at once, the model looks at small batches (maybe a few hundred sentences) at a time. Quick Check: For each batch, it:
+</p>
+
+<p>
+<ul>
+  <li>Makes predictions using current vector</li>
+      <li>Compares predictions to what actually appears in those sentences</li>
+          <li>Calculates how wrong it was (the loss score)</li>
+</ul>
+</p>
+
+<p>
+The math of the loss function automatically tells which direction to adjust numbers. It's like a special compass that points toward "better" without checking the whole map.
+The model makes tiny changes to its vectors based on this feedback. These small steps are called "gradient updates."
+Then it grabs the next batch of examples and repeats. Eventually, it will have seen all training data, which completes one "epoch." Training usually involves multiple epochs.
+</p>
+
+<p>
+It's like learning to cook by tasting small bites as you go. You don't need to eat the whole pot to know if you need more salt - just a small taste gives you feedback!
+The clever part is that the loss function is designed to automatically produce a mathematical "direction" that tells exactly how to adjust each number to improve, without needing to try every possible combination or look at all data at once.
+      </p>
     </article>
   </main>
 </body>
