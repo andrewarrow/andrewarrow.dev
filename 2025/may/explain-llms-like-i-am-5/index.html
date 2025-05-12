@@ -133,13 +133,13 @@
     a model has 8 billion parameters would that mean tables with 8 billion columns? No.
     </p>
     <p>
-    When you hear that a model like an LLM has 8 billion parameters, it doesn’t mean the vector database has 8 billion attributes for each word (or that each word’s vector has 8 billion numbers). Instead, those parameters are part of the LLM itself, not the vector database
+    When you hear that a model has 8 billion parameters, it doesn’t mean the vector database has 8 billion attributes for each word (or that each word’s vector has 8 billion numbers). Instead, those parameters are part of the LLM itself, not the vector database
     </p>
     <p>
     Think of an LLM as a super-smart robot chef who knows how to make tons of recipes. The parameters are like the robot’s recipe book; a huge set of instructions that tell it how to mix ingredients (words, ideas, and patterns) to create answers.
     </p>
     <p>
-    For an 8-billion-parameter model, those 8 billion numbers are spread across the LLM’s layers, which are like pages in the recipe book. Each layer helps the robot process words in different ways (e.g., understanding grammar, context, or creativity).
+    For an 8-billion-parameter model, those 8 billion numbers are spread across the LLM’s layers, which are like pages in the recipe book. Each layer helps the robot process words in different ways (understanding grammar, context, or creativity).
     </p>
     <p>
     Parameters are numbers inside the LLM’s brain that it learned from reading billions of sentences. This is "training."
@@ -148,8 +148,13 @@
     The LLM’s parameters (those 8 billion numbers) help create the tables above. Part of the LLM’s job is to turn a word like “dog” into a vector by using its recipe book (parameters) to mix patterns it learned from sentences like “Dogs bark.”
     </p>
     <p>
-    The vector database is like a toy box that stores nunbers (e.g., vectors for “dog,” “cat,” “King Crimson,” etc.) so the LLM can look them up quickly.
-The database doesn’t have 8 billion attributes per word. Instead, it stores vectors with a fixed number of dimensions (e.g., 300 numbers per word), and there could be millions of vectors (one for each word, phrase, or document).
+    The vector database is like a toy box that stores nunbers (vectors for “dog” “cat” “King Crimson” etc.) so the LLM can look them up quickly. The database doesn’t have 8 billion attributes per word. Instead, it stores vectors with a fixed number of dimensions (maybe 300 numbers per word), and there could be millions of vectors (one for each word, phrase, or document).
+    </p>
+    <p>
+    During training, the LLM looks at billions of sentences and learns patterns, like “dog” appearing with “pet” “bark” and “furry” or “King Crimson” with “prog rock” and “innovative.” It squeezes these patterns into a fixed number of dimensions (300) using math. Each dimension is a blend of features, not a single one. For example, dimension 1 might capture “pet-like + animal-like + a bit of loyalty” while dimension 2 captures “sound-like + noise + a bit of emotion.”
+    </p>
+    <p>
+    Think of it like a toy box where each toy has a card with 300 stickers, but each sticker’s color is a RGB hex color. You don’t need millions of stickers because the 300 stickers are mixed super smartly to describe everything. Like #AB274F vs #F19CBB they are close, so you can be very nuanced with all the different color choices. In the real system it's not RGB hex but just a floating point number with many decimal places.
     </p>
     </article>
   </main>
