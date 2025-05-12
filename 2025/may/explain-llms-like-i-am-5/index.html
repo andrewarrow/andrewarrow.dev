@@ -49,15 +49,12 @@
       </div>
       <p>
     <table style="width: 100%; border-collapse: separate; border-spacing: 10px;">
-        <thead>
             <tr>
                 <th style="width: 25%; text-align: left; padding: 8px;">Word</th>
                 <th style="width: 20%; text-align: left; padding: 8px;">Is a Pet?</th>
                 <th style="width: 25%; text-align: left; padding: 8px;">Is Furry?</th>
                 <th style="width: 30%; text-align: left; padding: 8px;">Is a sound?</th>
             </tr>
-        </thead>
-        <tbody>
             <tr>
                 <td style="text-align: left; padding: 8px;">Dog</td>
                 <td style="text-align: left; padding: 8px;">0.8</td>
@@ -77,9 +74,15 @@
                 <td style="text-align: left; padding: 8px;">0.1</td>
             </tr>
             <tr>
+                <th style="width: 25%; text-align: left; padding: 8px;">Word</th>
+                <th style="width: 20%; text-align: left; padding: 8px;">Is a Pet?</th>
+                <th style="width: 25%; text-align: left; padding: 8px;">Is Cat Related?</th>
+                <th style="width: 30%; text-align: left; padding: 8px;">Is a sound?</th>
+            </tr>
+            <tr>
                 <td style="text-align: left; padding: 8px;">Meow</td>
                 <td style="text-align: left; padding: 8px;">0.1</td>
-                <td style="text-align: left; padding: 8px;">0.1</td>
+                <td style="text-align: left; padding: 8px;">0.9</td>
                 <td style="text-align: left; padding: 8px;">0.9</td>
             </tr>
             <tr>
@@ -88,8 +91,14 @@
                 <td style="text-align: left; padding: 8px;">0.1</td>
                 <td style="text-align: left; padding: 8px;">0.9</td>
             </tr>
-        </tbody>
     </table>
+      </p>
+      <p>
+      <pre>Question 1: Do dogs meow?
+
+“dog” has a high “is a pet” score (0.8) and low “sound-like” score (0.1).
+“meow” has a low “pet-like” score (0.1) and high “sound-like” score (0.9).
+      </pre>
       </p>
     </article>
   </main>
