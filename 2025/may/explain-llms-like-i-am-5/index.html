@@ -274,6 +274,31 @@ The clever part is that the loss function is designed to automatically produce a
 
       <iframe width="560" height="315" src="https://www.youtube.com/embed/_awsxuRw9gU?si=kx5Gjc_CicrJXCcN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+      <h2>*Real time queries: Attention</h2>
+      <p>
+      “The cat slept on the mat.”
+      Each toy’s card gets three stickers: a Question Sticker, a Key Sticker, and an Info Sticker.
+      The Question Sticker says, “What am I looking for?” (for "slept," it might ask, “Who’s sleeping?”).
+      The Key Sticker says, “Here’s what I’m about!” (the "cat" toy’s key says, “I’m a pet!”).
+      The Info Sticker holds the toy’s actual story details (the "cat" toy’s info says, “I’m furry and sleep a lot!”).
+      </p>
+      <p>
+      The spotlight looks at the Question Sticker from the toy you’re working on (like "slept") and compares it to the Key Sticker of every other toy in the box.
+      If the stickers match well (like "slept" asking “Who’s sleeping?” and "cat" saying “I’m a pet!”), that toy gets a bright glow. If they don’t match (like "slept" and "which"), the toy gets a dim glow.
+      This matching happens super fast because the spotlight checks all toys at once, like shining light across the whole toy box in one go!
+      </p>
+      <p>
+      When you ask, “Do dogs meow?” the spotlight springs into action in real time!
+      It grabs the toy cards for “dog,” “meow,” and other words in your question. These cards already have their numbers set from training (like “meow” being 0.9 cat-related).
+      It compares the Question Sticker (“What’s meow about?”) with the Key Sticker of every toy (“I’m a cat sound!” for “meow”).
+It gives each toy a glow score (like “meow” gets a bright glow, “dog” gets a dim glow).
+It mixes the Info Stickers from the brightest toys to answer, “Nope, dogs don’t meow—cats do!”
+      </p>
+      <p>
+Why It’s Fast During a Query:
+    The toy box doesn’t change its recipe book or toy cards when you ask a question. It just uses what it learned during training.
+    The spotlight’s parallel magic means it looks at all toys at the same time, like shining a giant flashlight across the whole toy box in a snap!
+      </p>
     </article>
   </main>
 </body>
