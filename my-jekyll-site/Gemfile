@@ -1,0 +1,26 @@
+source "https://rubygems.org"
+
+gem "jekyll", "~> 4.3.2"
+gem "csv"    # Add this line
+gem "logger" # Add this line
+gem "base64"  # Add this line
+gem "bigdecimal"  # Might be needed later
+gem "stringio"    # Might be needed later
+gem "fileutils"   # Might be needed later
+
+# Optional but recommended plugins
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+end
+
+# Windows and JRuby support
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", ">= 1"
+  gem "tzinfo-data"
+end
+
+# Performance-booster for watching directories on Windows
+gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+
+# Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versi
