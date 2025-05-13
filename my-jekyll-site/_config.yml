@@ -1,0 +1,7 @@
+title: Your Site Name
+description: Your site description
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://andrewarrow.dev" # the base hostname & protocol
+
+# Build settings
+markdown: kramdown
