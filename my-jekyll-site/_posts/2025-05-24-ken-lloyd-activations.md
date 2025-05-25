@@ -28,8 +28,8 @@ date: 2025-05-24
       </p>
       
       <div style="display: flex; gap: 20px;">
-        <img src="https://i.imgur.com/ZY8FdFR.png" width="300"/>
-        <img src="https://i.imgur.com/oM8hyQb.png" width="300"/>
+        <a href="https://www.zerofox.com/"><img src="https://i.imgur.com/ZY8FdFR.png" width="300"/></a>
+        <a href="https://www.youtube.com/@CyveillanceInc"><img src="https://i.imgur.com/oM8hyQb.png" width="300"/></a>
       </div>
       
       <p>
@@ -47,8 +47,8 @@ date: 2025-05-24
       </p>
       
       <div style="display: flex; gap: 20px;">
-        <img src="https://i.imgur.com/AMnwGNH.png" width="300"/>
-        <img src="https://i.imgur.com/FLZ5SQD.png" width="300"/>
+        <a href="https://www.youtube.com/@Metaintellcom"><img src="https://i.imgur.com/AMnwGNH.png" width="300"/></a>
+        <a href="https://zimperium.com/"><img src="https://i.imgur.com/FLZ5SQD.png" width="300"/></a>
       </div>
       
       <p>
