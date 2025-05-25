@@ -5,3 +5,18 @@ url: "https://andrewarrow.dev" # the base hostname & protocol
 
 # Build settings
 markdown: kramdown
+
+# Plugins
+plugins:
+  - jekyll-redirect-from
+
+# Permalink structure for posts to match /2025/may/title format
+permalink: /:year/:month/:title/
+
+# Defaults for posts
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "default"

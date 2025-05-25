@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="canonical" href="#">
+  <title>Four apps live in the ios app store</title>
+  <meta name="description" content="Four apps live in the ios app store">
+  <meta name="theme-color" content="#873553">
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css?ran=1">
+  <link rel="icon" href="https://i.imgur.com/KKoEmhn.png" type="image/png">
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "n37yt2z2sm");
+</script>
+</head>
+<body>
+  <nav>
+    <h1><a href="/">andrewarrow</a></h1>
+    <ul class="dot_list">
+      <li>
+        <a href="/" selected="">home</a>
+      </li>
+      <li>
+        <a href="/privacy" selected="">privacy</a>
+      </li>
+    </ul>
+  </nav>
+  <main id="main" tabindex="-1">
+    <article>
+      <h1 class="title">
+        <span role="text">
+          Four apps live in the ios app store
+        </span>
+      </h1>
+      <ul class="dot_list meta">
+        <li>
+          Posted <time datetime="2025-01-01">
+            1 May 2025
+          </time>
+        </li>
+      </ul>
+      <p>so I'll date myself by telling you I once had a "hit" app in the ios app store back in 2009. It was called "CBT Referee" and it was a mental health app (back before they were cool) for Cognitive Behavioral Therapy. The app was pretty simple. It was basically notepad but you could categorize each entry with one of the CBT categories "All-or-Nothing Thinking", "Overgeneralization', "Discounting the Positive", etc. and notice your thoughts from an objective referee perspective.</p>
+      <p>I charged $4.99 for this and I even had a marketing team promote it.</p>
+      
+      <div class="language-console highlighter-rouge">
+        <div class="highlight">
+          <pre class="highlight"><code><span class="gp">$</span><span class="w"> </span>curl <span class="nt">https://www.prnewswire.com/news-releases/cbtreferee-app-provides-on-the-go-support-for-cognitive-behavioral-therapy-cbt-82052902.html</span> 
+<span class="go">wow a PR and everything</span></code></pre>
+        </div>
+      </div>
+      
+      <p>It was written in objective-c not swift and as simple as the app was, it took me a couple weeks to build it.
+      </p>
+      <p>
+Years went by and sales dried up, eventually apple removed it from the app store because it was just such an old app. There was a message from them that I needed to update it and re-submit a new binary and I just ignored it.</p>
+      <p>And that was the end of me and the app store. I tried again a few times over the years, but never got anything out there. Cut to:</p>
+      
+      <h2 id="section-heading2">FIFTEEN-YEARS-LATER</h2>
+      <p>I now have 4 apps live in the store:</p>
+
+      <div><img src="https://i.imgur.com/cAvNT56.png" width="600" style="border-radius: 10px;" /></div>
+
+      <p>
+      And each one is significantly more complex than the old notepad app was. Like 10x more. Maybe 100x in some cases.
+      </p>
+
+      <div><img src="https://i.imgur.com/Q97pfNF.png" style="border-radius: 10px;" /></div>
+      <p>
+Yes this is a story about AI and that terrible word vibe. I'm sorry not sorry but I vibe now. I think there's a huge difference between someone with very little coding experience vibing and someone with (um, yeah graduated with C.S. degree in 1996 so) 29 years of experience. I find coding now like walking a blood hound through a forest and letting that powerful sense of smell the dog has lead the way. My job is just to make sure the dog doesn't take a wrong turn and follow a completely wrong smell.
+      </p>
+      <p>
+      It's really the hardest part of vibing a complex app. Wrong turns. Everything will be going great and then all of a sudden you notice the code is a mess, and no prompt will fix the mess anymore, you have to 
+      </p>
+      
+      <div class="language-sql highlighter-rouge">
+        <div class="highlight">
+          <pre class="highlight"><code><span class="k">git checkout .</span></code></pre>
+        </div>
+      </div>
+      
+      <p>
+      and start over from your last save point. It's a lot like a roblox game.
+      </p>
+      
+      <table id="sizes">
+        <tbody>
+          <tr>
+            <th>Repo</th>
+            <th>Bad Commit Messages</th>
+          </tr>
+          <tr>
+            <td>12x</td>
+            <td><a href="https://github.com/andrewarrow/12x/commits/main">https://github.com/andrewarrow/12x/commits/main</a></td>
+          </tr>
+          <tr>
+            <td>floormula</td>
+            <td><a href="https://github.com/andrewarrow/floormula/commits/main">https://github.com/andrewarrow/floormula/commits/main</a></td>
+          </tr>
+          <tr>
+            <td>CarTrafficControl</td>
+            <td><a href="https://github.com/andrewarrow/CarTrafficControl/commits/main">https://github.com/andrewarrow/CarTrafficControl/commits/main</a></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p>The name of the game is all about save points. I commit often. And I commit with just 1 word commit messages. Many times I go back several commits and branch from there.</p>
+      
+      <hr />
+      
+      <p>And then it's also about debug messages and screenshots.</p>
+      <div class="language-console highlighter-rouge">
+        <div class="highlight">
+          <pre class="highlight"><code><span class="go">ConversationView: Scheduling next speaker
+ConversationView: Next speaker index: 1
+ConversationView: Generating response to previous message
+ConversationContext: Recording utterance from speaker 0
+ConversationContext: Added entity: 'What'
+TopicManager: Turns on current topic 'Education' now: 1
+ConversationManager: Generating statement from template: 'In my opinion, [OPINION]'
+ConversationManager: Keeping placeholders for enhanced processing: 'In my opinion, [OPINION]'
+ConversationContext: Conversation depth now: 1
+PlaceholderProcessor: Processing text: 'not necessarily, In my opinion, [OPINION]'
+PlaceholderProcessor: Found 1 placeholders to replace
+PlaceholderProcessor: Replacing placeholder [OPINION]
+PlaceholderProcessor: Replaced [OPINION] with 'understanding Education helps provide context for other issues'
+PlaceholderProcessor: Final processed text: 'Not necessarily, In my opinion, understanding Education helps provide context for other issues'
+ConversationView: Speaker 1 will say: 'Not necessarily, In my opinion, understanding Education helps provide context for other issues'
+ConversationView: Started speaking for speaker 1
+ConversationView: Estimated speaking time: 5.7 seconds
+ConversationContext: Initializing
+TopicManager: Cleared leading voice
+ConversationContext: Cleared leading voice</span></code></pre>
+        </div>
+      </div>
+      <p>
+      Telling the AI to "add lots of debug logs so I can copy and paste them in my next prompt to show you what you did wrong" is like my go to standard when something just isn't working. I sometimes add "remember to ask me for logs!" because sometimes I'll be going around and around trying to fix something and I'll just forget that logs will solve this!</p>
+      <div><img src="https://i.imgur.com/TAf9TkM.png" width="300" style="border-radius: 10px;" /></div>
+      <p>
+      The LLMs can "see" screenshots of the phone and this really helps them understand what they did wrong better than words. Perfect example in this image of bad spacing that I can just show claude and say look at this! You call this code complete? Do it again... [long pause] please.
+      </p>
+      <p>
+      I guess I'm just getting started with these four. I have new ideas for apps every day and it's just this new world out there were me and AI can build them together in like a day. I set the price for each at $0.00. The experience with CBT Referee and collecting real money isn't what I want. Then you have people wanting refunds, you have people upset with you, but a free app? C'mon everyone loves a free app.
+      </p>
+      <p>
+            <a href="https://apps.apple.com/us/app/12x/id6745004204">12x for iOS</a>
+            <a href="https://news.ycombinator.com/item?id=43799323">(a former Show HN)</a>
+      </p>
+      <p>
+            <a href="https://apps.apple.com/us/app/floormula/id6745202268">floormula for iOS</a>
+      </p>
+      <p>
+            <a href="https://apps.apple.com/us/app/car-tower-voice/id6745129250">Car Tower Voice for iPhone</a>
+      </p>
+      <p>
+            <a href="https://apps.apple.com/us/app/lithium-friends/id6745278533">Lithium</a>
+      </p>
+      <p>
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    <div id="footer_inner">
+      <div>
+        <p>
+          &copy; 2025 andrewarrow.dev
+        </p>
+        <p>
+          Question, comment, or want to say thanks? Find me it's not hard.
+        </p>
+      </div>
+      <form action="#" method="post" target="popupwindow">
+        <p>
+          <label for="bd-email">Want a monthly digest of what I'm up to?</label>
+        </p>
+        <p>
+          Come back here once a month.
+        </p>
+      </form>
+    </div>
+  </footer>
+  </body>
+</html>

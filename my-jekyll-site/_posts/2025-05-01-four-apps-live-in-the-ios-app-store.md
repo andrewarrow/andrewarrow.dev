@@ -1,6 +1,10 @@
 ---
 layout: default
 title: Four apps live in the ios app store
+date: 2025-05-01
+redirect_from:
+  - /2025/may/four-apps-live-in-the-ios-app-store/
+  - /2025/may/four-apps-live-in-the-ios-app-store/index.html
 ---
   <main id="main" tabindex="-1">
     <article>

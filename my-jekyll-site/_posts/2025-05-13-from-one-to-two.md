@@ -1,0 +1,91 @@
+---
+layout: default
+title: From One to Two
+date: 2025-05-13
+redirect_from:
+  - /2025/may/from-one-to-two/
+  - /2025/may/from-one-to-two/index.html
+---
+  <main id="main" tabindex="-1">
+    <article>
+      <h1 class="title">
+        <span role="text">
+          From One to Two 
+        </span>
+      </h1>
+      <ul class="dot_list meta">
+        <li>
+          Posted <time datetime="2025-01-01">
+            13 May 2025
+          </time>
+        </li>
+      </ul>
+      <p>
+      It hit me one day, the biggest problem every indie developer has is very simple.
+      You need to go <span style="background-color: #ffeb3b; color: #000; padding: 0 3px;">from one to two as quickly as possible</span>. i.e. stop being "indie" of
+      just a team of one. It simply doesn't work.
+      </p>
+      <p>
+      Just like starting a band, you need that 2nd member or you're not _really_ a band.
+      Sure, I know, I've been doing teams of one for many years. I get the appeal. But
+      what is it that I like so much about it? I don't have to get _any_ buy in from
+      <strong>anyone</strong>. I'm this <span style="background-color: #4caf50; color: #fff; padding: 0 3px;">free agent that can just code code code like an artist</span> and bring
+      whatever I want to life.
+      </p>
+      <p>
+      And how's that working out for ya?
+      </p>
+      <p>
+      Not good. I work very hard on the project, get to MVP, release it, and get depressed
+      at how hard it is to market. Why am I trying to get buy in <span style="background-color: #ff5252; color: #fff; padding: 0 3px;">AFTER doing all the work</span>?
+      Just because I'm too impatient and scared* to get the buy in FIRST.
+      </p>
+      <p>
+      * yeah, fear, fear of doing this:
+      </p>
+      <img src="https://i.imgur.com/ARfYhge.png" width="300"/>
+      <p>
+      This is a new app I'm making to fix this problem. I call it from122.
+      </p>
+      <img src="https://i.imgur.com/PUhhDpZ.png" width="300"/>
+      <p>
+      First you name your project...
+      </p>
+      <img src="https://i.imgur.com/2SJe4l3.png" width="300"/>
+      <p>
+      We are going to use your camera for some high tech face recognition...
+      </p>
+      <img src="https://i.imgur.com/OTTJvw5.png" width="300"/>
+      <p>
+      That's right. Goto starbuck and get over your fear.
+      </p>
+      <img src="https://i.imgur.com/cF48fpP.png" width="300"/>
+      <p>
+      iOS Face Recognition will find faces and "match" you with just the right
+      person.
+      </p>
+      <img src="https://i.imgur.com/6gEYgjO.png" width="300"/>
+      <p>
+      Now go, you have 3 mins. Sell this person on your idea. Ask them if they
+      want to be recorded of course, be polite, some people will say no.
+      </p>
+      <img src="https://i.imgur.com/5R8qjJh.png" width="300"/>
+      <p>
+      This demo project now has 1 recorded session. Do 10 more.
+      </p>
+      <p>
+      Terrible right? I hate everything about this. I really don't want
+      to go to starbucks and do this. I hate accosting strangers.
+      But something tells me doing this over and over until I have an idea with
+      buy in <span style="background-color: #ffeb3b; color: #000; padding: 0 3px;">is the way</span>. 
+      </p>
+      <p>
+      I'll probably even get a few people to give me their email address, ready to beta test
+      the app. And probably one of those beta testers will be more enthusiastic than all 
+      the others. And that person makes a team of two.
+      </p>
+      <p>
+      Um, yeah let me know if you want to beta test from122 app.
+      </p>
+    </article>
+  </main>

@@ -1,6 +1,10 @@
 ---
 layout: default
 title: Beta testers wanted for new tv show tracker app Showffeur
+date: 2025-05-01
+redirect_from:
+  - /2025/may/beta-testers-wanted-showffeur/
+  - /2025/may/beta-testers-wanted-showffeur/index.html
 ---
   <main id="main" tabindex="-1">
     <article>

@@ -1,6 +1,10 @@
 ---
 layout: default
 title: Explain LLMs like I am 5
+date: 2025-05-10
+redirect_from:
+  - /2025/may/explain-llms-like-i-am-5/
+  - /2025/may/explain-llms-like-i-am-5/index.html
 ---
   <main id="main" tabindex="-1">
     <article>
