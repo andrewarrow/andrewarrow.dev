@@ -72,5 +72,37 @@ date: 2025-05-24
       full time <span style="color: #cc6600; font-weight: bold;">Healer & Spiritual Guide</span>
       at <a href="https://kenlloydofficial.com/">kenlloydofficial.com</a> 
       </p>
+      <p>
+I asked some LLM to listen. They were pretty harsh:
+
+<pre>
+```
+This is a very clear example of gibberish or nonsense speech.
+
+Not a Recognizable Language: The sounds and syllable combinations do not form words or grammar of any known human language.
+
+Rapid and Fluent: The speaker delivers the sounds very quickly and smoothly, mimicking the fluency of actual speech.
+
+Varied Phonetics: The speaker uses a range of phonetic sounds, including:
+
+    Rolled or trilled 'r's (e.g., "parriarro," "tirriettia")
+
+    Plosive consonants (k, t, p)
+
+    Sibilants (sh, s)
+
+    A variety of vowel sounds.
+
+Dynamic Intonation: The pitch and stress rise and fall, mimicking the prosody (rhythm and intonation patterns) of natural speech, giving it a semblance of sentences and phrases.
+
+Intentional Performance: The English words "Perfect. Just basic stuff" at the very end (around 0:14-0:16) clearly indicate that the preceding sounds were an intentional performance or demonstration of vocal ability, rather than an attempt to communicate in an actual language.
+
+In essence, it's someone skillfully "faking" a foreign-sounding language.
+It's the kind of vocalization sometimes used in acting, comedy, or 
+demonstrations of vocal range, sometimes also referred to as "speaking in tongues"
+(glossolalia) though in this context, it's clearly a practiced performance.
+```
+</pre>
+      </p>
     </article>
   </main>
