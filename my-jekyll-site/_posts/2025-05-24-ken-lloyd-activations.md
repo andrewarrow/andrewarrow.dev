@@ -111,25 +111,30 @@ Ouch. <span style="color: #cc6600; font-weight: bold;">"it's clearly a practiced
 Ken's own explanations of what these sounds are doing:
       </p>
 
-<blockquote style="font-style: italic; font-size: 1.1em; margin: 30px 0; padding: 20px; border-left: 4px solid #cc6600; background-color: #f9f9f9; color: #333;">
+<blockquote style="font-style: italic; font-size: 1.1em; margin: 30px 0; padding: 20px; border-left: 4px solid #cc6600;">
         "When we have this <span style="color: #d32f2f; font-weight: bold;">trauma</span> stored in our fields, it's <span style="color: #cc6600; font-weight: bold;">resistance</span>... it's like having the brakes slightly depressed in your car all the time and it doesn't allow you to accelerate as fast as you'd like... This clearing is going to <span style="color: #388e3c; font-weight: bold;">release</span> that store trauma that's ready to be released."
       </blockquote>
 
-<blockquote style="font-style: italic; font-size: 1.1em; margin: 30px 0; padding: 20px; border-left: 4px solid #cc6600; background-color: #f9f9f9; color: #333;">
+<blockquote style="font-style: italic; font-size: 1.1em; margin: 30px 0; padding: 20px; border-left: 4px solid #cc6600;">
         "Programming really is just <span style="color: #7b1fa2; font-weight: bold;">energy</span>... comes from this life... our environment... social experiences, friends and family... It's not always in our alignment as we begin to grow and expand... We're going to remove this programming, this low self-worth, these things that keep us from really stepping into our own <span style="color: #1976d2; font-weight: bold;">authenticity</span>, our own <span style="color: #cc6600; font-weight: bold;">power</span>. Caveat: We're going to remove the resistance, the programming, but it's up to you to step into your power... you need to create your <span style="color: #388e3c; font-weight: bold;">new you</span>."
       </blockquote>
 
-<blockquote style="font-style: italic; font-size: 1.1em; margin: 30px 0; padding: 20px; border-left: 4px solid #cc6600; background-color: #f9f9f9; color: #333;">
+<blockquote style="font-style: italic; font-size: 1.1em; margin: 30px 0; padding: 20px; border-left: 4px solid #cc6600;">
         "We're being constantly bombarded with this information which triggers us which creates this opinion this judgment this reaction these are what I call the <span style="color: #d32f2f; font-weight: bold;">fear implants</span> the <span style="color: #7b1fa2; font-weight: bold;">frequency implants</span> in our field and it's <span style="color: #cc6600; font-weight: bold;">by design</span>. It's designed to feed into that collective fear... What this is going to do, this is going to <span style="color: #388e3c; font-weight: bold;">drop those implants</span>."
       </blockquote>
 
-<blockquote style="font-style: italic; font-size: 1.1em; margin: 30px 0; padding: 20px; border-left: 4px solid #cc6600; background-color: #f9f9f9; color: #333;">
+<blockquote style="font-style: italic; font-size: 1.1em; margin: 30px 0; padding: 20px; border-left: 4px solid #cc6600;">
         "Think of this as the idea of kind of <span style="color: #1976d2; font-weight: bold;">removing the static</span> from that transmission and instead of them being a million miles away, they're around the corner... This is also going to connect you to kind of the same thing I am a little bit... the <span style="color: #7b1fa2; font-weight: bold;">divine consciousness stream</span> of intelligence, this is going to strengthen your <span style="color: #388e3c; font-weight: bold;">intuition</span> and your unique discernment with the information you're receiving in your human experience."
       </blockquote>
 
 
-<blockquote style="font-style: italic; font-size: 1.1em; margin: 30px 0; padding: 20px; border-left: 4px solid #cc6600; background-color: #f9f9f9; color: #333;">
+<blockquote style="font-style: italic; font-size: 1.1em; margin: 30px 0; padding: 20px; border-left: 4px solid #cc6600;">
         "I want to define <span style="color: #cc6600; font-weight: bold;">abundance</span> as life resources, not just a dollar sign... Everyone wants to <span style="color: #1976d2; font-weight: bold;">manifest</span>... But what they're failing to do is to <span style="color: #d32f2f; font-weight: bold;">remove the resistance</span> before they pull in. The resistance shows up in the root, shows up in the sacral, shows up in the heart, and it shows up in <span style="color: #7b1fa2; font-weight: bold;">trapped emotions</span> in the body."
       </blockquote>
+      <p>
+It's great stuff Ken! I'm not sure I care that the LLM says it's gibberish. The video happens to be just twenty minutes which is a perfect mediation session length. I've been doing one listen in the morning and one listen at night. I find it a lot easier than silence or your typical mediation audio tracks. Enjoy.
+      </p>
+      <p>
+      </p>
     </article>
   </main>
