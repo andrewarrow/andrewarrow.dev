@@ -2,6 +2,7 @@
 layout: default
 title: Seventeen Days of SQL
 date: 2025-05-25
+social_image: https://i.imgur.com/T7ovThQ.jpeg
 ---
 
 <main id="main" tabindex="-1">
