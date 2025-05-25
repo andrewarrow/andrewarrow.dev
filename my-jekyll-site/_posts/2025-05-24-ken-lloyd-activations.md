@@ -24,7 +24,7 @@ date: 2025-05-24
       <h2>Career Timeline</h2>
       
       <p>
-        From 2006-2013 he was <span style="color: #0066cc; font-weight: bold;">Director, Security Lab</span> at Cyveillance, which was later acquired by ZeroFox in October 2020.
+        From 2006-2013 he was <span style="color: #cc6600; font-weight: bold;">Director, Security Lab</span> at Cyveillance, which was later acquired by ZeroFox in October 2020.
       </p>
       
       <div style="display: flex; gap: 20px;">
@@ -66,6 +66,11 @@ date: 2025-05-24
       </p>
       <p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ujf_xoF4tLg?si=FTOTvUiGIs2TvzJv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </p>
+      <p>
+      That's right. Ken can speak in tounges. And he has left the tech world and is now a
+      full time <span style="color: #cc6600; font-weight: bold;">Healer & Spiritual Guide</span>
+      at <a href="https://kenlloydofficial.com/">kenlloydofficial.com</a> 
       </p>
     </article>
   </main>
