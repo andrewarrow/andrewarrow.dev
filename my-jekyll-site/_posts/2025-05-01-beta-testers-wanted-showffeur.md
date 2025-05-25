@@ -22,13 +22,23 @@ redirect_from:
       </ul>
       <p>
       The name of this app is chauffeur but it's for TV Shows so we called it showffeur.
-      There are a lot of iOS tv tracking apps but we tried to combine all the best features
-      into one really good app.
+      There are a lot of iOS and android tv tracking apps but we tried to combine all the best features
+      into two really good apps.
       </p>
       <div style="display: flex; gap: 20px;">
         <img src="https://i.imgur.com/k9wfhef.png" width="300"/>
         <img src="https://i.imgur.com/Uf8bVQh.png" width="300"/>
       </div>
+      <p>
+      Android:
+      </p>
+      <div style="display: flex; gap: 20px;">
+        <img src="https://i.imgur.com/50Ntozk.png" width="300"/>
+        <img src="https://i.imgur.com/W5q9n1J.png" width="300"/>
+      </div>
+      <p>
+      iOS:
+      </p>
       <div style="display: flex; gap: 20px;">
         <img src="https://i.imgur.com/AJfpTIx.png" width="300"/>
         <img src="https://i.imgur.com/LcTIysO.png" width="300"/>
@@ -36,6 +46,9 @@ redirect_from:
       <p>
       It's in beta testing right now. If you would like to help test it email 
       showffeur@andrewarrow.dev and let us know!
+      </p>
+      <p>
+      We also have <a href="https://www.reddit.com/r/showffeur">/r/showffeur</a>
       </p>
     </article>
   </main>
