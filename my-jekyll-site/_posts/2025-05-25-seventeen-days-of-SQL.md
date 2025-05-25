@@ -29,7 +29,7 @@ date: 2025-05-25
     </p>
 
     <div style="display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
-      <img src="https://i.imgur.com/Vph8OA4.jpeg" style="flex: 1; width: 250px; height: auto; border-radius: 8px;" alt="SQL the kitten"/>
+      <img src="https://i.imgur.com/OF2xwVc.jpeg" style="width: 250px; border-radius: 8px;" alt="SQL the kitten"/>
       <img src="https://i.imgur.com/h9CKQlu.jpeg" style="flex: 1; width: 250px; height: auto; border-radius: 8px;" alt="SQL the kitten"/>
     </div>
 
@@ -38,7 +38,6 @@ date: 2025-05-25
     </p>
 
     <div style="display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
-      <img src="https://i.imgur.com/OF2xwVc.jpeg" style="flex: 1; min-width: 250px; max-width: 400px; height: auto; border-radius: 8px;" alt="SQL the kitten"/>
       <img src="https://i.imgur.com/fDYpTeS.jpeg" style="flex: 1; min-width: 250px; max-width: 400px; height: auto; border-radius: 8px;" alt="SQL the kitten"/>
     </div>
 
@@ -47,7 +46,6 @@ date: 2025-05-25
     </p>
 
     <div style="display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
-      <img src="https://i.imgur.com/K1ceG1k.jpeg" style="flex: 1; min-width: 250px; max-width: 400px; height: auto; border-radius: 8px;" alt="SQL the kitten"/>
       <img src="https://i.imgur.com/YMyncS7.jpeg" style="flex: 1; min-width: 250px; max-width: 400px; height: auto; border-radius: 8px;" alt="SQL the kitten"/>
     </div>
 
