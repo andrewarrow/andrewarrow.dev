@@ -58,5 +58,14 @@ date: 2025-05-24
       <p>
         Read about the Mi3 Security acquisition: <a href="https://zimperium.com/resources/press-releases/press-zimperium-acquires-application-security-provider-mi3-security" target="_blank">Zimperium Press Release</a>
       </p>
+      <p>
+      Which makes what his activations are all the more interesting:
+      </p>
+      <p>
+       <a href="https://www.youtube.com/watch?v=ujf_xoF4tLg">Ken Lloyd Activations put to ffmpeg visualization</a>
+      </p>
+      <p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ujf_xoF4tLg?si=FTOTvUiGIs2TvzJv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </p>
     </article>
   </main>
