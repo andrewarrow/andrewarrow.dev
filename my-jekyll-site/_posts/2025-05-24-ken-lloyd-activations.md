@@ -18,29 +18,45 @@ date: 2025-05-24
         </li>
       </ul>
       <p>
-      First, let me explain who Ken Lloyd is.
-
-      From 2006-2013 he was <span>Director, Security Lab</span> at Cyveillance, acquired by ZeroFox October 2020.
-
-      Then from 2013-2018 he was <span>Co-Founder, CTO</span> of Mi3 Security, acquired by Zimperium April 2019.
-
-https://en.wikipedia.org/wiki/Zimperium
-https://zimperium.com/
-
-https://i.imgur.com/AMnwGNH.png
-https://i.imgur.com/FLZ5SQD.png
-
-https://zimperium.com/resources/press-releases/press-zimperium-acquires-application-security-provider-mi3-security
-
-https://en.wikipedia.org/wiki/ZeroFox
-https://www.zerofox.com/
-Cyveillance
-https://www.youtube.com/watch?v=A_ZvG76king
-https://www.zerofox.com/press-release/zerofox-acquires-cyveillance-strengthening-global-leadership-in-digital-risk-protection/
-
-https://i.imgur.com/ZY8FdFR.png
-https://i.imgur.com/oM8hyQb.png
-
+        First, let me explain who Ken Lloyd is.
+      </p>
+      
+      <h2>Career Timeline</h2>
+      
+      <p>
+        From 2006-2013 he was <span style="color: #0066cc; font-weight: bold;">Director, Security Lab</span> at Cyveillance, which was later acquired by ZeroFox in October 2020.
+      </p>
+      
+      <div style="display: flex; gap: 20px;">
+        <img src="https://i.imgur.com/ZY8FdFR.png" width="300"/>
+        <img src="https://i.imgur.com/oM8hyQb.png" width="300"/>
+      </div>
+      
+      <p>
+        Learn more about ZeroFox: <a href="https://en.wikipedia.org/wiki/ZeroFox" target="_blank">Wikipedia</a> | <a href="https://www.zerofox.com/" target="_blank">Official Website</a>
+      </p>
+      
+      <p>
+        Read about the acquisition: <a href="https://www.zerofox.com/press-release/zerofox-acquires-cyveillance-strengthening-global-leadership-in-digital-risk-protection/" target="_blank">ZeroFox Press Release</a>
+      </p>
+      
+      <h2>Mi3 Security Era</h2>
+      
+      <p>
+        Then from 2013-2018 he was <span style="color: #cc6600; font-weight: bold;">Co-Founder, CTO</span> of Mi3 Security, which was acquired by Zimperium in April 2019.
+      </p>
+      
+      <div style="display: flex; gap: 20px;">
+        <img src="https://i.imgur.com/AMnwGNH.png" width="300"/>
+        <img src="https://i.imgur.com/FLZ5SQD.png" width="300"/>
+      </div>
+      
+      <p>
+        Learn more about Zimperium: <a href="https://en.wikipedia.org/wiki/Zimperium" target="_blank">Wikipedia</a> | <a href="https://zimperium.com/" target="_blank">Official Website</a>
+      </p>
+      
+      <p>
+        Read about the Mi3 Security acquisition: <a href="https://zimperium.com/resources/press-releases/press-zimperium-acquires-application-security-provider-mi3-security" target="_blank">Zimperium Press Release</a>
       </p>
     </article>
   </main>
