@@ -68,7 +68,7 @@ date: 2025-05-24
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ujf_xoF4tLg?si=FTOTvUiGIs2TvzJv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </p>
       <p>
-      That's right. Ken can speak in tounges. And he has left the tech world and is now a
+      That's right. Ken can <a href="https://en.wikipedia.org/wiki/Speaking_in_tongues">speak in tongues</a>. And he has left the tech world and is now a
       full time <span style="color: #cc6600; font-weight: bold;">Healer & Spiritual Guide</span>
       at <a href="https://kenlloydofficial.com/">kenlloydofficial.com</a> 
       </p>
@@ -103,6 +103,9 @@ demonstrations of vocal range, sometimes also referred to as "speaking in tongue
 (glossolalia) though in this context, it's clearly a practiced performance.
 ```
 </pre>
+      </p>
+      <p>
+Ouch. <span style="color: #cc6600; font-weight: bold;">"it's clearly a practiced performance."</span>
       </p>
     </article>
   </main>
