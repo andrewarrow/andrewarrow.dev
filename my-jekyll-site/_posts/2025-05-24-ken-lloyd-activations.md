@@ -107,5 +107,29 @@ demonstrations of vocal range, sometimes also referred to as "speaking in tongue
       <p>
 Ouch. <span style="color: #cc6600; font-weight: bold;">"it's clearly a practiced performance."</span>
       </p>
+      <p>
+Ken's own explanations of what these sounds are doing:
+      </p>
+
+<p>
+When we have this trauma stored in our fields, it's resistance... it's like having the brakes slightly depressed in your car all the time and it doesn't allow you to accelerate as fast as you'd like... This clearing is going to release that store trauma that's ready to be released.
+      </p>
+
+<p>
+programming really is just energy... comes from this life... our environment... social experiences, friends and family... It's not always in our alignment as we begin to grow and expand... We're going to remove this programming, this low self-worth, these things that keep us from really stepping into our own authenticity, our own power. Caveat: We're going to remove the resistance, the programming, but it's up to you to step into your power... you need to create your new you.
+      </p>
+
+  <p>
+we're being constantly bombarded with this information which triggers us which creates this opinion this judgment this reaction these are what I call the fear implants the frequency implants in our field and it's by design. It's designed to feed into that collective fear... What this is going to do, this is going to drop those implants.
+      </p>
+
+  <p>
+Think of this as the idea of kind of removing the static from that transmission and instead of them being a million miles away, they're around the corner... This is also going to connect you to kind of the same thing I am a little bit... the divine consciousness stream of intelligence, this is going to strengthen your intuition and your unique discernment with the information you're receiving in your human experience
+      </p>
+
+
+   <p>
+I want to define abundance as life resources, not just a dollar sign... Everyone wants to manifest... But what they're failing to do is to remove the resistance before they pull in. The resistance shows up in the root, shows up in the sacral, shows up in the heart, and it shows up in trapped emotions in the body
+      </p>
     </article>
   </main>
