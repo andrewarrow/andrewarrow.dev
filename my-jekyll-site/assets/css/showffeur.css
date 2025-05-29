@@ -48,9 +48,10 @@ body {
   padding: 0;
   background: var(--background-color);
   background-image: 
-    radial-gradient(circle at 20% 80%, rgba(139, 95, 191, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(139, 95, 191, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(139, 95, 191, 0.1) 0%, transparent 50%);
+    radial-gradient(ellipse 150% 120% at 20% 80%, rgba(139, 95, 191, 0.06) 0%, transparent 80%),
+    radial-gradient(ellipse 150% 120% at 80% 20%, rgba(139, 95, 191, 0.06) 0%, transparent 80%),
+    radial-gradient(ellipse 200% 150% at 40% 40%, rgba(139, 95, 191, 0.03) 0%, transparent 85%);
+  background-attachment: fixed;
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
@@ -94,7 +95,13 @@ a:hover {
   color: cyan;
 }
 
-main, footer > *, nav > * {
+main {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 0 !important;
+}
+
+footer > *, nav > * {
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto;
@@ -359,6 +366,8 @@ footer {
   background: #303b40;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   overflow: hidden;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
 .footer-background {
@@ -560,25 +569,13 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 40px;
+  padding: 100px 0;
   position: relative;
   overflow: hidden;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120%;
-  height: 120%;
-  background-image: url('https://i.imgur.com/k9wfhef.png');
-  background-size: cover;
-  background-position: center;
-  filter: blur(40px) opacity(0.15);
-  z-index: -1;
-}
 
 .hero-content {
   display: grid;
@@ -587,6 +584,7 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
   max-width: 1400px;
   width: 100%;
   align-items: center;
+  padding: 0 40px;
 }
 
 .hero-text {
