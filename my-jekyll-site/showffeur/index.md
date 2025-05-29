@@ -1,7 +1,8 @@
 ---
 layout: showffeur
-title: showffeur
+title: showffeur iPhone and Android tv show and movie tracking app
 social_image: https://i.imgur.com/z48QMR4.png
+desc: sync your watch history with trakt, iPhone & Android both platforms have it all, TMDB search for any themoviedb.org show or movie
 ---
 
   <main id="main" tabindex="-1">
