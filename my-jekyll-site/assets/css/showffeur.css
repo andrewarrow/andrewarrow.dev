@@ -661,7 +661,7 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
 .phone-mockups {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 700px;
 }
 
 .phones-organic {
@@ -689,45 +689,60 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
   z-index: 10;
 }
 
-/* Organic positioning for each phone */
-.phone-1 {
-  top: 20px;
-  left: 0;
-  transform: rotate(-2deg);
-  z-index: 3;
-}
-
-.phone-2 {
-  top: 0;
-  right: 100px;
-  transform: rotate(3deg);
+/* iPhone Cluster (Top) */
+.iphone-1 {
+  top: 30px;
+  left: 20px;
+  transform: rotate(-3deg);
   z-index: 4;
 }
 
-.phone-3 {
-  top: 180px;
-  left: 60px;
+.iphone-2 {
+  top: 10px;
+  left: 140px;
+  transform: rotate(2deg);
+  z-index: 3;
+}
+
+.iphone-3 {
+  top: 80px;
+  left: 250px;
+  transform: rotate(-1deg);
+  z-index: 2;
+}
+
+.iphone-4 {
+  top: 40px;
+  right: 30px;
+  transform: rotate(4deg);
+  z-index: 1;
+}
+
+/* Android Cluster (Bottom) */
+.android-1 {
+  top: 380px;
+  left: 30px;
+  transform: rotate(2deg);
+  z-index: 3;
+}
+
+.android-2 {
+  top: 350px;
+  left: 160px;
+  transform: rotate(-2deg);
+  z-index: 4;
+}
+
+.android-3 {
+  top: 420px;
+  left: 280px;
   transform: rotate(1deg);
   z-index: 2;
 }
 
-.phone-4 {
-  top: 160px;
+.android-4 {
+  top: 370px;
   right: 20px;
-  transform: rotate(-1deg);
-  z-index: 3;
-}
-
-.phone-5 {
-  top: 350px;
-  left: 20px;
-  transform: rotate(2deg);
-  z-index: 2;
-}
-
-.phone-6 {
-  top: 320px;
-  right: 80px;
   transform: rotate(-3deg);
   z-index: 1;
 }
@@ -742,14 +757,14 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
   z-index: 5;
 }
 
-.android-label {
+.ios-label {
   top: -10px;
-  left: 0;
+  left: 20px;
 }
 
-.ios-label {
-  top: 290px;
-  left: 20px;
+.android-label {
+  top: 320px;
+  left: 30px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -762,11 +777,21 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
   }
   
   .phone-mockups {
-    height: 500px;
+    height: 600px;
   }
   
   .phone {
     width: 160px;
+  }
+  
+  /* Adjust iPhone cluster for medium screens */
+  .iphone-3 {
+    left: 200px;
+  }
+  
+  /* Adjust Android cluster for medium screens */
+  .android-3 {
+    left: 220px;
   }
 }
 
@@ -790,7 +815,7 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
   }
   
   .phone-mockups {
-    height: 400px;
+    height: 500px;
     margin-top: 20px;
   }
   
@@ -798,35 +823,52 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
     width: 140px;
   }
   
-  /* Adjust mobile positioning */
-  .phone-1 {
-    top: 10px;
-    left: 10px;
-  }
-  
-  .phone-2 {
-    top: 0;
-    right: 30px;
-  }
-  
-  .phone-3 {
-    top: 140px;
-    left: 40px;
-  }
-  
-  .phone-4 {
-    top: 130px;
-    right: 10px;
-  }
-  
-  .phone-5 {
-    top: 260px;
+  /* iPhone cluster - mobile */
+  .iphone-1 {
+    top: 20px;
     left: 15px;
   }
   
-  .phone-6 {
+  .iphone-2 {
+    top: 10px;
+    left: 110px;
+  }
+  
+  .iphone-3 {
+    top: 70px;
+    left: 200px;
+  }
+  
+  .iphone-4 {
+    top: 40px;
+    right: 15px;
+  }
+  
+  /* Android cluster - mobile */
+  .android-1 {
+    top: 280px;
+    left: 20px;
+  }
+  
+  .android-2 {
+    top: 260px;
+    left: 120px;
+  }
+  
+  .android-3 {
+    top: 320px;
+    left: 210px;
+  }
+  
+  .android-4 {
+    top: 280px;
+    right: 10px;
+  }
+  
+  /* Labels - mobile */
+  .android-label {
     top: 240px;
-    right: 50px;
+    left: 20px;
   }
 }
 
@@ -840,11 +882,11 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
   }
   
   .phone-mockups {
-    height: 350px;
+    height: 420px;
   }
   
   .phone {
-    width: 120px;
+    width: 110px;
   }
   
   .join-btn {
@@ -852,35 +894,52 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
     font-size: 0.9em;
   }
   
-  /* Compact mobile positioning */
-  .phone-1 {
-    top: 5px;
-    left: 5px;
-  }
-  
-  .phone-2 {
-    top: 0;
-    right: 20px;
-  }
-  
-  .phone-3 {
-    top: 110px;
-    left: 30px;
-  }
-  
-  .phone-4 {
-    top: 100px;
-    right: 5px;
-  }
-  
-  .phone-5 {
-    top: 200px;
+  /* iPhone cluster - small mobile */
+  .iphone-1 {
+    top: 15px;
     left: 10px;
   }
   
-  .phone-6 {
+  .iphone-2 {
+    top: 5px;
+    left: 90px;
+  }
+  
+  .iphone-3 {
+    top: 60px;
+    left: 160px;
+  }
+  
+  .iphone-4 {
+    top: 35px;
+    right: 10px;
+  }
+  
+  /* Android cluster - small mobile */
+  .android-1 {
+    top: 220px;
+    left: 15px;
+  }
+  
+  .android-2 {
+    top: 200px;
+    left: 100px;
+  }
+  
+  .android-3 {
+    top: 260px;
+    left: 170px;
+  }
+  
+  .android-4 {
+    top: 220px;
+    right: 5px;
+  }
+  
+  /* Labels - small mobile */
+  .android-label {
     top: 180px;
-    right: 40px;
+    left: 15px;
   }
 }
 
