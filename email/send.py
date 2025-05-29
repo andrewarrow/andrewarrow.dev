@@ -21,6 +21,17 @@ def send_html_email(to_address):
         print(f"Error reading email.html: {e}")
         return
 
+    # Add email to audience first
+    audience_id = "516f95a7-9f86-4d08-ab50-4b1583ea7667"
+    try:
+        audience_response = resend.Audiences.add(
+            audience_id=audience_id,
+            email=to_address
+        )
+        print(f"Email added to audience: {audience_response}")
+    except Exception as e:
+        print(f"Failed to add email to audience: {e}")
+
     # Define email parameters
     params = {
         "from": "Showffeur App <showffeur@andrewarrow.dev>",
