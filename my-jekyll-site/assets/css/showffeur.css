@@ -565,9 +565,9 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
 .hero-section {
   min-height: 90vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 100px 0;
+  padding: 40px 0 100px 0;
   position: relative;
   overflow: hidden;
   width: 100vw;
