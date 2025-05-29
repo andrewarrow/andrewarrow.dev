@@ -31,15 +31,23 @@
 </head>
 <body>
   <nav>
-    <h1><a href="/">showffeur</a></h1>
-    <ul class="dot_list">
-      <li>
-        <a href="/showffeur" selected="">home</a>
-      </li>
-      <li>
-        <a href="/showffeur/charts" selected="">charts</a>
-      </li>
-    </ul>
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 40px; display: flex; justify-content: space-between; align-items: center;">
+      <h1><a href="/">showffeur</a></h1>
+      <ul class="dot_list">
+        <li>
+          <a href="/showffeur" selected="">HOME</a>
+        </li>
+        <li>
+          <a href="/showffeur/shows">SHOWS</a>
+        </li>
+        <li>
+          <a href="/showffeur/movies">MOVIES</a>
+        </li>
+        <li>
+          <button class="nav-join-btn">JOIN SHOWFFEUR</button>
+        </li>
+      </ul>
+    </div>
   </nav>
   {{ content }}
   <footer>
