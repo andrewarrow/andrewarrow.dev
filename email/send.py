@@ -1,6 +1,7 @@
 import os
 import resend
 from dotenv import load_dotenv
+import argparse
 
 # Load environment variables from .env file
 load_dotenv()
@@ -8,7 +9,7 @@ load_dotenv()
 # Set Resend API key from environment variable
 resend.api_key = os.getenv("RESEND")
 
-def send_html_email():
+def send_html_email(to_address):
     # Read the HTML content from email.html
     try:
         with open("email.html", "r", encoding="utf-8") as file:
@@ -23,8 +24,8 @@ def send_html_email():
     # Define email parameters
     params = {
         "from": "Showffeur App <showffeur@andrewarrow.dev>",
-        "to": ["oneone@gmail.com"],
-        "subject": "Thank you Beta Testers2",
+        "to": [to_address],
+        "subject": "Thank you Beta Testers",
         "html": html_content
     }
 
@@ -36,4 +37,13 @@ def send_html_email():
         print(f"Failed to send email: {e}")
 
 if __name__ == "__main__":
-    send_html_email()
+    parser = argparse.ArgumentParser(description="Send an HTML email using Resend API")
+    parser.add_argument(
+        "--to",
+        required=True,
+        help="Recipient email address"
+    )
+    args = parser.parse_args()
+
+    # Call the function with the provided to address
+    send_html_email(args.to)
