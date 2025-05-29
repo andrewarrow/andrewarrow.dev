@@ -8,11 +8,11 @@ social_image: https://i.imgur.com/z48QMR4.png
     <div class="hero-section">
       <div class="hero-content">
         <div class="hero-text">
-          <h1 class="hero-title">Discover.</h1>
-          <p class="hero-subtitle">what's hot and where to stream it.</p>
+          <h1 class="hero-title">Trakt sync</h1>
+          <p class="hero-subtitle">your watch history synced with trakt</p>
           
-          <h1 class="hero-title">Track.</h1>
-          <p class="hero-subtitle">all the shows and movies you have ever watched.</p>
+          <h1 class="hero-title">iPhone & Android.</h1>
+          <p class="hero-subtitle">both platforms have it all</p>
           
           <h1 class="hero-title">Share.</h1>
           <p class="hero-subtitle">comments, ratings and recommendations.</p>
