@@ -19,11 +19,11 @@
   --block-background: #f3f3f3;
   --screenshot-border: #f0f0f0;
   --background-color: #0d1117;
-  --background-overlay: radial-gradient(ellipse at center, rgba(159, 76, 219, 0.1) 0%, transparent 70%);
-  --primary-color-light: #9f4cdb;
-  --primary-color-dark: #7a3cb8;
-  --primary-color: #9f4cdb;
-  --link-color: #9f4cdb;
+  --background-overlay: radial-gradient(ellipse at center, rgba(139, 95, 191, 0.1) 0%, transparent 70%);
+  --primary-color-light: #8b5fbf;
+  --primary-color-dark: #6b4794;
+  --primary-color: #8b5fbf;
+  --link-color: #8b5fbf;
 }
 
 @media(prefers-color-scheme: dark) {
@@ -48,9 +48,9 @@ body {
   padding: 0;
   background: var(--background-color);
   background-image: 
-    radial-gradient(circle at 20% 80%, rgba(159, 76, 219, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(159, 76, 219, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(159, 76, 219, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(139, 95, 191, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(139, 95, 191, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(139, 95, 191, 0.1) 0%, transparent 50%);
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
@@ -212,11 +212,12 @@ nav {
   margin: 0;
   font-size: 1.8em;
   font-weight: bold;
+  color: white !important;
 }
 
 .nav-logo a {
   text-decoration: none;
-  color: white;
+  color: white !important;
   font-weight: 700;
 }
 
@@ -279,7 +280,7 @@ nav {
 .nav-join-btn:hover {
   background: var(--primary-color-dark);
   transform: translateY(-1px);
-  box-shadow: 0 5px 15px rgba(159, 76, 219, 0.4);
+  box-shadow: 0 5px 15px rgba(139, 95, 191, 0.4);
 }
 
 /* Mobile Navigation */
@@ -625,7 +626,7 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  box-shadow: 0 8px 25px rgba(159, 76, 219, 0.3);
+  box-shadow: 0 8px 25px rgba(139, 95, 191, 0.3);
   position: relative;
   overflow: hidden;
 }
@@ -643,7 +644,7 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
 
 .join-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 35px rgba(159, 76, 219, 0.4);
+  box-shadow: 0 12px 35px rgba(139, 95, 191, 0.4);
 }
 
 .join-btn:hover::before {
