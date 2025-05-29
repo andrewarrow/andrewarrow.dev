@@ -14,12 +14,11 @@ social_image: https://i.imgur.com/z48QMR4.png
           <h1 class="hero-title">iPhone & Android.</h1>
           <p class="hero-subtitle">both platforms have it all</p>
           
-          <h1 class="hero-title">Share.</h1>
-          <p class="hero-subtitle">comments, ratings and recommendations.</p>
+          <h1 class="hero-title">TMDB</h1>
+          <p class="hero-subtitle">search for any themoviedb.org show or movie</p>
           
           <div class="cta-section">
-            <button class="join-btn">JOIN SHOWFFEUR FOR FREE</button>
-            <p class="disclaimer">SHOWFFEUR DOES NOT PROVIDE STREAMING</p>
+          <a class="nav-join-btn" style="text-decoration: none" href="https://www.reddit.com/r/showffeur">/r/showffeur</a>
           </div>
         </div>
         

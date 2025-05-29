@@ -246,7 +246,6 @@ nav {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  text-transform: uppercase;
   letter-spacing: 1px;
   transition: color 0.3s ease;
   position: relative;
@@ -280,7 +279,6 @@ nav {
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
@@ -622,7 +620,6 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
-  text-transform: uppercase;
   letter-spacing: 1.5px;
   box-shadow: 0 8px 25px rgba(139, 95, 191, 0.3);
   position: relative;
@@ -751,7 +748,6 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
   font-size: 0.9em;
   color: var(--accent-grey);
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 5;
 }
