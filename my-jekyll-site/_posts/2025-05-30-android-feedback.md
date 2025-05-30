@@ -2,7 +2,7 @@
 layout: default
 title: Android Feedback
 date: 2025-05-30
-social_image: https://i.imgur.com/T7ovThQ.jpeg
+social_image: https://i.imgur.com/50Ntozk.png
 ---
 
 <main id="main" tabindex="-1">
