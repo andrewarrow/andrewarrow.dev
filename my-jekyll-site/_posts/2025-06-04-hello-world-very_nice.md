@@ -16,7 +16,7 @@ This is a hello world post using the new ChrisGiven layout style. The layout fea
 
 ## Getting Started
 
-This post demonstrates the new layout in action. The styling is based on the design from [chrisgiven.com](https://chrisgiven.com/2025/05/direct-file-on-github/) and includes all the beautiful typography and color schemes from the original.
+This post demonstrates the new layout in action. 
 
 ### Features
 
