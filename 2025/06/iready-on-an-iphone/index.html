@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello World</title>
+    <style>
+        :root {
+            --font-family: "Source Sans 3", -apple-system, system-ui, sans-serif;
+            --font-family-monospace: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+            --base-color: #fff;
+            --subtle-color: #c6c6c6;
+            --decoration-color: #777;
+            --highlight-color: #68c4c3;
+            --background-color: #0d1117;
+            --text-color: var(--base-color);
+            --text-color-link: var(--highlight-color);
+            color-scheme: dark;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: var(--font-family);
+            line-height: 1.5rem;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 35em;
+            margin: 0 auto;
+            padding: 1rem;
+            background-color: #21262d;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+        }
+
+        h3, h4, h5, h6 {
+            font-size: 1rem;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        a {
+            color: var(--text-color-link);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        code {
+            font-family: var(--font-family-monospace);
+            background-color: var(--decoration-color);
+            padding: 0.125rem 0.25rem;
+            border-radius: 0.25rem;
+        }
+
+        pre {
+            background-color: var(--decoration-color);
+            padding: 1rem;
+            border-radius: 0.25rem;
+            overflow-x: auto;
+        }
+
+        pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--decoration-color);
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            margin-right: 1rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .date {
+            color: var(--subtle-color);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="/">Your Site Name</a></h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <h1>Hello World</h1>
+                
+                <p class="date">Wednesday, June 04, 2025</p>
+                
+                
+                <h1 id="hello-world">Hello World</h1>
+
+<p>This is a hello world post using the new ChrisGiven layout style. The layout features:</p>
+
+<ul>
+  <li>Clean, minimalist design</li>
+  <li>Responsive typography</li>
+  <li>Dark mode support</li>
+  <li>Accessible styling</li>
+  <li>Custom CSS variables for theming</li>
+</ul>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>This post demonstrates the new layout in action.</p>
+
+<h3 id="features">Features</h3>
+
+<p>The layout includes:</p>
+
+<ol>
+  <li><strong>Typography</strong>: Source Sans 3 font family with careful spacing</li>
+  <li><strong>Color scheme</strong>: Light and dark mode support with CSS custom properties</li>
+  <li><strong>Responsive design</strong>: Optimized for reading on any device</li>
+  <li><strong>Accessibility</strong>: Proper heading hierarchy and screen reader support</li>
+</ol>
+
+<p>Welcome to the new layout!</p>
+
+            </article>
+        </main>
+    </div>
+</body>
+</html>
