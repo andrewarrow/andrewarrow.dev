@@ -8,23 +8,14 @@
         :root {
             --font-family: "Source Sans 3", -apple-system, system-ui, sans-serif;
             --font-family-monospace: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
-            --base-color: #404040;
-            --subtle-color: #727272;
-            --decoration-color: #a6a6a6;
-            --highlight-color: #477e7d;
-            --background-color: #fff;
+            --base-color: #fff;
+            --subtle-color: #c6c6c6;
+            --decoration-color: #777;
+            --highlight-color: #68c4c3;
+            --background-color: #0d1117;
             --text-color: var(--base-color);
             --text-color-link: var(--highlight-color);
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --base-color: #fff;
-                --subtle-color: #c6c6c6;
-                --decoration-color: #777;
-                --highlight-color: #68c4c3;
-                --background-color: #333;
-            }
+            color-scheme: dark;
         }
 
         *, *::before, *::after {
@@ -33,14 +24,20 @@
 
         body {
             margin: 0;
-            padding: 1rem;
+            padding: 0;
             font-family: var(--font-family);
             line-height: 1.5rem;
             color: var(--text-color);
             background-color: var(--background-color);
+            min-height: 100vh;
+        }
+
+        .container {
             max-width: 35em;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
+            padding: 1rem;
+            background-color: #21262d;
+            min-height: 100vh;
         }
 
         h1, h2, h3, h4, h5, h6 {
@@ -139,23 +136,25 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1><a href="/">{{ site.title | default: "Blog" }}</a></h1>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-        </nav>
-    </header>
+    <div class="container">
+        <header>
+            <h1><a href="/">{{ site.title | default: "Blog" }}</a></h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+            </nav>
+        </header>
 
-    <main>
-        <article>
-            <h1>{{ page.title }}</h1>
-            {% if page.date %}
-            <p class="date">{{ page.date | date: "%A, %B %d, %Y" }}</p>
-            {% endif %}
-            
-            {{ content }}
-        </article>
-    </main>
+        <main>
+            <article>
+                <h1>{{ page.title }}</h1>
+                {% if page.date %}
+                <p class="date">{{ page.date | date: "%A, %B %d, %Y" }}</p>
+                {% endif %}
+                
+                {{ content }}
+            </article>
+        </main>
+    </div>
 </body>
 </html>
