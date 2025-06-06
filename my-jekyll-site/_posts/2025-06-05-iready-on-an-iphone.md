@@ -1,16 +1,21 @@
 ---
 layout: very_nice
-title: "iReady on iPhone: A Technical Journey from Chromebook to iOS"
+title: "iReady on iPhone - challenging but not impossible"
 date: 2025-06-05
 ---
 
-<img src="https://i.imgur.com/i0nXXSW.jpeg" style="width: 400px;" alt=""/>
+   <div style="display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
+      <img src="https://i.imgur.com/W7R7Fh3.jpeg" style="width: 500px; border-radius: 8px;" alt=""/>
+    </div>
+<div>If you haven't had the pleasure of helping your kid with their i-Ready Chromebook homework this story might not resonate with you. But if you have, then you know the pain of trying to use that Chromebook screen and trackpad to do the assignments. Honestly it's ten times harder on the Chromebook than a normal desktop. But my goal was to get it running on iOS. I-Ready was deliberately designed to run exclusively on Chromebooks and desktop browsers. So step one was just can I get off the Chromebook and onto my normal laptop.
+</div>
+   <div style="display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
+      <img src="https://i.imgur.com/Wxp94f6.png" style="width: 250px; border-radius: 8px;" alt=""/>
+      <img src="https://i.imgur.com/oTEZ86Q.png" style="flex: 0; width: 250px; height: auto; border-radius: 8px;" alt="SQL the kitten"/>
+    </div>
 
 ## Introduction {#introduction}
 
-This is the story of reverse-engineering a Chromebook-only educational app to work on iOS Safari. iReady, a popular K-12 learning platform, was deliberately designed to run exclusively on Chromebooks and desktop browsers. Through months of trial-and-error development, we successfully bypassed platform restrictions and adapted the entire application for iPhone and iPad use.
-
-This technical deep-dive chronicles the browser compatibility challenges, mobile web development hurdles, and platform-specific workarounds required to transform a desktop-first application into a functional mobile experience.
 
 ## Chapter 1: Breaking Through Platform Detection {#platform-detection}
 
