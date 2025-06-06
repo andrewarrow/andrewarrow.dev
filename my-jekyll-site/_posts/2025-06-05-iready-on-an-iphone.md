@@ -23,7 +23,10 @@ Now you might be thinking uh, duh, just goto that url and enter your password. A
    <div style="display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
       <img src="https://i.imgur.com/i0nXXSW.jpeg" style="width: 500px; border-radius: 8px;" alt=""/>
     </div>
+  <p>
+Notice our little friend inspect element is greyed out. The actual url I was going to was not what I saw in the browser url textfield.
 
+  </p>
 
 
 ## Chapter 1: Breaking Through Platform Detection {#platform-detection}
