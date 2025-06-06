@@ -7,14 +7,17 @@ date: 2025-06-05
    <div style="display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
       <img src="https://i.imgur.com/W7R7Fh3.jpeg" style="width: 500px; border-radius: 8px;" alt=""/>
     </div>
-<div>If you haven't had the pleasure of helping your kid with their i-Ready Chromebook homework this story might not resonate with you. But if you have, then you know the pain of trying to use that Chromebook screen and trackpad to do the assignments. Honestly it's ten times harder on the Chromebook than a normal desktop. But my goal was to get it running on iOS. I-Ready was deliberately designed to run exclusively on Chromebooks and desktop browsers. So step one was just can I get off the Chromebook and onto my normal laptop.
+<div>If you haven't had the pleasure of helping your kid with their i-Ready Chromebook homework this story might not resonate with you. But if you have, then you know the pain of trying to use that Chromebook screen and trackpad to do the assignments. Honestly it's ten times harder on the Chromebook than a normal desktop. But my goal was to get it running on iOS. 
 </div>
    <div style="display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
       <img src="https://i.imgur.com/Wxp94f6.png" style="width: 250px; border-radius: 8px;" alt=""/>
       <img src="https://i.imgur.com/oTEZ86Q.png" style="flex: 0; width: 250px; height: auto; border-radius: 8px;" alt="SQL the kitten"/>
     </div>
+  <div>
+Ah, just looking at these screenshots fills me with joy. It was hundreds and hundreds of xcode compiles with trial and error to finally get these.
+I-Ready was deliberately designed to run exclusively on Chromebooks and desktop browsers. So step one was just can I get off the Chromebook and onto my normal laptop.
+    </div>
 
-## Introduction {#introduction}
 
 
 ## Chapter 1: Breaking Through Platform Detection {#platform-detection}
