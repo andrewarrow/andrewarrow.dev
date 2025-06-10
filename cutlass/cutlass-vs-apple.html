@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutlass vs Apple's Recommended Approaches - Revolutionary Video Automation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            padding: 60px 0;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        .content {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-top: -30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .section {
+            padding: 40px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+            color: #34495e;
+            margin: 25px 0 15px 0;
+        }
+        
+        .apple-approach {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .cutlass-advantages {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+        
+        .hybrid-approach {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-left: 4px solid #667eea;
+        }
+        
+        .limitations {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .limitations h4 {
+            color: #856404;
+            margin-bottom: 10px;
+        }
+        
+        .advantages {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .advantages h4 {
+            color: #0c5460;
+            margin-bottom: 10px;
+        }
+        
+        code {
+            background: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .code-block {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        
+        .emoji {
+            font-size: 1.5em;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .comparison-table th {
+            background: #667eea;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .comparison-table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .cta {
+            text-align: center;
+            padding: 60px 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .cta h2 {
+            color: white;
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: transform 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://i.imgur.com/r88C3Tw.png" alt="Cutlass Logo" style="width: 80px; height: 80px; margin-bottom: 20px;">
+            <h1>Cutlass vs Apple's Approach</h1>
+            <p class="subtitle">Revolutionary Video Automation Beyond Final Cut Pro's Built-in Tools</p>
+            <div class="hero-badge">
+                <span class="emoji">🚀</span> Procedural Generation Meets Professional Polish
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="section apple-approach">
+                <h2>Apple's Recommended Approaches</h2>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>1. Final Cut Pro's Built-in Automation</h3>
+                        <ul>
+                            <li><strong>Multicam Sync:</strong> Automatic sync based on timecode/waveforms</li>
+                            <li><strong>Roles & Subroles:</strong> Auto-organization of audio/video tracks</li>
+                            <li><strong>Keyword Collections:</strong> Auto-tagging and smart collections</li>
+                            <li><strong>Compound Clips:</strong> Reusable clip templates</li>
+                        </ul>
+                        <div class="limitations">
+                            <h4>Limitations:</h4>
+                            <ul>
+                                <li>Still requires manual media import and basic setup</li>
+                                <li>No procedural generation of complex sequences</li>
+                                <li>Limited to FCP's built-in templates and effects</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>2. Motion Templates (.moti files)</h3>
+                        <ul>
+                            <li>Create custom titles, transitions, effects, generators</li>
+                            <li>Publish parameters for easy customization in FCP</li>
+                            <li>Built-in animation tools and behaviors</li>
+                            <li>Integration with FCP's inspector</li>
+                        </ul>
+                        <div class="limitations">
+                            <h4>Limitations:</h4>
+                            <ul>
+                                <li>Each template is manually created in Motion</li>
+                                <li>No data-driven content generation</li>
+                                <li>Can't automatically arrange multiple clips in timeline</li>
+                                <li>Limited to individual effect/title elements</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>3. FCP's XML Import/Export</h3>
+                        <ul>
+                            <li>Apple does support FCPXML as an interchange format</li>
+                            <li>Designed for moving projects between systems</li>
+                            <li>Third-party tools can generate FCPXML</li>
+                        </ul>
+                        <div class="limitations">
+                            <h4>Limitations:</h4>
+                            <ul>
+                                <li>Complex XML structure requires deep technical knowledge</li>
+                                <li>No built-in templating or data binding</li>
+                                <li>Manual coding required for any automation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section cutlass-advantages">
+                <h2><span class="emoji">🚀</span> Cutlass Advantages Over Apple's Approach</h2>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3><span class="emoji">🚀</span> Procedural Generation at Scale</h3>
+                        <div class="code-block">// Cutlass can generate 100 clips with data in seconds
+for i, videoID := range videoIDs {
+    clips = append(clips, generateClip(videoID, timestamps[i]))
+}</div>
+                        <p><strong>Motion would require manually creating 100 individual templates.</strong></p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3><span class="emoji">📊</span> Data-Driven Content</h3>
+                        <p><strong>Cutlass pulls from:</strong></p>
+                        <ul>
+                            <li>Wikipedia tables → Animated charts</li>
+                            <li>YouTube VTT → Auto-segmented clips</li>
+                            <li>CSV data → Dynamic infographics</li>
+                        </ul>
+                        <p><strong>Apple's tools require manual data entry for each project.</strong></p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3><span class="emoji">🔄</span> Complex Template Reuse</h3>
+                        <div class="code-block">{{range $index, $video := .Videos}}
+    {{template "number_card.fcpxml" $index}}
+    &lt;asset-clip ref="r{{add $index 10}}" offset="{{calculateOffset $index}}"/&gt;
+{{end}}</div>
+                        <p><strong>This generates different arrangements automatically. Motion templates are static.</strong></p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3><span class="emoji">⚡</span> Batch Processing</h3>
+                        <p>Cutlass can process entire YouTube playlists, generate multiple variations, and create complex multi-layered sequences <strong>without human intervention</strong>.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2><span class="emoji">🏆</span> Where Apple's Approach Wins</h2>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3><span class="emoji">🎨</span> Visual Polish</h3>
+                        <ul>
+                            <li>Motion's particle systems, behaviors, and 3D tools create more sophisticated animations</li>
+                            <li>Built-in color correction and effects are industry-standard</li>
+                            <li>Professional motion graphics capabilities</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3><span class="emoji">🔧</span> User-Friendly Workflow</h3>
+                        <ul>
+                            <li>GUI-based template creation</li>
+                            <li>Real-time preview while designing</li>
+                            <li>Inspector controls for easy parameter adjustment</li>
+                            <li>Seamless FCP integration</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3><span class="emoji">🛡️</span> Reliability & Support</h3>
+                        <ul>
+                            <li>Apple-tested and supported</li>
+                            <li>Guaranteed compatibility with FCP updates</li>
+                            <li>Professional-grade stability</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section hybrid-approach">
+                <h2><span class="emoji">💎</span> The Sweet Spot: Hybrid Approach</h2>
+                
+                <p style="font-size: 1.1em; margin-bottom: 30px; text-align: center;">The most powerful workflow combines both:</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <h3>1. Cutlass generates the structure</h3>
+                        <p>Clips, timing, data-driven content</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>2. Motion templates handle the polish</h3>
+                        <p>Professional animations, effects</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>3. FCP provides final editing</h3>
+                        <p>Color correction, audio mixing, final touches</p>
+                    </div>
+                </div>
+                
+                <div class="advantages">
+                    <h4>Example Workflow:</h4>
+                    <ul>
+                        <li><strong>Cutlass</strong> creates a Top 5 countdown with perfect timing and data</li>
+                        <li><strong>Motion template</strong> provides the glossy 3D number animations</li>
+                        <li><strong>Editor</strong> fine-tunes pacing and adds final polish in FCP</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2><span class="emoji">🌟</span> Why Cutlass is Revolutionary</h2>
+                
+                <p style="font-size: 1.1em; margin-bottom: 30px; text-align: center;"><strong>Apple's tools assume human creativity drives the process. Cutlass flips this - data and algorithms drive creativity, with humans providing direction and polish.</strong></p>
+                
+                <div class="advantages">
+                    <h4>This enables:</h4>
+                    <ul>
+                        <li><strong>Content creators</strong> to generate variations at scale</li>
+                        <li><strong>News organizations</strong> to auto-generate data visualizations</li>
+                        <li><strong>Educational content</strong> with procedurally generated timelines</li>
+                        <li><strong>Social media content</strong> pipelines</li>
+                    </ul>
+                </div>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Apple's Tools</th>
+                            <th>Cutlass</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Scale</strong></td>
+                            <td>Individual masterpieces</td>
+                            <td>Impressive content at unprecedented scale</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Speed</strong></td>
+                            <td>Manual creation process</td>
+                            <td>Automated generation in seconds</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data Integration</strong></td>
+                            <td>Manual data entry</td>
+                            <td>Direct data source integration</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Customization</strong></td>
+                            <td>Template-based variations</td>
+                            <td>Infinite procedural variations</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Learning Curve</strong></td>
+                            <td>GUI-friendly, intuitive</td>
+                            <td>Code-based, more technical</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="cta">
+                <h2>The Future is Using Both Together</h2>
+                <p style="font-size: 1.1em; margin-bottom: 30px;">Apple's tools excel at crafting individual masterpieces.<br>Cutlass excels at generating impressive content at unprecedented scale and speed.</p>
+                <a href="https://github.com/andrewarrow/cutlass" class="cta-button">Get Started with Cutlass</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
