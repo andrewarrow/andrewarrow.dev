@@ -47,11 +47,183 @@
         
         <div class="content">
             <div class="section">
-                <h2>TODO</h2>
-        </div>
+                <h2>Cutlass FCPXML Generation Framework</h2>
+                <p>Welcome to the comprehensive documentation for the Cutlass FCPXML generation framework. This provides detailed guidance for working with Final Cut Pro XML files programmatically.</p>
+                
+                <h3>🚨 Critical First Reads</h3>
+                <p>Before diving into development, <strong>you must</strong> read these essential documents:</p>
+                <ul>
+                    <li><strong><a href="https://github.com/andrewarrow/cutlass/wiki/FCPXML-Generation-Best-Practices">FCPXML Generation Best Practices</a></strong> - Core rules and patterns</li>
+                    <li><strong><a href="https://github.com/andrewarrow/cutlass/wiki/Images-vs-Videos-Architecture">Images vs Videos Architecture</a></strong> - Media type handling (prevents #1 crash cause)</li>
+                    <li><strong><a href="https://github.com/andrewarrow/cutlass/wiki/Testing-and-Debugging">Testing and Debugging</a></strong> - Validation and troubleshooting</li>
+                </ul>
+
+                <h3>📚 Wiki Navigation</h3>
+                
+                <h4>Core Documentation</h4>
+                <ul>
+                    <li><strong><a href="https://github.com/andrewarrow/cutlass/wiki/Architecture-Overview">Architecture Overview</a></strong> - System design and patterns</li>
+                    <li><strong><a href="https://github.com/andrewarrow/cutlass/wiki/FCPXML-Generation-Best-Practices">FCPXML Generation Best Practices</a></strong> - Critical rules and patterns</li>
+                    <li><strong><a href="https://github.com/andrewarrow/cutlass/wiki/Images-vs-Videos-Architecture">Images vs Videos Architecture</a></strong> - Media type handling</li>
+                    <li><strong><a href="https://github.com/andrewarrow/cutlass/wiki/Animation-and-Effects">Animation and Effects</a></strong> - Keyframes, animations, and effects</li>
+                    <li><strong><a href="https://github.com/andrewarrow/cutlass/wiki/Testing-and-Debugging">Testing and Debugging</a></strong> - Validation and troubleshooting</li>
+                    <li><strong><a href="https://github.com/andrewarrow/cutlass/wiki/API-Reference">API Reference</a></strong> - Complete function and type reference</li>
+                </ul>
+
+                <h4>Quick Reference</h4>
+                <ul>
+                    <li>Resource ID Management</li>
+                    <li>Duration and Timing</li>
+                    <li>Common Crash Patterns</li>
+                    <li>Effect UID Verification</li>
+                </ul>
+
+                <h3>🛡️ Critical Architecture Rules</h3>
+                
+                <h4>1. NO XML STRING TEMPLATES</h4>
+                <p><strong>NEVER EVER generate XML from hardcoded string templates:</strong></p>
+                <pre><code>❌ BAD: xml := "&lt;video ref=\"" + videoRef + "\"&gt;" + content + "&lt;/video&gt;"
+❌ BAD: fmt.Sprintf("&lt;asset-clip ref=\"%s\" name=\"%s\"/&gt;", ref, name)
+✅ GOOD: xml.MarshalIndent(&amp;fcp.Video{Ref: videoRef, Name: name}, "", "    ")</code></pre>
+                <p><strong>All FCPXML generation MUST use the fcp.* structs in the fcp package.</strong></p>
+
+                <h4>2. CHANGE CODE NOT XML</h4>
+                <p><strong>NEVER EVER only change problem xml in an xml file, always change the code that generates it too</strong></p>
+
+                <h4>3. Images vs Videos Fundamentals</h4>
+                <table style="border-collapse: collapse; width: 100%; margin: 20px 0;">
+                    <tr style="background-color: #f5f5f5;">
+                        <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Media Type</th>
+                        <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Asset Duration</th>
+                        <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Format frameDuration</th>
+                        <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Spine Element</th>
+                        <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Effects Support</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 12px;"><strong>Images</strong></td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">"0s" (timeless)</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;"><strong>NONE</strong></td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">&lt;video&gt;</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Simple only</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ddd; padding: 12px;"><strong>Videos</strong></td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Actual duration</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Required</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">&lt;asset-clip&gt;</td>
+                        <td style="border: 1px solid #ddd; padding: 12px;">Full support</td>
+                    </tr>
+                </table>
+
+                <h3>🚨 Top Crash Patterns to Avoid</h3>
+                <ol>
+                    <li><strong>AssetClip for images</strong> → <code>addAssetClip:toObject:parentFormatID</code> crash</li>
+                    <li><strong>frameDuration on image formats</strong> → <code>performAudioPreflightCheckForObject</code> crash</li>
+                    <li><strong>Complex effects on images</strong> → Various import crashes</li>
+                    <li><strong>Fictional effect UIDs</strong> → "invalid effect ID" crashes</li>
+                    <li><strong>Non-frame-aligned durations</strong> → "not on edit frame boundary" errors</li>
+                </ol>
+
+                <h3>Resource ID Management</h3>
+                <p>All IDs must be unique within the document:</p>
+                <pre><code>// ✅ GOOD: Use ResourceRegistry pattern
+registry := fcp.NewResourceRegistry(fcpxml)
+tx := fcp.NewTransaction(registry)
+defer tx.Rollback()
+
+ids := tx.ReserveIDs(3)
+assetID := ids[0]    // "r2"
+formatID := ids[1]   // "r3"
+effectID := ids[2]   // "r4"
+
+// ❌ BAD: Hardcoded IDs cause collisions
+assetID := "r1"  // Will conflict with other generators</code></pre>
+
+                <h3>Duration and Timing</h3>
+                <p><strong>All durations MUST use <code>fcp.ConvertSecondsToFCPDuration()</code>:</strong></p>
+                <pre><code>// ✅ GOOD: Frame-aligned duration
+duration := fcp.ConvertSecondsToFCPDuration(5.5)  // "132132/24000s"
+
+// ❌ BAD: Decimal seconds cause drift
+duration := "5.5s"  // Not frame-aligned</code></pre>
+                <p>FCP uses 24000/1001 ≈ 23.976 fps timebase for frame alignment.</p>
+
+                <h3>Effect UID Verification</h3>
+                <p><strong>ONLY use verified effect UIDs:</strong></p>
+                
+                <h4>✅ Verified Working UIDs:</h4>
+                <ul>
+                    <li><strong>Gaussian Blur</strong>: <code>FFGaussianBlur</code></li>
+                    <li><strong>Color Correction</strong>: <code>FFColorCorrection</code></li>
+                    <li><strong>Text Title</strong>: <code>.../Titles.localized/Basic Text.localized/Text.localized/Text.moti</code></li>
+                    <li><strong>Shape Mask</strong>: <code>FFSuperEllipseMask</code></li>
+                </ul>
+
+                <h4>✅ Prefer built-in elements:</h4>
+                <pre><code>// Spatial transformations - always safe
+video.AdjustTransform = &amp;fcp.AdjustTransform{
+    Position: "100 50",
+    Scale:    "1.5 1.5",
+}
+
+// Cropping - always safe  
+assetClip.AdjustCrop = &amp;fcp.AdjustCrop{
+    Mode: "trim",
+    TrimRect: &amp;fcp.TrimRect{Left: "0.1", Right: "0.9"},
+}</code></pre>
+
+                <h3>Required Architecture Pattern</h3>
+                <p><strong>ALWAYS follow this pattern:</strong></p>
+                <pre><code>func GenerateMyFeature(inputFile, outputFile string) error {
+    // 1. Use existing infrastructure  
+    fcpxml, err := fcp.GenerateEmpty("")
+    if err != nil {
+        return fmt.Errorf("failed to create base FCPXML: %v", err)
+    }
+    
+    // 2. Use proper resource management
+    registry := fcp.NewResourceRegistry(fcpxml)
+    tx := fcp.NewTransaction(registry)
+    defer tx.Rollback()
+    
+    // 3. Add content using existing functions
+    if err := fcp.AddImage(fcpxml, imagePath, duration); err != nil {
+        return err
+    }
+    
+    // 4. Apply animations (simple transforms only for images)
+    imageVideo := &amp;fcpxml.Library.Events[0].Projects[0].Sequences[0].Spine.Videos[0]
+    imageVideo.AdjustTransform = createAnimation(duration, startTime)
+    
+    // 5. Commit and write
+    if err := tx.Commit(); err != nil {
+        return err
+    }
+    return fcp.WriteToFile(fcpxml, outputFile)
+}</code></pre>
+
+                <h3>Package Structure</h3>
+                <pre><code>fcp/
+├── types.go           # All FCPXML struct definitions
+├── generator.go       # Core generation functions  
+├── registry.go        # Resource ID management
+├── transaction.go     # Transaction-based operations
+├── ids.go            # ID generation utilities
+└── *_test.go         # Comprehensive test patterns</code></pre>
+
+                <h3>Getting Started</h3>
+                <ol>
+                    <li><strong>Read</strong> <a href="https://github.com/andrewarrow/cutlass/wiki/FCPXML-Generation-Best-Practices">FCPXML Generation Best Practices</a></li>
+                    <li><strong>Study</strong> the test files in <code>fcp/*_test.go</code> for proven patterns</li>
+                    <li><strong>Validate</strong> your code with <code>fcp.ValidateClaudeCompliance()</code></li>
+                    <li><strong>Test</strong> imports in actual Final Cut Pro</li>
+                </ol>
+
+                <p><strong>Key Principle: Follow existing patterns in fcp/ package. If FCPXML generation requires more than 1 iteration to work, you're doing it wrong.</strong></p>
+            </div>
             
             <div class="cta">
-                <p style="font-size: 1.1em; margin-bottom: 30px;">Apple's tools excel at crafting individual masterpieces.<br>Cutlass excels at generating impressive content at unprecedented scale and speed.</p>
+                <p style="font-size: 1.1em; margin-bottom: 30px;">Cutlass excels at generating impressive content at unprecedented scale and speed.</p>
                 <a href="https://github.com/andrewarrow/cutlass" class="cta-button">Get Started with Cutlass</a>
             </div>
         </div>
