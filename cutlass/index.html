@@ -5,19 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <link rel="canonical" href="#">
-  <title>Cutlass vs Apple's Recommended Approaches - Revolutionary Video Automation</title>
-  <meta name="description" content="Cutlass vs Apple's Recommended Approaches - Revolutionary Video Automation">
+  <title>Cutlass Revolutionary Video Automation</title>
+  <meta name="description" content="Cutlass Revolutionary Video Automation">
   
   <meta property="og:image" content="https://i.imgur.com/r88C3Tw.png">
   <meta name="twitter:image" content="https://i.imgur.com/r88C3Tw.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   
-  <meta property="og:title" content="swiff army knife for generating fcpxml files ">
-  <meta property="og:description" content="swiff army knife for generating fcpxml files ">
+  <meta property="og:title" content="swiss army knife for generating fcpxml files ">
+  <meta property="og:description" content="swiss army knife for generating fcpxml files ">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="swiff army knife for generating fcpxml files ">
-  <meta name="twitter:description" content="swiff army knife for generating fcpxml files ">
+  <meta name="twitter:title" content="swiss army knife for generating fcpxml files ">
+  <meta name="twitter:description" content="swiss army knife for generating fcpxml files ">
   <link rel="stylesheet" type="text/css" href="main.css">
   <link rel="icon" href="https://i.imgur.com/r88C3Tw.png" type="image/png">
   <script type="text/javascript">
@@ -39,241 +39,16 @@
     <div class="container">
         <header>
             <img src="https://i.imgur.com/r88C3Tw.png" alt="Cutlass Logo" style="width: 80px; height: 80px; margin-bottom: 20px;">
-            <h1>Cutlass: FCPXML Templates</h1>
-            <p class="subtitle">Define complex xml templates, automate and reuse!</p>
-            <div class="hero-badge">
-              <a href="https://github.com/andrewarrow/cutlass/blob/ac301ed57a0b83067ed7d7f7d2d1538d4677b2b4/templates/top5.fcpxml#L189"><img src="https://i.imgur.com/M6zb9uF.png" width="600"/></a>
-            </div>
-            <div style="padding: 9px">
-              <a style="color: cyan" href="https://github.com/andrewarrow/cutlass/blob/ac301ed57a0b83067ed7d7f7d2d1538d4677b2b4/templates/top5.fcpxml#L189">top5.fcpxml</a>
-            </div>
-            <div style="padding: 9px">
-              <a style="color: cyan" href="https://github.com/andrewarrow/cutlass/blob/main/templates/number_card.fcpxml">number_card.fcpxml</a>
-            </div>
+            <h1>Cutlass: Final Cut Pro XML Generated</h1>
             <div>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/V9r_Ihl0Tyc?si=M1INYwJF3YpebFaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </header>
         
         <div class="content">
-            <div class="section apple-approach">
-                <h2>Apple's Recommended Approaches</h2>
-                
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <h3>1. Final Cut Pro's Built-in Automation</h3>
-                        <ul>
-                            <li><strong>Multicam Sync:</strong> Automatic sync based on timecode/waveforms</li>
-                            <li><strong>Roles & Subroles:</strong> Auto-organization of audio/video tracks</li>
-                            <li><strong>Keyword Collections:</strong> Auto-tagging and smart collections</li>
-                            <li><strong>Compound Clips:</strong> Reusable clip templates</li>
-                        </ul>
-                        <div class="limitations">
-                            <h4>Limitations:</h4>
-                            <ul>
-                                <li>Still requires manual media import and basic setup</li>
-                                <li>No procedural generation of complex sequences</li>
-                                <li>Limited to FCP's built-in templates and effects</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <h3>2. Motion Templates (.moti files)</h3>
-                        <ul>
-                            <li>Create custom titles, transitions, effects, generators</li>
-                            <li>Publish parameters for easy customization in FCP</li>
-                            <li>Built-in animation tools and behaviors</li>
-                            <li>Integration with FCP's inspector</li>
-                        </ul>
-                        <div class="limitations">
-                            <h4>Limitations:</h4>
-                            <ul>
-                                <li>Each template is manually created in Motion</li>
-                                <li>No data-driven content generation</li>
-                                <li>Can't automatically arrange multiple clips in timeline</li>
-                                <li>Limited to individual effect/title elements</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <h3>3. FCP's XML Import/Export</h3>
-                        <ul>
-                            <li>Apple does support FCPXML as an interchange format</li>
-                            <li>Designed for moving projects between systems</li>
-                            <li>Third-party tools can generate FCPXML</li>
-                        </ul>
-                        <div class="limitations">
-                            <h4>Limitations:</h4>
-                            <ul>
-                                <li>Complex XML structure requires deep technical knowledge</li>
-                                <li>No built-in templating or data binding</li>
-                                <li>Manual coding required for any automation</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section cutlass-advantages">
-                <h2><span class="emoji">🚀</span> Cutlass Advantages Over Apple's Approach</h2>
-                
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <h3><span class="emoji">🚀</span> Procedural Generation at Scale</h3>
-                        <div class="code-block">// Cutlass can generate 100 clips with data in seconds
-for i, videoID := range videoIDs {
-    clips = append(clips, generateClip(videoID, timestamps[i]))
-}</div>
-                        <p><strong>Motion would require manually creating 100 individual templates.</strong></p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <h3><span class="emoji">📊</span> Data-Driven Content</h3>
-                        <p><strong>Cutlass pulls from:</strong></p>
-                        <ul>
-                            <li>Wikipedia tables → Animated charts</li>
-                            <li>YouTube VTT → Auto-segmented clips</li>
-                            <li>CSV data → Dynamic infographics</li>
-                        </ul>
-                        <p><strong>Apple's tools require manual data entry for each project.</strong></p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <h3><span class="emoji">🔄</span> Complex Template Reuse</h3>
-                        <div class="code-block">{{range $index, $video := .Videos}}
-    {{template "number_card.fcpxml" $index}}
-    &lt;asset-clip ref="r{{add $index 10}}" offset="{{calculateOffset $index}}"/&gt;
-{{end}}</div>
-                        <p><strong>This generates different arrangements automatically. Motion templates are static.</strong></p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <h3><span class="emoji">⚡</span> Batch Processing</h3>
-                        <p>Cutlass can process entire YouTube playlists, generate multiple variations, and create complex multi-layered sequences <strong>without human intervention</strong>.</p>
-                    </div>
-                </div>
-            </div>
-            
             <div class="section">
-                <h2><span class="emoji">🏆</span> Where Apple's Approach Wins</h2>
-                
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <h3><span class="emoji">🎨</span> Visual Polish</h3>
-                        <ul>
-                            <li>Motion's particle systems, behaviors, and 3D tools create more sophisticated animations</li>
-                            <li>Built-in color correction and effects are industry-standard</li>
-                            <li>Professional motion graphics capabilities</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <h3><span class="emoji">🔧</span> User-Friendly Workflow</h3>
-                        <ul>
-                            <li>GUI-based template creation</li>
-                            <li>Real-time preview while designing</li>
-                            <li>Inspector controls for easy parameter adjustment</li>
-                            <li>Seamless FCP integration</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <h3><span class="emoji">🛡️</span> Reliability & Support</h3>
-                        <ul>
-                            <li>Apple-tested and supported</li>
-                            <li>Guaranteed compatibility with FCP updates</li>
-                            <li>Professional-grade stability</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section hybrid-approach">
-                <h2><span class="emoji">💎</span> The Sweet Spot: Hybrid Approach</h2>
-                
-                <p style="font-size: 1.1em; margin-bottom: 30px; text-align: center;">The most powerful workflow combines both:</p>
-                
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <h3>1. Cutlass generates the structure</h3>
-                        <p>Clips, timing, data-driven content</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <h3>2. Motion templates handle the polish</h3>
-                        <p>Professional animations, effects</p>
-                    </div>
-                    
-                    <div class="feature-card">
-                        <h3>3. FCP provides final editing</h3>
-                        <p>Color correction, audio mixing, final touches</p>
-                    </div>
-                </div>
-                
-                <div class="advantages">
-                    <h4>Example Workflow:</h4>
-                    <ul>
-                        <li><strong>Cutlass</strong> creates a Top 5 countdown with perfect timing and data</li>
-                        <li><strong>Motion template</strong> provides the glossy 3D number animations</li>
-                        <li><strong>Editor</strong> fine-tunes pacing and adds final polish in FCP</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="section">
-                <h2><span class="emoji">🌟</span> Why Cutlass is Revolutionary</h2>
-                
-                <p style="font-size: 1.1em; margin-bottom: 30px; text-align: center;"><strong>Apple's tools assume human creativity drives the process. Cutlass flips this - data and algorithms drive creativity, with humans providing direction and polish.</strong></p>
-                
-                <div class="advantages">
-                    <h4>This enables:</h4>
-                    <ul>
-                        <li><strong>Content creators</strong> to generate variations at scale</li>
-                        <li><strong>News organizations</strong> to auto-generate data visualizations</li>
-                        <li><strong>Educational content</strong> with procedurally generated timelines</li>
-                        <li><strong>Social media content</strong> pipelines</li>
-                    </ul>
-                </div>
-                
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Aspect</th>
-                            <th>Apple's Tools</th>
-                            <th>Cutlass</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Scale</strong></td>
-                            <td>Individual masterpieces</td>
-                            <td>Impressive content at unprecedented scale</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Speed</strong></td>
-                            <td>Manual creation process</td>
-                            <td>Automated generation in seconds</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Data Integration</strong></td>
-                            <td>Manual data entry</td>
-                            <td>Direct data source integration</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Customization</strong></td>
-                            <td>Template-based variations</td>
-                            <td>Infinite procedural variations</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Learning Curve</strong></td>
-                            <td>GUI-friendly, intuitive</td>
-                            <td>Code-based, more technical</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                <h2>TODO</h2>
+        </div>
             
             <div class="cta">
                 <p style="font-size: 1.1em; margin-bottom: 30px;">Apple's tools excel at crafting individual masterpieces.<br>Cutlass excels at generating impressive content at unprecedented scale and speed.</p>
