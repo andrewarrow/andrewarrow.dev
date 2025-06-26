@@ -104,44 +104,44 @@ h3 {
 }
 
 .limitations {
-    background: #fff3cd;
-    border: 1px solid #ffeaa7;
+    background: #2d3748;
+    border: 1px solid #4a5568;
     border-radius: 10px;
     padding: 20px;
     margin: 20px 0;
-    color: #856404;
+    color: #fbb6ce;
 }
 
 .limitations h4 {
-    color: #856404;
+    color: #fbb6ce;
     margin-bottom: 10px;
 }
 
 .limitations ul {
-    color: #856404;
+    color: #fbb6ce;
 }
 
 .advantages {
-    background: #d1ecf1;
-    border: 1px solid #bee5eb;
+    background: #2d3748;
+    border: 1px solid #4a5568;
     border-radius: 10px;
     padding: 20px;
     margin: 20px 0;
-    color: #0c5460;
+    color: #90cdf4;
 }
 
 .advantages h4 {
-    color: #0c5460;
+    color: #90cdf4;
     margin-bottom: 10px;
 }
 
 .advantages ul {
-    color: #0c5460;
+    color: #90cdf4;
 }
 
 code {
-    background: #f8f9fa;
-    color: #495057;
+    background: #2d3748;
+    color: #e2e8f0;
     padding: 2px 6px;
     border-radius: 4px;
     font-family: 'Monaco', 'Courier New', monospace;
