@@ -248,7 +248,7 @@
             width: 100%;
             height: 100%;
             z-index: 1;
-            pointer-events: auto;
+            pointer-events: none;
             background: transparent;
         }
         
@@ -330,11 +330,11 @@
                 <div class="iframe-container">
                     <div class="iframe-wrapper">
                         <iframe id="iframe1" width="500" height="400" frameborder="0" allow="camera; microphone"></iframe>
-                        <div class="iframe-overlay" oncontextmenu="return false;" onclick="this.style.pointerEvents='none'; setTimeout(() => this.style.pointerEvents='auto', 100);"></div>
+                        <div class="iframe-overlay"></div>
                     </div>
                     <div class="iframe-wrapper">
                         <iframe id="iframe2" width="500" height="400" frameborder="0" allow="camera; microphone"></iframe>
-                        <div class="iframe-overlay" oncontextmenu="return false;" onclick="this.style.pointerEvents='none'; setTimeout(() => this.style.pointerEvents='auto', 100);"></div>
+                        <div class="iframe-overlay"></div>
                     </div>
                 </div>
             </div>
@@ -418,17 +418,13 @@
             }
         }, 1000);
         
-        // Disable text selection on iframes
+        // Block only right-clicks on iframe areas
         document.addEventListener('DOMContentLoaded', function() {
-            const iframes = document.querySelectorAll('iframe');
-            iframes.forEach(function(iframe) {
-                iframe.style.pointerEvents = 'none';
-                iframe.addEventListener('load', function() {
-                    iframe.style.pointerEvents = 'auto';
-                    iframe.contentDocument.addEventListener('contextmenu', function(e) {
-                        e.preventDefault();
-                        return false;
-                    });
+            const wrappers = document.querySelectorAll('.iframe-wrapper');
+            wrappers.forEach(function(wrapper) {
+                wrapper.addEventListener('contextmenu', function(e) {
+                    e.preventDefault();
+                    return false;
                 });
             });
         });
