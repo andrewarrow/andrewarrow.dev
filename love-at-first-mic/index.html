@@ -153,6 +153,61 @@
             background: #ff5252;
         }
         
+        .invite-section {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .invite-section h3 {
+            color: #764ba2;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .invite-input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .invite-input input {
+            padding: 10px 15px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            width: 200px;
+        }
+        
+        .invite-input input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .go-button {
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .go-button:hover {
+            background: #5a67d8;
+        }
+        
+        .invite-result {
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+        
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.5rem;
@@ -213,7 +268,35 @@
                 
                 <a href="mailto:lafm@andrewarrow.dev" class="cta-button">Apply Now</a>
             </div>
+            
+            <div class="invite-section">
+                <h3>Have you already been sent an invite code? Enter it here:</h3>
+                <div class="invite-input">
+                    <input type="text" id="inviteCode" placeholder="Enter invite code">
+                    <button class="go-button" onclick="processInviteCode()">Go</button>
+                </div>
+                <div id="inviteResult" class="invite-result"></div>
+            </div>
         </div>
     </div>
+    
+    <script>
+        function processInviteCode() {
+            const input = document.getElementById('inviteCode');
+            const result = document.getElementById('inviteResult');
+            const value = input.value.trim();
+            
+            if (value) {
+                result.innerHTML = '<strong>' + value + '</strong>';
+                input.value = '';
+            }
+        }
+        
+        document.getElementById('inviteCode').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                processInviteCode();
+            }
+        });
+    </script>
 </body>
 </html>
