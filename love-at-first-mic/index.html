@@ -188,6 +188,19 @@
             border-color: #667eea;
         }
         
+        .invite-input select {
+            padding: 10px 15px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            background: white;
+        }
+        
+        .invite-input select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
         .go-button {
             background: #667eea;
             color: white;
@@ -273,6 +286,10 @@
                 <h3>Have you already been sent an invite code? Enter it here:</h3>
                 <div class="invite-input">
                     <input type="text" id="inviteCode" placeholder="Enter invite code">
+                    <select id="personSelect">
+                        <option value="PersonA">PersonA</option>
+                        <option value="PersonB">PersonB</option>
+                    </select>
                     <button class="go-button" onclick="processInviteCode()">Go</button>
                 </div>
                 <div id="inviteResult" class="invite-result"></div>
@@ -284,10 +301,30 @@
         function processInviteCode() {
             const input = document.getElementById('inviteCode');
             const result = document.getElementById('inviteResult');
+            const personSelect = document.getElementById('personSelect');
             const value = input.value.trim();
+            const selectedPerson = personSelect.value;
             
             if (value) {
-                result.innerHTML = '<strong>' + value + '</strong>';
+                if (value.length === 14) {
+                    const personA = value.substring(0, 7);
+                    const personB = value.substring(7);
+                    
+                    result.innerHTML = 
+                        '<div id="personAResult">Person A: <strong>' + personA + '</strong></div>' +
+                        '<div id="personBResult">Person B: <strong>' + personB + '</strong></div>';
+                    
+                    // Show/hide based on selection
+                    if (selectedPerson === 'PersonA') {
+                        document.getElementById('personAResult').style.display = 'block';
+                        document.getElementById('personBResult').style.display = 'none';
+                    } else {
+                        document.getElementById('personAResult').style.display = 'none';
+                        document.getElementById('personBResult').style.display = 'block';
+                    }
+                } else {
+                    result.innerHTML = '<strong>' + value + '</strong>';
+                }
                 input.value = '';
             }
         }
