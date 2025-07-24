@@ -231,9 +231,25 @@
             justify-content: center;
         }
         
+        .iframe-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+        
         .iframe-container iframe {
             border: 2px solid #ddd;
             border-radius: 10px;
+        }
+        
+        .iframe-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: auto;
+            background: transparent;
         }
         
         @media (max-width: 768px) {
@@ -312,8 +328,14 @@
             
             <div class="iframe-section" id="iframeSection" style="display: none;">
                 <div class="iframe-container">
-                    <iframe id="iframe1" width="500" height="400" frameborder="0" allow="camera; microphone"></iframe>
-                    <iframe id="iframe2" width="500" height="400" frameborder="0" allow="camera; microphone"></iframe>
+                    <div class="iframe-wrapper">
+                        <iframe id="iframe1" width="500" height="400" frameborder="0" allow="camera; microphone"></iframe>
+                        <div class="iframe-overlay" oncontextmenu="return false;" onclick="this.style.pointerEvents='none'; setTimeout(() => this.style.pointerEvents='auto', 100);"></div>
+                    </div>
+                    <div class="iframe-wrapper">
+                        <iframe id="iframe2" width="500" height="400" frameborder="0" allow="camera; microphone"></iframe>
+                        <div class="iframe-overlay" oncontextmenu="return false;" onclick="this.style.pointerEvents='none'; setTimeout(() => this.style.pointerEvents='auto', 100);"></div>
+                    </div>
                 </div>
             </div>
         </div>
