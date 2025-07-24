@@ -247,9 +247,10 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 10;
-            pointer-events: none;
+            z-index: 999;
             background: transparent;
+            pointer-events: auto;
+            user-select: none;
         }
         
         @media (max-width: 768px) {
@@ -418,22 +419,42 @@
             }
         }, 1000);
         
-        // Add right-click detection to iframe wrappers
+        // Hybrid approach based on production GitHub examples
         document.addEventListener('DOMContentLoaded', function() {
-            const wrappers = document.querySelectorAll('.iframe-wrapper');
-            wrappers.forEach(function(wrapper) {
-                wrapper.addEventListener('mousedown', function(e) {
+            const overlays = document.querySelectorAll('.iframe-overlay');
+            
+            overlays.forEach(function(overlay) {
+                // Block right-clicks and context menu
+                overlay.addEventListener('contextmenu', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    return false;
+                });
+                
+                // Handle mouse events - allow left clicks to pass through
+                overlay.addEventListener('mousedown', function(e) {
                     if (e.button === 2) { // Right click
                         e.preventDefault();
                         e.stopPropagation();
                         return false;
+                    } else {
+                        // Left click or middle click - temporarily disable overlay
+                        overlay.style.pointerEvents = 'none';
+                        
+                        // Re-enable after a short delay
+                        setTimeout(function() {
+                            overlay.style.pointerEvents = 'auto';
+                        }, 50);
                     }
                 });
                 
-                wrapper.addEventListener('contextmenu', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    return false;
+                // Additional protection for right-click variations
+                overlay.addEventListener('mouseup', function(e) {
+                    if (e.button === 2) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        return false;
+                    }
                 });
             });
         });
