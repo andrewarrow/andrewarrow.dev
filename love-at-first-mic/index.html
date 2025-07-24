@@ -221,6 +221,21 @@
             font-size: 1.1rem;
         }
         
+        .iframe-section {
+            margin: 30px 0;
+        }
+        
+        .iframe-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .iframe-container iframe {
+            border: 2px solid #ddd;
+            border-radius: 10px;
+        }
+        
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.5rem;
@@ -294,6 +309,13 @@
                 </div>
                 <div id="inviteResult" class="invite-result"></div>
             </div>
+            
+            <div class="iframe-section" id="iframeSection" style="display: none;">
+                <div class="iframe-container">
+                    <iframe id="iframe1" width="500" height="400" frameborder="0"></iframe>
+                    <iframe id="iframe2" width="500" height="400" frameborder="0"></iframe>
+                </div>
+            </div>
         </div>
     </div>
     
@@ -318,10 +340,21 @@
                     if (selectedPerson === 'PersonA') {
                         document.getElementById('personAResult').style.display = 'block';
                         document.getElementById('personBResult').style.display = 'none';
+                        
+                        // Set iframe sources for PersonA selection
+                        document.getElementById('iframe1').src = 'https://vdo.ninja/?push=' + personA + '&novideo';
+                        document.getElementById('iframe2').src = 'https://vdo.ninja/?view=' + personB + '&no-video';
                     } else {
                         document.getElementById('personAResult').style.display = 'none';
                         document.getElementById('personBResult').style.display = 'block';
+                        
+                        // Set iframe sources for PersonB selection (reversed)
+                        document.getElementById('iframe1').src = 'https://vdo.ninja/?push=' + personB + '&novideo';
+                        document.getElementById('iframe2').src = 'https://vdo.ninja/?view=' + personA + '&no-video';
                     }
+                    
+                    // Show the iframe section
+                    document.getElementById('iframeSection').style.display = 'block';
                 } else {
                     result.innerHTML = '<strong>' + value + '</strong>';
                 }
