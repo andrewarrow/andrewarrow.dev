@@ -248,7 +248,7 @@
             width: 100%;
             height: 100%;
             z-index: 10;
-            pointer-events: auto;
+            pointer-events: none;
             background: transparent;
         }
         
@@ -418,42 +418,22 @@
             }
         }, 1000);
         
-        // Block right-clicks but allow left-clicks to pass through
+        // Add right-click detection to iframe wrappers
         document.addEventListener('DOMContentLoaded', function() {
-            const overlays = document.querySelectorAll('.iframe-overlay');
-            overlays.forEach(function(overlay) {
-                // Block right-click context menu
-                overlay.addEventListener('contextmenu', function(e) {
-                    e.preventDefault();
-                    return false;
-                });
-                
-                // Allow left clicks to pass through to iframe
-                overlay.addEventListener('click', function(e) {
-                    if (e.button === 0) { // Left click
-                        overlay.style.pointerEvents = 'none';
-                        const elementBelow = document.elementFromPoint(e.clientX, e.clientY);
-                        if (elementBelow) {
-                            elementBelow.click();
-                        }
-                        setTimeout(() => {
-                            overlay.style.pointerEvents = 'auto';
-                        }, 10);
-                    }
-                });
-                
-                // Block right mouse button down
-                overlay.addEventListener('mousedown', function(e) {
+            const wrappers = document.querySelectorAll('.iframe-wrapper');
+            wrappers.forEach(function(wrapper) {
+                wrapper.addEventListener('mousedown', function(e) {
                     if (e.button === 2) { // Right click
                         e.preventDefault();
+                        e.stopPropagation();
                         return false;
-                    } else {
-                        // Pass through other mouse events
-                        overlay.style.pointerEvents = 'none';
-                        setTimeout(() => {
-                            overlay.style.pointerEvents = 'auto';
-                        }, 10);
                     }
+                });
+                
+                wrapper.addEventListener('contextmenu', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    return false;
                 });
             });
         });
