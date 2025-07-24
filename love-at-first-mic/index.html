@@ -241,6 +241,16 @@
             border-radius: 10px;
         }
         
+        .iframe-blocker {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999;
+            background: transparent;
+            pointer-events: none;
+        }
         
         @media (max-width: 768px) {
             h1 {
@@ -318,11 +328,13 @@
             
             <div class="iframe-section" id="iframeSection" style="display: none;">
                 <div class="iframe-container">
-                    <div class="iframe-wrapper" oncontextmenu="return false;">
+                    <div class="iframe-wrapper">
                         <iframe id="iframe1" width="500" height="400" frameborder="0" allow="camera; microphone"></iframe>
+                        <div class="iframe-blocker" id="blocker1"></div>
                     </div>
-                    <div class="iframe-wrapper" oncontextmenu="return false;">
+                    <div class="iframe-wrapper">
                         <iframe id="iframe2" width="500" height="400" frameborder="0" allow="camera; microphone"></iframe>
+                        <div class="iframe-blocker" id="blocker2"></div>
                     </div>
                 </div>
             </div>
@@ -406,14 +418,55 @@
             }
         }, 1000);
         
-        // Simple approach - just block right-clicks on wrapper
+        // Aggressive iframe protection with click-through
         document.addEventListener('DOMContentLoaded', function() {
-            const wrappers = document.querySelectorAll('.iframe-wrapper');
-            wrappers.forEach(function(wrapper) {
-                wrapper.addEventListener('contextmenu', function(e) {
+            const blockers = document.querySelectorAll('.iframe-blocker');
+            
+            blockers.forEach(function(blocker) {
+                // Block all right-click attempts
+                blocker.addEventListener('contextmenu', function(e) {
                     e.preventDefault();
+                    e.stopPropagation();
                     return false;
                 });
+                
+                // Handle all mouse events
+                blocker.addEventListener('mousedown', function(e) {
+                    if (e.button === 2) { // Right click
+                        e.preventDefault();
+                        e.stopPropagation();
+                        return false;
+                    }
+                    
+                    // For left clicks, temporarily allow interaction
+                    blocker.style.pointerEvents = 'none';
+                    
+                    // Create synthetic click event at same position
+                    setTimeout(function() {
+                        const iframe = blocker.previousElementSibling;
+                        if (iframe && iframe.tagName === 'IFRAME') {
+                            // Try to pass click to iframe
+                            const rect = iframe.getBoundingClientRect();
+                            const x = e.clientX - rect.left;
+                            const y = e.clientY - rect.top;
+                            
+                            try {
+                                // Focus the iframe
+                                iframe.focus();
+                            } catch(err) {
+                                // Cross-origin, ignore
+                            }
+                        }
+                        
+                        // Re-enable blocker after short delay
+                        setTimeout(function() {
+                            blocker.style.pointerEvents = 'auto';
+                        }, 100);
+                    }, 1);
+                });
+                
+                // Initially enable pointer events on blocker
+                blocker.style.pointerEvents = 'auto';
             });
         });
         
