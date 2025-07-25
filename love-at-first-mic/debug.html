@@ -513,19 +513,24 @@
                     console.log(`[${wrapperId}] Has allow-clicks class: ${wrapper.classList.contains('allow-clicks')}`);
                 }, true);
                 
-                // Disable after left mouse up with delay for click to register
+                // Don't disable immediately - wait for actual interaction
                 wrapper.addEventListener('mouseup', function(e) {
                     console.log(`[${wrapperId}] MOUSEUP - Button: ${e.button}, isLeftMouseDown: ${isLeftMouseDown}`);
                     
                     if (e.button === 0 && isLeftMouseDown) {
-                        console.log(`[${wrapperId}] LEFT MOUSEUP - Scheduling disable in 150ms`);
+                        console.log(`[${wrapperId}] LEFT MOUSEUP - Scheduling disable in 500ms`);
                         setTimeout(function() {
                             wrapper.classList.remove('allow-clicks');
                             isLeftMouseDown = false;
                             console.log(`[${wrapperId}] DISABLED - allow-clicks class removed`);
-                        }, 150);
+                        }, 500); // Much longer delay to ensure click gets through
                     }
                 }, true);
+                
+                // Track when iframe actually receives clicks
+                iframe.addEventListener('click', function(e) {
+                    console.log(`[${wrapperId}] IFRAME CLICK SUCCESS - Click reached iframe!`);
+                }, false);
                 
                 // Block all context menus at multiple levels
                 wrapper.addEventListener('contextmenu', function(e) {
