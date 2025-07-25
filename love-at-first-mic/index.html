@@ -246,20 +246,6 @@
             pointer-events: auto;
         }
         
-        .iframe-shield {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-            background: transparent;
-            pointer-events: none;
-        }
-        
-        .iframe-wrapper.allow-clicks .iframe-shield {
-            pointer-events: auto;
-        }
         
         
         @media (max-width: 768px) {
@@ -340,11 +326,9 @@
                 <div class="iframe-container">
                     <div class="iframe-wrapper">
                         <iframe id="iframe1" width="500" height="400" frameborder="0" allow="camera; microphone"></iframe>
-                        <div class="iframe-shield"></div>
                     </div>
                     <div class="iframe-wrapper">
                         <iframe id="iframe2" width="500" height="400" frameborder="0" allow="camera; microphone"></iframe>
-                        <div class="iframe-shield"></div>
                     </div>
                 </div>
             </div>
@@ -437,93 +421,48 @@
             
             wrappers.forEach(function(wrapper, index) {
                 const iframe = wrapper.querySelector('iframe');
-                const shield = wrapper.querySelector('.iframe-shield');
                 const wrapperId = 'wrapper-' + index;
                 
-                let rightClickBlocked = false;
+                console.log(`[${wrapperId}] Initialized iframe wrapper - NO SHIELD`);
                 
-                console.log(`[${wrapperId}] Initialized iframe wrapper with shield`);
-                
-                // Enable iframe on hover
+                // Enable iframe on hover - this allows direct interaction
                 wrapper.addEventListener('mouseenter', function() {
-                    if (!rightClickBlocked) {
-                        wrapper.classList.add('allow-clicks');
-                        console.log(`[${wrapperId}] MOUSE ENTER - Iframe enabled`);
-                    }
+                    wrapper.classList.add('allow-clicks');
+                    console.log(`[${wrapperId}] MOUSE ENTER - Iframe enabled for direct clicks`);
                 });
                 
-                // Only disable for right-clicks, or when leaving
+                // Intercept right-clicks before they reach iframe
                 wrapper.addEventListener('mousedown', function(e) {
                     console.log(`[${wrapperId}] MOUSEDOWN - Button: ${e.button}, Target: ${e.target.tagName}`);
                     
                     if (e.button === 2) { // Right click
-                        console.log(`[${wrapperId}] RIGHT CLICK - Disabling iframe and blocking`);
-                        rightClickBlocked = true;
+                        console.log(`[${wrapperId}] RIGHT CLICK DETECTED - Disabling iframe immediately`);
                         wrapper.classList.remove('allow-clicks');
                         e.preventDefault();
                         e.stopPropagation();
                         return false;
                     } else if (e.button === 0) {
-                        console.log(`[${wrapperId}] LEFT CLICK - Allowing through`);
-                        // Don't interfere with left clicks at all
+                        console.log(`[${wrapperId}] LEFT CLICK - Not interfering, should reach iframe directly`);
+                        // Don't prevent or interfere with left clicks
                     }
-                }, true);
+                }, true); // Capture phase to intercept before iframe
                 
-                // Handle shield events - this intercepts clicks before they reach iframe
-                shield.addEventListener('mousedown', function(e) {
-                    console.log(`[${wrapperId}] SHIELD MOUSEDOWN - Button: ${e.button}`);
-                    
-                    if (e.button === 2) { // Right click
-                        console.log(`[${wrapperId}] SHIELD BLOCKED RIGHT CLICK`);
-                        rightClickBlocked = true;
-                        wrapper.classList.remove('allow-clicks');
-                        e.preventDefault();
-                        e.stopPropagation();
-                        return false;
-                    } else if (e.button === 0) { // Left click
-                        console.log(`[${wrapperId}] SHIELD DISABLING FOR REAL CLICK`);
-                        // Disable shield to let real click through
-                        shield.style.pointerEvents = 'none';
-                        console.log(`[${wrapperId}] SHIELD DISABLED - CLICK SHOULD REACH IFRAME NOW`);
-                        
-                        // Re-enable shield after a delay
-                        setTimeout(() => {
-                            shield.style.pointerEvents = 'auto';
-                            console.log(`[${wrapperId}] SHIELD RE-ENABLED`);
-                        }, 200);
-                    }
-                }, true);
+                // Track iframe clicks to confirm they're working
+                iframe.addEventListener('click', function(e) {
+                    console.log(`[${wrapperId}] IFRAME CLICK SUCCESS - Direct click reached iframe!`);
+                }, false);
                 
-                shield.addEventListener('contextmenu', function(e) {
-                    console.log(`[${wrapperId}] SHIELD BLOCKED CONTEXT MENU`);
+                // Block context menus
+                wrapper.addEventListener('contextmenu', function(e) {
+                    console.log(`[${wrapperId}] CONTEXT MENU - Blocked at wrapper level`);
                     e.preventDefault();
                     e.stopPropagation();
                     return false;
                 }, true);
                 
-                // Track clicks for debugging
-                wrapper.addEventListener('click', function(e) {
-                    console.log(`[${wrapperId}] CLICK EVENT - Button: ${e.button}, Target: ${e.target.tagName}`);
-                    console.log(`[${wrapperId}] Has allow-clicks class: ${wrapper.classList.contains('allow-clicks')}`);
-                }, false);
-                
-                // Reset right-click block when mouse moves around
-                wrapper.addEventListener('mousemove', function(e) {
-                    if (rightClickBlocked) {
-                        rightClickBlocked = false;
-                        wrapper.classList.add('allow-clicks');
-                        console.log(`[${wrapperId}] MOUSE MOVE - Re-enabled iframe after right-click`);
-                    }
-                });
-                
-                // Track when iframe actually receives clicks
-                iframe.addEventListener('click', function(e) {
-                    console.log(`[${wrapperId}] IFRAME CLICK SUCCESS - Click reached iframe!`);
-                }, false);
-                
-                // Block all context menus at multiple levels
-                wrapper.addEventListener('contextmenu', function(e) {
-                    console.log(`[${wrapperId}] CONTEXT MENU - Blocked`);
+                // Also block context menu on iframe itself
+                iframe.addEventListener('contextmenu', function(e) {
+                    console.log(`[${wrapperId}] IFRAME CONTEXT MENU - Blocked`);
                     e.preventDefault();
                     e.stopPropagation();
                     return false;
@@ -533,7 +472,6 @@
                 wrapper.addEventListener('mouseleave', function() {
                     console.log(`[${wrapperId}] MOUSE LEAVE - Disabling iframe`);
                     wrapper.classList.remove('allow-clicks');
-                    rightClickBlocked = false;
                 });
             });
         });
