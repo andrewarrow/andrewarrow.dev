@@ -481,24 +481,16 @@
                         e.stopPropagation();
                         return false;
                     } else if (e.button === 0) { // Left click
-                        console.log(`[${wrapperId}] SHIELD PASSING LEFT CLICK TO IFRAME`);
-                        // Simulate click on iframe at the same coordinates
+                        console.log(`[${wrapperId}] SHIELD DISABLING FOR REAL CLICK`);
+                        // Disable shield to let real click through
+                        shield.style.pointerEvents = 'none';
+                        console.log(`[${wrapperId}] SHIELD DISABLED - CLICK SHOULD REACH IFRAME NOW`);
+                        
+                        // Re-enable shield after a delay
                         setTimeout(() => {
-                            try {
-                                const clickEvent = new MouseEvent('click', {
-                                    clientX: e.clientX,
-                                    clientY: e.clientY,
-                                    button: 0,
-                                    bubbles: true,
-                                    cancelable: true
-                                });
-                                iframe.dispatchEvent(clickEvent);
-                                iframe.focus();
-                                console.log(`[${wrapperId}] SYNTHETIC CLICK SENT TO IFRAME`);
-                            } catch(err) {
-                                console.log(`[${wrapperId}] IFRAME CLICK FAILED: ${err.message}`);
-                            }
-                        }, 1);
+                            shield.style.pointerEvents = 'auto';
+                            console.log(`[${wrapperId}] SHIELD RE-ENABLED`);
+                        }, 200);
                     }
                 }, true);
                 
