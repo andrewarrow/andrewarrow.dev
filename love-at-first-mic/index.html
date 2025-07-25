@@ -242,6 +242,10 @@
             pointer-events: none;
         }
         
+        .iframe-wrapper.allow-clicks iframe {
+            pointer-events: auto;
+        }
+        
         
         @media (max-width: 768px) {
             h1 {
@@ -414,47 +418,44 @@
             wrappers.forEach(function(wrapper) {
                 const iframe = wrapper.querySelector('iframe');
                 
-                // Enable iframe just before any mouse interaction
-                wrapper.addEventListener('mouseenter', function() {
-                    iframe.style.pointerEvents = 'auto';
-                });
+                let isLeftMouseDown = false;
                 
-                // Disable iframe when mouse leaves
-                wrapper.addEventListener('mouseleave', function() {
-                    iframe.style.pointerEvents = 'none';
-                });
-                
-                // Block right-clicks using capture phase to intercept before iframe
+                // Only enable iframe during left mouse button press
                 wrapper.addEventListener('mousedown', function(e) {
-                    if (e.button === 2) { // Right click
-                        iframe.style.pointerEvents = 'none';
+                    if (e.button === 0) { // Left click only
+                        isLeftMouseDown = true;
+                        wrapper.classList.add('allow-clicks');
+                    } else {
+                        // Block all other buttons completely
                         e.preventDefault();
                         e.stopPropagation();
-                        
-                        // Re-enable after short delay for continued interaction
-                        setTimeout(function() {
-                            if (wrapper.matches(':hover')) {
-                                iframe.style.pointerEvents = 'auto';
-                            }
-                        }, 100);
-                        
+                        wrapper.classList.remove('allow-clicks');
                         return false;
                     }
-                }, true); // Capture phase - intercepts before iframe gets the event
+                }, true);
                 
-                // Additional context menu blocking
+                // Disable after left mouse up with delay for click to register
+                wrapper.addEventListener('mouseup', function(e) {
+                    if (e.button === 0 && isLeftMouseDown) {
+                        setTimeout(function() {
+                            wrapper.classList.remove('allow-clicks');
+                            isLeftMouseDown = false;
+                        }, 150);
+                    }
+                }, true);
+                
+                // Block all context menus at multiple levels
                 wrapper.addEventListener('contextmenu', function(e) {
                     e.preventDefault();
                     e.stopPropagation();
                     return false;
                 }, true);
                 
-                // Block right-click events that might reach the iframe
-                iframe.addEventListener('contextmenu', function(e) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    return false;
-                }, true);
+                // Reset state on mouse leave
+                wrapper.addEventListener('mouseleave', function() {
+                    wrapper.classList.remove('allow-clicks');
+                    isLeftMouseDown = false;
+                });
             });
         });
         
