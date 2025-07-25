@@ -424,21 +424,37 @@
                     iframe.style.pointerEvents = 'none';
                 });
                 
-                // Block right-clicks on the wrapper
+                // Block right-clicks using capture phase to intercept before iframe
                 wrapper.addEventListener('mousedown', function(e) {
                     if (e.button === 2) { // Right click
+                        iframe.style.pointerEvents = 'none';
                         e.preventDefault();
                         e.stopPropagation();
-                        iframe.style.pointerEvents = 'none';
+                        
+                        // Re-enable after short delay for continued interaction
+                        setTimeout(function() {
+                            if (wrapper.matches(':hover')) {
+                                iframe.style.pointerEvents = 'auto';
+                            }
+                        }, 100);
+                        
                         return false;
                     }
-                });
+                }, true); // Capture phase - intercepts before iframe gets the event
                 
-                // Block context menu on wrapper
+                // Additional context menu blocking
                 wrapper.addEventListener('contextmenu', function(e) {
                     e.preventDefault();
+                    e.stopPropagation();
                     return false;
-                });
+                }, true);
+                
+                // Block right-click events that might reach the iframe
+                iframe.addEventListener('contextmenu', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    return false;
+                }, true);
             });
         });
         
