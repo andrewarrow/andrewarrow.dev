@@ -414,35 +414,23 @@
             wrappers.forEach(function(wrapper) {
                 const iframe = wrapper.querySelector('iframe');
                 
-                // Listen for mousedown on the wrapper
-                wrapper.addEventListener('mousedown', function(e) {
-                    if (e.button === 0) { // Left click
-                        // Enable iframe interaction
-                        iframe.style.pointerEvents = 'auto';
-                        
-                        // Focus the iframe to ensure it receives the click
-                        setTimeout(function() {
-                            try {
-                                iframe.focus();
-                            } catch(err) {
-                                // Cross-origin restriction, ignore
-                            }
-                        }, 1);
-                        
-                    } else if (e.button === 2) { // Right click
-                        // Block right click completely
-                        e.preventDefault();
-                        e.stopPropagation();
-                        return false;
-                    }
+                // Enable iframe just before any mouse interaction
+                wrapper.addEventListener('mouseenter', function() {
+                    iframe.style.pointerEvents = 'auto';
                 });
                 
-                // Re-disable iframe after mouseup
-                wrapper.addEventListener('mouseup', function(e) {
-                    if (e.button === 0) { // Left click release
-                        setTimeout(function() {
-                            iframe.style.pointerEvents = 'none';
-                        }, 100);
+                // Disable iframe when mouse leaves
+                wrapper.addEventListener('mouseleave', function() {
+                    iframe.style.pointerEvents = 'none';
+                });
+                
+                // Block right-clicks on the wrapper
+                wrapper.addEventListener('mousedown', function(e) {
+                    if (e.button === 2) { // Right click
+                        e.preventDefault();
+                        e.stopPropagation();
+                        iframe.style.pointerEvents = 'none';
+                        return false;
                     }
                 });
                 
