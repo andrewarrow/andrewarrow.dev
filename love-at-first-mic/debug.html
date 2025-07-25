@@ -507,11 +507,26 @@
                     }
                 }, true);
                 
-                // Also log regular click events
+                // Handle click events and forward to iframe if needed
                 wrapper.addEventListener('click', function(e) {
                     console.log(`[${wrapperId}] CLICK EVENT - Button: ${e.button}, Target: ${e.target.tagName}`);
                     console.log(`[${wrapperId}] Has allow-clicks class: ${wrapper.classList.contains('allow-clicks')}`);
-                }, true);
+                    
+                    // If click was on wrapper (not iframe), try to focus iframe
+                    if (e.target === wrapper && wrapper.classList.contains('allow-clicks')) {
+                        console.log(`[${wrapperId}] CLICK ON WRAPPER - Focusing iframe`);
+                        
+                        setTimeout(() => {
+                            try {
+                                iframe.focus();
+                                iframe.click();
+                                console.log(`[${wrapperId}] IFRAME FOCUSED AND CLICKED`);
+                            } catch(err) {
+                                console.log(`[${wrapperId}] IFRAME FOCUS/CLICK FAILED: ${err.message}`);
+                            }
+                        }, 10);
+                    }
+                }, false);
                 
                 // Don't disable immediately - wait for actual interaction
                 wrapper.addEventListener('mouseup', function(e) {
