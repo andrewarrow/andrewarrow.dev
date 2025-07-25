@@ -484,63 +484,49 @@
                 const iframe = wrapper.querySelector('iframe');
                 const wrapperId = 'wrapper-' + index;
                 
-                let isLeftMouseDown = false;
+                let rightClickBlocked = false;
                 
                 console.log(`[${wrapperId}] Initialized iframe wrapper`);
                 
-                // Only enable iframe during left mouse button press
+                // Enable iframe on hover
+                wrapper.addEventListener('mouseenter', function() {
+                    if (!rightClickBlocked) {
+                        wrapper.classList.add('allow-clicks');
+                        console.log(`[${wrapperId}] MOUSE ENTER - Iframe enabled`);
+                    }
+                });
+                
+                // Only disable for right-clicks, or when leaving
                 wrapper.addEventListener('mousedown', function(e) {
                     console.log(`[${wrapperId}] MOUSEDOWN - Button: ${e.button}, Target: ${e.target.tagName}`);
                     
-                    if (e.button === 0) { // Left click only
-                        isLeftMouseDown = true;
-                        wrapper.classList.add('allow-clicks');
-                        console.log(`[${wrapperId}] LEFT CLICK - Enabled iframe (allow-clicks class added)`);
-                        console.log(`[${wrapperId}] Iframe pointer-events: ${window.getComputedStyle(iframe).pointerEvents}`);
-                    } else {
-                        // Block all other buttons completely
-                        console.log(`[${wrapperId}] NON-LEFT CLICK - Button ${e.button} blocked`);
+                    if (e.button === 2) { // Right click
+                        console.log(`[${wrapperId}] RIGHT CLICK - Disabling iframe and blocking`);
+                        rightClickBlocked = true;
+                        wrapper.classList.remove('allow-clicks');
                         e.preventDefault();
                         e.stopPropagation();
-                        wrapper.classList.remove('allow-clicks');
                         return false;
+                    } else if (e.button === 0) {
+                        console.log(`[${wrapperId}] LEFT CLICK - Allowing through`);
+                        // Don't interfere with left clicks at all
                     }
                 }, true);
                 
-                // Handle click events and forward to iframe if needed
+                // Track clicks for debugging
                 wrapper.addEventListener('click', function(e) {
                     console.log(`[${wrapperId}] CLICK EVENT - Button: ${e.button}, Target: ${e.target.tagName}`);
                     console.log(`[${wrapperId}] Has allow-clicks class: ${wrapper.classList.contains('allow-clicks')}`);
-                    
-                    // If click was on wrapper (not iframe), try to focus iframe
-                    if (e.target === wrapper && wrapper.classList.contains('allow-clicks')) {
-                        console.log(`[${wrapperId}] CLICK ON WRAPPER - Focusing iframe`);
-                        
-                        setTimeout(() => {
-                            try {
-                                iframe.focus();
-                                iframe.click();
-                                console.log(`[${wrapperId}] IFRAME FOCUSED AND CLICKED`);
-                            } catch(err) {
-                                console.log(`[${wrapperId}] IFRAME FOCUS/CLICK FAILED: ${err.message}`);
-                            }
-                        }, 10);
-                    }
                 }, false);
                 
-                // Don't disable immediately - wait for actual interaction
-                wrapper.addEventListener('mouseup', function(e) {
-                    console.log(`[${wrapperId}] MOUSEUP - Button: ${e.button}, isLeftMouseDown: ${isLeftMouseDown}`);
-                    
-                    if (e.button === 0 && isLeftMouseDown) {
-                        console.log(`[${wrapperId}] LEFT MOUSEUP - Scheduling disable in 500ms`);
-                        setTimeout(function() {
-                            wrapper.classList.remove('allow-clicks');
-                            isLeftMouseDown = false;
-                            console.log(`[${wrapperId}] DISABLED - allow-clicks class removed`);
-                        }, 500); // Much longer delay to ensure click gets through
+                // Reset right-click block when mouse moves around
+                wrapper.addEventListener('mousemove', function(e) {
+                    if (rightClickBlocked) {
+                        rightClickBlocked = false;
+                        wrapper.classList.add('allow-clicks');
+                        console.log(`[${wrapperId}] MOUSE MOVE - Re-enabled iframe after right-click`);
                     }
-                }, true);
+                });
                 
                 // Track when iframe actually receives clicks
                 iframe.addEventListener('click', function(e) {
@@ -555,11 +541,11 @@
                     return false;
                 }, true);
                 
-                // Reset state on mouse leave
+                // Disable iframe when mouse leaves
                 wrapper.addEventListener('mouseleave', function() {
-                    console.log(`[${wrapperId}] MOUSE LEAVE - Resetting state`);
+                    console.log(`[${wrapperId}] MOUSE LEAVE - Disabling iframe`);
                     wrapper.classList.remove('allow-clicks');
-                    isLeftMouseDown = false;
+                    rightClickBlocked = false;
                 });
             });
         });
