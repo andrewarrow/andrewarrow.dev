@@ -261,34 +261,6 @@
             pointer-events: auto;
         }
         
-        #debug-panel {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            width: 400px;
-            height: 300px;
-            background: black;
-            color: lime;
-            font-family: monospace;
-            font-size: 12px;
-            padding: 10px;
-            border: 1px solid #333;
-            z-index: 9999;
-            overflow-y: auto;
-            display: none;
-        }
-        
-        #debug-toggle {
-            position: fixed;
-            top: 10px;
-            right: 420px;
-            z-index: 10000;
-            background: #333;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
         
         @media (max-width: 768px) {
             h1 {
@@ -379,42 +351,8 @@
         </div>
     </div>
     
-    <!-- Debug Panel -->
-    <button id="debug-toggle">Debug</button>
-    <div id="debug-panel"></div>
     
     <script>
-        // Debug logging system
-        const debugPanel = document.getElementById('debug-panel');
-        const debugToggle = document.getElementById('debug-toggle');
-        let debugLogs = [];
-        
-        // Override console.log to capture logs
-        const originalLog = console.log;
-        console.log = function(...args) {
-            originalLog.apply(console, args);
-            const message = args.join(' ');
-            debugLogs.push(new Date().toLocaleTimeString() + ': ' + message);
-            if (debugLogs.length > 50) debugLogs.shift(); // Keep only last 50 logs
-            updateDebugPanel();
-        };
-        
-        // Toggle debug panel
-        debugToggle.addEventListener('click', function() {
-            if (debugPanel.style.display === 'none') {
-                debugPanel.style.display = 'block';
-                debugToggle.textContent = 'Hide Debug';
-            } else {
-                debugPanel.style.display = 'none';
-                debugToggle.textContent = 'Debug';
-            }
-        });
-        
-        // Update debug panel content
-        function updateDebugPanel() {
-            debugPanel.innerHTML = debugLogs.join('<br>');
-            debugPanel.scrollTop = debugPanel.scrollHeight;
-        }
         function processInviteCode() {
             const input = document.getElementById('inviteCode');
             const result = document.getElementById('inviteResult');
