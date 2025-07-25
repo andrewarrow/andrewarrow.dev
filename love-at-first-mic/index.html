@@ -482,11 +482,23 @@
                         return false;
                     } else if (e.button === 0) { // Left click
                         console.log(`[${wrapperId}] SHIELD PASSING LEFT CLICK TO IFRAME`);
-                        // Temporarily disable shield to let click through
-                        shield.style.pointerEvents = 'none';
+                        // Simulate click on iframe at the same coordinates
                         setTimeout(() => {
-                            shield.style.pointerEvents = 'auto';
-                        }, 100);
+                            try {
+                                const clickEvent = new MouseEvent('click', {
+                                    clientX: e.clientX,
+                                    clientY: e.clientY,
+                                    button: 0,
+                                    bubbles: true,
+                                    cancelable: true
+                                });
+                                iframe.dispatchEvent(clickEvent);
+                                iframe.focus();
+                                console.log(`[${wrapperId}] SYNTHETIC CLICK SENT TO IFRAME`);
+                            } catch(err) {
+                                console.log(`[${wrapperId}] IFRAME CLICK FAILED: ${err.message}`);
+                            }
+                        }, 1);
                     }
                 }, true);
                 
