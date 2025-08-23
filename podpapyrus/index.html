@@ -32,15 +32,17 @@
           <div class="flex items-center">
             <div class="flex-shrink-0 flex items-center">
               <img src="logo256.png" alt="PodPapyrus" class="h-8 w-8 mr-3" />
-              <h1 class="text-2xl font-bold text-blue-400">PodPapyrus</h1>
+              <h1 class="text-2xl font-bold text-blue-400">podpapyrus</h1>
             </div>
           </div>
           <div class="hidden md:flex items-center space-x-8">
+            <!--
             <a href="#features" class="text-gray-300 hover:text-blue-400 transition duration-300">Features</a>
             <a href="#pricing" class="text-gray-300 hover:text-blue-400 transition duration-300">Pricing</a>
             <a href="#contact" class="text-gray-300 hover:text-blue-400 transition duration-300">Contact</a>
+            -->
             <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">
-              Start Free
+              Start Reading 
             </button>
           </div>
         </div>
@@ -50,22 +52,23 @@
     <!-- Hero Section -->
     <section class="pt-20 pb-16 bg-gradient-to-br from-gray-800 to-gray-900">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <h1 class="text-5xl md:text-6xl font-bold text-gray-100 mb-6">
-            Create <span class="text-blue-400">Podcasts</span><br/>
+        <div class="text-center relative">
+          <img src="logo256.png" alt="PodPapyrus" class="w-64 h-64 mx-auto mb-8" />
+          <h1 class="text-5xl md:text-6xl font-bold text-gray-100 mb-6 relative -mt-10">
+            Read <span class="text-blue-400">Podcasts</span><br/>
             Like Never Before
           </h1>
           <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            PodPapyrus is a comprehensive tool for creating, editing and publishing podcasts. 
-            Everything you need in one place.
+            PodPapyrus takes recent fresh episodes of your favorite pods and
+            lets you read a summary of the transcript.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <button class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition duration-300">
-              Try Free
+              Start Reading
             </button>
-            <button class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-600 hover:text-white transition duration-300">
+            <a href="https://www.youtube.com/@AndrewArrow" class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-600 hover:text-white transition duration-300">
               Watch Demo
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -113,117 +116,11 @@
       </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-16 bg-gray-900">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-100 mb-4">Affordable Pricing</h2>
-          <p class="text-xl text-gray-300">Choose the perfect plan for you</p>
-        </div>
-        
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-gray-800 rounded-lg shadow-lg p-8 border border-gray-700">
-            <h3 class="text-2xl font-bold text-gray-100 mb-4">Starter</h3>
-            <div class="text-4xl font-bold text-gray-100 mb-2">$0<span class="text-lg text-gray-400">/month</span></div>
-            <p class="text-gray-300 mb-6">Perfect to get started</p>
-            <ul class="space-y-3 mb-8">
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-                2 hours monthly
-              </li>
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-                Basic editing
-              </li>
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-                1 podcast
-              </li>
-            </ul>
-            <button class="w-full border-2 border-blue-400 text-blue-400 py-2 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition duration-300">
-              Start Free
-            </button>
-          </div>
-          
-          <div class="bg-gray-800 rounded-lg shadow-lg p-8 border-2 border-blue-400 relative">
-            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <span class="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold">Popular</span>
-            </div>
-            <h3 class="text-2xl font-bold text-gray-100 mb-4">Pro</h3>
-            <div class="text-4xl font-bold text-gray-100 mb-2">$19<span class="text-lg text-gray-400">/month</span></div>
-            <p class="text-gray-300 mb-6">For professionals</p>
-            <ul class="space-y-3 mb-8">
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-                20 hours monthly
-              </li>
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-                Advanced editing
-              </li>
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-                10 podcasts
-              </li>
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-                Analytics
-              </li>
-            </ul>
-            <button class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
-              Choose Pro
-            </button>
-          </div>
-          
-          <div class="bg-gray-800 rounded-lg shadow-lg p-8 border border-gray-700">
-            <h3 class="text-2xl font-bold text-gray-100 mb-4">Enterprise</h3>
-            <div class="text-4xl font-bold text-gray-100 mb-2">$99<span class="text-lg text-gray-400">/month</span></div>
-            <p class="text-gray-300 mb-6">For larger teams</p>
-            <ul class="space-y-3 mb-8">
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-                Unlimited
-              </li>
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-                All features
-              </li>
-              <li class="flex items-center">
-                <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                </svg>
-                Priority support
-              </li>
-            </ul>
-            <button class="w-full border-2 border-blue-400 text-blue-400 py-2 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition duration-300">
-              Contact Us
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Footer -->
     <footer id="contact" class="bg-black text-white py-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!--
         <div class="grid md:grid-cols-4 gap-8">
           <div>
             <h3 class="text-2xl font-bold mb-4">PodPapyrus</h3>
@@ -251,8 +148,9 @@
             <p class="text-gray-400">+1 123 456 789</p>
           </div>
         </div>
+        -->
         <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p class="text-gray-400">&copy; 2024 PodPapyrus. All rights reserved.</p>
+          <p class="text-gray-400">&copy; 2025 PodPapyrus. All rights reserved.</p>
         </div>
       </div>
     </footer>
