@@ -1,0 +1,52 @@
+<wap-provisioningdoc>
+
+  <!-- 1) (Optional) APP WHITELIST — lets this app run when whitelist mode is enforced -->
+  <characteristic type="AppMgr" version="11.5">
+    <parm name="Action" value="Whitelist"/>
+    <parm name="Package" value="io.trypura.purascan.debug"/>
+  </characteristic>
+
+  <!-- 2) ACCESS TO RFID SERVICES — fixes SELinux/binder denials -->
+  <!-- Allow your app to call the integrated RFID host service -->
+  <characteristic type="AccessMgr">
+    <parm name="ServiceAction" value="AllowCaller"/>
+    <parm name="ServiceIdentifier" value="vendor.zebra.hardware.rfidhost-service"/>
+    <parm name="CallerPackageName" value="io.trypura.purascan.debug"/>
+    <!-- Paste your X.509 cert here (PEM). Keep it on one line or as StageNow exports it. -->
+    <parm name="CallerSignature" value="-----BEGIN CERTIFICATE-----MIIB...YOUR_CERT...Q==-----END CERTIFICATE-----"/>
+  </characteristic>
+
+  <!-- Allow your app to call the RFID serial companion service -->
+  <characteristic type="AccessMgr">
+    <parm name="ServiceAction" value="AllowCaller"/>
+    <parm name="ServiceIdentifier" value="vendor.zebra.hardware.rfidserial-service"/>
+    <parm name="CallerPackageName" value="io.trypura.purascan.debug"/>
+    <parm name="CallerSignature" value="-----BEGIN CERTIFICATE-----MIIB...YOUR_CERT...Q==-----END CERTIFICATE-----"/>
+  </characteristic>
+
+  <!-- 3) (Optional) PRE-GRANT RUNTIME PERMS — needed for RFD40/RFD90 sleds / BLE -->
+  <characteristic type="AppMgr" version="11.5">
+    <parm name="Action" value="GrantRuntimePermission"/>
+    <parm name="Package" value="io.trypura.purascan.debug"/>
+    <parm name="AndroidPermission" value="android.permission.BLUETOOTH_CONNECT"/>
+  </characteristic>
+  <characteristic type="AppMgr" version="11.5">
+    <parm name="Action" value="GrantRuntimePermission"/>
+    <parm name="Package" value="io.trypura.purascan.debug"/>
+    <parm name="AndroidPermission" value="android.permission.BLUETOOTH_SCAN"/>
+  </characteristic>
+  <characteristic type="AppMgr" version="11.5">
+    <parm name="Action" value="GrantRuntimePermission"/>
+    <parm name="Package" value="io.trypura.purascan.debug"/>
+    <parm name="AndroidPermission" value="android.permission.ACCESS_FINE_LOCATION"/>
+  </characteristic>
+
+  <!-- 4) (Optional) If you call DataWedge APIs, allow that broadcast action -->
+  <characteristic type="IntentMgr">
+    <parm name="Action" value="AllowIntentAction"/>
+    <parm name="IntentAction" value="com.symbol.datawedge.api.ACTION"/>
+    <parm name="CallerPackageName" value="io.trypura.purascan.debug"/>
+  </characteristic>
+
+</wap-provisioningdoc>
+
