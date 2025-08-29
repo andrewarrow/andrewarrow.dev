@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stagenow>
+  <profile>
+    <title>RFID Access (Imported)</title>
+    <description>AccessMgr + (optional) AppMgr/IntentMgr</description>
+    <clientversion>5.0.0.0</clientversion>
+    <mxversion>11.5</mxversion>
+    <devicetype>Android</devicetype>
+    <settings>{"profile":{"name":"RFID Access (Imported)","mx":"11.5","csp":["AccessMgr","AppMgr","IntentMgr"]}}</settings>
+
+<wap-provisioningdoc>
+  <characteristic type="AppMgr" version="11.5">
+    <parm name="Action" value="Whitelist"/>
+    <parm name="Package" value="io.trypura.purascan.debug"/>
+  </characteristic>
+  <characteristic type="AccessMgr">
+    <parm name="ServiceAction" value="AllowCaller"/>
+    <parm name="ServiceIdentifier" value="vendor.zebra.hardware.rfidhost-service"/>
+    <parm name="CallerPackageName" value="io.trypura.purascan.debug"/>
+    <parm name="CallerSignature" value="-----BEGIN CERTIFICATE-----MIIDQjCCAioCAQEwDQYJKoZIhvcNAQELBQAwZjEVMBMGA1UEAwwMQW5kcmV3IEFycm93MQ0wCwYDVQQLDARQdXJhMQ0wCwYDVQQKDARQdXJhMRQwEgYDVQQHDAtMb3MgQW5nZWxlczELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTAgFw0yNTA4MjAyMTI1MjhaGA8yMDUwMDgxNDIxMjUyOFowZjEVMBMGA1UEAwwMQW5kcmV3IEFycm93MQ0wCwYDVQQLDARQdXJhMQ0wCwYDVQQKDARQdXJhMRQwEgYDVQQHDAtMb3MgQW5nZWxlczELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALy2bsS3HIL8haeRB6VfbJgM7+eoUOyN2JqsYWpA5gRMJ7xMsWF2Sb7bTRoQBJRv9zH5WHLjSHJKxZePuAXfngWXfAyQ1Ky5zAtY3zHorxUJML2ZljWALsXX2RcHdHQ3V+wbYfSuLIFuEuKAlXOhskgSBUsUOFkLctsgGV1B7Q2e2iuqLhrtWlo1Nf5pmNMBLrWe7zE3mYFwbcO/Nd8sCQwQ+jrYA/0SopagP5PQ9gaVJ4lI9JScgJbk+ulOIHZgGs0MTL1Jl9ln1l9jkMWI7684dCq1ggS0ktEHsmJRc+OG2Xca3RfqPlb6qBiWYA91HU004EnOw/zCKNzG+ITCo6UCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAn7XuMB5HDkhh8AfNzZlJ6jxik839IMRjM4vk/UmHeoJNMR5mVAPnDz5g8eIhuzNCP0kfOE+BrdFLqPQkxblSkNBzyfqQnZyA42KjZg7GR+mz3+ELs5Ly7w/aLxlzJGzv9L3dfbaGlyy7tUvrl14q9hutylJ0kHpCPvxWZXIoNOOMy4qperHTuWxd3JmjKi64+2YLPa7R5SmUaOQdbs9S32MwbM1Mh8qseC+Tev0WGcWBRJ2az50XFjT7PMq+1x/E5ld/gEO+U7hHe8DPx3AoRi0f/fnABbuyhGPvTVRMxqtJZR1z1vdlIbkBjWJSSokPVVdNSdm75xFnRTxrCJSAPw==-----END CERTIFICATE-----"/>
+  </characteristic>
+  <characteristic type="AccessMgr">
+    <parm name="ServiceAction" value="AllowCaller"/>
+    <parm name="ServiceIdentifier" value="vendor.zebra.hardware.rfidserial-service"/>
+    <parm name="CallerPackageName" value="io.trypura.purascan.debug"/>
+    <parm name="CallerSignature" value="-----BEGIN CERTIFICATE-----MIIDQjCCAioCAQEwDQYJKoZIhvcNAQELBQAwZjEVMBMGA1UEAwwMQW5kcmV3IEFycm93MQ0wCwYDVQQLDARQdXJhMQ0wCwYDVQQKDARQdXJhMRQwEgYDVQQHDAtMb3MgQW5nZWxlczELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTAgFw0yNTA4MjAyMTI1MjhaGA8yMDUwMDgxNDIxMjUyOFowZjEVMBMGA1UEAwwMQW5kcmV3IEFycm93MQ0wCwYDVQQLDARQdXJhMQ0wCwYDVQQKDARQdXJhMRQwEgYDVQQHDAtMb3MgQW5nZWxlczELMAkGA1UECAwCQ0ExDDAKBgNVBAYTA1VTQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALy2bsS3HIL8haeRB6VfbJgM7+eoUOyN2JqsYWpA5gRMJ7xMsWF2Sb7bTRoQBJRv9zH5WHLjSHJKxZePuAXfngWXfAyQ1Ky5zAtY3zHorxUJML2ZljWALsXX2RcHdHQ3V+wbYfSuLIFuEuKAlXOhskgSBUsUOFkLctsgGV1B7Q2e2iuqLhrtWlo1Nf5pmNMBLrWe7zE3mYFwbcO/Nd8sCQwQ+jrYA/0SopagP5PQ9gaVJ4lI9JScgJbk+ulOIHZgGs0MTL1Jl9ln1l9jkMWI7684dCq1ggS0ktEHsmJRc+OG2Xca3RfqPlb6qBiWYA91HU004EnOw/zCKNzG+ITCo6UCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAn7XuMB5HDkhh8AfNzZlJ6jxik839IMRjM4vk/UmHeoJNMR5mVAPnDz5g8eIhuzNCP0kfOE+BrdFLqPQkxblSkNBzyfqQnZyA42KjZg7GR+mz3+ELs5Ly7w/aLxlzJGzv9L3dfbaGlyy7tUvrl14q9hutylJ0kHpCPvxWZXIoNOOMy4qperHTuWxd3JmjKi64+2YLPa7R5SmUaOQdbs9S32MwbM1Mh8qseC+Tev0WGcWBRJ2az50XFjT7PMq+1x/E5ld/gEO+U7hHe8DPx3AoRi0f/fnABbuyhGPvTVRMxqtJZR1z1vdlIbkBjWJSSokPVVdNSdm75xFnRTxrCJSAPw==-----END CERTIFICATE-----"/>
+  </characteristic>
+  <characteristic type="AppMgr" version="11.5">
+    <parm name="Action" value="GrantRuntimePermission"/>
+    <parm name="Package" value="io.trypura.purascan.debug"/>
+    <parm name="AndroidPermission" value="android.permission.BLUETOOTH_CONNECT"/>
+  </characteristic>
+  <characteristic type="AppMgr" version="11.5">
+    <parm name="Action" value="GrantRuntimePermission"/>
+    <parm name="Package" value="io.trypura.purascan.debug"/>
+    <parm name="AndroidPermission" value="android.permission.BLUETOOTH_SCAN"/>
+  </characteristic>
+  <characteristic type="AppMgr" version="11.5">
+    <parm name="Action" value="GrantRuntimePermission"/>
+    <parm name="Package" value="io.trypura.purascan.debug"/>
+    <parm name="AndroidPermission" value="android.permission.ACCESS_FINE_LOCATION"/>
+  </characteristic>
+  <characteristic type="IntentMgr">
+    <parm name="Action" value="AllowIntentAction"/>
+    <parm name="IntentAction" value="com.symbol.datawedge.api.ACTION"/>
+    <parm name="CallerPackageName" value="io.trypura.purascan.debug"/>
+  </characteristic>
+    </wap-provisioningdoc>
+  </profile>
+</stagenow>
