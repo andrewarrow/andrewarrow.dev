@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main page -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/</loc>
     <lastmod>2025-08-31</lastmod>
@@ -8,7 +7,6 @@
     <priority>1.0</priority>
   </url>
   
-  <!-- Summaries index -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/</loc>
     <lastmod>2025-08-31</lastmod>
@@ -16,7 +14,6 @@
     <priority>0.8</priority>
   </url>
   
-  <!-- Summary: 2025-the-year-it-all-ends-trump-economics-war-family-more.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/2025-the-year-it-all-ends-trump-economics-war-family-more.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -24,7 +21,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: 25-facts-about-slavery-not-taught-in-schools.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/25-facts-about-slavery-not-taught-in-schools.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -32,7 +28,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: 44-generals-purged-a-bathroom-revolution-and-the-coup-threat-at-tiananmen.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/44-generals-purged-a-bathroom-revolution-and-the-coup-threat-at-tiananmen.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -40,7 +35,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: a-conversation-with-jim-acosta.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/a-conversation-with-jim-acosta.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -48,7 +42,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: act-cheer-dad-16x9.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/act-cheer-dad-16x9.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -56,7 +49,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: adam-friedland-rips-into-ritchie-torres-on-israel-demfluencers-caught-in-funding-scheme.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/adam-friedland-rips-into-ritchie-torres-on-israel-demfluencers-caught-in-funding-scheme.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -64,7 +56,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: adams-cuomo-flame-zohran-for-bench-press-failure.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/adams-cuomo-flame-zohran-for-bench-press-failure.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -72,7 +63,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: ai-copyright-claimed-my-last-video.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/ai-copyright-claimed-my-last-video.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -80,7 +70,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: ai-wrote-this-song-then-we-covered-it-you-be-the-judge-.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/ai-wrote-this-song-then-we-covered-it-you-be-the-judge-.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -88,7 +77,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: alicia-silverstone-shares-untold-clueless-stories-and-reacts-to-unseen-interviews-retrospective.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/alicia-silverstone-shares-untold-clueless-stories-and-reacts-to-unseen-interviews-retrospective.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -96,7 +84,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: amanda-knox-meredith-kerchers-family-asked-if-they-believe-guilty-verdict.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/amanda-knox-meredith-kerchers-family-asked-if-they-believe-guilty-verdict.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -104,7 +91,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: americas-domestic-slave-trade-hub-at-natchez-forks-of-the-road.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/americas-domestic-slave-trade-hub-at-natchez-forks-of-the-road.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -112,7 +98,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: asian-av-club-what-to-watch-podcast-ep4.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/asian-av-club-what-to-watch-podcast-ep4.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -120,7 +105,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: astros-fans-go-from-cheers-to-boos-for-alex-bregman-houston-drama-vs-red-sox.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/astros-fans-go-from-cheers-to-boos-for-alex-bregman-houston-drama-vs-red-sox.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -128,7 +112,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: at-88-robert-redford-names-the-seven-actors-he-hated-the-most.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/at-88-robert-redford-names-the-seven-actors-he-hated-the-most.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -136,7 +119,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: axl-rose-gun-n-roses-1987-interview-the-tapes-archive-podcast.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/axl-rose-gun-n-roses-1987-interview-the-tapes-archive-podcast.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -144,7 +126,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: bernie-backs-trump-10-intel-stake-as-cons-freak.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/bernie-backs-trump-10-intel-stake-as-cons-freak.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -152,7 +133,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: bernie-rips-elon-musks-efforts-to-create-indentured-servants-through-h1b-visa-program.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/bernie-rips-elon-musks-efforts-to-create-indentured-servants-through-h1b-visa-program.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -160,7 +140,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: bill-maher-says-trump-coup-coming-after-cozy-white-house-dinner.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/bill-maher-says-trump-coup-coming-after-cozy-white-house-dinner.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -168,7 +147,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: breaking-bad-s2e13-vllig-losgelotst.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/breaking-bad-s2e13-vllig-losgelotst.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -176,7 +154,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: breaking-fbi-raids-john-bolton-mayhem-at-dem-townhall-israel-admits-83-civilian-deaths.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/breaking-fbi-raids-john-bolton-mayhem-at-dem-townhall-israel-admits-83-civilian-deaths.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -184,7 +161,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: breaking-the-creepy-ai-in-police-cameras.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/breaking-the-creepy-ai-in-police-cameras.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -192,7 +168,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: breaking-up-the-bachelor-growing-up-billionaire-w-madi-prewett-grant-trout.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/breaking-up-the-bachelor-growing-up-billionaire-w-madi-prewett-grant-trout.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -200,7 +175,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: bryan-johnsons-religion-for-the-age-of-artificial-intelligence.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/bryan-johnsons-religion-for-the-age-of-artificial-intelligence.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -208,7 +182,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: can-ai-coding-agents-do-testdriven-development-tdd.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/can-ai-coding-agents-do-testdriven-development-tdd.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -216,7 +189,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: ccps-3-step-plan-to-end-democracy-in-taiwan.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/ccps-3-step-plan-to-end-democracy-in-taiwan.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -224,7 +196,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: charlie-kirk-demands-taylor-swift-submit-to-husband.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/charlie-kirk-demands-taylor-swift-submit-to-husband.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -232,7 +203,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: chris-franjola-on-taylor-swift-and-just-like-that-and-ai-girlfriends.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/chris-franjola-on-taylor-swift-and-just-like-that-and-ai-girlfriends.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -240,7 +210,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: cnn-anchor-accidentally-exposes-israels-secret-on-live-tv.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/cnn-anchor-accidentally-exposes-israels-secret-on-live-tv.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -248,7 +217,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: cracker-barrel-situation.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/cracker-barrel-situation.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -256,7 +224,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: danielle-panabaker-talks-about-the-highs-and-lows-of-parenting-as-a-working-actor.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/danielle-panabaker-talks-about-the-highs-and-lows-of-parenting-as-a-working-actor.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -264,7 +231,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: dave-smith-reveals-why-the-proisrael-argument-is-dead.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/dave-smith-reveals-why-the-proisrael-argument-is-dead.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -272,7 +238,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: defendant-shocked-by-long-prison-sentence.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/defendant-shocked-by-long-prison-sentence.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -280,7 +245,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: democrats-slam-trumps-plans-to-send-national-guard-to-more-cities-over-crime.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/democrats-slam-trumps-plans-to-send-national-guard-to-more-cities-over-crime.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -288,7 +252,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: dems-are-struggling-to-fundraise.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/dems-are-struggling-to-fundraise.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -296,7 +259,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: destiny-is-legally-trapped-fast-facts.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/destiny-is-legally-trapped-fast-facts.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -304,7 +266,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: does-the-past-still-exist.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/does-the-past-still-exist.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -312,7 +273,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: dont-pay-this-ai-family-to-write-you-a-song.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/dont-pay-this-ai-family-to-write-you-a-song.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -320,7 +280,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: eli-manning-goes-undercover-at-penn-state-walkon-tryouts-as-chad-powers.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/eli-manning-goes-undercover-at-penn-state-walkon-tryouts-as-chad-powers.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -328,7 +287,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: elon-musk-collapses-over-employee-disaster-in-stunning-severance-consequences.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/elon-musk-collapses-over-employee-disaster-in-stunning-severance-consequences.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -336,7 +294,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: eric-testimonial.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/eric-testimonial.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -344,7 +301,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: exclusive-trump-admin-fired-me-for-israel-dissent.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/exclusive-trump-admin-fired-me-for-israel-dissent.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -352,7 +308,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: exploring-the-ethical-future-of-ai-in-health-security-and-beyond.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/exploring-the-ethical-future-of-ai-in-health-security-and-beyond.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -360,7 +315,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: exscientologist-reveals-tom-cruise-horror-claire-headley-on-the-edge-podcast-288.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/exscientologist-reveals-tom-cruise-horror-claire-headley-on-the-edge-podcast-288.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -368,7 +322,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: fbi-agent-exposes-sean-kingstons-m-fraud-4k.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/fbi-agent-exposes-sean-kingstons-m-fraud-4k.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -376,7 +329,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: fear-factory-was-rightthe-collapse-is-here.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/fear-factory-was-rightthe-collapse-is-here.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -384,7 +336,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: fears-surrounding-possible-us-military-action-against-mexican-cartels.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/fears-surrounding-possible-us-military-action-against-mexican-cartels.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -392,7 +343,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: finally-smart-glasses-halliday-ai-glasses.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/finally-smart-glasses-halliday-ai-glasses.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -400,7 +350,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: flight.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/flight.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -408,7 +357,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: ghislaine-checkmates-trump-as-dark-past-eats-him-alive.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/ghislaine-checkmates-trump-as-dark-past-eats-him-alive.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -416,7 +364,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: git-is-holding-us-back.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/git-is-holding-us-back.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -424,7 +371,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: haley-gosserand-from-building-the-band-talk-about-alison-and-sweet-seduction-drama.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/haley-gosserand-from-building-the-band-talk-about-alison-and-sweet-seduction-drama.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -432,7 +378,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: heres-why-israeli-aid-airdrops-are-death-traps-for-palestinians.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/heres-why-israeli-aid-airdrops-are-death-traps-for-palestinians.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -440,7 +385,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: highly-official-ep-11-is-love-island-even-real-finale-recap-unpopular-opinions-fake-or-fate.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/highly-official-ep-11-is-love-island-even-real-finale-recap-unpopular-opinions-fake-or-fate.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -448,7 +392,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: how-authors-can-use-longform-video-to-build-their-brand-publish-prosper-podcast-66.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/how-authors-can-use-longform-video-to-build-their-brand-publish-prosper-podcast-66.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -456,7 +399,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: how-to-add-a-vignette-in-premiere-pro-2025.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/how-to-add-a-vignette-in-premiere-pro-2025.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -464,7 +406,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: how-to-get-18-bullet-points-of-3-hour-podcasts-almost-instantly-podpapyrus.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/how-to-get-18-bullet-points-of-3-hour-podcasts-almost-instantly-podpapyrus.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -472,7 +413,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: how-to-make-longform-journalism-work-iij-webinar.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/how-to-make-longform-journalism-work-iij-webinar.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -480,7 +420,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: i-finally-watched-these.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/i-finally-watched-these.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -488,7 +427,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: i-tried-the-cia-gateway-process-and-unlocked-a-new-reality.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/i-tried-the-cia-gateway-process-and-unlocked-a-new-reality.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -496,7 +434,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: i-tried-vibe-physics-this-is-what-i-learned.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/i-tried-vibe-physics-this-is-what-i-learned.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -504,7 +441,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: i-was-asked-to-keep-this-confidential.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/i-was-asked-to-keep-this-confidential.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -512,7 +448,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: i-wasnt-worried-about-climate-change-now-i-am.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/i-wasnt-worried-about-climate-change-now-i-am.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -520,7 +455,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: ihip-news-is-trump-dying-maga-panics-after-his-failing-health-becomes-impossible-to-hide.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/ihip-news-is-trump-dying-maga-panics-after-his-failing-health-becomes-impossible-to-hide.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -528,7 +462,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: im-hitchhiking-from-portugal-to-australia-season-2-ep-11.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/im-hitchhiking-from-portugal-to-australia-season-2-ep-11.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -536,7 +469,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: interdimensional-beings-have-visited-us-congresswoman-claims-what-might-it-mean.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/interdimensional-beings-have-visited-us-congresswoman-claims-what-might-it-mean.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -544,7 +476,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: issues-on-set-of-a-hit-show-when-it-starts-to-grow-with-danielle-panabaker.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/issues-on-set-of-a-hit-show-when-it-starts-to-grow-with-danielle-panabaker.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -552,7 +483,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: ive-been-back-on-every-premium-cruise-line-heres-what-i-found.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/ive-been-back-on-every-premium-cruise-line-heres-what-i-found.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -560,7 +490,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: jennette-mccurdy-im-glad-my-mom-died-the-daily-show.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/jennette-mccurdy-im-glad-my-mom-died-the-daily-show.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -568,7 +497,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: jensen-ackles-talks-about-beef-with-jessica-alba-in-a-tongue-in-cheek-way.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/jensen-ackles-talks-about-beef-with-jessica-alba-in-a-tongue-in-cheek-way.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -576,7 +504,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: jerry-seinfeld-was-offered-10-million-to-make-another-season-of-seinfeld-2013.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/jerry-seinfeld-was-offered-10-million-to-make-another-season-of-seinfeld-2013.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -584,7 +511,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: jesse-plemons-couldnt-understand-why-the-breaking-bad-writers-were-afraid-of-him-people.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/jesse-plemons-couldnt-understand-why-the-breaking-bad-writers-were-afraid-of-him-people.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -592,7 +518,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: joe-lawler-growing-up-in-the-town-meeting-the-mafia-in-the-feds-armored-trucksbanks.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/joe-lawler-growing-up-in-the-town-meeting-the-mafia-in-the-feds-armored-trucksbanks.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -600,7 +525,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: joe-rogan-experience-2324-amanda-knox.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/joe-rogan-experience-2324-amanda-knox.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -608,7 +532,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: john-mayer-improvising-a-song-on-livestream-may-10th-2018-beats1-interview-apple-music.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/john-mayer-improvising-a-song-on-livestream-may-10th-2018-beats1-interview-apple-music.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -616,7 +539,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: john-mcwhorter-are-we-done-talking-about-race.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/john-mcwhorter-are-we-done-talking-about-race.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -624,7 +546,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: keyu-jin-chinas-economy-tariffs-trade-trump-communism-capitalism-lex-fridman-podcast-477.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/keyu-jin-chinas-economy-tariffs-trade-trump-communism-capitalism-lex-fridman-podcast-477.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -632,7 +553,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: kick-is-fcked-the-kyle-kulinski-show.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/kick-is-fcked-the-kyle-kulinski-show.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -640,7 +560,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: kilmar-abrego-garcia-taken-into-ice-custody-faces-deportation-to-uganda.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/kilmar-abrego-garcia-taken-into-ice-custody-faces-deportation-to-uganda.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -648,7 +567,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: kristi-noem-called-out-after-fake-ice-agents-target-women-nationwide.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/kristi-noem-called-out-after-fake-ice-agents-target-women-nationwide.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -656,7 +574,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: krystal-and-saagar-debate-kilmar-abrego-garcia-deportation.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/krystal-and-saagar-debate-kilmar-abrego-garcia-deportation.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -664,7 +581,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: krystal-exposes-israels-modern-day-holocaust-denial.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/krystal-exposes-israels-modern-day-holocaust-denial.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -672,7 +588,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: laura-ingraham-and-jd-vance-have-a-competition-to-see-which-one-is-more-racist.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/laura-ingraham-and-jd-vance-have-a-competition-to-see-which-one-is-more-racist.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -680,7 +595,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: leak-411-teenage-ninja-makes-history-american-ninja-warrior-nbc.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/leak-411-teenage-ninja-makes-history-american-ninja-warrior-nbc.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -688,7 +602,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: lee-zeldin-uncovering-waste-fraud-abuse-at-bidens-epa.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/lee-zeldin-uncovering-waste-fraud-abuse-at-bidens-epa.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -696,7 +609,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: liam-payne-exposes-the-dark-side-of-one-direction-tribuune.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/liam-payne-exposes-the-dark-side-of-one-direction-tribuune.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -704,7 +616,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: marc-maron-explains-why-he-tried-to-get-out-of-the-bruce-springsteen-biopic.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/marc-maron-explains-why-he-tried-to-get-out-of-the-bruce-springsteen-biopic.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -712,7 +623,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: marc-maron-talks-donald-trump-comedy-and-the-left.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/marc-maron-talks-donald-trump-comedy-and-the-left.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -720,7 +630,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: mark-hyman-do-this-for-10-days-and-youll-stop-feeling-like-crap-doctors-wont-tell-you-this.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/mark-hyman-do-this-for-10-days-and-youll-stop-feeling-like-crap-doctors-wont-tell-you-this.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -728,7 +637,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: marshawn-mike-share-the-truth-behind-micah-vs-the-cowboys.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/marshawn-mike-share-the-truth-behind-micah-vs-the-cowboys.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -736,7 +644,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: medvedev-sparks-massive-riot-at-the-us-open-wide-world-of-sports.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/medvedev-sparks-massive-riot-at-the-us-open-wide-world-of-sports.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -744,7 +651,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: megyn-kelly-reveals-israel-pressure-campaign.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/megyn-kelly-reveals-israel-pressure-campaign.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -752,7 +658,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: mehdi-shreds-uk-politician-in-debate-on-trump.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/mehdi-shreds-uk-politician-in-debate-on-trump.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -760,7 +665,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: memphis-crisp-this-past-weekend-w-theo-von-605.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/memphis-crisp-this-past-weekend-w-theo-von-605.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -768,7 +672,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: michael-jacksons-ability-in-studio-was-unmatched-w-dave-way.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/michael-jacksons-ability-in-studio-was-unmatched-w-dave-way.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -776,7 +679,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: mlb-player-goes-undercover-vs-high-school-team.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/mlb-player-goes-undercover-vs-high-school-team.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -784,7 +686,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: mongo-cant-stop-winning-i-hate-it.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/mongo-cant-stop-winning-i-hate-it.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -792,7 +693,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: my-dream-died-and-now-im-here.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/my-dream-died-and-now-im-here.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -800,7 +700,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: my-first-time-hearing-live-lightning-crashes-leaves-me-nearly-in-tears.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/my-first-time-hearing-live-lightning-crashes-leaves-me-nearly-in-tears.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -808,7 +707,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: nasa-physicist-comes-clean-on-ufos-why-we-cant-go-back-to-the-moon-kevin-knuth.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/nasa-physicist-comes-clean-on-ufos-why-we-cant-go-back-to-the-moon-kevin-knuth.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -816,7 +714,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: naval-ravikant-and-aaron-stupple-how-to-raise-a-sovereign-child.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/naval-ravikant-and-aaron-stupple-how-to-raise-a-sovereign-child.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -824,7 +721,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: nerdy-professor-shocks-high-school-by-speaking-gen-alpha-slang.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/nerdy-professor-shocks-high-school-by-speaking-gen-alpha-slang.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -832,7 +728,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: nky-history-hour-two-faces-of-kentucky-slavery-henry-bibb-and-john-w-anderson.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/nky-history-hour-two-faces-of-kentucky-slavery-henry-bibb-and-john-w-anderson.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -840,7 +735,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: nuclear-historian-answers-nuclear-war-questions-tech-support-wired.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/nuclear-historian-answers-nuclear-war-questions-tech-support-wired.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -848,7 +742,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: otw-pod-episode-5-dr-kishore-tipirneni.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/otw-pod-episode-5-dr-kishore-tipirneni.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -856,7 +749,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: part-2-setting-up-claude-code-subagents.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/part-2-setting-up-claude-code-subagents.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -864,7 +756,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: pc-funnel-ad1-16x9-no-banner.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/pc-funnel-ad1-16x9-no-banner.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -872,7 +763,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: phil-collins-in-the-air-tonight-that-drum-fill-new-british-canon.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/phil-collins-in-the-air-tonight-that-drum-fill-new-british-canon.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -880,7 +770,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: pod-patrol-podcast-s2e33-dr-alan-sherman-dpm-present-podiatry-education-pioneer-online-cme.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/pod-patrol-podcast-s2e33-dr-alan-sherman-dpm-present-podiatry-education-pioneer-online-cme.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -888,7 +777,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: pod-strickland-patreon-preview-episode-520-feat-drew-steele-knicks-best-moves-of-the-2000s.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/pod-strickland-patreon-preview-episode-520-feat-drew-steele-knicks-best-moves-of-the-2000s.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -896,7 +784,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: python-the-documentary-an-origin-story.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/python-the-documentary-an-origin-story.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -904,7 +791,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: raja-jackson-rampage-jacksons-son-almost-kills-wrestler.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/raja-jackson-rampage-jacksons-son-almost-kills-wrestler.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -912,7 +798,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: ro-khanna-exposes-aipac-pressure-democratic-divide-on-palestine.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/ro-khanna-exposes-aipac-pressure-democratic-divide-on-palestine.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -920,7 +805,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: russian-evolutions-in-the-ukraine-war-peter-zeihan.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/russian-evolutions-in-the-ukraine-war-peter-zeihan.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -928,7 +812,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: ryan-emily-clash-w-taylor-lorenz-on-school-phone-bans.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/ryan-emily-clash-w-taylor-lorenz-on-school-phone-bans.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -936,7 +819,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: s2e9-the-bold-the-blasphemous.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/s2e9-the-bold-the-blasphemous.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -944,7 +826,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: saagar-debunks-ghislaine-maxwell-transcript-lies.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/saagar-debunks-ghislaine-maxwell-transcript-lies.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -952,7 +833,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: saagar-rips-boomer-antiproperty-tax-propaganda.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/saagar-rips-boomer-antiproperty-tax-propaganda.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -960,7 +840,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: sandra-moone-vs-mazzerati-future-legends-of-womens-wrestling-doors-ladders-chairs-match.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/sandra-moone-vs-mazzerati-future-legends-of-womens-wrestling-doors-ladders-chairs-match.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -968,7 +847,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: scott-horton-the-case-against-war-and-the-military-industrial-complex-lex-fridman-podcast-478.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/scott-horton-the-case-against-war-and-the-military-industrial-complex-lex-fridman-podcast-478.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -976,7 +854,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: secret-weapon-sara-jacobs-unleashes-chaos.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/secret-weapon-sara-jacobs-unleashes-chaos.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -984,7 +861,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: slugging-it-out-in-open-source.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/slugging-it-out-in-open-source.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -992,7 +868,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: so-be-it-labor-leader-offers-to-go-to-jail-to-protect-his-union-members.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/so-be-it-labor-leader-offers-to-go-to-jail-to-protect-his-union-members.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1000,7 +875,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: solar-system-energy-upsurge-is-reaching-critical-levels-things-could-get-dicey.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/solar-system-energy-upsurge-is-reaching-critical-levels-things-could-get-dicey.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1008,7 +882,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: star-trek-wrath-of-khan-director-on-shatner-montalban.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/star-trek-wrath-of-khan-director-on-shatner-montalban.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1016,7 +889,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: the-atlantic-slave-trade-what-schools-never-told-you.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/the-atlantic-slave-trade-what-schools-never-told-you.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1024,7 +896,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: the-best-conversation-about-history-youve-ever-heard-dominic-sandbrook.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/the-best-conversation-about-history-youve-ever-heard-dominic-sandbrook.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1032,7 +903,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: the-computer-chip-could-end-nvidias-ai-monopoly-guillaume-verdon-on-extropic.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/the-computer-chip-could-end-nvidias-ai-monopoly-guillaume-verdon-on-extropic.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1040,7 +910,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: the-diabolical-history-of-the-barbary-slave-trade.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/the-diabolical-history-of-the-barbary-slave-trade.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1048,7 +917,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: the-long-form-live-rwanda-failing-its-boys-alain-numa-on-masculinity-trauma-the-future-of-men.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/the-long-form-live-rwanda-failing-its-boys-alain-numa-on-masculinity-trauma-the-future-of-men.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1056,7 +924,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: the-only-video-every-marketer-needs-to-watch-today-garyvee-possible.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/the-only-video-every-marketer-needs-to-watch-today-garyvee-possible.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1064,7 +931,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: the-real-reason-why-balaji-burned-million.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/the-real-reason-why-balaji-burned-million.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1072,7 +938,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: the-secret-history-of-egypts-black-pharaohs-what-they-dont-want-you-to-know.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/the-secret-history-of-egypts-black-pharaohs-what-they-dont-want-you-to-know.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1080,7 +945,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: the-shocking-truth-about-nigerias-slave-trade-history.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/the-shocking-truth-about-nigerias-slave-trade-history.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1088,7 +952,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: the-steve-vai-eat-em-and-smile-interview-wvan-halen-author-greg-renoff.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/the-steve-vai-eat-em-and-smile-interview-wvan-halen-author-greg-renoff.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1096,7 +959,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: the-world-war-ii-consensus-is-breaking-down.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/the-world-war-ii-consensus-is-breaking-down.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1104,7 +966,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: thinking-of-watching-sting-live-this-is-what-youre-paying-for.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/thinking-of-watching-sting-live-this-is-what-youre-paying-for.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1112,7 +973,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: this-just-got-a-whole-lot-worse.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/this-just-got-a-whole-lot-worse.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1120,7 +980,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: this-record-label-is-trying-to-silence-me-lawyer-reacts-to-rick-beato.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/this-record-label-is-trying-to-silence-me-lawyer-reacts-to-rick-beato.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1128,7 +987,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: trang-surprised-me-authentic-thailand-in-just-a-few-hours.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/trang-surprised-me-authentic-thailand-in-just-a-few-hours.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1136,7 +994,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: trump-cant-tell-budget-deficit-from-the-trade-deficit.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/trump-cant-tell-budget-deficit-from-the-trade-deficit.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1144,7 +1001,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: trump-says-chicago-national-guard-occupation-next.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/trump-says-chicago-national-guard-occupation-next.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1152,7 +1008,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: what-a-quarterback-battle-is-really-like.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/what-a-quarterback-battle-is-really-like.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1160,7 +1015,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: what-happens-after-spending-decades-in-prisonmichael-santos.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/what-happens-after-spending-decades-in-prisonmichael-santos.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1168,7 +1022,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: what-is-3iatlas.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/what-is-3iatlas.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1176,7 +1029,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: what-its-like-having-no-inner-monologue-and-aphantasia-a-blind-minds-eye.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/what-its-like-having-no-inner-monologue-and-aphantasia-a-blind-minds-eye.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1184,7 +1036,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: why-are-all-movies-just-remakes-and-sequels-now-insider-justine-bateman.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/why-are-all-movies-just-remakes-and-sequels-now-insider-justine-bateman.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1192,7 +1043,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: why-day-trading-does-not-work-wall-street-pro-reacts-to-billions-season-2-episode-5.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/why-day-trading-does-not-work-wall-street-pro-reacts-to-billions-season-2-episode-5.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1200,7 +1050,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: why-hypnosis-only-works-on-certain-people-dr-david-spiegel.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/why-hypnosis-only-works-on-certain-people-dr-david-spiegel.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1208,7 +1057,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: why-kpop-demon-hunters-is-taking-over-the-world.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/why-kpop-demon-hunters-is-taking-over-the-world.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1216,7 +1064,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: why-were-drawn-to-death-crime-danger-coltan-scrivner.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/why-were-drawn-to-death-crime-danger-coltan-scrivner.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1224,7 +1071,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: why-were-they-not-stopped-saurya-airlines-accident.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/why-were-they-not-stopped-saurya-airlines-accident.html</loc>
     <lastmod>2025-08-31</lastmod>
@@ -1232,7 +1078,6 @@
     <priority>0.6</priority>
   </url>
   
-  <!-- Summary: zach-braff-thought-scrubs-was-too-good-to-be-true-conan-obrien-needs-a-friend.html -->
   <url>
     <loc>https://andrewarrow.dev/podpapyrus/summaries/zach-braff-thought-scrubs-was-too-good-to-be-true-conan-obrien-needs-a-friend.html</loc>
     <lastmod>2025-08-31</lastmod>
