@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podcast Summaries - PodPapyrus</title>
+    <link rel="icon" type="image/png" href="../logo256.png" />
+    <link rel="apple-touch-icon" href="../logo256.png" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://podpapyrus.com/" />
+    <meta property="og:title" content="PodPapyrus is a way to read your favorite podcasts." />
+    <meta property="og:description" content="PodPapyrus is a way to read your favorite podcasts." />
+    <meta property="og:image" content="logo256.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://podpapyrus.com/" />
+    <meta property="twitter:title" content="PodPapyrus is a way to read your favorite podcasts." />
+    <meta property="twitter:description" content="PodPapyrus is a way to read your favorite podcasts." />
+    <meta property="twitter:image" content="logo256.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="text/javascript">
+  (function (f, b) { if (!b.__SV) { var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) { function g(a, d) { var b = d.split("."); 2 == b.length && ((a = a[b[0]]), (d = b[1])); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))); }; } var a = b; "undefined" !== typeof c ? (a = b[c] = []) : (c = "mixpanel"); a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d; }; a.people.toString = function () { return a.toString(1) + ".people (stub)"; }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split( " "); for (h = 0; h < i.length; h++) g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]); }; } for ( var d = {}, e = ["get_group"].concat( Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++) b(j[c]); return d; }; b._i.push([e, f, c]); }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g); } })(document, window.mixpanel || []);
+
+mixpanel.init("29d6db85517ba504818659df83844c01", {
+  track_pageview: true,
+  persistence: "localStorage",
+});
+
+</script>
+  </head>
+  <body class="bg-gray-900 text-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 shadow-lg fixed w-full z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0 flex items-center">
+              <a href="../index.html" class="text-2xl font-bold text-blue-400">
+              <img src="../logo256.png" alt="PodPapyrus" class="h-8 w-8 mr-3" />
+              </a>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="pt-20 pb-16 bg-gradient-to-br from-gray-800 to-gray-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-100 mb-6">
+            Podcast Summaries
+          </h1>
+          <p class="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+            Read key insights from today's most important podcast conversations
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Summaries List -->
+    <section class="py-16 bg-gray-900">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="space-y-8">
+          <!-- top of list -->
+          <a href="./i-tried-the-cia-gateway-process-and-unlocked-a-new-reality.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/LFxyw0RD1mk.jpg" alt="I tried the CIA Gateway process...and unlocked a new reality.." class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+I tried the CIA Gateway process...and unlocked a new reality..
+</h2>
+<p class="text-gray-300 mb-4">
+The Gateway Experience is a set of meditation CDs from the 70s/80s that uses hemisync technology to access different states of consciousness CIA documents reveal a technique called "patterning" - using consciousness in Focus 12 state to achieve desired objectives by visualizing as if already
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./mongo-cant-stop-winning-i-hate-it.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/MEJQUwr9d_s.jpg" alt="Mongo can’t stop winning (I hate it)" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Mongo can’t stop winning (I hate it)
+</h2>
+<p class="text-gray-300 mb-4">
+MongoDB's stock jumped 40% in the last day and a half, reaching a $24 billion market cap (about half the size of Ford) Revenue increased 24% year-over-year, with Atlas revenue up 29% (representing 74% of total revenue) MongoDB is a document-oriented NoSQL database that stores
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./git-is-holding-us-back.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/eBXyn8SXFtU.jpg" alt="Git is holding us back" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Git is holding us back
+</h2>
+<p class="text-gray-300 mb-4">
+Git is essential to modern software development and the entire open source ecosystem, but it's time to rethink version control systems AI agents are now contributing to codebases alongside humans, creating new challenges that Git wasn't designed to handle Git's complexity makes it difficult for
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./1zti-n6DnT0.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/1zti-n6DnT0.jpg" alt="Slugging It Out in Open Source" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Slugging It Out in Open Source
+</h2>
+<p class="text-gray-300 mb-4">
+In 2011, someone called "Dodo" published a popular npm module called "Slug" for creating URL slugs Dodo stopped working on the module in 2015 and completely vanished from the internet after 2018 A denial of service vulnerability was publicly disclosed in the Slug module in
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./GfH4QL4VqJ0.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/GfH4QL4VqJ0.jpg" alt="Python: The Documentary | An origin story" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Python: The Documentary | An origin story
+</h2>
+<p class="text-gray-300 mb-4">
+Python originated in Amsterdam in the 80s at CWI, building on the ABC project designed to make programming accessible to non-programmers and artists Guido van Rossum created Python during Christmas 1989 as a hobby project to bridge the gap between C and shell scripting Python
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./-xhai2iu_QY.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/-xhai2iu_QY.jpg" alt="The early days of scientific Python with Travis Oliphant" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+The early days of scientific Python with Travis Oliphant
+</h2>
+<p class="text-gray-300 mb-4">
+Travis Oliphant created NumPy, which became much more popular than his earlier work because it was more generic and did more The story began in 1999 with a module called NumPy IO, created to load medical imaging data files at Mayo Clinic His first open
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./8k7mdi6SV8U.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/8k7mdi6SV8U.jpg" alt="🔥The REAL reason why Balaji burned $1 Million💸" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+🔥The REAL reason why Balaji burned $1 Million💸
+</h2>
+<p class="text-gray-300 mb-4">
+Balaji Srinivasan, a Stanford PhD and Tech entrepreneur, burned $1 million to warn about an impending global fiat crisis He believes governments are sweeping the financial crisis under the rug as they have done in the past The warning is about trillions that might be
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./-eJE_hSDvmw.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/-eJE_hSDvmw.jpg" alt="WATCH: Texas Republicans Get BRUTALLY Dismantled In One Of The Best Speeches Of The Year" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+WATCH: Texas Republicans Get BRUTALLY Dismantled In One Of The Best Speeches Of The Year
+</h2>
+<p class="text-gray-300 mb-4">
+This speech addresses racism directly, delivered by a white woman to a room of white men The speaker references her father as a man of privilege who brought diverse voices to government Barbara Jordan is highlighted as the first woman of color elected to the
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./YZ-iyFrNMy4.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/YZ-iyFrNMy4.jpg" alt="Adam Friedland RIPS INTO Ritchie Torres on Israel, Demfluencers CAUGHT In Funding Scheme" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Adam Friedland RIPS INTO Ritchie Torres on Israel, Demfluencers CAUGHT In Funding Scheme
+</h2>
+<p class="text-gray-300 mb-4">
+Adam Friedland interviewed Congressman Richie Torres about Israel-Gaza, creating a raw confrontation between emotional appeals and political talking points Friedland expressed feeling that Israeli actions are being done "in his name" as a Jewish person, causing him distress about Jewish identity Torres refused to engage
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./AwnzWAwOgCQ.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/AwnzWAwOgCQ.jpg" alt="Elon Musk COLLAPSES Over Employee Disaster In Stunning Severance Consequences" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Elon Musk COLLAPSES Over Employee Disaster In Stunning Severance Consequences
+</h2>
+<p class="text-gray-300 mb-4">
+Elon Musk reached a legal settlement to pay fired Twitter workers $500 million 6,000 workers were fired without proper severance after Musk's Twitter takeover Twitter's 2019 severance plan promised two months base pay plus one week per year of service Twitter only offered at most
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./6yiqra7XteU.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/6yiqra7XteU.jpg" alt="This Just Got A Whole Lot Worse" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+This Just Got A Whole Lot Worse
+</h2>
+<p class="text-gray-300 mb-4">
+UK has introduced a new elite police squad to monitor anti-migrant posts on social media The police unit will flag early signs of potential civil unrest and maximize social media intelligence gathering Britain is experiencing widespread protests outside asylum seeker hotels with counter-protests from supporters
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./TopEod2SdxQ.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/TopEod2SdxQ.jpg" alt="Jennette McCurdy - “I’m Glad My Mom Died” | The Daily Show" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Jennette McCurdy - “I’m Glad My Mom Died” | The Daily Show
+</h2>
+<p class="text-gray-300 mb-4">
+Jennette McCurdy wrote a book titled "I'm Glad My Mom Died" exploring complicated parent-child relationships She doesn't hate her mom but sees her as a complicated, nuanced person who was at times abusive McCurdy felt relieved when her mom died, a feeling society doesn't accept
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./XMfXIH2asK4.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/XMfXIH2asK4.jpg" alt="Bryan Johnson&#39;s Religion For The Age Of Artificial Intelligence" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Bryan Johnson&#39;s Religion For The Age Of Artificial Intelligence
+</h2>
+<p class="text-gray-300 mb-4">
+Brian Johnson transitioned from Mormon entrepreneur to biohacking pioneer, selling Braintree to PayPal and later founding Kernel (brain-computer interfaces) Started Blueprint protocol in 2022 as "world's best rejuvenation athlete" - training 6 hours daily on anti-aging protocols with rigorous scientific measurement Uses controversial methods like
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./5O5do_N07kY.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/5O5do_N07kY.jpg" alt="The Computer Chip Could End Nvidia&#39;s AI Monopoly | Guillaume Verdon on Extropic" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+The Computer Chip Could End Nvidia&#39;s AI Monopoly | Guillaume Verdon on Extropic
+</h2>
+<p class="text-gray-300 mb-4">
+Companies controlling AI extensions of human brains could steer thinking and control people by proxy, creating fundamental risk Extropic is developing thermodynamic computing using new silicon primitives based on stochastic electronics and bioinspired physics Current AI workloads are probabilistic, making probabilistic hardware a natural fit
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./A5eryQtjLC0.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/A5eryQtjLC0.jpg" alt="How to Add a Vignette in Premiere Pro 2025" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+How to Add a Vignette in Premiere Pro 2025
+</h2>
+<p class="text-gray-300 mb-4">
+Add a video clip to your timeline first Go to the effects panel Type "lummetric color" into the search box Drag the lummetry color effect onto your clip Open effect controls under lummetry color Find and open the vignette settings Increase amount to positive number
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./SzCsOIn1iUA.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/SzCsOIn1iUA.jpg" alt="Astros Fans Go from Cheers to Boos for Alex Bregman | Houston Drama vs Red Sox" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Astros Fans Go from Cheers to Boos for Alex Bregman | Houston Drama vs Red Sox
+</h2>
+<p class="text-gray-300 mb-4">
+Astros defeated the Red Sox in a dramatic game with multiple storylines Carlos Correa returned to Houston with "I'm Coming Home" as his walk-up music Alex Bregman hit a two-run home run in his first at-bat against his former team Bregman was booed by Houston
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./gQap4vNCEvE.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/gQap4vNCEvE.jpg" alt="Dave Smith REVEALS Why the Pro-Israel Argument is Dead" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Dave Smith REVEALS Why the Pro-Israel Argument is Dead
+</h2>
+<p class="text-gray-300 mb-4">
+Israel's actions in Gaza are described as destroying America's domestic tranquility through protests and civil unrest Former Israeli Prime Ministers Ehud Olmert and Ehud Barak have stated that Netanyahu is committing war crimes Every demographic except boomer Republicans has turned against Israel over the Gaza
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./rU92rAM4pZU.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/rU92rAM4pZU.jpg" alt="Marc Maron explains why he tried to get out of the Bruce Springsteen biopic" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Marc Maron explains why he tried to get out of the Bruce Springsteen biopic
+</h2>
+<p class="text-gray-300 mb-4">
+Mark Maron has become "offer only" and says no to most acting opportunities due to lack of desperation or hunger He has a pattern of initial resistance to projects, even good ones, often forgetting to read scripts for weeks His manager understands this behavior and
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./-ZZp3PFCUwM.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/-ZZp3PFCUwM.jpg" alt="There Are Some ‘Breaking Bad’ Scenes Betsy Brandt STILL Can’t Watch | The Rich Eisen Show" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+There Are Some ‘Breaking Bad’ Scenes Betsy Brandt STILL Can’t Watch | The Rich Eisen Show
+</h2>
+<p class="text-gray-300 mb-4">
+Anna Gunn (Betsy Brandt) and Dean Norris met in the waiting room while auditioning for Breaking Bad, both thinking it was a comedy The Breaking Bad pilot was described as "hands down the best pilot I've ever read" by Betsy Brandt Bryan Cranston wasn't cast
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./gj1tb8kwFS4.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/gj1tb8kwFS4.jpg" alt="Haley Gosserand from Building the band talk about Alison and Sweet Seduction drama" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Haley Gosserand from Building the band talk about Alison and Sweet Seduction drama
+</h2>
+<p class="text-gray-300 mb-4">
+Haley Gossaran appeared on Netflix's new show "Building a Band" Her mother was battling breast cancer during filming, which was the hardest time of her life She was able to be with her mom through chemo treatments and first surgery before filming Her mother encouraged
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./hdHFECRDuaY.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/hdHFECRDuaY.jpg" alt="Liam Payne EXPOSES The Dark Side of One Direction | tribuune." class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Liam Payne EXPOSES The Dark Side of One Direction | tribuune.
+</h2>
+<p class="text-gray-300 mb-4">
+Never got time to celebrate during One Direction - always on planes to next destination, sleeping on floors One Direction was "the new wave of the Beatles" - biggest selling tour in the world for three years straight Entering fame at 14 years old meant
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./6njQNnJYDkM.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/6njQNnJYDkM.jpg" alt="Alicia Silverstone Shares UNTOLD Clueless Stories and Reacts to UNSEEN Interviews | rETrospective" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Alicia Silverstone Shares UNTOLD Clueless Stories and Reacts to UNSEEN Interviews | rETrospective
+</h2>
+<p class="text-gray-300 mb-4">
+Alicia Silverstone discusses her ET retrospective covering her career from 1992 onwards She auditioned multiple times for "The Crush" (1993) and was thrilled when she got the role George Clooney was very kind to her during "Batman & Robin" and had a big brother vibe
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./GREd9Iev2dY.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/GREd9Iev2dY.jpg" alt="Interdimensional Beings have visited us, Congresswoman Claims – What might it mean?" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Interdimensional Beings have visited us, Congresswoman Claims – What might it mean?
+</h2>
+<p class="text-gray-300 mb-4">
+US Congress member claims military officials have seen evidence of interdimensional beings Air Force veteran Anna Luna discussed these claims on Joe Rogan's podcast Unidentified objects reportedly accelerate extremely quickly, faster than current technology allows These objects appear to be intelligently controlled and reactive to
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./LrkAORPiaEA.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/LrkAORPiaEA.jpg" alt="AI Copyright Claimed My Last Video" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+AI Copyright Claimed My Last Video
+</h2>
+<p class="text-gray-300 mb-4">
+AI-generated music copyright ownership is unclear and legally unresolved Anyone can copyright claim AI-generated content for about $30 in 20 minutes YouTube's Content ID system cannot determine or enforce AI-generated content policies Musicians risk being claimed for their own work if it sounds similar to
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./tXywjAkX8GE.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/tXywjAkX8GE.jpg" alt="Why Are All Movies Just Remakes and Sequels Now? | Insider Justine Bateman" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Why Are All Movies Just Remakes and Sequels Now? | Insider Justine Bateman
+</h2>
+<p class="text-gray-300 mb-4">
+Hollywood was established by risk-takers willing to create something from nothing and earn uncertain income Tech companies changed the industry by treating films and series as "content" for their platforms rather than art The industry lost its "north star" of excellence and outstanding work as
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./GwzN5YwMzv0.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/GwzN5YwMzv0.jpg" alt="Does the Past Still Exist?" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Does the Past Still Exist?
+</h2>
+<p class="text-gray-300 mb-4">
+Time is one of the biggest mysteries in both existence and physics Einstein fundamentally changed our understanding of time, showing it differs greatly from our perception Hermann Minkowski first suggested treating time as a dimension rather than just a parameter Maxwell's equations make more sense
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./CbO2YosyTt4.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/CbO2YosyTt4.jpg" alt="I tried Vibe Physics. This is what I learned." class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+I tried Vibe Physics. This is what I learned.
+</h2>
+<p class="text-gray-300 mb-4">
+AI models are now being used to develop new physics theories, but often produce work that is either new or correct, rarely both The author tested four large language models (GPT-5, Claude Opus 4.1, Grok 4, and Gemini Pro) on solving a millennium problem The
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./LKiBlGDfRU8.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/LKiBlGDfRU8.jpg" alt="My dream died, and now I&#39;m here" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+My dream died, and now I&#39;m here
+</h2>
+<p class="text-gray-300 mb-4">
+Started university expecting physics to be about intellectual discovery and respectful scientific debate, based on naive expectations from scientist biographies Discovered academia operates more like a money-making machine than a knowledge discovery institution Despite excellent grades, wasn't offered a graduate position because she was female
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./shFUDPqVmTg.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/shFUDPqVmTg.jpg" alt="I was asked to keep this confidential" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+I was asked to keep this confidential
+</h2>
+<p class="text-gray-300 mb-4">
+A physicist received a confidential email 7 years ago from someone at a top US institution after publishing a comment about losing trust in scientific self-correction The email author admits to creating "pretty useless stuff" - old research "refurbished with a couple of new bells
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./4S9sDyooxf4.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/4S9sDyooxf4.jpg" alt="I wasn&#39;t worried about climate change. Now I am." class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+I wasn&#39;t worried about climate change. Now I am.
+</h2>
+<p class="text-gray-300 mb-4">
+Climate scientists are debating a critical number called "climate sensitivity" - the temperature increase when atmospheric CO2 doubles 2023 was the hottest year on record with unprecedented heat waves, Antarctic sea ice lows, and ocean temperature records Traditional climate models predicted sensitivity of 2-4.5°C, but
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./VSTJWllOthI.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/VSTJWllOthI.jpg" alt="Finally Smart Glasses - Halliday AI Glasses" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Finally Smart Glasses - Halliday AI Glasses
+</h2>
+<p class="text-gray-300 mb-4">
+Halliday AI glasses became the most backed AI glasses ever on Kickstarter They look and feel like regular glasses with an understated, lightweight design Uses "Digi Window" display technology with micro LED instead of traditional waveguide systems Display is invisible to others and only visible
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./lpqYkBs_XpE.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/lpqYkBs_XpE.jpg" alt="Charlie Kirk DEMANDS Taylor Swift SUBMIT To Husband" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Charlie Kirk DEMANDS Taylor Swift SUBMIT To Husband
+</h2>
+<p class="text-gray-300 mb-4">
+Breaking Points show hosts Emily and Ryan discuss major news stories Taylor Swift and Travis Kelce engagement announced as major news topic Cracker Barrel returning to original logo mentioned as initial story Show covers multiple blocks including political and cultural commentary Charlie Kirk comments on
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./K_egjiYdHwM.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/K_egjiYdHwM.jpg" alt="Ryan &amp; Emily CLASH w/ Taylor Lorenz On School PHONE BANS" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Ryan &amp; Emily CLASH w/ Taylor Lorenz On School PHONE BANS
+</h2>
+<p class="text-gray-300 mb-4">
+Schools are implementing phone bans, with students roughly 99-100% opposed to these policies Taylor Loren opposes blanket laws enforced by police but supports teacher-led classroom policies like phone baskets Historical precedent exists with 1990s beeper bans that led to hundreds of kids having police interactions
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./PScOjwffvVE.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/PScOjwffvVE.jpg" alt="How Authors Can Use Long-Form Video to Build Their Brand | Publish &amp; Prosper Podcast #66" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+How Authors Can Use Long-Form Video to Build Their Brand | Publish &amp; Prosper Podcast #66
+</h2>
+<p class="text-gray-300 mb-4">
+Video content humanizes your brand and allows authentic connections with your audience You can create faceless video content - showing your face isn't required for successful channels Give yourself permission to experiment and treat video creation as just trying something new Don't let fear of
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./GDbEkAhV5UI.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/GDbEkAhV5UI.jpg" alt="How to Make Long-Form Journalism Work - IIJ Webinar" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+How to Make Long-Form Journalism Work - IIJ Webinar
+</h2>
+<p class="text-gray-300 mb-4">
+Catherine Reynolds Lewis is the founder of the Institute for Independent Journalists, celebrating 14 years as a full-time independent journalist focused on long-form work The institute was created by and for freelancers of color to share community wisdom, innovate best practices, and advocate for independent
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./o0Xs2C1rUq0.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/o0Xs2C1rUq0.jpg" alt="The Long Form Live: Rwanda Failing Its Boys? | Alain Numa on Masculinity, Trauma &amp; The Future of Men" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+The Long Form Live: Rwanda Failing Its Boys? | Alain Numa on Masculinity, Trauma &amp; The Future of Men
+</h2>
+<p class="text-gray-300 mb-4">
+Boys are falling behind in primary and secondary schools, with girls finishing at higher rates and the gap growing Over 60% of drug-related arrests in Rwanda involve young men, and more than 85% of prisoners are male Most boys never learn to talk about sadness,
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./wvRSij-1XI8.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/wvRSij-1XI8.jpg" alt="Thinking of watching Sting LIVE? THIS is what you&#39;re paying for." class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Thinking of watching Sting LIVE? THIS is what you&#39;re paying for.
+</h2>
+<p class="text-gray-300 mb-4">
+Sting has exceptional pitch accuracy and vocal precision in live performances This May 22, 2025 performance features a genuine three-piece band (bass, guitar, drums) with no backing tracks Sting uses almost no vibrato, focusing instead on pure pitch accuracy His vocal style features instant "fast
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./MfXxQW77cQA.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/MfXxQW77cQA.jpg" alt="The World War II Consensus is Breaking Down" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+The World War II Consensus is Breaking Down
+</h2>
+<p class="text-gray-300 mb-4">
+Foundation myths and sacred stories have expiration dates and cannot hold the world together forever World War II serves as the foundational myth for our current geopolitical world and value systems The WWII consensus is breaking down as the last generation with direct memory of
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./Pp9MwZkHiMQ.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/Pp9MwZkHiMQ.jpg" alt="Breaking The Creepy AI in Police Cameras" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Breaking The Creepy AI in Police Cameras
+</h2>
+<p class="text-gray-300 mb-4">
+Flock Safety is a startup founded in 2017 that leases AI-powered security cameras with license plate recognition to police departments, businesses, and homeowners associations These cameras track and log every vehicle's location and movements, creating detailed databases accessible to law enforcement and private companies without
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./bLpgIF5Vm2A.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/bLpgIF5Vm2A.jpg" alt="Trump Can’t Tell Budget Deficit From the Trade Deficit!" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Trump Can’t Tell Budget Deficit From the Trade Deficit!
+</h2>
+<p class="text-gray-300 mb-4">
+Trump claimed CBO analysis validates his tariff strategy with $4 trillion in deficit reduction CBO revised tariff revenue projections from $80 billion to $136 billion for fiscal year 2025 The $4 trillion projection assumes static tariff rates through 2035, which is unrealistic Trump changes tariff
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./8aJcR7wsURw.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/8aJcR7wsURw.jpg" alt="Fear Factory Was Right....The Collapse Is Here" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Fear Factory Was Right....The Collapse Is Here
+</h2>
+<p class="text-gray-300 mb-4">
+Fear Factory's 1995 album "Demanufacture" predicted many current AI and technology concerns 30 years ago The band pioneered industrial metal by blending death metal with electronic elements and mechanical precision Burton C. Bell's unique vocal style could shift from demonic growls to melodic clean vocals,
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./ikDLXbpDJn8.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/ikDLXbpDJn8.jpg" alt="Why Kpop Demon Hunters is Taking Over the World" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Why Kpop Demon Hunters is Taking Over the World
+</h2>
+<p class="text-gray-300 mb-4">
+K-pop Demon Hunters became Netflix's most watched original animation ever with over 130 million views since July 2025 The movie achieved success without big marketing campaigns - it was a stealth release that blew up through fan-driven virality It's the first Netflix title to hit
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./ueoMjPwzBws.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/ueoMjPwzBws.jpg" alt="Why Day Trading Does Not Work: Wall Street Pro Reacts to Billions Season 2, Episode 5" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Why Day Trading Does Not Work: Wall Street Pro Reacts to Billions Season 2, Episode 5
+</h2>
+<p class="text-gray-300 mb-4">
+Day trading does not work in the long run - there are no successful long-term day traders because stocks move randomly in the short term Successful hedge funds make money through 1-3 year positions with thorough investment research, not day trading Warren Buffett's approach: invest
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./8XehZJ9FyAk.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/8XehZJ9FyAk.jpg" alt="At 88, Robert Redford Names The Seven Actors He Hated THE MOST" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+At 88, Robert Redford Names The Seven Actors He Hated THE MOST
+</h2>
+<p class="text-gray-300 mb-4">
+Robert Redford, at 88, has revealed which actors made his work unbearable during his decades-long career Gene Hackman was described as "a sledgehammer in a violin shop" - brilliant but impossible to work with Redford and Hackman clashed during "Downhill Racer" over Hackman's volatile temperament
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./xS6-4umXGhk.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/xS6-4umXGhk.jpg" alt="Ex-Scientologist Reveals Tom Cruise Horror - Claire Headley | On the Edge podcast 288" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Ex-Scientologist Reveals Tom Cruise Horror - Claire Headley | On the Edge podcast 288
+</h2>
+<p class="text-gray-300 mb-4">
+Tom Cruise was introduced to Scientology by Mimi Rogers decades ago and has become one of the most powerful people in the organization Claire Headley and her husband Mark both worked with Tom Cruise at Scientology headquarters in California Mark received Scientology counseling from Tom
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./Tdahl_CDZ5Y.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/Tdahl_CDZ5Y.jpg" alt="Krystal and Saagar DEBATE Kilmar Abrego Garcia Deportation" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Krystal and Saagar DEBATE Kilmar Abrego Garcia Deportation
+</h2>
+<p class="text-gray-300 mb-4">
+Kilmer Abrego Garcia was wrongfully deported to El Salvador despite judicial orders preventing his deportation The government admitted the mistake but refused to bring him back until pressured by Supreme Court decision Upon return, he was charged with human trafficking and other crimes, which appear
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./flight.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/flight.jpg" alt="Flight 571: Survival in the Andes with Blair Braverman" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Flight 571: Survival in the Andes with Blair Braverman
+</h2>
+<p class="text-gray-300 mb-4">
+The story is based on Flight 571, which crashed in the Andes in October 1972, involving a Uruguayan rugby team 45 people were on the plane initially, but only 19 survived to be rescued after 72 days The survivors were mostly young Catholic men (ages
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./q1fp3T2u25s.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/q1fp3T2u25s.jpg" alt="how to get 18 bullet points of 3 hour podcasts (almost) instantly: podpapyrus" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+how to get 18 bullet points of 3 hour podcasts (almost) instantly: podpapyrus
+</h2>
+<p class="text-gray-300 mb-4">
+Site converts long podcasts into readable bullet-point summaries instead of watching 3+ hour videos Must be run locally - no way to host publicly due to YouTube content restrictions and creator concerns Uses AI to process full YouTube transcripts and generate 18 bullet-point summaries Open
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./XW6ikaZcVDE.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/XW6ikaZcVDE.jpg" alt="Breaking Bad S2E13: Völlig losgelotst" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Breaking Bad S2E13: Völlig losgelotst
+</h2>
+<p class="text-gray-300 mb-4">
+Das Kaltmundfest in Bad Segeberg ist ein bekanntes Volksfest in Schleswig-Holstein Walter wird in ein Luxus-Drogenrehabilitationszentrum gebracht nach Janes Tod Mike taucht als Tatortreiniger auf und räumt Jessies Wohnung auf bevor die Polizei kommt Jessie verfällt nach Janes Tod in einen extremen Drogenrausch in einem
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./n0nWkyXfXmU.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/n0nWkyXfXmU.jpg" alt="2025: The Year It All ENDS: Trump, Economics, War, Family &amp; More" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+2025: The Year It All ENDS: Trump, Economics, War, Family &amp; More
+</h2>
+<p class="text-gray-300 mb-4">
+2025 is a 9-year cycle representing death, endings, realizations, self-reflection, and completion If you're experiencing big career changes, relationship issues, or identity confusion, you're exactly where you need to be in a 9-year Global events like wars, political drama, and economic downturns are all part
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./Kf-0tr__514.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/Kf-0tr__514.jpg" alt="KICK IS F*CKED | The Kyle Kulinski Show" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+KICK IS F*CKED | The Kyle Kulinski Show
+</h2>
+<p class="text-gray-300 mb-4">
+Kick is a streaming platform that positions itself as a "wild west" alternative to Twitch with more lenient rules A group of French streamers tortured a vulnerable man named Jean Pormanov to death during a live 10-day marathon stream Jean Pormanov was forced to ingest
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./sk6O1pCXFno.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/sk6O1pCXFno.jpg" alt="Jerry Seinfeld Was Offered $110 Million to Make Another Season of “Seinfeld” (2013)" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Jerry Seinfeld Was Offered $110 Million to Make Another Season of “Seinfeld” (2013)
+</h2>
+<p class="text-gray-300 mb-4">
+You can never top Seinfeld - it's iconic and was a perfect storm with ideal casting Jerry and Larry David's comedy chemistry was instant - they clicked within minutes of talking NBC ignored Jerry for 9 years despite his success on Carson Show before finally
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./2s2wAcpMitw.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/2s2wAcpMitw.jpg" alt="Kilmar Abrego Garcia taken into ICE custody, faces deportation to Uganda" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Kilmar Abrego Garcia taken into ICE custody, faces deportation to Uganda
+</h2>
+<p class="text-gray-300 mb-4">
+Kilmar Abrego Garcia is currently in ICE custody after showing up for an appointment at a Baltimore field office US immigration officials have threatened to deport the Maryland resident to Uganda after he declined a plea deal Large crowd chanted in support as he entered
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./GalB18ILvhI.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/GalB18ILvhI.jpg" alt="Issues on Set of a Hit Show When It Starts to Grow (with DANIELLE PANABAKER)" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Issues on Set of a Hit Show When It Starts to Grow (with DANIELLE PANABAKER)
+</h2>
+<p class="text-gray-300 mb-4">
+Carlos was the person who made the speaker laugh the most Carlos and the speaker shared a trailer for six seasons, creating an extremely close bond Sharing a "double banger" trailer meant knowing too much about each other's personal habits After season 6, the speaker
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./uDG6A7B7jRg.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/uDG6A7B7jRg.jpg" alt="Joe Rogan Experience #2324 - Amanda Knox" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Joe Rogan Experience #2324 - Amanda Knox
+</h2>
+<p class="text-gray-300 mb-4">
+Amanda Knox was wrongly convicted of murder and spent 4 years in prison in Italy for a crime she didn't commit - a case that became an international scandal She developed a unique approach to healing by reaching out to and forming a relationship with
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <a href="./7olDGSQEi1c.html" class="block bg-gray-800 rounded-lg p-6 border border-gray-700 flex flex-col sm:flex-row gap-6 hover:bg-gray-700 hover:border-blue-400 transition duration-300">
+<img src="../images/7olDGSQEi1c.jpg" alt="Amanda Knox: Meredith Kercher&#39;s family asked if they believe guilty verdict" class="w-full sm:w-40 h-32 sm:h-28 object-cover rounded-lg flex-shrink-0" />
+<div class="flex-1">
+<h2 class="text-2xl font-bold text-gray-100 mb-3 hover:text-blue-400 transition duration-300">
+Amanda Knox: Meredith Kercher&#39;s family asked if they believe guilty verdict
+</h2>
+<p class="text-gray-300 mb-4">
+The verdict was expected by the family, though they knew there would be a council appeal regardless of the decision Language barriers made it difficult to immediately understand the courtroom proceedings in Italian Amanda Knox has stated she won't return to Italy and would have
+</p>
+<div class="flex justify-between items-center">
+<span class="text-blue-400 font-medium">Read Full Summary →</span>
+</div>
+</div>
+</a>
+
+          <!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+<!-- end of a tags -->
+
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="../index.html" class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-600 hover:text-white transition duration-300">
+            ← Back to Home
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-gray-400">&copy; 2024 PodPapyrus. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
