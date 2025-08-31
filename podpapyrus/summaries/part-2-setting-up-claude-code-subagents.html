@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Part 2: Setting up Claude Code Subagents PodPapyrus</title>
+    <link rel="icon" type="image/png" href="../logo256.png" />
+    <link rel="apple-touch-icon" href="../logo256.png" />
+
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://podpapyrus.com/" />
+    <meta property="og:title" content="PodPapyrus is a way to read your favorite podcasts." />
+    <meta property="og:description" content="PodPapyrus is a way to read your favorite podcasts." />
+    <meta property="og:image" content="../images/2sbWnlT12c8.jpg" />
+          
+    
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://podpapyrus.com/" />
+    <meta property="twitter:title" content="PodPapyrus is a way to read your favorite podcasts." />
+    <meta property="twitter:description" content="PodPapyrus is a way to read your favorite podcasts." />
+    <meta property="twitter:image" content="../images/2sbWnlT12c8.jpg" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="text/javascript">
+  (function (f, b) { if (!b.__SV) { var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) { function g(a, d) { var b = d.split("."); 2 == b.length && ((a = a[b[0]]), (d = b[1])); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))); }; } var a = b; "undefined" !== typeof c ? (a = b[c] = []) : (c = "mixpanel"); a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d; }; a.people.toString = function () { return a.toString(1) + ".people (stub)"; }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split( " "); for (h = 0; h < i.length; h++) g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]); }; } for ( var d = {}, e = ["get_group"].concat( Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++) b(j[c]); return d; }; b._i.push([e, f, c]); }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g); } })(document, window.mixpanel || []);
+
+mixpanel.init("29d6db85517ba504818659df83844c01", {
+  track_pageview: true,
+  persistence: "localStorage",
+});
+</script>
+
+  </head>
+  <body class="bg-gray-900 text-gray-100">
+    
+    <nav class="bg-gray-800 shadow-lg fixed w-full z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0 flex items-center">
+              <a href="../index.html" class="text-2xl font-bold text-blue-400">
+              <img src="../logo256.png" alt="PodPapyrus" class="h-8 w-8 mr-3" />
+              </a>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    
+    <section class="pt-20 pb-8 bg-gradient-to-br from-gray-800 to-gray-900">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8">
+          <img src="../images/2sbWnlT12c8.jpg" alt="Part 2: Setting up Claude Code Subagents" class="w-48 h-32 object-cover rounded-lg mx-auto mb-6" />
+          <span class="text-blue-400 text-sm font-medium">Great Pods</span>
+          <h1 class="text-3xl md:text-4xl font-bold text-gray-100 mt-2 mb-4">
+            Part 2: Setting up Claude Code Subagents
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="py-8 bg-gray-900">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="bg-green-900 rounded-lg p-8 border border-green-700 mb-8">
+          <h2 class="text-2xl font-bold text-green-100 mb-4">Key Points</h2>
+          <div class="prose prose-invert max-w-none prose-li:list-disc prose-ul:list-disc">
+            <div class="text-green-50 [&_ul]:list-disc [&_li]:list-item [&_ul]:ml-6"><ul>
+<li>Claude Code sub agents were announced and are now available for practical software development lifecycle applications</li>
+<li>Agent context should be comprehensive despite 400+ character warnings - proper context is crucial for success</li>
+<li>Agents are created as markdown files in an agent directory, each purpose-built for specialized capabilities</li>
+<li>The product manager orchestrator agent focuses on leveraging team strengths rather than doing work directly</li>
+<li>Product manager agents prioritize user value over feature count and team collaboration over individual heroics</li>
+<li>Agent roles include PRD writer, deep research analyst, system architect, and senior software engineer</li>
+<li>Clear decision-making frameworks define who does what and the process for task assignment</li>
+<li>YAML formatting issues can occur when setting up these specialized agents</li>
+<li>Agents can be copied to home directory to make them globally available across all projects</li>
+<li>Claude Code can run with "dangerously skip permissions" option for autonomous operation</li>
+<li>Cloud Code hooks can be used for single script implementations to prevent accidental file system damage</li>
+<li>Task delegation works by calling the product manager orchestrator and specifying the work needed</li>
+<li>Sequential thinking MCP server and Serena MCP server are used to complete activities efficiently</li>
+<li>Voice input via Whisper Flow can be used for even greater efficiency in task assignment</li>
+<li>The system automatically delegates tasks to appropriate team members based on expertise</li>
+<li>Technical implementation templates are available for software development workflows</li>
+<li>Non-technical sub agents can be created for general workflows beyond software development</li>
+<li>The approach represents a shift toward orchestrated AI team collaboration rather than single-agent work</li>
+</ul>
+</div>
+          </div>
+        </div>
+
+        
+        <div class="bg-gray-800 rounded-lg p-8 border border-gray-700">
+          <h2 class="text-2xl font-bold text-gray-100 mb-4">Full Transcript</h2>
+          <textarea readonly class="w-full h-96 bg-gray-700 text-gray-100 border border-gray-600 rounded-lg p-4 resize-y font-mono text-sm leading-relaxed">Language: en
+All right, so we&#39;re about a day since we
+got our first chance to really see Cloud
+Code sub agents. So since the
+announcement from yesterday, we&#39;ve been
+starting to really dive into putting
+together a practical application how to
+use these starting with software
+development life cycle type agents. But
+the idea here was not to just to create
+the software development agents with all
+your usual suspects that we saw from the
+original supercloud repositories, but
+starting to drill this into what is the
+amount of context that you need to be
+successful. So even what I have right
+now is going to be a little bit long.
+When I was starting to build some of
+these agents, I saw that there were
+warning messages for anything more than
+400 characters, but I thought it was
+extremely important to make sure that it
+had the right amount of context. So, as
+we kind of go, we&#39;ll probably tweak
+these even further, but this is a really
+good starting point that you can take a
+look at and use right away. So, it
+really is as simple as going into this
+agent directory here. And you&#39;ll see
+that we have markdown files that are
+purpose-built by the specialized
+capability of the agents that you&#39;d like
+to use. And we&#39;re going to start with
+the product manager orchestrator. So,
+essentially what this file is going to
+be is it&#39;s going to go ahead and say
+that you&#39;re a product manager who
+orchestrates the team of specialized
+agents. So this is incredibly important
+because you&#39;re focusing more on how to
+leverage the team strengths as opposed
+to doing the work yourself. So this is
+an orchestrator agent that&#39;s going to
+look at it and it&#39;s going to base it off
+of just like any other product manager,
+user value over feature count, team
+collaboration over heroic. So all the
+things you would think of traditional
+great leadership styles. And as we kind
+of look through here, you&#39;re going to
+see that there&#39;s some patterns that
+we&#39;re using. So, who&#39;s responsible for
+what type of capabilities? Whether
+that&#39;s your PRD, your product or project
+requirement document writer, your deep
+research analyst for something that is
+something that you need to learn about,
+your system architect, and so on and so
+forth. So, as you can see, there&#39;s a
+there&#39;s a really solid breakdown of the
+decision-making framework of who&#39;s going
+to do what, the process of assigning it,
+and as we go from those orchestrator
+agents, now you can get into what the
+system architect looks like, your senior
+software engineer of what would be
+there. And we&#39;ll go through and I have
+noticed this with some of these YAML
+formattings when we start to go through
+them. So, what will I do after this?
+will go through and I&#39;ll have my product
+manager orchestrator. I&#39;ll give it from
+the users perspective to be able to go
+ahead here and make the necessary
+updates that we need to do. So, here&#39;s
+essentially what it&#39;s going to look
+like. We&#39;re going to go over here and if
+we clone into the repository for cloud
+code sub agents, we can then copy the
+agents, the markdown files. And in this
+example, all I&#39;m doing is I&#39;m going here
+and I&#39;m adding them directly into my
+home directory. So those are my personal
+agents that are global in nature and I
+can use them on any project that I want
+to do. So essentially all we have to do
+here at this point in time we have it we
+have an issue that we can go ahead here
+and resolve. So what we&#39;ll do is let&#39;s
+go ahead and fire up flawed and I&#39;m
+going to use the dangerously skip
+permissions option here so that way it
+can run autonomously. If you do have
+cloud code hooks, this is something that
+you can take advantage of and you can
+put single script implementations. So
+that way you&#39;re not getting hit with it
+accidentally removing files in your file
+system. So once we have this fired up
+here, if I go to agents, you&#39;re going to
+see that I have all of these agents
+available to me right now. So, I&#39;m going
+to go ahead here and I&#39;m going to give
+it a ro and I&#39;m going to call it user.
+And I&#39;m going to say delegate to and I
+don&#39;t know if this is the best way, but
+this has been working for me lately.
+Delegate to the product manager. And
+we&#39;re going to go ahead and give it a
+task. And this task I&#39;m going to
+actually use voice here in just a
+second. So, we&#39;re going to go ahead and
+take a look. And on the senior software
+engineer, we have the following error.
+So, we will go ahead and revert back.
+in the agents directory for the senior
+software engineer sub agent. We&#39;re
+getting the following YAML error.
+And all I&#39;m going to do is I&#39;m going to
+drop that in.
+Please use the sequential thinking MCP
+server and Serena MCP server to be able
+to complete the necessary activities.
+Please ensure that you&#39;re delegating to
+the appropriate team members so we can
+get this issue resolved.
+And all we&#39;re doing here is I&#39;m using
+Whisper Flow to be able to be a little
+bit even more efficient. So what&#39;s going
+to happen is behind the scenes here,
+it&#39;s going to start computing. It&#39;s
+going to go through it and then as it
+gets to the different stages, it&#39;s going
+to go ahead here and delegate out to the
+appropriate members on the team. So you
+can see right off the bat we&#39;re getting
+the product manager orchestrator agent
+sub agent and it&#39;s going to go through
+and do its work through sequential
+thinking as you can see here where it&#39;s
+calling out to the MCP server and it&#39;s
+now go ahead and registering over to
+Serena to do some of the work there. So
+this is just a quick little rundown of
+what this will look like. We&#39;ll push
+this update out after it gets completed,
+but wanted to give a rundown of here&#39;s
+how you can start to use this. Now the
+PRD file that we do have on this. If we
+go back over to
+you can see that we have a technical
+implementation template. So just because
+we were doing software development life
+cycle doesn&#39;t mean that we can&#39;t use any
+other use case. So I&#39;m going to start
+playing with this for the next video and
+start doing some non-technical sub aents
+that we can use for any of our general
+workflows. So I hope this helps. If it
+was helpful, please subscribe and we&#39;ll
+see you on the next one.
+</textarea>
+        </div>
+
+        <div class="mt-8">
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+            <a href="../summaries/index.html" class="border-2 border-blue-400 text-blue-400 px-6 py-2 rounded-lg font-medium hover:bg-blue-600 hover:text-white transition duration-300 text-center">
+              ← All Summaries
+            </a>
+            <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+              <a href="https://youtube.com/watch?v=2sbWnlT12c8" target="_blank" class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition duration-300 text-center">
+                Watch on YouTube
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <footer class="bg-black text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-gray-400">&copy; 2024 PodPapyrus. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
