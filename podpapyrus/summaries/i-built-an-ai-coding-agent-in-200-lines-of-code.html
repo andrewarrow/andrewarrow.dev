@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I Built an AI Coding Agent in 200 Lines of Code. PodPapyrus</title>
+    <link rel="icon" type="image/png" href="../logo256.png" />
+    <link rel="apple-touch-icon" href="../logo256.png" />
+
+    <link rel="canonical" href="https://andrewarrow.dev/podpapyrus/summaries/7oTPNr9APGE.html">
+
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://podpapyrus.com/" />
+    <meta property="og:title" content="I Built an AI Coding Agent in 200 Lines of Code. - PodPapyrus." />
+    <meta property="og:description" content="I Built an AI Coding Agent in 200 Lines of Code. PodPapyrus." />
+    <meta property="og:image" content="https://andrewarrow.dev/podpapyrus/images/7oTPNr9APGE.jpg" />
+          
+    
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://podpapyrus.com/" />
+    <meta property="twitter:title" content="I Built an AI Coding Agent in 200 Lines of Code. PodPapyrus." />
+    <meta property="twitter:description" content="PodPapyrus PodPapyrus." />
+    <meta property="twitter:image" content="https://andrewarrow.dev/podpapyrus/images/7oTPNr9APGE.jpg" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="text/javascript">
+  (function (f, b) { if (!b.__SV) { var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) { function g(a, d) { var b = d.split("."); 2 == b.length && ((a = a[b[0]]), (d = b[1])); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))); }; } var a = b; "undefined" !== typeof c ? (a = b[c] = []) : (c = "mixpanel"); a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d; }; a.people.toString = function () { return a.toString(1) + ".people (stub)"; }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split( " "); for (h = 0; h < i.length; h++) g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]); }; } for ( var d = {}, e = ["get_group"].concat( Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++) b(j[c]); return d; }; b._i.push([e, f, c]); }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g); } })(document, window.mixpanel || []);
+
+mixpanel.init("29d6db85517ba504818659df83844c01", {
+  track_pageview: true,
+  persistence: "localStorage",
+});
+
+</script>
+
+  </head>
+  <body class="bg-gray-900 text-gray-100">
+    
+    <nav class="bg-gray-800 shadow-lg fixed w-full z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0 flex items-center">
+              <a href="../index.html" class="text-2xl font-bold text-blue-400">
+              <img src="../logo256.png" alt="PodPapyrus" class="h-8 w-8 mr-3" />
+              </a>
+            </div>
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    
+    <section class="pt-20 pb-8 bg-gradient-to-br from-gray-800 to-gray-900">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8">
+          <img src="../images/7oTPNr9APGE.jpg" alt="I Built an AI Coding Agent in 200 Lines of Code." class="w-48 h-32 object-cover rounded-lg mx-auto mb-6" />
+          <span class="text-blue-400 text-sm font-medium">Great Pods</span>
+          <h1 class="text-3xl md:text-4xl font-bold text-gray-100 mt-2 mb-4">
+            I Built an AI Coding Agent in 200 Lines of Code.
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="py-8 bg-gray-900">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="bg-green-900 rounded-lg p-8 border border-green-700 mb-8">
+          <h2 class="text-2xl font-bold text-green-100 mb-4">Key Points</h2>
+          <div class="prose prose-invert max-w-none prose-li:list-disc prose-ul:list-disc">
+            <div class="text-green-50 [&_ul]:list-disc [&_li]:list-item [&_ul]:ml-6"><ul>
+<li>AI coding agents like Claude Code are not black magic - they can be built in just 200 lines of code</li>
+<li>You only need basic programming skills and access to a large language model (LLM) to build a coding agent</li>
+<li>Large language models are stateless text-in, text-out systems that generate responses one token at a time</li>
+<li>OpenAI SDKs provide a thin abstraction layer above LLMs for easier programming</li>
+<li>Agentic AI enriches basic LLMs by giving them the ability to sense and impact their environment</li>
+<li>Coding agents can read files, write code, run shell scripts, and execute tests</li>
+<li>Conversation memory is maintained by storing all messages and responses in the agent code, not the LLM</li>
+<li>Tool calling works by sending secret prompts to the model describing available tools and expected JSON response format</li>
+<li>When an LLM wants to use a tool, it responds with JSON requesting the tool call instead of regular text</li>
+<li>The agent parses tool call requests, executes the actual tools, and sends results back to the LLM</li>
+<li>Tools can include file operations (read/write), code execution, and shell commands</li>
+<li>PowerShell access can give an agent "god mode" capabilities to perform any system operation</li>
+<li>Tool specifications follow formats like OpenAI's standard, with alternatives like MCP (Model Context Protocol) for standardization</li>
+<li>The core components are: HTTP client, game loop (main loop), conversation history storage, and tool calling support</li>
+<li>Everything else in commercial coding agents is essentially "bells and whistles" on top of these fundamentals</li>
+<li>Local models like Qwen 2.5 Coder can be used instead of expensive frontier models for learning purposes</li>
+<li>The agent maintains conversation state by appending user messages, assistant responses, and tool results to a message list</li>
+<li>Each tool call becomes another message type in the conversation history that gets sent with every new prompt</li>
+</ul>
+</div>
+          </div>
+        </div>
+
+        
+        <div class="bg-gray-800 rounded-lg p-8 border border-gray-700">
+          <h2 class="text-2xl font-bold text-gray-100 mb-4">Full Transcript</h2>
+          <textarea readonly class="w-full h-96 bg-gray-700 text-gray-100 border border-gray-600 rounded-lg p-4 resize-y font-mono text-sm leading-relaxed">Language: en
+Hey folks, tools like cloth code or
+codeex or cursor, they feel a bit like
+black magic, right? Well, today I&#39;m
+going to show you that there is zero
+black magic involved because we will be
+building our own cloud code killer. Nah,
+I&#39;m kidding. But we will be building our
+own AI coding agent uh so you can see
+what the fundamentals are and uh what&#39;s
+involved. And spoiler alert, it&#39;s only
+200 lines of code. So, let&#39;s dig in.
+And there we go. And as you can see,
+there is actual JavaScript code in here
+that gets called and evaluated. So that
+is pretty cool, right? We just built our
+coding agent in 200 lines of code and it
+can do anything cloud code can kind of.
+Now the inspiration for this video came
+from a blog post and a talk by uh the
+AMP code crew Thorston Bal and Jeffrey
+Huntley. So if you want to dive into the
+original blogs, they&#39;re in the
+description below.
+All right. Now, what do we need to get
+started? Turns out you don&#39;t need much.
+You need some programming uh skills. You
+need to be able to write CLI programs
+and talk to an HTTP web server. And
+secondly, you need access to a large
+language model. Now you can use the F
+frontier models like cloth set or GPT5
+whatever or you can go for a cheaper
+route especially for this exercise which
+is using cheaper models or even running
+your own model and that is what we I
+will be doing today. I am running like a
+very old very small quen coder model on
+this laptop here. So it&#39;s all local uh
+or at least it&#39;s on my local network and
+that&#39;s actually all you need. So, basic
+programming skills um and access to a
+model. All right. First, we need to get
+some fundamentals down. And the first
+one is a 30-cond recap of what a large
+language model is and how it works
+somewhat. So, you can treat a large
+language model as a blackbox. And it&#39;s a
+stateless thing that takes input, which
+is like messages or commonly called
+prompts, and then one token at a time,
+it generates a response.
+And for each subsequent token, it needs
+like all the previous things. So your
+prompt and things, but that&#39;s that&#39;s
+already going into too much detail. Uh
+all you need to know is that it&#39;s text
+in text out and it&#39;s a very lowlevel
+technology. Now that will not be fun to
+program with, but there are some SDKs um
+the most commonly used ones are the
+OpenAI ones uh that provide a thin layer
+above this. And what these SDKs give you
+is a way to send messages to a model and
+receive like the entire uh completion.
+So the entire responses and you can
+stream them and you can do all kinds of
+crazy stuff. So you can think of these
+OpenAI SDKs as like a thin abstraction
+layer above LLMs that allow you to do
+text in text out kind of protocols. And
+that&#39;s what we will be using to build
+our first AI coding agent.
+So what exactly is an agent? Well, if
+you have these basic building blocks
+like a stateless thing, message in,
+message out, that&#39;s like programming and
+hasll, right? No side effects means no
+interesting software.
+But uh when we talk about agentic AI, we
+uh enrich this thing so that it can
+sense and impact its environment. So it
+can see things that are happening that
+are not like directly in its prompt and
+it can do things that are like not in
+its immediate control.
+And for coding agents, what we will be
+building today, seeing the environment
+is like having the ability to read
+files, to open files, to list
+directories, stuff like that. And
+impacting the environment. Typical
+coding agents, they can write text or
+code to files and they can run shell
+scripts to compile code, run unit tests,
+stuff like that. So that&#39;s what we mean
+when we say uh agentic.
+All right. So we will be building this
+coding agent like step by step
+incrementally and let&#39;s take a look at
+the first step or the first iteration
+which will be very bare bones but bear
+with me. Uh we are just going to write
+an AI coding agent that you can talk to.
+You can send a message and that&#39;ll go
+and talk to a large language model and
+it&#39;ll just print out a response. So it&#39;s
+a very basic walking skeleton
+and let&#39;s uh grab the code for that. So
+it is 50ish 70ish lines of code but it&#39;s
+a lot of boilerplate inn net. So it&#39;s 50
+lines of code. Uh what actually are we
+doing? We are uh using the openi uh
+client to talk to models and as you can
+see I&#39;m running uh a model somewhere in
+my network uh using oama and it is quen
+2.5 coder 7b instruct.
+doesn&#39;t really matter but it&#39;s a very
+small model I can run on my consumer
+and then we just connect to uh yeah that
+LLM provider that model provider and
+then what happens when we run uh our
+command or our application we just ask
+for input like uh like cloud code would
+do we ask for a prompt and then we uh
+process it and as you can see it&#39;s like
+a game loop a main loop that keeps doing
+this until you want to stop and Let&#39;s
+take a look at what happens uh if you uh
+ask a question or like submit a prompt.
+We just wrap it into some uh types and
+then say run inference. That&#39;s the
+technical term for like generate some
+tokens for me please and we print it out
+to console. Now what does running
+inference look like uh in this hello
+world example? Super simple. We just use
+that client uh and we say okay just
+complete this message just provide a
+response and then we just uh return the
+string result and that&#39;s it. So now
+let&#39;s see that in action. So yeah it&#39;s
+booted up and let&#39;s say
+let&#39;s say hello there
+and there we go. We have a a ripple and
+we can talk to a model from our command
+line. Now, this isn&#39;t doing much, right?
+But let&#39;s uh build some some extra
+sauce. Let&#39;s let&#39;s put something on top.
+So, the first thing you will notice when
+you have this hello world up and running
+is that it&#39;s really dump. And when I say
+really dump, I mean really dump. So, let
+me illustrate this.
+Uh let me tell it a secret.
+So, now I just told my LM uh the secret
+and now I&#39;m going to ask it about the
+secret. What was
+so asking what was the secret again?
+And it has no clue what we&#39;re talking
+about. What&#39;s happening?
+Well, uh, one thing we glossed over in
+the introduction is that uh, LLMs are
+stateless. So, they do not keep any
+track of any state. And even that SDK,
+that wrap around it does not keep track
+of any state. that&#39;s just there to allow
+you to send messages to an LLM and to
+like get responses back. So how do we
+get like how does cloth code get get its
+memory like a conversational memory?
+Well, the trick is it&#39;s actually all
+kept in the agent code. So in the the
+thing we are building.
+So what we are going to do is we&#39;re
+going to store uh a conversation which
+is nothing more than a list of messages
+and we&#39;re going to store both the things
+we are saying and the responses that we
+got from the LLM. And then as a next
+step every time we ask a new question or
+send a new message we are going to
+upload or send along the entire
+conversation history uh to the model. So
+it has like track of everything that has
+been said before and that&#39;s actually how
+u these models u have conversations.
+So let&#39;s now go to the code and take a
+look at what this looks like in
+practice. So as we just discussed uh you
+just need to keep track of a
+conversation and in my hackey
+implementation that&#39;s just a list of all
+the chat messages that get sent and that
+we received. So that&#39;s what you see here
+this conversation list and then not a
+lot changes actually except uh where we
+are running inference. We&#39;re just adding
+every message we send to this list and
+adding every response we get to this
+list and that is the only difference
+except that when we run inference
+instead of like sending just the last
+message we send the entire conversation.
+Now one other thing to note is the what
+you can see here there are different
+kinds of messages and those are just
+tags that like say okay this was
+originally a message from the user or
+this was originally a message from the
+model itself. So uh there&#39;s like a real
+script like a a play or a movie script
+that has like all the actors in it and
+that is actually all you need to uh yeah
+keep session state or conversation
+state. So let&#39;s see what that looks
+like. All right. So let&#39;s try the secret
+And now let&#39;s see if it remembers.
+There you go. It knows about secrets. It
+keeps track of the conversation history.
+So that&#39;s how you keep track of
+conversation. All right. Now we&#39;re
+getting to the good stuff. Tool calling.
+So let&#39;s make our agent actual agents
+that can sense their environment and can
+like write to their environments. Uh so
+first uh we&#39;re going to do this um with
+chat GPT in the browser just to have
+like an idea of what we&#39;re going to do
+and then we&#39;ll write some code to do the
+actual tool uh integration. But first
+things first, how does this work?
+Because large language models as you
+know it&#39;s text in text out. They cannot
+execute code. They cannot run commands.
+So how do tools actually get integrated?
+actually with a clever hack by
+reprogramming these models. Uh because
+what happens is uh next to your
+conversation and the prompts you&#39;re
+submitting, there&#39;s a like a a sneaky
+secret uh message that gets sent. Uh and
+we&#39;ll take a look at it in a second, but
+that basically tells the agent these are
+the tools you have access to and this is
+how you should like signal that you need
+to call a tool. So that&#39;s just another
+message, just another prompt that gets
+sent over the wire to the model and then
+the model knows about tools and can
+execute them. But what does that
+actually look like executing a tool for
+a large language model? For that, we can
+go to shhat GBT and take a look at an
+actual uh tool description uh list. So
+uh let&#39;s take a look at this prompt
+before I fire it off. We&#39;re telling the
+model is that it has a list of tools and
+if they feel like they should be calling
+a tool to like answer your questions or
+obey your commands, they uh have to
+respond with some jason some JSON
+and that&#39;s not valid JSON but okay. So
+they have to respond with some JSON
+basically requesting a tool call to
+happen and then uh we will do the actual
+tool call like me uh in the browser
+typing the answer or when we build our
+coding agent we will write some code
+that does that for us. So no mechanical
+term there but that&#39;s the idea. And then
+as an example let&#39;s give a chat GPT a
+tool list here that is like okay we have
+one tool it&#39;s called get secret. This is
+what you can do with it. It takes no
+arguments and this is what you get back.
+So we&#39;re just telling it that we have a
+get secret tool uh that shed GPT can use
+to find out about the secret and takes
+no arguments and it&#39;ll return the
+secret. So let&#39;s reprogram shed GPT with
+this tool list.
+So, it got the message. We&#39;re good to
+go. And now, let&#39;s send a prompt asking
+about the secret.
+And as you can see, it answers, but it
+answers with like a request for a tool
+call. It&#39;s saying, &#34;Hey, I need a tool
+call uh uh for this to work.&#34; And the
+tool we&#39;re calling is get secrets. So,
+now pretend we are the coding agent and
+we see this response. Okay, we need to
+do a tool call. So, let&#39;s pretend we do
+that. And we found the secrets. So now
+let&#39;s return secret.
+I don&#39;t know why I&#39;m picking fruit,
+but now we responded with a tool uh
+response and chat GBT just like sees it
+and can continue its work. So this is in
+a nutshell what tool calls look like.
+Now let&#39;s implement that. All right. So
+now let&#39;s implement tool calling in our
+coding agent. Uh so um the only thing
+that changes
+is that uh when we get a response an
+assistant message is what it&#39;s called in
+the open SDK we investigate that
+response and whether if it&#39;s a tool call
+we do some tool calling and
+uh that&#39;s actually the only difference.
+So let&#39;s take a look at uh what I&#39;m
+doing here. I&#39;m just taking a look at
+like is the response JSON or not. If
+it&#39;s JSON, it&#39;s a tool call and we take
+a look at the request to perform the
+tool. Otherwise, not. That&#39;s not
+actually how tool calling works in most
+models and most um clients, but it is
+with the model I&#39;m using and Olama, the
+the model provider I&#39;m using. So, there
+are better ways if you&#39;re building your
+own coding agent than trying to parse
+JSON basically, but it works for this
+demo. So, that&#39;s why I&#39;m going with it.
+So yeah, this is where we&#39;re parsing uh
+JSON to see whether or not it&#39;s a tool
+call and just as we did in our chat GPT
+demo, it&#39;s just the name of the tool and
+some arguments if uh that&#39;s relevant.
+And then when we have our tool call
+uh if I can navigate back at least.
+Yeah. So if it is a tool call uh we do a
+tool call which is what you can see here
+and then save that tool call as another
+message in the conversation history as
+we do for uh user messages and assistant
+messages. Now we also have like tool
+messages and that gets sent to the LLM
+with every prompt we do. So that&#39;s how
+the LLM receives tool responses. So
+let&#39;s take a take a quick look at
+running a tool. Um the secret tool uh
+that we just demoed is a hardcoded thing
+but this is where the magic will happen.
+This is where you can look up files,
+read files, edit files. So this is how
+tool calling works in practice. And as
+you can see here, our secret of the day
+uh in our actual tool is key lime pie.
+So we&#39;re still somewhere in the fruit
+And now uh let&#39;s demo this.
+So I&#39;m going to ask it what is the
+As you can see, it did the tool call
+response and then our agent picked up
+that response, parsed it and executed
+this line of code. And that is exactly
+what the model got and what the model
+returned. So that&#39;s basically how tool
+calling works. Now let&#39;s make it a
+powerful coding agent. So it can write
+files and read files and execute code.
+So let&#39;s now make it a quick real coding
+agent. So it can read files, write
+files, and uh execute code. And
+typically you give these agents
+different tools for the job. But I was
+getting I was spending way too much time
+on this. It was fun though. But um I was
+spending way too much time on this. So I
+gave it god mode and I gave it access to
+PowerShell. And it&#39;s a scripting
+language for for Windows. And with that
+you can do anything. So you can read
+files, create files, run code. You can
+it&#39;s a shell basically. Uh so I gave it
+access to PowerShell as you can see.
+It&#39;s just the same uh approach as the
+secret thing we just saw. And the input
+arguments are actually a bit more
+involved because we need input like what
+file are we trying to write? What are
+the contents of the file? What command
+are we trying to run? So that&#39;s what you
+see here. Now uh it&#39;s al it&#39;s basically
+just like explaining the the method
+signature or the tool signature. saying
+like okay this tool uh takes a script
+argument and it&#39;s a string type and this
+is what you should put in it and it&#39;s
+required stuff like that. Uh one final
+thing to note, this is like very uh
+proprietary. It&#39;s the OpenAI uh
+specification. Uh the Quen models have
+their own specification. Uh but there&#39;s
+a bit of standardization around this.
+Whenever you hear the term like MCP
+server, they solve a large part of this
+like being a standard interface uh for
+like tools and for protocols, but uh
+that&#39;s something else. So yeah, this is
+where MCP fits into the picture. So uh
+with this we gave our
+uh LLM like knowledge about the tool but
+what is the actual tool calling? What
+does it look like?
+There we go. So if we receive a tool
+request for PowerShell, we just run it
+and it&#39;s two lines of code again or
+sorry one two three four five lines of
+code which literally creates a new
+PowerShell script uh or a shell
+and executes that script and just echoes
+back whatever this script returns. So
+that is it. Now let&#39;s see it in action.
+All right. So our coding agent is done.
+It has PowerShell superpowers. So now
+let&#39;s see it in action.
+Uh I prepared a short demo because the
+model I&#39;m using Quen 2.5 is it&#39;s a bit
+big difference in quality to what you&#39;re
+used to if you&#39;re working with Frontier
+models like a cloud set or GBD5.
+Uh so this is somewhat carefully crafted
+but it&#39;s just to to get the idea across
+right. So uh we will ask uh our coding
+agent to uh program something in
+JavaScript to create a oneline script
+because I was messing too much with new
+lines. Uh and it should be able to write
+a script that calculates factorial of 10
+and then save the that JavaScript code
+to a file uh called fact.js.
+So let&#39;s uh fire that up.
+As you can see it&#39;s doing a tool calls
+All right. So it did something. Now uh
+let&#39;s ask it to run that code
+using node which is like how you execute
+JavaScript on your machine.
+As you can see it&#39;s doing another uh
+tool call. And there you go. It returns
+the result. And now let&#39;s to make sure
+we&#39;re not cheating. Let&#39;s take a look at
+our file system. So yeah, there is a
+fact file in there. And let&#39;s open it
+And there we go. And as you can see,
+there is actual JavaScript code in here
+that gets called and evaluated. So that
+is pretty cool, right? We just built our
+coding agent in 200 lines of code and it
+can do anything cloud code can kind of.
+And that&#39;s it folks. With just 200 lines
+of code, we just create our own coding
+agent. Now, uh I think I&#39;ll stick with
+my day job and I will not be building
+the next clot code killer, but I hope
+this demystified uh coding agents for
+you. It&#39;s just an HTTP client, a game
+loop, and some tomb calling support
+basically. And and all the rest are
+bells and whistles. So yeah, if this
+breakdown helped you demystify uh the
+black magic that is coding agents,
+please hit the like button and share
+this video with someone uh that would be
+interested. And if you have some hours
+to spare, I highly encourage you to
+build one yourself. My code is available
+on GitHub if you want to take a look at
+it. And I hope to see you again next
+time. Thanks for watching. Bye-bye.
+</textarea>
+        </div>
+
+        <div class="mt-8">
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+            <a href="../summaries/index.html" class="border-2 border-blue-400 text-blue-400 px-6 py-2 rounded-lg font-medium hover:bg-blue-600 hover:text-white transition duration-300 text-center">
+              ← All Summaries
+            </a>
+            <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+              <a href="https://youtube.com/watch?v=7oTPNr9APGE" target="_blank" class="bg-red-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-red-700 transition duration-300 text-center">
+                Watch on YouTube
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <footer class="bg-black text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-gray-400">&copy; 2024 PodPapyrus. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
