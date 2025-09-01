@@ -41,9 +41,9 @@ def create_figure_eight_animation():
         glow_circles.append(glow)
     
     def animate(frame):
-        # Parameter t goes from 0 to 4*pi for complete figure eight
-        # Complete two loops in 60 seconds
-        t = (frame / total_frames) * 4 * np.pi
+        # Parameter t goes from 0 to 8*pi for complete figure eight
+        # Complete four loops in 60 seconds (faster)
+        t = (frame / total_frames) * 16 * np.pi
         
         # Figure eight parametric equations
         x = scale * np.cos(t)
@@ -60,8 +60,8 @@ def create_figure_eight_animation():
         trail_x.append(x)
         trail_y.append(y)
         
-        # Keep trail length reasonable for performance
-        max_trail = 300
+        # Keep trail length longer so it doesn't disappear quickly
+        max_trail = 900
         if len(trail_x) > max_trail:
             trail_x.pop(0)
             trail_y.pop(0)
@@ -89,6 +89,17 @@ def create_figure_eight_animation():
         # Re-add main dot
         dot.center = (x, y)
         ax.add_patch(dot)
+        
+        # Add numbers on the sides
+        # Right side: 1, 2, 4
+        ax.text(2.8, 1.5, '1', color='white', fontsize=20, ha='center', va='center')
+        ax.text(2.8, 0, '2', color='white', fontsize=20, ha='center', va='center')
+        ax.text(2.8, -1.5, '4', color='white', fontsize=20, ha='center', va='center')
+        
+        # Left side: 8, 16, 32
+        ax.text(-2.8, 1.5, '8', color='white', fontsize=20, ha='center', va='center')
+        ax.text(-2.8, 0, '16', color='white', fontsize=20, ha='center', va='center')
+        ax.text(-2.8, -1.5, '32', color='white', fontsize=20, ha='center', va='center')
         
         return [dot] + glow_circles
     
