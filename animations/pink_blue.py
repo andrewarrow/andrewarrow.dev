@@ -20,14 +20,13 @@ def create_figure_eight_animation():
     # Total animation time: 60 seconds at 30 fps = 1800 frames
     total_frames = 180
     
-    # Store the trail points
-    trail_x = []
-    trail_y = []
+    # Store the trail points with colors
+    trail_points = []  # Each element will be (x, y, color)
     
     # Color state tracking
     is_blue = True  # Start with blue
     previous_cos_t = 1.0  # Track previous cos(t) value to detect sign changes
-    crossed_center = False  # Flag to prevent multiple color changes per crossing
+    center_crossings = 0  # Count how many times we've crossed center
     
     # Create the glowing dot (starting blue)
     dot = plt.Circle((0, 0), 0.08, color='blue', alpha=1.0, zorder=10)
@@ -46,7 +45,7 @@ def create_figure_eight_animation():
         glow_circles.append(glow)
     
     def animate(frame):
-        nonlocal is_blue, previous_cos_t, crossed_center
+        nonlocal is_blue, previous_cos_t, center_crossings
         
         # Parameter t goes from 0 to 8*pi for complete figure eight
         # Complete four loops in 60 seconds (faster)
@@ -65,16 +64,12 @@ def create_figure_eight_animation():
         
         # Check if cos(t) crossed zero (sign change)
         if (previous_cos_t > 0 and current_cos_t < 0) or (previous_cos_t < 0 and current_cos_t > 0):
-            # Toggle color
-            is_blue = not is_blue
+            # Increment crossing counter
+            center_crossings += 1
             
-            # Update colors
-            if is_blue:
-                dot.set_color('blue')
-                glow_colors[:] = ['blue', 'lightblue', 'white']
-            else:
-                dot.set_color('magenta')
-                glow_colors[:] = ['magenta', 'pink', 'white']
+            # Only toggle color every other crossing (every 2nd time)
+            if center_crossings % 2 == 0:
+                is_blue = not is_blue
         
         # Update previous cos(t) for next frame
         previous_cos_t = current_cos_t
@@ -99,20 +94,16 @@ def create_figure_eight_animation():
         # Update dot position
         dot.center = (x, y)
         
-        # Update glow positions and colors
-        for i, glow in enumerate(glow_circles):
-            glow.center = (x, y)
-            glow.set_color(glow_colors[i])
+        # Determine current color for new trail segments
+        current_color = 'blue' if is_blue else 'magenta'
         
-        # Add to trail
-        trail_x.append(x)
-        trail_y.append(y)
+        # Add to trail with current color
+        trail_points.append((x, y, current_color))
         
         # Keep trail length longer so it doesn't disappear quickly
         max_trail = 900
-        if len(trail_x) > max_trail:
-            trail_x.pop(0)
-            trail_y.pop(0)
+        if len(trail_points) > max_trail:
+            trail_points.pop(0)
         
         # Clear previous trail and redraw
         ax.clear()
@@ -122,21 +113,31 @@ def create_figure_eight_animation():
         ax.axis('off')
         ax.set_facecolor('black')
         
-        # Draw trail with fading effect using current color
-        trail_color = 'blue' if is_blue else 'magenta'
-        if len(trail_x) > 1:
-            for i in range(1, len(trail_x)):
-                alpha = i / len(trail_x) * 0.8  # Fading trail
-                ax.plot([trail_x[i-1], trail_x[i]], [trail_y[i-1], trail_y[i]], 
-                       color=trail_color, alpha=alpha, linewidth=2)
+        # Draw trail with fading effect preserving each segment's color
+        if len(trail_points) > 1:
+            for i in range(1, len(trail_points)):
+                alpha = i / len(trail_points) * 0.8  # Fading trail
+                # Use the color that was active when this segment was drawn
+                segment_color = trail_points[i][2]  # Color stored with each point
+                ax.plot([trail_points[i-1][0], trail_points[i][0]], 
+                       [trail_points[i-1][1], trail_points[i][1]], 
+                       color=segment_color, alpha=alpha, linewidth=2)
         
-        # Re-add glow circles with updated colors
+        # Update dot and glow colors based on current state
+        if is_blue:
+            dot.set_color('blue')
+            current_glow_colors = ['blue', 'lightblue', 'white']
+        else:
+            dot.set_color('magenta')
+            current_glow_colors = ['magenta', 'pink', 'white']
+        
+        # Re-add glow circles with current colors
         for i, glow in enumerate(glow_circles):
             glow.center = (x, y)
-            glow.set_color(glow_colors[i])
+            glow.set_color(current_glow_colors[i])
             ax.add_patch(glow)
         
-        # Re-add main dot with updated color
+        # Re-add main dot with current color
         dot.center = (x, y)
         ax.add_patch(dot)
         
