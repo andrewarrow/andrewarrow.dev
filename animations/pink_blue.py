@@ -107,19 +107,6 @@ def create_figure_eight_animation():
         dot.center = (x, y)
         ax.add_patch(dot)
         
-        # Add numbers on the sides
-        # Right side: 1, 2, 4
-        ax.text(2.8, 1.5, '4', color='white', fontsize=20, ha='center', va='center')
-        ax.text(2.8, 0, '2', color='white', fontsize=20, ha='center', va='center')
-        ax.text(2.8, -1.5, '1', color='white', fontsize=20, ha='center', va='center')
-        
-        # Left side: 8, 16, 32
-        ax.text(-2.8, 1.5, '3+2=5', color='white', fontsize=20, ha='center', va='center')
-        ax.text(-3.3, 0, '1+6=7', color='white', fontsize=20, ha='center', va='center')
-        ax.text(-2.8, -1.5, '8', color='white', fontsize=20, ha='center', va='center')
-        
-        # Dynamic counter at top center
-        ax.text(0, 1.8, str(current_number), color='yellow', fontsize=24, ha='center', va='center', weight='bold')
         
         return [dot] + glow_circles
     
@@ -131,7 +118,7 @@ def create_figure_eight_animation():
     print("Saving animation... This may take a few minutes.")
     anim.save('figure_eight_animation.mp4', writer='ffmpeg', fps=30, 
               bitrate=1800, extra_args=['-vcodec', 'libx264'])
-    print("Animation saved as 'figure_eight_animation.mp4'")
+    print("Animation saved as '2.mp4'")
     
     # Optionally show the animation
     # plt.show()
