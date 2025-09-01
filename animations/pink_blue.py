@@ -18,7 +18,7 @@ def create_figure_eight_animation():
     scale = 2.5
     
     # Total animation time: 60 seconds at 30 fps = 1800 frames
-    total_frames = 180
+    total_frames = 1800
     
     # Store the trail points with colors
     trail_points = []  # Each element will be (x, y, color)
@@ -143,8 +143,8 @@ def create_figure_eight_animation():
         
         # Add debug text showing coordinates, distance, and cos(t)
         debug_text = f"x: {x:.3f}, y: {y:.3f}\ndist: {distance_from_center:.3f}\ncos(t): {current_cos_t:.3f}"
-        ax.text(-2.8, 1.7, debug_text, color='white', fontsize=10, 
-                bbox=dict(boxstyle='round,pad=0.3', facecolor='black', alpha=0.7))
+        #ax.text(-2.8, 1.7, debug_text, color='white', fontsize=10, 
+        #        bbox=dict(boxstyle='round,pad=0.3', facecolor='black', alpha=0.7))
         
         return [dot] + glow_circles
     
