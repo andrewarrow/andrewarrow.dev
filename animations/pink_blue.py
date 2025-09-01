@@ -24,13 +24,18 @@ def create_figure_eight_animation():
     trail_x = []
     trail_y = []
     
-    # Create the glowing dot
-    dot = plt.Circle((0, 0), 0.08, color='cyan', alpha=1.0, zorder=10)
+    # Color state tracking
+    is_blue = True  # Start with blue
+    previous_cos_t = 1.0  # Track previous cos(t) value to detect sign changes
+    crossed_center = False  # Flag to prevent multiple color changes per crossing
+    
+    # Create the glowing dot (starting blue)
+    dot = plt.Circle((0, 0), 0.08, color='blue', alpha=1.0, zorder=10)
     ax.add_patch(dot)
     
     # Create glow effect with multiple circles
     glow_circles = []
-    glow_colors = ['cyan', 'lightcyan', 'white']
+    glow_colors = ['blue', 'lightblue', 'white']  # Start with blue glow
     glow_sizes = [0.15, 0.25, 0.35]
     glow_alphas = [0.6, 0.3, 0.1]
     
@@ -41,6 +46,8 @@ def create_figure_eight_animation():
         glow_circles.append(glow)
     
     def animate(frame):
+        nonlocal is_blue, previous_cos_t, crossed_center
+        
         # Parameter t goes from 0 to 8*pi for complete figure eight
         # Complete four loops in 60 seconds (faster)
         t = (frame / total_frames) * 16 * np.pi
@@ -48,6 +55,29 @@ def create_figure_eight_animation():
         # Figure eight parametric equations
         x = scale * np.cos(t)
         y = scale * np.sin(t) * np.cos(t)
+        
+        # Calculate distance from exact center (0, 0)
+        distance_from_center = np.sqrt(x**2 + y**2)
+        
+        # For figure-eight, center crossing occurs when cos(t) = 0
+        # Detect this by checking when cos(t) changes sign
+        current_cos_t = np.cos(t)
+        
+        # Check if cos(t) crossed zero (sign change)
+        if (previous_cos_t > 0 and current_cos_t < 0) or (previous_cos_t < 0 and current_cos_t > 0):
+            # Toggle color
+            is_blue = not is_blue
+            
+            # Update colors
+            if is_blue:
+                dot.set_color('blue')
+                glow_colors[:] = ['blue', 'lightblue', 'white']
+            else:
+                dot.set_color('magenta')
+                glow_colors[:] = ['magenta', 'pink', 'white']
+        
+        # Update previous cos(t) for next frame
+        previous_cos_t = current_cos_t
         
         # Calculate current number based on total position in doubling sequence
         # Each complete loop (2*pi) goes through all 6 positions
@@ -69,9 +99,10 @@ def create_figure_eight_animation():
         # Update dot position
         dot.center = (x, y)
         
-        # Update glow positions
-        for glow in glow_circles:
+        # Update glow positions and colors
+        for i, glow in enumerate(glow_circles):
             glow.center = (x, y)
+            glow.set_color(glow_colors[i])
         
         # Add to trail
         trail_x.append(x)
@@ -91,22 +122,28 @@ def create_figure_eight_animation():
         ax.axis('off')
         ax.set_facecolor('black')
         
-        # Draw trail with fading effect
+        # Draw trail with fading effect using current color
+        trail_color = 'blue' if is_blue else 'magenta'
         if len(trail_x) > 1:
             for i in range(1, len(trail_x)):
                 alpha = i / len(trail_x) * 0.8  # Fading trail
                 ax.plot([trail_x[i-1], trail_x[i]], [trail_y[i-1], trail_y[i]], 
-                       color='cyan', alpha=alpha, linewidth=2)
+                       color=trail_color, alpha=alpha, linewidth=2)
         
-        # Re-add glow circles
+        # Re-add glow circles with updated colors
         for i, glow in enumerate(glow_circles):
             glow.center = (x, y)
+            glow.set_color(glow_colors[i])
             ax.add_patch(glow)
         
-        # Re-add main dot
+        # Re-add main dot with updated color
         dot.center = (x, y)
         ax.add_patch(dot)
         
+        # Add debug text showing coordinates, distance, and cos(t)
+        debug_text = f"x: {x:.3f}, y: {y:.3f}\ndist: {distance_from_center:.3f}\ncos(t): {current_cos_t:.3f}"
+        ax.text(-2.8, 1.7, debug_text, color='white', fontsize=10, 
+                bbox=dict(boxstyle='round,pad=0.3', facecolor='black', alpha=0.7))
         
         return [dot] + glow_circles
     
@@ -116,7 +153,7 @@ def create_figure_eight_animation():
     
     # Save as MP4 video
     print("Saving animation... This may take a few minutes.")
-    anim.save('figure_eight_animation.mp4', writer='ffmpeg', fps=30, 
+    anim.save('2.mp4', writer='ffmpeg', fps=30, 
               bitrate=1800, extra_args=['-vcodec', 'libx264'])
     print("Animation saved as '2.mp4'")
     
