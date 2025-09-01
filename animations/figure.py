@@ -18,7 +18,7 @@ def create_figure_eight_animation():
     scale = 2.5
     
     # Total animation time: 60 seconds at 30 fps = 1800 frames
-    total_frames = 1800
+    total_frames = 180
     
     # Store the trail points
     trail_x = []
@@ -92,14 +92,14 @@ def create_figure_eight_animation():
         
         # Add numbers on the sides
         # Right side: 1, 2, 4
-        ax.text(2.8, 1.5, '1', color='white', fontsize=20, ha='center', va='center')
+        ax.text(2.8, 1.5, '4', color='white', fontsize=20, ha='center', va='center')
         ax.text(2.8, 0, '2', color='white', fontsize=20, ha='center', va='center')
-        ax.text(2.8, -1.5, '4', color='white', fontsize=20, ha='center', va='center')
+        ax.text(2.8, -1.5, '1', color='white', fontsize=20, ha='center', va='center')
         
         # Left side: 8, 16, 32
-        ax.text(-2.8, 1.5, '8', color='white', fontsize=20, ha='center', va='center')
+        ax.text(-2.8, 1.5, '32', color='white', fontsize=20, ha='center', va='center')
         ax.text(-2.8, 0, '16', color='white', fontsize=20, ha='center', va='center')
-        ax.text(-2.8, -1.5, '32', color='white', fontsize=20, ha='center', va='center')
+        ax.text(-2.8, -1.5, '8', color='white', fontsize=20, ha='center', va='center')
         
         return [dot] + glow_circles
     
