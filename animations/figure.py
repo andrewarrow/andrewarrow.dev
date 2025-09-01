@@ -49,6 +49,27 @@ def create_figure_eight_animation():
         x = scale * np.cos(t)
         y = scale * np.sin(t) * np.cos(t)
         
+        # Calculate current number based on position in the sequence
+        # Each complete loop (2*pi) goes through all 6 positions
+        loop_progress = (t % (2 * np.pi)) / (2 * np.pi)
+        
+        # Define the sequence of numbers: 1, 2, 4, 8, 16, 32, 64, 128, etc.
+        base_sequence = [1, 2, 4, 8, 16, 32]
+        
+        # Determine position in sequence (0-5 for the 6 positions)
+        position_in_sequence = int(loop_progress * 6) % 6
+        
+        # Calculate how many complete loops we've done
+        complete_loops = int(t / (2 * np.pi))
+        
+        # Calculate current number
+        if complete_loops == 0:
+            current_number = base_sequence[position_in_sequence]
+        else:
+            # After first loop, continue doubling pattern
+            extra_doublings = complete_loops
+            current_number = base_sequence[position_in_sequence] * (2 ** extra_doublings)
+        
         # Update dot position
         dot.center = (x, y)
         
@@ -100,6 +121,9 @@ def create_figure_eight_animation():
         ax.text(-2.8, 1.5, '32', color='white', fontsize=20, ha='center', va='center')
         ax.text(-2.8, 0, '16', color='white', fontsize=20, ha='center', va='center')
         ax.text(-2.8, -1.5, '8', color='white', fontsize=20, ha='center', va='center')
+        
+        # Dynamic counter at top center
+        ax.text(0, 1.8, str(current_number), color='yellow', fontsize=24, ha='center', va='center', weight='bold')
         
         return [dot] + glow_circles
     
