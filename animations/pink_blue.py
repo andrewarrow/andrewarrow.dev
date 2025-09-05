@@ -18,7 +18,7 @@ def create_figure_eight_animation():
     scale = 2.5
     
     # Total animation time: 60 seconds at 30 fps = 1800 frames
-    total_frames = 1800
+    total_frames = 180
     
     # Store the trail points with colors
     trail_points = []  # Each element will be (x, y, color)
@@ -43,6 +43,22 @@ def create_figure_eight_animation():
                          alpha=glow_alphas[i], zorder=9-i)
         ax.add_patch(glow)
         glow_circles.append(glow)
+    
+    # Create yellow V dot and glow
+    yellow_dot = plt.Circle((0, 0), 0.08, color='yellow', alpha=1.0, zorder=10)
+    ax.add_patch(yellow_dot)
+    
+    # Create yellow glow effect
+    yellow_glow_circles = []
+    yellow_glow_colors = ['yellow', 'gold', 'white']
+    yellow_glow_sizes = [0.15, 0.25, 0.35]
+    yellow_glow_alphas = [0.6, 0.3, 0.1]
+    
+    for i in range(len(yellow_glow_colors)):
+        yellow_glow = plt.Circle((0, 0), yellow_glow_sizes[i], color=yellow_glow_colors[i], 
+                                alpha=yellow_glow_alphas[i], zorder=9-i)
+        ax.add_patch(yellow_glow)
+        yellow_glow_circles.append(yellow_glow)
     
     def animate(frame):
         nonlocal is_blue, previous_cos_t, center_crossings
@@ -94,6 +110,33 @@ def create_figure_eight_animation():
         # Update dot position
         dot.center = (x, y)
         
+        # Yellow V animation - independent timeline
+        # V coordinates: lower left (-2, -1.5), apex (0, 1.5), lower right (2, -1.5)
+        v_t = (frame / total_frames) * 8 * np.pi  # Independent speed for V
+        
+        # Create path segments: 0-1 (left to apex), 1-2 (apex to right), 2-3 (right to apex), 3-4 (apex to left)
+        v_progress = (v_t % (4 * np.pi)) / (4 * np.pi)  # 0 to 1 for full cycle
+        
+        if v_progress < 0.25:  # Lower left to apex
+            segment_progress = v_progress / 0.25
+            v_x = -2 + segment_progress * 2  # -2 to 0
+            v_y = -1.5 + segment_progress * 3  # -1.5 to 1.5
+        elif v_progress < 0.5:  # Apex to lower right
+            segment_progress = (v_progress - 0.25) / 0.25
+            v_x = 0 + segment_progress * 2  # 0 to 2
+            v_y = 1.5 - segment_progress * 3  # 1.5 to -1.5
+        elif v_progress < 0.75:  # Lower right to apex
+            segment_progress = (v_progress - 0.5) / 0.25
+            v_x = 2 - segment_progress * 2  # 2 to 0
+            v_y = -1.5 + segment_progress * 3  # -1.5 to 1.5
+        else:  # Apex to lower left
+            segment_progress = (v_progress - 0.75) / 0.25
+            v_x = 0 - segment_progress * 2  # 0 to -2
+            v_y = 1.5 - segment_progress * 3  # 1.5 to -1.5
+        
+        # Update yellow dot position
+        yellow_dot.center = (v_x, v_y)
+        
         # Determine current color for new trail segments
         current_color = 'blue' if is_blue else 'magenta'
         
@@ -112,6 +155,9 @@ def create_figure_eight_animation():
         ax.set_aspect('equal')
         ax.axis('off')
         ax.set_facecolor('black')
+        
+        # Draw the yellow upside down V shape
+        ax.plot([-2, 0, 2], [-1.5, 1.5, -1.5], color='yellow', linewidth=3, alpha=0.8)
         
         # Draw trail with fading effect preserving each segment's color
         if len(trail_points) > 1:
@@ -141,12 +187,21 @@ def create_figure_eight_animation():
         dot.center = (x, y)
         ax.add_patch(dot)
         
+        # Re-add yellow glow circles
+        for i, yellow_glow in enumerate(yellow_glow_circles):
+            yellow_glow.center = (v_x, v_y)
+            ax.add_patch(yellow_glow)
+        
+        # Re-add yellow dot
+        yellow_dot.center = (v_x, v_y)
+        ax.add_patch(yellow_dot)
+        
         # Add debug text showing coordinates, distance, and cos(t)
         debug_text = f"x: {x:.3f}, y: {y:.3f}\ndist: {distance_from_center:.3f}\ncos(t): {current_cos_t:.3f}"
         #ax.text(-2.8, 1.7, debug_text, color='white', fontsize=10, 
         #        bbox=dict(boxstyle='round,pad=0.3', facecolor='black', alpha=0.7))
         
-        return [dot] + glow_circles
+        return [dot] + glow_circles + [yellow_dot] + yellow_glow_circles
     
     # Create animation
     anim = FuncAnimation(fig, animate, frames=total_frames, interval=33.33, 
