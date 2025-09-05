@@ -18,7 +18,7 @@ def create_figure_eight_animation():
     scale = 2.5
     
     # Total animation time: 60 seconds at 30 fps = 1800 frames
-    total_frames = 180
+    total_frames = 1800
     
     # Store the trail points with colors
     trail_points = []  # Each element will be (x, y, color)
@@ -117,7 +117,7 @@ def create_figure_eight_animation():
         
         # Yellow V animation - independent timeline
         # V coordinates: lower left (-2, -1.5), apex (0, 1.5), lower right (2, -1.5)
-        v_t = (frame / total_frames) * 8 * np.pi  # Independent speed for V
+        v_t = (frame / total_frames) * 32 * np.pi  # 4x faster speed for V dot
         
         # Create path segments: 0-1 (left to apex), 1-2 (apex to right), 2-3 (right to apex), 3-4 (apex to left)
         v_progress = (v_t % (4 * np.pi)) / (4 * np.pi)  # 0 to 1 for full cycle
@@ -162,10 +162,10 @@ def create_figure_eight_animation():
         # Add to V trail with current color
         v_trail_points.append((v_x, v_y, current_v_color))
         
-        # Keep V trail length manageable
-        max_v_trail = 450  # Half the length of figure-eight trail
-        if len(v_trail_points) > max_v_trail:
-            v_trail_points.pop(0)
+        # Keep V trail forever - don't remove any points
+        # max_v_trail = 450  # Removed to keep trail forever
+        # if len(v_trail_points) > max_v_trail:
+        #     v_trail_points.pop(0)
         
         # Determine current color for new trail segments
         current_color = 'blue' if is_blue else 'magenta'
