@@ -157,7 +157,7 @@ def create_figure_eight_animation():
         yellow_dot.center = (v_x, v_y)
         
         # Determine current V color for new trail segments
-        current_v_color = 'yellow' if is_yellow else 'red'
+        current_v_color = 'yellow' if is_yellow else 'lime'
         
         # Add to V trail with current color
         v_trail_points.append((v_x, v_y, current_v_color))
@@ -229,8 +229,8 @@ def create_figure_eight_animation():
             yellow_dot.set_color('yellow')
             current_yellow_glow_colors = ['yellow', 'gold', 'white']
         else:
-            yellow_dot.set_color('red')
-            current_yellow_glow_colors = ['red', 'darkred', 'white']
+            yellow_dot.set_color('lime')
+            current_yellow_glow_colors = ['lime', 'green', 'white']
         
         # Re-add yellow glow circles with current colors
         for i, yellow_glow in enumerate(yellow_glow_circles):
