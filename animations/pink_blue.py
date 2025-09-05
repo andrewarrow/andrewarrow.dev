@@ -28,6 +28,11 @@ def create_figure_eight_animation():
     previous_cos_t = 1.0  # Track previous cos(t) value to detect sign changes
     center_crossings = 0  # Count how many times we've crossed center
     
+    # V color state tracking
+    is_yellow = True  # Start with yellow
+    previous_v_segment = -1  # Track which segment we were in to detect changes
+    v_trail_points = []  # Store V trail points with colors
+    
     # Create the glowing dot (starting blue)
     dot = plt.Circle((0, 0), 0.08, color='blue', alpha=1.0, zorder=10)
     ax.add_patch(dot)
@@ -61,7 +66,7 @@ def create_figure_eight_animation():
         yellow_glow_circles.append(yellow_glow)
     
     def animate(frame):
-        nonlocal is_blue, previous_cos_t, center_crossings
+        nonlocal is_blue, previous_cos_t, center_crossings, is_yellow, previous_v_segment
         
         # Parameter t goes from 0 to 8*pi for complete figure eight
         # Complete four loops in 60 seconds (faster)
@@ -117,25 +122,50 @@ def create_figure_eight_animation():
         # Create path segments: 0-1 (left to apex), 1-2 (apex to right), 2-3 (right to apex), 3-4 (apex to left)
         v_progress = (v_t % (4 * np.pi)) / (4 * np.pi)  # 0 to 1 for full cycle
         
-        if v_progress < 0.25:  # Lower left to apex
+        # Determine current segment
+        if v_progress < 0.25:  # Lower left to apex (segment 0)
+            current_v_segment = 0
             segment_progress = v_progress / 0.25
             v_x = -2 + segment_progress * 2  # -2 to 0
             v_y = -1.5 + segment_progress * 3  # -1.5 to 1.5
-        elif v_progress < 0.5:  # Apex to lower right
+        elif v_progress < 0.5:  # Apex to lower right (segment 1)
+            current_v_segment = 1
             segment_progress = (v_progress - 0.25) / 0.25
             v_x = 0 + segment_progress * 2  # 0 to 2
             v_y = 1.5 - segment_progress * 3  # 1.5 to -1.5
-        elif v_progress < 0.75:  # Lower right to apex
+        elif v_progress < 0.75:  # Lower right to apex (segment 2)
+            current_v_segment = 2
             segment_progress = (v_progress - 0.5) / 0.25
             v_x = 2 - segment_progress * 2  # 2 to 0
             v_y = -1.5 + segment_progress * 3  # -1.5 to 1.5
-        else:  # Apex to lower left
+        else:  # Apex to lower left (segment 3)
+            current_v_segment = 3
             segment_progress = (v_progress - 0.75) / 0.25
             v_x = 0 - segment_progress * 2  # 0 to -2
             v_y = 1.5 - segment_progress * 3  # 1.5 to -1.5
         
+        # Check for segment transitions to detect when we reach bottom corners
+        if previous_v_segment != current_v_segment:
+            # Color changes when reaching bottom left (start of segment 0) or bottom right (start of segment 2)
+            if current_v_segment == 0 or current_v_segment == 2:
+                is_yellow = not is_yellow
+        
+        # Update previous segment for next frame
+        previous_v_segment = current_v_segment
+        
         # Update yellow dot position
         yellow_dot.center = (v_x, v_y)
+        
+        # Determine current V color for new trail segments
+        current_v_color = 'yellow' if is_yellow else 'orange'
+        
+        # Add to V trail with current color
+        v_trail_points.append((v_x, v_y, current_v_color))
+        
+        # Keep V trail length manageable
+        max_v_trail = 450  # Half the length of figure-eight trail
+        if len(v_trail_points) > max_v_trail:
+            v_trail_points.pop(0)
         
         # Determine current color for new trail segments
         current_color = 'blue' if is_blue else 'magenta'
@@ -156,10 +186,17 @@ def create_figure_eight_animation():
         ax.axis('off')
         ax.set_facecolor('black')
         
-        # Draw the yellow upside down V shape
-        ax.plot([-2, 0, 2], [-1.5, 1.5, -1.5], color='yellow', linewidth=3, alpha=0.8)
+        # Draw V trail with fading effect preserving each segment's color
+        if len(v_trail_points) > 1:
+            for i in range(1, len(v_trail_points)):
+                alpha = i / len(v_trail_points) * 0.8  # Fading trail
+                # Use the color that was active when this segment was drawn
+                v_segment_color = v_trail_points[i][2]  # Color stored with each point
+                ax.plot([v_trail_points[i-1][0], v_trail_points[i][0]], 
+                       [v_trail_points[i-1][1], v_trail_points[i][1]], 
+                       color=v_segment_color, alpha=alpha, linewidth=3)
         
-        # Draw trail with fading effect preserving each segment's color
+        # Draw figure-eight trail with fading effect preserving each segment's color
         if len(trail_points) > 1:
             for i in range(1, len(trail_points)):
                 alpha = i / len(trail_points) * 0.8  # Fading trail
@@ -187,12 +224,21 @@ def create_figure_eight_animation():
         dot.center = (x, y)
         ax.add_patch(dot)
         
-        # Re-add yellow glow circles
+        # Update yellow dot and glow colors based on current state
+        if is_yellow:
+            yellow_dot.set_color('yellow')
+            current_yellow_glow_colors = ['yellow', 'gold', 'white']
+        else:
+            yellow_dot.set_color('orange')
+            current_yellow_glow_colors = ['orange', 'darkorange', 'white']
+        
+        # Re-add yellow glow circles with current colors
         for i, yellow_glow in enumerate(yellow_glow_circles):
             yellow_glow.center = (v_x, v_y)
+            yellow_glow.set_color(current_yellow_glow_colors[i])
             ax.add_patch(yellow_glow)
         
-        # Re-add yellow dot
+        # Re-add yellow dot with current color
         yellow_dot.center = (v_x, v_y)
         ax.add_patch(yellow_dot)
         
