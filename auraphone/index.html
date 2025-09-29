@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>auraphone. mingle. scan. bluetooth connect. real life connect. leave happy.</title>
+    <meta name="description" content="accelerating chance social encounters.">
+    <meta name="keywords" content="auraphone. mingle. scan. bluetooth connect. real life connect. leave happy.">
+    <meta property="og:title" content="auraphone. mingle. scan. bluetooth connect. real life connect. leave happy.">
+    <meta property="og:description" content="auraphone. mingle. scan. bluetooth connect. real life connect. leave happy.">
+    <meta property="og:url" content="https://auraphone.com">
+    <meta property="og:image" content="./assets/logo.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="auraphone. mingle. scan. bluetooth connect. real life connect. leave happy.">
+    <meta name="twitter:description" content="auraphone. mingle. scan. bluetooth connect. real life connect. leave happy.">
+    <meta name="twitter:image" content="./assets/logo.jpg">
+    <meta name="twitter:image:type" content="image/jpeg">
+    <link rel="shortcut icon" href="./logo.jpg">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="1024x1024">
+
+    <style>
+        /* Reset and Base Styles */
+        *, ::after, ::before {
+            box-sizing: border-box;
+            border: 0 solid #e5e7eb;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            line-height: 1.5;
+            font-family: 'Georgia', serif;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+            height: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
+            background-color: #141C16;
+            color: #FFFFDF;
+        }
+
+        /* Custom Colors */
+        :root {
+            --the222offwhite: #FFFFDF;
+            --the222green: #2A392C;
+            --background-dark: #141C16;
+        }
+
+        /* Layout Classes */
+        .size-full { width: 100%; height: 100%; }
+        .h-dvh { height: 100dvh; }
+        .h-full { height: 100%; }
+        .h-32 { height: 8rem; }
+        .w-full { width: 100%; }
+        .w-mobile { width: 100vw; }
+        .w-450 { width: 450px; }
+        .max-h-900 { max-height: 900px; }
+        .max-h-mobile { max-height: 100vh; }
+        .min-h-mobile { min-height: 100vh; }
+
+        .flex { display: flex; }
+        .flex-col { flex-direction: column; }
+        .flex-row { flex-direction: row; }
+        .items-center { align-items: center; }
+        .justify-center { justify-content: center; }
+        .justify-between { justify-content: space-between; }
+
+        .gap-3 { gap: 0.75rem; }
+        .gap-2 { gap: 0.5rem; }
+        .gap-1 { gap: 0.25rem; }
+
+        .m-auto { margin: auto; }
+        .py-0 { padding-top: 0; padding-bottom: 0; }
+        .pb-12 { padding-bottom: 3rem; }
+        .pt-30 { padding-top: 30px; }
+        .px-9 { padding-left: 2.25rem; padding-right: 2.25rem; }
+        .px-4 { padding-left: 1rem; padding-right: 1rem; }
+        .px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+        .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+        .py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+        .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+        .mt-1 { margin-top: 0.25rem; }
+        .mr-1 { margin-right: 0.25rem; }
+        .mt-half { margin-top: 0.5rem; }
+        .mt-point1 { margin-top: 0.1rem; }
+
+        /* Positioning */
+        .relative { position: relative; }
+        .top-0 { top: 0; }
+        .bottom-0 { bottom: 0; }
+        .left-0 { left: 0; }
+        .right-0 { right: 0; }
+        .top-9 { top: 2.25rem; }
+        .bottom-12 { bottom: 3rem; }
+
+        /* Background and Colors */
+        .bg-dark { background-color: #141C16; }
+        .bg-black { background-color: black; }
+        .text-offwhite { color: #FFFFDF; }
+
+        /* Border and Rounded */
+        .rounded-3xl { border-radius: 1.5rem; }
+        .rounded-xl { border-radius: 0.75rem; }
+        .border { border-width: 1px; }
+        .border-offwhite-20 { border-color: rgba(255, 255, 223, 0.2); }
+
+        /* Background Effects */
+        .bg-black-20 { background-color: rgba(0, 0, 0, 0.2); }
+        .bg-black-30 { background-color: rgba(0, 0, 0, 0.3); }
+        .bg-black-40 { background-color: rgba(21, 28, 22, 0.4); }
+        .backdrop-blur-lg { backdrop-filter: blur(16px); }
+        .backdrop-blur-8 { backdrop-filter: blur(8px); }
+
+        /* Overflow */
+        .overflow-hidden { overflow: hidden; }
+        .overflow-scroll { overflow: scroll; }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Text */
+        .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+        .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+        .font-extralight { font-weight: 200; }
+        .font-light { font-weight: 300; }
+        .italic { font-style: italic; }
+        .uppercase { text-transform: uppercase; }
+        .text-nowrap { text-wrap: nowrap; }
+        .whitespace-nowrap { white-space: nowrap; }
+        .text-left { text-align: left; }
+
+        /* Opacity */
+        .opacity-50 { opacity: 0.5; }
+
+        /* Shadows */
+        .shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+        .drop-shadow-glow { filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.9)); }
+
+        /* Gradients */
+        .gradient-top {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+        }
+        .gradient-bottom {
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+        }
+
+        /* Image */
+        .object-cover { object-fit: cover; }
+        .object-center { object-position: center; }
+        .scale-105 { transform: scale(1.05); }
+
+        /* Interactive */
+        .cursor-pointer { cursor: pointer; }
+        .select-none { user-select: none; }
+        .pointer-events-none { pointer-events: none; }
+
+        /* Animations */
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+
+        /* Hover effects */
+        .hover-bg-black-30:hover { background-color: rgba(0, 0, 0, 0.3); }
+        .hover-opacity-100:hover { opacity: 1; }
+
+        /* Mobile-first responsive design */
+        @media (max-width: 767px) {
+            .mobile-full-width { width: 100vw; }
+            .mobile-full-height { height: 100vh; }
+            .mobile-no-rounded { border-radius: 0; }
+            .mobile-no-shadow { box-shadow: none; }
+            .mobile-px-4 { padding-left: 1rem; padding-right: 1rem; }
+            .mobile-py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+            .mobile-gap-2 { gap: 0.5rem; }
+            .mobile-text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+            .mobile-px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+            .mobile-py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+            .mobile-bottom-6 { bottom: 1.5rem; }
+            .mobile-top-4 { top: 1rem; }
+        }
+
+        /* Media Queries */
+        @media (min-width: 768px) {
+            .md-pb-12 { padding-bottom: 3rem; }
+            .md-pt-30 { padding-top: 30px; }
+            .md-h-full { height: 100%; }
+            .md-rounded-3xl { border-radius: 1.5rem; }
+            .md-shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+            .md\:px-9 { padding-left: 2.25rem; padding-right: 2.25rem; }
+            .md\:px-4 { padding-left: 1rem; padding-right: 1rem; }
+            .md\:py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+            .md\:gap-3 { gap: 0.75rem; }
+        }
+
+        @media (min-width: 1024px) {
+            .lg-h-full { height: 100%; }
+            .lg-rounded-3xl { border-radius: 1.5rem; }
+            .lg-shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); }
+        }
+    </style>
+</head>
+<body class="size-full bg-dark">
+    <div class="flex flex-col h-dvh bg-dark">
+        <main class="flex flex-col h-full py-0 md-pb-12 md-pt-30">
+            <div class="flex justify-center h-full max-h-900 max-h-mobile m-auto shadow-2xl mobile-no-shadow mobile-full-width">
+                <div class="bg-black rounded-3xl mobile-no-rounded overflow-hidden flex flex-col mobile-full-width mobile-full-height">
+                    <!-- Background image with gradients -->
+                    <div class="relative size-full overflow-hidden flex-grow">
+                        <img
+                            alt="Background"
+                            class="h-full object-cover scale-105 object-center w-450 mobile-full-width lg-h-full lg-rounded-3xl lg-shadow-2xl"
+                            src="./assets/new-background.png"
+                        >
+
+                        <!-- Top gradient overlay -->
+                        <div class="absolute top-0 left-0 w-full h-32 gradient-top pointer-events-none rounded-3xl"></div>
+
+                        <!-- Bottom gradient overlay -->
+                        <div class="absolute bottom-0 left-0 w-full h-32 gradient-bottom pointer-events-none rounded-3xl"></div>
+                    </div>
+
+                    <!-- Top navigation -->
+                    <div class="absolute top-9 mobile-top-4 px-2 md:px-9 mobile-px-4 flex flex-row w-full justify-between items-center gap-1 md:gap-3 mobile-gap-2">
+                            <img alt="222" height="60" class="md:h-20" src="./assets/logo.jpg">
+                        <div class="flex flex-row items-center gap-1 md:gap-3 mobile-gap-2">
+                            <a style="text-decoration: none" href="https://www.linkedin.com/posts/andrewarrow_events-mingling-real-world-human-interactions-activity-7377212956293599233-WWn_" class="cursor-pointer border border-offwhite-20 bg-black-20 backdrop-blur-lg text-offwhite px-2 md:px-4 mobile-px-3 py-1 md:py-2 mobile-py-2 text-sm rounded-xl hover-bg-black-30">
+                                about
+                            </a>
+                            <a style="text-decoration: none" href="https://www.linkedin.com/in/andrewarrow/" class="cursor-pointer border border-offwhite-20 bg-black-20 backdrop-blur-lg text-offwhite px-2 md:px-4 mobile-px-3 py-1 md:py-2 mobile-py-2 text-sm rounded-xl hover-bg-black-30">
+                                contact
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sign up buttons -->
+                    <div class="absolute bottom-12 mobile-bottom-6 w-full flex justify-center px-4">
+                        <div class="flex flex-col md:flex-row items-center justify-center gap-3 mobile-gap-2 w-full max-w-md">
+                            <a href="https://apps.apple.com/us/app/hot-mic-events/id6752836343" style="text-decoration: none" class="cursor-pointer w-full">
+                                <div class="border backdrop-blur-8 rounded-xl px-4 mobile-px-3 py-4 mobile-py-3 select-none"
+                                     style="border-color: rgb(255, 255, 223); background-color: rgba(21, 28, 22, 0.4); border-width: 1px;">
+                                    <div class="flex flex-row w-full justify-between gap-2">
+                                        <div class="text-2xl mobile-text-lg text-nowrap whitespace-nowrap italic text-left text-offwhite font-extralight mt-point1">
+                                            iPhone
+                                        </div>
+                                        <div class="text-offwhite mt-half mr-1 cursor-pointer">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="fill-offwhite animate-pulse drop-shadow-glow" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://forms.gle/tPcY7PirqgcjPuhG8" style="text-decoration: none" class="cursor-pointer w-full">
+                                <div class="border backdrop-blur-8 rounded-xl px-4 mobile-px-3 py-4 mobile-py-3 select-none"
+                                     style="border-color: rgb(255, 255, 223); background-color: rgba(21, 28, 22, 0.4); border-width: 1px;">
+                                    <div class="flex flex-row w-full justify-between gap-2">
+                                        <div class="text-2xl mobile-text-lg text-nowrap whitespace-nowrap italic text-left text-offwhite font-extralight mt-point1">
+                                            Android
+                                        </div>
+                                        <div class="text-offwhite mt-half mr-1 cursor-pointer">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="fill-offwhite animate-pulse drop-shadow-glow" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 0 0 0-48.4z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div>
+          &nbsp;<br/>
+          &nbsp;<br/>
+        </div>
+
+        <!-- Footer -->
+        <footer class="flex flex-row justify-center gap-3 py-3">
+            <a href="https://andrewarrow.dev/privacy/" class="text-offwhite text-sm font-light italic opacity-50 hover-opacity-100 cursor-pointer">privacy policy</a>
+        </footer>
+        <div>
+          &nbsp;<br/>
+          &nbsp;<br/>
+        </div>
+    </div>
+</body>
+</html>
