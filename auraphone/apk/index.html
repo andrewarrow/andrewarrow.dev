@@ -1,3 +1,10 @@
 <script>
-  document.location.href='https://github.com/andrewarrow/andrewarrow.dev/releases/download/ap1.8.6/auraphone.apk';
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  // Check if iOS device
+  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    document.location.href = 'https://apps.apple.com/us/app/auraphone/id6752836343';
+  } else {
+    document.location.href = 'https://github.com/andrewarrow/andrewarrow.dev/releases/download/ap1.8.6/auraphone.apk';
+  }
 </script>
