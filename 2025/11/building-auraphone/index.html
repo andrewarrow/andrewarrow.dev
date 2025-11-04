@@ -61,13 +61,28 @@
     enough to ask for their insta or digits.
     </p>
 
+    <p>
+    And so I started writing this bluetooth app. Using CBCentralManager on ios
+    and BluetoothManager on android. Each phone broadcasts as a peripheral but also connects as central. Rooms full of phones running the app gossip. Simple right?
+    </p>
+
+    <p>
+    Think of the term "peripheral" as server and "central" as client. Yes there are differences
+    in bluetooth and there are reasons for those terms, but my life got much easier
+    working on this app when I started just thinking client server.
+    
+    So in a room with just two phones, which one is which? It can't be a coin toss. If 50%
+    of the time both phones act as the server and neither client, bad. Or if both phones act
+    as clients, bad. So how do you break the tie? You start up your server AND you act as client looking
+    for servers to connect to. Just be careful not to connect to yourself!
+    </p>
+
     <div style="display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
       <img src="https://i.imgur.com/a8riN4g.png" style="flex: 1; width: 400px; height: auto; border-radius: 8px;" alt="SQL the kitten" />
     </div>
 
     <p>
-    And so I started writing this bluetooth app. Using CBCentralManager on ios
-    and BluetoothManager on android. Each phone broadcasts as a peripheral but also connects as central. Rooms full of phones running the app gossip.
+lkkl
     </p>
 
       
