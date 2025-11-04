@@ -91,6 +91,24 @@
      and yes, easier life.
     </p>
 
+    <p>
+    So with my 200 OK from PROFILE_CHAR endpoint i look at the photo_hash which is a 256 sha
+    from the binary data of the image the user picked. If I have this file already cached, I'm good
+    and I disconnect from this server. If not I hit the PHOTO_CHAR endpoint and get this image
+    data and save as hash.jpg locally. And then I disconnect.
+    </p>
+
+    <p>
+    After I disconnect from a server I place that specific bluetooth server id on a cooldown list.
+    I have other phones in the room I need to connect with! And all this time I'm also acting as
+    a server myself. Well, sometimes. Sometimes when I'm busy being a client getting a photo I'll
+    pause my server actions. And it depends on ios vs android. There is lots of complexity
+    in the BLE (bluetooth low engery) stack. This loop of find a server, connect, get my info,
+    disconnect, repeat is a great little loop. But there are limits and GATT errors and queue
+    buffers that get full and MTU (max transmition unit) that can make it so two phones right next
+    to each other take a while before they finally find each other.
+    </p>
+
       
   </article>
 </main>
