@@ -74,7 +74,7 @@ mixpanel.init("29d6db85517ba504818659df83844c01", {
     
     So in a room with just two phones, which one is which? It can't be a coin toss. If 50%
     of the time both phones act as the server and neither client, bad. Or if both phones act
-    as clients, bad. So how do you break the tie? You start up your server AND you act as client looking
+    as clients, bad. So how do you break the tie? You start up your server AND you act as a client looking
     for servers to connect to. Just be careful not to connect to yourself!
     </p>
 
@@ -104,9 +104,9 @@ mixpanel.init("29d6db85517ba504818659df83844c01", {
     I have other phones in the room I need to connect with! And all this time I'm also acting as
     a server myself. Well, sometimes. Sometimes when I'm busy being a client getting a photo I'll
     pause my server actions. And it depends on ios vs android. There is lots of complexity
-    in the BLE (bluetooth low engery) stack. This loop of find a server, connect, get my info,
+    in the BLE (bluetooth low energy) stack. This loop of find a server, connect, get my info,
     disconnect, repeat is a great little loop. But there are limits and GATT errors and queue
-    buffers that get full and MTU (max transmition unit) that can make it so two phones right next
+    buffers that get full and MTU (max transmission unit) that can make it so two phones right next
     to each other take a while before they finally find each other.
     </p>
 
@@ -115,7 +115,7 @@ mixpanel.init("29d6db85517ba504818659df83844c01", {
     </div>
 
     <p>
-    So i made <a href="https://github.com/andrewarrow/auraphone-blue">github.com/andrewarrow/auraphone-blue</a> which is a BLE stack simulator all writen in golang. If you look at the <a href="https://github.com/andrewarrow/auraphone-blue/tree/main/wire">wire</a> package you'll see a pretty complete
+    So I made <a href="https://github.com/andrewarrow/auraphone-blue">github.com/andrewarrow/auraphone-blue</a> which is a BLE stack simulator all written in golang. If you look at the <a href="https://github.com/andrewarrow/auraphone-blue/tree/main/wire">wire</a> package you'll see a pretty complete
     BLE implementation using the file system and domain sockets to mock the bluetooth radio. The
     <a href="https://github.com/andrewarrow/auraphone-blue/tree/main/swift">swift</a> package
     and <a href="https://github.com/andrewarrow/auraphone-blue/tree/main/kotlin">kotlin</a> package
