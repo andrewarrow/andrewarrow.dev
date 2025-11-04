@@ -56,9 +56,9 @@ mixpanel.init("29d6db85517ba504818659df83844c01", {
       </li>
     </ul>
     <p>
-    I was at a networking event. About 40 people at a bar/resturant in Culver City
+    I was at a networking event. About 40 people at a bar/restaurant in Culver City
     and it was great! Lots of interesting people. Great conversations but when it was
-    all over, I had no way contact any of these people. I guess I'm just not smooth
+    all over, I had no way to contact any of these people. I guess I'm just not smooth
     enough to ask for their insta or digits.
     </p>
 
@@ -83,10 +83,10 @@ mixpanel.init("29d6db85517ba504818659df83844c01", {
     </div>
 
     <p>
-    With bluetooth your server advertises and when you connect it tells you what characteritics
-    it has. Think of characteritics as "endpoints". They are not the same as an http endpoints at all
+    With bluetooth your server advertises and when you connect it tells you what characteristics
+    it has. Think of characteristics as "endpoints". They are not the same as an http endpoints at all
     but again my life got easier when I started thinking of them like this. Our app has two
-     characteritics PROFILE_CHAR and PHOTO_CHAR and step one is a client hits PROFILE_CHAR endpoint
+     characteristics PROFILE_CHAR and PHOTO_CHAR and step one is a client hits PROFILE_CHAR endpoint
      and gets back json from the other phone with device_id, first_name, photo_hash, instagram and
      it doesn't have to be json. It could be Protocol Buffers and binary but again, I went with json
      and yes, easier life.
@@ -119,7 +119,7 @@ mixpanel.init("29d6db85517ba504818659df83844c01", {
     BLE implementation using the file system and domain sockets to mock the bluetooth radio. The
     <a href="https://github.com/andrewarrow/auraphone-blue/tree/main/swift">swift</a> package
     and <a href="https://github.com/andrewarrow/auraphone-blue/tree/main/kotlin">kotlin</a> package
-    should look very familair to anyone who has worked on ios or android BLE.
+    should look very familiar to anyone who has worked on ios or android BLE.
     </p>
 
     <p>
@@ -131,7 +131,7 @@ mixpanel.init("29d6db85517ba504818659df83844c01", {
     </p>
 
     <p>
-    In the end nothing fixed all the bugs beter than just running two real ios phones and two
+    In the end nothing fixed all the bugs better than just running two real ios phones and two
     real android phones and having them write to disk very through logs PLUS ble specific 
     json files showing exactly what each operation was doing and what info it got back.
     I ended up writing logic to zip up the entire local directory of the phone with all these
@@ -145,7 +145,7 @@ mixpanel.init("29d6db85517ba504818659df83844c01", {
 
     <p>
     Now it's not like this app will keep running when you have your phone in your pocket.
-    iOS has rules on bluetooth connections and its basically only if your app is running
+    iOS has rules on bluetooth connections and it's basically only if your app is running
     and foreground. So the way I see auraphone working at an event, 
     you walk around and mingle as normal but yeah every one has their
     phone out and running the app but ONLY this app. You are still present and in the
@@ -155,7 +155,7 @@ mixpanel.init("29d6db85517ba504818659df83844c01", {
     <p>
     But now effortlessly after your conversation is done and you move around the room,
     you have a record of who that person was! Also the list is sorted by last updated_at
-    desc so who ever you are near will be at the top. Great for when you have met
+    desc so whoever you are near will be at the top. Great for when you have met
     someone earlier that night but forget their name. Now you just look down at your
     auraphone app that's already out and running and say oh hey jessie!
     </p>
