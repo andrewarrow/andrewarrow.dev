@@ -122,6 +122,20 @@
     </p>
 
     <p>
+    My plan was to run many mock phones this way and test all the weird BLE differences between
+    ios and android here. It did not work. The only thing this golang auraphone-blue repo did
+    for me was really help me understand how bluetooth works. This BLE stack that I made in golang
+    doesn't help me fix ios and android bugs, it only introduces its own subtle golang filesystem ble
+    bugs!
+    </p>
+
+    <p>
+    In the end nothing fixed all the bugs beter than just running two real ios phones and two
+    real android phones and having them write to disk very through logs PLUS ble specific 
+    json files showing exactly what each operation was doing and what info it got back.
+    I ended up writing logic to zip up the entire local directory of the phone with all these
+    files and logs and doing an HTTP POST to my local mac just to get all the data off all 4
+    phones quickly after each run.
     </p>
       
   </article>
