@@ -83,7 +83,7 @@
 
     <p>
     With bluetooth your server advertises and when you connect it tells you what characteritics
-    it has. Thing of characteritics as "endpoints". They are not the same an http endpoints at all
+    it has. Think of characteritics as "endpoints". They are not the same as an http endpoints at all
     but again my life got easier when I started thinking of them like this. Our app has two
      characteritics PROFILE_CHAR and PHOTO_CHAR and step one is a client hits PROFILE_CHAR endpoint
      and gets back json from the other phone with device_id, first_name, photo_hash, instagram and
@@ -92,7 +92,7 @@
     </p>
 
     <p>
-    So with my 200 OK from PROFILE_CHAR endpoint i look at the photo_hash which is a 256 sha
+    So with my 200 OK from PROFILE_CHAR endpoint I look at the photo_hash which is a 256 sha
     from the binary data of the image the user picked. If I have this file already cached, I'm good
     and I disconnect from this server. If not I hit the PHOTO_CHAR endpoint and get this image
     data and save as hash.jpg locally. And then I disconnect.
@@ -145,8 +145,8 @@
     <p>
     Now it's not like this app will keep running when you have your phone in your pocket.
     iOS has rules on bluetooth connections and its basically only if your app is running
-    and foreground. So the way I see auraphone working at an event where everyone
-    has the app installed, you walk around and mingle as normal but yeah every has their
+    and foreground. So the way I see auraphone working at an event, 
+    you walk around and mingle as normal but yeah every one has their
     phone out and running the app but ONLY this app. You are still present and in the
     conversation not just looking at other distractions from your phone.
     </p>
