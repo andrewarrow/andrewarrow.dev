@@ -7,11 +7,11 @@
   <title>auraphone - Never lose a connection at networking events</title>
   <meta name="description" content="Bluetooth-powered networking app that automatically connects you with people nearby. No awkward asks for contact info. Just conversations and connections.">
   <meta name="theme-color" content="#6366f1">
-  <meta property="og:image" content="https://i.imgur.com/l8KXF9W.png">
-  <meta name="twitter:image" content="https://i.imgur.com/l8KXF9W.png">
+  <meta property="og:image" content="https://i.imgur.com/7KiCMBg.png">
+  <meta name="twitter:image" content="https://i.imgur.com/7KiCMBg.png">
   <meta property="og:title" content="auraphone - Never lose a connection">
   <meta property="og:description" content="Bluetooth-powered networking app that automatically connects you with people nearby.">
-  <link rel="icon" href="https://i.imgur.com/l8KXF9W.png" type="image/png">
+  <link rel="icon" href="https://i.imgur.com/7KiCMBg.png" type="image/png">
   <style>
     * {
       margin: 0;
@@ -57,6 +57,15 @@
       padding: 0 20px;
       position: relative;
       z-index: 1;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 30px;
+      display: block;
+      border-radius: 24px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
     }
 
     .hero h1 {
@@ -114,6 +123,44 @@
     .btn-secondary:hover {
       background: rgba(255,255,255,0.3);
       transform: translateY(-2px);
+    }
+
+    .showcase {
+      padding: 80px 20px;
+      background: white;
+    }
+
+    .showcase-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .showcase-image {
+      text-align: center;
+    }
+
+    .showcase-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .showcase-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #111827;
+    }
+
+    .showcase-text p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #6b7280;
+      margin-bottom: 20px;
     }
 
     .features {
@@ -241,12 +288,30 @@
     }
 
     @media (max-width: 768px) {
+      .logo {
+        width: 100px;
+        height: 100px;
+      }
+
       .hero h1 {
         font-size: 2.5rem;
       }
 
       .hero .tagline {
         font-size: 1.2rem;
+      }
+
+      .showcase-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .showcase-text h2 {
+        font-size: 2rem;
+      }
+
+      .showcase-text p {
+        font-size: 1.1rem;
       }
 
       .download-buttons {
@@ -264,6 +329,7 @@
 <body>
   <div class="hero">
     <div class="container">
+      <img src="https://i.imgur.com/7KiCMBg.png" alt="auraphone logo" class="logo">
       <h1>auraphone</h1>
       <p class="tagline">Never lose a connection at networking events</p>
       <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto;">
@@ -288,6 +354,26 @@
       </div>
     </div>
   </div>
+
+  <section class="showcase">
+    <div class="showcase-content">
+      <div class="showcase-text">
+        <h2>See Who's Around</h2>
+        <p>
+          As you move through the room, your phone automatically discovers and connects with nearby devices running auraphone.
+        </p>
+        <p>
+          The list updates in real-time, showing profiles with photos and social handles. No typing, no scanning QR codes, no fumbling with business cards.
+        </p>
+        <p>
+          Just pure Bluetooth magic happening in your pocket while you focus on making genuine connections.
+        </p>
+      </div>
+      <div class="showcase-image">
+        <img src="https://i.imgur.com/a8riN4g.png" alt="auraphone app interface showing nearby connections">
+      </div>
+    </div>
+  </section>
 
   <section class="features">
     <div class="container">
