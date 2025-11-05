@@ -1,198 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Video Feed</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #000;
-            overflow: hidden;
-        }
-
-        /* Desktop: Phone container */
-        @media (min-width: 768px) {
-            body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-                background: #1a1a1a;
-            }
-
-            #phone-container {
-                width: 375px;
-                height: 812px;
-                background: #000;
-                border-radius: 40px;
-                overflow: hidden;
-                box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
-                border: 12px solid #222;
-                position: relative;
-            }
-
-            /* Phone notch */
-            #phone-container::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 150px;
-                height: 30px;
-                background: #222;
-                border-radius: 0 0 20px 20px;
-                z-index: 1000;
-            }
-        }
-
-        /* Mobile: Full screen */
-        @media (max-width: 767px) {
-            #phone-container {
-                width: 100vw;
-                height: 100vh;
-            }
-        }
-
-        #video-feed {
-            width: 100%;
-            height: 100%;
-            overflow-y: scroll;
-            scroll-snap-type: y mandatory;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none;
-        }
-
-        #video-feed::-webkit-scrollbar {
-            display: none;
-        }
-
-        .video-container {
-            width: 100%;
-            height: 100%;
-            scroll-snap-align: start;
-            position: relative;
-            background: #000;
-        }
-
-        .video-wrapper {
-            width: 100%;
-            height: 100%;
-            position: relative;
-            cursor: pointer;
-            overflow: hidden;
-            display: block;
-            text-decoration: none;
-        }
-
-        .video-thumbnail {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .play-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80px;
-            height: 80px;
-            background: rgba(255, 0, 0, 0.9);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .play-button::after {
-            content: '';
-            width: 0;
-            height: 0;
-            border-left: 25px solid white;
-            border-top: 15px solid transparent;
-            border-bottom: 15px solid transparent;
-            margin-left: 5px;
-        }
-
-        .video-wrapper:hover .play-button {
-            transform: translate(-50%, -50%) scale(1.1);
-            background: rgba(255, 0, 0, 1);
-        }
-
-        /* Video counter */
-        .video-counter {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
-            padding: 8px 12px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: bold;
-            z-index: 100;
-        }
-
-        @media (min-width: 768px) {
-            .video-counter {
-                top: 50px;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="canonical" href="#">
+  <title>Welcome to andrewarrow.dev</title>
+  <meta name="description" content="Welcome to andrewarrow.dev">
+  <meta name="theme-color" content="#873553">
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css?ran=1">
+  <link rel="icon" href="https://i.imgur.com/KKoEmhn.png" type="image/png">
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "n37yt2z2sm");
+</script>
 </head>
 <body>
-    <div id="phone-container">
-        <div id="video-feed">
-            <!-- Video 1 -->
-            <div class="video-container">
-                <div class="video-counter">1/3</div>
-                <a href="https://www.youtube.com/watch?v=THdQKEl9RWc" target="_blank" class="video-wrapper">
-                    <img
-                        src="https://img.youtube.com/vi/THdQKEl9RWc/maxresdefault.jpg"
-                        alt="Video 1"
-                        class="video-thumbnail"
-                    >
-                    <div class="play-button"></div>
-                </a>
-            </div>
+  <nav>
+    <h1><a href="/">andrewarrow</a></h1>
+    <ul class="dot_list">
+      <li>
+        <a href="/" selected="">home</a>
+      </li>
+      <li>
+        <a href="/privacy" selected="">privacy</a>
+      </li>
+    </ul>
+  </nav>
+    <main id="main" tabindex="-1">
+    <article>
+      <h1 class="title">
+        <span role="text">
+          Welcome to andrewarrow.dev
+        </span>
+      </h1>
+      <div>
+        Get support and questions answered about our iOS apps.
+      </div>
+      <div>
+        Please email help@andrewarrow.dev for questions on any of our apps!
+      </div>
+    </article>
 
-            <!-- Video 2 -->
-            <div class="video-container">
-                <div class="video-counter">2/3</div>
-                <a href="https://www.youtube.com/watch?v=TsmnT-lzZzI" target="_blank" class="video-wrapper">
-                    <img
-                        src="https://img.youtube.com/vi/TsmnT-lzZzI/maxresdefault.jpg"
-                        alt="Video 2"
-                        class="video-thumbnail"
-                    >
-                    <div class="play-button"></div>
-                </a>
-            </div>
+     <ul>
+       <li>
+         <a href="/auraphone/">auraphone</a>
+         <span>Sep 25, 2025</span>
+       </li>
+       <li>
+         <a href="/podpapyrus/">podpapyrus</a>
+         <span>Aug 24, 2025</span>
+       </li>
+     
+       <li>
+         <a href="/2025/05/seventeen-days-of-SQL/">Seventeen Days of SQL</a>
+         <span>May 25, 2025</span>
+       </li>
+     
+       <li>
+         <a href="/2025/05/ken-lloyd-activations/">Ken Lloyd Activations</a>
+         <span>May 24, 2025</span>
+       </li>
+     
+       <li>
+         <a href="/2025/05/from-one-to-two/">From One to Two</a>
+         <span>May 13, 2025</span>
+       </li>
+     
+       <li>
+         <a href="/2025/05/explain-llms-like-i-am-5/">Explain LLMs like I am 5</a>
+         <span>May 10, 2025</span>
+       </li>
+     
+       <li>
+         <a href="/2025/05/four-apps-live-in-the-ios-app-store/">Four apps live in the ios app store</a>
+         <span>May 01, 2025</span>
+       </li>
+     
+       <li>
+         <a href="/2025/05/beta-testers-wanted-showffeur/">Beta testers wanted for new tv show tracker app Showffeur</a>
+         <span>May 01, 2025</span>
+       </li>
+     
+     </ul>
 
-            <!-- Video 3 -->
-            <div class="video-container">
-                <div class="video-counter">3/3</div>
-                <a href="https://www.youtube.com/watch?v=z0kxMdJ-jtA" target="_blank" class="video-wrapper">
-                    <img
-                        src="https://img.youtube.com/vi/z0kxMdJ-jtA/maxresdefault.jpg"
-                        alt="Video 3"
-                        class="video-thumbnail"
-                    >
-                    <div class="play-button"></div>
-                </a>
-            </div>
+  </main>
 
-        </div>
+  <footer>
+    <div id="footer_inner">
+      <div>
+        <p>
+          &copy; 2025 andrewarrow.dev
+        </p>
+        <p>
+          Question, comment, or want to say thanks? Find me it's not hard.
+        </p>
+      </div>
+      <form action="#" method="post" target="popupwindow">
+        <p>
+          <label for="bd-email">Want a monthly digest of what I'm up to?</label>
+        </p>
+        <p>
+          Come back here once a month.
+        </p>
+      </form>
     </div>
-</body>
+  </footer>
+  </body>
 </html>
