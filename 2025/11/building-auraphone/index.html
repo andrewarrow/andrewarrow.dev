@@ -45,7 +45,7 @@ mixpanel.init("29d6db85517ba504818659df83844c01", {
   <article>
     <h1 class="title">
       <span role="text">
-        Building auraphone
+        auraphone: a simple app to collect people's info at events
       </span>
     </h1>
     <ul class="dot_list meta">
@@ -56,15 +56,33 @@ mixpanel.init("29d6db85517ba504818659df83844c01", {
       </li>
     </ul>
     <p>
-    I was at a networking event. About 40 people at a bar/restaurant in Culver City
-    and it was great! Lots of interesting people. Great conversations but when it was
-    all over, I had no way to contact any of these people. I guess I'm just not smooth
-    enough to ask for their insta or digits.
+    Hi, I'm Andrew, and I'm building Auraphone, a simple app to collect people's info at events.
     </p>
 
     <p>
-    And so I started writing this bluetooth app. Using CBCentralManager on ios
-    and BluetoothManager on android. Each phone broadcasts as a peripheral but also connects as central. Rooms full of phones running the app gossip. Simple right?
+    I've been a developer for many years and I thought I knew bluetooth well. I was an early employee of the scooter company Bird back in 2017 and wrote a lot of the ios and android bluetooth to "bird brain" logic. But I started a new bluetooth app that is a lot more complex. Imagine a room full of people at a big networking event. Every phone broadcasts a bluetooth service and every phone tries and connects, all at the same time! I'm building this app to bring networking events into the year 2026! We all have bluetooth phones with us, lets use them to solve this who is going to give who their phone number issue. Here is what it does:
+    </p>
+
+    <p>
+
+    <ul>
+      <li>You set your name, photo, and what info you want to share. Maybe just your instagram username, maybe your email and linked in too, your choice what to broadcast.</li>
+      <li>Walk around your networking event and collect all this info from people you are in close range to.</li>
+      <li>Have a record of everyone you actually meet IRL at this event.</li>
+    </ul>
+
+    </p>
+    <p>
+    <div class="container">
+      <h2>Here is a video demo:</h2>
+      <div class="video-container">
+        <video controls preload="metadata">
+          <source src="/auraphone/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
     </p>
 
     <p>
@@ -162,7 +180,7 @@ mixpanel.init("29d6db85517ba504818659df83844c01", {
 
     <p>
     The app is in the <a href="https://apps.apple.com/us/app/auraphone/id6752836343">ios app store</a>.
-    For android we serve up the apk at <a href="https://andrewarrow.dev/auraphone/apk">auraphone.apk</a>. We are testing it now at <a href="https://www.blankspaces.com/culver-city">BLANKSPACES Culver City</a>.
+    For android we serve up the apk at <a href="https://andrewarrow.dev/auraphone/apk">auraphone.apk</a>. We are testing it now at <a href="https://www.blankspaces.com/culver-city">BLANKSPACES Culver City</a>. Looking to try it now in a room full of people! Give me reports of did your phones see each other? Did the contact info sync? Did it solve a problem for you?
     </p>
       
   </article>
