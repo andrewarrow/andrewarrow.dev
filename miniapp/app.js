@@ -54,3 +54,20 @@ function getHostVersion() {
     .then(result => log("Host Version:\n" + formatResult(result)))
     .catch(err => log("Error: " + err));
 }
+
+function simulateAge(ageCategory) {
+  log(`Testing age simulation: ${ageCategory}\n\nNote: This will trigger the host app to reload with simulated ${ageCategory} user.`);
+
+  // Send message to host app to change simulated age and reload
+  if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.simulateAge) {
+    try {
+      window.webkit.messageHandlers.simulateAge.postMessage({
+        ageCategory: ageCategory
+      });
+    } catch (e) {
+      log("Age simulation not available in this demo version");
+    }
+  } else {
+    log(`Demo: If this were a real test, the host would now:\n1. Set user age to "${ageCategory}"\n2. Reload mini-app\n3. ${ageCategory === '13to17' ? 'BLOCK with age restriction dialog' : 'ALLOW loading'}`);
+  }
+}
