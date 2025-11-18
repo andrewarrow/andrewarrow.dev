@@ -21,7 +21,7 @@ function formatResult(result) {
 
 function requestAgeRange() {
   if (!window.AppleAgeRange) {
-    log("AgeRange API unavailable");
+    log("Age Range API unavailable");
     return;
   }
 
@@ -37,7 +37,7 @@ function purchaseItem() {
   }
 
   window.AppleCommerce.purchase({
-    productId: "demo_product_1",
+    productId: "DEMO_001",
     description: "Demo Purchase"
   })
     .then(result => log("Purchase Success:\n" + formatResult(result)))
