@@ -285,6 +285,7 @@ footer a:hover {
 }
 
 #footer_inner {
+  text-align: center;
   display: grid;
   grid-template-columns: 1fr auto;
   grid-gap: calc(3*var(--grid-gap));
