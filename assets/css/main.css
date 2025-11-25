@@ -151,7 +151,7 @@ ul.dot_list li {
 }
 
 ul.dot_list li:not(:last-child)::after {
-  content: " · ";
+  content: "  ";
 }
 
 .meta, .meta a, .meta a:visited {
