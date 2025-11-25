@@ -386,3 +386,27 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
   -ms-user-select: none;
   user-select: none;
 }
+
+/* App gallery centered layout */
+.app-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+  margin: 2em auto;
+}
+
+.app-gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+@media screen and (max-width: 360px) {
+  .app-gallery img {
+    width: 100%;
+    max-width: 280px;
+  }
+}
