@@ -183,28 +183,70 @@ nav {
   padding-bottom: 1px;
   background: var(--nav-background-url) var(--primary-color-light);
   background-size: auto 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav > * {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
 nav h1 {
-  margin-bottom: -5px;
-  font-size: 1.7em;
+  margin-bottom: 0;
+  font-size: 1.8em;
+  font-weight: 500;
 }
 
 nav h1 a {
   text-decoration: none;
+  letter-spacing: -0.02em;
 }
 
 nav ul {
-  margin-bottom: 14px;
+  margin-bottom: 0;
+  display: flex;
+  gap: 1.5em;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul a {
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  text-decoration: none;
+}
+
+nav ul a[selected] {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: 500;
+  text-decoration: none;
 }
 
 nav, nav a, nav a:visited {
   color: white;
 }
 
-nav a[selected] {
-  text-decoration-thickness: 4px;
-  text-decoration-skip-ink: none;
+@media screen and (max-width: 520px) {
+  nav > * {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  nav h1 {
+    font-size: 1.6em;
+  }
 }
 
 hr {
@@ -226,20 +268,63 @@ a.skip-main {
 }
 
 footer {
-  padding-top: 15px;
-  padding-bottom: calc(15px + env(safe-area-inset-bottom));
+  padding-top: 2em;
+  padding-bottom: calc(2em + env(safe-area-inset-bottom));
   font-size: calc(var(--meta-scaling-factor)*var(--font-size));
-  background: var(--primary-color-light);
+  background: linear-gradient(135deg, var(--primary-color-light), var(--primary-color-dark));
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 footer, footer a, footer a:hover, footer a:visited {
   color: white;
 }
 
+footer a:hover {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 #footer_inner {
   display: grid;
-  grid-template-columns: auto 280px;
-  grid-gap: calc(5*var(--grid-gap));
+  grid-template-columns: 1fr auto;
+  grid-gap: calc(3*var(--grid-gap));
+  align-items: start;
+}
+
+#footer_inner > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+#footer_inner p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+#footer_inner p:first-child {
+  font-weight: 500;
+  font-size: 1.1em;
+}
+
+footer form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5em;
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 280px;
+}
+
+footer form p {
+  margin: 0 0 1em 0;
+  font-size: 1em;
+}
+
+footer form p:last-child {
+  margin-bottom: 0;
+  font-size: 0.9em;
+  opacity: 0.8;
 }
 
 footer #bd-email {
@@ -260,18 +345,29 @@ footer form input[type=submit] {
   font-size: 1em;
   background: var(--primary-color-light);
   margin-top: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+footer form input[type=submit]:hover {
+  background: white;
+  color: var(--primary-color-light);
 }
 
 footer form input[type=submit]:active {
   transform: translate(0, 2px);
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 720px) {
   #footer_inner {
     grid-template-columns: 1fr;
-    grid-gap: 0;
+    gap: 2em;
   }
-  
+
+  footer form {
+    min-width: auto;
+  }
+
   footer form p:first-child {
     margin-top: 0;
   }
@@ -408,5 +504,149 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
   .app-gallery img {
     width: 100%;
     max-width: 280px;
+  }
+}
+
+/* Hero section styling */
+.hero {
+  text-align: center;
+  padding: 3em 0;
+  background: linear-gradient(135deg, rgba(135, 53, 83, 0.05), rgba(110, 44, 68, 0.05));
+  border-radius: var(--border-radius);
+  margin-bottom: 3em;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  font-weight: 300;
+}
+
+.hero .subtitle {
+  font-size: 1.2em;
+  color: var(--accent-grey);
+  margin-bottom: 1.5em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero .contact-info {
+  font-size: 1em;
+  color: var(--body-text);
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1em 2em;
+  border-radius: var(--border-radius);
+  display: inline-block;
+  border: 1px solid var(--block-border);
+}
+
+.hero .contact-info a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero .contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Content sections */
+.content-section {
+  margin-bottom: 4em;
+}
+
+.section-title {
+  font-size: 1.8em;
+  margin-bottom: 1.5em;
+  text-align: center;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--primary-color);
+  margin: 0.5em auto;
+}
+
+/* Blog post list styling */
+.blog-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.blog-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1.5em;
+  margin-bottom: 0.5em;
+  background: rgba(135, 53, 83, 0.02);
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.blog-list li:hover {
+  background: rgba(135, 53, 83, 0.05);
+  border-color: var(--block-border);
+  transform: translateY(-2px);
+}
+
+.blog-list a {
+  text-decoration: none;
+  font-weight: 500;
+  flex-grow: 1;
+}
+
+.blog-list span {
+  color: var(--accent-grey);
+  font-size: 0.9em;
+  white-space: nowrap;
+  margin-left: 1em;
+}
+
+@media screen and (max-width: 520px) {
+  .hero {
+    padding: 2em 0;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero .contact-info {
+    padding: 0.8em 1.5em;
+  }
+
+  .blog-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+
+  .blog-list span {
+    margin-left: 0;
+  }
+}
+
+@media(prefers-color-scheme: dark) {
+  .hero .contact-info {
+    background: rgba(0, 0, 0, 0.3);
+    border-color: var(--block-border);
+  }
+
+  .blog-list li {
+    background: rgba(135, 53, 83, 0.1);
+  }
+
+  .blog-list li:hover {
+    background: rgba(135, 53, 83, 0.15);
   }
 }
