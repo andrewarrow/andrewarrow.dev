@@ -484,27 +484,129 @@ pre .vc, pre .vg, pre .vi, pre .vm { color: #19177c; }
   user-select: none;
 }
 
-/* App gallery centered layout */
+/* App gallery layout with images and descriptions */
 .app-gallery {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1em;
-  list-style: none;
+  gap: 2em;
   padding: 0;
   margin: 2em auto;
+  max-width: 700px;
 }
 
-.app-gallery img {
-  max-width: 100%;
+.app-item {
+  display: flex;
+  gap: 2em;
+  align-items: flex-start;
+  padding: 1.5em;
+  background: rgba(135, 53, 83, 0.02);
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.app-item:hover {
+  background: rgba(135, 53, 83, 0.05);
+  border-color: var(--block-border);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.app-image {
+  flex-shrink: 0;
+  width: 120px;
+}
+
+.app-image img {
+  width: 100%;
   height: auto;
   border-radius: var(--border-radius);
+  transition: transform 0.2s ease;
 }
 
-@media screen and (max-width: 360px) {
-  .app-gallery img {
-    width: 100%;
-    max-width: 280px;
+.app-image img:hover {
+  transform: scale(1.05);
+}
+
+.app-description {
+  flex: 1;
+  min-width: 0;
+}
+
+.app-description h3 {
+  margin: 0 0 0.8em 0;
+  font-size: 1.4em;
+  line-height: 1.2;
+}
+
+.app-description h3 a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.app-description h3 a:hover {
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+.app-description p {
+  margin: 0;
+  line-height: 1.5;
+  color: var(--body-text);
+}
+
+/* Mobile responsive design */
+@media screen and (max-width: 640px) {
+  .app-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5em;
+  }
+
+  .app-image {
+    width: 100px;
+    align-self: center;
+  }
+
+  .app-description h3 {
+    margin-bottom: 0.6em;
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app-gallery {
+    gap: 1.5em;
+    margin: 1.5em auto;
+  }
+
+  .app-item {
+    padding: 1.2em;
+    gap: 1.2em;
+  }
+
+  .app-image {
+    width: 90px;
+  }
+
+  .app-description h3 {
+    font-size: 1.2em;
+  }
+
+  .app-description p {
+    font-size: 0.95em;
+  }
+}
+
+/* Dark mode adjustments */
+@media(prefers-color-scheme: dark) {
+  .app-item {
+    background: rgba(135, 53, 83, 0.08);
+  }
+
+  .app-item:hover {
+    background: rgba(135, 53, 83, 0.12);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 }
 
