@@ -7,8 +7,11 @@
   <link rel="canonical" href="#">
   <title>Welcome to andrewarrow.dev</title>
   <meta name="description" content="Welcome to andrewarrow.dev">
-  <meta name="theme-color" content="#873553">
-  <link rel="stylesheet" type="text/css" href="/assets/css/main.css?ran=1">
+  <meta name="theme-color" content="#08111f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css?ran=2">
   <link rel="icon" href="https://i.imgur.com/KKoEmhn.png" type="image/png">
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -18,7 +21,7 @@
     })(window, document, "clarity", "script", "n37yt2z2sm");
 </script>
 </head>
-<body>
+<body class="home-page">
   <nav>
     <h1><a href="/">andrewarrow</a></h1>
     <ul class="dot_list">
@@ -26,63 +29,120 @@
         <a href="/" selected="">home</a>
       </li>
       <li>
-        <a href="/privacy" selected="">privacy</a>
+        <a href="/podpapyrus/">podpapyrus</a>
+      </li>
+      <li>
+        <a href="/privacy">privacy</a>
       </li>
     </ul>
   </nav>
-    <main id="main" tabindex="-1">
-    <article>
-      <h1 class="title">
-        <span role="text">
-          Welcome to andrewarrow.dev
-        </span>
-      </h1>
-      <div>
-        Get support and questions answered about our iOS apps.
+  <main id="main" tabindex="-1" class="watcher-home">
+    <section class="watcher-hero">
+      <div class="watcher-eyebrow">Andrew Arrow / apps, writing, support</div>
+      <div class="watcher-hero-grid">
+        <div>
+          <h1>
+            Shipping apps, writing in public, and keeping support simple.
+          </h1>
+          <p class="watcher-hero-copy">
+            andrewarrow.dev is the front door for product updates, essays, and support for my iOS apps.
+            If you need help, want to read what I am building, or want the latest project links, start here.
+          </p>
+          <div class="watcher-cta-row">
+            <a href="mailto:help@andrewarrow.dev" class="watcher-btn watcher-btn-primary">Email Support</a>
+            <a href="#recent-work" class="watcher-btn watcher-btn-secondary">Browse Recent Work</a>
+            <a href="/podpapyrus/" class="watcher-btn watcher-btn-secondary">Visit Podpapyrus</a>
+          </div>
+        </div>
+        <aside class="watcher-panel">
+          <div class="watcher-panel-label">Current signal</div>
+          <div class="watcher-terminal">
+            <div>Site: andrewarrow.dev</div>
+            <div>Primary use: app support + public project notes</div>
+            <br>
+            <div><span class="ok">Inbox:</span> help@andrewarrow.dev</div>
+            <div><span class="ok">Policy:</span> /privacy</div>
+            <div><span class="ok">Project:</span> /podpapyrus/</div>
+            <br>
+            <div class="warn">Latest writing covers apps, SQL, and product experiments</div>
+            <div class="watcher-terminal-muted">Scroll for the newest posts and project links.</div>
+          </div>
+        </aside>
       </div>
-      <div>
-        Please email help@andrewarrow.dev for questions on any of our apps!
+    </section>
+
+    <section class="watcher-section" id="recent-work">
+      <h2>Recent work</h2>
+      <p class="watcher-section-intro">
+        A mix of products, launch notes, and short essays, re-framed into the same card-and-panel system
+        used on Dialtone's home page.
+      </p>
+      <div class="watcher-cards">
+        <article class="watcher-card watcher-link-featured">
+          <span class="watcher-kicker">Project</span>
+          <h3><a href="/podpapyrus/">podpapyrus</a></h3>
+          <p>Podcast summaries, experiments, and the newest product surface area published on this domain.</p>
+          <span class="watcher-card-meta">August 24, 2025</span>
+        </article>
+
+        <article class="watcher-card">
+          <span class="watcher-kicker">Post</span>
+          <h3><a href="/2025/05/seventeen-days-of-SQL/">Seventeen Days of SQL</a></h3>
+          <p>Notes from a concentrated stretch of building, learning, and shipping around SQL.</p>
+          <span class="watcher-card-meta">May 25, 2025</span>
+        </article>
+
+        <article class="watcher-card">
+          <span class="watcher-kicker">Post</span>
+          <h3><a href="/2025/05/ken-lloyd-activations/">Ken Lloyd Activations</a></h3>
+          <p>A product and experimentation update published during the May 2025 build run.</p>
+          <span class="watcher-card-meta">May 24, 2025</span>
+        </article>
+
+        <article class="watcher-card">
+          <span class="watcher-kicker">Post</span>
+          <h3><a href="/2025/05/from-one-to-two/">From One to Two</a></h3>
+          <p>A short essay on moving beyond the first version and turning progress into momentum.</p>
+          <span class="watcher-card-meta">May 13, 2025</span>
+        </article>
+
+        <article class="watcher-card">
+          <span class="watcher-kicker">Post</span>
+          <h3><a href="/2025/05/explain-llms-like-i-am-5/">Explain LLMs like I am 5</a></h3>
+          <p>An approachable explanation of large language models without dropping the important parts.</p>
+          <span class="watcher-card-meta">May 10, 2025</span>
+        </article>
+
+        <article class="watcher-card">
+          <span class="watcher-kicker">Launch</span>
+          <h3><a href="/2025/05/four-apps-live-in-the-ios-app-store/">Four apps live in the ios app store</a></h3>
+          <p>A shipping update marking four apps live in the App Store at the same time.</p>
+          <span class="watcher-card-meta">May 1, 2025</span>
+        </article>
+
+        <article class="watcher-card">
+          <span class="watcher-kicker">Launch</span>
+          <h3><a href="/2025/05/beta-testers-wanted-showffeur/">Beta testers wanted for new tv show tracker app Showffeur</a></h3>
+          <p>A recruitment post for early testers of Showffeur, a TV show tracker app.</p>
+          <span class="watcher-card-meta">May 1, 2025</span>
+        </article>
       </div>
-    </article>
+    </section>
 
-     <ul>
-       <li>
-         <a href="/podpapyrus/">podpapyrus</a>
-         <span>Aug 24, 2025</span>
-       </li>
-     
-       <li>
-         <a href="/2025/05/seventeen-days-of-SQL/">Seventeen Days of SQL</a>
-         <span>May 25, 2025</span>
-       </li>
-     
-       <li>
-         <a href="/2025/05/ken-lloyd-activations/">Ken Lloyd Activations</a>
-         <span>May 24, 2025</span>
-       </li>
-     
-       <li>
-         <a href="/2025/05/from-one-to-two/">From One to Two</a>
-         <span>May 13, 2025</span>
-       </li>
-     
-       <li>
-         <a href="/2025/05/explain-llms-like-i-am-5/">Explain LLMs like I am 5</a>
-         <span>May 10, 2025</span>
-       </li>
-     
-       <li>
-         <a href="/2025/05/four-apps-live-in-the-ios-app-store/">Four apps live in the ios app store</a>
-         <span>May 01, 2025</span>
-       </li>
-     
-       <li>
-         <a href="/2025/05/beta-testers-wanted-showffeur/">Beta testers wanted for new tv show tracker app Showffeur</a>
-         <span>May 01, 2025</span>
-       </li>
-     
-     </ul>
-
+    <section class="watcher-section">
+      <h2>Support and privacy</h2>
+      <p class="watcher-section-intro">
+        The support path should be obvious. So should the privacy page.
+      </p>
+      <div class="watcher-privacy-box">
+        <strong>Use email for app support. Use the privacy page for policy details.</strong>
+        <ul>
+          <li>Email <a href="mailto:help@andrewarrow.dev">help@andrewarrow.dev</a> for questions about any app.</li>
+          <li>Read the <a href="/privacy">privacy page</a> before using products or sharing data.</li>
+          <li>Use this homepage to find the latest project links and recently published posts.</li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -95,14 +155,14 @@
           Question, comment, or want to say thanks? Find me it's not hard.
         </p>
       </div>
-      <form action="#" method="post" target="popupwindow">
+      <div class="home-footer-card">
         <p>
-          <label for="bd-email">Want a monthly digest of what I'm up to?</label>
+          <strong>Want a monthly digest of what I'm up to?</strong>
         </p>
         <p>
           Come back here once a month.
         </p>
-      </form>
+      </div>
     </div>
   </footer>
   <script src="https://heyo.so/embed/script?projectId=68b4f90eaa748f5bdbb4bdfa"></script>
