@@ -7,8 +7,11 @@
   <link rel="canonical" href="#">
   <title>Welcome to andrewarrow.dev</title>
   <meta name="description" content="Welcome to andrewarrow.dev">
-  <meta name="theme-color" content="#873553">
-  <link rel="stylesheet" type="text/css" href="/assets/css/main.css?ran=2">
+  <meta name="theme-color" content="#08111f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css?ran=3">
   <link rel="icon" href="https://i.imgur.com/KKoEmhn.png" type="image/png">
     <script type="text/javascript">
   (function (f, b) { if (!b.__SV) { var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) { function g(a, d) { var b = d.split("."); 2 == b.length && ((a = a[b[0]]), (d = b[1])); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))); }; } var a = b; "undefined" !== typeof c ? (a = b[c] = []) : (c = "mixpanel"); a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d; }; a.people.toString = function () { return a.toString(1) + ".people (stub)"; }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split( " "); for (h = 0; h < i.length; h++) g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]); }; } for ( var d = {}, e = ["get_group"].concat( Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++) b(j[c]); return d; }; b._i.push([e, f, c]); }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g); } })(document, window.mixpanel || []);
@@ -19,113 +22,188 @@ mixpanel.init("29d6db85517ba504818659df83844c01", {
 });
     </script>
 </head>
-<body>
+<body class="home-page">
   <nav>
+    <div class="home-nav-shell">
+      <h1><a href="/">andrewarrow</a></h1>
+      <ul class="dot_list">
+        <li>
+          <a href="/" selected="">home</a>
+        </li>
+        <li>
+          <a href="#apps">apps</a>
+        </li>
+        <li>
+          <a href="#writing">writing</a>
+        </li>
+        <li>
+          <a href="/privacy">privacy</a>
+        </li>
+      </ul>
+    </div>
   </nav>
-    <main id="main" tabindex="-1">
-    <section class="hero">
-      <h1>andrewarrow.dev</h1>
-      <p class="subtitle">Get support and questions answered about our iOS apps.</p>
-      <div class="contact-info">
-        Please email help@andrewarrow.dev for questions on any of our apps!
+  <main id="main" tabindex="-1" class="watcher-home">
+    <section class="watcher-hero">
+      <div class="watcher-eyebrow">Andrew Arrow / iOS apps, writing, experiments</div>
+      <div class="watcher-hero-grid">
+        <div>
+          <h1>iPhone apps, product notes, and a clear support path.</h1>
+          <p class="watcher-hero-copy">
+            andrewarrow.dev is the landing page for shipped apps, recent writing, and support.
+            If you need help with an app or want to see what is new, start here.
+          </p>
+          <div class="watcher-cta-row">
+            <a href="mailto:help@andrewarrow.dev" class="watcher-btn watcher-btn-primary">Email Support</a>
+            <a href="#apps" class="watcher-btn watcher-btn-secondary">Browse Apps</a>
+            <a href="#writing" class="watcher-btn watcher-btn-secondary">Read Latest Posts</a>
+          </div>
+        </div>
+        <aside class="watcher-panel">
+          <div class="watcher-panel-label">Current signal</div>
+          <div class="watcher-terminal">
+            <div>Site: andrewarrow.dev</div>
+            <div>Focus: consumer iOS apps + build notes</div>
+            <br>
+            <div><span class="ok">Support:</span> help@andrewarrow.dev</div>
+            <div><span class="ok">Latest post:</span> Building auraphone</div>
+            <div><span class="ok">Policy:</span> /privacy</div>
+            <br>
+            <div class="warn">Featured apps: DiscoNectar, RealFrame, PrintsCharming, auraphone</div>
+            <div class="watcher-terminal-muted">Use the sections below for App Store links and recent writing.</div>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section class="content-section">
-      <div class="app-gallery">
-
-        <div class="app-item">
-          <div class="app-image">
-            <a href="https://apps.apple.com/us/app/disconectar/id6755638368">
-              <img src="https://i.imgur.com/cpOOjHf.png" alt="Disconectar app">
-            </a>
-          </div>
-          <div class="app-description">
+    <section class="watcher-section" id="apps">
+      <h2>Apps in the App Store</h2>
+      <p class="watcher-section-intro">
+        The current live branch homepage content, restyled into the same glass-card system as Dialtone.
+      </p>
+      <div class="watcher-cards watcher-app-grid">
+        <article class="watcher-card watcher-app-card watcher-link-featured">
+          <a class="watcher-app-thumb" href="https://apps.apple.com/us/app/disconectar/id6755638368">
+            <img src="https://i.imgur.com/cpOOjHf.png" alt="DiscoNectar app">
+          </a>
+          <div class="watcher-app-body">
+            <span class="watcher-kicker">App Store</span>
             <h3><a href="https://apps.apple.com/us/app/disconectar/id6755638368">DiscoNectar</a></h3>
-            <p>DiscoNectar brings App Store Connect to your iPhone and iPad. Manage your entire app portfolio from anywhere with sales analytics, app management, build monitoring, and team management.</p>
+            <p>DiscoNectar brings App Store Connect to your iPhone and iPad with sales analytics, app management, build monitoring, and team management.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="app-item">
-          <div class="app-image">
-            <a href="https://apps.apple.com/us/app/realframe/id6755611890">
-              <img src="https://i.imgur.com/PDZeG0i.png" alt="RealFrame app">
-            </a>
-          </div>
-          <div class="app-description">
+        <article class="watcher-card watcher-app-card">
+          <a class="watcher-app-thumb" href="https://apps.apple.com/us/app/realframe/id6755611890">
+            <img src="https://i.imgur.com/PDZeG0i.png" alt="RealFrame app">
+          </a>
+          <div class="watcher-app-body">
+            <span class="watcher-kicker">App Store</span>
             <h3><a href="https://apps.apple.com/us/app/realframe/id6755611890">RealFrame</a></h3>
-            <p>Creates somewhat tamper-proof video evidence by recording from your front and back cameras at the same time.</p>
+            <p>Records from the front and back cameras at the same time to create more tamper-resistant video evidence.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="app-item">
-          <div class="app-image">
-            <a href="https://apps.apple.com/us/app/printscharming/id6755642526">
-              <img src="https://i.imgur.com/lQOrkPb.png" alt="PrintsCharming app">
-            </a>
-          </div>
-          <div class="app-description">
+        <article class="watcher-card watcher-app-card">
+          <a class="watcher-app-thumb" href="https://apps.apple.com/us/app/printscharming/id6755642526">
+            <img src="https://i.imgur.com/lQOrkPb.png" alt="PrintsCharming app">
+          </a>
+          <div class="watcher-app-body">
+            <span class="watcher-kicker">App Store</span>
             <h3><a href="https://apps.apple.com/us/app/printscharming/id6755642526">PrintsCharming</a></h3>
-            <p>Print exactly what you want, exactly how you want it. This app gives you full control over size, layout, and quality—whether you're printing a single photo or an entire page of images.</p>
+            <p>Print exactly what you want with control over size, layout, and quality for single photos or full pages of images.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="app-item">
-          <div class="app-image">
-            <a href="https://apps.apple.com/us/app/auraphone/id6752836343">
-              <img src="https://i.imgur.com/rOf6COk.png" alt="Auraphone app">
-            </a>
-          </div>
-          <div class="app-description">
+        <article class="watcher-card watcher-app-card">
+          <a class="watcher-app-thumb" href="https://apps.apple.com/us/app/auraphone/id6752836343">
+            <img src="https://i.imgur.com/rOf6COk.png" alt="auraphone app">
+          </a>
+          <div class="watcher-app-body">
+            <span class="watcher-kicker">App Store</span>
             <h3><a href="https://apps.apple.com/us/app/auraphone/id6752836343">auraphone</a></h3>
-            <p>auraphone lets you scan the area around you via bluetooth and find other auraphone app users. You can exchange photos and contact info via bluetooth sync. It helps you mingle!</p>
+            <p>Scans nearby Bluetooth signals to find other auraphone users and exchange photos and contact info in person.</p>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
-    <section class="content-section">
-      <ul class="blog-list">
-       <li>
-         <a href="/auraphone/">auraphone</a>
-         <span>Sep 25, 2025</span>
-       </li>
+    <section class="watcher-section" id="writing">
+      <h2>Latest writing and links</h2>
+      <p class="watcher-section-intro">
+        Recent project pages and posts from the current live homepage content.
+      </p>
+      <div class="watcher-cards">
+        <article class="watcher-card watcher-link-featured">
+          <span class="watcher-kicker">Post</span>
+          <h3><a href="/2025/11/building-auraphone/">Building auraphone</a></h3>
+          <p>Notes from building auraphone, published on November 11, 2025.</p>
+          <span class="watcher-card-meta">November 11, 2025</span>
+        </article>
 
-       <li>
-         <a href="/2025/11/building-auraphone/">Building auraphone</a>
-         <span>Nov 11, 2025</span>
-       </li>
-     
-       <li>
-         <a href="/2025/05/seventeen-days-of-SQL/">Seventeen Days of SQL</a>
-         <span>May 25, 2025</span>
-       </li>
-     
-       <li>
-         <a href="/2025/05/ken-lloyd-activations/">Ken Lloyd Activations</a>
-         <span>May 24, 2025</span>
-       </li>
-     
-       <li>
-         <a href="/2025/05/from-one-to-two/">From One to Two</a>
-         <span>May 13, 2025</span>
-       </li>
-     
-       <li>
-         <a href="/2025/05/explain-llms-like-i-am-5/">Explain LLMs like I am 5</a>
-         <span>May 10, 2025</span>
-       </li>
-     
-       <li>
-         <a href="/2025/05/four-apps-live-in-the-ios-app-store/">Four apps live in the ios app store</a>
-         <span>May 01, 2025</span>
-       </li>
-     
-       <li>
-         <a href="/2025/05/beta-testers-wanted-showffeur/">Beta testers wanted for new tv show tracker app Showffeur</a>
-         <span>May 01, 2025</span>
-       </li>
-     </ul>
+        <article class="watcher-card">
+          <span class="watcher-kicker">Project</span>
+          <h3><a href="/auraphone/">auraphone</a></h3>
+          <p>The project page for auraphone, published on September 25, 2025.</p>
+          <span class="watcher-card-meta">September 25, 2025</span>
+        </article>
+
+        <article class="watcher-card">
+          <span class="watcher-kicker">Post</span>
+          <h3><a href="/2025/05/seventeen-days-of-SQL/">Seventeen Days of SQL</a></h3>
+          <p>Notes from a concentrated stretch of building, learning, and shipping around SQL.</p>
+          <span class="watcher-card-meta">May 25, 2025</span>
+        </article>
+
+        <article class="watcher-card">
+          <span class="watcher-kicker">Post</span>
+          <h3><a href="/2025/05/ken-lloyd-activations/">Ken Lloyd Activations</a></h3>
+          <p>A product and experimentation update published during the May 2025 build run.</p>
+          <span class="watcher-card-meta">May 24, 2025</span>
+        </article>
+
+        <article class="watcher-card">
+          <span class="watcher-kicker">Post</span>
+          <h3><a href="/2025/05/from-one-to-two/">From One to Two</a></h3>
+          <p>A short essay on moving beyond the first version and turning progress into momentum.</p>
+          <span class="watcher-card-meta">May 13, 2025</span>
+        </article>
+
+        <article class="watcher-card">
+          <span class="watcher-kicker">Post</span>
+          <h3><a href="/2025/05/explain-llms-like-i-am-5/">Explain LLMs like I am 5</a></h3>
+          <p>An approachable explanation of large language models without dropping the important parts.</p>
+          <span class="watcher-card-meta">May 10, 2025</span>
+        </article>
+
+        <article class="watcher-card">
+          <span class="watcher-kicker">Launch</span>
+          <h3><a href="/2025/05/four-apps-live-in-the-ios-app-store/">Four apps live in the ios app store</a></h3>
+          <p>A shipping update marking four apps live in the App Store at the same time.</p>
+          <span class="watcher-card-meta">May 1, 2025</span>
+        </article>
+
+        <article class="watcher-card">
+          <span class="watcher-kicker">Launch</span>
+          <h3><a href="/2025/05/beta-testers-wanted-showffeur/">Beta testers wanted for new tv show tracker app Showffeur</a></h3>
+          <p>A recruitment post for early testers of Showffeur, a TV show tracker app.</p>
+          <span class="watcher-card-meta">May 1, 2025</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="watcher-section">
+      <h2>Support and privacy</h2>
+      <p class="watcher-section-intro">
+        The support path should be obvious. So should the privacy page.
+      </p>
+      <div class="watcher-privacy-box">
+        <strong>Use email for app support. Use the privacy page for policy details.</strong>
+        <ul>
+          <li>Email <a href="mailto:help@andrewarrow.dev">help@andrewarrow.dev</a> for help with any app.</li>
+          <li>Read the <a href="/privacy">privacy page</a> before using products or sharing data.</li>
+          <li>Use this homepage to find the latest App Store links and build notes.</li>
+        </ul>
+      </div>
     </section>
   </main>
 
@@ -136,7 +214,15 @@ mixpanel.init("29d6db85517ba504818659df83844c01", {
           &copy; 2025 andrewarrow.dev
         </p>
         <p>
-          <a href="/privacy" selected="">privacy</a>
+          <a href="/privacy">privacy</a>
+        </p>
+      </div>
+      <div class="home-footer-card">
+        <p>
+          <strong>Need support?</strong>
+        </p>
+        <p>
+          <a href="mailto:help@andrewarrow.dev">help@andrewarrow.dev</a>
         </p>
       </div>
     </div>
