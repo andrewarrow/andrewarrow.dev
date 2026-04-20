@@ -1,5 +1,0 @@
-{
-  "miniAppId": "demo",
-  "manifestUrl": "https://andrewarrow.dev/miniapp/miniapp.json",
-  "entrypoint": "https://andrewarrow.dev/miniapp/index.html"
-}
