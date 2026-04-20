@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="canonical" href="https://andrewarrow.dev/2025/11/simple-app-collect-peoples-info-at-events/">
+  <title>auraphone: a simple app to collect people's info at events</title>
+  <meta name="description" content="Building auraphone - using CBCentralManager on ios and BluetoothManager on android to make each phone broadcasts as a peripheral but also connects as central. Rooms full of phones running the app gossip.">
+  <meta name="theme-color" content="#873553">
+  <meta property="og:image" content="https://i.imgur.com/l8KXF9W.png">
+  <meta name="twitter:image" content="https://i.imgur.com/l8KXF9W.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  
+  <meta property="og:title" content="auraphone: a simple app to collect people's info at events ">
+  <meta property="og:description" content="Building auraphone - using CBCentralManager on ios and BluetoothManager on android to make each phone broadcasts as a peripheral but also connects as central. Rooms full of phones running the app gossip.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="auraphone: a simple app to collect people's info at events ">
+  <meta name="twitter:description" content="Building auraphone - using CBCentralManager on ios and BluetoothManager on android to make each phone broadcasts as a peripheral but also connects as central. Rooms full of phones running the app gossip.">
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css?ran=1">
+  <link rel="icon" href="https://i.imgur.com/l8KXF9W.png" type="image/png">
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "auraphone: a simple app to collect people's info at events",
+    "description": "Building auraphone - using CBCentralManager on ios and BluetoothManager on android to make each phone broadcasts as a peripheral but also connects as central. Rooms full of phones running the app gossip.",
+    "image": "https://i.imgur.com/l8KXF9W.png",
+    "datePublished": "2025-11-04T00:00:00-08:00",
+    "dateModified": "2025-11-04T00:00:00-08:00",
+    "author": {
+      "@type": "Person",
+      "name": "Andrew Arrow",
+      "url": "https://andrewarrow.dev"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Andrew Arrow",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://i.imgur.com/l8KXF9W.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://andrewarrow.dev/2025/11/simple-app-collect-peoples-info-at-events/"
+    },
+    "video": {
+      "@type": "VideoObject",
+      "name": "Auraphone Demo - Bluetooth Networking App",
+      "description": "Video demonstration of Auraphone, a Bluetooth Low Energy app that allows phones to collect contact information at networking events by broadcasting as peripherals and connecting as centrals simultaneously.",
+      "thumbnailUrl": "https://i.imgur.com/l8KXF9W.png",
+      "uploadDate": "2025-11-04T00:00:00-08:00",
+      "contentUrl": "https://andrewarrow.dev/auraphone/video.mp4",
+      "embedUrl": "https://andrewarrow.dev/auraphone/video.mp4"
+    },
+    "keywords": ["bluetooth", "BLE", "networking app", "iOS", "Android", "CBCentralManager", "BluetoothManager", "auraphone", "event networking"],
+    "articleSection": "Technology",
+    "inLanguage": "en-US"
+  }
+  </script>
+
+  <style>
+    .media-container {
+      max-width: 400px;
+      margin: 30px auto;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    .media-container img,
+    .media-container video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .video-wrapper {
+      background: #000;
+    }
+
+    @media (max-width: 768px) {
+      .media-container {
+        max-width: 100%;
+        margin: 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <h1><a href="/">andrewarrow</a></h1>
+    <ul class="dot_list">
+      <li>
+        <a href="/" selected="">home</a>
+      </li>
+      <li>
+        <a href="/privacy" selected="">privacy</a>
+      </li>
+    </ul>
+  </nav>
+  <main id="main" tabindex="-1">
+  <article>
+    <h1 class="title">
+      <span role="text">
+        auraphone: a simple app to collect people's info at events
+      </span>
+    </h1>
+    <ul class="dot_list meta">
+      <li>
+        Posted <time datetime="2025-05-25">
+          4 Nov 2025
+        </time>
+      </li>
+    </ul>
+    <p>
+    Hi, I'm Andrew, and I'm building Auraphone, a simple app to collect people's info at events.
+    </p>
+
+    <p>
+    I've been a developer for many years and I thought I knew bluetooth well. I was an early employee of the scooter company Bird back in 2017 and wrote a lot of the ios and android bluetooth to "bird brain" logic. But I started a new bluetooth app that is a lot more complex. Imagine a room full of people at a big networking event. Every phone broadcasts a bluetooth service and every phone tries and connects, all at the same time! I'm building this app to bring networking events into the year 2026! We all have bluetooth phones with us, lets use them to solve this who is going to give who their phone number issue. Here is what it does:
+    </p>
+
+    <p>
+
+    <ul>
+      <li>You set your name, photo, and what info you want to share. Maybe just your instagram username, maybe your email and linked in too, your choice what to broadcast.</li>
+      <li>Walk around your networking event and collect all this info from people you are in close range to.</li>
+      <li>Have a record of everyone you actually meet IRL at this event.</li>
+    </ul>
+
+    </p>
+    <div>
+      <h2>Here is a video demo:</h2>
+      <div class="media-container video-wrapper">
+        <video controls preload="metadata">
+          <source src="/auraphone/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <p>
+    Think of the term "peripheral" as server and "central" as client. Yes there are differences
+    in bluetooth and there are reasons for those terms, but my life got much easier
+    working on this app when I started just thinking client server.
+    
+    So in a room with just two phones, which one is which? It can't be a coin toss. If 50%
+    of the time both phones act as the server and neither client, bad. Or if both phones act
+    as clients, bad. So how do you break the tie? You start up your server AND you act as a client looking
+    for servers to connect to. Just be careful not to connect to yourself!
+    </p>
+
+    <div class="media-container">
+      <img src="https://i.imgur.com/a8riN4g.png" alt="Auraphone app screenshot" />
+    </div>
+
+    <p>
+    With bluetooth your server advertises and when you connect it tells you what characteristics
+    it has. Think of characteristics as "endpoints". They are not the same as an http endpoints at all
+    but again my life got easier when I started thinking of them like this. Our app has two
+     characteristics PROFILE_CHAR and PHOTO_CHAR and step one is a client hits PROFILE_CHAR endpoint
+     and gets back json from the other phone with device_id, first_name, photo_hash, instagram and
+     it doesn't have to be json. It could be Protocol Buffers and binary but again, I went with json
+     and yes, easier life.
+    </p>
+
+    <p>
+    So with my 200 OK from PROFILE_CHAR endpoint I look at the photo_hash which is a 256 sha
+    from the binary data of the image the user picked. If I have this file already cached, I'm good
+    and I disconnect from this server. If not I hit the PHOTO_CHAR endpoint and get this image
+    data and save as hash.jpg locally. And then I disconnect.
+    </p>
+
+    <p>
+    After I disconnect from a server I place that specific bluetooth server id on a cooldown list.
+    I have other phones in the room I need to connect with! And all this time I'm also acting as
+    a server myself. Well, sometimes. Sometimes when I'm busy being a client getting a photo I'll
+    pause my server actions. And it depends on ios vs android. There is lots of complexity
+    in the BLE (bluetooth low energy) stack. This loop of find a server, connect, get my info,
+    disconnect, repeat is a great little loop. But there are limits and GATT errors and queue
+    buffers that get full and MTU (max transmission unit) that can make it so two phones right next
+    to each other take a while before they finally find each other.
+    </p>
+
+    <div style="display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
+      <img src="https://i.imgur.com/He60qwH.png" style="flex: 1; width: 400px; height: auto; border-radius: 8px;" alt="SQL the kitten" />
+    </div>
+
+    <p>
+    So I made <a href="https://github.com/andrewarrow/auraphone-blue">github.com/andrewarrow/auraphone-blue</a> which is a BLE stack simulator all written in golang. If you look at the <a href="https://github.com/andrewarrow/auraphone-blue/tree/main/wire">wire</a> package you'll see a pretty complete
+    BLE implementation using the file system and domain sockets to mock the bluetooth radio. The
+    <a href="https://github.com/andrewarrow/auraphone-blue/tree/main/swift">swift</a> package
+    and <a href="https://github.com/andrewarrow/auraphone-blue/tree/main/kotlin">kotlin</a> package
+    should look very familiar to anyone who has worked on ios or android BLE.
+    </p>
+
+    <p>
+    My plan was to run many mock phones this way and test all the weird BLE differences between
+    ios and android here. It did not work. The only thing this golang auraphone-blue repo did
+    for me was really help me understand how bluetooth works. This BLE stack that I made in golang
+    doesn't help me fix ios and android bugs, it only introduces its own subtle golang filesystem ble
+    bugs!
+    </p>
+
+    <p>
+    In the end nothing fixed all the bugs better than just running two real ios phones and two
+    real android phones and having them write to disk very thorough logs PLUS ble specific 
+    json files showing exactly what each operation was doing and what info it got back.
+    I ended up writing logic to zip up the entire local directory of the phone with all these
+    files and logs and doing an HTTP POST to my local mac just to get all the data off all 4
+    phones quickly after each run.
+    </p>
+
+    <div style="display: flex; gap: 15px; margin: 20px 0; flex-wrap: wrap;">
+      <img src="https://i.imgur.com/YUNxWBm.png" style="flex: 1; width: 400px; height: auto; border-radius: 8px;" alt="SQL the kitten" />
+    </div>
+
+    <p>
+    Now it's not like this app will keep running when you have your phone in your pocket.
+    iOS has rules on bluetooth connections and it's basically only if your app is running
+    and foreground. So the way I see auraphone working at an event, 
+    you walk around and mingle as normal but yeah every one has their
+    phone out and running the app but ONLY this app. You are still present and in the
+    conversation not just looking at other distractions from your phone.
+    </p>
+
+    <p>
+    But now effortlessly after your conversation is done and you move around the room,
+    you have a record of who that person was! Also the list is sorted by last updated_at
+    desc so whoever you are near will be at the top. Great for when you have met
+    someone earlier that night but forget their name. Now you just look down at your
+    auraphone app that's already out and running and say oh hey jessie!
+    </p>
+
+    <p>
+    The app is in the <a href="https://apps.apple.com/us/app/auraphone/id6752836343">ios app store</a>.
+    For android we serve up the apk at <a href="https://andrewarrow.dev/auraphone/apk">auraphone.apk</a>. We are testing it now at <a href="https://www.blankspaces.com/culver-city">BLANKSPACES Culver City</a>. Looking to try it now in a room full of people! Give me reports of did your phones see each other? Did the contact info sync? Did it solve a problem for you?
+    </p>
+      
+  </article>
+</main>
+
+  <footer>
+    <div id="footer_inner">
+      <div>
+        <p>
+          &copy; 2025 andrewarrow.dev
+        </p>
+        <p>
+          Question, comment, or want to say thanks? Find me it's not hard.
+        </p>
+      </div>
+      <form action="#" method="post" target="popupwindow">
+        <p>
+          <label for="bd-email">Want a monthly digest of what I'm up to?</label>
+        </p>
+        <p>
+          Come back here once a month.
+        </p>
+      </form>
+    </div>
+  </footer>
+  </body>
+</html>

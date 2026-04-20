@@ -1,0 +1,9 @@
+<script>
+  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  if (/iPhone/.test(userAgent) && !window.MSStream) {
+    document.location.href = 'https://apps.apple.com/us/app/auraphone/id6752836343';
+  } else {
+    document.location.href = 'https://play.google.com/store/apps/details?id=dev.andrewarrow.hme'
+  }
+</script>
