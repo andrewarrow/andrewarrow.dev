@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>j3 - Local-first code repair</title>
+    <meta
+      name="description"
+      content="j3 is an open source local-first JEPA coding agent experiment for repairing Python repositories with structured patches, repo-state signals, and test validation."
+    >
+    <style>
+      :root {
+        color-scheme: dark;
+        --ink: #11100d;
+        --ink-2: #191712;
+        --paper: #f5f0e7;
+        --muted: #c9c0b0;
+        --quiet: #8f8779;
+        --line: rgba(245, 240, 231, 0.14);
+        --line-strong: rgba(245, 240, 231, 0.28);
+        --accent: #a7f06b;
+        --accent-2: #ffb36b;
+        --danger: #ff766b;
+        --shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
+        --header-height: 72px;
+        --max: 1184px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        background: var(--ink);
+        color: var(--paper);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        line-height: 1.5;
+        text-rendering: optimizeLegibility;
+      }
+
+      body::selection {
+        background: rgba(167, 240, 107, 0.34);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button,
+      a {
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      code,
+      pre,
+      .mono {
+        font-family:
+          "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      }
+
+      .skip-link {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        z-index: 20;
+        transform: translateY(calc(-100% - 24px));
+        border: 1px solid var(--line-strong);
+        border-radius: 8px;
+        background: var(--paper);
+        color: var(--ink);
+        padding: 10px 14px;
+        font-weight: 700;
+        transition: transform 180ms ease;
+      }
+
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+
+      .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 12;
+        min-height: var(--header-height);
+        border-bottom: 1px solid rgba(245, 240, 231, 0.1);
+        background: rgba(17, 16, 13, 0.7);
+        backdrop-filter: blur(18px);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: min(var(--max), calc(100% - 48px));
+        min-height: var(--header-height);
+        margin: 0 auto;
+        gap: 24px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        min-height: 44px;
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+
+      .brand-mark {
+        display: grid;
+        place-items: center;
+        width: 36px;
+        height: 36px;
+        border: 1px solid rgba(167, 240, 107, 0.42);
+        border-radius: 8px;
+        background: rgba(167, 240, 107, 0.1);
+        color: var(--accent);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .nav-links a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        transition: color 180ms ease;
+      }
+
+      .nav-links a:hover,
+      .nav-links a:focus-visible {
+        color: var(--paper);
+      }
+
+      .nav-cta {
+        border: 1px solid rgba(167, 240, 107, 0.55);
+        border-radius: 8px;
+        padding: 9px 14px;
+        color: var(--accent);
+      }
+
+      .hero {
+        position: relative;
+        min-height: calc(100svh - 96px);
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 73% 52%, rgba(167, 240, 107, 0.08), transparent 26rem),
+          linear-gradient(90deg, rgba(17, 16, 13, 0.98) 0%, rgba(17, 16, 13, 0.92) 43%, rgba(17, 16, 13, 0.62) 100%),
+          var(--ink);
+      }
+
+      #repo-world {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.78;
+      }
+
+      .hero-grid {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        align-items: end;
+        width: min(var(--max), calc(100% - 48px));
+        min-height: calc(100svh - 96px);
+        margin: 0 auto;
+        padding: calc(var(--header-height) + 64px) 0 64px;
+      }
+
+      .hero-content {
+        max-width: 760px;
+        animation: heroIn 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+      }
+
+      .eyebrow {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 0 0 18px;
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 36px;
+        height: 2px;
+        background: var(--accent);
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+        max-width: 700px;
+        font-size: clamp(4.25rem, 14vw, 11rem);
+        line-height: 0.86;
+        letter-spacing: 0;
+      }
+
+      .hero-copy {
+        max-width: 660px;
+        margin-bottom: 30px;
+        color: var(--muted);
+        font-size: clamp(1.22rem, 2.4vw, 1.72rem);
+        line-height: 1.25;
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 42px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        border-radius: 8px;
+        padding: 0 18px;
+        border: 1px solid transparent;
+        font-weight: 800;
+        transition:
+          transform 180ms ease,
+          border-color 180ms ease,
+          background 180ms ease,
+          color 180ms ease;
+      }
+
+      .button:hover {
+        transform: translateY(-2px);
+      }
+
+      .button:focus-visible,
+      .nav-links a:focus-visible,
+      .brand:focus-visible {
+        outline: 3px solid rgba(167, 240, 107, 0.75);
+        outline-offset: 3px;
+      }
+
+      .button-primary {
+        background: var(--accent);
+        color: #11100d;
+      }
+
+      .button-secondary {
+        border-color: var(--line-strong);
+        color: var(--paper);
+        background: rgba(245, 240, 231, 0.04);
+      }
+
+      .proof-line {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        max-width: 720px;
+        border-top: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .proof-line li {
+        padding: 18px 18px 18px 0;
+      }
+
+      .proof-line li + li {
+        border-left: 1px solid var(--line);
+        padding-left: 18px;
+      }
+
+      .metric {
+        display: block;
+        color: var(--paper);
+        font-size: clamp(1.35rem, 3vw, 2.2rem);
+        line-height: 1;
+        font-weight: 850;
+      }
+
+      .metric-label {
+        display: block;
+        margin-top: 8px;
+        color: var(--quiet);
+        font-size: 0.9rem;
+      }
+
+      main {
+        overflow: hidden;
+      }
+
+      .section {
+        border-top: 1px solid var(--line);
+      }
+
+      .section-inner {
+        width: min(var(--max), calc(100% - 48px));
+        margin: 0 auto;
+        padding: 92px 0;
+      }
+
+      #model .section-inner {
+        padding-top: 48px;
+      }
+
+      .section-kicker {
+        margin-bottom: 12px;
+        color: var(--accent-2);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: minmax(0, 0.86fr) minmax(360px, 1fr);
+        gap: clamp(40px, 7vw, 96px);
+        align-items: start;
+      }
+
+      .sticky {
+        position: sticky;
+        top: calc(var(--header-height) + 40px);
+      }
+
+      h2 {
+        max-width: 680px;
+        margin-bottom: 22px;
+        font-size: clamp(2rem, 5vw, 4.6rem);
+        line-height: 0.98;
+        letter-spacing: 0;
+      }
+
+      .section-copy {
+        max-width: 620px;
+        color: var(--muted);
+        font-size: 1.12rem;
+      }
+
+      .world-list {
+        display: grid;
+        gap: 1px;
+        background: var(--line);
+        box-shadow: var(--shadow);
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .world-row {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        gap: 24px;
+        background: var(--ink-2);
+        padding: 24px;
+      }
+
+      .world-row strong {
+        color: var(--accent);
+        font-size: 0.9rem;
+      }
+
+      .world-row span {
+        color: var(--muted);
+      }
+
+      .terminal-band {
+        background: #f5f0e7;
+        color: #1b1914;
+      }
+
+      .terminal-band .section-inner {
+        padding: 76px 0;
+      }
+
+      .terminal-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.82fr) minmax(360px, 1.18fr);
+        gap: clamp(32px, 6vw, 84px);
+        align-items: center;
+      }
+
+      .terminal-band .section-kicker {
+        color: #8f4c17;
+      }
+
+      .terminal-band h2 {
+        color: #12100c;
+      }
+
+      .terminal-band .section-copy {
+        color: #5b554c;
+      }
+
+      .terminal {
+        overflow: hidden;
+        border: 1px solid rgba(17, 16, 13, 0.16);
+        border-radius: 8px;
+        background: #14120f;
+        color: #efe7da;
+        box-shadow: 0 26px 70px rgba(17, 16, 13, 0.24);
+      }
+
+      .terminal-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 44px;
+        border-bottom: 1px solid rgba(245, 240, 231, 0.12);
+        padding: 0 16px;
+        color: #9b9387;
+        font-size: 0.78rem;
+      }
+
+      .dots {
+        display: flex;
+        gap: 7px;
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: #61594f;
+      }
+
+      .dot:first-child {
+        background: var(--danger);
+      }
+
+      .dot:nth-child(2) {
+        background: var(--accent-2);
+      }
+
+      .dot:nth-child(3) {
+        background: var(--accent);
+      }
+
+      .terminal pre {
+        margin: 0;
+        padding: clamp(18px, 3vw, 28px);
+        overflow-x: auto;
+        font-size: clamp(0.82rem, 1.7vw, 0.98rem);
+        line-height: 1.75;
+      }
+
+      .prompt {
+        color: var(--accent);
+      }
+
+      .comment {
+        color: #9b9387;
+      }
+
+      .ok {
+        color: var(--accent);
+      }
+
+      .detail-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1px;
+        margin-top: 52px;
+        background: var(--line);
+      }
+
+      .detail {
+        min-height: 250px;
+        background: var(--ink);
+        padding: 28px;
+      }
+
+      .detail-number {
+        display: inline-grid;
+        place-items: center;
+        width: 36px;
+        height: 36px;
+        margin-bottom: 44px;
+        border: 1px solid rgba(255, 179, 107, 0.4);
+        border-radius: 8px;
+        color: var(--accent-2);
+        font-weight: 850;
+      }
+
+      .detail h3 {
+        margin-bottom: 12px;
+        font-size: 1.24rem;
+        line-height: 1.2;
+      }
+
+      .detail p {
+        margin-bottom: 0;
+        color: var(--muted);
+      }
+
+      .proof {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(340px, 0.75fr);
+        gap: clamp(40px, 7vw, 92px);
+        align-items: end;
+      }
+
+      .result-table {
+        display: block;
+        width: 100%;
+        border-collapse: collapse;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+      }
+
+      .result-table tbody {
+        display: block;
+      }
+
+      .result-row {
+        display: grid;
+        grid-template-columns: 1fr 110px 110px 140px;
+        gap: 12px;
+        align-items: baseline;
+        border-bottom: 1px solid var(--line);
+        padding: 18px 0;
+      }
+
+      .result-row th,
+      .result-row td {
+        padding: 0;
+        text-align: left;
+      }
+
+      .result-row th {
+        font-weight: inherit;
+      }
+
+      .result-row:first-child {
+        color: var(--quiet);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .result-row:not(:first-child) strong {
+        color: var(--paper);
+      }
+
+      .result-row .highlight {
+        color: var(--accent);
+      }
+
+      .note {
+        margin-top: 18px;
+        color: var(--quiet);
+        font-size: 0.95rem;
+      }
+
+      .roadmap {
+        background: #18120f;
+      }
+
+      .roadmap-track {
+        display: grid;
+        gap: 0;
+        margin-top: 50px;
+        border-top: 1px solid var(--line);
+      }
+
+      .roadmap-item {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        gap: 32px;
+        border-bottom: 1px solid var(--line);
+        padding: 28px 0;
+      }
+
+      .roadmap-item time,
+      .roadmap-item .phase {
+        color: var(--accent-2);
+        font-weight: 850;
+      }
+
+      .roadmap-item h3 {
+        margin-bottom: 8px;
+        font-size: 1.4rem;
+      }
+
+      .roadmap-item p {
+        max-width: 720px;
+        margin-bottom: 0;
+        color: var(--muted);
+      }
+
+      .final-cta {
+        position: relative;
+        overflow: hidden;
+        background:
+          linear-gradient(90deg, rgba(167, 240, 107, 0.12), transparent 50%),
+          #11100d;
+      }
+
+      .final-cta .section-inner {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 32px;
+        align-items: end;
+        padding: 74px 0;
+      }
+
+      .final-cta h2 {
+        margin-bottom: 14px;
+        font-size: clamp(2.1rem, 5vw, 5.2rem);
+      }
+
+      .final-cta p {
+        max-width: 620px;
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: 1.1rem;
+      }
+
+      .site-footer {
+        border-top: 1px solid var(--line);
+      }
+
+      .footer-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: min(var(--max), calc(100% - 48px));
+        margin: 0 auto;
+        padding: 26px 0;
+        gap: 18px;
+        color: var(--quiet);
+        font-size: 0.94rem;
+      }
+
+      .footer-inner a {
+        color: var(--muted);
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(28px);
+        transition:
+          opacity 600ms ease,
+          transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @keyframes heroIn {
+        from {
+          opacity: 0;
+          transform: translateY(22px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 900px) {
+        :root {
+          --header-height: 64px;
+        }
+
+        .nav {
+          width: min(var(--max), calc(100% - 32px));
+        }
+
+        .nav-links a:not(.nav-cta) {
+          display: none;
+        }
+
+        .hero-grid,
+        .section-inner,
+        .footer-inner {
+          width: min(var(--max), calc(100% - 32px));
+        }
+
+        .hero-grid {
+          padding-bottom: 40px;
+        }
+
+        .proof-line,
+        .split,
+        .terminal-grid,
+        .proof,
+        .final-cta .section-inner {
+          grid-template-columns: 1fr;
+        }
+
+        .proof-line {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .sticky {
+          position: static;
+        }
+
+        .detail-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .final-cta .button {
+          justify-self: start;
+        }
+      }
+
+      @media (max-width: 620px) {
+        .site-header {
+          position: absolute;
+          background: rgba(17, 16, 13, 0.28);
+          backdrop-filter: none;
+        }
+
+        .brand-mark {
+          width: 34px;
+          height: 34px;
+        }
+
+        .nav-cta {
+          padding: 8px 11px;
+          font-size: 0.88rem;
+        }
+
+        .hero-grid {
+          align-items: end;
+          padding-top: 104px;
+        }
+
+        .hero,
+        .hero-grid {
+          min-height: calc(100svh - 132px);
+        }
+
+        h1 {
+          font-size: clamp(4rem, 25vw, 6.5rem);
+        }
+
+        .hero-copy {
+          font-size: 1.14rem;
+        }
+
+        .hero-actions {
+          align-items: stretch;
+          flex-direction: column;
+          margin-bottom: 28px;
+        }
+
+        .button {
+          width: 100%;
+        }
+
+        .proof-line {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .proof-line li {
+          padding: 14px 10px 14px 0;
+        }
+
+        .proof-line li + li {
+          padding-left: 10px;
+        }
+
+        .metric {
+          font-size: 1.35rem;
+        }
+
+        .metric-label {
+          font-size: 0.78rem;
+          line-height: 1.25;
+        }
+
+        .section-inner {
+          padding: 64px 0;
+        }
+
+        .terminal-band .section-inner {
+          padding: 60px 0;
+        }
+
+        .world-row {
+          grid-template-columns: 1fr;
+          gap: 8px;
+          padding: 20px;
+        }
+
+        .terminal pre {
+          padding: 18px;
+        }
+
+        .result-row {
+          grid-template-columns: 1fr 74px 74px;
+        }
+
+        .result-row td:last-child {
+          grid-column: 1 / -1;
+        }
+
+        .roadmap-item {
+          grid-template-columns: 1fr;
+          gap: 8px;
+        }
+
+        .footer-inner {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          scroll-behavior: auto !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Site header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="j3 home">
+          <span class="brand-mark mono" aria-hidden="true">j3</span>
+          <span>j3</span>
+        </a>
+        <div class="nav-links">
+          <a href="#model">Model</a>
+          <a href="#proof">Proof</a>
+          <a href="#roadmap">Roadmap</a>
+          <a class="nav-cta" href="#start">Start local</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-label="j3 introduction">
+        <canvas id="repo-world" aria-hidden="true"></canvas>
+        <div class="hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Open source local-first code repair</p>
+            <h1>j3</h1>
+            <p class="hero-copy">
+              A JEPA coding-agent experiment that treats a Python repository as
+              a world, predicts useful structured edits, and validates them
+              against executable tests.
+            </p>
+            <div class="hero-actions" id="start">
+              <a class="button button-primary" href="https://github.com/andrewarrow/j3" aria-label="Open the j3 source repository">
+                View source
+              </a>
+              <a class="button button-secondary" href="#quickstart">Run the demo</a>
+            </div>
+            <ul class="proof-line">
+              <li>
+                <span class="metric">5/5</span>
+                <span class="metric-label">GreenShot-2 solved</span>
+              </li>
+              <li>
+                <span class="metric">5/5</span>
+                <span class="metric-label">pass@1 with hints</span>
+              </li>
+              <li>
+                <span class="metric">0</span>
+                <span class="metric-label">hosted LLM calls in pure mode</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="model">
+        <div class="section-inner split">
+          <div class="sticky">
+            <p class="section-kicker">Repository as world</p>
+            <h2>Stop asking a model to type patches from scratch.</h2>
+            <p class="section-copy">
+              j3 starts with a constrained action space. The model ranks edit
+              types, targets, and parameters; a deterministic patch engine turns
+              that decision into a real diff.
+            </p>
+          </div>
+          <ul class="world-list reveal">
+            <li class="world-row">
+              <strong>State</strong>
+              <span>The current codebase, encoded from Python files and repo structure.</span>
+            </li>
+            <li class="world-row">
+              <strong>Action</strong>
+              <span>A structured patch such as changing an operator, literal, return value, import, or guard.</span>
+            </li>
+            <li class="world-row">
+              <strong>Observation</strong>
+              <span>Pytest output, assertion deltas, stack traces, type errors, and runtime behavior.</span>
+            </li>
+            <li class="world-row">
+              <strong>Target</strong>
+              <span>A passing test, cleaner trace, or executable goal that says what better means.</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="terminal-band" id="quickstart">
+        <div class="section-inner terminal-grid">
+          <div class="reveal">
+            <p class="section-kicker">First demo</p>
+            <h2>GreenShot is intentionally narrow.</h2>
+            <p class="section-copy">
+              Give j3 a Python repo and one failing pytest target. It predicts a
+              structured repair, materializes a patch, and runs the target test
+              in a temporary copy before touching your files.
+            </p>
+          </div>
+          <div class="terminal reveal" role="img" aria-label="Terminal commands for installing and running j3">
+            <div class="terminal-top">
+              <div class="dots" aria-hidden="true">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <span class="mono">greenshot-1</span>
+            </div>
+            <pre><code><span class="prompt">$</span> python -m venv .venv
+<span class="prompt">$</span> source .venv/bin/activate
+<span class="prompt">$</span> python -m pip install -e ".[dev]"
+
+<span class="prompt">$</span> j3 train --data examples/greenshot_bug
+<span class="comment"># writes runs/greenshot-1/model.json</span>
+
+<span class="prompt">$</span> j3 fix \
+  --repo examples/greenshot_bug \
+  --test "python -m pytest tests/test_calculator.py" \
+  --dry-run
+
+<span class="ok">candidate patch found; test passes in temp copy</span></code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-inner">
+          <div class="reveal">
+            <p class="section-kicker">How it works</p>
+            <h2>A local loop with visible failure modes.</h2>
+            <p class="section-copy">
+              The early prototype keeps the action space small on purpose. It
+              should learn useful edits from repo signals, or fail in a way that
+              diagnostics can explain.
+            </p>
+          </div>
+          <div class="detail-grid">
+            <article class="detail reveal">
+              <span class="detail-number">1</span>
+              <h3>Mine and synthesize transitions</h3>
+              <p>
+                j3 generates synthetic break/fix records and can mine real
+                Python before/after pairs from public git history.
+              </p>
+            </article>
+            <article class="detail reveal">
+              <span class="detail-number">2</span>
+              <h3>Rank structured candidates</h3>
+              <p>
+                AST embeddings, action-delta prototypes, and failure hints put
+                promising patches before wasted test runs.
+              </p>
+            </article>
+            <article class="detail reveal">
+              <span class="detail-number">3</span>
+              <h3>Validate before apply</h3>
+              <p>
+                Patch and fix commands run candidates in isolated copies, print
+                diffs, and keep the human in the loop.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="proof">
+        <div class="section-inner proof">
+          <div class="reveal">
+            <p class="section-kicker">Current result</p>
+            <h2>Failure hints turned search into first-shot repairs on GreenShot-2.</h2>
+            <p class="section-copy">
+              GreenShot-2 is still small and shaped around bugs the current
+              action space understands. That is the point: it proves the loop,
+              not broad coding-agent capability.
+            </p>
+          </div>
+          <div class="reveal">
+            <table class="result-table" aria-label="GreenShot-2 evaluation results">
+              <tbody>
+                <tr class="result-row">
+                  <th scope="col">Mode</th>
+                  <th scope="col">Solved</th>
+                  <th scope="col">pass@1</th>
+                  <th scope="col">Avg candidates</th>
+                </tr>
+                <tr class="result-row">
+                  <td><strong>Baseline</strong></td>
+                  <td>5/5</td>
+                  <td>1/5</td>
+                  <td>21.80</td>
+                </tr>
+                <tr class="result-row">
+                  <td><strong>Model + hints</strong></td>
+                  <td class="highlight">5/5</td>
+                  <td class="highlight">5/5</td>
+                  <td class="highlight">1.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="note">
+              Verified in the project plan with a 25-test pytest suite.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section roadmap" id="roadmap">
+        <div class="section-inner">
+          <div class="reveal">
+            <p class="section-kicker">Roadmap</p>
+            <h2>Expand the benchmark before chasing a bigger neural model.</h2>
+            <p class="section-copy">
+              The next gate is practical: find repeatable ranking failures,
+              missing actions, and weak context before moving toward a trainable
+              candidate ranker.
+            </p>
+          </div>
+          <div class="roadmap-track">
+            <article class="roadmap-item reveal">
+              <span class="phase">Next</span>
+              <div>
+                <h3>GreenShot-3 benchmark tasks</h3>
+                <p>
+                  Add swapped call arguments, missing imports, wrong attributes,
+                  and narrow exception handling.
+                </p>
+              </div>
+            </article>
+            <article class="roadmap-item reveal">
+              <span class="phase">Then</span>
+              <div>
+                <h3>Richer candidate generation</h3>
+                <p>
+                  Implement action materializers and failure hints for import,
+                  attribute, call-shape, and exception errors.
+                </p>
+              </div>
+            </article>
+            <article class="roadmap-item reveal">
+              <span class="phase">Later</span>
+              <div>
+                <h3>Candidate ranker from diagnostics</h3>
+                <p>
+                  Train only after a larger ladder shows good candidates exist
+                  but sit behind bad candidates.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="section-inner">
+          <div class="reveal">
+            <p class="section-kicker">Pure mode claim</p>
+            <h2>LLMs are optional for language. They are not the patch engine.</h2>
+            <p>
+              Use an executable signal, keep the repair loop local, and make
+              every applied diff earn its test result.
+            </p>
+          </div>
+          <a class="button button-primary reveal" href="#quickstart">Run j3 locally</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>j3 - open source local-first code repair</span>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script>
+      const canvas = document.querySelector("#repo-world");
+      const ctx = canvas.getContext("2d");
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const nodes = [];
+      let width = 0;
+      let height = 0;
+      let frame = 0;
+      let rafId = 0;
+
+      function resizeCanvas() {
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        width = canvas.clientWidth;
+        height = canvas.clientHeight;
+        canvas.width = Math.floor(width * dpr);
+        canvas.height = Math.floor(height * dpr);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        seedNodes();
+      }
+
+      function seedNodes() {
+        nodes.length = 0;
+        const count = Math.max(42, Math.floor((width * height) / 26000));
+        for (let index = 0; index < count; index += 1) {
+          const band = index / count;
+          nodes.push({
+            x: width * (0.42 + Math.random() * 0.56),
+            y: height * (0.08 + Math.random() * 0.82),
+            vx: (Math.random() - 0.5) * 0.18,
+            vy: (Math.random() - 0.5) * 0.18,
+            r: 1.8 + Math.random() * 3.8,
+            pulse: Math.random() * Math.PI * 2,
+            accent: band > 0.72 || Math.random() > 0.84
+          });
+        }
+      }
+
+      function draw() {
+        frame += 1;
+        ctx.clearRect(0, 0, width, height);
+        ctx.fillStyle = "rgba(17, 16, 13, 0.28)";
+        ctx.fillRect(0, 0, width, height);
+
+        for (let a = 0; a < nodes.length; a += 1) {
+          const nodeA = nodes[a];
+          if (!prefersReducedMotion) {
+            nodeA.x += nodeA.vx;
+            nodeA.y += nodeA.vy;
+          }
+          if (nodeA.x < width * 0.36 || nodeA.x > width * 0.98) nodeA.vx *= -1;
+          if (nodeA.y < height * 0.06 || nodeA.y > height * 0.94) nodeA.vy *= -1;
+
+          for (let b = a + 1; b < nodes.length; b += 1) {
+            const nodeB = nodes[b];
+            const dx = nodeA.x - nodeB.x;
+            const dy = nodeA.y - nodeB.y;
+            const distance = Math.hypot(dx, dy);
+            if (distance < 168) {
+              const alpha = (1 - distance / 168) * 0.18;
+              ctx.strokeStyle = `rgba(245, 240, 231, ${alpha})`;
+              ctx.lineWidth = 1;
+              ctx.beginPath();
+              ctx.moveTo(nodeA.x, nodeA.y);
+              ctx.lineTo(nodeB.x, nodeB.y);
+              ctx.stroke();
+            }
+          }
+        }
+
+        nodes.forEach((node) => {
+          const pulse = prefersReducedMotion ? 0.4 : Math.sin(frame * 0.024 + node.pulse) * 0.45 + 0.55;
+          ctx.beginPath();
+          ctx.fillStyle = node.accent
+            ? `rgba(167, 240, 107, ${0.48 + pulse * 0.34})`
+            : `rgba(245, 240, 231, ${0.35 + pulse * 0.2})`;
+          ctx.arc(node.x, node.y, node.r + pulse * 1.2, 0, Math.PI * 2);
+          ctx.fill();
+        });
+
+        if (!prefersReducedMotion) {
+          rafId = requestAnimationFrame(draw);
+        }
+      }
+
+      const reveals = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.18 }
+      );
+
+      reveals.forEach((item) => observer.observe(item));
+      window.addEventListener("resize", resizeCanvas, { passive: true });
+      resizeCanvas();
+      draw();
+
+      if (prefersReducedMotion && rafId) {
+        cancelAnimationFrame(rafId);
+      }
+    </script>
+  </body>
+</html>
