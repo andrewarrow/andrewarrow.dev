@@ -11,15 +11,15 @@
     <style>
       :root {
         color-scheme: dark;
-        --ink: #11100d;
-        --ink-2: #191712;
-        --paper: #f5f0e7;
-        --muted: #c9c0b0;
-        --quiet: #8f8779;
-        --line: rgba(245, 240, 231, 0.14);
-        --line-strong: rgba(245, 240, 231, 0.28);
+        --ink: #050914;
+        --ink-2: #0b1424;
+        --paper: #eef6ff;
+        --muted: #b8c8dc;
+        --quiet: #7890aa;
+        --line: rgba(226, 240, 255, 0.14);
+        --line-strong: rgba(226, 240, 255, 0.28);
         --accent: #a7f06b;
-        --accent-2: #ffb36b;
+        --accent-2: #6bbdff;
         --danger: #ff766b;
         --shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
         --header-height: 72px;
@@ -92,8 +92,8 @@
         right: 0;
         z-index: 12;
         min-height: var(--header-height);
-        border-bottom: 1px solid rgba(245, 240, 231, 0.1);
-        background: rgba(17, 16, 13, 0.7);
+        border-bottom: 1px solid rgba(226, 240, 255, 0.1);
+        background: rgba(5, 9, 20, 0.72);
         backdrop-filter: blur(18px);
       }
 
@@ -160,7 +160,7 @@
         overflow: hidden;
         background:
           radial-gradient(circle at 73% 52%, rgba(167, 240, 107, 0.08), transparent 26rem),
-          linear-gradient(90deg, rgba(17, 16, 13, 0.98) 0%, rgba(17, 16, 13, 0.92) 43%, rgba(17, 16, 13, 0.62) 100%),
+          linear-gradient(90deg, rgba(5, 9, 20, 0.98) 0%, rgba(5, 9, 20, 0.92) 43%, rgba(5, 9, 20, 0.62) 100%),
           var(--ink);
       }
 
@@ -267,13 +267,13 @@
 
       .button-primary {
         background: var(--accent);
-        color: #11100d;
+        color: #050914;
       }
 
       .button-secondary {
         border-color: var(--line-strong);
         color: var(--paper);
-        background: rgba(245, 240, 231, 0.04);
+        background: rgba(226, 240, 255, 0.04);
       }
 
       .proof-line {
@@ -395,7 +395,7 @@
         border-top: 1px solid var(--line);
         background:
           linear-gradient(115deg, rgba(167, 240, 107, 0.08), transparent 42%),
-          #0f100d;
+          #06101f;
         color: var(--paper);
       }
 
@@ -426,8 +426,8 @@
         overflow: hidden;
         border: 1px solid var(--line-strong);
         border-radius: 8px;
-        background: rgba(20, 18, 15, 0.9);
-        color: #efe7da;
+        background: rgba(8, 16, 30, 0.92);
+        color: #edf6ff;
         box-shadow: var(--shadow);
       }
 
@@ -436,9 +436,9 @@
         align-items: center;
         justify-content: space-between;
         min-height: 44px;
-        border-bottom: 1px solid rgba(245, 240, 231, 0.12);
+        border-bottom: 1px solid rgba(226, 240, 255, 0.12);
         padding: 0 16px;
-        color: #9b9387;
+        color: #8598af;
         font-size: 0.78rem;
       }
 
@@ -451,7 +451,7 @@
         width: 10px;
         height: 10px;
         border-radius: 999px;
-        background: #61594f;
+        background: #52657c;
       }
 
       .dot:first-child {
@@ -479,7 +479,7 @@
       }
 
       .comment {
-        color: #9b9387;
+        color: #8598af;
       }
 
       .ok {
@@ -506,7 +506,7 @@
         width: 36px;
         height: 36px;
         margin-bottom: 44px;
-        border: 1px solid rgba(255, 179, 107, 0.4);
+        border: 1px solid rgba(107, 189, 255, 0.42);
         border-radius: 8px;
         color: var(--accent-2);
         font-weight: 850;
@@ -584,7 +584,7 @@
       }
 
       .roadmap {
-        background: #18120f;
+        background: #07101f;
       }
 
       .roadmap-track {
@@ -624,7 +624,7 @@
         overflow: hidden;
         background:
           linear-gradient(90deg, rgba(167, 240, 107, 0.12), transparent 50%),
-          #11100d;
+          #050914;
       }
 
       .final-cta .section-inner {
@@ -742,7 +742,7 @@
       @media (max-width: 620px) {
         .site-header {
           position: absolute;
-          background: rgba(17, 16, 13, 0.28);
+          background: rgba(5, 9, 20, 0.3);
           backdrop-filter: none;
         }
 
@@ -1180,7 +1180,7 @@ validate in an isolated worktree
       function draw() {
         frame += 1;
         ctx.clearRect(0, 0, width, height);
-        ctx.fillStyle = "rgba(17, 16, 13, 0.28)";
+        ctx.fillStyle = "rgba(5, 9, 20, 0.28)";
         ctx.fillRect(0, 0, width, height);
 
         for (let a = 0; a < nodes.length; a += 1) {
@@ -1199,7 +1199,7 @@ validate in an isolated worktree
             const distance = Math.hypot(dx, dy);
             if (distance < 168) {
               const alpha = (1 - distance / 168) * 0.18;
-              ctx.strokeStyle = `rgba(245, 240, 231, ${alpha})`;
+              ctx.strokeStyle = `rgba(226, 240, 255, ${alpha})`;
               ctx.lineWidth = 1;
               ctx.beginPath();
               ctx.moveTo(nodeA.x, nodeA.y);
@@ -1214,7 +1214,7 @@ validate in an isolated worktree
           ctx.beginPath();
           ctx.fillStyle = node.accent
             ? `rgba(167, 240, 107, ${0.48 + pulse * 0.34})`
-            : `rgba(245, 240, 231, ${0.35 + pulse * 0.2})`;
+            : `rgba(226, 240, 255, ${0.35 + pulse * 0.2})`;
           ctx.arc(node.x, node.y, node.r + pulse * 1.2, 0, Math.PI * 2);
           ctx.fill();
         });
