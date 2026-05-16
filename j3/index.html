@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>j3 - Local-first code repair</title>
+    <title>j3 - JEPA coding agents</title>
     <meta
       name="description"
-      content="j3 is an open source local-first JEPA coding agent experiment for repairing Python repositories with structured patches, repo-state signals, and test validation."
+      content="j3 is an open source experiment in JEPA coding agents: repo-world models that predict the consequences of structured edits before validation."
     >
     <style>
       :root {
@@ -325,7 +325,7 @@
         padding: 92px 0;
       }
 
-      #model .section-inner {
+      #thesis .section-inner {
         padding-top: 48px;
       }
 
@@ -392,8 +392,11 @@
       }
 
       .terminal-band {
-        background: #f5f0e7;
-        color: #1b1914;
+        border-top: 1px solid var(--line);
+        background:
+          linear-gradient(115deg, rgba(167, 240, 107, 0.08), transparent 42%),
+          #0f100d;
+        color: var(--paper);
       }
 
       .terminal-band .section-inner {
@@ -408,24 +411,24 @@
       }
 
       .terminal-band .section-kicker {
-        color: #8f4c17;
+        color: var(--accent-2);
       }
 
       .terminal-band h2 {
-        color: #12100c;
+        color: var(--paper);
       }
 
       .terminal-band .section-copy {
-        color: #5b554c;
+        color: var(--muted);
       }
 
       .terminal {
         overflow: hidden;
-        border: 1px solid rgba(17, 16, 13, 0.16);
+        border: 1px solid var(--line-strong);
         border-radius: 8px;
-        background: #14120f;
+        background: rgba(20, 18, 15, 0.9);
         color: #efe7da;
-        box-shadow: 0 26px 70px rgba(17, 16, 13, 0.24);
+        box-shadow: var(--shadow);
       }
 
       .terminal-top {
@@ -665,8 +668,8 @@
       }
 
       .reveal {
-        opacity: 0;
-        transform: translateY(28px);
+        opacity: 1;
+        transform: translateY(0);
         transition:
           opacity 600ms ease,
           transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
@@ -821,11 +824,17 @@
         }
 
         .result-row {
-          grid-template-columns: 1fr 74px 74px;
+          grid-template-columns: 1fr;
+          gap: 6px;
+          align-items: start;
+        }
+
+        .result-row:first-child {
+          display: none;
         }
 
         .result-row td:last-child {
-          grid-column: 1 / -1;
+          grid-column: auto;
         }
 
         .roadmap-item {
@@ -861,10 +870,10 @@
           <span>j3</span>
         </a>
         <div class="nav-links">
-          <a href="#model">Model</a>
-          <a href="#proof">Proof</a>
-          <a href="#roadmap">Roadmap</a>
-          <a class="nav-cta" href="#start">Start local</a>
+          <a href="#thesis">Thesis</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#future">Future</a>
+          <a class="nav-cta" href="#start">Explore j3</a>
         </div>
       </nav>
     </header>
@@ -874,102 +883,100 @@
         <canvas id="repo-world" aria-hidden="true"></canvas>
         <div class="hero-grid">
           <div class="hero-content">
-            <p class="eyebrow">Open source local-first code repair</p>
+            <p class="eyebrow">Joint Embedding Predictive Architecture for code</p>
             <h1>j3</h1>
             <p class="hero-copy">
-              A JEPA coding-agent experiment that treats a Python repository as
-              a world, predicts useful structured edits, and validates them
-              against executable tests.
+              The next coding agent should understand a repository as a world,
+              predict what edits will do, and verify each action before it writes.
             </p>
             <div class="hero-actions" id="start">
               <a class="button button-primary" href="https://github.com/andrewarrow/j3" aria-label="Open the j3 source repository">
                 View source
               </a>
-              <a class="button button-secondary" href="#quickstart">Run the demo</a>
+              <a class="button button-secondary" href="#architecture">See the architecture</a>
             </div>
             <ul class="proof-line">
               <li>
-                <span class="metric">5/5</span>
-                <span class="metric-label">GreenShot-2 solved</span>
+                <span class="metric">Predict</span>
+                <span class="metric-label">latent repo consequences</span>
               </li>
               <li>
-                <span class="metric">5/5</span>
-                <span class="metric-label">pass@1 with hints</span>
+                <span class="metric">Act</span>
+                <span class="metric-label">through structured patches</span>
               </li>
               <li>
-                <span class="metric">0</span>
-                <span class="metric-label">hosted LLM calls in pure mode</span>
+                <span class="metric">Verify</span>
+                <span class="metric-label">against executable signals</span>
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <section class="section" id="model">
+      <section class="section" id="thesis">
         <div class="section-inner split">
           <div class="sticky">
-            <p class="section-kicker">Repository as world</p>
-            <h2>Stop asking a model to type patches from scratch.</h2>
+            <p class="section-kicker">The thesis</p>
+            <h2>Coding agents need world models, not longer prompts.</h2>
             <p class="section-copy">
-              j3 starts with a constrained action space. The model ranks edit
-              types, targets, and parameters; a deterministic patch engine turns
-              that decision into a real diff.
+              Today’s agents mostly read text, sample patches, run tools, and
+              try again. j3 explores a different primitive: learn the dynamics
+              of a codebase, then choose edits by predicted effect.
             </p>
           </div>
           <ul class="world-list reveal">
             <li class="world-row">
-              <strong>State</strong>
-              <span>The current codebase, encoded from Python files and repo structure.</span>
+              <strong>LLM agents</strong>
+              <span>Generate source text first, then discover consequences by running tests after the fact.</span>
             </li>
             <li class="world-row">
-              <strong>Action</strong>
-              <span>A structured patch such as changing an operator, literal, return value, import, or guard.</span>
+              <strong>JEPA agents</strong>
+              <span>Predict latent future states first, then spend execution on edits likely to move the repo forward.</span>
             </li>
             <li class="world-row">
-              <strong>Observation</strong>
-              <span>Pytest output, assertion deltas, stack traces, type errors, and runtime behavior.</span>
+              <strong>Human role</strong>
+              <span>Provide goals, tests, constraints, and review; the engine plans within a verifiable action space.</span>
             </li>
             <li class="world-row">
-              <strong>Target</strong>
-              <span>A passing test, cleaner trace, or executable goal that says what better means.</span>
+              <strong>End state</strong>
+              <span>Local coding infrastructure that improves by observing real transitions, not by buying more tokens.</span>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="terminal-band" id="quickstart">
+      <section class="terminal-band" id="architecture">
         <div class="section-inner terminal-grid">
           <div class="reveal">
-            <p class="section-kicker">First demo</p>
-            <h2>GreenShot is intentionally narrow.</h2>
+            <p class="section-kicker">Architecture</p>
+            <h2>Joint embeddings make code change a prediction problem.</h2>
             <p class="section-copy">
-              Give j3 a Python repo and one failing pytest target. It predicts a
-              structured repair, materializes a patch, and runs the target test
-              in a temporary copy before touching your files.
+              A Joint Embedding Predictive Architecture learns compact
+              representations of repo state, edit actions, and target outcomes.
+              The agent asks which action moves this code world toward the
+              desired future.
             </p>
           </div>
-          <div class="terminal reveal" role="img" aria-label="Terminal commands for installing and running j3">
+          <div class="terminal reveal" role="img" aria-label="j3 architecture flow">
             <div class="terminal-top">
               <div class="dots" aria-hidden="true">
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
               </div>
-              <span class="mono">greenshot-1</span>
+              <span class="mono">repo-world loop</span>
             </div>
-            <pre><code><span class="prompt">$</span> python -m venv .venv
-<span class="prompt">$</span> source .venv/bin/activate
-<span class="prompt">$</span> python -m pip install -e ".[dev]"
+            <pre><code><span class="comment">repo state</span>      -> encoder -> z_current
+<span class="comment">structured edit</span> -> encoder -> z_action
+<span class="comment">test signal</span>      -> encoder -> z_target
 
-<span class="prompt">$</span> j3 train --data examples/greenshot_bug
-<span class="comment"># writes runs/greenshot-1/model.json</span>
+predict(z_current, z_action) ~= z_future
 
-<span class="prompt">$</span> j3 fix \
-  --repo examples/greenshot_bug \
-  --test "python -m pytest tests/test_calculator.py" \
-  --dry-run
+rank edits by distance(z_future, z_target)
+materialize best action as a deterministic diff
+validate in an isolated worktree
 
-<span class="ok">candidate patch found; test passes in temp copy</span></code></pre>
+<span class="ok">the patch engine is planning, not autocomplete</span></code></pre>
           </div>
         </div>
       </section>
@@ -977,37 +984,37 @@
       <section class="section">
         <div class="section-inner">
           <div class="reveal">
-            <p class="section-kicker">How it works</p>
-            <h2>A local loop with visible failure modes.</h2>
+            <p class="section-kicker">Why it matters</p>
+            <h2>The best coding agent will be cheaper, more local, and more causal.</h2>
             <p class="section-copy">
-              The early prototype keeps the action space small on purpose. It
-              should learn useful edits from repo signals, or fail in a way that
-              diagnostics can explain.
+              LLMs are powerful language interfaces. But the patch engine should
+              be trained on how repositories actually change, how tests respond,
+              and which actions repair behavior.
             </p>
           </div>
           <div class="detail-grid">
             <article class="detail reveal">
               <span class="detail-number">1</span>
-              <h3>Mine and synthesize transitions</h3>
+              <h3>Less token churn</h3>
               <p>
-                j3 generates synthetic break/fix records and can mine real
-                Python before/after pairs from public git history.
+                Cache repo embeddings, rank compact actions, and reserve
+                expensive reasoning for places where language is actually needed.
               </p>
             </article>
             <article class="detail reveal">
               <span class="detail-number">2</span>
-              <h3>Rank structured candidates</h3>
+              <h3>More reliable edits</h3>
               <p>
-                AST embeddings, action-delta prototypes, and failure hints put
-                promising patches before wasted test runs.
+                A constrained patch space can be inspected, replayed, diagnosed,
+                and improved without pretending raw text sampling is planning.
               </p>
             </article>
             <article class="detail reveal">
               <span class="detail-number">3</span>
-              <h3>Validate before apply</h3>
+              <h3>Native local learning</h3>
               <p>
-                Patch and fix commands run candidates in isolated copies, print
-                diffs, and keep the human in the loop.
+                Public repos, synthetic break/fix transitions, and local test
+                outcomes become training signal for the next repair attempt.
               </p>
             </article>
           </div>
@@ -1017,83 +1024,93 @@
       <section class="section" id="proof">
         <div class="section-inner proof">
           <div class="reveal">
-            <p class="section-kicker">Current result</p>
-            <h2>Failure hints turned search into first-shot repairs on GreenShot-2.</h2>
+            <p class="section-kicker">Agent primitive</p>
+            <h2>Language can describe intent. JEPA should choose the edit.</h2>
             <p class="section-copy">
-              GreenShot-2 is still small and shaped around bugs the current
-              action space understands. That is the point: it proves the loop,
-              not broad coding-agent capability.
+              The long-term architecture keeps LLMs where they are strongest:
+              translating messy human requests into objectives, constraints, and
+              tests. The repair engine remains predictive and verifiable.
             </p>
           </div>
           <div class="reveal">
-            <table class="result-table" aria-label="GreenShot-2 evaluation results">
+            <table class="result-table" aria-label="Comparison between LLM-first and JEPA-first coding agents">
               <tbody>
                 <tr class="result-row">
-                  <th scope="col">Mode</th>
-                  <th scope="col">Solved</th>
-                  <th scope="col">pass@1</th>
-                  <th scope="col">Avg candidates</th>
+                  <th scope="col">Layer</th>
+                  <th scope="col">LLM-first</th>
+                  <th scope="col">JEPA-first</th>
+                  <th scope="col">Goal</th>
                 </tr>
                 <tr class="result-row">
-                  <td><strong>Baseline</strong></td>
-                  <td>5/5</td>
-                  <td>1/5</td>
-                  <td>21.80</td>
+                  <td><strong>Planning</strong></td>
+                  <td>Sample text</td>
+                  <td class="highlight">Predict effects</td>
+                  <td>Fewer blind trials</td>
                 </tr>
                 <tr class="result-row">
-                  <td><strong>Model + hints</strong></td>
-                  <td class="highlight">5/5</td>
-                  <td class="highlight">5/5</td>
-                  <td class="highlight">1.00</td>
+                  <td><strong>Memory</strong></td>
+                  <td>Prompt context</td>
+                  <td class="highlight">Repo embeddings</td>
+                  <td>Persistent code state</td>
+                </tr>
+                <tr class="result-row">
+                  <td><strong>Safety</strong></td>
+                  <td>Review generated diff</td>
+                  <td class="highlight">Validate action outcomes</td>
+                  <td>Trust through execution</td>
                 </tr>
               </tbody>
             </table>
             <p class="note">
-              Verified in the project plan with a 25-test pytest suite.
+              The claim is architectural: LLMs can remain useful adapters, but
+              the core patch planner should be a code-world predictor.
             </p>
           </div>
         </div>
       </section>
 
-      <section class="section roadmap" id="roadmap">
+      <section class="section roadmap" id="future">
         <div class="section-inner">
           <div class="reveal">
-            <p class="section-kicker">Roadmap</p>
-            <h2>Expand the benchmark before chasing a bigger neural model.</h2>
+            <p class="section-kicker">Where j3 is going</p>
+            <h2>A local repair engine that compounds with every repo transition.</h2>
             <p class="section-copy">
-              The next gate is practical: find repeatable ranking failures,
-              missing actions, and weak context before moving toward a trainable
-              candidate ranker.
+              The destination is not another chat wrapper. It is open-source
+              infrastructure for coding agents that learn action dynamics,
+              preserve human control, and run on developer hardware.
             </p>
           </div>
           <div class="roadmap-track">
             <article class="roadmap-item reveal">
-              <span class="phase">Next</span>
+              <span class="phase">Near</span>
               <div>
-                <h3>GreenShot-3 benchmark tasks</h3>
+                <h3>Broader structured action space</h3>
                 <p>
-                  Add swapped call arguments, missing imports, wrong attributes,
-                  and narrow exception handling.
+                  Imports, attributes, call shapes, guards, conditions,
+                  signatures, and narrow exception repairs become first-class
+                  actions instead of accidental text edits.
                 </p>
               </div>
             </article>
             <article class="roadmap-item reveal">
-              <span class="phase">Then</span>
+              <span class="phase">Next</span>
               <div>
-                <h3>Richer candidate generation</h3>
+                <h3>Trainable candidate ranker</h3>
                 <p>
-                  Implement action materializers and failure hints for import,
-                  attribute, call-shape, and exception errors.
+                  Positive and negative validation traces teach the system which
+                  repo-state, failure-signal, and action combinations are likely
+                  to pass.
                 </p>
               </div>
             </article>
             <article class="roadmap-item reveal">
               <span class="phase">Later</span>
               <div>
-                <h3>Candidate ranker from diagnostics</h3>
+                <h3>Full neural repo JEPA</h3>
                 <p>
-                  Train only after a larger ladder shows good candidates exist
-                  but sit behind bad candidates.
+                  A compact local model predicts future repository embeddings,
+                  searches structured edit trajectories, and validates only the
+                  most promising futures.
                 </p>
               </div>
             </article>
@@ -1104,21 +1121,21 @@
       <section class="final-cta">
         <div class="section-inner">
           <div class="reveal">
-            <p class="section-kicker">Pure mode claim</p>
-            <h2>LLMs are optional for language. They are not the patch engine.</h2>
+            <p class="section-kicker">Open source invitation</p>
+            <h2>Help build the agent that predicts code change before it writes code.</h2>
             <p>
-              Use an executable signal, keep the repair loop local, and make
-              every applied diff earn its test result.
+              j3 is a bet that the future of coding agents is local,
+              world-model-driven, and validated by execution.
             </p>
           </div>
-          <a class="button button-primary reveal" href="#quickstart">Run j3 locally</a>
+          <a class="button button-primary reveal" href="https://github.com/andrewarrow/j3">View source</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <span>j3 - open source local-first code repair</span>
+        <span>j3 - open source JEPA coding agents</span>
         <a href="#top">Back to top</a>
       </div>
     </footer>
