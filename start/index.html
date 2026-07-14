@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Builder Roadmap</title>
+    <meta
+      name="description"
+      content="A beginner roadmap for learning coding and technology basics with ChatGPT, Codex, Git, the terminal, and practical AI workflows."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Source+Sans+3:wght@400;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-glow" aria-hidden="true"></div>
+    <div class="site-shell">
+      <header class="hero" id="top">
+        <p class="eyebrow">Beginner roadmap • updated July 14, 2026</p>
+        <h1>
+          Learn coding and technology basics with AI tools, even if you are
+          starting from zero.
+        </h1>
+        <p class="lead">
+          This page is for people in other industries who have an app idea, a
+          workflow problem, or a pile of repetitive tasks and are starting to
+          realize that tools like ChatGPT and Codex can help them build useful
+          things themselves.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#toc">Jump to the roadmap</a>
+          <a class="button button-secondary" href="#everyday-wins"
+            >Start with everyday wins</a
+          >
+        </div>
+        <div class="hero-grid">
+          <article class="mini-card">
+            <h2>You do not need</h2>
+            <p>
+              A CS degree, years of math, or perfect terminology before you
+              begin.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h2>Paid access helps</h2>
+            <p>
+              Free plans are fine for trying things, but paid access makes
+              serious Codex and automation work much more practical.
+            </p>
+          </article>
+          <article class="mini-card">
+            <h2>Your first win</h2>
+            <p>
+              It might be a Python script that cleans a text file, not a billion
+              dollar startup.
+            </p>
+          </article>
+        </div>
+      </header>
+
+      <nav class="toc" id="toc" aria-label="Table of contents">
+        <div class="section-intro">
+          <p class="section-label">Table of contents</p>
+          <h2>12 categories to go from curious to capable</h2>
+          <p>
+            Each category includes a few subtopics so you can see the shape of
+            the journey before you dive in.
+          </p>
+        </div>
+        <div class="toc-grid">
+          <article class="toc-card">
+            <p class="toc-number">01</p>
+            <h3><a href="#start-here">Start here</a></h3>
+            <ul>
+              <li>mindset shift</li>
+              <li>how AI changes the path</li>
+              <li>small wins over big plans</li>
+              <li>what success looks like</li>
+            </ul>
+          </article>
+          <article class="toc-card">
+            <p class="toc-number">02</p>
+            <h3><a href="#openai-setup">OpenAI setup and billing</a></h3>
+            <ul>
+              <li>create an account</li>
+              <li>add a payment method</li>
+              <li>ChatGPT vs API billing</li>
+              <li>why paid access matters</li>
+            </ul>
+          </article>
+          <article class="toc-card">
+            <p class="toc-number">03</p>
+            <h3><a href="#everyday-wins">Everyday wins with ChatGPT and Codex</a></h3>
+            <ul>
+              <li>writing and analysis</li>
+              <li>data cleanup</li>
+              <li>small scripts</li>
+              <li>learning by asking</li>
+            </ul>
+          </article>
+          <article class="toc-card">
+            <p class="toc-number">04</p>
+            <h3><a href="#problem-finding">Find problems worth solving</a></h3>
+            <ul>
+              <li>pain point hunting</li>
+              <li>web app ideas</li>
+              <li>mobile app ideas</li>
+              <li>tiny MVP thinking</li>
+            </ul>
+          </article>
+          <article class="toc-card">
+            <p class="toc-number">05</p>
+            <h3><a href="#terminal">Learn the terminal</a></h3>
+            <ul>
+              <li>files and folders</li>
+              <li>running commands</li>
+              <li>reading output</li>
+              <li>basic confidence</li>
+            </ul>
+          </article>
+          <article class="toc-card">
+            <p class="toc-number">06</p>
+            <h3><a href="#git">Understand Git</a></h3>
+            <ul>
+              <li>version control</li>
+              <li>commits and history</li>
+              <li>branches and remotes</li>
+              <li>GitHub basics</li>
+            </ul>
+          </article>
+          <article class="toc-card">
+            <p class="toc-number">07</p>
+            <h3><a href="#vibe-coding">Learn to vibe code</a></h3>
+            <ul>
+              <li>prompting well</li>
+              <li>iterating with AI</li>
+              <li>YouTube walkthroughs</li>
+              <li>building without ego</li>
+            </ul>
+          </article>
+          <article class="toc-card">
+            <p class="toc-number">08</p>
+            <h3><a href="#web-basics">Web basics</a></h3>
+            <ul>
+              <li>HTML structure</li>
+              <li>CSS styling</li>
+              <li>JavaScript behavior</li>
+              <li>how websites really work</li>
+            </ul>
+          </article>
+          <article class="toc-card">
+            <p class="toc-number">09</p>
+            <h3><a href="#python">Python for automation</a></h3>
+            <ul>
+              <li>text and file changes</li>
+              <li>CSV and JSON</li>
+              <li>API calls</li>
+              <li>repeatable scripts</li>
+            </ul>
+          </article>
+          <article class="toc-card">
+            <p class="toc-number">10</p>
+            <h3><a href="#data-and-apis">Data, APIs, and databases</a></h3>
+            <ul>
+              <li>what APIs are</li>
+              <li>JSON thinking</li>
+              <li>SQL basics</li>
+              <li>storing app data</li>
+            </ul>
+          </article>
+          <article class="toc-card">
+            <p class="toc-number">11</p>
+            <h3><a href="#first-web-app">Build your first web app</a></h3>
+            <ul>
+              <li>choose a stack</li>
+              <li>scope an MVP</li>
+              <li>ship on the web first</li>
+              <li>learn by shipping</li>
+            </ul>
+          </article>
+          <article class="toc-card">
+            <p class="toc-number">12</p>
+            <h3><a href="#mobile-and-launch">Mobile, launch, and next steps</a></h3>
+            <ul>
+              <li>mobile options</li>
+              <li>feedback loops</li>
+              <li>first users</li>
+              <li>90-day roadmap</li>
+            </ul>
+          </article>
+        </div>
+      </nav>
+
+      <main class="content">
+        <section class="content-section" id="start-here">
+          <div class="section-number">01</div>
+          <div class="section-body">
+            <p class="section-label">Start here</p>
+            <h2>The goal is not to become an expert first. The goal is to become useful fast.</h2>
+            <p>
+              A good beginner path in 2026 is different from the old path. You
+              still need to learn the basics, but AI lets you get hands-on much
+              earlier. That means you can learn concepts while building things
+              that matter to you.
+            </p>
+            <ul class="topic-list">
+              <li>Stop waiting to feel ready.</li>
+              <li>Pick one real problem from your own life or job.</li>
+              <li>Use AI to explain terms and generate starter code.</li>
+              <li>Expect to learn by debugging and rewriting.</li>
+            </ul>
+            <div class="resource-block">
+              <h3>Helpful starting points</h3>
+              <ul class="resource-list">
+                <li>
+                  <a href="https://chatgpt.com/codex/" target="_blank" rel="noreferrer"
+                    >Codex in ChatGPT</a
+                  >
+                  for the product overview and current plan entry points.
+                </li>
+                <li>
+                  <a href="https://learn.chatgpt.com/docs" target="_blank" rel="noreferrer"
+                    >ChatGPT and Codex docs</a
+                  >
+                  to see what the current tooling ecosystem looks like.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="openai-setup">
+          <div class="section-number">02</div>
+          <div class="section-body">
+            <p class="section-label">OpenAI setup and billing</p>
+            <h2>Get the right account, add billing, and understand why paid access matters.</h2>
+            <p>
+              If you want to use Codex seriously, the free tier is usually not
+              enough. OpenAI’s current pricing page shows limited Codex access
+              on Free and expanded access on paid plans. Also, ChatGPT billing
+              and API billing are separate systems, which trips up a lot of new
+              users.
+            </p>
+            <ul class="topic-list">
+              <li>Create a ChatGPT account first.</li>
+              <li>Add a card for ChatGPT if you want a paid plan.</li>
+              <li>Add API billing separately if you want scripts or CLI usage.</li>
+              <li>Start with a small spend limit and build habits before scaling.</li>
+            </ul>
+            <div class="resource-block">
+              <h3>Best links for setup</h3>
+              <ul class="resource-list">
+                <li>
+                  <a href="https://chatgpt.com/pricing/" target="_blank" rel="noreferrer"
+                    >ChatGPT pricing</a
+                  >
+                  to compare Free, Plus, Pro, and current Codex access.
+                </li>
+                <li>
+                  <a
+                    href="https://help.openai.com/en/articles/9039756-managing-billing-settings-on-chatgpt-web-and-platform"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Managing billing settings on ChatGPT and the API platform</a
+                  >
+                  for the separate-billing explanation.
+                </li>
+                <li>
+                  <a
+                    href="https://help.openai.com/en/articles/8264644-how-can-i-set-up-prepaid-billing"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Set up prepaid API billing</a
+                  >
+                  if you want predictable API spend.
+                </li>
+                <li>
+                  <a
+                    href="https://help.openai.com/en/articles/9038389-updating-billing-information-tax-id-and-vat-id"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Update billing and payment details</a
+                  >
+                  when you need to add or manage payment information.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="everyday-wins">
+          <div class="section-number">03</div>
+          <div class="section-body">
+            <p class="section-label">Everyday wins</p>
+            <h2>You do not need an app idea yet. ChatGPT and Codex can already save you time.</h2>
+            <p>
+              Many beginners think the only valid use of AI coding tools is to
+              launch a startup. That is too narrow. A much better starting point
+              is solving boring work: rewriting documents, extracting patterns
+              from data, generating formulas, or writing a one-off Python script
+              to transform text files.
+            </p>
+            <ul class="topic-list">
+              <li>Turn messy notes into structured plans.</li>
+              <li>Clean CSV, JSON, or plain-text files with small scripts.</li>
+              <li>Ask Codex to explain code line by line while you learn.</li>
+              <li>Use ChatGPT for brainstorming, summarizing, and decision support.</li>
+            </ul>
+            <div class="quote-card">
+              <p>
+                A good first project: “I have a text file I hate editing by
+                hand. Can AI help me write a script that fixes it every time?”
+              </p>
+            </div>
+            <div class="resource-block">
+              <h3>Good entry points</h3>
+              <ul class="resource-list">
+                <li>
+                  <a href="https://chatgpt.com/codex/" target="_blank" rel="noreferrer"
+                    >Codex overview</a
+                  >
+                  to understand where coding help fits inside ChatGPT.
+                </li>
+                <li>
+                  <a href="https://learn.chatgpt.com/docs" target="_blank" rel="noreferrer"
+                    >ChatGPT docs</a
+                  >
+                  for current product capabilities, workflows, and terminology.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="problem-finding">
+          <div class="section-number">04</div>
+          <div class="section-body">
+            <p class="section-label">Problem finding</p>
+            <h2>Look for recurring pain, not flashy ideas.</h2>
+            <p>
+              The best beginner app ideas are usually close to your own work.
+              If you work in operations, sales, healthcare, education, logistics,
+              law, construction, or real estate, you probably already touch
+              repetitive forms, checklists, scheduling problems, or messy data.
+              That is fertile ground.
+            </p>
+            <ul class="topic-list">
+              <li>List the tasks you repeat every week.</li>
+              <li>Notice where copy-paste and spreadsheet pain show up.</li>
+              <li>Prefer “one painful workflow” over “an app for everyone.”</li>
+              <li>Start with a web app before jumping to native mobile.</li>
+            </ul>
+            <div class="resource-block">
+              <h3>Prompts worth trying</h3>
+              <ul class="resource-list">
+                <li>
+                  Ask ChatGPT: “Help me find three automations hiding inside my current job.”
+                </li>
+                <li>
+                  Ask Codex: “Turn this manual process into the smallest possible internal tool.”
+                </li>
+                <li>
+                  Ask either: “What would the MVP version of this idea look like in one weekend?”
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="terminal">
+          <div class="section-number">05</div>
+          <div class="section-body">
+            <p class="section-label">Terminal</p>
+            <h2>The terminal is not magic. It is just a text-based control panel for your computer.</h2>
+            <p>
+              You do not need to memorize dozens of commands on day one. You
+              need comfort moving through folders, opening files, running
+              programs, and reading errors without panicking.
+            </p>
+            <ul class="topic-list">
+              <li>Learn `pwd`, `ls`, `cd`, `mkdir`, `cp`, and `mv` first.</li>
+              <li>Get used to reading command output slowly.</li>
+              <li>Understand that errors are clues, not judgment.</li>
+              <li>Practice on harmless files until the fear drops.</li>
+            </ul>
+            <div class="resource-block">
+              <h3>Learn the command line</h3>
+              <ul class="resource-list">
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Command_line"
+                    target="_blank"
+                    rel="noreferrer"
+                    >MDN command line crash course</a
+                  >
+                  for a modern beginner intro.
+                </li>
+                <li>
+                  <a href="https://swcarpentry.github.io/shell-novice/" target="_blank" rel="noreferrer"
+                    >Software Carpentry shell novice</a
+                  >
+                  for structured lessons and practice.
+                </li>
+                <li>
+                  <a href="https://missing.csail.mit.edu/2020/the-shell/" target="_blank" rel="noreferrer"
+                    >The Missing Semester: the shell</a
+                  >
+                  for a respected technical walkthrough.
+                </li>
+                <li>
+                  <a href="https://cmdchallenge.com/" target="_blank" rel="noreferrer"
+                    >CMD Challenge</a
+                  >
+                  if you want practice that feels more interactive.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="git">
+          <div class="section-number">06</div>
+          <div class="section-body">
+            <p class="section-label">Git</p>
+            <h2>Git is version control: a way to track changes, go backward, and collaborate safely.</h2>
+            <p>
+              Beginners often treat Git as a scary ritual. A better mental model
+              is this: Git is your timeline, your save points, and your safety
+              net. It lets you experiment without losing your place.
+            </p>
+            <ul class="topic-list">
+              <li>A repository is the project and its history.</li>
+              <li>A commit is a saved checkpoint with a message.</li>
+              <li>A branch is a separate lane for trying changes.</li>
+              <li>GitHub is a hosting and collaboration layer around Git.</li>
+            </ul>
+            <div class="resource-block">
+              <h3>Learn Git well enough to move fast</h3>
+              <ul class="resource-list">
+                <li>
+                  <a href="https://git-scm.com/book/en/v2" target="_blank" rel="noreferrer"
+                    >Pro Git</a
+                  >
+                  for the classic free book.
+                </li>
+                <li>
+                  <a href="https://git-scm.com/docs" target="_blank" rel="noreferrer"
+                    >Official Git documentation</a
+                  >
+                  when you want the source reference.
+                </li>
+                <li>
+                  <a
+                    href="https://docs.github.com/en/get-started/start-your-journey/hello-world"
+                    target="_blank"
+                    rel="noreferrer"
+                    >GitHub Hello World</a
+                  >
+                  for a practical beginner walkthrough.
+                </li>
+                <li>
+                  <a
+                    href="https://docs.github.com/en/get-started/using-git/about-git"
+                    target="_blank"
+                    rel="noreferrer"
+                    >About Git on GitHub Docs</a
+                  >
+                  for a shorter conceptual explanation.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="vibe-coding">
+          <div class="section-number">07</div>
+          <div class="section-body">
+            <p class="section-label">Vibe coding</p>
+            <h2>Vibe coding works best when you keep shipping, checking, and tightening the loop.</h2>
+            <p>
+              “Vibe coding” is not refusing to think. It is using AI to move
+              quickly while still checking what the machine produced. The people
+              who get the most from it keep prompts concrete, test small pieces,
+              and ask follow-up questions without pretending to know more than
+              they do.
+            </p>
+            <ul class="topic-list">
+              <li>Describe the outcome, inputs, constraints, and edge cases.</li>
+              <li>Ask for the smallest working version first.</li>
+              <li>Run the code and paste back real errors.</li>
+              <li>Keep asking “explain why this works” as you go.</li>
+            </ul>
+            <div class="resource-block">
+              <h3>YouTube searches worth opening</h3>
+              <ul class="resource-list">
+                <li>
+                  <a
+                    href="https://www.youtube.com/results?search_query=vibe+coding+for+beginners"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Vibe coding for beginners</a
+                  >
+                  for broad intros.
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/results?search_query=build+an+app+with+ai+no+coding+background"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Build an app with AI and no coding background</a
+                  >
+                  for the nontraditional founder path.
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/results?search_query=chatgpt+codex+beginner+tutorial"
+                    target="_blank"
+                    rel="noreferrer"
+                    >ChatGPT Codex beginner tutorial</a
+                  >
+                  for current walkthroughs.
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/results?search_query=codex+cli+tutorial"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Codex CLI tutorial</a
+                  >
+                  if you want terminal-focused demos.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="web-basics">
+          <div class="section-number">08</div>
+          <div class="section-body">
+            <p class="section-label">Web basics</p>
+            <h2>If you want to build a web app, understand the simple stack first: HTML, CSS, and JavaScript.</h2>
+            <p>
+              You do not need to master ten frameworks before building. Start by
+              understanding the browser. HTML gives structure, CSS handles look
+              and layout, and JavaScript makes the page respond to user actions
+              and data.
+            </p>
+            <ul class="topic-list">
+              <li>HTML is the skeleton.</li>
+              <li>CSS is the design system.</li>
+              <li>JavaScript is the behavior layer.</li>
+              <li>Frameworks make more sense after the basics click.</li>
+            </ul>
+            <div class="resource-block">
+              <h3>Solid learning resources</h3>
+              <ul class="resource-list">
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn_web_development"
+                    target="_blank"
+                    rel="noreferrer"
+                    >MDN Learn Web Development</a
+                  >
+                  for foundational concepts.
+                </li>
+                <li>
+                  <a href="https://javascript.info/" target="_blank" rel="noreferrer"
+                    >JavaScript.info</a
+                  >
+                  for a deep but readable JavaScript path.
+                </li>
+                <li>
+                  <a href="https://web.dev/learn/" target="_blank" rel="noreferrer"
+                    >web.dev Learn</a
+                  >
+                  for modern browser and web platform guidance.
+                </li>
+                <li>
+                  <a
+                    href="https://www.freecodecamp.org/learn/2022/responsive-web-design/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >freeCodeCamp responsive web design</a
+                  >
+                  if you want hands-on exercises.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="python">
+          <div class="section-number">09</div>
+          <div class="section-body">
+            <p class="section-label">Python</p>
+            <h2>Python is one of the best first languages when your goal is useful automation.</h2>
+            <p>
+              If you want AI to help you write scripts that rename files, edit
+              text, process spreadsheets, call APIs, or scrape simple data,
+              Python is a strong first choice. It is readable, popular, and very
+              well supported by AI tools.
+            </p>
+            <ul class="topic-list">
+              <li>Read and write files.</li>
+              <li>Transform text, CSV, and JSON.</li>
+              <li>Install libraries when needed.</li>
+              <li>Keep scripts small and test them on sample data first.</li>
+            </ul>
+            <div class="resource-block">
+              <h3>Best Python beginner links</h3>
+              <ul class="resource-list">
+                <li>
+                  <a href="https://docs.python.org/3/tutorial/" target="_blank" rel="noreferrer"
+                    >Official Python tutorial</a
+                  >
+                  for the language basics.
+                </li>
+                <li>
+                  <a href="https://automatetheboringstuff.com/" target="_blank" rel="noreferrer"
+                    >Automate the Boring Stuff with Python</a
+                  >
+                  for exactly the kind of practical tasks many beginners want.
+                </li>
+                <li>
+                  <a href="https://realpython.com/start-here/" target="_blank" rel="noreferrer"
+                    >Real Python start here</a
+                  >
+                  for guided articles and beginner tracks.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="data-and-apis">
+          <div class="section-number">10</div>
+          <div class="section-body">
+            <p class="section-label">Data, APIs, and databases</p>
+            <h2>Apps become more powerful when they can fetch data, store data, and connect systems.</h2>
+            <p>
+              You do not need to become a backend specialist immediately, but
+              you should learn a few core concepts. APIs let software talk to
+              software. JSON is a common data format. Databases store structured
+              information. SQL helps you ask questions of that data.
+            </p>
+            <ul class="topic-list">
+              <li>Learn what an API request and response look like.</li>
+              <li>Get comfortable reading JSON.</li>
+              <li>Understand when a spreadsheet stops being enough.</li>
+              <li>Learn simple SQL before chasing big architecture ideas.</li>
+            </ul>
+            <div class="resource-block">
+              <h3>Good first resources</h3>
+              <ul class="resource-list">
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Introduction"
+                    target="_blank"
+                    rel="noreferrer"
+                    >MDN introduction to APIs</a
+                  >
+                  for the basic mental model.
+                </li>
+                <li>
+                  <a href="https://sqlbolt.com/" target="_blank" rel="noreferrer"
+                    >SQLBolt</a
+                  >
+                  for beginner-friendly SQL lessons.
+                </li>
+                <li>
+                  <a href="https://www.sqlite.org/index.html" target="_blank" rel="noreferrer"
+                    >SQLite docs</a
+                  >
+                  for a lightweight database you can actually use.
+                </li>
+                <li>
+                  <a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noreferrer"
+                    >JSONPlaceholder</a
+                  >
+                  if you want a free fake API to practice with.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="first-web-app">
+          <div class="section-number">11</div>
+          <div class="section-body">
+            <p class="section-label">First web app</p>
+            <h2>Build the smallest version of the thing people can click and use.</h2>
+            <p>
+              Your first web app does not need a complex architecture. A good
+              first version often looks like this: one page, one form, one data
+              flow, one output. Let AI help scaffold it, then keep trimming
+              until the value is obvious.
+            </p>
+            <ul class="topic-list">
+              <li>Choose one stack and stick to it for a while.</li>
+              <li>Build one core workflow, not a complete platform.</li>
+              <li>Ship the browser version before worrying about mobile apps.</li>
+              <li>Use feedback from real users to decide what comes next.</li>
+            </ul>
+            <div class="resource-block">
+              <h3>Good build-path resources</h3>
+              <ul class="resource-list">
+                <li>
+                  <a href="https://react.dev/learn" target="_blank" rel="noreferrer"
+                    >React learn</a
+                  >
+                  if you want a popular UI framework.
+                </li>
+                <li>
+                  <a href="https://vite.dev/guide/" target="_blank" rel="noreferrer"
+                    >Vite guide</a
+                  >
+                  for fast project setup and local development.
+                </li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side"
+                    target="_blank"
+                    rel="noreferrer"
+                    >MDN server-side learning area</a
+                  >
+                  when you need to understand the backend side.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="mobile-and-launch">
+          <div class="section-number">12</div>
+          <div class="section-body">
+            <p class="section-label">Mobile and launch</p>
+            <h2>After the web version proves useful, decide whether mobile really matters.</h2>
+            <p>
+              Many people jump to mobile too early. Often the right move is to
+              prove the workflow on the web, then package it for mobile if the
+              use case demands it. Launching also means talking to users,
+              collecting feedback, and iterating with discipline.
+            </p>
+            <ul class="topic-list">
+              <li>Validate the workflow in a browser first.</li>
+              <li>Choose one mobile path, not three.</li>
+              <li>Watch real users struggle and write down every point of friction.</li>
+              <li>Let a 90-day plan beat endless “research mode.”</li>
+            </ul>
+            <div class="resource-block">
+              <h3>Mobile and next-step resources</h3>
+              <ul class="resource-list">
+                <li>
+                  <a href="https://reactnative.dev/docs/getting-started" target="_blank" rel="noreferrer"
+                    >React Native getting started</a
+                  >
+                  for JavaScript-based mobile development.
+                </li>
+                <li>
+                  <a href="https://docs.expo.dev/tutorial/introduction/" target="_blank" rel="noreferrer"
+                    >Expo tutorial</a
+                  >
+                  for a smoother React Native beginner path.
+                </li>
+                <li>
+                  <a href="https://docs.flutter.dev/get-started" target="_blank" rel="noreferrer"
+                    >Flutter get started</a
+                  >
+                  if you prefer the Flutter route.
+                </li>
+              </ul>
+            </div>
+            <div class="roadmap-card">
+              <h3>A practical 90-day path</h3>
+              <ol>
+                <li>Week 1-2: set up ChatGPT, Codex, terminal basics, and Git basics.</li>
+                <li>Week 3-4: build tiny Python and HTML/CSS projects.</li>
+                <li>Month 2: ship one small web app for a real workflow.</li>
+                <li>Month 3: improve it with user feedback, data storage, and better prompts.</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>
+          Use AI as a force multiplier, not as a replacement for thinking. Build
+          small things, inspect the output, and let repetition turn confusion
+          into fluency.
+        </p>
+        <a href="#top">Back to top</a>
+      </footer>
+    </div>
+  </body>
+</html>
