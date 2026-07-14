@@ -65,7 +65,7 @@
       <nav class="toc" id="toc" aria-label="Table of contents">
         <div class="section-intro">
           <p class="section-label">Table of contents</p>
-          <h2>12 categories to go from curious to capable</h2>
+          <h2>13 categories to go from curious to capable</h2>
           <p>
             Each category includes a few subtopics so you can see the shape of
             the journey before you dive in.
@@ -184,9 +184,20 @@
           </article>
           <article class="toc-card">
             <p class="toc-number">12</p>
+            <h3><a href="#hosting-and-domains">Hosting and domains</a></h3>
+            <ul>
+              <li>deployments</li>
+              <li>custom domains</li>
+              <li>DNS and SSL</li>
+              <li>getting live fast</li>
+            </ul>
+          </article>
+          <article class="toc-card">
+            <p class="toc-number">13</p>
             <h3><a href="#mobile-and-launch">Mobile, launch, and next steps</a></h3>
             <ul>
-              <li>mobile options</li>
+              <li>swift and kotlin</li>
+              <li>cross-platform tradeoffs</li>
               <li>feedback loops</li>
               <li>first users</li>
               <li>90-day roadmap</li>
@@ -734,20 +745,100 @@
           </div>
         </section>
 
-        <section class="content-section" id="mobile-and-launch">
+        <section class="content-section" id="hosting-and-domains">
           <div class="section-number">12</div>
           <div class="section-body">
-            <p class="section-label">Mobile and launch</p>
-            <h2>After the web version proves useful, decide whether mobile really matters.</h2>
+            <p class="section-label">Hosting and domains</p>
+            <h2>Get your simple web app live on a real URL people can visit.</h2>
             <p>
-              Many people jump to mobile too early. Often the right move is to
-              prove the workflow on the web, then package it for mobile if the
-              use case demands it. Launching also means talking to users,
-              collecting feedback, and iterating with discipline.
+              A project does not feel real until someone else can open it in a
+              browser. The basic path is straightforward: push your code, deploy
+              it to a host, get a default URL, then connect a custom domain when
+              you are ready. You do not need to own servers to do this.
+            </p>
+            <ul class="topic-list">
+              <li>Static sites can be deployed very cheaply and very fast.</li>
+              <li>Git-connected hosting gives you automatic redeploys on every push.</li>
+              <li>Custom domains make the project feel legitimate and easier to share.</li>
+              <li>DNS records and SSL are normal parts of going live, not advanced magic.</li>
+            </ul>
+            <div class="quote-card">
+              <p>
+                Beginner rule of thumb: if it is mostly HTML, CSS, and
+                JavaScript, GitHub Pages can be enough. If you want preview
+                deploys, environment variables, and an easier path to a real
+                app, look closely at Cloudflare Pages, Vercel, or Netlify.
+              </p>
+            </div>
+            <div class="resource-block">
+              <h3>What to learn and where to deploy</h3>
+              <ul class="resource-list">
+                <li>
+                  <a href="https://developers.cloudflare.com/pages/get-started/" target="_blank" rel="noreferrer"
+                    >Cloudflare Pages getting started</a
+                  >
+                  for Git integration or direct upload.
+                </li>
+                <li>
+                  <a href="https://developers.cloudflare.com/pages/configuration/custom-domains/" target="_blank" rel="noreferrer"
+                    >Cloudflare Pages custom domains</a
+                  >
+                  for connecting your own domain.
+                </li>
+                <li>
+                  <a href="https://vercel.com/docs/git" target="_blank" rel="noreferrer"
+                    >Vercel Git deployments</a
+                  >
+                  for automatic deploys from GitHub, GitLab, or Bitbucket.
+                </li>
+                <li>
+                  <a href="https://vercel.com/docs/domains" target="_blank" rel="noreferrer"
+                    >Vercel domains overview</a
+                  >
+                  to understand DNS, custom domains, and SSL on Vercel.
+                </li>
+                <li>
+                  <a href="https://docs.netlify.com/manage/domains/get-started-with-domains/" target="_blank" rel="noreferrer"
+                    >Netlify domains getting started</a
+                  >
+                  for domain setup paths, DNS choices, and HTTPS.
+                </li>
+                <li>
+                  <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages" target="_blank" rel="noreferrer"
+                    >What is GitHub Pages?</a
+                  >
+                  if you want the simplest static-hosting mental model.
+                </li>
+                <li>
+                  <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site" target="_blank" rel="noreferrer"
+                    >GitHub Pages custom domain guide</a
+                  >
+                  for getting a static site live on your own domain.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="mobile-and-launch">
+          <div class="section-number">13</div>
+          <div class="section-body">
+            <p class="section-label">Mobile and launch</p>
+            <h2>After the web version proves useful, treat native Swift and Kotlin as the long-term default.</h2>
+            <p>
+              Many people jump to mobile too early, and many people also assume
+              they must use a cross-platform framework forever. A better default
+              in many serious products is: prove the workflow on the web first,
+              then strongly consider native iOS with Swift and native Android
+              with Kotlin for the long run. Flutter and React Native are worth
+              understanding, but they are not automatically the right end state.
+              Codex can generate native code too, which lowers the old barrier
+              to going native.
             </p>
             <ul class="topic-list">
               <li>Validate the workflow in a browser first.</li>
-              <li>Choose one mobile path, not three.</li>
+              <li>For long-term products, native Swift and Kotlin are often the best choice.</li>
+              <li>Use Flutter or React Native when their tradeoffs truly fit the job.</li>
               <li>Watch real users struggle and write down every point of friction.</li>
               <li>Let a 90-day plan beat endless “research mode.”</li>
             </ul>
@@ -755,22 +846,46 @@
               <h3>Mobile and next-step resources</h3>
               <ul class="resource-list">
                 <li>
+                  <a href="https://developer.apple.com/swift/" target="_blank" rel="noreferrer"
+                    >Swift on Apple Developer</a
+                  >
+                  for the language behind native iPhone apps.
+                </li>
+                <li>
+                  <a href="https://developer.apple.com/swiftui/" target="_blank" rel="noreferrer"
+                    >SwiftUI</a
+                  >
+                  for modern native Apple UI development.
+                </li>
+                <li>
+                  <a href="https://developer.android.com/kotlin" target="_blank" rel="noreferrer"
+                    >Kotlin and Android</a
+                  >
+                  for the native Android path.
+                </li>
+                <li>
+                  <a href="https://developer.android.com/compose" target="_blank" rel="noreferrer"
+                    >Jetpack Compose</a
+                  >
+                  for modern Android UI development.
+                </li>
+                <li>
                   <a href="https://reactnative.dev/docs/getting-started" target="_blank" rel="noreferrer"
                     >React Native getting started</a
                   >
-                  for JavaScript-based mobile development.
+                  for JavaScript-based cross-platform development.
                 </li>
                 <li>
                   <a href="https://docs.expo.dev/tutorial/introduction/" target="_blank" rel="noreferrer"
                     >Expo tutorial</a
                   >
-                  for a smoother React Native beginner path.
+                  for a smoother React Native workflow.
                 </li>
                 <li>
                   <a href="https://docs.flutter.dev/get-started" target="_blank" rel="noreferrer"
                     >Flutter get started</a
                   >
-                  if you prefer the Flutter route.
+                  if you want to understand the Flutter option before deciding.
                 </li>
               </ul>
             </div>
@@ -779,8 +894,8 @@
               <ol>
                 <li>Week 1-2: set up ChatGPT, Codex, terminal basics, and Git basics.</li>
                 <li>Week 3-4: build tiny Python and HTML/CSS projects.</li>
-                <li>Month 2: ship one small web app for a real workflow.</li>
-                <li>Month 3: improve it with user feedback, data storage, and better prompts.</li>
+                <li>Month 2: ship one small web app for a real workflow and get it live on a real URL.</li>
+                <li>Month 3: improve it with user feedback, data storage, and a native mobile decision only if the web version earns it.</li>
               </ol>
             </div>
           </div>
