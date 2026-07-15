@@ -321,6 +321,7 @@ code {
 
 .section-body {
   padding: 1.55rem clamp(1.1rem, 2vw, 1.7rem) 1.7rem;
+  min-width: 0;
 }
 
 .section-body h2 {
@@ -375,6 +376,7 @@ code {
 .roadmap-card {
   margin-top: 1.2rem;
   padding: 1rem 1.1rem;
+  min-width: 0;
 }
 
 .quote-card p,
@@ -387,18 +389,27 @@ code {
   gap: 1rem;
   margin: 0;
   padding-left: 1.3rem;
+  min-width: 0;
 }
 
 .first-steps li {
   color: var(--text);
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .first-steps strong {
   color: var(--accent-warm);
 }
 
+.roadmap-card h3,
+.quote-card p {
+  overflow-wrap: anywhere;
+}
+
 .code-block {
   margin: 0.8rem 0 0;
+  max-width: 100%;
   padding: 0.95rem 1rem;
   overflow-x: auto;
   background: rgba(3, 12, 17, 0.82);
@@ -413,7 +424,8 @@ code {
   border-radius: 0;
   color: #d6fff8;
   line-height: 1.55;
-  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 .footer {
@@ -483,6 +495,23 @@ code {
 
   .section-body {
     padding-top: 1rem;
+  }
+
+  .roadmap-card,
+  .quote-card {
+    padding: 0.9rem;
+  }
+
+  .first-steps {
+    padding-left: 1.1rem;
+  }
+
+  .code-block {
+    padding: 0.85rem 0.9rem;
+  }
+
+  .code-block code {
+    font-size: 0.9rem;
   }
 
   .footer {
