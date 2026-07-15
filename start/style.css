@@ -52,6 +52,14 @@ li {
   font-size: 1.02rem;
 }
 
+code {
+  padding: 0.08rem 0.32rem;
+  background: rgba(79, 214, 194, 0.12);
+  border-radius: 0.4rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.94em;
+}
+
 .page-glow {
   position: fixed;
   inset: 0;
@@ -372,6 +380,40 @@ li {
 .quote-card p,
 .roadmap-card li {
   margin: 0;
+}
+
+.first-steps {
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+  padding-left: 1.3rem;
+}
+
+.first-steps li {
+  color: var(--text);
+}
+
+.first-steps strong {
+  color: var(--accent-warm);
+}
+
+.code-block {
+  margin: 0.8rem 0 0;
+  padding: 0.95rem 1rem;
+  overflow-x: auto;
+  background: rgba(3, 12, 17, 0.82);
+  border: 1px solid rgba(79, 214, 194, 0.16);
+  border-radius: var(--radius-sm);
+}
+
+.code-block code {
+  display: block;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: #d6fff8;
+  line-height: 1.55;
+  white-space: pre;
 }
 
 .footer {

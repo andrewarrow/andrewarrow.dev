@@ -33,8 +33,8 @@
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#toc">Jump to the roadmap</a>
-          <a class="button button-secondary" href="#everyday-wins"
-            >Start with everyday wins</a
+          <a class="button button-secondary" href="#start-here"
+            >See the first hour</a
           >
         </div>
         <div class="hero-grid">
@@ -55,8 +55,8 @@
           <article class="mini-card">
             <h2>Your first win</h2>
             <p>
-              It might be a Python script that cleans a text file, not a billion
-              dollar startup.
+              It might be a one-page website running on localhost, not a
+              billion dollar startup.
             </p>
           </article>
         </div>
@@ -76,10 +76,10 @@
             <p class="toc-number">01</p>
             <h3><a href="#start-here">Start here</a></h3>
             <ul>
-              <li>mindset shift</li>
-              <li>how AI changes the path</li>
-              <li>small wins over big plans</li>
-              <li>what success looks like</li>
+              <li>first hour checklist</li>
+              <li>create one local project</li>
+              <li>paste your first Codex prompt</li>
+              <li>make localhost:3000 work</li>
             </ul>
           </article>
           <article class="toc-card">
@@ -211,7 +211,7 @@
           <div class="section-number">01</div>
           <div class="section-body">
             <p class="section-label">Start here</p>
-            <h2>The goal is not to become an expert first. The goal is to become useful fast.</h2>
+            <h2>The goal is not to become an expert first. The goal is to get your first tiny project running.</h2>
             <p>
               A good beginner path in 2026 is different from the old path. You
               still need to learn the basics, but AI lets you get hands-on much
@@ -219,25 +219,76 @@
               that matter to you.
             </p>
             <ul class="topic-list">
-              <li>Stop waiting to feel ready.</li>
-              <li>Pick one real problem from your own life or job.</li>
-              <li>Use AI to explain terms and generate starter code.</li>
-              <li>Expect to learn by debugging and rewriting.</li>
+              <li>Start with one tiny build, not a giant app idea.</li>
+              <li>Use AI to explain terms while you work.</li>
+              <li>Keep the first project to one folder and one page.</li>
+              <li>The first milestone is seeing localhost:3000 load.</li>
             </ul>
+            <div class="roadmap-card">
+              <h3>If you want the clearest possible first hour, do this</h3>
+              <ol class="first-steps">
+                <li>
+                  <strong>Install the ChatGPT desktop app.</strong> Sign in with
+                  your ChatGPT account, ideally the same Plus account you just set
+                  up.
+                </li>
+                <li>
+                  <strong>Create one empty folder for the project.</strong> Name
+                  it something simple like <code>my-first-site</code>, then add
+                  that folder in ChatGPT as a local project so Codex can read and
+                  change files there.
+                </li>
+                <li>
+                  <strong>Start a new Codex task in that local project.</strong>
+                  Do not begin with React, databases, authentication, or mobile.
+                  Begin with one plain web page.
+                </li>
+                <li>
+                  <strong>Paste a tiny first prompt.</strong>
+                  <pre class="code-block"><code>Build me a simple HTML website that displays the current local time.
+Use plain HTML, CSS, and JavaScript.
+Create the files in this folder.
+When you are done, tell me exactly how to run it locally on port 3000.</code></pre>
+                </li>
+                <li>
+                  <strong>Run a local web server and open the page.</strong>
+                  After Codex creates the files, open Terminal in that same folder
+                  and run:
+                  <pre class="code-block"><code>python3 -m http.server 3000</code></pre>
+                  Then open <code>http://localhost:3000</code> in your browser.
+                  Leave that terminal window open while the site is running. Press
+                  <code>Ctrl + C</code> when you want to stop the server.
+                </li>
+              </ol>
+            </div>
+            <div class="quote-card">
+              <p>
+                Beginner rule: do not start with frameworks or startups. First
+                make one <code>index.html</code> load at
+                <code>http://localhost:3000</code>.
+              </p>
+            </div>
             <div class="resource-block">
-              <h3>Helpful starting points</h3>
+              <h3>Best first clicks</h3>
               <ul class="resource-list">
+                <li>
+                  <a href="https://learn.chatgpt.com/docs/app" target="_blank" rel="noreferrer"
+                    >ChatGPT desktop app quickstart</a
+                  >
+                  for the install, sign-in, and first-message path.
+                </li>
+                <li>
+                  <a href="https://learn.chatgpt.com/docs/projects" target="_blank" rel="noreferrer"
+                    >Projects, chats, and tasks</a
+                  >
+                  for the difference between a regular ChatGPT project and a local
+                  project connected to a folder on your computer.
+                </li>
                 <li>
                   <a href="https://chatgpt.com/codex/" target="_blank" rel="noreferrer"
                     >Codex in ChatGPT</a
                   >
                   for the product overview and current plan entry points.
-                </li>
-                <li>
-                  <a href="https://learn.chatgpt.com/docs" target="_blank" rel="noreferrer"
-                    >ChatGPT and Codex docs</a
-                  >
-                  to see what the current tooling ecosystem looks like.
                 </li>
               </ul>
             </div>
