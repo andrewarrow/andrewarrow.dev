@@ -609,6 +609,116 @@ Why this stack:
 - PostgreSQL teaches real relational data modeling from the beginning.
 - Redis, queues, search infrastructure, and distributed systems are introduced when there is a clear symptom.
 
+## Site Direction: Homepage, Beginner Roadmap, and Reddit Track
+
+The parent `../index.html` is currently a compact landing page for the AI Builder Roadmap. It explains the beginner path, repeats several roadmap benefits, and sends people to `/start/`. That worked when the site had one main artifact. Once the Reddit course exists, the root homepage should become a simpler decision page for two different visitors:
+
+- Visitor A: "I am starting from zero."
+- Visitor B: "I know the basics and want to build the Reddit-like project."
+
+The homepage should not try to teach everything. Its job should be to orient the visitor and send them to the right starting point.
+
+### Visual Thesis
+
+Keep the current dark, technical, trustworthy mood, but make the composition less document-like and more like a focused product landing page. Use one strong idea: "from first localhost page to a Reddit-scale system, one working step at a time." Avoid adding more glass-card grids. Use fewer sections, stronger hierarchy, and one clear path selector.
+
+### Content Plan for `../index.html`
+
+Recommended homepage structure:
+
+1. Hero: brand, promise, and two CTAs.
+2. Path chooser: two clear routes based on the visitor's current skill level.
+3. Course arc: a compact visual timeline from beginner basics to Reddit MVP to scaling phases.
+4. Why the course is different: prompt, run, paste errors, repeat.
+5. Coaching/contact: quiet secondary section.
+
+Hero direction:
+
+- Brand: `AI Builder Roadmap`
+- Headline idea: `Learn the basics, then build a Reddit-like app one small prompt at a time.`
+- Supporting copy: one short sentence explaining that the site starts with beginner setup and grows into a long-form project that teaches real CS concepts through a modern AI coding workflow.
+- Primary CTA: `Start From Zero` linking to `/start/`.
+- Secondary CTA: `Jump to Reddit Phase 1` linking to `/start/#build-reddit-slowly` at first, and later to a dedicated `/reddit/` or `/build-reddit/` page.
+
+Path chooser copy:
+
+- `I am new to coding`
+  - Destination: `/start/`
+  - Promise: learn ChatGPT, Codex, terminal, Git, HTML, CSS, JavaScript, and localhost first.
+- `I know the basics`
+  - Destination: `/start/#build-reddit-slowly` now, dedicated Reddit course later.
+  - Promise: start the first 90-day phase with React, Vite, Go, PostgreSQL, seeded posts, and debugging habits.
+
+The root page should remove or compress repeated explanatory sections like the current "Why This Page Exists" and "Inside The Roadmap." Those points can become one short proof/detail section instead of multiple card-heavy blocks.
+
+### How `./index.html` Should Change Later
+
+The current `./index.html` should remain the detailed beginner roadmap. It is the right place for the step-by-step basics. Do not turn it into a giant Reddit course page.
+
+Recommended role for `/start/`:
+
+- Keep it as the "start from zero" curriculum.
+- Tighten the hero so it acknowledges the larger path: basics first, then the Reddit capstone.
+- Add a clear top CTA or note for experienced users: `Already know the basics? Jump to the Reddit build.`
+- Add section 14 as a compact gateway to the Reddit track, not the full 33-month curriculum.
+- Use `plan.md` as the source for a later dedicated Reddit course page.
+
+Suggested `/start/` changes when HTML work begins:
+
+- Update the hero CTA pair:
+  - Primary: `Start with the first hour`
+  - Secondary: `Preview the Reddit build`
+- Add one sentence near the top:
+  - `This roadmap starts with the basics. The capstone is a long-form Reddit-like app built slowly from a seeded PostgreSQL feed to a system that can handle serious traffic.`
+- Add a short "Where to go next" block after section 13:
+  - `If you are still new, keep moving through the basics.`
+  - `If you already know HTML, CSS, JavaScript, Git, and localhost, start the first Reddit phase.`
+- Keep the section 14 content compact enough to scan in one minute.
+
+### Future Dedicated Reddit Course Page
+
+Eventually create a separate page, likely `/reddit/` or `/build-reddit/`, when the Reddit course becomes too large for `/start/`.
+
+That page should contain:
+
+- The full first 90-day plan.
+- The ten later 90-day phases.
+- Prompt examples.
+- Debugging examples.
+- Concept explanations.
+- "Run hot" scaling lessons.
+- Links back to prerequisite sections in `/start/`.
+
+The dedicated Reddit page should not be framed as a clone tutorial. It should be framed as a long-form learning project:
+
+> Build a Reddit-like app as if it is brand new, tiny, and unproven. Start cheap and simple. Let real pressure teach you what to rewrite.
+
+### Navigation Plan
+
+Initial nav:
+
+- `Start`
+- `Reddit Build`
+- `Coaching`
+- `About`
+
+Initial URLs:
+
+- `/` for the two-path landing page.
+- `/start/` for beginner basics.
+- `/start/#build-reddit-slowly` for the compact Reddit gateway.
+- Later `/reddit/` or `/build-reddit/` for the full course.
+
+### Interaction Thesis
+
+When frontend work begins, keep motion restrained:
+
+- Hero content fades and rises once on page load.
+- The path chooser has subtle hover/focus states that make each route feel clickable.
+- The course arc can use a simple horizontal timeline on desktop and a vertical sequence on mobile.
+
+Respect reduced-motion preferences and avoid decorative animation that distracts from the two-route decision.
+
 ## What the Future HTML Section Should Contain
 
 The future `index.html` section should be compact enough for the existing roadmap page, then link or point to a larger course later.
