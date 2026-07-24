@@ -263,6 +263,55 @@ Do not add downvotes, ranking algorithms, caching, or background jobs yet.
 
 The course should repeatedly show learners how to recover from normal failures.
 
+### Where Errors Appear: Browser, Terminal, or Both
+
+Learners need to understand that "the app is broken" is not specific enough. The first debugging skill is learning where the error appeared.
+
+Frontend errors often appear in the browser developer tools:
+
+- In Chrome: right-click the page, choose `Inspect`, then open the `Console` tab.
+- In Firefox: right-click the page, choose `Inspect`, then open the `Console` tab.
+- JavaScript errors, React rendering errors, missing variables, failed imports, and browser security warnings often show up here.
+- The `Network` tab is useful when the frontend tried to call the Go API but received a `404`, `500`, CORS error, or no response.
+
+Backend errors often appear in the terminal where the Go server is running:
+
+- Go compile errors appear when the backend fails to start.
+- Database connection errors appear when the API cannot reach PostgreSQL.
+- Handler panics or SQL errors may appear when the browser calls an API endpoint.
+- These errors may not appear in the browser console except as a generic failed request.
+
+Sometimes both places matter:
+
+- The browser console may show `Failed to fetch`.
+- The network tab may show that `/api/posts` returned `500`.
+- The Go terminal may show the real reason, such as a missing table or bad SQL query.
+
+Teach this habit early:
+
+1. Copy the browser console error if the page is blank or a button does nothing.
+2. Copy the network request details if an API call fails.
+3. Copy the Go terminal output if the backend crashes or returns `500`.
+4. Paste all relevant pieces into Codex and say where each one came from.
+
+Example prompt:
+
+```text
+The homepage is not loading posts.
+
+Browser console:
+[paste console error]
+
+Browser network tab:
+[paste failed request, status code, and response if visible]
+
+Go server terminal:
+[paste backend log output]
+
+Please tell me which layer is failing: React frontend, browser/network, Go API, or PostgreSQL.
+Explain the evidence, then make the smallest fix.
+```
+
 ### PostgreSQL Not Running
 
 Likely error examples:
@@ -345,6 +394,8 @@ Examples:
 
 - Symptom: homepage loads slowly.
   Concept: SQL indexes, query plans, `EXPLAIN`, pagination.
+- Symptom: production errors are hard to understand from user reports alone.
+  Concept: logs, metrics, traces, error tracking, Datadog, OpenTelemetry, Prometheus, Grafana, Loki, or another open-source telemetry stack.
 - Symptom: repeated requests hit the database too often.
   Concept: caching with Redis or Valkey.
 - Symptom: image uploads slow down post creation.
@@ -503,14 +554,18 @@ Goal:
 
 - Production logs.
 - Metrics.
+- Traces.
+- Error tracking.
 - Alerts.
 - Backups.
 - Rollbacks.
 - Incident drills.
+- A hosted tool like Datadog or an open-source telemetry stack when the app outgrows local terminal logs.
 
 CS concepts:
 
 - Observability
+- OpenTelemetry
 - SLOs
 - Error budgets
 - Backups and restores
@@ -599,4 +654,3 @@ Be explicit about what learners should not add yet:
 - Payments
 
 This keeps the first task small enough for a novice to actually finish.
-
