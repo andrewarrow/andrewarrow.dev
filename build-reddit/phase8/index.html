@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Phase 8: Caching and Performance | Build Reddit Slowly</title>
+  <meta name="description" content="Phase 8 of Build Reddit Slowly: add Redis or Valkey caching, TTLs, cache invalidation, rate limits, connection pooling, and load testing.">
+  <meta name="theme-color" content="#081218">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/build_reddit.css?v=1">
+  <link rel="icon" href="https://i.imgur.com/KKoEmhn.png" type="image/png">
+</head>
+<body>
+  <div class="course-shell">
+    <nav class="topbar" aria-label="Primary"><a class="brand" href="/">andrewarrow.dev</a><div class="topbar-links"><a href="/">Home</a><a href="/start/">Start From Zero</a><a href="/build-reddit/">All Phases</a><a href="/#coaching">Coaching</a></div></nav>
+    <header class="phase-hero" id="top"><div class="hero-copy"><p class="eyebrow">Phase 8 / 90 days</p><h1>Cache only the parts that are actually hot.</h1><p class="lead">Use measurement to decide where Redis or Valkey helps, then teach TTLs, invalidation, rate limits, and load testing.</p></div></header>
+    <div class="course-layout">
+      <aside class="course-sidebar" aria-label="Course navigation"><div class="sidebar-block"><h2>Phases</h2><nav><a href="/build-reddit/phase1/">1. Tiny MVP</a><a href="/build-reddit/phase2/">2. Communities</a><a href="/build-reddit/phase3/">3. Comments</a><a href="/build-reddit/phase4/">4. Moderation</a><a href="/build-reddit/phase5/">5. Search</a><a href="/build-reddit/phase6/">6. Media</a><a href="/build-reddit/phase7/">7. Workers</a><a href="/build-reddit/phase8/" aria-current="page">8. Caching</a><a href="/build-reddit/phase9/">9. Ranking</a><a href="/build-reddit/phase10/">10. Operations</a><a href="/build-reddit/phase11/">11. Millions</a></nav></div><div class="sidebar-block"><h2>On this phase</h2><nav><a href="#goal">Goal</a><a href="#build">Build</a><a href="#concepts">Concepts</a><a href="#prompts">Prompts</a><a href="#done">Done means</a></nav></div></aside>
+      <main>
+        <section class="lesson-section" id="goal"><p class="section-label">Goal</p><h2>Make performance work evidence-driven.</h2><p>This phase introduces caching after the app has endpoints worth measuring. The learner should see why caching is useful and why it creates new failure modes.</p></section>
+        <section class="lesson-section" id="build"><p class="section-label">Build</p><ul class="lesson-list"><li>Cache hot community metadata.</li><li>Cache selected feed responses with TTLs.</li><li>Add rate limits for sensitive actions.</li><li>Run simple load tests and compare before/after results.</li></ul></section>
+        <section class="lesson-section" id="concepts"><p class="section-label">Concepts</p><ul class="concept-list"><li>Redis or Valkey.</li><li>Cache keys, TTLs, and invalidation.</li><li>Connection pooling.</li><li>Load testing and slow endpoint measurement.</li></ul></section>
+        <section class="lesson-section" id="prompts"><p class="section-label">Prompt stub</p><div class="prompt-block"><h3>Expansion prompt</h3><pre><code>Identify one endpoint that is safe to cache.
+Add Redis or Valkey caching with a clear TTL.
+Explain what can go stale and how invalidation works.
+Add a simple before/after measurement.</code></pre></div></section>
+        <section class="lesson-section" id="done"><p class="section-label">Done means</p><ul class="checklist"><li>The app caches a small number of hot reads.</li><li>Stale data behavior is understood and documented.</li><li>Rate limits protect expensive or abusive actions.</li><li>The learner knows why caching is not free simplicity.</li></ul></section>
+        <nav class="phase-pager" aria-label="Phase pagination"><a href="/build-reddit/phase7/"><span>Previous</span>Phase 7: Workers</a><a href="/build-reddit/phase9/"><span>Next</span>Phase 9: Ranking and personalization</a></nav>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

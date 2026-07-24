@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Phase 9: Ranking and Personalization | Build Reddit Slowly</title>
+  <meta name="description" content="Phase 9 of Build Reddit Slowly: add hot ranking, subscribed feeds, recommendation signals, time decay, batch jobs, and materialized views.">
+  <meta name="theme-color" content="#081218">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/build_reddit.css?v=1">
+  <link rel="icon" href="https://i.imgur.com/KKoEmhn.png" type="image/png">
+</head>
+<body>
+  <div class="course-shell">
+    <nav class="topbar" aria-label="Primary"><a class="brand" href="/">andrewarrow.dev</a><div class="topbar-links"><a href="/">Home</a><a href="/start/">Start From Zero</a><a href="/build-reddit/">All Phases</a><a href="/#coaching">Coaching</a></div></nav>
+    <header class="phase-hero" id="top"><div class="hero-copy"><p class="eyebrow">Phase 9 / 90 days</p><h1>Teach feeds after the simple feed has limits.</h1><p class="lead">Move from newest and top sorting toward hot ranking, subscriptions, time decay, and simple personalization.</p></div></header>
+    <div class="course-layout">
+      <aside class="course-sidebar" aria-label="Course navigation"><div class="sidebar-block"><h2>Phases</h2><nav><a href="/build-reddit/phase1/">1. Tiny MVP</a><a href="/build-reddit/phase2/">2. Communities</a><a href="/build-reddit/phase3/">3. Comments</a><a href="/build-reddit/phase4/">4. Moderation</a><a href="/build-reddit/phase5/">5. Search</a><a href="/build-reddit/phase6/">6. Media</a><a href="/build-reddit/phase7/">7. Workers</a><a href="/build-reddit/phase8/">8. Caching</a><a href="/build-reddit/phase9/" aria-current="page">9. Ranking</a><a href="/build-reddit/phase10/">10. Operations</a><a href="/build-reddit/phase11/">11. Millions</a></nav></div><div class="sidebar-block"><h2>On this phase</h2><nav><a href="#goal">Goal</a><a href="#build">Build</a><a href="#concepts">Concepts</a><a href="#prompts">Prompts</a><a href="#done">Done means</a></nav></div></aside>
+      <main>
+        <section class="lesson-section" id="goal"><p class="section-label">Goal</p><h2>Make feed quality a visible product decision.</h2><p>This phase teaches that ranking is not magic. It is a set of product choices, data inputs, cost constraints, and tradeoffs between freshness and relevance.</p></section>
+        <section class="lesson-section" id="build"><p class="section-label">Build</p><ul class="lesson-list"><li>Hot ranking with score and age.</li><li>Subscribed feed based on joined communities.</li><li>Basic recommendation signals for communities.</li><li>Batch updates or materialized views for expensive rankings.</li></ul></section>
+        <section class="lesson-section" id="concepts"><p class="section-label">Concepts</p><ul class="concept-list"><li>Ranking algorithms.</li><li>Time decay.</li><li>Batch jobs.</li><li>Materialized views.</li><li>Freshness versus cost.</li></ul></section>
+        <section class="lesson-section" id="prompts"><p class="section-label">Prompt stub</p><div class="prompt-block"><h3>Expansion prompt</h3><pre><code>Add a simple hot ranking sort.
+Use score and post age.
+Explain the formula and its tradeoffs in beginner language.
+Do not add machine learning or complex recommendations yet.</code></pre></div></section>
+        <section class="lesson-section" id="done"><p class="section-label">Done means</p><ul class="checklist"><li>Users can browse newest, top, hot, and subscribed feeds.</li><li>The hot ranking formula is simple and explainable.</li><li>Expensive feed work is measured before being optimized.</li><li>The learner can describe why ranking changes user behavior.</li></ul></section>
+        <nav class="phase-pager" aria-label="Phase pagination"><a href="/build-reddit/phase8/"><span>Previous</span>Phase 8: Caching</a><a href="/build-reddit/phase10/"><span>Next</span>Phase 10: Reliability and operations</a></nav>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

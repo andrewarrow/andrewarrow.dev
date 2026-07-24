@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Phase 11: Scaling Toward Millions | Build Reddit Slowly</title>
+  <meta name="description" content="Phase 11 of Build Reddit Slowly: add read replicas, partitioning, service boundaries, replication lag lessons, consistency tradeoffs, and sharding only when justified.">
+  <meta name="theme-color" content="#081218">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/build_reddit.css?v=1">
+  <link rel="icon" href="https://i.imgur.com/KKoEmhn.png" type="image/png">
+</head>
+<body>
+  <div class="course-shell">
+    <nav class="topbar" aria-label="Primary"><a class="brand" href="/">andrewarrow.dev</a><div class="topbar-links"><a href="/">Home</a><a href="/start/">Start From Zero</a><a href="/build-reddit/">All Phases</a><a href="/#coaching">Coaching</a></div></nav>
+    <header class="phase-hero" id="top"><div class="hero-copy"><p class="eyebrow">Phase 11 / 90 days</p><h1>Scale after simpler fixes are exhausted.</h1><p class="lead">The final phase introduces distributed systems only after the app has earned that complexity through measured pressure.</p></div></header>
+    <div class="course-layout">
+      <aside class="course-sidebar" aria-label="Course navigation"><div class="sidebar-block"><h2>Phases</h2><nav><a href="/build-reddit/phase1/">1. Tiny MVP</a><a href="/build-reddit/phase2/">2. Communities</a><a href="/build-reddit/phase3/">3. Comments</a><a href="/build-reddit/phase4/">4. Moderation</a><a href="/build-reddit/phase5/">5. Search</a><a href="/build-reddit/phase6/">6. Media</a><a href="/build-reddit/phase7/">7. Workers</a><a href="/build-reddit/phase8/">8. Caching</a><a href="/build-reddit/phase9/">9. Ranking</a><a href="/build-reddit/phase10/">10. Operations</a><a href="/build-reddit/phase11/" aria-current="page">11. Millions</a></nav></div><div class="sidebar-block"><h2>On this phase</h2><nav><a href="#goal">Goal</a><a href="#build">Build</a><a href="#concepts">Concepts</a><a href="#prompts">Prompts</a><a href="#done">Done means</a></nav></div></aside>
+      <main>
+        <section class="lesson-section" id="goal"><p class="section-label">Goal</p><h2>Teach scale as a sequence of tradeoffs.</h2><p>This phase should make clear that scale is not one tool. It is a set of decisions about reads, writes, consistency, costs, failure modes, and team capacity.</p></section>
+        <section class="lesson-section" id="build"><p class="section-label">Build</p><ul class="lesson-list"><li>Read replicas for read-heavy endpoints.</li><li>Partitioning for large tables.</li><li>Separate services only where ownership and bottlenecks justify it.</li><li>Sharding discussion after indexes, caching, replicas, and partitioning are understood.</li></ul></section>
+        <section class="lesson-section" id="concepts"><p class="section-label">Concepts</p><ul class="concept-list"><li>Distributed systems.</li><li>Replication lag.</li><li>Consistency and CAP tradeoffs.</li><li>Data partitioning.</li><li>Service boundaries and operational cost.</li></ul></section>
+        <section class="lesson-section" id="prompts"><p class="section-label">Prompt stub</p><div class="prompt-block"><h3>Expansion prompt</h3><pre><code>Evaluate the current system for scaling bottlenecks.
+Do not jump straight to microservices or sharding.
+Explain what we should measure first and which simpler fixes come before distributed architecture.</code></pre></div></section>
+        <section class="lesson-section" id="done"><p class="section-label">Done means</p><ul class="checklist"><li>The learner understands the cost of every scaling tool introduced.</li><li>The course can explain why Reddit-scale architecture was not used on day one.</li><li>The app has a plausible path from low traffic to serious traffic.</li><li>Future rewrites are tied to measured pressure, not architecture theater.</li></ul></section>
+        <nav class="phase-pager" aria-label="Phase pagination"><a href="/build-reddit/phase10/"><span>Previous</span>Phase 10: Operations</a><a href="/build-reddit/"><span>Complete</span>Back to course hub</a></nav>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

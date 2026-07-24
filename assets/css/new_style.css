@@ -112,6 +112,14 @@ code {
   overflow: hidden;
 }
 
+.home-hero {
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: clamp(2rem, 4vw, 3rem);
+}
+
 .hero::after {
   content: "";
   position: absolute;
@@ -121,6 +129,17 @@ code {
   border-radius: 50%;
   background: radial-gradient(circle, rgba(79, 214, 194, 0.24), transparent 68%);
   filter: blur(8px);
+}
+
+.home-hero-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 68rem;
+  padding-block: clamp(1rem, 3vw, 2.25rem);
+}
+
+.home-hero .topbar {
+  margin-bottom: 1.5rem;
 }
 
 .topbar {
@@ -195,11 +214,30 @@ code {
   letter-spacing: -0.05em;
 }
 
+.home-hero h1 {
+  max-width: 16ch;
+  font-size: clamp(2.7rem, 6vw, 4.7rem);
+}
+
 .lead {
   max-width: 46rem;
   margin: 1.2rem 0 0;
   color: var(--muted);
   font-size: clamp(1.08rem, 2vw, 1.3rem);
+}
+
+.hero-note {
+  max-width: 48rem;
+  margin: 1.35rem 0 0;
+  color: var(--muted);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.94rem;
+}
+
+.hero-note span {
+  display: inline-block;
+  margin: 0 0.45rem;
+  color: var(--accent-warm);
 }
 
 .hero-actions,
@@ -208,6 +246,125 @@ code {
   flex-wrap: wrap;
   gap: 0.95rem;
   margin-top: 2rem;
+}
+
+.path-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.35rem;
+}
+
+.path-card {
+  display: grid;
+  gap: 0.55rem;
+  min-height: 13rem;
+  padding: clamp(1.15rem, 2vw, 1.5rem);
+  align-content: space-between;
+  color: var(--text);
+  text-decoration: none;
+  background: rgba(18, 42, 54, 0.72);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+.path-card:hover,
+.path-card:focus-visible {
+  color: var(--text);
+  transform: translateY(-3px);
+  border-color: rgba(79, 214, 194, 0.52);
+  background: rgba(20, 52, 65, 0.94);
+}
+
+.path-card strong {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  line-height: 1.05;
+}
+
+.path-card span:last-child {
+  max-width: 32rem;
+  color: var(--muted);
+}
+
+.path-kicker {
+  color: var(--accent-warm);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.arc-list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.55rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.arc-list li {
+  min-width: 0;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(79, 214, 194, 0.3);
+}
+
+.arc-list span {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.84rem;
+}
+
+.arc-list strong {
+  display: block;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.16rem;
+  line-height: 1.15;
+}
+
+.arc-list p {
+  margin: 0.55rem 0 0;
+  color: var(--muted);
+}
+
+.method-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.method-copy h2 {
+  margin: 0.2rem 0 0;
+  max-width: 20ch;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  line-height: 1.04;
+}
+
+.method-copy p:last-child {
+  margin: 0.95rem 0 0;
+  max-width: 44rem;
+  color: var(--muted);
+}
+
+.method-terminal {
+  margin-top: 0;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.95rem;
+  margin-top: 1.4rem;
 }
 
 .button {
@@ -443,8 +600,14 @@ code {
   .split-layout,
   .three-up,
   .two-up,
-  .coaching-grid {
+  .coaching-grid,
+  .path-grid,
+  .method-section {
     grid-template-columns: 1fr;
+  }
+
+  .arc-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -456,6 +619,10 @@ code {
 
   .hero {
     padding: 1rem 1rem 1.4rem;
+  }
+
+  .home-hero {
+    min-height: auto;
   }
 
   .topbar {
@@ -470,6 +637,14 @@ code {
 
   .hero h1 {
     max-width: none;
+  }
+
+  .arc-list {
+    grid-template-columns: 1fr;
+  }
+
+  .path-card {
+    min-height: 0;
   }
 
   .section {

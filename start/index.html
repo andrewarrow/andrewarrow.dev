@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Source+Sans+3:wght@400;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css?v=2" />
+    <link rel="stylesheet" href="style.css?v=3" />
   </head>
   <body>
     <div class="page-glow" aria-hidden="true"></div>
@@ -25,12 +25,13 @@
           <div class="topbar-links">
             <a href="/">Home</a>
             <a href="#toc">Roadmap</a>
+            <a href="/build-reddit/">Reddit Build</a>
             <a href="/#coaching">Coaching</a>
             <a href="/#about">About Andrew</a>
           </div>
         </nav>
 
-        <p class="eyebrow">Beginner roadmap • updated July 14, 2026</p>
+        <p class="eyebrow">Beginner roadmap • updated July 24, 2026</p>
         <h1>
           Learn coding and technology basics with AI tools, even if you are
           starting from zero.
@@ -39,12 +40,19 @@
           This page is for people in other industries who have an app idea, a
           workflow problem, or a pile of repetitive tasks and are starting to
           realize that tools like ChatGPT and Codex can help them build useful
-          things themselves.
+          things themselves. The capstone is a long-form Reddit-like web app
+          built slowly from a seeded PostgreSQL feed to a system that can handle
+          serious traffic.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#toc">Jump to the roadmap</a>
-          <a class="button button-secondary" href="#start-here"
-            >See the first hour</a
+          <a class="button button-primary" href="#start-here"
+            >Start with the first hour</a
+          >
+          <a class="button button-secondary" href="#toc"
+            >Jump to the roadmap</a
+          >
+          <a class="button button-secondary" href="/build-reddit/"
+            >Preview the Reddit build</a
           >
         </div>
         <div class="hero-grid">
@@ -63,10 +71,9 @@
             </p>
           </article>
           <article class="mini-card">
-            <h2>Your first win</h2>
+            <h2>The capstone</h2>
             <p>
-              It might be a one-page website running on localhost, not a
-              billion dollar startup.
+              Build a Reddit-like app in phases after the basics are familiar.
             </p>
           </article>
         </div>
@@ -75,7 +82,7 @@
       <nav class="toc" id="toc" aria-label="Table of contents">
         <div class="section-intro">
           <p class="section-label">Table of contents</p>
-          <h2>13 categories to go from curious to capable</h2>
+          <h2>14 categories to go from curious to capable</h2>
           <p>
             Each category includes a few subtopics so you can see the shape of
             the journey before you dive in.
@@ -211,6 +218,16 @@
               <li>feedback loops</li>
               <li>first users</li>
               <li>90-day roadmap</li>
+            </ul>
+          </article>
+          <article class="toc-card">
+            <p class="toc-number">14</p>
+            <h3><a href="#build-reddit-slowly">Build Reddit slowly</a></h3>
+            <ul>
+              <li>seeded PostgreSQL feed</li>
+              <li>React, Vite, Go</li>
+              <li>copy errors into Codex</li>
+              <li>scale when parts run hot</li>
             </ul>
           </article>
         </div>
@@ -952,6 +969,61 @@ When you are done, tell me exactly how to run it locally on port 3000.</code></p
             </div>
           </div>
         </section>
+
+        <section class="content-section" id="build-reddit-slowly">
+          <div class="section-number">14</div>
+          <div class="section-body">
+            <p class="section-label">Build Reddit slowly</p>
+            <h2>Use the basics to start one serious long-form project: a Reddit-like app.</h2>
+            <p>
+              The first assignment is not "build Reddit." The first assignment
+              is "show eight seeded posts from PostgreSQL on a simple logged-out
+              homepage." That is enough to learn the browser, the backend, the
+              database, the terminal, and the habit that matters most: run it,
+              read the error, paste the error back into Codex, and keep going.
+            </p>
+            <ul class="topic-list">
+              <li>Start with a logged-out feed.</li>
+              <li>Use React, Vite, Go, and PostgreSQL.</li>
+              <li>Copy browser console and Go terminal errors into Codex.</li>
+              <li>Add Redis, queues, telemetry, and scale work only when needed.</li>
+            </ul>
+            <div class="quote-card">
+              <p>
+                We are building a Reddit-like app as if it is brand new, tiny,
+                and unproven. Start cheap and simple. Let real pressure teach
+                you what to rewrite.
+              </p>
+            </div>
+            <div class="roadmap-card">
+              <h3>Phase 1: the first 90 days</h3>
+              <ol>
+                <li>Weeks 1-2: create the React/Vite frontend, Go backend, and a health check.</li>
+                <li>Weeks 3-4: seed communities and posts in PostgreSQL, then display a simple homepage feed.</li>
+                <li>Weeks 5-8: add post creation, post detail pages, and flat comments.</li>
+                <li>Weeks 9-12: add accounts, sessions, voting, sorting, and a first low-cost deployment.</li>
+              </ol>
+            </div>
+            <div class="resource-block">
+              <h3>Choose your next step</h3>
+              <ul class="resource-list">
+                <li>
+                  If the terms on this page still feel new, keep moving through
+                  the beginner roadmap first.
+                </li>
+                <li>
+                  If you already know HTML, CSS, JavaScript, Git, and
+                  localhost, open
+                  <a href="/build-reddit/phase1/">Phase 1 of the Reddit build</a>.
+                </li>
+                <li>
+                  To see the full course arc, open the
+                  <a href="/build-reddit/">Build Reddit Slowly course hub</a>.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer class="site-footer">
@@ -962,6 +1034,7 @@ When you are done, tell me exactly how to run it locally on port 3000.</code></p
           </div>
           <div class="footer-links">
             <a href="/">Home</a>
+            <a href="/build-reddit/">Reddit Build</a>
             <a href="#top">Back to top</a>
             <a href="/privacy/">Privacy</a>
             <a href="https://www.linkedin.com/in/andrewarrow/" target="_blank" rel="noreferrer">LinkedIn</a>

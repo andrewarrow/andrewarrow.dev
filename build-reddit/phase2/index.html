@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Phase 2: Communities and Posting | Build Reddit Slowly</title>
+  <meta name="description" content="Phase 2 of Build Reddit Slowly: add subreddit-like communities, moderators, rules, post types, slugs, and authorization.">
+  <meta name="theme-color" content="#081218">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/build_reddit.css?v=1">
+  <link rel="icon" href="https://i.imgur.com/KKoEmhn.png" type="image/png">
+</head>
+<body>
+  <div class="course-shell">
+    <nav class="topbar" aria-label="Primary">
+      <a class="brand" href="/">andrewarrow.dev</a>
+      <div class="topbar-links">
+        <a href="/">Home</a>
+        <a href="/start/">Start From Zero</a>
+        <a href="/build-reddit/">All Phases</a>
+        <a href="/#coaching">Coaching</a>
+      </div>
+    </nav>
+
+    <header class="phase-hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Phase 2 / 90 days</p>
+        <h1>Turn one feed into real communities.</h1>
+        <p class="lead">Add subreddit-like spaces, community pages, rules, moderators, and post types while keeping the codebase understandable.</p>
+      </div>
+    </header>
+
+    <div class="course-layout">
+      <aside class="course-sidebar" aria-label="Course navigation">
+        <div class="sidebar-block">
+          <h2>Phases</h2>
+          <nav>
+            <a href="/build-reddit/phase1/">1. Tiny MVP</a>
+            <a href="/build-reddit/phase2/" aria-current="page">2. Communities</a>
+            <a href="/build-reddit/phase3/">3. Comments</a>
+            <a href="/build-reddit/phase4/">4. Moderation</a>
+            <a href="/build-reddit/phase5/">5. Search</a>
+            <a href="/build-reddit/phase6/">6. Media</a>
+            <a href="/build-reddit/phase7/">7. Workers</a>
+            <a href="/build-reddit/phase8/">8. Caching</a>
+            <a href="/build-reddit/phase9/">9. Ranking</a>
+            <a href="/build-reddit/phase10/">10. Operations</a>
+            <a href="/build-reddit/phase11/">11. Millions</a>
+          </nav>
+        </div>
+        <div class="sidebar-block">
+          <h2>On this phase</h2>
+          <nav>
+            <a href="#goal">Goal</a>
+            <a href="#build">Build</a>
+            <a href="#concepts">Concepts</a>
+            <a href="#prompts">Prompts</a>
+            <a href="#done">Done means</a>
+          </nav>
+        </div>
+      </aside>
+
+      <main>
+        <section class="lesson-section" id="goal">
+          <p class="section-label">Goal</p>
+          <h2>Make communities the main organizing unit.</h2>
+          <p>This phase moves beyond a global feed. Posts now belong to named communities with URLs, rules, and basic moderator permissions.</p>
+        </section>
+        <section class="lesson-section" id="build">
+          <p class="section-label">Build</p>
+          <ul class="lesson-list">
+            <li>Community creation and edit screens.</li>
+            <li>Community pages with newest and top post sorting.</li>
+            <li>Moderator list, community rules, and simple access checks.</li>
+            <li>Text posts and link posts with clear validation.</li>
+          </ul>
+        </section>
+        <section class="lesson-section" id="concepts">
+          <p class="section-label">Concepts</p>
+          <ul class="concept-list">
+            <li>Authorization and ownership.</li>
+            <li>Slugs and unique constraints.</li>
+            <li>Relational modeling for communities, posts, users, and moderators.</li>
+            <li>Server-side validation as the source of truth.</li>
+          </ul>
+        </section>
+        <section class="lesson-section" id="prompts">
+          <p class="section-label">Prompt stub</p>
+          <div class="prompt-block">
+            <h3>Expansion prompt</h3>
+            <pre><code>Add subreddit-like communities to the existing MVP.
+Keep the architecture simple.
+Add community pages, moderator permissions, rules, and text/link post types.
+Do not add threaded comments, search, media uploads, caching, or queues yet.</code></pre>
+          </div>
+        </section>
+        <section class="lesson-section" id="done">
+          <p class="section-label">Done means</p>
+          <ul class="checklist">
+            <li>Every post belongs to a community.</li>
+            <li>Community pages are useful logged in or logged out.</li>
+            <li>Moderators can edit rules and basic community settings.</li>
+            <li>The learner understands authorization before moderation gets complex.</li>
+          </ul>
+        </section>
+        <nav class="phase-pager" aria-label="Phase pagination">
+          <a href="/build-reddit/phase1/"><span>Previous</span>Phase 1: Tiny MVP</a>
+          <a href="/build-reddit/phase3/"><span>Next</span>Phase 3: Comments become real</a>
+        </nav>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

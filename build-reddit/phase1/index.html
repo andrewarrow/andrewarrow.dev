@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Phase 1: 90-Day Tiny MVP | Build Reddit Slowly</title>
+  <meta name="description" content="Phase 1 of Build Reddit Slowly: create a low-traffic Reddit-like MVP with React, Vite, Go, PostgreSQL, seeded posts, comments, accounts, voting, and deployment.">
+  <meta name="theme-color" content="#081218">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/build_reddit.css?v=1">
+  <link rel="icon" href="https://i.imgur.com/KKoEmhn.png" type="image/png">
+</head>
+<body>
+  <div class="course-shell">
+    <nav class="topbar" aria-label="Primary">
+      <a class="brand" href="/">andrewarrow.dev</a>
+      <div class="topbar-links">
+        <a href="/">Home</a>
+        <a href="/start/">Start From Zero</a>
+        <a href="/build-reddit/">All Phases</a>
+        <a href="/#coaching">Coaching</a>
+      </div>
+    </nav>
+
+    <header class="phase-hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Phase 1 / 90 days</p>
+        <h1>Build the tiny Reddit MVP before chasing scale.</h1>
+        <p class="lead">
+          Start with a logged-out homepage that reads seeded posts from PostgreSQL. Then add creation, comments, accounts, voting, sorting, and a first low-cost deployment.
+        </p>
+        <div class="phase-actions">
+          <a class="button button-primary" href="#weeks-1-2">Start weeks 1-2</a>
+          <a class="button button-secondary" href="/build-reddit/">Back to course hub</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="course-layout">
+      <aside class="course-sidebar" aria-label="Course navigation">
+        <div class="sidebar-block">
+          <h2>Phases</h2>
+          <nav>
+            <a href="/build-reddit/phase1/" aria-current="page">1. Tiny MVP</a>
+            <a href="/build-reddit/phase2/">2. Communities</a>
+            <a href="/build-reddit/phase3/">3. Comments</a>
+            <a href="/build-reddit/phase4/">4. Moderation</a>
+            <a href="/build-reddit/phase5/">5. Search</a>
+            <a href="/build-reddit/phase6/">6. Media</a>
+            <a href="/build-reddit/phase7/">7. Workers</a>
+            <a href="/build-reddit/phase8/">8. Caching</a>
+            <a href="/build-reddit/phase9/">9. Ranking</a>
+            <a href="/build-reddit/phase10/">10. Operations</a>
+            <a href="/build-reddit/phase11/">11. Millions</a>
+          </nav>
+        </div>
+        <div class="sidebar-block">
+          <h2>On this phase</h2>
+          <nav>
+            <a href="#goal">Goal</a>
+            <a href="#weeks-1-2">Weeks 1-2</a>
+            <a href="#weeks-3-4">Weeks 3-4</a>
+            <a href="#weeks-5-8">Weeks 5-8</a>
+            <a href="#weeks-9-12">Weeks 9-12</a>
+            <a href="#debugging">Debugging loop</a>
+            <a href="#done">Done means</a>
+          </nav>
+        </div>
+      </aside>
+
+      <main>
+        <section class="lesson-section" id="goal">
+          <p class="section-label">Goal</p>
+          <h2>A low-traffic app someone can actually click through.</h2>
+          <p>
+            The first phase teaches the full request cycle without pretending the app already has millions of users. The system should stay simple, cheap, and easy to understand.
+          </p>
+          <ul class="checklist">
+            <li>React and Vite frontend using plain JavaScript.</li>
+            <li>Go backend with JSON API endpoints.</li>
+            <li>PostgreSQL schema, migrations, and seed data.</li>
+            <li>Logged-out feed, post detail pages, comments, accounts, voting, sorting, and deployment.</li>
+          </ul>
+        </section>
+
+        <section class="lesson-section" id="weeks-1-2">
+          <p class="section-label">Weeks 1-2</p>
+          <h2>Set up the smallest working stack.</h2>
+          <div class="lesson-grid">
+            <div class="lesson-panel">
+              <h3>Build</h3>
+              <p>Create the Vite app, Go server, health endpoint, basic project layout, and first Git checkpoints.</p>
+            </div>
+            <div class="lesson-panel">
+              <h3>Learn</h3>
+              <p>Localhost, ports, HTTP, JSON, environment variables, and how frontend and backend processes run at the same time.</p>
+            </div>
+          </div>
+          <div class="prompt-block">
+            <h3>Starter prompt</h3>
+            <pre><code>I want to start a beginner-friendly Reddit-like web app.
+Use plain JavaScript, React, Vite, a Go backend, and PostgreSQL.
+Do not use TypeScript.
+Do not add auth, comments, voting, caching, queues, Docker, Redis, or search yet.
+
+First, inspect this empty project folder and propose the smallest file structure.
+Then create only the setup needed to show a React homepage and a Go health check endpoint locally.
+Explain the commands I should run after you make the files.</code></pre>
+          </div>
+        </section>
+
+        <section class="lesson-section" id="weeks-3-4">
+          <p class="section-label">Weeks 3-4</p>
+          <h2>Read seeded posts from PostgreSQL.</h2>
+          <p>
+            Build the first real feature: a simple logged-out homepage inspired by a Reddit feed, but much smaller.
+          </p>
+          <ul class="lesson-list">
+            <li>Create community and post tables.</li>
+            <li>Seed eight realistic posts.</li>
+            <li>Add `GET /api/posts` in Go.</li>
+            <li>Fetch and render posts in React with loading, empty, and error states.</li>
+          </ul>
+          <div class="prompt-block">
+            <h3>Feature prompt</h3>
+            <pre><code>Add the first real feature: a logged-out homepage feed.
+
+Requirements:
+- Use PostgreSQL as the source of truth.
+- Add a small schema for communities and posts.
+- Add seed data with 8 realistic posts.
+- Add a Go endpoint that returns posts as JSON.
+- Update the React homepage to fetch and display those posts.
+- Keep the UI simple and readable, inspired by a Reddit feed but not a clone.
+- Include loading, empty, and error states.
+- Do not add login, comments, voting behavior, infinite scroll, Redis, or queues yet.</code></pre>
+          </div>
+        </section>
+
+        <section class="lesson-section" id="weeks-5-8">
+          <p class="section-label">Weeks 5-8</p>
+          <h2>Add the first user workflows.</h2>
+          <ul class="lesson-list">
+            <li>Create-post form with server validation.</li>
+            <li>Post detail route with one post and its comments.</li>
+            <li>Flat comment form, still no threaded replies.</li>
+            <li>Friendly frontend states for validation and failed requests.</li>
+          </ul>
+        </section>
+
+        <section class="lesson-section" id="weeks-9-12">
+          <p class="section-label">Weeks 9-12</p>
+          <h2>Add accounts, voting, sorting, and deployment.</h2>
+          <ul class="lesson-list">
+            <li>Email/password signup, login, logout, and current-user endpoint.</li>
+            <li>Cookie-based sessions and secure password hashing.</li>
+            <li>Post upvotes with a uniqueness constraint.</li>
+            <li>Feed sorting by newest and top.</li>
+            <li>Deploy the app to a low-cost host with a production PostgreSQL database.</li>
+          </ul>
+        </section>
+
+        <section class="lesson-section" id="debugging">
+          <p class="section-label">Debugging loop</p>
+          <h2>Learn where the error came from before asking for the fix.</h2>
+          <p>
+            Browser errors come from Chrome or Firefox DevTools. Backend errors come from the terminal running Go. A failed API request may require both.
+          </p>
+          <div class="prompt-block">
+            <h3>Error prompt</h3>
+            <pre><code>The homepage is not loading posts.
+
+Browser console:
+[paste console error]
+
+Browser network tab:
+[paste failed request, status code, and response if visible]
+
+Go server terminal:
+[paste backend log output]
+
+Please tell me which layer is failing: React frontend, browser/network, Go API, or PostgreSQL.
+Explain the evidence, then make the smallest fix.</code></pre>
+          </div>
+        </section>
+
+        <section class="lesson-section" id="done">
+          <p class="section-label">Done means</p>
+          <h2>The MVP works locally and has one small deployment.</h2>
+          <ul class="checklist">
+            <li>A logged-out visitor can read the feed.</li>
+            <li>A logged-in user can create posts and comments.</li>
+            <li>Voting and sorting work without duplicate votes.</li>
+            <li>The app has basic deployment instructions and a production URL.</li>
+            <li>The learner can recover from common frontend, backend, and PostgreSQL errors.</li>
+          </ul>
+        </section>
+
+        <nav class="phase-pager" aria-label="Phase pagination">
+          <a href="/build-reddit/"><span>Back</span>Course hub</a>
+          <a href="/build-reddit/phase2/"><span>Next</span>Phase 2: Communities and posting</a>
+        </nav>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

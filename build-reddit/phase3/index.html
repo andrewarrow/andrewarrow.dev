@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Phase 3: Comments Become Real | Build Reddit Slowly</title>
+  <meta name="description" content="Phase 3 of Build Reddit Slowly: add threaded comments, comment voting, collapsed trees, deleted states, and recursive data modeling.">
+  <meta name="theme-color" content="#081218">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/build_reddit.css?v=1">
+  <link rel="icon" href="https://i.imgur.com/KKoEmhn.png" type="image/png">
+</head>
+<body>
+  <div class="course-shell">
+    <nav class="topbar" aria-label="Primary">
+      <a class="brand" href="/">andrewarrow.dev</a>
+      <div class="topbar-links">
+        <a href="/">Home</a>
+        <a href="/start/">Start From Zero</a>
+        <a href="/build-reddit/">All Phases</a>
+        <a href="/#coaching">Coaching</a>
+      </div>
+    </nav>
+    <header class="phase-hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Phase 3 / 90 days</p>
+        <h1>Make comments feel like a real conversation system.</h1>
+        <p class="lead">Replace flat comments with threaded replies, comment voting, collapsed branches, and deleted states.</p>
+      </div>
+    </header>
+    <div class="course-layout">
+      <aside class="course-sidebar" aria-label="Course navigation">
+        <div class="sidebar-block"><h2>Phases</h2><nav>
+          <a href="/build-reddit/phase1/">1. Tiny MVP</a><a href="/build-reddit/phase2/">2. Communities</a><a href="/build-reddit/phase3/" aria-current="page">3. Comments</a><a href="/build-reddit/phase4/">4. Moderation</a><a href="/build-reddit/phase5/">5. Search</a><a href="/build-reddit/phase6/">6. Media</a><a href="/build-reddit/phase7/">7. Workers</a><a href="/build-reddit/phase8/">8. Caching</a><a href="/build-reddit/phase9/">9. Ranking</a><a href="/build-reddit/phase10/">10. Operations</a><a href="/build-reddit/phase11/">11. Millions</a>
+        </nav></div>
+        <div class="sidebar-block"><h2>On this phase</h2><nav><a href="#goal">Goal</a><a href="#build">Build</a><a href="#concepts">Concepts</a><a href="#prompts">Prompts</a><a href="#done">Done means</a></nav></div>
+      </aside>
+      <main>
+        <section class="lesson-section" id="goal"><p class="section-label">Goal</p><h2>Teach tree-shaped data through comments.</h2><p>Comments are where a simple CRUD app becomes a real data-modeling lesson. The learner should see why nesting, sorting, and deleted states create tradeoffs.</p></section>
+        <section class="lesson-section" id="build"><p class="section-label">Build</p><ul class="lesson-list"><li>Threaded replies with parent comment IDs.</li><li>Comment voting and score display.</li><li>Collapse and expand branches in the UI.</li><li>Deleted comments that preserve thread shape.</li></ul></section>
+        <section class="lesson-section" id="concepts"><p class="section-label">Concepts</p><ul class="concept-list"><li>Trees and recursion.</li><li>Recursive rendering in React.</li><li>Recursive SQL queries or materialized paths.</li><li>Pagination tradeoffs for large comment threads.</li></ul></section>
+        <section class="lesson-section" id="prompts"><p class="section-label">Prompt stub</p><div class="prompt-block"><h3>Expansion prompt</h3><pre><code>Add threaded comments to the existing post detail page.
+Teach me the tradeoffs between parent_id recursion and materialized paths.
+Start with the simplest version that works for low traffic.
+Do not add caching or real-time updates yet.</code></pre></div></section>
+        <section class="lesson-section" id="done"><p class="section-label">Done means</p><ul class="checklist"><li>Users can reply to comments.</li><li>Nested comments render clearly on mobile and desktop.</li><li>Deleted comments do not break the thread.</li><li>The learner can explain how a tree differs from a flat list.</li></ul></section>
+        <nav class="phase-pager" aria-label="Phase pagination"><a href="/build-reddit/phase2/"><span>Previous</span>Phase 2: Communities</a><a href="/build-reddit/phase4/"><span>Next</span>Phase 4: Moderation and safety</a></nav>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

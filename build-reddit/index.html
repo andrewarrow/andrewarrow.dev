@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Build Reddit Slowly | AI Builder Roadmap</title>
+  <meta name="description" content="A long-form AI coding course for building a Reddit-like web app slowly, starting with a simple PostgreSQL-backed homepage and growing toward scale only when needed.">
+  <meta name="theme-color" content="#081218">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/build_reddit.css?v=1">
+  <link rel="icon" href="https://i.imgur.com/KKoEmhn.png" type="image/png">
+</head>
+<body>
+  <div class="course-shell">
+    <nav class="topbar" aria-label="Primary">
+      <a class="brand" href="/">andrewarrow.dev</a>
+      <div class="topbar-links">
+        <a href="/">Home</a>
+        <a href="/start/">Start From Zero</a>
+        <a href="/build-reddit/" aria-current="page">Reddit Build</a>
+        <a href="/#coaching">Coaching</a>
+      </div>
+    </nav>
+
+    <header class="course-hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Build Reddit Slowly</p>
+        <h1>Build a Reddit-like app as if it is brand new.</h1>
+        <p class="lead">
+          Start with a logged-out feed from seeded PostgreSQL posts. Keep the system cheap, simple, and understandable until traffic proves which parts need to be rewritten.
+        </p>
+        <div class="button-row">
+          <a class="button button-primary" href="/build-reddit/phase1/">Start Phase 1</a>
+          <a class="button button-secondary" href="/start/">Learn the basics first</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="course-section" id="method">
+        <div class="section-heading">
+          <p class="section-label">Course Method</p>
+          <h2>Prompt, run, inspect, paste the real error, repeat.</h2>
+          <p>
+            The course teaches coding through a modern AI workflow. You use Codex to move quickly, but you still learn the concepts needed to steer the work, read failures, and make better decisions.
+          </p>
+        </div>
+        <ul class="phase-points">
+          <li>Frontend errors often come from the Chrome or Firefox console and network tab.</li>
+          <li>Backend errors often come from the terminal running the Go server.</li>
+          <li>Database errors often come from PostgreSQL setup, migrations, seed data, or SQL queries.</li>
+          <li>Production errors eventually need telemetry: logs, metrics, traces, alerts, and error tracking.</li>
+        </ul>
+      </section>
+
+      <section class="course-section" id="phases">
+        <div class="section-heading">
+          <p class="section-label">Complete Course Arc</p>
+          <h2>One 90-day MVP, then ten more 90-day phases toward serious scale.</h2>
+          <p>
+            These are course stubs now. Each phase has its own page, section anchors, previous/next navigation, and a consistent path back home.
+          </p>
+        </div>
+
+        <div class="phase-grid">
+          <a class="phase-card" href="/build-reddit/phase1/">
+            <span class="phase-number">Phase 1</span>
+            <strong>90-day tiny MVP</strong>
+            <span>React, Vite, Go, PostgreSQL, seeded posts, comments, accounts, voting, and first deploy.</span>
+          </a>
+          <a class="phase-card" href="/build-reddit/phase2/">
+            <span class="phase-number">Phase 2</span>
+            <strong>Communities and posting</strong>
+            <span>Community pages, moderators, rules, text posts, link posts, slugs, and authorization.</span>
+          </a>
+          <a class="phase-card" href="/build-reddit/phase3/">
+            <span class="phase-number">Phase 3</span>
+            <strong>Comments become real</strong>
+            <span>Threaded replies, comment votes, collapsing trees, deleted states, and tree modeling.</span>
+          </a>
+          <a class="phase-card" href="/build-reddit/phase4/">
+            <span class="phase-number">Phase 4</span>
+            <strong>Moderation and safety</strong>
+            <span>Reports, removals, bans, mod queues, audit trails, and role-based access control.</span>
+          </a>
+          <a class="phase-card" href="/build-reddit/phase5/">
+            <span class="phase-number">Phase 5</span>
+            <strong>Search and discovery</strong>
+            <span>Post search, community search, explore pages, PostgreSQL full-text search, and ranking basics.</span>
+          </a>
+          <a class="phase-card" href="/build-reddit/phase6/">
+            <span class="phase-number">Phase 6</span>
+            <strong>Media and storage</strong>
+            <span>Image posts, avatars, link previews, object storage, MIME checks, and CDN basics.</span>
+          </a>
+          <a class="phase-card" href="/build-reddit/phase7/">
+            <span class="phase-number">Phase 7</span>
+            <strong>Notifications and workers</strong>
+            <span>Reply notifications, email, queues, retries, workers, idempotency, and dead-letter queues.</span>
+          </a>
+          <a class="phase-card" href="/build-reddit/phase8/">
+            <span class="phase-number">Phase 8</span>
+            <strong>Caching and performance</strong>
+            <span>Hot feeds, Redis or Valkey, TTLs, cache invalidation, rate limits, and load testing.</span>
+          </a>
+          <a class="phase-card" href="/build-reddit/phase9/">
+            <span class="phase-number">Phase 9</span>
+            <strong>Ranking and personalization</strong>
+            <span>Hot sorting, subscribed feeds, time decay, batch jobs, and materialized views.</span>
+          </a>
+          <a class="phase-card" href="/build-reddit/phase10/">
+            <span class="phase-number">Phase 10</span>
+            <strong>Reliability and operations</strong>
+            <span>Logs, metrics, traces, alerts, backups, rollbacks, OpenTelemetry, and incident practice.</span>
+          </a>
+          <a class="phase-card" href="/build-reddit/phase11/">
+            <span class="phase-number">Phase 11</span>
+            <strong>Scaling toward millions</strong>
+            <span>Read replicas, partitioning, service boundaries, replication lag, consistency, and sharding tradeoffs.</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="course-footer">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Build Reddit Slowly</p>
+          <p class="footer-copy">A long-form project for learning AI-assisted software engineering through real pressure.</p>
+        </div>
+        <div class="footer-links">
+          <a href="/">Home</a>
+          <a href="/start/">Start</a>
+          <a href="#top">Back to top</a>
+          <a href="mailto:ai@andrewarrow.dev">ai@andrewarrow.dev</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
