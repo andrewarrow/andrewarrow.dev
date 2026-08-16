@@ -1,0 +1,20 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "755R3VBZ84.dev.andrewarrow.groupicorn"
+        ],
+        "components": [
+          {
+            "/": "/groupicorn/",
+            "?": {
+              "h": "?*"
+            },
+            "comment": "Opens reusable Groupicorn herd invitations."
+          }
+        ]
+      }
+    ]
+  }
+}

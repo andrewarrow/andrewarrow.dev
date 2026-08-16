@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#310f5e">
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="Open Groupicorn to join your herd.">
+    <title>Join your herd · Groupicorn</title>
+    <style>
+      :root {
+        --plum: #310f5e;
+        --plum-deep: #18062f;
+        --cream: #fffaf0;
+        --ink: #101233;
+        --muted: #625d72;
+        --pink: #f73389;
+        --yellow: #ffbf12;
+        --mint: #2fc2a8;
+        --blue: #0a6ddb;
+        --purple: #6b29c7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        min-width: 320px;
+        background: var(--cream);
+      }
+
+      body {
+        min-height: 100svh;
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 70% 18%, rgba(255, 191, 18, 0.2), transparent 27rem),
+          linear-gradient(145deg, #fffdf7 0%, var(--cream) 58%, #f8efff 100%);
+        font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      main {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.88fr);
+        min-height: 100svh;
+        overflow: hidden;
+      }
+
+      .copy {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: min(100%, 43rem);
+        padding: max(2rem, env(safe-area-inset-top)) clamp(2rem, 7vw, 7rem)
+          max(2rem, env(safe-area-inset-bottom));
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin: 0 0 clamp(3.5rem, 11vh, 7.5rem);
+        color: var(--plum);
+        font-size: 1.05rem;
+        font-weight: 800;
+        letter-spacing: 0.01em;
+      }
+
+      .brand-mark {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.65rem;
+        box-shadow: 0 0.4rem 1rem rgba(49, 15, 94, 0.16);
+      }
+
+      .eyebrow {
+        margin: 0 0 1rem;
+        color: var(--purple);
+        font-size: 0.82rem;
+        font-weight: 800;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        max-width: 9ch;
+        margin: 0;
+        font-size: clamp(3.25rem, 7vw, 6.9rem);
+        font-weight: 850;
+        letter-spacing: -0.065em;
+        line-height: 0.9;
+      }
+
+      .lede {
+        max-width: 31rem;
+        margin: 1.75rem 0 0;
+        color: var(--muted);
+        font-size: clamp(1.05rem, 1.8vw, 1.28rem);
+        line-height: 1.55;
+      }
+
+      .action {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        min-height: 3.5rem;
+        margin-top: 2rem;
+        padding: 0.9rem 1.4rem;
+        border-radius: 1rem;
+        color: #fff;
+        background: var(--plum);
+        box-shadow: 0 0.8rem 2rem rgba(49, 15, 94, 0.22);
+        font-size: 1rem;
+        font-weight: 760;
+        text-decoration: none;
+        transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+      }
+
+      .action:hover {
+        background: var(--plum-deep);
+        box-shadow: 0 1rem 2.4rem rgba(49, 15, 94, 0.28);
+        transform: translateY(-2px);
+      }
+
+      .action:active {
+        transform: translateY(0);
+      }
+
+      .action:focus-visible {
+        outline: 3px solid var(--yellow);
+        outline-offset: 4px;
+      }
+
+      .action[hidden] {
+        display: none;
+      }
+
+      .availability {
+        display: none;
+        width: fit-content;
+        margin: 2rem 0 0;
+        padding: 0.75rem 1rem;
+        border-radius: 0.9rem;
+        color: var(--plum);
+        background: rgba(107, 41, 199, 0.09);
+        font-size: 0.92rem;
+        font-weight: 700;
+      }
+
+      .availability[data-visible="true"] {
+        display: block;
+      }
+
+      .instruction {
+        max-width: 30rem;
+        margin: 1.25rem 0 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      .art-plane {
+        position: relative;
+        display: grid;
+        place-items: center;
+        min-height: 100%;
+        padding: 4rem clamp(2rem, 6vw, 6rem);
+        background: var(--plum);
+        isolation: isolate;
+      }
+
+      .art-plane::before {
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        content: "";
+        opacity: 0.5;
+        background:
+          radial-gradient(circle at 50% 30%, rgba(255, 191, 18, 0.32), transparent 25%),
+          radial-gradient(circle at 15% 78%, rgba(247, 51, 137, 0.32), transparent 30%),
+          radial-gradient(circle at 85% 70%, rgba(10, 109, 219, 0.38), transparent 31%);
+      }
+
+      .art-plane::after {
+        position: absolute;
+        inset: 8%;
+        z-index: -1;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 50%;
+        content: "";
+        transform: rotate(-12deg);
+      }
+
+      .artwork {
+        width: min(100%, 42rem);
+        height: auto;
+        filter: drop-shadow(0 2rem 3rem rgba(10, 0, 31, 0.38));
+        animation: arrive 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both,
+          breathe 6s ease-in-out 800ms infinite alternate;
+      }
+
+      .rainbow {
+        display: flex;
+        width: 8.5rem;
+        height: 0.32rem;
+        margin-top: 2rem;
+        overflow: hidden;
+        border-radius: 999px;
+      }
+
+      .rainbow span {
+        flex: 1;
+      }
+
+      .rainbow span:nth-child(1) { background: var(--pink); }
+      .rainbow span:nth-child(2) { background: #ff7a1a; }
+      .rainbow span:nth-child(3) { background: var(--yellow); }
+      .rainbow span:nth-child(4) { background: var(--mint); }
+      .rainbow span:nth-child(5) { background: var(--blue); }
+      .rainbow span:nth-child(6) { background: var(--purple); }
+
+      .copy > * {
+        animation: reveal 520ms ease-out both;
+      }
+
+      .copy > :nth-child(2) { animation-delay: 80ms; }
+      .copy > :nth-child(3) { animation-delay: 130ms; }
+      .copy > :nth-child(4) { animation-delay: 180ms; }
+      .copy > :nth-child(5) { animation-delay: 230ms; }
+      .copy > :nth-child(6) { animation-delay: 280ms; }
+      .copy > :nth-child(7) { animation-delay: 330ms; }
+
+      @keyframes reveal {
+        from { opacity: 0; transform: translateY(0.8rem); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes arrive {
+        from { opacity: 0; transform: translateY(1.5rem) scale(0.96); }
+        to { opacity: 1; transform: translateY(0) scale(1); }
+      }
+
+      @keyframes breathe {
+        from { transform: translateY(-0.2rem) rotate(-0.4deg); }
+        to { transform: translateY(0.4rem) rotate(0.4deg); }
+      }
+
+      @media (max-width: 760px) {
+        main {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto minmax(15rem, 38svh);
+        }
+
+        .copy {
+          justify-content: flex-start;
+          width: 100%;
+          padding: max(1.5rem, env(safe-area-inset-top)) 1.5rem 2.5rem;
+        }
+
+        .brand {
+          margin-bottom: clamp(2.5rem, 9vh, 4.5rem);
+        }
+
+        h1 {
+          max-width: 8ch;
+          font-size: clamp(3.25rem, 16vw, 5.2rem);
+        }
+
+        .lede {
+          margin-top: 1.25rem;
+          font-size: 1.05rem;
+        }
+
+        .action {
+          width: 100%;
+        }
+
+        .availability {
+          width: 100%;
+          text-align: center;
+        }
+
+        .art-plane {
+          min-height: 15rem;
+          padding: 1.5rem 4rem 0;
+          overflow: hidden;
+        }
+
+        .art-plane::after {
+          inset: 10% 17% -50%;
+        }
+
+        .artwork {
+          width: min(100%, 22rem);
+          transform-origin: center bottom;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="copy" aria-labelledby="page-title">
+        <div class="brand">
+          <img class="brand-mark" src="assets/groupicorn-icon.png" width="64" height="64" alt="">
+          <span>Groupicorn</span>
+        </div>
+
+        <p class="eyebrow">Herd invitation</p>
+        <h1 id="page-title">You found your herd.</h1>
+        <p class="lede" id="intro">
+          Get Groupicorn, then scan the same QR code again to join everyone instantly.
+        </p>
+
+        <a class="action" id="store-link" href="#" hidden>Get Groupicorn</a>
+        <p class="availability" id="availability" data-visible="true" role="status">
+          Groupicorn is coming to the App Store.
+        </p>
+        <p class="instruction" id="instruction">
+          Already installed? Return to Camera and scan the code again.
+        </p>
+
+        <div class="rainbow" aria-hidden="true">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </section>
+
+      <div class="art-plane" aria-hidden="true">
+        <img class="artwork" src="assets/groupicorn-artwork.webp" width="900" height="900" alt="">
+      </div>
+    </main>
+
+    <script>
+      (() => {
+        // Fill this in when Groupicorn receives its production App Store URL.
+        const appStoreURL = "";
+        const params = new URLSearchParams(window.location.search);
+        const joinCode = params.get("h");
+        const hasValidCode = /^[a-f0-9]{32}$/i.test(joinCode || "");
+        const title = document.querySelector("#page-title");
+        const intro = document.querySelector("#intro");
+        const instruction = document.querySelector("#instruction");
+        const storeLink = document.querySelector("#store-link");
+        const availability = document.querySelector("#availability");
+
+        if (!hasValidCode) {
+          title.textContent = "Find your people.";
+          intro.textContent = "Open Groupicorn and scan a herd's QR code to join them instantly.";
+          instruction.textContent = "Ask someone in the herd to show their Groupicorn code.";
+        }
+
+        if (appStoreURL) {
+          storeLink.href = appStoreURL;
+          storeLink.hidden = false;
+          availability.dataset.visible = "false";
+        }
+      })();
+    </script>
+  </body>
+</html>
