@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#310f5e">
+    <meta name="color-scheme" content="light">
+    <meta
+      name="description"
+      content="Learn what information Groupicorn collects, how it is used, and the privacy choices available to you."
+    >
+    <link rel="canonical" href="https://andrewarrow.dev/groupicorn/privacy/">
+    <link rel="icon" href="../assets/groupicorn-icon.png">
+    <title>Privacy Policy · Groupicorn</title>
+    <style>
+      :root {
+        --plum: #310f5e;
+        --plum-deep: #18062f;
+        --cream: #fffaf0;
+        --paper: #fffdf8;
+        --ink: #101233;
+        --muted: #625d72;
+        --purple: #6b29c7;
+        --yellow: #ffbf12;
+        --line: rgba(49, 15, 94, 0.14);
+        --soft-purple: rgba(107, 41, 199, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        min-width: 320px;
+        scroll-behavior: smooth;
+        scroll-padding-top: 2rem;
+        background: var(--cream);
+      }
+
+      body {
+        min-height: 100svh;
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 92% 4%, rgba(255, 191, 18, 0.16), transparent 25rem),
+          linear-gradient(180deg, #fffdf8 0, var(--cream) 36rem);
+        font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: var(--purple);
+        text-underline-offset: 0.18em;
+        text-decoration-thickness: 0.08em;
+      }
+
+      a:hover {
+        color: var(--plum);
+      }
+
+      a:focus-visible {
+        border-radius: 0.2rem;
+        outline: 3px solid var(--yellow);
+        outline-offset: 4px;
+      }
+
+      .site-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: min(100% - 3rem, 74rem);
+        min-height: 5.5rem;
+        margin: 0 auto;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.7rem;
+        color: var(--plum);
+        font-size: 1rem;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .brand img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.65rem;
+        box-shadow: 0 0.35rem 1rem rgba(49, 15, 94, 0.16);
+      }
+
+      .back-link {
+        font-size: 0.9rem;
+        font-weight: 750;
+        text-decoration: none;
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        background: var(--plum);
+      }
+
+      .hero::before {
+        position: absolute;
+        inset: 0;
+        content: "";
+        background:
+          radial-gradient(circle at 84% 18%, rgba(255, 191, 18, 0.26), transparent 22rem),
+          radial-gradient(circle at 98% 88%, rgba(107, 41, 199, 0.7), transparent 25rem);
+        pointer-events: none;
+      }
+
+      .hero-inner {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 20rem;
+        align-items: center;
+        gap: clamp(2rem, 7vw, 7rem);
+        width: min(100% - 3rem, 74rem);
+        min-height: 26rem;
+        margin: 0 auto;
+        padding: 4rem 0;
+      }
+
+      .eyebrow {
+        margin: 0 0 1rem;
+        color: #f7d77a;
+        font-size: 0.78rem;
+        font-weight: 850;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.8rem, 7vw, 5.8rem);
+        font-weight: 850;
+        letter-spacing: -0.06em;
+        line-height: 0.94;
+      }
+
+      .hero-copy {
+        max-width: 38rem;
+        margin: 1.35rem 0 0;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: clamp(1.02rem, 1.6vw, 1.18rem);
+        line-height: 1.6;
+      }
+
+      .effective-date {
+        margin: 1.25rem 0 0;
+        color: rgba(255, 255, 255, 0.62);
+        font-size: 0.88rem;
+        font-weight: 650;
+      }
+
+      .hero-art {
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(0 1.5rem 2.5rem rgba(10, 0, 31, 0.4));
+      }
+
+      .policy-layout {
+        display: grid;
+        grid-template-columns: 14rem minmax(0, 45rem);
+        justify-content: center;
+        gap: clamp(2.5rem, 6vw, 6rem);
+        width: min(100% - 3rem, 74rem);
+        margin: 0 auto;
+        padding: 4.5rem 0 6rem;
+      }
+
+      .contents {
+        position: sticky;
+        top: 2rem;
+        align-self: start;
+      }
+
+      .contents-title {
+        margin: 0 0 1rem;
+        color: var(--muted);
+        font-size: 0.72rem;
+        font-weight: 850;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .contents ul {
+        display: grid;
+        gap: 0.15rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .contents a {
+        display: block;
+        padding: 0.5rem 0;
+        color: var(--muted);
+        font-size: 0.88rem;
+        font-weight: 650;
+        line-height: 1.25;
+        text-decoration: none;
+        transition: color 180ms ease, transform 180ms ease;
+      }
+
+      .contents a:hover {
+        color: var(--plum);
+        transform: translateX(0.2rem);
+      }
+
+      .summary {
+        margin: 0 0 3.5rem;
+        padding: 1.5rem 0 1.5rem 1.5rem;
+        border-left: 0.28rem solid var(--purple);
+        background: linear-gradient(90deg, var(--soft-purple), transparent 78%);
+      }
+
+      .summary strong {
+        display: block;
+        margin-bottom: 0.45rem;
+        color: var(--plum);
+        font-size: 1.05rem;
+      }
+
+      .summary p {
+        margin: 0;
+      }
+
+      .policy-section {
+        padding: 0 0 3rem;
+        scroll-margin-top: 2rem;
+      }
+
+      .policy-section + .policy-section {
+        padding-top: 3rem;
+        border-top: 1px solid var(--line);
+      }
+
+      h2 {
+        margin: 0 0 1.25rem;
+        color: var(--plum);
+        font-size: clamp(1.55rem, 3vw, 2.05rem);
+        font-weight: 820;
+        letter-spacing: -0.03em;
+        line-height: 1.15;
+      }
+
+      h3 {
+        margin: 1.8rem 0 0.55rem;
+        color: var(--ink);
+        font-size: 1.02rem;
+        font-weight: 800;
+        line-height: 1.35;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.72;
+      }
+
+      p {
+        margin: 0 0 1rem;
+      }
+
+      ul {
+        margin: 0.75rem 0 1.25rem;
+        padding-left: 1.35rem;
+      }
+
+      li + li {
+        margin-top: 0.65rem;
+      }
+
+      li::marker {
+        color: var(--purple);
+      }
+
+      .plain-language {
+        color: var(--ink);
+        font-weight: 700;
+      }
+
+      .contact-block {
+        padding: 2rem;
+        border-radius: 1.25rem;
+        color: #fff;
+        background: var(--plum);
+      }
+
+      .contact-block h2,
+      .contact-block p,
+      .contact-block a {
+        color: #fff;
+      }
+
+      .contact-block p:last-child {
+        margin-bottom: 0;
+      }
+
+      .contact-block a:focus-visible {
+        outline-color: var(--yellow);
+      }
+
+      footer {
+        padding: 2rem 1.5rem max(2rem, env(safe-area-inset-bottom));
+        color: var(--muted);
+        background: #f7f0e6;
+        font-size: 0.84rem;
+        text-align: center;
+      }
+
+      .hero-copy,
+      .hero h1,
+      .hero .eyebrow,
+      .hero .effective-date {
+        animation: reveal 520ms ease-out both;
+      }
+
+      .hero h1 { animation-delay: 70ms; }
+      .hero-copy { animation-delay: 130ms; }
+      .effective-date { animation-delay: 190ms; }
+      .hero-art { animation: artwork-in 650ms 120ms ease-out both; }
+
+      @keyframes reveal {
+        from { opacity: 0; transform: translateY(0.7rem); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes artwork-in {
+        from { opacity: 0; transform: translateY(1rem) scale(0.97); }
+        to { opacity: 1; transform: translateY(0) scale(1); }
+      }
+
+      @media (max-width: 760px) {
+        .site-header,
+        .hero-inner,
+        .policy-layout {
+          width: min(100% - 2.5rem, 45rem);
+        }
+
+        .site-header {
+          min-height: 4.75rem;
+        }
+
+        .hero-inner {
+          grid-template-columns: minmax(0, 1fr) 8.5rem;
+          gap: 1rem;
+          min-height: auto;
+          padding: 3.25rem 0;
+        }
+
+        h1 {
+          font-size: clamp(2.7rem, 13vw, 4.2rem);
+        }
+
+        .hero-copy {
+          font-size: 1rem;
+        }
+
+        .policy-layout {
+          display: block;
+          padding: 3rem 0 4.5rem;
+        }
+
+        .contents {
+          position: static;
+          margin-bottom: 3rem;
+          padding-bottom: 1.5rem;
+          border-bottom: 1px solid var(--line);
+        }
+
+        .contents ul {
+          grid-template-columns: 1fr 1fr;
+          gap: 0 1rem;
+        }
+
+        .contents a {
+          min-height: 2.75rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .back-link {
+          max-width: 8rem;
+          text-align: right;
+        }
+
+        .hero-inner {
+          display: block;
+        }
+
+        .hero-art {
+          position: absolute;
+          right: -2.8rem;
+          bottom: -2.25rem;
+          width: 9.5rem;
+          opacity: 0.3;
+        }
+
+        .hero-copy {
+          max-width: 27rem;
+          padding-right: 1rem;
+        }
+
+        .contents ul {
+          grid-template-columns: 1fr;
+        }
+
+        .summary {
+          padding-left: 1.1rem;
+        }
+
+        .contact-block {
+          padding: 1.5rem;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Groupicorn home">
+        <img src="../assets/groupicorn-icon.png" alt="">
+        <span>Groupicorn</span>
+      </a>
+      <a class="back-link" href="../">Back to Groupicorn</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="policy-title">
+        <div class="hero-inner">
+          <div>
+            <p class="eyebrow">Your privacy, in plain language</p>
+            <h1 id="policy-title">Privacy Policy</h1>
+            <p class="hero-copy">
+              Groupicorn helps small groups connect, chat, and coordinate meetups. This policy
+              explains what information the app uses and the choices you have.
+            </p>
+            <p class="effective-date">Effective August 20, 2026</p>
+          </div>
+          <img
+            class="hero-art"
+            src="../assets/groupicorn-artwork.webp"
+            alt=""
+            width="900"
+            height="900"
+          >
+        </div>
+      </section>
+
+      <div class="policy-layout">
+        <nav class="contents" aria-label="Privacy policy sections">
+          <p class="contents-title">On this page</p>
+          <ul>
+            <li><a href="#scope">Scope</a></li>
+            <li><a href="#collection">Information we collect</a></li>
+            <li><a href="#use">How we use information</a></li>
+            <li><a href="#sharing">How information is shared</a></li>
+            <li><a href="#retention">Retention and deletion</a></li>
+            <li><a href="#choices">Your choices and rights</a></li>
+            <li><a href="#security">Security and transfers</a></li>
+            <li><a href="#children">Children’s privacy</a></li>
+            <li><a href="#changes">Changes</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <article>
+          <div class="summary" aria-label="Privacy summary">
+            <strong>The short version</strong>
+            <p>
+              Groupicorn does not require your legal name, email address, or phone number. We do
+              not sell personal information, show ads, or track you across other companies’ apps
+              and websites. Location sharing is optional and can be turned off at any time.
+            </p>
+          </div>
+
+          <section class="policy-section" id="scope">
+            <h2>1. Scope and who we are</h2>
+            <p>
+              This Privacy Policy applies to the Groupicorn iOS application and its related web
+              pages and services (collectively, “Groupicorn”). Groupicorn is developed and
+              operated by andrewarrow.dev (“we,” “us,” or “our”).
+            </p>
+            <p>
+              Groupicorn is a peer-to-peer social coordination tool. It is not a healthcare
+              provider, treatment program, or substitute for a provider’s approved systems. Do
+              not use Groupicorn to send protected health information, medical records, or other
+              information that should be handled by a healthcare provider.
+            </p>
+          </section>
+
+          <section class="policy-section" id="collection">
+            <h2>2. Information we collect</h2>
+
+            <h3>Anonymous account and profile information</h3>
+            <p>
+              When you first use Groupicorn, the app creates an anonymous account. We collect a
+              randomly generated account identifier, authentication and session information, the
+              Groupicorn username and avatar you select, your herd membership and role, and the
+              date you joined. You do not need to provide a legal name, email address, or phone
+              number.
+            </p>
+
+            <h3>Messages and other content</h3>
+            <p>
+              We collect the text messages you choose to send in community chat or direct chat,
+              together with the sender, recipient or herd, and timestamp needed to deliver and
+              display those messages. Messages may contain personal or sensitive information if
+              you choose to include it, so please share thoughtfully.
+            </p>
+
+            <h3>Availability and optional precise location</h3>
+            <p>
+              If you turn on chat availability, we store that status so it can be shown to your
+              herd. If you separately enable location sharing and grant iOS location permission,
+              the app collects precise latitude and longitude while you use the feature. It uses
+              that location to determine whether you are at or traveling toward a listed meetup
+              place and to estimate an arrival time. While enabled, the app generally requests a
+              fresh location about once per minute.
+            </p>
+            <p>
+              Groupicorn stores only your current shared location state. Each update overwrites
+              the prior coordinates rather than creating a location history. Location sharing is
+              off unless you choose to enable it.
+            </p>
+
+            <h3>Camera access</h3>
+            <p>
+              With your permission, Groupicorn uses the camera only to scan a nearby herd’s
+              invitation QR code. QR scanning is processed on your device. We do not collect,
+              store, or transmit photos, video, or audio from the camera.
+            </p>
+
+            <h3>Technical service data</h3>
+            <p>
+              Our hosting provider may process standard network and request information, such as
+              an IP address, request time, and error or security logs, as needed to operate,
+              protect, and troubleshoot the service. Groupicorn does not include advertising or
+              cross-app tracking technology.
+            </p>
+          </section>
+
+          <section class="policy-section" id="use">
+            <h2>3. How we use information</h2>
+            <p>We use information described above to:</p>
+            <ul>
+              <li>Create and maintain your anonymous account and herd membership.</li>
+              <li>Let you create or join a herd and display your selected Groupicorn identity.</li>
+              <li>Deliver community and direct messages.</li>
+              <li>Show your optional chat availability and current meetup status to your herd.</li>
+              <li>Calculate nearby meetup status and approximate arrival times.</li>
+              <li>Maintain security, prevent misuse, troubleshoot errors, and operate Groupicorn.</li>
+              <li>Comply with law and enforce our rights and policies.</li>
+            </ul>
+            <p class="plain-language">
+              We do not use your information for targeted advertising or to track you across
+              apps and websites owned by other companies.
+            </p>
+          </section>
+
+          <section class="policy-section" id="sharing">
+            <h2>4. How information is shared</h2>
+
+            <h3>With people in your herd</h3>
+            <p>
+              Herd members can see your selected username and avatar, membership information,
+              community messages, chat availability, and any current meetup or in-route status
+              you choose to share. Precise coordinates used for meetup status may be available to
+              members of your herd while current. Direct messages are available only to the
+              participants in that conversation.
+            </p>
+
+            <h3>With service providers</h3>
+            <p>
+              We use <a href="https://supabase.com/privacy">Supabase</a> for authentication,
+              database hosting, and message delivery. Supabase processes information on our
+              behalf to provide these services. We require service providers that receive user
+              data to provide privacy and security protections consistent with this policy and
+              applicable Apple requirements.
+            </p>
+
+            <h3>For legal and safety reasons</h3>
+            <p>
+              We may disclose information if reasonably necessary to comply with law, legal
+              process, or a valid government request; protect the rights, safety, or security of
+              users or others; investigate abuse; or protect Groupicorn. If Groupicorn is involved
+              in a merger, acquisition, financing, or sale of assets, information may be
+              transferred as part of that transaction subject to this policy or notice of any
+              material change.
+            </p>
+
+            <p class="plain-language">
+              We do not sell personal information or share it for cross-context behavioral
+              advertising.
+            </p>
+          </section>
+
+          <section class="policy-section" id="retention">
+            <h2>5. Retention and deletion</h2>
+            <ul>
+              <li>
+                <strong>Location:</strong> Groupicorn keeps one current location state, not a
+                location trail. New coordinates overwrite prior coordinates. Turning location
+                sharing off or logging out clears the current shared location from active presence.
+              </li>
+              <li>
+                <strong>Community chat:</strong> Each herd retains its newest 1,000 community
+                messages. Older messages are automatically deleted as new ones arrive.
+              </li>
+              <li>
+                <strong>Direct chat:</strong> Each pair of herd members retains its newest 1,000
+                direct messages. Older messages are automatically deleted as new ones arrive.
+              </li>
+              <li>
+                <strong>Account and membership:</strong> We retain your anonymous account,
+                selected identity, membership, and related content while needed to provide the
+                service or until the account is deleted, unless longer retention is required for
+                security, legal compliance, dispute resolution, or enforcement.
+              </li>
+            </ul>
+            <p>
+              To request deletion of your account and associated information, email
+              <a href="mailto:help@andrewarrow.dev?subject=Groupicorn%20data%20deletion">help@andrewarrow.dev</a>.
+              We may ask for information reasonably needed to locate and verify the anonymous
+              account. We will delete or de-identify associated information unless retention is
+              required by law. Limited copies may remain temporarily in encrypted backups and
+              security logs until those systems rotate them.
+            </p>
+            <p>
+              Logging out or deleting the app clears the local session but does not, by itself,
+              delete information already stored by the service.
+            </p>
+          </section>
+
+          <section class="policy-section" id="choices">
+            <h2>6. Your choices and privacy rights</h2>
+            <ul>
+              <li>Turn chat availability or location sharing on or off in Groupicorn Settings.</li>
+              <li>Change camera or location permission at any time in iOS Settings.</li>
+              <li>Choose not to send a message or include personal information in a message.</li>
+              <li>Log out to clear Groupicorn’s session from your device.</li>
+              <li>
+                Request access to, correction of, or deletion of your information by contacting
+                us at <a href="mailto:help@andrewarrow.dev">help@andrewarrow.dev</a>.
+              </li>
+            </ul>
+            <p>
+              Depending on where you live, you may also have rights to receive a copy of your
+              information, object to or restrict certain processing, or appeal a request decision.
+              We will not discriminate against you for exercising a privacy right. We do not sell
+              or share personal information as those terms are defined by California privacy law.
+            </p>
+          </section>
+
+          <section class="policy-section" id="security">
+            <h2>7. Security and international transfers</h2>
+            <p>
+              We use reasonable administrative, technical, and organizational safeguards designed
+              to protect information, including encrypted network connections, authenticated
+              access, and database access controls. No system is completely secure, and we cannot
+              guarantee absolute security.
+            </p>
+            <p>
+              Groupicorn and its service providers may process information in the United States
+              and other countries where they operate. Those locations may have data protection
+              laws different from the laws where you live. Where required, we use appropriate
+              safeguards for international transfers.
+            </p>
+          </section>
+
+          <section class="policy-section" id="children">
+            <h2>8. Children’s privacy</h2>
+            <p>
+              Groupicorn is not directed to children under 13, and we do not knowingly collect
+              personal information from children under 13. If you believe a child has provided
+              personal information through Groupicorn, contact us so we can investigate and take
+              appropriate action.
+            </p>
+          </section>
+
+          <section class="policy-section" id="changes">
+            <h2>9. Changes to this policy</h2>
+            <p>
+              We may update this Privacy Policy as Groupicorn changes. We will post the updated
+              policy here and revise the effective date. If a change materially affects how we
+              use information, we will provide additional notice when appropriate.
+            </p>
+          </section>
+
+          <section class="policy-section contact-block" id="contact">
+            <h2>10. Contact us</h2>
+            <p>
+              Questions, privacy requests, and account deletion requests can be sent to:<br>
+              <strong>andrewarrow.dev — Groupicorn Privacy</strong><br>
+              <a href="mailto:help@andrewarrow.dev">help@andrewarrow.dev</a>
+            </p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      © 2026 andrewarrow.dev · Groupicorn Privacy Policy
+    </footer>
+  </body>
+</html>
