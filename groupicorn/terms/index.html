@@ -1,0 +1,757 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#310f5e">
+    <meta name="color-scheme" content="light">
+    <meta
+      name="description"
+      content="Read the terms that apply when you use Groupicorn to connect, chat, and coordinate with your herd."
+    >
+    <link rel="canonical" href="https://andrewarrow.dev/groupicorn/terms/">
+    <link rel="icon" href="../assets/groupicorn-icon.png">
+    <title>Terms of Service · Groupicorn</title>
+    <style>
+      :root {
+        --plum: #310f5e;
+        --cream: #fffaf0;
+        --ink: #101233;
+        --muted: #625d72;
+        --purple: #6b29c7;
+        --yellow: #ffbf12;
+        --line: rgba(49, 15, 94, 0.14);
+        --soft-purple: rgba(107, 41, 199, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        min-width: 320px;
+        scroll-behavior: smooth;
+        scroll-padding-top: 2rem;
+        background: var(--cream);
+      }
+
+      body {
+        min-height: 100svh;
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 92% 4%, rgba(255, 191, 18, 0.16), transparent 25rem),
+          linear-gradient(180deg, #fffdf8 0, var(--cream) 36rem);
+        font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: var(--purple);
+        text-decoration-thickness: 0.08em;
+        text-underline-offset: 0.18em;
+      }
+
+      a:hover {
+        color: var(--plum);
+      }
+
+      a:focus-visible {
+        border-radius: 0.2rem;
+        outline: 3px solid var(--yellow);
+        outline-offset: 4px;
+      }
+
+      .site-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: min(100% - 3rem, 74rem);
+        min-height: 5.5rem;
+        margin: 0 auto;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.7rem;
+        color: var(--plum);
+        font-size: 1rem;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .brand img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.65rem;
+        box-shadow: 0 0.35rem 1rem rgba(49, 15, 94, 0.16);
+      }
+
+      .back-link {
+        font-size: 0.9rem;
+        font-weight: 750;
+        text-decoration: none;
+      }
+
+      .hero {
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        background: var(--plum);
+      }
+
+      .hero::before {
+        position: absolute;
+        inset: 0;
+        content: "";
+        background:
+          radial-gradient(circle at 84% 18%, rgba(255, 191, 18, 0.26), transparent 22rem),
+          radial-gradient(circle at 98% 88%, rgba(107, 41, 199, 0.7), transparent 25rem);
+        pointer-events: none;
+      }
+
+      .hero-inner {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 20rem;
+        align-items: center;
+        gap: clamp(2rem, 7vw, 7rem);
+        width: min(100% - 3rem, 74rem);
+        min-height: 26rem;
+        margin: 0 auto;
+        padding: 4rem 0;
+      }
+
+      .eyebrow {
+        margin: 0 0 1rem;
+        color: #f7d77a;
+        font-size: 0.78rem;
+        font-weight: 850;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.8rem, 7vw, 5.8rem);
+        font-weight: 850;
+        letter-spacing: -0.06em;
+        line-height: 0.94;
+      }
+
+      .hero-copy {
+        max-width: 39rem;
+        margin: 1.35rem 0 0;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: clamp(1.02rem, 1.6vw, 1.18rem);
+        line-height: 1.6;
+      }
+
+      .effective-date {
+        margin: 1.25rem 0 0;
+        color: rgba(255, 255, 255, 0.62);
+        font-size: 0.88rem;
+        font-weight: 650;
+      }
+
+      .hero-art {
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(0 1.5rem 2.5rem rgba(10, 0, 31, 0.4));
+      }
+
+      .terms-layout {
+        display: grid;
+        grid-template-columns: 14rem minmax(0, 45rem);
+        justify-content: center;
+        gap: clamp(2.5rem, 6vw, 6rem);
+        width: min(100% - 3rem, 74rem);
+        margin: 0 auto;
+        padding: 4.5rem 0 6rem;
+      }
+
+      .contents {
+        position: sticky;
+        top: 2rem;
+        align-self: start;
+      }
+
+      .contents-title {
+        margin: 0 0 1rem;
+        color: var(--muted);
+        font-size: 0.72rem;
+        font-weight: 850;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .contents ul {
+        display: grid;
+        gap: 0.15rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .contents a {
+        display: block;
+        padding: 0.5rem 0;
+        color: var(--muted);
+        font-size: 0.88rem;
+        font-weight: 650;
+        line-height: 1.25;
+        text-decoration: none;
+        transition: color 180ms ease, transform 180ms ease;
+      }
+
+      .contents a:hover {
+        color: var(--plum);
+        transform: translateX(0.2rem);
+      }
+
+      .summary {
+        margin: 0 0 3.5rem;
+        padding: 1.5rem 0 1.5rem 1.5rem;
+        border-left: 0.28rem solid var(--purple);
+        background: linear-gradient(90deg, var(--soft-purple), transparent 78%);
+      }
+
+      .summary strong {
+        display: block;
+        margin-bottom: 0.45rem;
+        color: var(--plum);
+        font-size: 1.05rem;
+      }
+
+      .summary p {
+        margin: 0;
+      }
+
+      .terms-section {
+        padding: 0 0 3rem;
+        scroll-margin-top: 2rem;
+      }
+
+      .terms-section + .terms-section {
+        padding-top: 3rem;
+        border-top: 1px solid var(--line);
+      }
+
+      h2 {
+        margin: 0 0 1.25rem;
+        color: var(--plum);
+        font-size: clamp(1.55rem, 3vw, 2.05rem);
+        font-weight: 820;
+        letter-spacing: -0.03em;
+        line-height: 1.15;
+      }
+
+      h3 {
+        margin: 1.8rem 0 0.55rem;
+        color: var(--ink);
+        font-size: 1.02rem;
+        font-weight: 800;
+        line-height: 1.35;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        font-size: 1rem;
+        line-height: 1.72;
+      }
+
+      p {
+        margin: 0 0 1rem;
+      }
+
+      ul {
+        margin: 0.75rem 0 1.25rem;
+        padding-left: 1.35rem;
+      }
+
+      li + li {
+        margin-top: 0.65rem;
+      }
+
+      li::marker {
+        color: var(--purple);
+      }
+
+      .plain-language {
+        color: var(--ink);
+        font-weight: 700;
+      }
+
+      .contact-block {
+        padding: 2rem;
+        border-radius: 1.25rem;
+        color: #fff;
+        background: var(--plum);
+      }
+
+      .contact-block h2,
+      .contact-block p,
+      .contact-block a {
+        color: #fff;
+      }
+
+      .contact-block p:last-child {
+        margin-bottom: 0;
+      }
+
+      .contact-block a:focus-visible {
+        outline-color: var(--yellow);
+      }
+
+      footer {
+        padding: 2rem 1.5rem max(2rem, env(safe-area-inset-bottom));
+        color: var(--muted);
+        background: #f7f0e6;
+        font-size: 0.84rem;
+        text-align: center;
+      }
+
+      .hero-copy,
+      .hero h1,
+      .hero .eyebrow,
+      .hero .effective-date {
+        animation: reveal 520ms ease-out both;
+      }
+
+      .hero h1 { animation-delay: 70ms; }
+      .hero-copy { animation-delay: 130ms; }
+      .effective-date { animation-delay: 190ms; }
+      .hero-art { animation: artwork-in 650ms 120ms ease-out both; }
+
+      @keyframes reveal {
+        from { opacity: 0; transform: translateY(0.7rem); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes artwork-in {
+        from { opacity: 0; transform: translateY(1rem) scale(0.97); }
+        to { opacity: 1; transform: translateY(0) scale(1); }
+      }
+
+      @media (max-width: 760px) {
+        .site-header,
+        .hero-inner,
+        .terms-layout {
+          width: min(100% - 2.5rem, 45rem);
+        }
+
+        .site-header {
+          min-height: 4.75rem;
+        }
+
+        .hero-inner {
+          grid-template-columns: minmax(0, 1fr) 8.5rem;
+          gap: 1rem;
+          min-height: auto;
+          padding: 3.25rem 0;
+        }
+
+        h1 {
+          font-size: clamp(2.7rem, 13vw, 4.2rem);
+        }
+
+        .hero-copy {
+          font-size: 1rem;
+        }
+
+        .terms-layout {
+          display: block;
+          padding: 3rem 0 4.5rem;
+        }
+
+        .contents {
+          position: static;
+          margin-bottom: 3rem;
+          padding-bottom: 1.5rem;
+          border-bottom: 1px solid var(--line);
+        }
+
+        .contents ul {
+          grid-template-columns: 1fr 1fr;
+          gap: 0 1rem;
+        }
+
+        .contents a {
+          min-height: 2.75rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .back-link {
+          max-width: 8rem;
+          text-align: right;
+        }
+
+        .hero-inner {
+          display: block;
+        }
+
+        .hero-art {
+          position: absolute;
+          right: -2.8rem;
+          bottom: -2.25rem;
+          width: 9.5rem;
+          opacity: 0.3;
+        }
+
+        .hero-copy {
+          max-width: 27rem;
+          padding-right: 1rem;
+        }
+
+        .contents ul {
+          grid-template-columns: 1fr;
+        }
+
+        .summary {
+          padding-left: 1.1rem;
+        }
+
+        .contact-block {
+          padding: 1.5rem;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="Groupicorn home">
+        <img src="../assets/groupicorn-icon.png" alt="">
+        <span>Groupicorn</span>
+      </a>
+      <a class="back-link" href="../">Back to Groupicorn</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="terms-title">
+        <div class="hero-inner">
+          <div>
+            <p class="eyebrow">The ground rules</p>
+            <h1 id="terms-title">Terms of Service</h1>
+            <p class="hero-copy">
+              These terms explain the rules for using Groupicorn to connect, chat, and coordinate
+              with your herd.
+            </p>
+            <p class="effective-date">Effective August 21, 2026</p>
+          </div>
+          <img
+            class="hero-art"
+            src="../assets/groupicorn-artwork.webp"
+            alt=""
+            width="900"
+            height="900"
+          >
+        </div>
+      </section>
+
+      <div class="terms-layout">
+        <nav class="contents" aria-label="Terms of service sections">
+          <p class="contents-title">On this page</p>
+          <ul>
+            <li><a href="#agreement">Agreement and eligibility</a></li>
+            <li><a href="#service">The service</a></li>
+            <li><a href="#accounts">Accounts and herds</a></li>
+            <li><a href="#conduct">Acceptable use</a></li>
+            <li><a href="#content">Your content</a></li>
+            <li><a href="#privacy">Privacy and permissions</a></li>
+            <li><a href="#ownership">Our rights</a></li>
+            <li><a href="#third-parties">Third-party services</a></li>
+            <li><a href="#termination">Termination</a></li>
+            <li><a href="#disclaimers">Disclaimers</a></li>
+            <li><a href="#liability">Liability</a></li>
+            <li><a href="#general">General terms</a></li>
+            <li><a href="#apple">Apple terms</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <article>
+          <div class="summary" aria-label="Terms summary">
+            <strong>The short version</strong>
+            <p>
+              Use Groupicorn respectfully and lawfully. You are responsible for what you share
+              and for protecting access to your anonymous account. Groupicorn is a coordination
+              tool—not an emergency, medical, or safety service.
+            </p>
+          </div>
+
+          <section class="terms-section" id="agreement">
+            <h2>1. Agreement and eligibility</h2>
+            <p>
+              These Terms of Service (“Terms”) are a legal agreement between you and
+              andrewarrow.dev (“we,” “us,” or “our”) governing your use of the Groupicorn iOS
+              application and its related web pages and services (collectively, “Groupicorn”). By
+              downloading, accessing, or using Groupicorn, you agree to these Terms and our
+              <a href="../privacy/">Privacy Policy</a>. If you do not agree, do not use Groupicorn.
+            </p>
+            <p>
+              You must be at least 13 years old to use Groupicorn. If you are under the age of
+              legal majority where you live, a parent or legal guardian must review and agree to
+              these Terms on your behalf. You may not use Groupicorn if applicable law prohibits
+              you from receiving the service.
+            </p>
+          </section>
+
+          <section class="terms-section" id="service">
+            <h2>2. What Groupicorn provides</h2>
+            <p>
+              Groupicorn is a peer-to-peer social coordination tool that lets people create or
+              join a herd, exchange community and direct messages, share optional availability
+              and meetup status, and scan invitation QR codes. We may add, change, suspend, or
+              discontinue features as the service develops.
+            </p>
+            <p class="plain-language">
+              Groupicorn is not an emergency service, healthcare provider, treatment program,
+              transportation provider, or location-monitoring service. Do not rely on it to
+              protect anyone’s health or safety, contact emergency responders, or communicate
+              protected health information.
+            </p>
+          </section>
+
+          <section class="terms-section" id="accounts">
+            <h2>3. Anonymous accounts and herds</h2>
+            <p>
+              Groupicorn creates an anonymous account when you first use the app. You are
+              responsible for activity under that account and for keeping your device and session
+              secure. Do not share access to your session, impersonate another person, or use an
+              identity that violates someone else’s rights.
+            </p>
+            <p>
+              Invitation codes and QR codes allow others to join a herd. Share them only with
+              people you intend to invite. Depending on their role, herd members may be able to
+              view membership information, messages, availability, and meetup status or remove
+              members. We do not control the actions of other herd members.
+            </p>
+            <p>
+              Because an account is anonymous and may not be linked to an email address or phone
+              number, we may be unable to restore access if you log out, lose your device, or lose
+              your session credentials.
+            </p>
+          </section>
+
+          <section class="terms-section" id="conduct">
+            <h2>4. Acceptable use</h2>
+            <p>You agree not to use Groupicorn to:</p>
+            <ul>
+              <li>Break the law or encourage unlawful, fraudulent, or dangerous conduct.</li>
+              <li>Harass, threaten, stalk, exploit, or harm another person.</li>
+              <li>Share content that is hateful, obscene, defamatory, invasive of privacy, or otherwise unlawful.</li>
+              <li>Impersonate another person or misrepresent your identity or affiliation.</li>
+              <li>Upload malicious code, interfere with the service, evade access controls, or probe for vulnerabilities.</li>
+              <li>Collect information about others without permission or use automated means to scrape the service.</li>
+              <li>Reverse engineer or copy Groupicorn except where applicable law expressly permits it.</li>
+              <li>Use Groupicorn to send spam, unsolicited promotions, or content that infringes another person’s rights.</li>
+            </ul>
+            <p>
+              We may investigate suspected violations and remove content, restrict features,
+              remove a member from a herd, or suspend or terminate access when reasonably
+              necessary to protect users, Groupicorn, or others.
+            </p>
+          </section>
+
+          <section class="terms-section" id="content">
+            <h2>5. Your content</h2>
+            <p>
+              You keep ownership of messages, profile details, and other content you submit to
+              Groupicorn (“Your Content”). You give us a limited, non-exclusive, worldwide,
+              royalty-free license to host, store, reproduce, transmit, display, and otherwise
+              process Your Content only as needed to operate, secure, improve, and provide
+              Groupicorn and comply with law. This license ends when Your Content is deleted from
+              our systems, except for limited backup, legal, or security retention.
+            </p>
+            <p>
+              You represent that you have the rights and permissions needed to submit Your
+              Content and allow us to use it as described above. You are responsible for Your
+              Content and for deciding what to share with your herd. Messages and shared status
+              may be copied, saved, or disclosed by recipients outside Groupicorn.
+            </p>
+            <p>
+              If you believe content on Groupicorn infringes your rights, contact us with enough
+              information to identify the content and explain your concern.
+            </p>
+          </section>
+
+          <section class="terms-section" id="privacy">
+            <h2>6. Privacy and device permissions</h2>
+            <p>
+              Our <a href="../privacy/">Privacy Policy</a> explains how Groupicorn collects,
+              uses, shares, and retains information. Optional features may request camera or
+              precise location permission. You can decline those permissions or turn them off in
+              iOS Settings, though the related feature may then be unavailable.
+            </p>
+            <p>
+              You may share another person’s information or location only when you have a lawful
+              basis and their permission to do so. Do not use Groupicorn to secretly monitor,
+              track, or surveil another person.
+            </p>
+          </section>
+
+          <section class="terms-section" id="ownership">
+            <h2>7. Our intellectual property</h2>
+            <p>
+              Groupicorn, including its software, design, artwork, name, logos, and other content
+              we provide, is owned by us or our licensors and is protected by intellectual
+              property laws. Subject to these Terms, we grant you a limited, personal,
+              non-exclusive, non-transferable, revocable license to install and use Groupicorn on
+              Apple-branded devices you own or control as permitted by the App Store Usage Rules.
+            </p>
+            <p>
+              These Terms do not transfer ownership of Groupicorn or grant any right to use our
+              names, marks, or branding. Feedback you voluntarily provide may be used by us
+              without restriction or compensation to you.
+            </p>
+          </section>
+
+          <section class="terms-section" id="third-parties">
+            <h2>8. Third-party services</h2>
+            <p>
+              Groupicorn relies on third-party services, including Apple for app distribution and
+              Supabase for authentication, database hosting, and message delivery. Your use of
+              those services may also be governed by their own terms and policies. We are not
+              responsible for third-party services, content, or availability except as required
+              by law.
+            </p>
+          </section>
+
+          <section class="terms-section" id="termination">
+            <h2>9. Suspension, termination, and deletion</h2>
+            <p>
+              You may stop using Groupicorn at any time. Logging out or deleting the app does not
+              automatically delete information already stored by the service. To request account
+              deletion, email <a href="mailto:help@andrewarrow.dev?subject=Groupicorn%20account%20deletion">help@andrewarrow.dev</a>.
+            </p>
+            <p>
+              We may suspend or terminate access if you materially or repeatedly violate these
+              Terms, create risk or possible legal exposure, or if needed to protect Groupicorn,
+              users, or others. Where practical, we will provide notice. Provisions that by their
+              nature should survive termination—including ownership, disclaimers, liability
+              limits, and general legal terms—will survive.
+            </p>
+          </section>
+
+          <section class="terms-section" id="disclaimers">
+            <h2>10. Disclaimers</h2>
+            <p>
+              To the fullest extent permitted by law, Groupicorn is provided “as is” and “as
+              available,” without warranties of any kind, whether express, implied, or statutory,
+              including warranties of merchantability, fitness for a particular purpose, title,
+              and non-infringement. We do not warrant that Groupicorn will always be accurate,
+              secure, uninterrupted, error-free, or available.
+            </p>
+            <p>
+              Availability, location, meetup status, and arrival estimates may be delayed,
+              incomplete, or inaccurate. You are responsible for confirming plans and making safe
+              decisions. We do not endorse, verify, or take responsibility for users, herds, user
+              content, meetups, or interactions that occur through or outside Groupicorn.
+            </p>
+            <p>
+              Some jurisdictions do not allow certain warranty exclusions, so some of these
+              exclusions may not apply to you.
+            </p>
+          </section>
+
+          <section class="terms-section" id="liability">
+            <h2>11. Limitation of liability</h2>
+            <p>
+              To the fullest extent permitted by law, andrewarrow.dev and its affiliates,
+              licensors, and service providers will not be liable for indirect, incidental,
+              special, consequential, exemplary, or punitive damages, or for lost profits, data,
+              goodwill, use, or other intangible losses, arising from or related to Groupicorn or
+              these Terms, even if advised that such damages are possible.
+            </p>
+            <p>
+              To the fullest extent permitted by law, our total liability for all claims arising
+              from or related to Groupicorn or these Terms will not exceed the greater of the
+              amount you paid us to use Groupicorn during the 12 months before the claim or US
+              $100. The limitations in this section apply to the maximum extent permitted by law
+              and do not limit liability that cannot legally be limited or excluded.
+            </p>
+          </section>
+
+          <section class="terms-section" id="general">
+            <h2>12. General terms</h2>
+            <h3>Changes</h3>
+            <p>
+              We may update these Terms as Groupicorn changes. We will post the revised Terms and
+              update the effective date. If a change is material, we will provide additional
+              notice when appropriate. Your continued use after revised Terms take effect means
+              you accept them.
+            </p>
+            <h3>Governing law</h3>
+            <p>
+              These Terms are governed by the laws of the State of California, without regard to
+              conflict-of-law principles. Any dispute that is not subject to another legally
+              required forum will be brought in the state or federal courts located in
+              California, and you and we consent to their jurisdiction. This does not deprive you
+              of mandatory consumer protections in the place where you live.
+            </p>
+            <h3>Entire agreement</h3>
+            <p>
+              These Terms and the Privacy Policy are the entire agreement between you and us
+              regarding Groupicorn. If a provision is unenforceable, it will be modified to the
+              minimum extent necessary and the remaining provisions will continue in effect. Our
+              failure to enforce a provision is not a waiver. You may not assign these Terms
+              without our consent; we may assign them as part of a reorganization, financing,
+              merger, acquisition, or transfer of the service.
+            </p>
+          </section>
+
+          <section class="terms-section" id="apple">
+            <h2>13. Terms for Apple users</h2>
+            <p>
+              If you obtained Groupicorn through Apple’s App Store, you acknowledge that these
+              Terms are between you and andrewarrow.dev, not Apple. Apple is not responsible for
+              Groupicorn or its content and has no obligation to provide maintenance or support.
+              If Groupicorn fails to conform to an applicable warranty, you may notify Apple, and
+              Apple may refund any purchase price you paid for the app. To the maximum extent
+              permitted by law, Apple has no other warranty obligation.
+            </p>
+            <p>
+              We, not Apple, are responsible for addressing claims relating to Groupicorn,
+              including product liability, legal or regulatory compliance, and intellectual
+              property claims. Apple and its subsidiaries are third-party beneficiaries of these
+              Terms and may enforce this section against you. You represent that you are not in a
+              country subject to a United States government embargo or designated as supporting
+              terrorism and are not on a United States government prohibited or restricted-party
+              list.
+            </p>
+          </section>
+
+          <section class="terms-section contact-block" id="contact">
+            <h2>14. Contact us</h2>
+            <p>
+              Questions or concerns about these Terms can be sent to:<br>
+              <strong>andrewarrow.dev — Groupicorn Terms</strong><br>
+              <a href="mailto:help@andrewarrow.dev">help@andrewarrow.dev</a>
+            </p>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      © 2026 andrewarrow.dev · <a href="../privacy/">Privacy Policy</a> · Groupicorn Terms of Service
+    </footer>
+  </body>
+</html>
