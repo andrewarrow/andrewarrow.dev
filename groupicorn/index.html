@@ -164,6 +164,26 @@
         line-height: 1.5;
       }
 
+      .legal-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem 1.1rem;
+        margin-top: 1.25rem;
+        font-size: 0.84rem;
+        font-weight: 700;
+      }
+
+      .legal-links a {
+        color: var(--purple);
+        text-underline-offset: 0.18em;
+      }
+
+      .legal-links a:focus-visible {
+        border-radius: 0.2rem;
+        outline: 3px solid var(--yellow);
+        outline-offset: 3px;
+      }
+
       .art-plane {
         position: relative;
         display: grid;
@@ -334,6 +354,12 @@
         <p class="instruction" id="instruction">
           Already installed? Return to Camera and scan the code again.
         </p>
+
+        <nav class="legal-links" aria-label="Groupicorn information">
+          <a href="privacy/">Privacy</a>
+          <a href="terms/">Terms</a>
+          <a href="mailto:help@andrewarrow.dev?subject=Groupicorn%20Support">Support</a>
+        </nav>
 
         <div class="rainbow" aria-hidden="true">
           <span></span><span></span><span></span><span></span><span></span><span></span>
