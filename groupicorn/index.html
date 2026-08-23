@@ -374,6 +374,9 @@
     <script>
       (() => {
         const appStoreURL = "https://apps.apple.com/app/id6803508836";
+        const playStoreURL = "https://play.google.com/apps/testing/dev.andrewarrow.groupicorn.app";
+        const isAndroid = /Android/i.test(navigator.userAgent);
+        const storeURL = isAndroid ? playStoreURL : appStoreURL;
         const params = new URLSearchParams(window.location.search);
         const joinCode = params.get("h");
         const hasValidCode = /^[a-f0-9]{32}$/i.test(joinCode || "");
@@ -389,8 +392,9 @@
           instruction.textContent = "Ask someone in the herd to show their Groupicorn code.";
         }
 
-        if (appStoreURL) {
-          storeLink.href = appStoreURL;
+        if (storeURL) {
+          storeLink.href = storeURL;
+          storeLink.textContent = isAndroid ? "Get it on Google Play" : "Get Groupicorn";
           storeLink.hidden = false;
           availability.dataset.visible = "false";
         }
