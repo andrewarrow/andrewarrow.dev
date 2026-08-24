@@ -373,10 +373,12 @@
 
     <script>
       (() => {
-        const appStoreURL = "https://apps.apple.com/app/id6803508836";
+        // Restore this URL once Groupicorn is approved for the App Store.
+        // const appStoreURL = "https://apps.apple.com/app/id6803508836";
+        const testFlightURL = "https://testflight.apple.com/join/pfjU3HGz";
         const playStoreURL = "https://play.google.com/apps/testing/dev.andrewarrow.groupicorn.app";
         const isAndroid = /Android/i.test(navigator.userAgent);
-        const storeURL = isAndroid ? playStoreURL : appStoreURL;
+        const storeURL = isAndroid ? playStoreURL : testFlightURL;
         const params = new URLSearchParams(window.location.search);
         const joinCode = params.get("h");
         const hasValidCode = /^[a-f0-9]{32}$/i.test(joinCode || "");
@@ -394,7 +396,7 @@
 
         if (storeURL) {
           storeLink.href = storeURL;
-          storeLink.textContent = isAndroid ? "Get it on Google Play" : "Get Groupicorn";
+          storeLink.textContent = isAndroid ? "Get it on Google Play" : "Join the TestFlight beta";
           storeLink.hidden = false;
           availability.dataset.visible = "false";
         }
