@@ -312,6 +312,19 @@
     }
     .article__body .pullquote + p { margin-top: 0; }
     .article__body em { font-family: var(--serif); font-size: 1.12em; }
+    .source-link {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--acid-dark);
+      box-shadow: inset 0 -0.22em 0 rgba(216, 239, 86, 0.42);
+      transition: background-color 180ms ease, border-color 180ms ease;
+    }
+    .source-link:hover,
+    .source-link:focus-visible {
+      background: var(--acid);
+      border-color: var(--ink);
+      outline: none;
+    }
 
     .ending {
       max-width: 1160px;
@@ -477,7 +490,7 @@
           <div class="section-label reveal">04 / Recovering names</div>
           <p class="reveal">Physics has a scaling problem. No human being can keep quantum field theory, general relativity, cosmology, quantum information, topology, condensed matter, black-hole thermodynamics, particle physics, scattering amplitudes, and the relevant mathematics simultaneously loaded in working memory. The scientific corpus is too large, and the notation is fragmented across communities that often reinvent similar ideas using different language. One field calls something x, another calls a cousin of it y, and a third publishes the same structural insight in a journal nobody in the first two groups reads. Science is a giant company where every team has spent eighty years inventing its own names for user_id.</p>
 
-          <p class="reveal">That is where advanced AI could matter because it may become the first thing capable of holding enough of the conceptual codebase at once to notice that pieces we treat as separate are actually the same machinery. Maybe an equation from scattering amplitudes has the same deep structure as something in quantum information. Maybe an obscure topology theorem from 1987 and a modern black-hole result are different presentations of one object. Maybe several fields have already touched the same underlying function and failed to recognize it because the variable names were minified by history.</p>
+          <p class="reveal">That is where advanced AI could matter because it may become the first thing capable of holding enough of the conceptual codebase at once to notice that pieces we treat as separate are actually the same machinery. Maybe an equation from scattering amplitudes has the same deep structure as something in quantum information. Maybe an obscure topology theorem from 1987 and a modern black-hole result are different presentations of one object. Maybe several fields have already touched the same underlying function and failed to recognize it because the variable names were minified by history. There are already signs of that transition happening in 2026: an <a class="source-link" href="https://arxiv.org/abs/2603.04735" target="_blank" rel="noopener noreferrer">AI-assisted discovery paper in theoretical physics</a> describes a system autonomously solving an open problem, while <a class="source-link" href="https://www.nature.com/articles/s42256-026-01269-x" target="_blank" rel="noopener noreferrer">Nature Machine Intelligence has reported on AI’s rapid transformation of mathematical research</a>.</p>
 
           <p class="reveal">Science has done this before. Electricity and magnetism were different until they were electromagnetism. Space and time were different until they became spacetime. Mass and energy looked like separate concepts until an equation revealed an exchange rate. Great scientific advances often look in retrospect less like discovering an entirely new feature and more like realizing that the codebase had duplicate abstractions. Nature did not change. Someone finally noticed that two folders pointed to the same thing.</p>
 
