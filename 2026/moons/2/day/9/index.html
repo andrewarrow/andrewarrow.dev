@@ -360,13 +360,10 @@
     }
     footer span:last-child { color: var(--acid); }
 
-    .reveal { opacity: 0; transform: translateY(18px); transition: opacity 700ms ease, transform 700ms ease; }
-    .reveal.is-visible { opacity: 1; transform: translateY(0); }
     @keyframes float { 0%, 100% { transform: translate(-50%, -50%) rotate(0deg); } 50% { transform: translate(-50%, -52%) rotate(3deg); } }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-      .reveal { opacity: 1; transform: none; }
     }
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; }
@@ -535,16 +532,6 @@
     window.addEventListener('scroll', updateProgress, { passive: true });
     updateProgress();
 
-    const revealItems = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.08, rootMargin: '0px 0px -8% 0px' });
-    revealItems.forEach((item) => observer.observe(item));
   </script>
 </body>
 </html>
