@@ -4,19 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0d1110" />
-  <meta name="description" content="Cubacadabra is an open-source attempt to build a better user-generated gaming platform for creators, children, and parents." />
+  <meta name="description" content="Cubacadabra is the game platform parents wish existed. A Roblox alternative built around one monthly fee, no virtual currency, and no ads." />
   <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.svg" />
   <link rel="apple-touch-icon" href="assets/favicon.svg" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Why I started Cubacadabra" />
-  <meta property="og:description" content="Cubacadabra is an open-source attempt to build a better user-generated gaming platform for creators, children, and parents." />
+  <meta property="og:description" content="Cubacadabra is the game platform parents wish existed. A Roblox alternative built around one monthly fee, no virtual currency, and no ads." />
   <meta property="og:image" content="assets/og-image.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="An abstract diagram representing Cubacadabra's open-source gaming platform" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Why I started Cubacadabra" />
-  <meta name="twitter:description" content="Cubacadabra is an open-source attempt to build a better user-generated gaming platform for creators, children, and parents." />
+  <meta name="twitter:description" content="Cubacadabra is the game platform parents wish existed. A Roblox alternative built around one monthly fee, no virtual currency, and no ads." />
   <meta name="twitter:image" content="assets/og-image.jpg" />
   <title>Why I started Cubacadabra</title>
   <style>
@@ -339,6 +339,7 @@
     .source-link:hover,
     .source-link:focus-visible {
       background: var(--acid);
+      color: var(--ink);
       border-color: var(--paper);
       outline: none;
     }
@@ -426,20 +427,20 @@
   <div class="progress" aria-hidden="true"><div class="progress__bar"></div></div>
   <header class="topbar">
     <div class="topbar__mark"><span class="topbar__dot"></span><span>Cubacadabra, pronounced CUBE-uh-kuh-DAB-ruh</span></div>
-    <div class="topbar__right">a different kind of game platform</div>
+    <div class="topbar__right">A Roblox alternative in the making</div>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero__copy">
         <div>
-          <div class="eyebrow">Essay / games, money &amp; trust</div>
+          <div class="eyebrow">Let's build a better place to play</div>
           <h1>Why I started Cubacadabra.</h1>
-          <p class="hero__dek">I want to build the game platform parents wish existed, where children can play, create, and belong without being treated like a revenue stream.</p>
+          <p class="hero__dek">Cubacadabra is the game platform parents wish existed. I'm building a Roblox alternative where kids can make things with friends and the game doesn't keep asking them for money.</p>
         </div>
-        <div class="hero__footer"><span>By Andrew Arrow</span><span>Project note<br>Scroll to explore</span></div>
+        <div class="hero__footer"><span>By Andrew Arrow</span><span><a class="source-link" href="https://cubacadabra.com/">Check out Cubacadabra</a><br>Early preview</span></div>
       </div>
-      <div class="hero__visual" aria-label="An abstract diagram representing Cubacadabra's open-source gaming platform" role="img">
+      <div class="hero__visual" aria-label="An abstract diagram connecting Cubacadabra's creators, children, and parents" role="img">
         <div class="diagram" aria-hidden="true">
           <div class="orbit orbit--two"><i class="orbit__node orbit__node--a"></i><i class="orbit__node orbit__node--b"></i></div>
           <div class="orbit orbit--three"><i class="orbit__node orbit__node--c"></i></div>
@@ -449,115 +450,116 @@
           <div class="diagram__label diagram__label--b">children</div>
           <div class="diagram__label diagram__label--c">parents</div>
         </div>
-        <div class="visual-note">the code is open source on <a href="https://github.com/cubacadabra/rust">GitHub</a></div>
+        <div class="visual-note">The engine, clients, and examples are on <a href="https://github.com/cubacadabra">GitHub</a>.</div>
       </div>
     </section>
 
     <div class="article-shell">
       <div class="article-intro reveal">
-        <div class="article-intro__label"><strong>Start here</strong>Project note <br>Developer Preview 0.3</div>
-        <p class="article-intro__lead">Cubacadabra is a bet that a game platform can be fun for children, useful for creators, legible to parents, and still make economic sense.</p>
+        <div class="article-intro__label"><strong>The idea</strong>One monthly fee.<br>Let the kids play.</div>
+        <p class="article-intro__lead">No virtual currency, no ads, no dark patterns. Creators get paid from the subscription pool for making games people love.</p>
       </div>
 
       <article class="article">
         <aside class="article__side reveal">
-          <p><strong>Filed under</strong>open source<br>user-generated games<br>family software</p>
-          <p><strong>Working thesis</strong>create value for kids<br>do not extract it</p>
+          <p><strong>For</strong>parents<br>game makers<br>curious kids</p>
+          <p><strong>Come have a look</strong><a href="https://cubacadabra.com/">cubacadabra.com</a></p>
         </aside>
 
         <div class="article__body">
-          <div class="section-label reveal">01 / The thing that feels backwards</div>
-          <p class="reveal">I have nothing against Roblox. It taught an entire generation that a game could also be a place, a toolbox, a social network, and a little economy. That is an enormous achievement. My problem is that the economics of a platform show up everywhere in the experience, especially when the customers are children and the people paying are their parents.</p>
+          <h2 class="section-label reveal">01 / Keep the good part</h2>
+          <p class="reveal">Imagine your kid calling you over to see a dragon. A deeply questionable dragon. Six legs, one wing, apparently it lives on the roof of a pizza shop. They made it. Their friend built the shop. The two of them have spent an hour arguing about whether the dragon should deliver pizzas or eat the customers.</p>
 
-          <p class="reveal">Virtual currency makes a game feel like a shop even when the child came for play. Discovery starts to reward the games that already have money behind them. More time spent can look like success, even when a parent is looking at the clock and wondering why the evening disappeared. Safety becomes a permanent repair job because the platform was designed first for scale and only later for the realities of children meeting strangers online.</p>
+          <p class="reveal">I want more of that. The weird little worlds, the games with rules that only make sense to the people who invented them, the moment somebody realizes they can change a thing on the screen instead of just clicking it. That's the part of a platform like Roblox that gets me excited. Give kids a place to build together and they will come up with things no adult would have put in a product roadmap.</p>
 
-          <blockquote class="pullquote reveal">The business model is not a detail around the game. It becomes part of the game.</blockquote>
+          <p class="reveal">Now imagine all of that with one monthly fee. The parent pays. The kid plays. Nobody has to stop the pizza dragon argument to negotiate a purchase. The person who made the game gets paid from a share of the subscriptions, and can spend their time making the dragon more ridiculous.</p>
 
-          <p class="reveal">The obvious response is to build a smaller, safer Roblox. I think that is too narrow. The better question is what would happen if we started with a different alignment. A parent pays for access to a service. A creator gets rewarded for making something people genuinely want to play. A child gets to play without a brightly colored cash register following them around.</p>
+          <p class="reveal">That's Cubacadabra. Instead of earning more when kids spend more, we want to earn more because more families want to be here. Creators get paid for making games people actually love, not for building better cash registers. No virtual currency to refill. No ads. No countdown telling your kid that the special thing will disappear unless you buy it right now. That alignment is the whole bet.</p>
 
-          <div class="section-label reveal">02 / The value proposition</div>
-          <p class="reveal">Cubacadabra is a user-generated gaming platform with a flat family subscription as its intended business model. No Robux-style currency. No advertisements aimed at children. No paid boost that quietly turns discovery into an auction. The exact price, payout formula, and scale economics still need to be proved. That is not a footnote. It is the central business question.</p>
+          <p class="reveal">I'm building it now. There are games, a shared engine, a browser client, phone apps, and a desktop Studio taking shape. The subscription model, parent experience, and community safety work described here are where I'm taking it. <a class="source-link" href="https://cubacadabra.com/">You can check out the early preview</a> and see how far it's come.</p>
 
-          <p class="reveal">The idea is a shared pool of subscription revenue, with a clear and capped formula for creators. If a creator makes a game that families love, there should be a path for that work to earn real money without requiring the creator to become an expert in in-game purchases. A small creator who is invisible on a massive platform might be visible here because discovery is not supposed to be pay to win.</p>
+          <h2 class="section-label reveal">02 / Something better than a timer</h2>
+          <p class="reveal">A number that says your child spent 94 minutes in an app tells you remarkably little. They might have spent those minutes making an obstacle course with a friend. They might have spent them staring at a shop. Somehow both afternoons produce the same little bar on a screen time chart.</p>
 
-          <p class="reveal">This also gives parents a much simpler thing to understand. You are not loading money into a child account and hoping the next click is harmless. You are paying for a place where your child can play and make things. That is a normal software relationship. It has a beginning, an end, and a receipt that does not require a spreadsheet to decode.</p>
+          <p class="reveal">I want a parent dashboard that shows what your kid created, who they played with, and where safety interventions happened. You should be able to open it and understand the afternoon. There's the world they worked on. There's the group they played with. There's a report, what happened to it, and whether you need to do anything. That's the parent experience I want to build.</p>
 
-          <blockquote class="pullquote reveal">Parents should be customers, not just the payment method.</blockquote>
+          <p class="reveal">It also gives you a way into their world. You can ask about the bridge they built instead of starting every conversation with how long they've been on the iPad. Maybe they'll show you why it keeps collapsing. Maybe you'll have an opinion about the dragon. Now you're participating in something they care about. The subscription becomes a service for parents, with something useful on our side of the screen too.</p>
 
-          <p class="reveal">That sounds almost boring, which is part of the appeal. Boring can be a feature when the alternative is a financial system designed to make a nine year old feel one purchase away from being left behind.</p>
+          <blockquote class="pullquote reveal">You should be able to open it and understand the afternoon.</blockquote>
 
-          <div class="section-label reveal">03 / Creation is the core loop</div>
-          <p class="reveal">The long-term promise is not a larger pile of games to scroll through. It is a shorter distance between playing a game and understanding how it was made. A game should feel less like a sealed amusement park ride and more like a small world you can inspect, remix, and eventually build yourself.</p>
+          <p class="reveal">And I don't want to optimize Cubacadabra for maximum hours. A game can have a good stopping point. A kid can leave without losing a streak or disappointing a virtual pet that has apparently hired a collections agency. If they had a great time and went outside, I'd like us to be able to call that a successful afternoon.</p>
 
-          <p class="reveal">Today, a Cubacadabra game is a portable package: a manifest, assets, and Luau rules. The shared engine reads the package and provides generic capabilities such as movement, collision, interaction zones, effects, audio, UI, and multiplayer state. The game owns the meaning. Rust does not know what a spell, a relay gate, or a schoolyard is. It knows how to run a world and hand the game the pieces it needs.</p>
+          <p class="reveal">None of this gets us out of making good games. Kids don't choose a game because the founder has thoughtful opinions about subscriptions. They choose it because their friend is there and something fun is happening. We have to earn that part.</p>
 
-          <p class="reveal">That separation matters. It means a creator can make Spellbound Schoolyard, where players learn Spark, Splash, and Sprout before celebrating in a Wand Circle. Another creator can make Signal Run, a cooperative race through signal gates. Both use the same runtime. Neither requires the engine to learn the theme. The platform gets more capable without turning every new idea into a special case.</p>
+          <h2 class="section-label reveal">03 / Let the game makers make games</h2>
+          <p class="reveal">Suppose you've made a really good cooperative game. It takes twenty minutes. Three friends solve a puzzle, do something funny, and finish. You'd like to make another one. Under a model that rewards spending or sheer time consumed, you have a problem. Now you're trying to find room for a shop, or a grind, or some reason for the players to remain inside it long after the interesting part is over.</p>
 
-          <p class="reveal">For a child, this can be as simple as discovering that the world has rules and those rules can be changed. For a parent, it can look like play that leaves a trail toward making, storytelling, logic, collaboration, and maybe a first line of code. For a creator, it is the beginning of a real medium rather than another storefront with a level editor attached.</p>
+          <p class="reveal">I'd like that twenty minute game to have a home. A creator should be able to make a puzzle, a race, a forest full of secrets, or something I can't name yet, and get paid because families are glad it exists. The subscription pool gives us a way to try that. The payout formula still needs work, but paying purely by minutes would invite people to pad their games. We'd be back where we started.</p>
 
-          <blockquote class="pullquote reveal">Every game should be an invitation to make the next game.</blockquote>
+          <p class="reveal">Discovery matters just as much as the formula. My plan is no sponsored games and no paid boosting. A creator shouldn't have to buy an audience from the same platform that's supposed to help people find their work. I can't promise that every game will be a hit. I can make buying the front page something we don't sell.</p>
 
-          <div class="section-label reveal">04 / One engine, several doors</div>
-          <p class="reveal">The technical project is further along than the product story, which is a useful way to be honest about where this is. There is a platform-neutral Rust runtime shared by Studio, iOS, Android, and the browser. Native clients use the same engine through a C boundary. The browser uses WebAssembly. The renderer is built with wgpu. The game lifecycle runs through sandboxed Luau on both native and web targets.</p>
+          <p class="reveal">The first creators may be people whose games currently earn nothing. For them, a smaller audience that actually finds their work could be worth more than a theoretical audience of millions. A useful monthly payment and some players who care can be a pretty compelling reason to try a new place.</p>
 
-          <p class="reveal">That sounds like an implementation detail until you have watched a promising game become trapped in one client. A portable package changes the leverage. Build the game once, then load it in the browser, in an iOS app, in an Android app, or in the desktop Studio host. The shell changes for the device. The world and its rules do not have to be rewritten every time.</p>
+          <p class="reveal">I'd also like playing someone else's game to be how you start making your own. Open an example, move a platform, change the jump, see what happens. Eventually your version is different enough that your friend wants to play it. There doesn't have to be a grand decision to become a programmer. You can just get annoyed that the bridge is too short and fix the bridge.</p>
 
-          <p class="reveal">Studio is intentionally modest right now. It can open a raw project or a built package, show the live renderer, load assets, and connect to the multiplayer Worker. Its World, Assets, Materials, and Test layouts are an early workbench, not a finished editor. That is enough to make the direction tangible. The future editor should help a person move from an idea to a playable place without first becoming a full-time tools engineer.</p>
+          <h2 class="section-label reveal">04 / You can open the project</h2>
+          <p class="reveal">This is where the open source part becomes useful. A Cubacadabra game is already a folder with a manifest, Luau scripts, and assets. The manifest describes the world. The scripts describe what happens in it. The assets are things like images and sounds. The <a class="source-link" href="https://github.com/cubacadabra/tools">build tools</a> turn that folder into a package the clients can load.</p>
 
-          <p class="reveal">The multiplayer service is a Cloudflare Worker with a Durable Object for each world. The WebSocket carries presence and movement. The game rules remain game-owned. Shared state is passed as opaque JSON with sequences and compare-and-set retries, so two players can act at once without one silently erasing the other. The jargon is not the point. The point is that the platform is being built as a set of reusable primitives, not as one enormous game with a few configurable colors.</p>
+          <p class="reveal">The <a class="source-link" href="https://github.com/cubacadabra/rust">engine is Rust</a>. The browser runs it through WebAssembly, and the Swift iOS app, Kotlin Android app, and desktop Studio use the same Rust code natively. Rendering goes through wgpu. For a game maker, the useful consequence is that the same game package can run across those clients. You don't need to maintain four slightly different versions of what happens when somebody jumps.</p>
 
-          <div class="section-label reveal">05 / Trust is a product feature</div>
-          <p class="reveal">A platform for children cannot treat safety as a paragraph on a terms-of-service page. It has to be part of the architecture and part of the business model. Cubacadabra is still early, but the direction is clear: parent controls should be understandable, reports should be actionable, and the system should preserve enough evidence to know what happened.</p>
+          <p class="reveal">There are examples you can read. Spellbound Schoolyard has players learning charms and casting them together. Signal Run is a cooperative relay. The newer <a class="source-link" href="https://github.com/cubacadabra/examples">examples</a> include Whispering Wilds, with a forest trail and an old watchtower, and Stormline Outpost, where you gather supplies by day and keep a beacon alive through the storm. Their rules live in the games. The engine doesn't need a special opinion about watchtowers.</p>
 
-          <p class="reveal">The current backend already has the beginnings of that shape. Players can block and report through normal authenticated requests. Reports are stored privately in D1. World sockets load a player's block list and filter subsequent presence and movement. That is useful infrastructure. It is not a solved safety program, and I do not want to pretend that a few endpoints solve the hardest problem on the internet.</p>
+          <p class="reveal"><a class="source-link" href="https://github.com/cubacadabra/studio">Studio</a> can already open a source project, run it, load its assets, and join multiplayer. The visual editing workspace is still early. There's plenty left to build before a kid can sit down and make that pizza shop without help, but the path from files to a running game exists.</p>
 
-          <p class="reveal">I am especially wary of the idea that the answer is to turn random users into vigilantes. People want to help, but asking them to impersonate children, bait dangerous adults, continue harmful conversations, or carry screenshots into a moderation queue creates its own legal and human problems. A better direction is structured safeguarding: trained community roles, strict no-engage rules, authenticated in-platform records, rapid escalation, and independent review. If there is ever a decoy account program, it should be operated by trained staff under written protocols with counsel and appropriate authorities.</p>
+          <p class="reveal">There's a distinction here that I care about. Being able to pull some bytes out of a running game isn't the same as being handed a project you can understand and permission to use it. I want readable source, documented formats, licenses, credit, and an easy way to make your own version when the creator allows it. Real source files, real ownership, real portability. You should be able to keep the work you've done.</p>
 
-          <p class="reveal">The incentive matters too. I do not want a bounty hunt for predators, because paying for shocking outcomes can create bad incentives. I would rather fund moderation and safeguarding work based on accuracy, quality, and reliability, with transparent reporting about what the system can and cannot do. A nonprofit structure may eventually make sense. So may a public safety commitment that survives changes in ownership. Those are serious questions for lawyers, operators, and parents to help answer from day one.</p>
+          <p class="reveal">That doesn't mean every studio has to give away every secret. I want creators to be able to keep server code private and choose how they share their client work. They could keep it closed, let people read it, allow remixes, or release it under an open license. The runtime is open. What a creator chooses to share needs to be their decision. A proper project with permission to build on it is much more interesting than an argument about what somebody could theoretically extract.</p>
 
-          <blockquote class="pullquote reveal">Safety is a community function with accountability, not a bounty hunt.</blockquote>
+          <h2 class="section-label reveal">05 / Who's in the room</h2>
+          <p class="reveal">Money isn't the only reason a parent hesitates. Who is my kid playing with? Can an adult approach them? If somebody reports something frightening, does a person actually look at it? I don't think a parent should have to become an amateur investigator to get answers about a service they're paying for.</p>
 
-          <div class="section-label reveal">06 / Why open source</div>
-          <p class="reveal">Open source is not a magic spell. It does not automatically make a platform safe, fair, or popular. It does make certain promises possible. The runtime can be inspected. The game package format can be documented. A creator can understand what they are shipping instead of handing a finished world to a black box and hoping the rules stay favorable.</p>
+          <p class="reveal">Safety has to be built in from the start. There is already block and report plumbing in the backend, including private reports and filtering of blocked players. The next work is the people and process around it: verifiable reporting, structured community roles, and radical transparency about how we respond. I want records that let a reviewer establish what happened, with controlled access and clear retention limits. Parents need useful answers without anybody exposing children's private information in a public incident log.</p>
 
-          <p class="reveal">The repositories are separate on purpose. Game projects contain manifests, assets, and Luau source. The Rust repository contains the shared engine and its native and WebAssembly adapters. The web client owns the browser shell. iOS and Android own their platform services. Studio owns the desktop host. Tools builds a game into a portable package. This is less glamorous than saying everything is one seamless metaverse, but it gives the pieces names and boundaries. Boundaries are where ownership starts.</p>
+          <p class="reveal">People in a community will notice things staff miss. We should give them a useful way to help. The program I want would train and vet community guardians, give them reporting tools, and make their job very clear: flag the problem and escalate it. Don't bait somebody, pose as a child, or keep a dangerous conversation going to collect a more dramatic screenshot. Reports need to reach people who are equipped to act.</p>
 
-          <p class="reveal">Creators should eventually have choices about what they open. Some may want a closed server implementation, some may want source visible, and some may want a permissive remix license. The principle is not that every game must expose every secret. The principle is that openness should be a first-class option, with real files, clear licenses, proper credit, and a way to fork the work if the creator wants that.</p>
+          <p class="reveal">I'd pay people for doing that work reliably. Small stipends for trained moderators make sense to me; cash prizes for catching somebody create an incentive I don't want anywhere near this. We'd publish how quickly reports are handled, what action was taken in aggregate, and where we fell short. I'm going to need people who understand child safety and platform law to help design this. Software alone doesn't do the job, and hiring those people belongs in the budget from the beginning.</p>
 
-          <p class="reveal">This matters to investors too. A closed platform can be defensible because nobody else can leave. An open platform has to be defensible because people want to stay. The moat, if there is one, is the combination of a trusted family product, a growing library of good games, creator tools that reduce the cost of making them, and a payment system that attracts talent without extracting from children. That is a harder moat to build. It is also a healthier one.</p>
+          <p class="reveal">That's part of what the monthly fee is for. When a parent asks what they're paying for, the answer should include the people looking after the place.</p>
 
-          <blockquote class="pullquote reveal">The goal is not to trap people in the platform. It is to give them a reason to return.</blockquote>
+          <h2 class="section-label reveal">06 / Okay, show me the math</h2>
+          <p class="reveal">If I were listening to this as an investor, I'd be reaching for a calculator by now. Ten dollars a month sounds lovely. Subtract payment and app store fees, servers, moderation, support, insurance. How much is left for the person who made the game? A creator cannot pay rent with my good intentions.</p>
 
-          <div class="section-label reveal">07 / The bet and the unfinished parts</div>
-          <p class="reveal">The business flywheel is straightforward to describe and difficult to earn. Parents pay a subscription. That money supports creators and the service around them. Creators make better games because they can be discovered and paid without building a casino. More families join because there is something worth playing and because the rules make sense. More families make the pool and the audience more meaningful for creators.</p>
+          <p class="reveal">Take $9.99 as an example. A thousand paying families brings in $9,990 a month before costs. That is a budget for an early experiment, and it has to cover real bills. We need a defined creator pool we can afford, with a clear formula, instead of promising a fixed amount for every hour somebody leaves a game running. As subscriptions grow, the pool can grow. Whether the payments become worth a creator's time is something we'll have to demonstrate.</p>
 
-          <p class="reveal">The hard questions are not hidden. How much of a monthly fee remains after app stores, infrastructure, support, moderation, insurance, and taxes? What is a meaningful payout for a creator? How do you acquire families when Roblox, Fortnite, and Minecraft already occupy the conversation? How do you make the first ten minutes delightful before the network is full? Can a smaller community be sustainable before it becomes large? These are the questions a serious investor should ask, and the answers need numbers, not optimism.</p>
+          <p class="reveal">Then there's the more uncomfortable question: how do you get those families? Their kids already have games and friends. Nobody is waiting around for me to finish a Rust engine. The first places I'd try are parent groups, schools, and coding clubs. Put a good game and a small group of friends together, give parents a reason to feel comfortable saying yes, and see whether anyone asks to come back.</p>
 
-          <p class="reveal">The current answer is to build the smallest credible system and keep testing it. Developer Preview 0.3 has three example packages, a shared engine, a browser client, native clients, a desktop host, a multiplayer Worker, build tools, and a conformance game that exercises the game-facing SDK. It is not yet the polished product I want a family to subscribe to. It is a working argument that the architecture can support one.</p>
+          <p class="reveal">A parent doesn't need a lecture on user-generated content. They need to know whether this is fun, whether their kid can play with friends, and whether they're signing up for another argument about money. "A Roblox alternative with no Robux and no ads" is a pretty understandable invitation. The child still needs to enjoy the game after the parent clicks.</p>
 
-          <p class="reveal">That is why I started Cubacadabra. Not because I think every existing game platform is evil, and not because open source solves parenting. I started it because the default relationship between a child, a game, and a business feels more permanent than it should. There is room to try a different relationship, one where play is valuable before it is monetized and where the people paying for the service are allowed to know what they are buying.</p>
+          <p class="reveal">I'd like to get to a thousand paying families and a couple of dozen good games made by people outside the project. Then watch what happens. Do families renew? Do kids invite friends? Do creators earn enough to make another game? I'd be much more interested in those answers than a large signup number from people who came once.</p>
 
-          <blockquote class="pullquote reveal">We should optimize for creating value for children, not extracting value from them.</blockquote>
+          <p class="reveal">And maybe it grows into a few hundred thousand families instead of taking over the world. At ten dollars a month, that's a business worth understanding. It still has to cover its costs, but I don't see why the only acceptable outcome is replacing every game a child has ever played. We can start by being the place a group of friends wants to spend Saturday afternoon.</p>
 
-          <p class="reveal">If you are a parent, I want to know what would make you trust this. If you are a creator, I want to know what would make the tools worth learning. If you are an engineer, there is a Rust engine, a Luau package format, a web client, a backend, and plenty of unglamorous work waiting. If you are an investor, the opportunity is not just another game catalog. It is a chance to help prove that a family software business can align its revenue with the health of the people using it.</p>
+          <p class="reveal">Open source means someone else can use the code. What I hope will make people stay is the games, the people making them, and parents finding that we do what we said we'd do. That takes time. It's also the part of this I'd want an investor to care about. Fund enough of the experiment to see whether families and creators keep choosing it. The nonprofit question can wait until we know what we're building.</p>
 
-          <p class="reveal">The magic is not in the name. The magic would be getting all of those incentives to point in the same direction.</p>
+          <p class="reveal">For now, <a class="source-link" href="https://cubacadabra.com/">come have a look at Cubacadabra</a>. Run an example, poke around the source, tell me what you wish your kid's game platform did differently. If you make games, I'd love to see what you can do with it. There is a lot of room here for the first people who show up.</p>
+
+          <p class="reveal">I keep coming back to the kid calling you over. They're proud of something. They want you to see it. I'd like to build a company where more of those moments is a good reason for the company to do well.</p>
         </div>
 
         <aside class="article__side article__side--right reveal">
-          <p><strong>Field note</strong>developer preview<br>real code<br>hard questions</p>
-          <p><strong>Keep building</strong>make room for play<br>make room for trust</p>
+          <p><strong>Already here</strong>shared Rust engine<br>portable games<br>web, mobile, Studio</p>
+          <p><strong>Up next</strong>parent dashboard<br>creator payouts<br>community guardians</p>
         </aside>
       </article>
 
       <section class="ending reveal">
-        <div class="ending__meta"><span>End of project note</span><span>More to build together</span></div>
-        <p class="ending__line">The platform should serve the <em>family.</em></p>
+        <div class="ending__meta"><span><a href="https://cubacadabra.com/">Check out Cubacadabra</a></span><span><a href="https://github.com/cubacadabra">Explore the source</a></span></div>
+        <p class="ending__line">"Come look at what <em>I made.</em>"</p>
       </section>
     </div>
   </main>
 
-  <footer><span>Cubacadabra / Open source in progress</span><span>Parents, creators, builders welcome</span></footer>
+  <footer><span>Cubacadabra / An open source Roblox alternative</span><span>Come build something</span></footer>
 
   <script>
     const progressBar = document.querySelector('.progress__bar');
