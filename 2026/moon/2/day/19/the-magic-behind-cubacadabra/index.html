@@ -491,7 +491,7 @@
     <div class="article-shell">
       <div class="article-intro reveal">
         <div class="article-intro__label"><strong>The machinery</strong>Shared decisions.<br>Native hosts.</div>
-        <p class="article-intro__lead">A username save and a Blender hat have something in common: somebody has to decide whether they're valid. I'd like to make that decision once.</p>
+        <p class="article-intro__lead">iOS, Android, and web should share the code that decides how cubacadabra works. Rust owns that logic. Swift, Kotlin, and JavaScript do the minimum needed to connect it to each platform.</p>
       </div>
 
       <article class="article">
@@ -504,28 +504,38 @@
           <h2 class="section-label reveal">01 / Make some code disappear</h2>
           <p class="reveal">Before abracadabra was something you said over a top hat, it was something you wore around your neck. In the ancient Roman <a class="source-link" href="https://artsandculture.google.com/asset/quintus-serenus-liber-medicinalis/fAGBmLhWW99n0g">Liber Medicinalis</a>, attributed to Quintus Serenus Sammonicus, the prescription was to write the word repeatedly, removing a letter each time, and wear the result as a charm against fever. An unusually literal approach to making a problem smaller.</p>
 
-          <p class="reveal">I've been doing a version of this with Swift, Kotlin, and JavaScript. Find the same decision in three clients. Move it into Rust. Delete the other copies.
-           There's a Rust engine, native iOS and Android apps, a JavaScript browser client running WASM, and a Rust desktop Studio. Game packages carry manifests, Luau scripts, and assets. wgpu handles rendering. That gets you through the architecture slide. Then somebody changes their username while a request is in flight.</p>
+          <p class="reveal">If you've shipped iOS, Android, and web versions of something, you know the usual routine. Build the feature in Swift. Build it again in Kotlin. Build it again in JavaScript. Each version gets its own validation, requests, loading state, and error handling. They talk to the same backend, so we call them three clients of one product. We still wrote much of the product three times.</p>
 
-          <p class="reveal">There are two extractions worth separating. <a class="source-link" href="https://github.com/cubacadabra/rust/commit/205e3c81b3f5eb69786eb17f3f228ef6cbda6efd">cubacadabra-client</a> took over the engine-facing multiplayer session for all four hosts. <a class="source-link" href="https://github.com/cubacadabra/rust/commit/1221dcd28f6526e086e7721a97c8f22dc735e5b0">cubacadabra-app</a> owns portable application behavior outside gameplay, now used by the three consumer clients. The engine still owns simulation. Having a shared engine hadn't stopped the surrounding apps from independently deciding what a successful save meant.</p>
+          <p class="reveal">Then the feature changes. iOS learns how to recover from a failed save. Android gets the fix a week later. The browser handles the same error differently. Nobody set out to design three behaviors. They just accumulated while everyone was doing normal development.</p>
 
-          <h2 class="section-label reveal">02 / The save button has opinions</h2>
-          <p class="reveal">Suppose you save "Dragon_7," keep typing, then sign out before the response arrives. There are several reasonable-looking ways to get this wrong. Replace the newer draft with the submitted name. Put a green "Saved" beside text that wasn't saved. Apply the old account's response to whoever signed in next. You can reproduce all three bugs without ever drawing a triangle.</p>
+          <p class="reveal">I want cubacadabra's clients to become thin shells around Rust. Keep the minimum Swift, Kotlin, and JavaScript needed for native controls, device services, and browser integration. Move the portable application logic into shared Rust crates. That includes the boring account screens as well as the game engine. DRY, don't repeat yourself, should apply to the decisions the application makes.</p>
 
-          <p class="reveal">The app crate has an <code>AppModel</code>, actions, snapshots, and an effect queue. A host dispatches <code>UsernameChanged</code> and <code>SaveUsername</code>. Rust decides whether the draft is valid, whether anything changed, and whether a save is already pending. It emits an HTTP effect containing an ID, account ID, method, relative path, and body. The host performs the request and returns its raw status and body through <code>HttpCompleted</code>.</p>
+          <p class="reveal">A username field can still be a SwiftUI text field, a Compose text field, or an HTML input. Each forwards edits to Rust and displays the resulting state. Rust decides whether Save is enabled, which request to make, and what its response means. Changing the rule changes one implementation. The three screens can keep looking like they belong on their platforms.</p>
 
-          <p class="reveal">That last bit matters. Swift doesn't first decode a user and update its profile, then tell Rust that everything went fine. Rust gets to accept or reject the response before the host projects the new state. A 200 with the wrong account or wrong submitted name is still a failed save. A 401 remains unauthorized even if the server didn't send JSON.</p>
+          <p class="reveal">There are good precedents. <a class="source-link" href="https://github.com/0xSero/litter">Litter</a> has native iOS and Android interfaces over a Rust core that owns session state, streaming, and reconnect behavior, exposed through UniFFI bindings. <a class="source-link" href="https://firefox-source-docs.mozilla.org/rust-components/developing-rust-components/index.html">Mozilla's shared Rust components</a> grew out of maintaining separate sync implementations for Firefox's desktop and mobile apps. The reason will sound familiar: duplicated logic was hard to maintain, and differences between implementations caused bugs.</p>
 
-          <p class="reveal">Replacing the session increments a session ID and invalidates pending work. Effect IDs aren't reused within the model. An old response can arrive but it no longer has a pending operation to complete. If you edited during the save, the accepted username can change while your newer draft stays put. Canceling a native task is useful housekeeping, but cancellation alone doesn't establish which account a response belongs to.</p>
+          <h2 class="section-label reveal">02 / Is all this worth a save button?</h2>
+          <p class="reveal">I worked through this in a <a class="source-link" href="https://chatgpt.com/share/6aa2eb74-0490-83e8-aba5-57d9ad42b994">long architecture discussion</a> and the <a class="source-link" href="https://github.com/cubacadabra/ios_app/tree/main/docs">iOS development notes</a>. A senior mobile developer could reasonably ask why a username field needs Rust, a C ABI, JNI, and WASM. Separate native implementations are easier to debug in their own IDEs. Bindings add build work and lifetime bugs. For a small app with a few forms, duplication could be cheaper.</p>
 
-          <p class="reveal">The same pattern now covers avatar saves, catalog pagination, and optimistic block/unblock with rollback on failure. Birthday saves share the contract too, although Android doesn't yet expose the editor. Catalog rules include page bounds, duplicate removal, and package-path validation. Those are small decisions until three implementations disagree about them. Reporting still has its own host code; moving blocked users didn't magically migrate every moderation flow.</p>
+          <p class="reveal">For cubacadabra, I'm convinced the shared core is worth it. Rust already runs the engine and desktop Studio, and the browser already runs it through WASM. As the platform grows, joining a game will involve content compatibility, parental permissions, subscription access, blocked players, and recovery when a connection dies halfway through. I want to work out those interactions once. I don't want every new rule to become a coordination problem between three implementations.</p>
 
-          <blockquote class="pullquote reveal">A 200 with the wrong account or wrong submitted name is still a failed save.</blockquote>
+          <p class="reveal">The investment is starting to pay off. One <a class="source-link" href="https://github.com/cubacadabra/ios_app/commit/bbde24eb3edb07cb2f580dc2bd17e8ef15cc32d3">iOS integration commit</a> added 106 lines and removed 269, simplifying the username screens and their bridge. The first web integration grew because it needed the infrastructure. Future features should reuse that machinery. The test is whether their complicated behavior lives in one place and their host adapters stay small.</p>
 
-          <p class="reveal">On the phones, account state now belongs to an <code>AppViewModel</code> beside the <code>GameViewModel</code>. A broken game download shouldn't prevent account restoration. Recreating the renderer shouldn't cancel a profile save. The <a class="source-link" href="https://github.com/cubacadabra/rust/blob/main/docs/app-runtime.md">contract fixtures</a> cover late responses and newer drafts, and the Swift and browser probes exercise their real adapters. There's still device work to do. The interesting test is whether the account survives the game's lifecycle.</p>
+          <h2 class="section-label reveal">03 / The save button has opinions</h2>
+          <p class="reveal">One implementation doesn't mean one enormous crate. <a class="source-link" href="https://github.com/cubacadabra/rust/commit/205e3c81b3f5eb69786eb17f3f228ef6cbda6efd">cubacadabra-client</a> owns the engine-facing multiplayer session. <a class="source-link" href="https://github.com/cubacadabra/rust/commit/1221dcd28f6526e086e7721a97c8f22dc735e5b0">cubacadabra-app</a> owns portable behavior outside gameplay. The engine owns simulation and rendering. A username save belongs in the app crate, where all three consumer clients can use it.</p>
 
-          <h2 class="section-label reveal">03 / Who owns that pointer?</h2>
-          <p class="reveal">The app crate's normal dependencies are Serde and serde_json. It doesn't need wgpu or an async HTTP runtime to decide whether a username is valid. Credentials stay in the host. SwiftUI still owns its text fields, Compose owns its screens, and JavaScript owns the DOM. The shared part decides what those controls mean.</p>
+          <p class="reveal">Suppose you save "Dragon_7," keep typing, then sign out before the response arrives. The old response could overwrite your newer draft or update whoever signed in next. That is exactly the sort of rule I want fixed once.</p>
+
+          <p class="reveal">The host dispatches <code>UsernameChanged</code> and <code>SaveUsername</code>. Rust validates the draft and emits an HTTP effect with an ID, account ID, method, path, and body. The host supplies credentials, performs the request, and returns its raw status and body. Rust accepts or rejects the response before any screen updates the profile. The HTTP executor stays native; the meaning of the request stays shared.</p>
+
+          <p class="reveal">Replacing the session invalidates pending work. Effect IDs aren't reused within the model, so a late response can't complete a new account's operation. Editing during a save preserves the newer draft. Those decisions now have one implementation and one set of shared contract cases.</p>
+
+          <blockquote class="pullquote reveal">I want to work out those interactions once.</blockquote>
+
+          <p class="reveal">Avatar saves, catalog pagination, and optimistic block/unblock now follow the same pattern. Reporting remains host-owned. On the phones, an <code>AppViewModel</code> lives beside the <code>GameViewModel</code>, so restarting a game doesn't cancel an account save. The <a class="source-link" href="https://github.com/cubacadabra/rust/blob/main/docs/app-runtime.md">runtime contract</a> documents that boundary and its tests. Device integration still needs checking; the product rules can be exercised independently of a screen.</p>
+
+          <h2 class="section-label reveal">04 / Who owns that pointer?</h2>
+          <p class="reveal">Our bindings differ from Litter's: cubacadabra currently uses a small C interface on mobile and wasm-bindgen in the browser. The app crate needs Serde and serde_json, with no renderer or async HTTP runtime. That keeps shared application behavior usable without starting a game.</p>
 
           <p class="reveal">The <a class="source-link" href="https://github.com/cubacadabra/rust/blob/main/include/cubacadabra_app.h">native app ABI</a> is seven functions: create, destroy, dispatch JSON, get snapshot JSON, poll effect JSON, and read the output pointer and length. Handles are single-threaded. Output belongs to Rust and must be copied before the next mutation. Swift copies it into <code>Data</code>; Android has a small JNI byte-array adapter. Both check the snapshot protocol version. An incompatible binding fails instead of quietly reviving a second set of account rules.</p>
 
@@ -538,7 +548,7 @@
 
           <p class="reveal">The browser has another easy mistake waiting for you. <code>WebClient</code> and <code>WebRenderer</code> come from the same generated WASM module, so an engine handle refers to the same linear memory on both sides. Two modules compiled from the same source wouldn't make their pointers interchangeable. The app runtime is a separate WASM module, which lets an account page edit a username without loading the renderer. It has no engine pointer to share.</p>
 
-          <h2 class="section-label reveal">04 / Two people touched the same thing</h2>
+          <h2 class="section-label reveal">05 / Two people touched the same thing</h2>
           <p class="reveal">The client extraction removed a different kind of repetition. Each host had been translating socket messages, maintaining remote players, routing world changes, and draining the Luau network outbox. In the browser's <a class="source-link" href="https://github.com/cubacadabra/web/commit/60c11f85d198080a59ee491f7ea95ffd3f2f0b82">"crate 2nd" commit</a>, 244 lines came out and 74 went in. That's one host's diff, including its adapters. The useful part is having one session implementation to fix.</p>
 
           <figure class="article-media reveal">
@@ -559,7 +569,7 @@
 
           <p class="reveal">This is enough to coordinate cooperative state. It doesn't establish that a player earned a score. Clients still propose the payload, and the backend doesn't understand the game's reducer. The <a class="source-link" href="https://github.com/cubacadabra/rust/blob/main/docs/network-runtime.md">network contract</a> is explicit about that limit. Competitive games will need server-side rule validation. Ordering two claims correctly doesn't make either claim true.</p>
 
-          <h2 class="section-label reveal">05 / The part that draws the dragon</h2>
+          <h2 class="section-label reveal">06 / The part that draws the dragon</h2>
           <p class="reveal">Rendering goes through wgpu: Metal on iOS, configured Vulkan/GLES backends for Android, and WebGPU/WebGL paths for the browser. That shares a lot of renderer code. Surface lifetimes, input, audio playback, and the operating system interrupting you still belong to each host. An Android surface disappearing is a fairly effective reminder that the engine isn't the whole application.</p>
 
           <figure class="article-media reveal">
@@ -578,7 +588,7 @@
 
           <p class="reveal">The <a class="source-link" href="https://github.com/cubacadabra/rust/blob/main/docs/character_runtime.md">character budget</a> includes 50 renderer-only characters and 32 MiB of mesh/instance buffers. Those are limits in the implementation, not a claim that every phone sustains a particular frame rate. The network roster has its own smaller bound. I'd want physical-device frame times before turning either number into a performance promise.</p>
 
-          <h2 class="section-label reveal">06 / The hat has 248 triangles</h2>
+          <h2 class="section-label reveal">07 / The hat has 248 triangles</h2>
           <p class="reveal">Which brings us back to the top hat. There's a Blender export in the morph work log with one node named <code>Cylinder</code> and 248 triangles. The validator rejected it. A perfectly understandable hat, missing the three distinct LOD nodes required by the sidecar. That's a much more useful early result than a green checkmark meaning only that we managed to open a file.</p>
 
           <figure class="article-media reveal">
@@ -598,7 +608,7 @@
 
           <p class="reveal">The <a class="source-link" href="https://github.com/cubacadabra/rust/blob/main/docs/morph_plan.md">planned path</a> is Blender export, Studio validation and compilation, then a bounded <code>.morphpack</code> consumed by the shared renderer. Import machinery stays in Studio. Phones receive runtime assets. New geometry using an existing capability should be data; a new deformation or material behavior can require engine work. The milestone I'm interested in is adding that second hat without opening a Rust source file.</p>
 
-          <h2 class="section-label reveal">07 / Leave room for the game</h2>
+          <h2 class="section-label reveal">08 / Leave room for the game</h2>
           <p class="reveal">The same idea applies to the games themselves. A source project has <code>manifest.json</code>, <code>src/main.luau</code>, and assets. The Python tools expand explicit includes and assemble a portable package. Studio can also assemble a raw project in memory and run it without writing generated files back into the source directory.</p>
 
           <figure class="article-media reveal">
@@ -615,7 +625,7 @@
 
           <p class="reveal">Read <a class="source-link" href="https://github.com/cubacadabra/second-game/blob/main/src/relay.luau">Signal Run's reducer</a>, or the <a class="source-link" href="https://github.com/cubacadabra/examples/tree/main/survival-101">Stormline Outpost example</a> with its beacon fuel and radio supplies. Those rules belong to the game. I want someone to change the storm, make the relay ridiculous, or put a hat on the dragon without coordinating three client patches and a backend release.</p>
 
-          <p class="reveal">There's plenty unfinished here. But I like the direction of these commits. Fewer places to fix a save. One place to explain a bad asset. More room for the person who just wants to make a strange little game with their friends. The old charm removed letters until almost nothing remained. I'd be happy to get down to the code that actually needs to be different.</p>
+          <p class="reveal">As cubacadabra grows, I want the complexity to accumulate in shared code we can understand and test together. A new platform should need a shell, not another implementation of everything we've learned about running the product. That's why I'm continuing to move logic into Rust. The old charm removed letters until almost nothing remained. I'd be happy to get down to the Swift, Kotlin, and JavaScript that actually need to be different.</p>
         </div>
 
         <aside class="article__side article__side--right reveal">
