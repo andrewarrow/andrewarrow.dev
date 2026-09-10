@@ -437,9 +437,9 @@
     <section class="hero">
       <div class="hero__copy">
         <div>
-          <div class="eyebrow">Notes from inside the code</div>
-          <h1>The Magic Behind <span class="hero__brand">cubacadabra</span></h1>
-          <p class="hero__dek">A shared Rust engine is the beginning. Then come the save buttons, socket lifetimes, borrowed pointers, and a Blender hat with 248 triangles.</p>
+          <div class="eyebrow">Notes from inside the cube</div>
+          <h1>The Magic Behind <span class="hero__brand">cubacadabra&trade;</span></h1>
+          <p class="hero__dek">A shared Rust engine between ios, android, web, macOS, windows, and linux. Building a better Roblox&trade;.</p>
         </div>
         <div class="hero__footer"><span>By Andrew Arrow</span><span><a class="source-link" href="https://cubacadabra.com/">Check out cubacadabra</a><br>Early preview</span></div>
       </div>
@@ -473,9 +473,8 @@
           <h2 class="section-label reveal">01 / Make some code disappear</h2>
           <p class="reveal">Before abracadabra was something you said over a top hat, it was something you wore around your neck. In the ancient Roman <a class="source-link" href="https://artsandculture.google.com/asset/quintus-serenus-liber-medicinalis/fAGBmLhWW99n0g">Liber Medicinalis</a>, attributed to Quintus Serenus Sammonicus, the prescription was to write the word repeatedly, removing a letter each time, and wear the result as a charm against fever. An unusually literal approach to making a problem smaller.</p>
 
-          <p class="reveal">I've been doing a version of this with Swift, Kotlin, and JavaScript. Find the same decision in three clients. Move it into Rust. Delete the other copies. The commits have wonderfully glamorous names like "crate 2nd," "catalog in rust," and "block users in rust." Somewhere in there is a game platform.</p>
-
-          <p class="reveal">The <a class="source-link" href="../../18/why-i-started-cubacadabra/">previous article</a> was about why I'm building cubacadabra. This is about what happens after you decide to build it. There's a Rust engine, native iOS and Android apps, a JavaScript browser client running WASM, and a Rust desktop Studio. Game packages carry manifests, Luau scripts, and assets. wgpu handles rendering. That gets you through the architecture slide. Then somebody changes their username while a request is in flight.</p>
+          <p class="reveal">I've been doing a version of this with Swift, Kotlin, and JavaScript. Find the same decision in three clients. Move it into Rust. Delete the other copies.
+           There's a Rust engine, native iOS and Android apps, a JavaScript browser client running WASM, and a Rust desktop Studio. Game packages carry manifests, Luau scripts, and assets. wgpu handles rendering. That gets you through the architecture slide. Then somebody changes their username while a request is in flight.</p>
 
           <p class="reveal">There are two extractions worth separating. <a class="source-link" href="https://github.com/cubacadabra/rust/commit/205e3c81b3f5eb69786eb17f3f228ef6cbda6efd">cubacadabra-client</a> took over the engine-facing multiplayer session for all four hosts. <a class="source-link" href="https://github.com/cubacadabra/rust/commit/1221dcd28f6526e086e7721a97c8f22dc735e5b0">cubacadabra-app</a> owns portable application behavior outside gameplay, now used by the three consumer clients. The engine still owns simulation. Having a shared engine hadn't stopped the surrounding apps from independently deciding what a successful save meant.</p>
 
@@ -486,7 +485,7 @@
 
           <p class="reveal">That last bit matters. Swift doesn't first decode a user and update its profile, then tell Rust that everything went fine. Rust gets to accept or reject the response before the host projects the new state. A 200 with the wrong account or wrong submitted name is still a failed save. A 401 remains unauthorized even if the server didn't send JSON.</p>
 
-          <p class="reveal">Replacing the session increments a session ID and invalidates pending work. Effect IDs aren't reused within the model. An old response can arrive; it no longer has a pending operation to complete. If you edited during the save, the accepted username can change while your newer draft stays put. Canceling a native task is useful housekeeping, but cancellation alone doesn't establish which account a response belongs to.</p>
+          <p class="reveal">Replacing the session increments a session ID and invalidates pending work. Effect IDs aren't reused within the model. An old response can arrive but it no longer has a pending operation to complete. If you edited during the save, the accepted username can change while your newer draft stays put. Canceling a native task is useful housekeeping, but cancellation alone doesn't establish which account a response belongs to.</p>
 
           <p class="reveal">The same pattern now covers avatar saves, catalog pagination, and optimistic block/unblock with rollback on failure. Birthday saves share the contract too, although Android doesn't yet expose the editor. Catalog rules include page bounds, duplicate removal, and package-path validation. Those are small decisions until three implementations disagree about them. Reporting still has its own host code; moving blocked users didn't magically migrate every moderation flow.</p>
 
