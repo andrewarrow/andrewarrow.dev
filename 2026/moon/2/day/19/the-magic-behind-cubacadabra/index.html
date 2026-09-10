@@ -332,6 +332,32 @@
     .article__body code { font: 0.83em/1.5 var(--mono); color: var(--acid); overflow-wrap: anywhere; }
     .article__body a { overflow-wrap: anywhere; }
     .article__body em { font-family: var(--serif); font-size: 1.12em; }
+    .article-media {
+      margin: 62px -42px 72px;
+    }
+    .article-media img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid rgba(238, 234, 223, 0.24);
+      background: var(--ink-soft);
+    }
+    .article-media figcaption {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 12px;
+      color: var(--paper-dim);
+      font: 400 10px/1.5 var(--mono);
+      letter-spacing: 0.04em;
+    }
+    .article-media__label {
+      flex: 0 0 auto;
+      color: var(--acid);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+    .article-media__caption { max-width: 440px; text-align: right; }
     .source-link {
       color: var(--paper);
       text-decoration: none;
@@ -395,6 +421,7 @@
       .article__side--right { display: none; }
       .article-intro { grid-template-columns: 150px minmax(0, 720px); }
       .pullquote { margin-right: -20px; }
+      .article-media { margin-left: 0; margin-right: 0; }
     }
     @media (max-width: 600px) {
       .topbar { min-height: 60px; padding: 0 20px; }
@@ -418,6 +445,10 @@
       .article__body p:first-of-type::first-letter { font-size: 4.7rem; }
       .pullquote { margin: 44px 0 46px 14px; padding: 24px 0 24px 22px; font-size: 2.45rem; }
       .pullquote::before { top: 20px; left: -18px; font-size: 2.4rem; }
+      .article-media { margin: 44px 0 54px; }
+      .article-media figcaption { display: block; }
+      .article-media__label { display: block; margin-bottom: 6px; }
+      .article-media__caption { max-width: none; text-align: left; }
       .ending { margin-top: 72px; padding-bottom: 80px; }
       .ending__meta { gap: 20px; line-height: 1.4; }
       .ending__meta span:last-child { text-align: right; }
@@ -509,12 +540,22 @@
 
           <p class="reveal">Now put two friends at the same relay checkpoint. Both read sequence 7. Both try to advance the round. The JavaScript backend uses a Cloudflare Durable Object for a world instance, and its retained-state API accepts a compare-and-set with the sequence the client observed. One update advances the sequence. The other gets the current state back with a conflict flag.</p>
 
+          <figure class="article-media reveal">
+            <img src="assets/jump.jpg" alt="Sally standing at a colorful canyon checkpoint in cubacadabra's platforming game" loading="lazy" decoding="async">
+            <figcaption><span class="article-media__label">Signal Run / checkpoint</span><span class="article-media__caption">The shared session keeps the world moving even when two players reach the same state at once.</span></figcaption>
+          </figure>
+
           <p class="reveal">The shared Luau SDK keeps pending intents, rebases them on that response, and retries. In Signal Run, the reducer returns nil if somebody else already captured that node. The duplicate intent can disappear. Retained channels also go to new arrivals, and server-derived <code>ageMs</code> lets a short timer resume without believing whatever time a phone thinks it is.</p>
 
           <p class="reveal">This is enough to coordinate cooperative state. It doesn't establish that a player earned a score. Clients still propose the payload, and the backend doesn't understand the game's reducer. The <a class="source-link" href="https://github.com/cubacadabra/rust/blob/main/docs/network-runtime.md">network contract</a> is explicit about that limit. Competitive games will need server-side rule validation. Ordering two claims correctly doesn't make either claim true.</p>
 
           <h2 class="section-label reveal">05 / The part that draws the dragon</h2>
           <p class="reveal">Rendering goes through wgpu: Metal on iOS, configured Vulkan/GLES backends for Android, and WebGPU/WebGL paths for the browser. That shares a lot of renderer code. Surface lifetimes, input, audio playback, and the operating system interrupting you still belong to each host. An Android surface disappearing is a fairly effective reminder that the engine isn't the whole application.</p>
+
+          <figure class="article-media reveal">
+            <img src="assets/sally.jpg" alt="Sally avatar standing in a bright cubacadabra game world with another player in the distance" loading="lazy" decoding="async">
+            <figcaption><span class="article-media__label">A shared renderer / live client</span><span class="article-media__caption">The same character-facing runtime can show up in a browser, on a phone, or inside a desktop tool.</span></figcaption>
+          </figure>
 
           <p class="reveal">The character renderer uses an indexed mesh catalog and batches instances by mesh and material. It chooses among three LODs using projected height, with nominal boundaries at 180 and 70 pixels. The instance layout is 128 bytes. A fixed 15-joint hierarchy drives the characters. These are concrete constraints you can find in the code and reason about before adding another decorative thing to somebody's head.</p>
 
@@ -524,6 +565,11 @@
 
           <h2 class="section-label reveal">06 / The hat has 248 triangles</h2>
           <p class="reveal">Which brings us back to the top hat. There's a Blender export in the morph work log with one node named <code>Cylinder</code> and 248 triangles. The validator rejected it. A perfectly understandable hat, missing the three distinct LOD nodes required by the sidecar. That's a much more useful early result than a green checkmark meaning only that we managed to open a file.</p>
+
+          <figure class="article-media reveal">
+            <img src="assets/early.jpg" alt="Cubacadabra Studio morph inspector showing a top hat GLB with 248 triangles and missing LOD mappings" loading="lazy" decoding="async">
+            <figcaption><span class="article-media__label">Studio / morph preview</span><span class="article-media__caption">The validator can make an incomplete asset legible before it ever reaches a device.</span></figcaption>
+          </figure>
 
           <p class="reveal">The existing character system has bodies and outfits encoded in Rust enums, and the renderer prepares their combinations. That gets a prototype moving. It becomes awkward when adding a hat means changing engine code, or when independent hairstyles and garments multiply the combinations. I want an artist's second hat to be a content change.</p>
 
@@ -539,6 +585,11 @@
 
           <h2 class="section-label reveal">07 / Leave room for the game</h2>
           <p class="reveal">The same idea applies to the games themselves. A source project has <code>manifest.json</code>, <code>src/main.luau</code>, and assets. The Python tools expand explicit includes and assemble a portable package. Studio can also assemble a raw project in memory and run it without writing generated files back into the source directory.</p>
+
+          <figure class="article-media reveal">
+            <img src="assets/grass.jpg" alt="Sally exploring the grassy Stormline Outpost game world beside a campfire and beacon" loading="lazy" decoding="async">
+            <figcaption><span class="article-media__label">Stormline Outpost / in play</span><span class="article-media__caption">Once the runtime owns the plumbing, the game can spend its energy on weather, resources, and weird little stories.</span></figcaption>
+          </figure>
 
           <p class="reveal">Native builds execute Luau through mlua with vendored Luau; WASM uses the pure-Rust luaur-rt runtime. They expose the same game API, though two runtime implementations still deserve parity checks. Game HUDs can also live in Luau, with Rust doing safe-area layout, hit testing, and the wgpu overlay. Account screens remain in the native shells.</p>
 
