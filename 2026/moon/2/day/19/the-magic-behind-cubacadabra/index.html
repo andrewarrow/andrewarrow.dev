@@ -529,12 +529,22 @@
 
           <p class="reveal">The <a class="source-link" href="https://github.com/cubacadabra/rust/blob/main/include/cubacadabra_app.h">native app ABI</a> is seven functions: create, destroy, dispatch JSON, get snapshot JSON, poll effect JSON, and read the output pointer and length. Handles are single-threaded. Output belongs to Rust and must be copied before the next mutation. Swift copies it into <code>Data</code>; Android has a small JNI byte-array adapter. Both check the snapshot protocol version. An incompatible binding fails instead of quietly reviving a second set of account rules.</p>
 
+          <figure class="article-media reveal">
+            <img src="assets/iphone.jpg" alt="Cubacadabra running on an iPhone 17 with a player in a bright game world" loading="lazy" decoding="async">
+            <figcaption><span class="article-media__label">iPhone / native client</span><span class="article-media__caption">The host supplies the device surface; the shared runtime supplies the world, controls, and player state.</span></figcaption>
+          </figure>
+
           <p class="reveal">There is serialization and copying here. For account edits and catalog pages, I like being able to read the contract. Studio calls the game client through ordinary Rust methods and enums. The native game client exposes a borrowed engine pointer for existing input and rendering APIs; destroying the client invalidates it. Rust's ownership rules still need an honest description when the next caller is C.</p>
 
           <p class="reveal">The browser has another easy mistake waiting for you. <code>WebClient</code> and <code>WebRenderer</code> come from the same generated WASM module, so an engine handle refers to the same linear memory on both sides. Two modules compiled from the same source wouldn't make their pointers interchangeable. The app runtime is a separate WASM module, which lets an account page edit a username without loading the renderer. It has no engine pointer to share.</p>
 
           <h2 class="section-label reveal">04 / Two people touched the same thing</h2>
           <p class="reveal">The client extraction removed a different kind of repetition. Each host had been translating socket messages, maintaining remote players, routing world changes, and draining the Luau network outbox. In the browser's <a class="source-link" href="https://github.com/cubacadabra/web/commit/60c11f85d198080a59ee491f7ea95ffd3f2f0b82">"crate 2nd" commit</a>, 244 lines came out and 74 went in. That's one host's diff, including its adapters. The useful part is having one session implementation to fix.</p>
+
+          <figure class="article-media reveal">
+            <img src="assets/testing.jpg" alt="Cubacadabra Studio test workspace showing one active player session and three session preview panels" loading="lazy" decoding="async">
+            <figcaption><span class="article-media__label">Studio / test workspace</span><span class="article-media__caption">A multiplayer surface makes the gap between “one client works” and “the session behaves” impossible to ignore.</span></figcaption>
+          </figure>
 
           <p class="reveal">Hosts pass socket text to <code>ClientSession::receive_text</code> and poll actions before and after stepping the engine. Rust emits <code>SetWorld</code> and <code>SendText</code>. The host still owns authentication, reconnect backoff, and movement-send throttling. A launch can keep the engine's logical world as "arena" while routing the socket to "arena:7." Rust also tracks remote identities and generations, filters ignored accounts, and submits a versioned roster when it changes.</p>
 
@@ -558,6 +568,11 @@
           </figure>
 
           <p class="reveal">The character renderer uses an indexed mesh catalog and batches instances by mesh and material. It chooses among three LODs using projected height, with nominal boundaries at 180 and 70 pixels. The instance layout is 128 bytes. A fixed 15-joint hierarchy drives the characters. These are concrete constraints you can find in the code and reason about before adding another decorative thing to somebody's head.</p>
+
+          <figure class="article-media reveal">
+            <img src="assets/ipad.jpg" alt="Cubacadabra running on an iPad Air with a player standing in the Signal Run level" loading="lazy" decoding="async">
+            <figcaption><span class="article-media__label">iPad / native host</span><span class="article-media__caption">The renderer is shared; the device still gives the game its own surface, controls, and interruptions.</span></figcaption>
+          </figure>
 
           <p class="reveal">There are some wonderfully specific solutions in there. The person's hoodie sleeve bends around the elbow in the vertex shader, carrying axis-angle data in spare lanes of the normal rows. Other garments use rigid attachments. Hair has bounded spring motion while its cap stays attached to the head. This is the sort of work hidden inside the apparently simple request to make somebody wave without their clothes coming apart.</p>
 
@@ -585,6 +600,11 @@
 
           <h2 class="section-label reveal">07 / Leave room for the game</h2>
           <p class="reveal">The same idea applies to the games themselves. A source project has <code>manifest.json</code>, <code>src/main.luau</code>, and assets. The Python tools expand explicit includes and assemble a portable package. Studio can also assemble a raw project in memory and run it without writing generated files back into the source directory.</p>
+
+          <figure class="article-media reveal">
+            <img src="assets/studio.jpg" alt="Cubacadabra Studio world workspace showing a forest scene with a player and tree asset selected" loading="lazy" decoding="async">
+            <figcaption><span class="article-media__label">Studio / world workspace</span><span class="article-media__caption">The authoring surface is where a project becomes a place: a scene, a material, a landmark, and a clue.</span></figcaption>
+          </figure>
 
           <figure class="article-media reveal">
             <img src="assets/grass.jpg" alt="Sally exploring the grassy Stormline Outpost game world beside a campfire and beacon" loading="lazy" decoding="async">
