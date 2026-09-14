@@ -80,13 +80,9 @@
     .button-row { display: flex; align-items: center; gap: 24px; }
     .button { display: inline-flex; align-items: center; justify-content: center; min-height: 47px; padding: 0 20px; background: var(--coral); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; transition: transform .2s ease, background .2s ease; }
     .button:hover, .button:focus-visible { background: var(--coral-soft); transform: translateY(-2px); }
-    .store-button { min-height: 61px; gap: 11px; padding: 8px 15px; background: var(--coral); border: 1px solid var(--coral); color: #fff; text-align: left; text-transform: none; }
-    .store-button:hover, .store-button:focus-visible { background: var(--coral-soft); border-color: var(--coral-soft); }
-    .store-icon { display: inline-flex; align-items: center; justify-content: center; width: 22px; font-family: Arial, sans-serif; font-size: 24px; line-height: 1; }
-    .store-copy { display: flex; flex-direction: column; gap: 2px; min-width: 101px; }
-    .store-copy small { font-size: 9px; font-weight: 500; letter-spacing: .02em; line-height: 1.2; }
-    .store-copy strong { font-size: 15px; font-weight: 700; letter-spacing: -.02em; line-height: 1.15; }
-    .store-arrow { margin-left: 3px; font-size: 18px; font-weight: 400; }
+    .store-button { display: inline-flex; min-height: 48px; padding: 0; background: transparent; border: 0; color: inherit; transition: transform .2s ease; }
+    .store-button:hover, .store-button:focus-visible { background: transparent; transform: translateY(-2px); }
+    .store-badge { display: block; width: auto; height: 56px; }
     .text-link { color: #d8d6d0; font-size: 12px; letter-spacing: .05em; }
     .text-link::after { content: " ↘"; color: var(--orange); font-size: 16px; }
     .hero-art { position: relative; display: grid; place-items: center; min-height: 500px; }
@@ -165,8 +161,6 @@
     .closing h2 { max-width: 690px; margin: 12px 0 24px; font-size: clamp(48px, 7vw, 100px); font-weight: 500; letter-spacing: -.08em; line-height: .9; }
     .closing h2 em { color: #ffe2c0; }
     .closing p { max-width: 480px; margin-bottom: 28px; color: rgba(255,255,255,.82); font-size: 16px; line-height: 1.65; }
-    .closing .store-button { background: var(--ink); border-color: var(--ink); }
-    .closing .store-button:hover, .closing .store-button:focus-visible { background: #25272b; border-color: #25272b; }
     footer { display: flex; justify-content: space-between; gap: 20px; padding: 26px clamp(22px, 5vw, 76px); color: #777a80; font-size: 11px; }
     footer nav { display: flex; gap: 24px; }
     footer a:hover, footer a:focus-visible { color: var(--orange); }
@@ -241,7 +235,7 @@
         <h1 id="hero-title">Find your rhythm in the <em>13 Moon</em> calendar.</h1>
         <p>Each day is a small invitation to notice where you are, what you are practicing, and how you want to show up.</p>
         <div class="button-row">
-          <a class="button store-button" href="https://apps.apple.com/us/app/dayvergent/id6812081556" target="_blank" rel="noreferrer" aria-label="Get dayvergent on the App Store"><span class="store-icon" aria-hidden="true">&#63743;</span><span class="store-copy"><small>Get it on the</small><strong>App Store</strong></span><span class="store-arrow" aria-hidden="true">↗</span></a>
+          <a class="store-button" href="https://apps.apple.com/us/app/dayvergent/id6812081556" target="_blank" rel="noreferrer" aria-label="Get dayvergent on the App Store"><img class="store-badge" src="app-store-badge.svg" alt="Download on the App Store"></a>
           <a class="text-link" href="#kin">Meet your daily Kin</a>
         </div>
       </div>
@@ -340,7 +334,7 @@
         <p class="kicker">Start anywhere</p>
         <h2 id="closing-title">Open the app.<br>Find <em>today.</em></h2>
         <p>Whether the 13 Moon calendar is a spiritual practice, creative prompt, planning framework, or simply a new way to pay attention, dayvergent gives the day a clear place in the larger pattern.</p>
-        <a class="button store-button" href="https://apps.apple.com/us/app/dayvergent/id6812081556" target="_blank" rel="noreferrer" aria-label="Get dayvergent on the App Store"><span class="store-icon" aria-hidden="true">&#63743;</span><span class="store-copy"><small>Get it on the</small><strong>App Store</strong></span><span class="store-arrow" aria-hidden="true">↗</span></a>
+        <a class="store-button" href="https://apps.apple.com/us/app/dayvergent/id6812081556" target="_blank" rel="noreferrer" aria-label="Get dayvergent on the App Store"><img class="store-badge" src="app-store-badge.svg" alt="Download on the App Store"></a>
       </div>
     </section>
   </main>
