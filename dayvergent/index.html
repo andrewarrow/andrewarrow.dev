@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090a0c">
+  <meta name="description" content="dayvergent is a quiet calendar companion for the 13 Moon, Dreamspell, and Kin systems.">
+  <title>dayvergent — Find your rhythm</title>
+  <link rel="icon" href="logo.png" type="image/png">
+  <style>
+    :root {
+      --ink: #090a0c;
+      --ink-soft: #111317;
+      --paper: #f2eee6;
+      --muted: #a6a8ae;
+      --line: rgba(242, 238, 230, .14);
+      --orange: #ff9f0a;
+      --coral: #ff3f50;
+      --coral-soft: #ff6570;
+      --sans: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      --serif: Iowan Old Style, Baskerville, "Times New Roman", serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--paper);
+      background: var(--ink);
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    .site-nav {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 27px clamp(22px, 5vw, 76px);
+    }
+    .brand { display: inline-flex; align-items: center; gap: 11px; font-size: 15px; font-weight: 650; letter-spacing: -.02em; }
+    .brand img { width: 34px; height: 34px; border-radius: 50%; }
+    .nav-links { display: flex; align-items: center; gap: clamp(18px, 3vw, 42px); color: #c9c8c5; font-size: 12px; letter-spacing: .04em; }
+    .nav-links a { transition: color .2s ease; }
+    .nav-links a:hover, .nav-links a:focus-visible { color: var(--orange); }
+    .nav-link-cta { color: var(--paper); border-bottom: 1px solid var(--orange); padding-bottom: 4px; }
+
+    .hero {
+      position: relative;
+      isolation: isolate;
+      min-height: min(900px, 100svh);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(390px, .95fr);
+      align-items: center;
+      padding: 128px clamp(22px, 8vw, 128px) 90px;
+      background: radial-gradient(circle at 76% 50%, rgba(255, 63, 80, .09), transparent 24%), var(--ink);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      opacity: .38;
+      background-image: radial-gradient(rgba(242, 238, 230, .28) .8px, transparent .8px);
+      background-size: 74px 74px;
+      mask-image: linear-gradient(90deg, transparent 2%, black 50%, transparent 100%);
+    }
+    .hero-copy { position: relative; z-index: 1; max-width: 700px; padding-bottom: 20px; }
+    .eyebrow { margin: 0 0 23px; color: var(--orange); font-size: 11px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 720px; margin-bottom: 25px; font-size: clamp(48px, 7.2vw, 105px); font-weight: 500; letter-spacing: -.075em; line-height: .92; }
+    h1 em, h2 em { color: var(--coral); font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: -.065em; }
+    .hero-copy > p:not(.eyebrow) { max-width: 510px; margin-bottom: 34px; color: #b7b7b5; font-size: 16px; line-height: 1.65; }
+    .button-row { display: flex; align-items: center; gap: 24px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 47px; padding: 0 20px; background: var(--coral); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; transition: transform .2s ease, background .2s ease; }
+    .button:hover, .button:focus-visible { background: var(--coral-soft); transform: translateY(-2px); }
+    .text-link { color: #d8d6d0; font-size: 12px; letter-spacing: .05em; }
+    .text-link::after { content: " ↘"; color: var(--orange); font-size: 16px; }
+    .hero-art { position: relative; display: grid; place-items: center; min-height: 500px; }
+    .hero-art::before { content: ""; position: absolute; width: min(45vw, 575px); aspect-ratio: 1; border: 1px solid rgba(242, 238, 230, .12); border-radius: 50%; box-shadow: 0 0 0 44px rgba(242, 238, 230, .025), 0 0 80px rgba(255, 63, 80, .1); }
+    .hero-art::after { content: ""; position: absolute; width: 78%; height: 1px; background: linear-gradient(90deg, transparent, rgba(255, 159, 10, .55), transparent); transform: rotate(-37deg); }
+    .hero-logo { position: relative; width: min(35vw, 410px); border-radius: 50%; animation: float 7s ease-in-out infinite; }
+    .art-label { position: absolute; z-index: 2; right: 0; bottom: 12%; color: #aaa9a5; font-size: 10px; letter-spacing: .16em; line-height: 1.7; text-align: left; text-transform: uppercase; }
+    .art-label strong { display: block; color: var(--paper); font-size: 12px; font-weight: 500; }
+    .scroll-cue { position: absolute; bottom: 29px; left: clamp(22px, 8vw, 128px); display: flex; align-items: center; gap: 13px; color: #797b80; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; }
+    .scroll-cue i { display: block; width: 44px; height: 1px; background: var(--orange); }
+
+    .section { padding: clamp(88px, 11vw, 165px) clamp(22px, 8vw, 128px); }
+    .intro { display: grid; grid-template-columns: .85fr 1.15fr; gap: 9vw; align-items: start; background: var(--paper); color: var(--ink); }
+    .kicker { color: var(--coral); font-size: 11px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+    .intro h2 { max-width: 480px; margin: 10px 0 0; font-size: clamp(38px, 5vw, 70px); font-weight: 500; letter-spacing: -.06em; line-height: .98; }
+    .intro-copy { max-width: 620px; padding-top: 7px; }
+    .intro-copy p { margin-bottom: 21px; color: #505158; font-size: 17px; line-height: 1.7; }
+    .intro-copy p:last-child { margin-bottom: 0; color: #7a7b7f; font-size: 14px; }
+
+    .cycle { position: relative; overflow: hidden; background: var(--ink-soft); }
+    .cycle::after { content: "13"; position: absolute; top: 7%; right: 5%; color: rgba(255, 159, 10, .06); font-size: clamp(180px, 30vw, 460px); font-weight: 700; letter-spacing: -.15em; line-height: .7; pointer-events: none; }
+    .section-head { position: relative; z-index: 1; display: flex; align-items: end; justify-content: space-between; gap: 30px; margin-bottom: 66px; }
+    .section-head h2 { max-width: 600px; margin: 10px 0 0; font-size: clamp(42px, 6vw, 80px); font-weight: 500; letter-spacing: -.07em; line-height: .95; }
+    .section-head p { max-width: 330px; margin: 0 0 5px; color: var(--muted); font-size: 14px; line-height: 1.65; }
+    .cycle-content { position: relative; z-index: 1; display: grid; grid-template-columns: .9fr 1.1fr; gap: 10vw; align-items: center; }
+    .orbit { position: relative; display: grid; place-items: center; width: min(42vw, 480px); aspect-ratio: 1; margin: 0 auto; border: 1px solid rgba(242, 238, 230, .16); border-radius: 50%; }
+    .orbit::before, .orbit::after { content: ""; position: absolute; border: 1px solid rgba(242, 238, 230, .1); border-radius: 50%; }
+    .orbit::before { inset: 12%; }
+    .orbit::after { inset: 28%; border-color: rgba(255, 63, 80, .4); }
+    .orbit-center { position: relative; z-index: 1; text-align: center; }
+    .orbit-center strong { display: block; color: var(--orange); font-size: clamp(40px, 5vw, 66px); font-weight: 500; letter-spacing: -.09em; line-height: .9; }
+    .orbit-center span { display: block; margin-top: 12px; color: var(--muted); font-size: 10px; letter-spacing: .17em; text-transform: uppercase; }
+    .orbit-dot { position: absolute; top: 50%; left: 50%; width: 9px; height: 9px; margin: -4.5px; background: var(--orange); border-radius: 50%; transform: rotate(calc(var(--i) * 27.692deg)) translateY(calc(min(21vw, 240px) * -1)); }
+    .moon-list { display: grid; grid-template-columns: repeat(2, 1fr); column-gap: 42px; }
+    .moon-item { display: flex; align-items: baseline; gap: 15px; min-height: 55px; padding: 17px 0; border-bottom: 1px solid var(--line); }
+    .moon-number { width: 22px; color: var(--orange); font-size: 10px; }
+    .moon-name { color: #dedbd4; font-size: 14px; }
+    .moon-days { margin-left: auto; color: #6f7177; font-size: 10px; }
+
+    .kin { display: grid; grid-template-columns: .8fr 1.2fr; gap: 10vw; align-items: center; background: #e8e1d6; color: var(--ink); }
+    .kin h2 { max-width: 490px; margin: 10px 0 26px; font-size: clamp(43px, 6vw, 80px); font-weight: 500; letter-spacing: -.07em; line-height: .95; }
+    .kin-copy p { max-width: 450px; margin-bottom: 0; color: #5d5b5b; font-size: 15px; line-height: 1.7; }
+    .kin-panel { position: relative; min-height: 395px; overflow: hidden; padding: 38px; background: #111317; color: var(--paper); }
+    .kin-panel::before { content: ""; position: absolute; top: -30%; right: -10%; width: 65%; aspect-ratio: 1; border: 1px solid rgba(255, 159, 10, .55); border-radius: 50%; box-shadow: 0 0 0 30px rgba(255, 159, 10, .045), 0 0 0 70px rgba(255, 159, 10, .025); }
+    .kin-panel::after { content: "KIN"; position: absolute; right: 10%; bottom: -9%; color: rgba(255, 63, 80, .14); font-size: 170px; font-weight: 700; letter-spacing: -.15em; }
+    .kin-date { position: relative; z-index: 1; color: var(--orange); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; }
+    .kin-number { position: relative; z-index: 1; margin: 42px 0 5px; color: var(--coral); font-size: clamp(72px, 9vw, 125px); font-weight: 500; letter-spacing: -.1em; line-height: .75; }
+    .kin-name { position: relative; z-index: 1; font-family: var(--serif); font-size: clamp(25px, 3vw, 36px); font-style: italic; }
+    .kin-meaning { position: absolute; z-index: 1; bottom: 38px; left: 38px; color: #aaa9a5; font-size: 12px; line-height: 1.6; }
+    .kin-meaning strong { display: block; color: var(--paper); font-weight: 500; }
+
+    .widgets { background: var(--ink); }
+    .widgets .section-head { margin-bottom: 50px; }
+    .widget-grid { display: grid; grid-template-columns: .75fr 1fr 1.35fr; align-items: end; gap: 20px; }
+    .widget { position: relative; overflow: hidden; min-height: 250px; padding: 22px; background: #15171b; border: 1px solid rgba(242, 238, 230, .09); }
+    .widget::before { content: ""; position: absolute; top: -60px; right: -60px; width: 170px; height: 170px; border: 1px solid rgba(255, 63, 80, .4); border-radius: 50%; box-shadow: 0 0 0 20px rgba(255, 63, 80, .04); }
+    .widget.small { min-height: 210px; }
+    .widget.large { min-height: 300px; }
+    .widget-label { position: relative; z-index: 1; color: #777a80; font-size: 10px; letter-spacing: .15em; text-transform: uppercase; }
+    .widget h3 { position: relative; z-index: 1; max-width: 230px; margin: 32px 0 12px; font-size: 25px; font-weight: 500; letter-spacing: -.045em; line-height: 1; }
+    .widget p { position: relative; z-index: 1; max-width: 180px; margin: 0; color: #a4a5aa; font-size: 12px; line-height: 1.5; }
+    .widget .accent { color: var(--orange); }
+    .widget.large .widget-grid-mini { position: absolute; right: 25px; bottom: 29px; left: 25px; display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; }
+    .widget-grid-mini i { display: block; height: 20px; border: 1px solid rgba(242, 238, 230, .18); }
+    .widget-grid-mini i:nth-child(4n) { border-color: var(--coral); background: rgba(255, 63, 80, .2); }
+    .widget-grid-mini i:nth-child(7n) { background: rgba(255, 159, 10, .3); }
+    .features { display: grid; grid-template-columns: .8fr 1.2fr; gap: 10vw; margin-top: 110px; padding-top: 38px; border-top: 1px solid var(--line); }
+    .features h3 { margin: 0; color: var(--paper); font-size: 20px; font-weight: 500; letter-spacing: -.03em; }
+    .feature-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 45px; margin: 0; padding: 0; list-style: none; }
+    .feature-list li { color: #a4a5aa; font-size: 14px; line-height: 1.5; }
+    .feature-list li::before { content: "✦"; margin-right: 10px; color: var(--orange); }
+
+    .closing { position: relative; overflow: hidden; padding-top: 125px; padding-bottom: 125px; background: var(--coral); color: #fff; }
+    .closing::before { content: ""; position: absolute; right: -8%; bottom: -55%; width: 58vw; aspect-ratio: 1; border: 1px solid rgba(255, 255, 255, .25); border-radius: 50%; box-shadow: 0 0 0 46px rgba(255, 255, 255, .05), 0 0 0 98px rgba(255, 255, 255, .04); }
+    .closing-content { position: relative; z-index: 1; max-width: 750px; }
+    .closing h2 { max-width: 690px; margin: 12px 0 24px; font-size: clamp(48px, 7vw, 100px); font-weight: 500; letter-spacing: -.08em; line-height: .9; }
+    .closing h2 em { color: #ffe2c0; }
+    .closing p { max-width: 480px; margin-bottom: 28px; color: rgba(255,255,255,.82); font-size: 16px; line-height: 1.65; }
+    .closing .button { background: var(--ink); }
+    .closing .button:hover, .closing .button:focus-visible { background: #25272b; }
+    footer { display: flex; justify-content: space-between; gap: 20px; padding: 26px clamp(22px, 5vw, 76px); color: #777a80; font-size: 11px; }
+    footer nav { display: flex; gap: 24px; }
+    footer a:hover, footer a:focus-visible { color: var(--orange); }
+
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    @keyframes float { 0%, 100% { transform: translateY(0) rotate(-1deg); } 50% { transform: translateY(-13px) rotate(1deg); } }
+    :focus-visible { outline: 2px solid var(--orange); outline-offset: 4px; }
+    @media (max-width: 820px) {
+      .nav-links a:not(.nav-link-cta) { display: none; }
+      .hero { min-height: auto; grid-template-columns: 1fr; gap: 40px; padding-top: 150px; }
+      .hero-copy { padding-bottom: 0; }
+      .hero-art { min-height: 330px; }
+      .hero-art::before { width: min(78vw, 420px); }
+      .hero-logo { width: min(61vw, 300px); }
+      .art-label { right: 5%; bottom: 7%; }
+      .scroll-cue { display: none; }
+      .intro, .cycle-content, .kin, .features { grid-template-columns: 1fr; gap: 48px; }
+      .section-head { display: block; }
+      .section-head p { margin-top: 24px; }
+      .orbit { width: min(78vw, 430px); }
+      .orbit-dot { transform: rotate(calc(var(--i) * 27.692deg)) translateY(calc(min(39vw, 215px) * -1)); }
+      .widget-grid { grid-template-columns: 1fr 1fr; align-items: stretch; }
+      .widget.large { grid-column: span 2; }
+      .features { margin-top: 75px; }
+    }
+    @media (max-width: 520px) {
+      .site-nav { padding-top: 20px; }
+      .brand img { width: 30px; height: 30px; }
+      .brand { font-size: 14px; }
+      .nav-link-cta { font-size: 11px; }
+      .hero { padding-top: 125px; padding-bottom: 60px; }
+      h1 { font-size: clamp(49px, 15vw, 76px); }
+      .hero-copy > p:not(.eyebrow) { font-size: 15px; }
+      .button-row { align-items: flex-start; flex-direction: column; gap: 18px; }
+      .section { padding-top: 82px; padding-bottom: 82px; }
+      .intro h2, .section-head h2, .kin h2 { font-size: 47px; }
+      .moon-list { column-gap: 14px; }
+      .moon-item { gap: 8px; }
+      .moon-name { font-size: 12px; }
+      .moon-days { display: none; }
+      .kin-panel { min-height: 350px; padding: 27px; }
+      .kin-meaning { bottom: 27px; left: 27px; }
+      .widget-grid { grid-template-columns: 1fr; }
+      .widget.large { grid-column: auto; }
+      .widget, .widget.small, .widget.large { min-height: 220px; }
+      .feature-list { grid-template-columns: 1fr; gap: 13px; }
+      .closing h2 { font-size: 56px; }
+      footer { align-items: flex-start; flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-nav">
+    <a class="brand" href="index.html" aria-label="dayvergent home"><img src="logo.png" alt=""><span>dayvergent</span></a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#cycle">The cycle</a>
+      <a href="#kin">Your Kin</a>
+      <a href="#widgets">Widgets</a>
+      <a class="nav-link-cta" href="#begin">Begin here ↘</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A calendar companion for a different rhythm</p>
+        <h1 id="hero-title">Find your rhythm in the <em>13 Moon</em> calendar.</h1>
+        <p>Each day is a small invitation to notice where you are, what you are practicing, and how you want to show up.</p>
+        <div class="button-row">
+          <a class="button" href="#cycle">Explore the cycle</a>
+          <a class="text-link" href="#kin">Meet your daily Kin</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="The dayvergent moon and sun mark">
+        <img class="hero-logo" src="logo.png" alt="dayvergent moon and sun logo">
+        <p class="art-label"><strong>Today / 13 Moon</strong>follow the light<br>keep your place</p>
+      </div>
+      <div class="scroll-cue"><i></i> scroll to enter the cycle</div>
+    </section>
+
+    <section class="section intro reveal" aria-labelledby="intro-title">
+      <div>
+        <p class="kicker">A quieter way to keep time</p>
+        <h2 id="intro-title">The day is small. The pattern is <em>wide.</em></h2>
+      </div>
+      <div class="intro-copy">
+        <p>dayvergent brings the 13 Moon, Dreamspell, and Kin systems into one focused place. Your familiar Gregorian date stays beside the alternative calendar, so you can explore a new rhythm without losing your place in everyday life.</p>
+        <p>Move one day at a time, tap any day in the 28-day grid, or jump to the beginning of any Moon. No long setup. Learn the language through use.</p>
+      </div>
+    </section>
+
+    <section class="section cycle" id="cycle" aria-labelledby="cycle-title">
+      <div class="section-head reveal">
+        <div>
+          <p class="kicker">How the cycle fits together</p>
+          <h2 id="cycle-title">Thirteen Moons.<br><em>One clear year.</em></h2>
+        </div>
+        <p>The 13 Moon year begins on July 26: thirteen Moons of 28 days, followed by the Day Out of Time. Leap Day is held gently outside the counted rhythm.</p>
+      </div>
+      <div class="cycle-content">
+        <div class="orbit reveal" aria-label="A diagram showing thirteen Moons around a cycle">
+          <div class="orbit-center"><strong>13</strong><span>Moons / 364 days</span></div>
+          <i class="orbit-dot" style="--i: 0"></i><i class="orbit-dot" style="--i: 1"></i><i class="orbit-dot" style="--i: 2"></i><i class="orbit-dot" style="--i: 3"></i><i class="orbit-dot" style="--i: 4"></i><i class="orbit-dot" style="--i: 5"></i><i class="orbit-dot" style="--i: 6"></i><i class="orbit-dot" style="--i: 7"></i><i class="orbit-dot" style="--i: 8"></i><i class="orbit-dot" style="--i: 9"></i><i class="orbit-dot" style="--i: 10"></i><i class="orbit-dot" style="--i: 11"></i><i class="orbit-dot" style="--i: 12"></i>
+        </div>
+        <div class="moon-list reveal" aria-label="The thirteen Moon names">
+          <div class="moon-item"><span class="moon-number">01</span><span class="moon-name">Magnetic</span><span class="moon-days">28 days</span></div>
+          <div class="moon-item"><span class="moon-number">02</span><span class="moon-name">Lunar</span><span class="moon-days">28 days</span></div>
+          <div class="moon-item"><span class="moon-number">03</span><span class="moon-name">Electric</span><span class="moon-days">28 days</span></div>
+          <div class="moon-item"><span class="moon-number">04</span><span class="moon-name">Self-Existing</span><span class="moon-days">28 days</span></div>
+          <div class="moon-item"><span class="moon-number">05</span><span class="moon-name">Overtone</span><span class="moon-days">28 days</span></div>
+          <div class="moon-item"><span class="moon-number">06</span><span class="moon-name">Rhythmic</span><span class="moon-days">28 days</span></div>
+          <div class="moon-item"><span class="moon-number">07</span><span class="moon-name">Resonant</span><span class="moon-days">28 days</span></div>
+          <div class="moon-item"><span class="moon-number">08</span><span class="moon-name">Galactic</span><span class="moon-days">28 days</span></div>
+          <div class="moon-item"><span class="moon-number">09</span><span class="moon-name">Solar</span><span class="moon-days">28 days</span></div>
+          <div class="moon-item"><span class="moon-number">10</span><span class="moon-name">Planetary</span><span class="moon-days">28 days</span></div>
+          <div class="moon-item"><span class="moon-number">11</span><span class="moon-name">Spectral</span><span class="moon-days">28 days</span></div>
+          <div class="moon-item"><span class="moon-number">12</span><span class="moon-name">Crystal</span><span class="moon-days">28 days</span></div>
+          <div class="moon-item"><span class="moon-number">13</span><span class="moon-name">Cosmic</span><span class="moon-days">28 days</span></div>
+          <div class="moon-item"><span class="moon-number">—</span><span class="moon-name">Day Out of Time</span><span class="moon-days">special day</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section kin reveal" id="kin" aria-labelledby="kin-title">
+      <div class="kin-copy">
+        <p class="kicker">Your daily Kin</p>
+        <h2 id="kin-title">A signature for <em>every date.</em></h2>
+        <p>Every date includes a Dreamspell signature drawn from the 260-day cycle. Open the details to follow the tone, glyph, and wavespell lesson, then carry one simple question with you.</p>
+      </div>
+      <div class="kin-panel" aria-label="Example daily Kin detail">
+        <div class="kin-date">Today · Gregorian + 13 Moon</div>
+        <div class="kin-number">84</div>
+        <div class="kin-name">Yellow Rhythmic Seed</div>
+        <div class="kin-meaning"><strong>Organize · Target · Flourish</strong>How can I organize while I target?</div>
+      </div>
+    </section>
+
+    <section class="section widgets" id="widgets" aria-labelledby="widgets-title">
+      <div class="section-head reveal">
+        <div>
+          <p class="kicker">Your day, on your Home Screen</p>
+          <h2 id="widgets-title">A glance is enough<br>to <em>begin.</em></h2>
+        </div>
+        <p>Keep the current cycle close with small, medium, and large widgets. Tap any day to open it in dayvergent, or tap Next Lens to change the question.</p>
+      </div>
+      <div class="widget-grid">
+        <article class="widget small reveal"><span class="widget-label">Small widget</span><h3>Moon 04<br><span class="accent">Day 17</span></h3><p>Today · Self-Existing</p></article>
+        <article class="widget reveal"><span class="widget-label">Medium widget</span><h3>Find your place in the <span class="accent">28-day</span> grid.</h3><p>Selected day · Kin 84 · <span class="accent">Next Lens</span></p></article>
+        <article class="widget large reveal"><span class="widget-label">Large widget</span><h3>Current Moon,<br>daily Kin, and<br><span class="accent">a question to carry.</span></h3><p>Ask · Notice · Wavespell</p><div class="widget-grid-mini" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+      </div>
+      <div class="features reveal">
+        <h3>Use dayvergent to</h3>
+        <ul class="feature-list">
+          <li>Learn the 13 Moon calendar one day at a time.</li>
+          <li>Explore every Moon and its themes.</li>
+          <li>Look up the Kin for any date.</li>
+          <li>Reflect on tone, glyph, and wavespell.</li>
+          <li>Keep the current cycle visible.</li>
+          <li>Keep your Gregorian reference close.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section closing" id="begin" aria-labelledby="closing-title">
+      <div class="closing-content reveal">
+        <p class="kicker">Start anywhere</p>
+        <h2 id="closing-title">Open the app.<br>Find <em>today.</em></h2>
+        <p>Whether the 13 Moon calendar is a spiritual practice, creative prompt, planning framework, or simply a new way to pay attention, dayvergent gives the day a clear place in the larger pattern.</p>
+        <a class="button" href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Return to the beginning</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 dayvergent</span>
+    <nav aria-label="Footer navigation"><a href="privacy/">Privacy</a><a href="index.html">Home</a></nav>
+  </footer>
+
+  <script>
+    const revealItems = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries, io) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
+        });
+      }, { threshold: .12 });
+      revealItems.forEach((item) => observer.observe(item));
+    } else {
+      revealItems.forEach((item) => item.classList.add('is-visible'));
+    }
+  </script>
+</body>
+</html>
