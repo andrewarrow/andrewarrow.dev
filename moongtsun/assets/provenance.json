@@ -1,0 +1,22 @@
+{
+  "generated_with": "built-in image_gen tool",
+  "date": "2026-10-13",
+  "assets": [
+    {
+      "file": "activity-dawn.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: original editorial hero photograph for moongtsun, an Apple Watch health-data app bringing activity, recovery and readiness together. Primary request: show gentle everyday movement at the transition from night to morning, suggesting balance between activity and rest. Scene: a quiet curving footpath through soft coastal grass and rolling dunes at dawn, a distant solitary adult walking away from the camera in simple unbranded outdoor clothing. Natural pale sky, subtle first sunlight, a calm sea glimpsed in the distance. Style: refined editorial nature photography, realistic grass and sand texture, atmospheric but grounded, a hint of fine photographic grain. Composition: portrait 4:5, expansive landscape and winding trail, person small in the middle distance, graceful open sky across upper quarter, useful crop margins. Color: muted sage greens, warm cream sand, softly cool blue sky, no artificial saturated color. Constraints: no text, no logo, no watermark, no phones, no watches, no UI, no health values or charts, no claims about actual product screens. The image supports a thoughtful review of movement, sleep and daily condition."
+    },
+    {
+      "file": "recovery-lake.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: original supporting editorial photograph for moongtsun, an Apple Watch health-data app that puts movement, sleep and readiness in context. Primary request: a restful natural scene suggesting space to recover and reflect. Scene: a still lake at first morning light, low wooded green hills reflected in the water, a few reeds in the foreground, faint low mist near the far shore, pale warm sky. Style: refined grounded editorial photography with realistic natural texture, soft photographic grain. Composition: wide landscape 3:2, lake across the lower two thirds, gentle horizontal bands and quiet open space; no buildings or people. Palette: muted sage green, cool slate water, soft warm cream light, consistent with a calm outdoor wellness identity. Constraints: no text, no logos, no watermark, no devices, no UI, no charts, no promotional copy."
+    },
+    {
+      "file": "logo.svg",
+      "method": "Original hand-authored SVG: two connected arches over one shared curved baseline, representing three connected perspectives. Also used as the favicon."
+    },
+    {
+      "file": "patterns.svg",
+      "method": "Original hand-authored SVG: solid, dashed and dotted conceptual patterns. No real health data or product screenshots."
+    }
+  ]
+}

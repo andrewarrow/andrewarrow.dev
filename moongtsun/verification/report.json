@@ -1,0 +1,153 @@
+{
+  "checked_at": "2026-10-13",
+  "implementation": "buildless static HTML/CSS with local assets",
+  "http_checks": [
+    {
+      "page": "/",
+      "resource": "assets/logo.svg",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "assets/site.css",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "#main",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "./",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "assets/logo.svg",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "#balance",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "#patterns",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "#sharing",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "#subscription",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "#balance",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "#subscription",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "assets/activity-dawn.webp",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "assets/patterns.svg",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "assets/recovery-lake.webp",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "./",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "assets/logo.svg",
+      "status": 200
+    },
+    {
+      "page": "/",
+      "resource": "privacy/",
+      "status": 200
+    },
+    {
+      "page": "privacy/",
+      "resource": "../assets/logo.svg",
+      "status": 200
+    },
+    {
+      "page": "privacy/",
+      "resource": "../assets/site.css",
+      "status": 200
+    },
+    {
+      "page": "privacy/",
+      "resource": "#main",
+      "status": 200
+    },
+    {
+      "page": "privacy/",
+      "resource": "../",
+      "status": 200
+    },
+    {
+      "page": "privacy/",
+      "resource": "../assets/logo.svg",
+      "status": 200
+    },
+    {
+      "page": "privacy/",
+      "resource": "../",
+      "status": 200
+    },
+    {
+      "page": "privacy/",
+      "resource": "../",
+      "status": 200
+    },
+    {
+      "page": "privacy/",
+      "resource": "../assets/logo.svg",
+      "status": 200
+    },
+    {
+      "page": "privacy/",
+      "resource": "../",
+      "status": 200
+    }
+  ],
+  "contrast_ratios": {
+    "body on paper": 6.9,
+    "muted on paper": 5.03,
+    "body on sage": 6.39,
+    "headings on paper": 10.43,
+    "headings on sage": 9.66,
+    "button": 11.18,
+    "button hover": 7.37,
+    "sharing body": 8.97,
+    "sharing note": 7.22,
+    "sharing eyebrow": 8.61,
+    "text link hover": 5.95,
+    "body on white": 7.39
+  },
+  "browser_visual_qa": "Unavailable: browser runtime returned no available browsers. No screenshots or runtime layout assertions were performed.",
+  "initial_retry_state": "Directory was empty; no existing generated files were overwritten.",
+  "privacy_scope": "Website implementation, supplied product facts, verified example support address. Full app data processing and hosting log configuration are unverified."
+}
