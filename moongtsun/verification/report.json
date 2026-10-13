@@ -149,5 +149,53 @@
   },
   "browser_visual_qa": "Unavailable: browser runtime returned no available browsers. No screenshots or runtime layout assertions were performed.",
   "initial_retry_state": "Directory was empty; no existing generated files were overwritten.",
-  "privacy_scope": "Website implementation, supplied product facts, verified example support address. Full app data processing and hosting log configuration are unverified."
+  "privacy_scope": "Website implementation, supplied product facts, verified example support address. Full app data processing and hosting log configuration are unverified.",
+  "responsive_source_review": [
+    {
+      "viewport": "390x844",
+      "review_type": "CSS source and native-font width review, not browser rendering",
+      "container_width_px": 350,
+      "hero_text_column_width_px": 350,
+      "longest_hero_line_width_px": 280.6,
+      "header_required_width_px": 214.7,
+      "notes": "Single-column sections; navigation wraps onto its own row; grouped balance items use a 40px icon and adjacent text."
+    },
+    {
+      "viewport": "768x1024",
+      "review_type": "CSS source and native-font width review, not browser rendering",
+      "container_width_px": 704,
+      "hero_text_column_width_px": 352.8,
+      "longest_hero_line_width_px": 259.0,
+      "header_required_width_px": 439.3,
+      "notes": "Two-column hero and content; three-column balance section; 32px side margins."
+    },
+    {
+      "viewport": "1280x800",
+      "review_type": "CSS source and native-font width review, not browser rendering",
+      "container_width_px": 1184,
+      "hero_text_column_width_px": 588.0,
+      "longest_hero_line_width_px": 388.5,
+      "header_required_width_px": 483.3,
+      "notes": "Capped content width; two-column sections and three-column balance section; no layout uses fixed viewport-height content."
+    },
+    {
+      "viewport": "1440x900",
+      "review_type": "CSS source and native-font width review, not browser rendering",
+      "container_width_px": 1200,
+      "hero_text_column_width_px": 596.4,
+      "longest_hero_line_width_px": 431.7,
+      "header_required_width_px": 483.3,
+      "notes": "Capped content width; two-column sections and three-column balance section; no layout uses fixed viewport-height content."
+    }
+  ],
+  "responsive_limit": "These calculations check the intended CSS breakpoints and selected text widths. They do not verify runtime overflow, actual rendered alignment, touch interaction, keyboard behavior or screenshots.",
+  "privacy_route_redirect": "HTTP 301 /moongtsun/privacy -> /moongtsun/privacy/; target HTTP 200.",
+  "asset_transfer_bytes": {
+    "site.css": 11844,
+    "activity-dawn.webp": 215906,
+    "recovery-lake.webp": 102594,
+    "patterns.svg": 1279,
+    "logo.svg": 418
+  },
+  "source_artwork": "Original generated PNGs retained alongside the optimized WebP assets; the pages reference only the optimized versions."
 }
