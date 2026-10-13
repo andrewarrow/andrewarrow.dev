@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="480" viewBox="0 0 720 480">
+  <title>Activity, recovery and readiness patterns</title>
+  <desc>Three separate illustrative lines connect points across time. These are conceptual patterns, not actual health readings or a product screenshot.</desc>
+  <rect width="720" height="480" fill="#203f36"/>
+  <g stroke="#456155" stroke-width="1">
+    <path d="M54 96H666M54 186H666M54 276H666M54 366H666"/>
+    <path d="M54 64V390M156 64V390M258 64V390M360 64V390M462 64V390M564 64V390M666 64V390" stroke-dasharray="3 7"/>
+  </g>
+  <g fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M54 283C88 283 118 251 156 248S220 130 258 138S322 204 360 190S422 102 462 118S530 233 564 220S630 178 666 170" stroke="#d6e6a5"/>
+    <path d="M54 189C88 176 123 120 156 138S221 238 258 247S322 160 360 148S428 202 462 218S525 120 564 137S630 173 666 133" stroke="#c8c4e4" stroke-dasharray="9 9"/>
+    <path d="M54 226C93 214 120 212 156 208S218 179 258 184S320 240 360 233S425 161 462 163S527 188 564 180S632 128 666 112" stroke="#f3f3e9" stroke-dasharray="2 10"/>
+  </g>
+  <g fill="#d6e6a5"><circle cx="156" cy="248" r="5"/><circle cx="360" cy="190" r="5"/><circle cx="564" cy="220" r="5"/></g>
+  <g font-family="Avenir Next, Avenir, Helvetica, Arial, sans-serif" font-size="17" fill="#f3f3e9">
+    <path d="M55 436H81" stroke="#d6e6a5" stroke-width="4" stroke-linecap="round"/>
+    <text x="94" y="442">Activity</text>
+    <path d="M260 436H286" stroke="#c8c4e4" stroke-width="4" stroke-dasharray="8 6" stroke-linecap="round"/>
+    <text x="299" y="442">Recovery</text>
+    <path d="M490 436H516" stroke="#f3f3e9" stroke-width="4" stroke-dasharray="1 8" stroke-linecap="round"/>
+    <text x="529" y="442">Readiness</text>
+  </g>
+</svg>
