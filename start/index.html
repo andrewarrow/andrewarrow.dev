@@ -3,40 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Builder Roadmap</title>
+    <title>Start with AI | AI Builder Roadmap | Andrew Arrow</title>
     <meta
       name="description"
       content="A beginner roadmap for learning coding and technology basics with ChatGPT, Codex, Git, the terminal, and practical AI workflows."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Source+Sans+3:wght@400;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css?v=3" />
+    <meta name="theme-color" content="#03101b" />
+    <link rel="stylesheet" href="/assets/css/home.css" />
+    <link rel="stylesheet" href="style.css?v=4" />
   </head>
   <body>
-    <div class="page-glow" aria-hidden="true"></div>
-    <div class="site-shell">
-      <header class="hero" id="top">
-        <nav class="topbar" aria-label="Primary">
-          <a class="brand" href="/">andrewarrow.dev</a>
-          <div class="topbar-links">
-            <a href="/">Home</a>
-            <a href="#toc">Roadmap</a>
-            <a href="/build-reddit/">Reddit Build</a>
-            <a href="/#coaching">Coaching</a>
-            <a href="/#about">About Andrew</a>
-          </div>
-        </nav>
-
-        <p class="eyebrow">Beginner roadmap • updated July 24, 2026</p>
-        <h1>
-          Learn coding and technology basics with AI tools, even if you are
-          starting from zero.
-        </h1>
-        <p class="lead">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <a class="brand" href="/">andrewarrow.dev</a>
+    <nav id="navigation" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="#toc">Roadmap</a>
+      <a href="/build-reddit/">Reddit Build</a>
+      <a href="/#coaching">Coaching</a>
+      <a href="/#about">About</a>
+    </nav>
+    <a class="button green header-contact" href="mailto:ai@andrewarrow.dev">Email Andrew <span aria-hidden="true">→</span></a>
+    <button class="menu" aria-expanded="false" aria-controls="navigation" aria-label="Toggle navigation" hidden>☰</button>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="arena" src="/assets/images/andrew-hero-wide.webp" alt="Illustrated portrait of Andrew Arrow at his laptop in a sunlit workspace" width="1448" height="1086" fetchpriority="high">
+      <div class="hero-copy">
+        <p class="eyebrow">AI BUILDER ROADMAP</p>
+        <h1 id="hero-title">Learn to code.<br>Start with AI.</h1>
+        <p class="intro">Coding and technology basics with ChatGPT and Codex.<br> A practical path, even if you are starting from zero.</p>
+        <div class="actions">
+          <a class="button green" href="#start-here">Start the first hour <span aria-hidden="true">→</span></a>
+          <a class="button outline" href="#toc">Explore the roadmap <span aria-hidden="true">→</span></a>
+        </div>
+        <ul class="hero-topics" aria-label="Your learning path">
+          <li><strong>14 categories</strong><span>From setup to shipping</span></li>
+          <li><strong>One tiny build</strong><span>Your first local project</span></li>
+          <li><strong>Real apps</strong><span>A Reddit-like capstone</span></li>
+        </ul>
+      </div>
+    </section>
+    <section class="overview" aria-label="About this roadmap">
+        <p class="overview-copy">
           This page is for people in other industries who have an app idea, a
           workflow problem, or a pile of repetitive tasks and are starting to
           realize that tools like ChatGPT and Codex can help them build useful
@@ -44,40 +53,30 @@
           built slowly from a seeded PostgreSQL feed to a system that can handle
           serious traffic.
         </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#start-here"
-            >Start with the first hour</a
-          >
-          <a class="button button-secondary" href="#toc"
-            >Jump to the roadmap</a
-          >
-          <a class="button button-secondary" href="/build-reddit/"
-            >Preview the Reddit build</a
-          >
-        </div>
-        <div class="hero-grid">
-          <article class="mini-card">
+        <div class="learning-notes">
+          <article class="learning-note">
             <h2>You do not need</h2>
             <p>
               A CS degree, years of math, or perfect terminology before you
               begin.
             </p>
           </article>
-          <article class="mini-card">
+          <article class="learning-note">
             <h2>Paid access helps</h2>
             <p>
               Free plans are fine for trying things, but paid access makes
               serious Codex and automation work much more practical.
             </p>
           </article>
-          <article class="mini-card">
+          <article class="learning-note">
             <h2>The capstone</h2>
             <p>
               Build a Reddit-like app in phases after the basics are familiar.
             </p>
           </article>
         </div>
-      </header>
+      <a class="text-link" href="/build-reddit/">Preview the Reddit build <span aria-hidden="true">→</span></a>
+    </section>
 
       <nav class="toc" id="toc" aria-label="Table of contents">
         <div class="section-intro">
@@ -233,7 +232,7 @@
         </div>
       </nav>
 
-      <main class="content">
+      <div class="content">
         <section class="content-section" id="start-here">
           <div class="section-number">01</div>
           <div class="section-body">
@@ -1024,7 +1023,8 @@ When you are done, tell me exactly how to run it locally on port 3000.</code></p
             </div>
           </div>
         </section>
-      </main>
+      </div>
+  </main>
 
       <footer class="site-footer">
         <div class="footer-grid">
@@ -1043,6 +1043,34 @@ When you are done, tell me exactly how to run it locally on port 3000.</code></p
           </div>
         </div>
       </footer>
-    </div>
+  <script>
+    const header = document.querySelector('.header');
+    const menu = document.querySelector('.menu');
+    const navigation = document.getElementById('navigation');
+    header.classList.add('has-menu-script');
+    menu.hidden = false;
+    function closeMenu() {
+      menu.setAttribute('aria-expanded', 'false');
+      navigation.classList.remove('open');
+    }
+    menu.addEventListener('click', () => {
+      const open = menu.getAttribute('aria-expanded') !== 'true';
+      menu.setAttribute('aria-expanded', String(open));
+      navigation.classList.toggle('open', open);
+    });
+    navigation.addEventListener('click', event => {
+      if (event.target.closest('a')) closeMenu();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        menu.focus();
+      }
+    });
+    document.addEventListener('click', event => {
+      if (!header.contains(event.target)) closeMenu();
+    });
+    matchMedia('(max-width: 900px)').addEventListener('change', closeMenu);
+  </script>
   </body>
 </html>
