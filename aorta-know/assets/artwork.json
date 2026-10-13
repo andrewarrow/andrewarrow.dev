@@ -1,0 +1,17 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "images": [
+    {
+      "file": "morning.webp",
+      "prompt": "Use case: photorealistic-natural\nAsset type: full-bleed hero photograph for the Aorta Know health and activity website\nPrimary request: Create a premium, natural editorial photograph of a person's forearm and wrist wearing a silver rectangular Apple Watch with a dark burgundy woven strap, resting beside a modern iPhone face down on a warm stone breakfast table near a window. This is about noticing daily health and activity patterns, with no invented app interface.\nComposition/framing: very wide landscape 1536x1024, close cropped still life, wrist and watch positioned in the right third, soft dark out-of-focus room and shadowed burgundy fabric on the entire left half leaving a calm dark area for website text. The watch face is unlit black and angled away. Anatomically correct natural hand. No face needed.\nLighting/mood: intimate quiet early morning, natural warm sunlight from the right, realistic tactile textures, subtle film grain, thoughtful and approachable rather than clinical.\nColor palette: warm sandstone, ivory, dark oxblood and muted dark olive, no neon.\nConstraints: no words, no numbers, no interface, no text, no logos, no watermark, no collage, no panels, no graphic overlay."
+    },
+    {
+      "file": "walking.webp",
+      "prompt": "Use case: photorealistic-natural\nAsset type: editorial feature photograph for Aorta Know, a health and activity app for iPhone and Apple Watch\nPrimary request: A candid close editorial photograph of a person after an outdoor walk, looking at a silver rectangular Apple Watch with a burgundy fabric strap on their wrist. Show torso and hands in a neutral cream athletic sweatshirt, with soft sunlit green trees in the background. The watch screen is angled away, black, with no visible interface. Everyday walking, calm attention, realistic hand anatomy and skin texture, no faces required.\nComposition/framing: horizontal landscape 1536x1024, wrist and hands across center, suitable for a 3:2 feature crop. One unified photographic scene.\nLighting/mood: natural early morning light, tactile editorial photography, relaxed and grounded.\nColor palette: ivory cream, stone, muted green, burgundy strap.\nConstraints: no words, no numbers, no app UI, no logos, no text, no watermark, no collage, no panels, no graphic overlays."
+    }
+  ],
+  "vectorArt": {
+    "logo": "Original local SVG: a pulse line forming an A on a burgundy rounded square; used as brand mark and favicon.",
+    "trendOverlays": "Original local SVG: illustrative seven-day and twenty-one-day overlay curves, explicitly distinguished from personal data and app screenshots."
+  }
+}

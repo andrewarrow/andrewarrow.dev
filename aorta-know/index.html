@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f5f2eb">
+    <meta name="description" content="Aorta Know brings Apple Watch health readings, workouts, and personal notes together on iPhone so you can explore your patterns over time.">
+    <title>Aorta Know — Get to know your patterns</title>
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Aorta Know home">
+        <img src="assets/logo.svg" width="36" height="36" alt="">
+        <span>Aorta Know</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#overview">Overview</a>
+        <a href="#heart">Heart &amp; activity</a>
+        <a href="#trends">Trends</a>
+        <a href="mailto:support@andrewarrow.dev">Support</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero__image" aria-hidden="true"></div>
+        <div class="hero__content container">
+          <h1 id="page-title">Aorta Know</h1>
+          <p class="hero__benefit">Get to know your patterns.</p>
+          <p class="hero__intro">See the health and activity your Apple Watch records, with readings, workouts, and your own notes together on iPhone.</p>
+          <a class="text-link hero__link" href="#overview">Explore the patterns <span aria-hidden="true">↘</span></a>
+        </div>
+        <p class="hero__caption">A little more context, day by day.</p>
+      </section>
+
+      <section class="section overview container" id="overview" aria-labelledby="overview-title">
+        <div class="section__heading" data-reveal>
+          <p class="eyebrow">Your day, in context</p>
+          <h2 id="overview-title">A clearer view of the everyday.</h2>
+        </div>
+        <div class="overview__body" data-reveal>
+          <p class="lead">Daily summaries bring recent progress and longer-term trends into one calm view.</p>
+          <p>A morning briefing gathers key information for the day ahead. Fitness updates and a habit tracker help you notice how your routines are taking shape.</p>
+        </div>
+      </section>
+
+      <section class="section heart" id="heart" aria-labelledby="heart-title">
+        <div class="container heart__layout">
+          <div class="section__heading" data-reveal>
+            <p class="eyebrow">Heart &amp; activity</p>
+            <h2 id="heart-title">More than a moment.</h2>
+            <p class="lead">Follow heart rate through waking hours, daily activity, stillness, sleep, and workouts.</p>
+          </div>
+          <div class="heart__details" data-reveal>
+            <p>Explore heart rate, heart rate variability, blood pressure, blood glucose, blood oxygen, and detailed ECG analysis.</p>
+            <p>Add a note to an individual heart reading, or see background heart rate alerts from Apple Watch alongside the context around them.</p>
+          </div>
+        </div>
+        <div class="metric-line container" aria-label="Health readings">
+          <span>Heart rate</span><span>HRV</span><span>Blood pressure</span><span>Blood glucose</span><span>SpO₂</span><span>ECG</span>
+        </div>
+      </section>
+
+      <section class="section activity container" id="activity" aria-labelledby="activity-title">
+        <div class="activity__copy" data-reveal>
+          <p class="eyebrow">Movement that fits you</p>
+          <h2 id="activity-title">Build on your own rhythm.</h2>
+          <p class="lead">Move, distance, and step goals adapt to your current activity patterns, with daily progress forecasts to help you plan.</p>
+          <p>Workout heart rate, training summaries, GPS maps, and trends let you look back at each session. Choose a training zone for custom heart rate alerts in the Watch workout app, and stream workout information from Watch to iPhone as you go.</p>
+        </div>
+        <figure class="activity__image" data-reveal>
+          <img src="assets/walking.webp" width="1536" height="1024" loading="lazy" alt="A person walking outdoors in the morning, wearing an Apple Watch">
+          <figcaption>Progress is personal. Your goals can be, too.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section journal" id="journal" aria-labelledby="journal-title">
+        <div class="container journal__layout">
+          <div class="section__heading" data-reveal>
+            <p class="eyebrow">A place for your notes</p>
+            <h2 id="journal-title">Remember what was happening.</h2>
+          </div>
+          <div class="journal__copy" data-reveal>
+            <p class="lead">Keep a daily journal of notes, measurements, and workouts, entered on iPhone or Apple Watch.</p>
+            <p>Record blood pressure, temperature, glucose, weight, waist circumference, and body fat percentage. A detailed entry list keeps the small details close to the bigger picture.</p>
+          </div>
+        </div>
+        <div class="journal__measurements container" aria-label="Journal measurement types">
+          <span>Blood pressure</span><span>Temperature</span><span>Glucose</span><span>Weight</span><span>Waist</span><span>Body fat</span>
+        </div>
+      </section>
+
+      <section class="section trends container" id="trends" aria-labelledby="trends-title">
+        <div class="trends__copy" data-reveal>
+          <p class="eyebrow">The longer view</p>
+          <h2 id="trends-title">Patterns take time.</h2>
+          <p class="lead">Explore more than 30 metrics across six weeks to 12 months.</p>
+          <p>See 7-day and 21-day trends for any metric, or overlay metrics to compare how they move together. Export health metrics and workouts to review or share with a health professional.</p>
+        </div>
+        <figure class="trends__figure" data-reveal>
+          <img src="assets/trend-overlays.svg" width="760" height="480" loading="lazy" alt="An illustration of several health metric trends overlaid across time">
+          <figcaption>Illustration of trend overlays; not personal health data.</figcaption>
+        </figure>
+      </section>
+
+      <section class="requirements" aria-label="What you need">
+        <div class="container requirements__inner">
+          <p class="eyebrow">Getting started</p>
+          <p>Aorta Know requires an iPhone with the Health app installed. Heart readings come from the Health data store, which is ideally populated by Apple Watch.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <a class="brand brand--footer" href="./">
+        <img src="assets/logo.svg" width="30" height="30" alt="">
+        <span>Aorta Know</span>
+      </a>
+      <span class="copyright">© 2026 Aorta Know</span>
+      <nav aria-label="Footer navigation">
+        <a href="mailto:support@andrewarrow.dev">Support</a>
+        <a href="privacy/">Privacy</a>
+        <a href="./">Home</a>
+      </nav>
+    </footer>
+  </body>
+</html>
