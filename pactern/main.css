@@ -209,6 +209,7 @@ h2 { margin: 0; font-size: clamp(36px, 4vw, 48px); line-height: 1.04; letter-spa
 
 .start { background: var(--paper-soft); }
 .start-grid { display: grid; grid-template-columns: minmax(240px, .68fr) minmax(360px, 1.32fr); gap: clamp(42px, 8vw, 110px); align-items: start; }
+.start-grid > div { min-width: 0; }
 .start-intro h2 { max-width: 400px; }
 .start-intro > p:not(.eyebrow) { max-width: 50ch; margin: 16px 0 0; color: #4f534d; font-size: 15px; line-height: 1.65; }
 .start-intro .prerequisite { color: var(--muted) !important; font-size: 12px !important; }
