@@ -1,0 +1,1582 @@
+                                                 Ultraviolet superradiance from mega-networks of
+                                                       tryptophan in biological architectures
+
+
+
+
+arXiv:2302.01469v1 [quant-ph] 3 Feb 2023
+                                                                          N. S. Babcock,1 G. Montes-Cabrera,1,2 K. E. Oberhofer,3
+                                                                                  M. Chergui,3 G. L. Celardo,4 P. Kurian1∗
+
+                                                                     1
+                                                                         Quantum Biology Laboratory, Howard University, Washington DC, USA
+                                                                 2
+                                                                     Institute of Physics, Benemérita Universidad Autónoma de Puebla, Mexico
+                                                  3
+                                                      Lausanne Centre for Ultrafast Science, École Polytechnique Fédérale de Lausanne, Switzerland
+                                           4
+                                               Department of Physics and Astronomy, CSDC and INFN, Florence Section, University of Florence, Italy
+
+                                                             ∗
+                                                                 To whom correspondence should be addressed; E-mail: pkurian@howard.edu.
+
+
+                                                  Networks of tryptophan — an aromatic amino acid with strong fluorescent re-
+
+                                                  sponse — are ubiquitous in biological systems, forming diverse architectures in
+                                                  transmembrane proteins, cytoskeletal filaments, sub-neuronal elements, pho-
+                                                  toreceptor complexes, virion capsids, and other cellular structures. We ana-
+
+                                                  lyze the cooperative effects induced by ultraviolet (UV) excitation of several
+                                                  biologically relevant tryptophan mega-networks, thus giving insight into novel
+                                                  mechanisms for cellular signalling and control. Our theoretical analysis in
+
+                                                  the single-excitation manifold predicts the formation of strongly superradiant
+                                                  states due to collective interactions among organized arrangements of up to
+                                                  more than 105 tryptophan UV-excited transition dipoles in microtubule archi-
+
+                                                  tectures, which leads to an enhancement of the fluorescence quantum yield
+                                                  that is confirmed by our experiments. We demonstrate the observed conse-
+                                                  quences of this superradiant behavior in the fluorescence quantum yield for
+
+                                                                                                  1
+      hierarchically organized tubulin structures, which increases in different geo-
+      metric regimes at thermal equilibrium before saturation — highlighting the
+
+      effect’s persistence in the presence of disorder.
+
+
+Introduction
+
+Tryptophan is the only amino acid with an indole moiety, making it a suitable precursor for
+a number of metabolites involved in biological signalling, most notably kynurenine and the
+neurotransmitter serotonin (1), which share tryptophan’s highly aromatic character. It is an
+
+ideal fluorescent reporter of biomolecular dynamics, given its natural occurrence in proteins, its
+strong ultraviolet absorption, and its significant absorption-emission Stokes shift that is highly
+sensitive to the protein, solvent, and electrostatic environments. As a matter of fact, in recent
+
+years tryptophan has been used as a reporter of the Stark effect in photoactivated proteins (2,
+3), to monitor protein folding kinetics (4), as the operative chromophore in resonance energy
+transfer networks of UV-specific photoreceptor complexes (5,6), as a reporter of charge-transfer
+
+states in proteins (7, 8) and of solvation dynamics at lipid-water and protein-water interfaces
+(9, 10), to track local electrostatic changes in diverse classes of proteins (11), and as a probe for
+conformational ensembles of proteins in solution (12), among other applications.
+
+   Tryptophan residues are often found in transmembrane proteins, situated at the lipid-water
+interface. Multi-tryptophan proteins have been widely studied, including myoglobin, hemoglobin,
+cytochrome-c oxidase, and cytochrome P-450 (13), as well as in the photoreceptors cryp-
+
+tochrome (14), bacteriorhodopsin (2, 3), and UVR8 (5, 6). Large, organized tryptophan net-
+works occur in these transmembrane proteins, receptors, and other macromolecular aggregates,
+
+lending essential structural and functional value to living systems.
+   In particular, microtubules (MTs) are macromolecular aggregates of the protein tubulin and
+represent mesoscale networks of tryptophan residues. MTs are spiral-cylindrical tubulin aggre-
+
+                                                 2
+gates that self-assemble to enable cellular reorganization and remodeling for mitosis, differenti-
+ation, transport, habitat exploration, and apoptosis (15), and they have been found to reorganize
+
+structurally under UV irradiation (16,17). In addition, other evolutionarily conserved structures
+consist of MT architectures, including the centriole, a vortex arrangement generally made of
+nine “slats” of MT triplets (see Fig. 1), which has been the subject of several studies (18–21)
+
+examining cellular orientation to a light stimulus.
+
+
+
+
+Figure 1: Hierarchical mega-architectures of tryptophan form in protein aggregates of
+functional biological significance. Panels depict a hierarchy of tubulin structures composed
+of α and β tubulin (shown in blue and red ), where panel a) shows an individual tubulin dimer,
+b) shows a microtubule segment of three dimer-defined spirals, c) shows a centriole geometry
+formed from nine triplets of microtubules, and d) shows a hexagonal bundle of 19 microtubules
+from a typical mammalian axon. Panels a) and b) were generated with Chimera. Panels c) and
+d) were produced using Visual Molecular Dynamics on the Argonne Leadership Computing
+Facility mainframe.
+
+
+                                                3
+    These findings suggest the potential for photophysical and photochemical control of MT
+dynamics, which have been correlated with the regulation and partitioning of reactive oxygen
+
+species (ROS) in living cells (22). Endogenous, optical ultraweak photon emissions (UPEs)
+from living organisms are well-documented (23, 24) in the context of ROS-mediated oxidative
+stress. Stress-induced ultraviolet UPEs are more prominent during the exponential growth phase
+
+of the cellular cycle (25,26), implicating them in potential biophotonic signaling along aromatic
+networks during oxidative metabolism (27). However, the link between cellular metabolic ac-
+tivity, UPEs, and tryptophan network optical dynamics remains far from clear, leaving a critical
+
+gap in our knowledge.
+    Here, we explore the role of photoexcitation in mesoscale tryptophan networks present in
+several biological architectures. We show that mega-networks of tryptophan can exhibit a col-
+
+lective optical response in the UV. By analyzing several architectures containing more than 105
+tryptophan chromophores—ranging from centrioles to microtubule bundles found in neuronal
+axons—we predict that strongly superradiant (paired with subradiant) states are often present
+
+in their spectra. Combining numerical results and scaling analysis, we determine the strength
+of the collective response in biological structures of realistic size. The effects of physiological
+disorder are considered by including fluctuations of the tryptophan excitation energies, demon-
+
+strating that the effects of superradiance can survive even at thermal equilibrium. Our predic-
+tions are confirmed by our experimental observations of larger quantum yields with increasing
+tryptophan network size.
+
+
+1    Simulations and Quantum Yield Measurements
+
+We modeled biologically realistic arrangements of tryptophan (Trp) chromophores, beginning
+with hierarchical aggregates of the protein tubulin as shown in Fig. 1 and as described in the
+Materials and Methods section. We then modeled photoemissive decay channels using a well-
+
+                                                4
+Figure 2: Predictions of fluorescence quantum yields from tryptophan networks in protein
+architectures assuming thermal equilibrium. The quantum yields (QYs) are plotted as a
+function of the number of tryptophan (Trp) chromophores, where panel (a) shows the QY for a
+microtubule (MT) (shown in Fig. 1b) with a maximum length of ∼ 800 nm, panel (b) shows the
+QY for a centriole (shown in Fig. 1c) formed by 27 microtubules, each with a maximum length
+of ∼ 320 nm, and panel (c) shows the QY for a neuronal bundle formed by 91 microtubules,
+each with a maximum length of ∼ 80 nm, arranged in a hexagonal honeycomb (similar to
+Fig. 1d).
+
+known radiative non-Hermitian Hamiltonian for open quantum systems (see SI and (28, 29)
+for further details). We thus characterized the collective light-matter interaction of Trp mega-
+
+networks present in several biologically relevant architectures, solving the complex eigenvalues
+Ej − iΓj /2 for each Trp network geometry and determining the radiative decay rates Γj of the
+network eigenmodes. Comparing the maximum Γj with the radiative decay rate γ of a single
+
+Trp chromophore, we determined the superradiant enhancement factor max(Γj )/γ, thus char-
+acterizing each architecture’s spectrum by its brightest (i.e., most superradiant) state. Such a
+model has allowed us to investigate the possibility of whether quantum optical modes may be
+
+implicated in photonic coordination of the cytoskeleton and other cellular structures character-
+ized by mesoscale networks of Trp.
+   The radiative and non-radiative decay processes of the emissive state, in our case the 1La state
+
+of Trp (see SI for further details on distinctions from the 1Lb state), are quantitatively described
+
+
+
+                                                 5
+by their decay rates Γ and Γnr , respectively (30). Figure S1 shows the absorption and emis-
+sion spectra of Trp, tubulin, and microtubules. The absorption-emission Stokes shift is almost
+
+identical for tubulin and microtubules (MTs) and significantly smaller than that of Trp. This
+implies for the protein architectures an overlapping resonance regime between absorption and
+emission around 300 nm, where the absorptive and emissive transition dipoles are resonant and
+
+experimentally indistinguishable. The emissive process is mainly characterized by the observed
+fluorescence lifetime and the quantum yield. The quantum yield (QY) is defined as the ratio of
+the number of photons emitted to the number of photons absorbed, or equivalently,
+
+                                                  Γ
+                                        QY =           .                                         (1)
+                                               Γ + Γnr
+
+We predict the trends of steady-state QYs in the various Trp networks by calculating the thermal
+
+averages hΓith and hΓnr ith of the radiative and non-radiative decay rates, respectively, by means
+of the complex eigenvalues of the effective Hamiltonian in Eq. 6 (see SI for further details).
+   Analyzing various biological architectures of Trp, we found the emergence of strong su-
+
+perradiant states close to the lowest excitonic state (see SI). The superradiant enhancement
+increases with the system size until approximately a few times the excitation wavelength, and
+then it tends toward saturation. The presence of a strong superradiant state close to the lowest-
+
+energy state (see Figs. S4, S5, and S6 in the SI) is expected to enhance the QY, since the thermal
+occupation probability of such a superradiant state—and thus the thermally averaged radiative
+decay rate—will be enhanced.
+
+   Fig. 2 shows the QY predictions for MTs (Fig. 1b), centrioles (Figs. 1c and S5), and 91-
+MT bundles (Fig. S6e) of varying lengths. The QY is calculated and displayed in Fig. 2 in
+the form of semi-log plots as a function of the number of Trp chromophores in the network.
+
+Here thermalization is assumed at kB T ≈ 207 cm−1 , where Boltzmann’s constant is given by
+kB = 0.695 cm−1 K−1 and the room-temperature bath by T = 298 K.
+
+
+                                                6
+   Fig. 2a shows the case of a MT. Starting with an established experimental value for the QY
+of Trp (31), the MT QY behavior is divided into three regimes. The first one exhibits a rapid,
+
+but overall modest increase (< 10%) corresponding to the formation of a single tubulin dimer
+(TuD), containing a total of eight Trp chromophores. The second regime shows near constancy
+(to 0.1%) corresponding to the formation of the first MT spiral layer. Each spiral layer contains
+
+13 TuD and a total of 104 Trp chromophores (Fig. 1b). This near-constant regime in the first
+MT spiral layer can be explained by the fact that the superradiant state is not close to the lowest-
+energy state for the first spiral, as shown in previous work (32). The last regime for QY > 0.136
+
+shows a familiar sigmoid-like increase and corresponds to the formation of the MT by adding
+one spiral layer after another, until 100 layers (∼ 800 nm) are reached, with a total of 10 400
+Trp chromophores. QY saturation begins to set in when the MT has reached a length of a few
+
+λ, where 280 nm is the relevant scale set by the wavelength of incident light considered for
+excitation of the Trp chromophores. Such saturation in the QY is explained by the behavior of
+the superradiant enhancement factor, which also saturates at this length scale for a variety of
+
+structures containing Trp mega-networks (see Figs. S4, S5, and S6 in the SI).
+   Fig. 2b shows the case of a centriole. The minimum length we consider is a single centriole
+layer of about 8 nm and containing 2808 Trp chromophores. At 40 layers, we obtain a centriole
+
+of approximately 320 nm in length and containing a total of 112 320 Trp chromophores. As long
+as the centriole volume contains between 3 000 and 20 000 Trp chromophores, a rapid growth
+of QY is observed. For larger volumes, the growth of QY slows down, but the saturation regime
+
+is still not fully realized. Fig. 2c shows the case of a 91-MT bundle, with 10 layers and a length
+of approximately 80 nm. The primary difference in this case is that each layer of the bundle
+contains 9 464 Trp chromophores. Similar to the centriole case, the QY increases monotonically
+
+as chromophores are added to the network, without realizing saturation even at 105 Trps.
+   All three panels in Fig. 2 are consistent in showing how thermalization significantly com-
+
+
+                                                 7
+petes with enhancements to the QY from collective effects, without eliminating them, as the
+superradiance exhibited by these mega-networks in the absence of disorder varies from a few
+
+hundreds to several thousands of times the Trp spontaneous emission rate. In panel (c) for ex-
+ample, by increasing the number of chromophores by one order of magnitude, from 104 to 105 ,
+the increase in thermal QY is only ∼ 1%.
+
+   These results taken together suggest that equilibrium thermal effects are a primary cause
+of mitigating such cooperative quantum behaviors, without entirely washing out the associated
+phenomena. Indeed, we have also considered the effect of structural disorder on the thermal QY
+
+by adding time-independent fluctuations of the excitation energies of the Trp chromophores.
+These fluctuations are typically used to simulate inhomogeneous broadening of the absorption
+and emission spectra (33). Interestingly we found that the QY is almost unaffected when a
+
+disorder strength equal to room-temperature energy (∼200 cm−1 ) is considered, and a QY en-
+hancement is still observable even at 1000 cm−1 disorder (see Fig. S7 in the SI). Thus, the QY
+enhancements presented in Fig. 2 are very robust to both thermal environments and structural
+
+disorder.
+   In order to verify the above theoretical predictions, we performed steady-state fluorescence
+QY measurements, using the QY of Trp in water (31) as a standard. The QYs were determined
+
+both for 280-nm excitation, subtracting contributions from other residues, and for 295-nm ex-
+citation, where only Trp absorbs (see SI for further details). The QY measurements could only
+be performed on tubulin and MTs, because of issues with scattered light and sample purity for
+
+the larger assemblies, as explained in the SI. Figure S1 shows the steady-state absorption and
+emission spectra of Trp, tubulin dimers (TuD), and MTs. A scattering background affects the
+absorption spectrum of MTs and was corrected for as explained in the SI. Table 1 shows consis-
+
+tent results for both excitation wavelengths, with first a decrease of QY from Trp to TuD, then
+a statistically significant increase by up to almost 70% for MTs. The decrease from Trp to TuD
+
+
+                                              8
+                          sample        QY-Trp               QY-Trp
+                                        @ 280 nm (%)         @ 295 nm (%)
+                    microtubules (MT) 17.6∗ ± 2.1            14.7∗ ± 1.6
+                   tubulin dimers (TuD) 10.6 ± 0.6           10.9 ± 1.3
+                     tryptophan (Trp)   12.4 ± 1.1           11.4 ± 1.1
+
+Table 1: Fluorescence quantum yields from tryptophan networks in protein architectures.
+Summary of experimental measurements obtained from steady-state spectroscopy of trypto-
+phan, tubulin dimers, and microtubules in BRB80 aqueous buffer solution (see Fig. S1 for com-
+plete spectra). Fluorescence quantum yield (QY) is determined for excitation at 280 nm and
+295 nm (see Materials and Methods for details about the procedure). Note the statistically sig-
+nificant increases in the QY from tubulin to microtubules, in qualitative agreement with Fig. 2a
+and consistent with what one would expect in the presence of superradiance. The ∗ indicates
+an average of upper and lower limit values for microtubules, which have been corrected for the
+scattering background.
+
+
+is small but non-negligible, suggesting that non-radiative processes in the protein are at play.
+However, this notwithstanding, the significant increases from TuD to MTs are in qualitative
+agreement with our predictions in Fig. 2a, bearing in mind that our model does not account for
+
+additional non-radiative channels due to the formation of large Trp ensembles. It is noteworthy
+that the increased QY in MTs would imply a decreased non-radiative decay rate, but this is not
+the case with TuD—rather the contrary. It is therefore an unlikely scenario in the vastly more
+
+complex MT case, suggesting that collective radiative processes in these protein assemblies
+with mega-ensembles of Trp are the primary cause of the significant QY increases observed in
+MTs.
+
+
+
+
+2      Discussion
+
+The fluorescence response from multi-tryptophan proteins, with different lifetime components
+conventionally associated to different classes of tryptophan based on the heterogeneity of lo-
+
+
+                                               9
+cal environments (2, 3, 13), becomes even more complicated when considering mega-networks
+of tryptophan residues formed by their biological architectures. In this work, we have sim-
+
+ulated collective photoexcitonic properties of such extremely large Trp networks in protein
+structures ranging from individual tubulin dimers and microtubule segments to microtubule
+super-architectures such as the centriole and neuronal bundles (Fig. 1).
+
+   Even though the coupling between Trp transition dipoles is relatively weak (∼ 60 cm−1 )
+compared to room-temperature energy (∼ 200 cm−1 ), the presence of long-range couplings
+between Trp chromophores can greatly enhance the robustness of the network (32). Moreover,
+
+a counter-intuitive consequence of cooperativity is the fact that the robustness of a system to
+disorder can increase with the system size. This effect, known as cooperative robustness in the
+literature, has been investigated theoretically in paradigmatic models (34–36). In this work we
+
+have shown that mega-networks of Trp in protein architectures can exhibit cooperative robust-
+ness, as shown in the bottom panel of Fig. S5. The origin of this effect can be qualitatively
+explained as a very large decay width strongly coupling the system with the electromagnetic
+
+field. Such strong coupling protects the system from disorder, which must become comparable
+to the coupling in magnitude to suppress superradiance.
+   On the other hand, our findings also reveal the fundamental challenges of coherent quantum
+
+optical information transfer at ambient temperatures in the presence of static and/or dynamical
+disorder. Significant disorder can effectively quench collective superradiant effects, even though
+our fluorescence quantum yield measurements of tryptophan, tubulin, and microtubules in aque-
+
+ous buffer solution suggest that even in thermal equilibrium such effects survive. Certainly,
+more robust models are needed to account for exciton-phonon couplings in deformations of the
+protein scaffold (37), as well as for optical pumping of mechanical modes in non-equilibrium
+
+structural organization and assembly (38–40). .
+   Microtubules are crucial to cytoskeletal regulation and form complex bundles in neuronal
+
+
+                                               10
+tissue. Our studies of axonal microtubule bundles (Figs. 1d, 2c, S6, and SI) may have implica-
+tions for both neuroscience and quantum optics research. Confining a superradiant optical mode
+
+to one dimension in a waveguide has been proposed to extend emitter interactions to extremely
+long range (41), raising the tantalizing possibility that axons might serve as such waveguides
+between giant superradiant emitters in the brain. Microtubule bundles in axons or those associ-
+
+ated with the centrosome complex may satisfy a particular combination of criteria necessary to
+exhibit these ultra-long-range couplings, which are currently being exploited for state-of-the-art
+chiral nanofiber communications systems (41–43).
+
+
+3    Conclusions
+
+Although the roles of Trp as a metabolic precursor and fluorescent reporter have been studied
+
+in depth, the implications of large Trp architectures for photophysical control of biosystems
+remain largely unexplored. Trp chromophores have been identified for their unique role in UV
+light sensing in the UVR8 plant photoreceptor (44), which is believed to be the first UV light
+
+perception system discovered to use a network of Trp chromophores as a funnel to enhance its
+quantum efficiency (5). This utilization of a network of intrinsic amino acids for light sensing
+marks a significant departure from other photoreceptors, which rely on a separate cofactor (such
+
+as flavin adenine dinucleotide in cryptochrome) or pigment (such as chlorophyll in photosyn-
+thesis or retinal in rhodopsin) to enable light detection and harvesting. Recent observations of
+UV light-harvesting from Trp networks in microtubules (45) and of the Trp network as a pho-
+
+toreduction mediator in cryptochrome (14) are consistent with an emerging picture of extended
+protein scaffolds that harness the symmetries of hierarchical Trp networks to promote biological
+
+function.
+    Past studies elucidated the physical plausibility of superradiant effects in individual micro-
+tubule geometries of varying lengths (32), and in this work we extend these findings to study
+
+                                               11
+tryptophan networks of vastly increased scale, revealing how collective and cooperative quan-
+tum effects might manifest in cytoskeletal networks and other protein aggregates associated
+
+with diverse cellular structures and organelles. We have also analyzed the collective quantum
+optical response of microtubule bundles present in neuronal axons, where photons from brain
+metabolic activity could be absorbed rapidly via superradiant states for ultrafast information
+
+transfer.
+    Our work highlights essential features of tryptophan chromophore networks in large aggre-
+gates of proteins forming biomolecular super-architectures such as the centriole (Figs. 1c, 2b,
+
+S5), axoneme (Fig. S4), and microtubule bundles in neurons (Figs. 1d, 2c, S6). Specifically, by
+analyzing the coupling with the electromagnetic field of mega-networks of tryptophan present
+in these biologically relevant architectures, we find the emergence of collective quantum optical
+
+effects, namely superradiant and subradiant eigenmodes. Our analysis has been done using a ra-
+diative Hamiltonian (see Eq. 6 in the SI) in the single-excitation limit, which is reasonable given
+the biological milieu of ultraweak photon emissions. The presence of collective superradiant
+
+eigenmodes in such a wide variety of biological complexes—and their observed manifestation
+in increasing QYs for larger hierarchies of proteins—suggests that this collective ultraviolet
+response would be exploitable in vivo.
+
+    Exceptionally bright superradiant states in these biocomplexes may facilitate the absorp-
+tion and energy transfer of UV photoexcitations in an intensely oxidative environment, where
+electronically excited molecular species emit light quanta in this wavelength regime. In this
+
+manner, superradiant states promoting enhanced QYs for large biological architectures may
+serve a photoprotective role in pathological conditions such as Alzheimer’s disease and related
+dementias, since an enhanced QY implies that a greater portion of the photonic energy ab-
+
+sorbed by certain protein aggregates is re-emitted rather than assimilated by those complexes.
+Such collective and cooperative mechanisms for photoprotection have not been fully explored,
+
+
+                                                12
+even in the case of the black-brown pigment eumelanin, which consists of a mixture of two in-
+dole monomers that aggregate to form oligomers of different lengths and geometries. A recent
+
+study of eumelanin (46, 47) demonstrated ultrafast energy transport over large distances despite
+the significant structural and chemical inhomogeneity of the sample, raising the question of
+whether mega-networks of indole from tryptophan and neuromelanin can aid in “internal” UV
+
+energy downconversion and funnelling in the brain. Similarly, the UV superradiant response
+in mega-networks of tryptophan could also augment artificial light-harvesting devices to extend
+and enhance the spectral band of absorption beyond the visible range.
+
+    Our work thus presents numerous possibilities for superradiance- (and subradiance-)enabled
+metabolic regulation, communication, and control in and between cells (see Table S3), and
+with external agents that interact with the cytoskeleton at various stages of cellular growth
+
+and replication (48). Combined with experimental measurements of fluorescence QY in tubulin
+architectures, our simulations presented in this work demonstrate that collective and cooperative
+UV excitations in Trp mega-networks support robust quantum states in proteins with observable
+
+consequences even under thermal equilibrium conditions.
+
+
+4    Materials and Methods
+Protein Structural Models
+
+We created computer models of these realistic biological geometries using atomic coordinates
+
+of proteins downloaded from the Protein Data Bank (PDB). We extracted the Trp coordinates
+(positions and orientations) from each PDB file to create tables of transition dipole moment
+coordinates as in Ref. (32), choosing the well-known 1La peak excitation at 280 nm as our
+
+transition dipole moment of interest (2).
+    We used the Trp transition dipole coordinates obtained for each structure to define matrix
+elements of the radiative Hamiltonian given in Eq. 5 (see SI and Fig. S8 for further details).
+
+                                               13
+The complex eigenvalues of Eq. 6 in the SI contain information on the emission spectra {Ej }
+and linewidths {Γj } in the single-excitation limit (32)). We simulated these resonances by
+
+diagonalizing the matrix in Eq. 6 for each Trp arrangement (see SI). These spectra allowed
+us to predict optical enhancements due to collective quantum optical interactions in the Trp
+networks found in a variety of prototypical cellular structures, organelles, and appendages.
+
+   Tubulin (Fig. 1a) was modeled using PDB entry 1JFF, and tubulin dimers were assembled
+into a virtual microtubule (Fig. 1b) according to the protocol given in Appendix A of Ref. (32):
+aligning the (would-be) outer microtubule surface with the y axis (by rotating it -55.38◦ in the
+
+yz plane transverse to the microtubule longitudinal x axis), optimizing the tubulin orientation
+(i.e., rotating each dimer 11.7◦ around the β-tubulin Trp346 Cδ2 atom in the yz plane and then
+translating the dimer 0.3 nm in the z direction), before translating each dimer 11.2 nm in the
+
+y direction, and successively rotating it by multiples of −27.69◦ in the yz plane (about the
+origin around the x axis) while successively shifting each dimer by multiples of 0.9 nm in the x
+direction.
+
+   Larger microtubule architectures were built virtually from arrangements of individual mi-
+crotubules that were constructed as described above. Microtubule bundles (from model axons
+as shown in Fig. 1d and Fig. S6) were prepared in hexagonal arrangements by placing adjacent
+
+microtubules 50 nm apart center-to-center, reflecting the mean separation between adjacent tau-
+mediated microtubules in experimentally observed neuronal axons (49). The model centriole as
+shown in Fig. 1c and Fig. S5 was created from an initial triplet of microtubules centered 100 nm
+
+from the origin along the y axis—with the microtubules in this triplet centered at (x, y, z) co-
+ordinates (0, 87, -22.5167), (0, 100, 0), and (0, 113, 22.5167) in nm—before each triplet was
+rotated in increments of 40◦ around the origin in the yz plane. The idealized (1JFF) model ax-
+
+oneme was constructed as ten pairs of microtubules, with each microtubule pair spaced 26 nm
+apart center-to-center. One microtubule pair is centered at the origin, and the remaining nine
+
+
+                                              14
+pairs are spaced evenly (40◦ apart) and centered at a distance of 98 nm from the origin as shown
+in Fig. S4.
+
+Prediction of Quantum Yield
+
+The fluorescence quantum yield (QY) is the ratio of the number of emitted photons (per time
+and volume unit) relative to the number of absorbed ones. Equivalently, the QY can be defined
+in terms of the radiative decay rate Γ and the non-radiative decay rate Γnr : QY= Γ/(Γ +
+
+Γnr ), where Γnr represents all the physical and chemical processes involved in the interaction
+between the chromophore network and the surrounding protein(s) or solvent. Typically we
+can write, Γnr = ΓIC + ΓISC + Γreact , where ΓIC is the internal conversion rate constant; ΓISC
+
+is the intersystem crossing rate constant, and Γreact is the rate constant due to quenching or
+photochemical reactions.
+   The effective Hamiltonian Ĥeff from Eq. 6 in the SI is the starting point for our QY predic-
+
+tions. To consider the effects of non-radiative processes in our model, we replace the diagonal
+part of Ĥeff with a new decay rate γ 0 = γ +γnr . Here γnr represents the decay rate of a single Trp
+due to non-radiative processes. Then, the new eigenvalues of Ĥeff are given by Ej0 = Ej0 − i Γ0j
+
+where Γ0j = Γj + Γnr,j . The QY is a dimensionless quantity that takes values between 0 and
+1. When Γ  Γnr , QY → 1, but if the excited state depopulation is dominated by quenching
+processes, external conversion, or intersystem crossing, Γnr  Γ and QY → 0.
+
+   For the particular case of the Trp chromophore, the radiative decay rate γ = 0.00273 cm−1
+corresponds to a radiative lifetime τ = 1.9 ns (32). At room temperature its quantum yield in
+water is estimated to be QY ≈ 0.13 (31), although in different proteins the Trp QY has been
+
+observed to vary from about one-tenth this value to nearly a factor of three times it (7). Using
+Eq. 1 with the replacements Γ → γ and Γnr → γnr allows us to calculate the Trp non-radiative
+decay rate in water as γnr ≈ 0.0183 cm−1 .
+
+
+                                                 15
+   Thermal average. Consider P (t) as the probability that an excitation is found in the chro-
+mophore network at time t, while 1 − P (t) would be the probability that the excitation has left
+
+the network. Let us denote as Pk (t) the probability that the chromophore system is decribed by
+the eigenstate |EkR i at time t. Assuming thermal equilibrium, Pk (t) = P (t) exp(−Ek /kB T )/Z.
+Here kB = 0.695 cm−1 K−1 stands for the Boltzmann constant, T is the temperature, and
+     PN
+Z=     j=1 exp(−Ej /kB T ) is the partition function.
+                                                                        PN
+   Due to the non-Hermitian nature of Ĥeff , the probability P (t) =    k=1 Pk (t) at thermal equi-
+
+librium is not conserved (Ṗ (t) 6= 0). Instead it satisfies the following master equation, Ṗ (t) =
+                                                                                 PN
+−hΓith P (t), where the thermal average for the decay rate is given by hΓith =    j=1 Γj exp(−Ej /kB T )/Z.
+
+Because γj for each Trp is assumed equal to all others, and our model neglects the formation of
+additional non-radiative channels with increasing Trp network size, we consider hΓnr ith → γnr
+
+and arrive at the following definition for the QY at thermal equilibrium:
+
+                                                    hΓith
+                                   hQYith =                     .                               (2)
+                                               hΓith + hΓnr ith
+
+Measurement of Quantum Yield
+
+Steady-state fluorescence spectroscopy was performed with a Shimadzu RF-5301PC spectroflu-
+
+orophotometer. Conventional absorption spectra were taken with a Shimadzu UV-3600 UV-Vis
+spectrophotometer. For the measurements we used UV-grade glass cuvettes with a pathlength
+of 1 cm.
+
+   Samples. Tubulin protein in the form of α − β tubulin heterodimers and pre-formed mi-
+crotubules (taxol-stabilized and lyophilized) extracted from porcine brain were purchased from
+Cytoskeleton, Inc. The microtubules exhibit an average length of 2 µm. For tubulin and trypto-
+
+phan (Sigma-Aldrich) solutions we used a self-prepared BRB80 buffer (80 mM PIPES pH 6.9,
+2 mM MgCl2 , and 0.5 mM EGTA, pH 6.9). Microtubules were stabilized in solution by adding
+20 µM taxol (Cytoskeleton, Inc.) to the BRB80 buffer. The proteins are delivered as powders in
+
+                                                16
+1 mg vials (TuD) and 0.5 mg vials (MTs). However, the vials contain a bit more than 1 mg and
+0.5 mg, respectively, according to the manufacturer. Moreover, around 5 mg of sucrose plus
+
+1 mg Ficoll is added to the vials. Hence, it was not possible for us to prepare solutions with
+exact concentrations. We used ∼0.33 mg/ml tubulin protein and microtubules for steady-state
+spectroscopy. Tyrosine was measured in ultrapure water solution and cysteine in 1 mM HCl.
+
+The absorption background by the solvents was subtracted.
+   Absorption and emission spectra. Steady-state absorption and emission spectra of micro-
+tubules (MTs), tubulin protein (α − β tubulin heterodimers, TuD) and tryptophan (Trp) in phys-
+
+iological BRB80 buffer are shown in Figs. S1 and S3. They reveal a first absorption band with
+a maximum around 280 nm for all three systems. The MTs solution exhibits a strong scatter-
+ing background (Fig. S3d), which needed to be subtracted. Assuming Rayleigh-like scattering
+
+(∝ λ−4 ), we fitted the background from 307 to 800 nm. The extrapolated curve for wavelengths
+λ < 307 nm was subtracted from the raw spectrum. The corrected spectrum agrees qualitatively
+well with the TuD spectrum for wavelengths above ∼270 nm. The upper limit for the MT quan-
+
+tum yield is determined from the corrected spectrum (by subtracting the fit, resulting in a lower
+sample absorbance as in Eq. 3), and the lower limit for the MT quantum yield is determined
+from the raw data without correction.
+
+   The normalized fluorescence spectra upon excitation at 280 nm show that Trp fluorescence
+has its maximum at 355 nm, while for TuD and MTs the absorption-emission Stokes shifts
+are significantly smaller than for Trp, and almost identical for both (fluorescence maxima at
+
+∼327 nm). We attribute it to a reduced chromophore-solvent interaction due to the protein
+environment. The full-width half-maximum (FWHM) intensity values of TuD and MTs are
+experimentally identical (∼5.5·103 cm−1 ) and are broader than for Trp (4.9·103 cm−1 ).
+
+   TuD consist of 8 Trp, 35 tyrosine (Tyr), and 20 or 21 cysteine amino acids that can form up to
+10 cystine (Cys) residues linked in pairs by disulfide bonds, even though most of these are too far
+
+
+                                                17
+apart to form such a bridge. In order to roughly estimate the molar absorption coefficient of the
+protein at ∼280 nm, we simulated the absorption spectrum of TuD by adding the contributions
+
+of the Trp (5.6·103 M−1 cm−1 , 49% contribution), Tyr (1.3·103 M−1 cm−1 , 50% contribution),
+and Cys residues (125 M−1 cm−1 , 1% contribution), i.e., the number of the respective residues
+multiplied with their respective molar absorption coefficients at ∼280 nm (50). This yields a
+
+molar absorption coefficient of tubulin of 92·103 M−1 cm−1 . The reconstructed spectrum is
+in good agreement with the experimental one down to 270 nm (see Fig. S3c). However, the
+experimental spectrum is slightly broadened, probably by inhomogeneous contributions. The
+
+other amino acids from the protein’s backbone have negligible contributions (1%) to the
+molar absorption coefficient in this range. The deviations below 270 nm are presumably due to
+contributions of the more than 800 remaining amino acids of the protein backbone including,
+
+e.g., phenylalanine (43 residues) or alanine (80 residues).
+   Among these amino acids, Trp and Tyr exhibit the strongest fluorescence quantum yields
+(Trp 13% and Tyr 14% in H2 O (30)). The fluorescence maximum of TuD is blueshifted by
+
+2.2·103 cm−1 with respect to Trp and redshifted by 2.9·103 cm−1 with respect to Tyr (see
+Fig. S3b). Hence, reconstruction of the TuD fluorescence spectrum by adding the spectra of
+the two components, even with optimized weights, fails.
+
+   Observation of fluorescence quantum yields. Fluorescence quantum yields (QYs) were de-
+termined according to the standard reference formula (30),
+
+
+                               QYs = (Fs ar n2s )/(Fr as n2r ) QYr .                          (3)
+
+The subscripts s and r represent the examined sample and the reference, respectively. F is
+the integrated fluorescence area, and n is the refractive index of the respective solution. The
+
+absorption factors a are determined by a = 1−10−A , with A the optical density at the absorption
+wavelength of the absorption band. The QY of Trp in H2 O (∼13%) was used as reference (31,
+
+
+                                                18
+51). We adjusted the concentrations of the samples to approximately equal optical densities
+in the absorption maxima of the various samples. In order to minimize statistical errors, the
+
+spectra of five freshly prepared solutions for each sample were averaged.
+   The QY of Trp in the BRB80 buffer (12.4 ± 1.1%) does not deviate significantly from its
+value in H2 O. Tubulin exhibits a QY of 6.8 ± 0.4%, which is reduced with respect to Trp. This
+
+indicates the contribution of other chromophores to the absorption band on the one hand and
+the dominant Trp fluorescence on the other hand. Lacking knowledge of the exact contribution
+of scattering to the optical density of the MTs solution at 280 nm, we can only give a range or
+
+average for the quantum yield of MTs. By subtracting the extrapolated fit from the raw data, we
+estimate 12.0 ± 1.0% as an upper limit of the MT QY. Its lower limit is given by employing the
+MT absorption without any corrections of scattering and yields 10.3 ± 0.8%.
+
+   In order to determine the QY generated by the Trp residues in the TuD and in MTs, we
+weighted the absorption spectrum by its contribution from Trp, which is 49% at 280 nm. There-
+fore, the QY for TuD grows to 10.6 ± 0.6% and for MTs we get 19.5 ± 2.8% for its upper limit
+
+and 15.7 ± 1.3% for its lower limit (Table 1 of the main text and Table S2). TuD still exhibits a
+reduced QY with respect to Trp, but the MT QY from Trp is clearly enhanced.
+   In order to minimize error due to overlapping absorption by other residues, we also evalu-
+
+ated the QY at 295 nm (instead of the absorption maximum at 280 nm) excitation, where the
+absorption of amino acids other than Trp is negligible. The values are also given in Table S2,
+and they confirm the trends obtained for 280 nm excitation.
+
+
+References and Notes
+
+ 1. I. Cervenka, L. Z. Agudelo, J. L. Ruas, Science 357, eaaf9794 (2017).
+
+ 2. S. Schenkl, F. van Mourik, G. van der Zwan, S. Haacke, M. Chergui, Science 309, 917
+
+
+                                               19
+    (2005).
+
+ 3. J. Leonard, et al., Proceedings of the National Academy of Sciences 106, 7718 (2009).
+
+ 4. J. R. Tusell, P. R. Callis, Journal of Physical Chemistry B 116, 2586 (2012).
+
+ 5. X. Li, et al., Nature Communications 11, 4316 (2020).
+
+ 6. X. Li, et al., Nature Communications 13, 93 (2022).
+
+ 7. P. R. Callis, T. Liu, Journal of Physical Chemistry B 108, 4248 (2004).
+
+ 8. C. Consani, G. Auböck, F. v. Mourik, M. Chergui, Science 339, 1586 (2013).
+
+ 9. W. Lu, J. Kim, W. Qiu, D. Zhong, Chemical Physics Letters 388, 120 (2004).
+
+10. J. Xu, et al., Journal of Physical Chemistry B 119, 4230 (2015).
+
+11. J. T. Vivian, P. R. Callis, Biophysical Journal 80, 2093 (2001).
+
+12. C.-P. Pan, P. L. Muiño, M. D. Barkley, P. R. Callis, Journal of Physical Chemistry B 115,
+    3245 (2011).
+
+13. K. K. Khan, et al., European Journal of Biochemistry 244, 361 (1997).
+
+14. C. Lin, D. Top, C. C. Manahan, M. W. Young, B. R. Crane, Proceedings of the National
+    Academy of Sciences 115, 3822 (2018).
+
+15. G. Lee, et al., Science Advances 7, eabe4334 (2021).
+
+16. T. G. Zaremba, T. R. LeBon, D. B. Millar, R. M. Smejkal, R. J. Hawley, Biochemistry 23,
+
+    1073 (1984).
+
+
+
+
+                                              20
+17. Y. A. Krasylenko, A. I. Yemets, Y. B. Blume, Plant Signaling and Behavior 8, e24031
+    (2013).
+
+18. G. Albrecht-Buehler, Cell 12, 333 (1977).
+
+19. G. Albrecht-Buehler, Proceedings of the National Academy of Sciences 89, 8288 (1992).
+
+20. G. Albrecht-Buehler, Cell Motility and the Cytoskeleton 27, 262 (1994).
+
+21. G. Albrecht-Buehler, Experimental Cell Research 236, 43 (1997).
+
+22. R. J. Usselman, et al., Scientific Reports 6, 38543 (2016).
+
+23. M. Cifra, P. Pospı́šil, Journal of Photochemistry and Photobiology B: Biology 139, 2
+
+    (2014).
+
+24. F. Zapata, et al., Journal of Photochemistry and Photobiology B: Biology 216, 112141
+    (2021).
+
+25. T. I. Quickenden, R. N. Tilbury, Journal of Photochemistry and Photobiology B: Biology
+    8, 169 (1991).
+
+26. R. N. Tilbury, T. I. Quickenden, Luminescence 7, 245 (1992).
+
+27. P. Kurian, T. Obisesan, T. J. Craddock, Journal of Photochemistry and Photobiology B:
+    Biology 175, 109 (2017).
+
+28. F. C. Spano, S. Mukamel, Journal of Chemical Physics 91, 683 (1989).
+
+29. F. C. Spano, J. R. Kuklinski, S. Mukamel, Journal of Chemical Physics 94, 7534 (1991).
+
+30. J. R. Lakowicz, Principles of Fluorescence Spectroscopy (Springer, 2006).
+
+31. R. F. Chen, Analytical Letters 1, 35 (1967).
+
+                                               21
+32. G. Celardo, M. Angeli, T. Craddock, P. Kurian, New Journal of Physics 21, 023005 (2019).
+
+33. F. C. Spano, S. Mukamel, Journal of Chemical Physics 91, 683 (1989).
+
+34. G. L. Celardo, G. G. Giusteri, F. Borgonovi, Physical Review B 90, 075113 (2014).
+
+35. G. L. Celardo, P. Poli, L. Lussardi, F. Borgonovi, Physical Review B 90, 085142 (2014).
+
+36. N. C. Chávez, F. Mattiotti, J. Méndez-Bermúdez, F. Borgonovi, G. L. Celardo, European
+
+    Physical Journal B 92, 1 (2019).
+
+37. E. Faraji, et al., hal.archives-ouvertes.fr/hal-03679348 (2022).
+
+38. I. Nardecchia, et al., Physical Review X 8, 031061 (2018).
+
+39. Z. Zhang, G. S. Agarwal, M. O. Scully, Physical Review Letters 122, 158101 (2019).
+
+40. K. Azizi, M. Gori, U. Morzan, A. Hassanali, P. Kurian, arXiv:2210.14912 (2022).
+
+41. P. Solano, P. Barberis-Blostein, F. K. Fatemi, L. A. Orozco, S. L. Rolston, Nature Commu-
+
+    nications 8, 1 (2017).
+
+42. J.-H. Kim, S. Aghaeimeibodi, C. J. Richardson, R. P. Leavitt, E. Waks, Nano Letters 18,
+    4734 (2018).
+
+43. P. Solano, et al., Advances In Atomic, Molecular, and Optical Physics (Elsevier, 2017),
+    vol. 66, pp. 439–505.
+
+44. D. Wu, et al., Nature 484, 214 (2012).
+
+45. A. P. Kalra, et al., arXiv:2208.10628 (2022).
+
+46. A. Ilina, et al., Proceedings of the National Academy of Sciences 119, e2212343119 (2022).
+    Publisher: Proceedings of the National Academy of Sciences.
+
+                                              22
+47. M. Chergui, Proceedings of the National Academy of Sciences 119, e2216527119 (2022).
+
+48. M. Á. Oliva, et al., International Journal of Molecular Sciences 23, 3448 (2022).
+
+49. J. Chen, Y. Kanai, N. Cowan, N. Hirokawa, Nature 360, 674 (1992).
+
+50. C. N. Pace, F. Vajdos, L. Fee, G. Grimsley, T. Gray, Protein Science 4, 2411 (1995).
+
+51. A. M. Brouwer, Pure and Applied Chemistry 83, 2213 (2011).
+
+52. N. Moiseyev, Non-Hermitian Quantum Mechanics (Cambridge University Press, 2011).
+
+53. R. H. Dicke, Physical Review 93, 99 (1954).
+
+54. S. De Boer, D. A. Wiersma, Chemical Physics Letters 165, 45 (1990).
+
+55. H. Fidder, J. Knoester, D. A. Wiersma, Chemical Physics Letters 171, 529 (1990).
+
+56. M. O. Araújo, I. Krešić, R. Kaiser, W. Guerin, Physical Review Letters 117, 073002 (2016).
+
+57. C. Bradac, et al., Nature Communications 8, 1 (2017).
+
+58. T. Brandes, Physics Reports 408, 315 (2005).
+
+59. M. Scheibner, et al., Nature Physics 3, 106 (2007).
+
+60. G. Rainò, et al., Nature 563, 671 (2018).
+
+61. J. P. Philbin, et al., arXiv:2104.06452 (2021).
+
+62. I. Cherniukh, et al., Nature 593, 535 (2021).
+
+63. G. Findik, et al., Nature Photonics 15, 676 (2021).
+
+64. M. O. Scully, A. A. Svidzinsky, Science 325, 1510 (2009).
+
+                                                 23
+65. M. Gullı̀, et al., New Journal of Physics 21, 013019 (2019).
+
+66. E. Akkermans, A. Gero, R. Kaiser, Physical Review Letters 101, 103602 (2008).
+
+67. J. Grad, G. Hernandez, S. Mukamel, Physical Review A 37, 3835 (1988).
+
+68. L. H. Fornander, B. Feng, T. Beke-Somfai, B. Nordén, Journal of Physical Chemistry B
+    118, 9247 (2014).
+
+69. B. Valeur, G. Weber, Photochemistry and Photobiology 25, 441 (1977).
+
+70. P. R. Callis, Methods in Enzymology 278, 113 (1997).
+
+71. J. R. Lombardi, Journal of Physical Chemistry A 103, 6335 (1999).
+
+72. T. Renger, R. A. Marcus, Journal of Chemical Physics 116, 9997 (2002).
+
+73. T. Ishikawa, Cold Spring Harbor Perspectives in Biology 9, a028076 (2017).
+
+74. J. Löwe, H. Li, K. Downing, E. Nogales, Journal of Molecular Biology 313, 1045 (2001).
+
+75. M. Ma, et al., Cell 179, 909 (2019).
+
+76. E. A. Nigg, T. Stearns, Nature Cell Biology 13, 1154 (2011).
+
+77. M. Winey, E. O’Toole, Philosophical Transactions of the Royal Society B: Biological Sci-
+    ences 369, 20130457 (2014).
+
+78. P. W. Baas, A. N. Rao, A. J. Matamoros, L. Leo, Cytoskeleton 73, 442 (2016).
+
+79. A. Prokop, Journal of Cell Biology 219 (2020).
+
+
+80. The project was supported by The Guy Foundation Family Trust. This research used re-
+   sources of the Argonne Leadership Computing Facility, which is a DOE Office of Science
+
+                                              24
+User Facility supported under Contract DE-AC02-06CH11357. This research used molec-
+ular graphics and analyses performed with UCSF Chimera, developed by the Resource for
+
+Biocomputing, Visualization, and Informatics at the University of California, San Francisco,
+with support from NIH P41-GM103311. We would also like to acknowledge insightful dis-
+cussions with Patrik Callis.
+
+
+
+
+                                           25
+Supplementary Material
+S1        Non-Hermitian Open Quantum Systems
+
+                           Table S1: Evolution of Hermitian vs non-Hermitian systems
+ Hermitian case                                                    non-Hermitian case
+
+ • Schrödinger equation
+                                                                                                  †
+ i dtd |ψ(t)i = Ĥ|ψ(t)i    (Ĥ † = Ĥ)                            i dtd |ψ(t)i = Ĥeff |ψ(t)i (Ĥeff 6= Ĥeff )
+                                                                                    i         †
+                                                                   Ĥeff = Ĥ0 − 2 Γ̂ (Ĥ0 = Ĥ0 and Γ̂ is a real and symmetric matrix)
+ • Evolution operator
+ |ψ(t)i = Û (t)|ψ(0)i                                           |ψ(t)i = Û(t)|ψ(0)i
+ with the unitary Û (t) = exp(−iĤt) i.e. Û Û † = Û † Û = 1 with the non-unitary Û(t) = exp(−iĤeff t) i.e. Û Û † = Û † Û = 1e−Γt
+
+ • Inner product
+ hψ(t)|ψ(t)i = 1                                                   hψ(t)|ψ(t)i =
+                                                                                     P       R L −Γm t
+                                                                                        m Cm Cm e
+
+
+ hψ(t)| = hψ(0)|Û † = hψ(0)|eiĤt                                 hψ(t)| = hψ(0)|Û † (t)
+
+                                                                         R = hψ(0)|E R i and C L = hE L |ψ(0)i
+                                                                   with Cm          m         m      m
+
+
+ • Evolution of an ensemble %̂
+ %̂(t) = Û (t)%̂(0)Û † (t)                                       %̂(t) = Û(t)%̂(0)Û † (t)
+ with %̂(0) = α wα |ψ(0)ihψ(0)| and α wα = 1                       with %̂(0) = α wα |ψ(0)ihψ(0)| and α wα = 1
+                P                           P                                    P                             P
+                                          †
+ properties: ∀ t , (i) tr(%̂) = 1, (ii) %̂ = %̂ and (iii) %̂ > 0   properties: for t 6= 0, (i) tr(%̂) 6= 1, (ii) %̂† = %̂ and (iii) %̂ > 0
+
+ • Liouville equation
+ d                                                                 d
+ dt
+    %̂(t) = −i[Ĥ, %̂]                                             dt
+                                                                      %̂(t) = −i[Ĥ0 , %̂] − 2i (Γ̂%̂ + %̂Γ̂)
+
+
+
+
+    The dynamics of the chromophore network are governed by the time-dependent Schrödinger
+equation
+                                                    d|ψ(t)i     i
+                                                            = − Ĥeff |ψ(t)i ,                                                               (4)
+                                                      dt       h̄
+which results in a non-unitary evolution given the non-Hermitian nature of the Hamiltonian
+Ĥeff from Eq. 6 in the SI. If we denote as {|EjR i} the right eigenvectors of Ĥeff , Ĥeff |EjR i =
+
+Ej |EjR i with the complex eigenvalue Ej = Ej − iΓj /2. As the set of right eigenvectors form an
+orthonormal basis for the Hilbert space, then the state of the system for t > 0 can be written
+as a linear combination of those states: |ψ(t)i =
+                                                                          P        L e−iEj t/h̄ |E R i, where C L = hE L |ψ(0)i,
+                                                                              j Cj                     j                  j           j
+
+
+                                                                     26
+Figure S1: Absorption and fluorescence spectra for tryptophan (Trp), tubulin dimers
+(TuD), and microtubules (MT) in aqueous solution. Comparison between experimental data
+(purple dots) and numerical estimates (solid curves). Two line shapes, Lorentzian (blue) and
+Gaussian (yellow), are considered for the numerical estimates. The homogeneous broadening
+is introduced by the parameter σ.
+
+|ψ(0)i is the initial state, and hEjL | is the left eigenvector corresponding to |EjR i. Since the
+Hamiltonian is symmetric, the left eigenvectors hEjL | are defined as the transpose of the right
+eigenvectors |EjR i.
+
+   Since the standard inner product used in Hermitian systems, where hψ(t)| is precisely de-
+fined as the conjugate transpose of the respective |ψ(t)i, is not applicable here, it is neces-
+sary to introduce an alternative definition, commonly known as the Euclidean inner product
+
+(or sometimes the “c-product” (52)). The time evolution of the initial hψ0 | is then given by
+hψ(t)| =          L    R eiEj∗ t , with C R = hψ |E R i such that hψ(t)|ψ(t)i = P C R C L e−Γj t . This
+               j hEj |Cj
+           P
+                                      j       0   j                              j   j   j
+
+definition allow us to calculate the time average of any observable we wish to study. In Table S1
+
+of the SI we list some of the main differences between Hermitian and non-Hermitian systems.
+
+
+
+
+                                                      27
+       sample         abs       fluo      FWHM fluo      FWHM fluo      QY-Trp        QY-Trp
+                      max       max       @ 280 nm       @ 295 nm       @ 280 nm      @ 295 nm
+                      (nm)      (nm)      (×103 cm−1 )   (×103 cm−1 )   (%)           (%)
+  microtubules (MT) 277±0.5     327±0.5   5.5 ± 0.1      5.4 ± 0.1      17.6∗ ± 2.1   14.7∗ ± 1.6
+ tubulin dimers (TuD) 277±0.5   328±0.5   5.6 ± 0.1      5.6 ± 0.1      10.6 ± 0.6    10.9 ± 1.3
+   tryptophan (Trp)   278±0.5   355±0.5   4.9 ± 0.1      5.0 ± 0.1      12.4 ± 1.1    11.4 ± 1.1
+
+Table S2: Steady-state spectroscopy data from tryptophan networks in protein architec-
+tures. Summary of experimental measurements obtained from steady-state spectroscopy of
+tryptophan, tubulin dimers, and microtubules in BRB80 aqueous buffer solution (see Fig. S1
+for complete spectra). Abbreviations: Absorption maximum (abs max), fluorescence maximum
+(fluo max), fluorescence quantum yield for Trp contributions at 280 nm (QY-Trp @ 280 nm),
+fluorescence quantum yield at 295 nm (QY-Trp @ 295 nm), and fluorescence bandwidths at full-
+width half-maximum for excitation at 280 nm (FWHM fluo @ 280 nm) and 295 nm (FWHM
+fluo @ 295 nm), respectively. Fluorescence QY is determined from excitation either at 280
+nm, where contributions from other amino acids have been subtracted, or at 295 nm, where
+only tryptophan absorbs and the contributions from other residues can be neglected. Note the
+statistically significant increases in the QY from tubulin to microtubules, in qualitative agree-
+ment with Fig. 2a and consistent with what one would expect in the presence of superradiance.
+The ∗ indicates an average of upper and lower limit values for microtubules, which have been
+corrected for the scattering background.
+
+
+
+
+                                                28
+S2     Superradiance phenomena and model of tryptophan quan-
+       tum optical networks
+
+It is well known in quantum optics that organized networks of quantum two-level systems
+can exhibit a phenomenon called superradiance, also known as superfluorescence. In 1954,
+Dicke (53) predicted this behavior, which involves a collection of identical light emitters spon-
+
+taneously emitting intense coherent radiation. Since then, superradiance has been observed
+in various physical systems such as molecular aggregates (54, 55), cold atoms (56), diamond
+nanocrystals (57), semiconductor quantum dot ensembles (58, 59), and more recently in both
+
+nanocrystal superlattices (60–62) and hybrid perovskite thin films (63).
+   Typically, the probability density that a single excited chromophore emits a photon is expo-
+nentially distributed and is characterized by a decay rate γ. If there are N emitters, all in the
+
+excited state, superradiance theory predicts cooperative emission with ∼ N 2 times higher peak
+intensity than that of a single emitter. If the incident radiation is so weak that only one excita-
+tion is present, single-excitation superradiance (64) can result. The hallmark of this cooperative
+
+quantum effect, where a single excitation is coherently shared by N emitters, is a decay rate
+that scales proportionally with N γ.
+   The analysis of the coupling of the tryptophan network with the electromagnetic field in
+
+the single-excitation limit can be effectively made with a radiative Hamiltonian widely used in
+quantum optics, which allows treatment of systems whose size is much larger than the absorbed
+wavelength (64). Superradiant states can assist photon absorption at specific frequencies and
+
+enhance excitation transfer to or along other aggregates due to supertransfer processes (32, 65).
+Moreover, the presence of superradiant (short-lived, bright) states always comes together with
+the presence of subradiant (long-lived, dark) states, which can be used to store the absorbed
+
+excitation energy.
+
+
+
+                                                29
+    The tryptophan (Trp) networks we consider are modeled as an ensemble of N two-level
+systems, each characterized by a transition dipole (~µn ). The interaction of a network of two-
+
+level systems with the electromagnetic field is described by the effective Hamiltonian (28,29,66)
+
+                                                                      i
+                                              Ĥeff = Ĥ0 + ˆ
+                                                            ∆−          Γ̂ ,                          (5)
+                                                                      2
+
+where Ĥ0 represents the sum of the excitation energies of each Trp chromophore, and ˆ
+                                                                                     ∆ and
+−i Γ̂/2 represent the coupling matrices between chromophores induced by interaction with the
+electromagnetic field. The non-Hermiticity in the term i Γ̂/2 arises from the fact that the pho-
+
+toexcitation can be lost to the field leading to non-unitary evolution (i.e., spontaneous emission).
+    The effective Hamiltonian in Eq. 5 has been widely used to model light-matter interactions
+in the limit of a single excitation, which is reasonable given the biological milieu of ultraweak
+
+photon emissions. We consider the primary contribution to the spectra due to the collective
+interactions between all pairs of Trp choromophores contained in these aggregates (32), such
+that Ĥeff may be expanded as
+                            N                              N
+                                             γ                             Υmn
+                            X                             X                           
+                  Ĥeff =         h̄ω0 − i     |nihn| +            Ωmn − i     |mihn| ,               (6)
+                            n=1              2         m, n=1;m6=n          2
+where E0 = h̄ω0 is the excitation energy and γ = 4µ2 k03 /3 is the spontaneous emission rate of
+the Trp transition dipole moment µ = |~µ|. The angular wavenumber is k0 = 2π/λ, where λ is
+
+the wavelength of the incident light required to bring the Trp chromophore from the ground state
+to the excited state. Matrix elements Ωmn and Υmn represent the couplings between the N enu-
+merated Trp transition dipoles in the network, induced by interaction with the electromagnetic
+
+field (32, 67):
+
+
+                                      n
+                      Ωm,n = 3γ
+                              4
+                                − [µ̂m · µ̂n − (µ̂m · r̂mn )(µ̂n · r̂mn )] cos(k0 rmn )
+                                                                             k0 rmn
+                                                                                        +
+                                                                  h                              io
+                  [µ̂m · µ̂n      − 3(µ̂m · r̂mn )(µ̂n · r̂mn )] sin(k 0 rmn )
+                                                                  (k0 rmn )2
+                                                                               + cos(k 0 rmn )
+                                                                                  (k0 rmn )3
+                                                                                                      (7)
+
+                                                          30
+                                  n
+                  Υm,n = 3γ
+                          2
+                                      [µ̂m · µ̂n − (µ̂m · r̂mn )(µ̂n · r̂mn )] sin(k 0 rmn )
+                                                                                  k0 rmn
+                                                                                             +
+                                                             h                            io
+               [µ̂m · µ̂n − 3(µ̂m · r̂mn )(µ̂n · r̂mn )] cos(k 0 rmn )
+                                                          (k0 rmn )2
+                                                                       − sin(k 0 rmn )
+                                                                          (k0 rmn )3
+                                                                                               .   (8)
+
+
+Here µ̂m = ~µm /µm is the unit dipole moment of the mth Trp, and r̂mn = (~rn − ~rm )/rmn , where
+rmn = |~rn − ~rm | stands for the distance between the mth and nth Trps.
+   The eigenvalues of the complex symmetric matrix in Eq. 6 can be decomposed into real and
+
+imaginary parts, which respectively designate the excitation energies {Ej } and decay rates {Γj }
+of the fluorescent ensemble the matrix describes. Unlike Hermitian operators used to represent
+systems of bound states, Eq. 6 describes a set of scattering resonances. The values for the
+
+physical parameters considered in our analysis are (32):
+
+    • λ = 280 nm (E0 = 35714 cm−1 ) as the Trp peak excitation wavelength (energy),
+
+    • k0 = 2πE0 = 2.24 × 10−3 Å−1 as the angular wavenumber,
+
+    • µ = 6 Debye as the strength of the transition dipole between the ground state and the first
+                                                 3
+      excited state, with µ2 ≈ 181224 Å cm−1 (for the conversion, see (32) and for further
+      information on transition dipole states, see below), and
+
+    • γ = 4µ2 k03 /3 = 2.73 × 10−3 cm−1 , where γ/h̄ is the radiative decay rate of a single Trp
+
+      molecule, corresponding to the radiative lifetime τ ≈ 1.9 ns (for the conversion, see (32)).
+
+   Microtubule structures are comprised mainly of the tubulin dimer (Fig. 1), which gives the
+structures their characteristic spiral-cylindrical shape. Formed from a pair of subunits denoted
+α and β, tubulin proteins house a diversity of chromophores, such as tryptophan, tyrosine,
+
+and phenylalanine residues. The internal structure of these chromophores, in the form of their
+aromatic moieties, confer upon them quantum optical properties such as their well-characterized
+transition dipole moments. Thus, these chromophores can be considered like small two- or
+
+
+                                                       31
+three-level systems that absorb light of a certain wavelength and emit it, generally at a different
+wavelength.
+
+   When ordered networks of these chromophores interact with the electromagnetic field, their
+transition dipoles may synchronize coherently to give rise to superradiance. To characterize this
+behavior in protein systems as large as the functional axonemes (Fig. S4), centrioles (Fig. S5),
+
+and neuronal microtubule bundles (Fig. S6) described in this work, appropriate simplification
+of the quantum degrees of freedom must be performed. First, our model only includes tryp-
+tophan (Trp) chromophores in each protein structure, because its primary electronic transition
+
+dipole moment is considerably larger than that of all other amino acids. Second, assuming
+that the intensity of the incident light is sufficiently weak, we only consider the limit of the
+single-excitation manifold. Third, we do not consider any higher electronic transition dipole
+
+moments nor the vibronic transitions (0-1, 0-2, etc.) of Trp, for reasons described in the next
+section. This allows us to describe the interaction between the chromophore network and the
+electromagnetic field by means of the non-Hermitian effective Hamiltonian in Eq. 6, similar
+
+to the tight-binding Hamiltonians typically used in solid-state physics and for photosynthetic
+light-harvesting complexes (65).
+
+
+S3     Clarification between the 1La and 1Lb transition dipoles
+
+The 1La and 1Lb transition dipoles of cyclic aromatics take their nomenclature from the geo-
+metric orientation of the dipole moments with respect to the aromatic plane, where the dipole
+
+vectors representing the transitions are centered in the plane such that the 1La vector overlaps
+with the atoms, whereas the 1Lb vector overlaps with the bonds (Fig. S2). While this geometric
+definition of 1La and 1Lb is unambiguous in more benzene-like aromatics such as tyrosine (Tyr)
+
+and phenylalanine (Phe), the meaning is obscured in indoles such as tryptophan (Trp) where the
+orthogonal (perpendicular) dipole moments 1La and 1Lb are angled so that neither one clearly
+
+                                                32
+corresponds to a respective “atom” or “bond” axis.
+
+
+
+
+Figure S2: Panel A shows protein backbone and Tyr amino acid residue, alongside panel B
+showing chemical structure formula of Tyr residue with directions of 1La and 1Lb transition
+dipole moments. Reproduced from (68).
+
+    To avoid confusion associated with the aforementioned geometrical ambiguity in Trp, we
+
+consider two orthogonal excited states of tryptophan that consist of a larger transition dipole
+moment that is about twice the strength of the associated smaller one. For the purpose of
+modeling absorption, we concern ourselves with the 0–0 (purely electronic) transitions rather
+
+than the vibronic ones: The 0–0 transition of the larger transition dipole occurs at ∼ 300 nm
+(according to Valeur and Weber (69)), and the 0–0 transition of the smaller one occurs at ∼ 290
+nm. One should take notice from Valeur and Weber (69) in their Figure 6 that the size of the
+1
+Lb peak is about half that of the 1La value at that wavelength (∼ 290 nm), suggesting that the
+1
+Lb transition dipole strength is about half that of 1La (70, 71).
+    Use of the terms 1La and 1Lb to describe these transitions in Trp persists in the literature,
+
+despite the ambiguity of the subscripts in Trp. To clarify this, we may generally consider the
+1
+La electronic transition to be more broadened than the 1Lb transition in polar solvents be-
+cause of the larger 1La transition dipole moment that induces a lowering of the 1La energy (71).
+
+To include vibronic transitions (0–1, 0–2, etc.), the 1La spectrum will have portions that are
+both lower and higher in energy than that of the 1Lb spectrum because of this significant line-
+broadening effect.
+
+                                                33
+   On a related note, it is necessary to distinguish the transition spectra of isolated indole
+from the spectra of the Trp residue itself. For example, Callis [Figure 6 in Ref. (70)] validated
+
+calculations for indole 1La and 1Lb spectra in a polar solvent matrix, by comparing these data
+to results from Valeur and Weber (69)—but only after re-scaling and translating his calculated
+values to account for the spectral differences between Trp and indole proper. Thus, Figures
+
+5 and 6 from Valeur and Weber (69) provide actual representations of tryptophan spectra; in
+particular, the 0–0 transition of 1La (not the peak) is red-shifted with respect to that of 1Lb .
+
+
+S4     Absorption and emission spectra
+
+The absorption spectrum indicates the amount of incident electromagnetic radiation absorbed
+by the chromophores in the network, between a range of energies or frequencies. Following the
+
+work of Renger and Marcus (72), we can define the linear absorption spectrum as the real part of
+a Fourier-Laplace transform of the dipole-dipole correlation function, which can be expressed
+as a function of the energy as
+                                                  X
+                                      A(E) = A         Γj Dj (E)                                     (9)
+                                                   j
+
+where Γj is the decay rate corresponding to the jth eigenstate of the Ĥeff , Dj (E) is known as
+the lineshape function, and A is a normalization factor. Under the assumption of Markovian
+
+behavior, there is insufficient time for the excitation of vibrational quanta, and a Lorentzian
+lineshape function centered at Ej is obtained:
+                                                     σ
+                                   Dj (E) =                     .                                   (10)
+                                               (E − Ej )2 + σ 2
+On the other hand, in the strong coupling regime a Gaussian lineshape is expected:
+
+                                 Dj (E) = exp[−(E − Ej )2 /2σ 2 ].                                  (11)
+
+The parameter σ measured in units of cm−1 is associated with the homogeneous broadening of
+the on-site chromophore energies. These analytical lineshapes are compared with experimental
+
+                                                 34
+Figure S3: Steady-state absorption and fluorescence spectra of whole proteins and recon-
+struction from primary constituents in aqueous solution. a) Normalized fluorescence spectra
+(dash-dotted) of MTs (blue), TuD (green) and Trp (orange). Absorption spectra (solid) are nor-
+malized to the peak absorption maxima. All spectra are corrected by subtracting background
+due to solvent absorption scattering. b) Normalized fluorescence spectra of TuD (solid green)
+and its primary fluorescent constituents Trp (dash-dotted orange) and Tyr (dash-dotted violet).
+c) Reconstruction of the molar absorption coefficient at 280 nm of TuD (solid black) by adding
+different contributions of Trp (8 residues, dash-dotted orange), Tyr (35 residues, dash-dotted
+violet) and Cys (10 residues, dash-dotted brown). The measured absorption spectrum of TuD
+from a) is added for comparison (solid green). d) Fit of the scattering background of the MTs
+solution according to a Rayleigh-like model ∝ λ−4 (green dashed). The MTs mean spectrum
+(blue) was used for determination of the lower limit of the QY, and the background-subtracted
+spectrum MTs-fit (black dashed) was used for the upper limit of the QY. The mean tubulin
+spectrum (red) is plotted for comparison.
+                                               35
+steady-state absorption and fluorescence spectra for Trp, tubulin dimers, and microtubules in
+Fig. S1. Additional details on the experimental steady-state spectra are catalogued in Table S2
+
+and in Fig. S3.
+   Conversely, the fluorescence spectrum indicates the amount of electromagnetic radiation
+emitted by the chromophores in the network. The expression for the fluorescence emission
+
+intensity is obtained by multiplying each lineshape by the corresponding Boltzmann factor
+                                          X e−Ej /kB T
+                              I(E) = A0                  Γj Dj (E),                          (12)
+                                           j     Z
+                                   P                          0
+where the partition function Z =    l exp[−(El )/kB T ], and A is a distinct normalization factor.
+
+Here the temperature T is measured in Kelvin (K), and kB is Boltzmann’s constant.
+
+Table S3: Synopsis of superradiant and subradiant features of tryptophan networks (of size N )
+in biological structures, where τj = (2πc Γj )−1 and MT = microtubule. (Analytical fits for
+superradiance have been used for the first two entries, hence!subradiance data is not available.)
+  Protein Structure,       max(Γj )                       Γj
+    Length in nm                     τsuper (ps) min             τsub (s)
+                             Nγ                           γ
+ 91-MT Axon, 320 (fit)      0.012       0.428          N/A         N/A
+ 61-MT Axon, 320 (fit)      0.016       0.479          N/A         N/A
+                                                             −8
+ Centriole, 400             0.028       0.495      4.6 × 10       0.042
+ 61-MT Axon, 224            0.020       0.547      3.6 × 10−10     5.4
+                                                            −10
+ 37-MT Axon, 320            0.026       0.602      2.3 × 10        8.5
+                                                            −10
+ 91-MT Axon, 152            0.017       0.636      2.6 × 10        7.5
+ Axoneme (1JFF), 320        0.031       0.754      2.8 × 10−10     6.9
+                                                            −10
+ 19-MT Axon, 320            0.032       0.769      9.9 × 10        2.0
+ 7-MT Axon, 640             0.039       0.856      1.4 × 10−10     13.9
+ 7-MT Axon, 320             0.071       0.941      2.8 × 10−9      0.69
+                                                             −8
+ Axoneme (6U42), 320        0.010        2.64      1.0 × 10        0.19
+ 1 Microtubule, 320         0.119        3.93      7.8 × 10−8     0.025
+
+
+
+S5     Simulations of axoneme superradiance
+
+The axoneme is the microtubule-based structural core of the flagellum or cilium of a eukaryotic
+cell (73). It typically contains nine microtubule doublets surrounding a central one (Fig. S4).
+
+                                               36
+For comparison, we solved the spectrum of an axoneme modeled as an idealized array of micro-
+tubule pairs, again generated from the tubulin protein crystal structure (PDB entry 1JFF) (74).
+
+We also considered a more realistic model axoneme based on a ciliary microtubule doublet ob-
+tained by cryo-electron microscopy (PDB entry 6U42) (75). Even though the primary function
+of the axoneme is locomotive and mechanical, both the idealized axoneme and ciliary doublet
+
+simulations predicted significant superradiant enhancements in the values of max(Γj /γ), as
+shown in the left panel of Fig. S4. The right panel of Fig. S4 shows the energy spectrum of the
+1JFF axoneme spread over a range of E0 ± 200 cm−1 around the Trp peak excitation E0 .
+
+
+
+
+Figure S4: Ciliary axoneme structures exhibit superradiance, but less so than centrioles
+and neuronal microtubule bundles of comparable length. Left panel shows superradiance
+data points max(Γ/γ) calculated from numerical diagonalization of the radiative Hamiltonian
+in Eq. 6 for a model axoneme (generated using tubulin dimers modeled from PDB entry 1JFF)
+                                      axo
+in red, approximated by the curve f1JFF    (`) = λn`0D [(nS − 2) tanh(`/2nS `0 ) − 1], where ` is the
+axoneme length along the longitudinal axis (in nm), `0 = 8 nm denotes the longitudinal length
+of a single tubulin spiral, λ = 280 nm is the excitation wavelength, nD = 8 is the number of Trp
+dipoles per tubulin dimer, and nS = 13 is the number of dimers per tubulin spiral. Likewise, the
+max(Γ/γ) data points for a more realistic axoneme (constructed using a ciliary doublet from
+PDB entry 6U42) are shown in violet, fit by the curve f6U42    axo
+                                                                   (`) = λ(n`S0−3) [tanh(3`/2nS `0 −
+2) + 1]. Axoneme cross-sections are shown between the two panels as arrays of point dipoles
+representing the Trp transitions (La ) in the colors red (1JFF) and violet (6U42). The right panel
+shows the spectrum (Γ/γ vs E −E0 , where E0 is the excitation maximum of Trp) of the 320 nm-
+long model 1JFF axoneme containing 83200 Trp dipoles, plotted on linear and semi-log (inset)
+scales.
+
+
+
+
+                                                 37
+S6     Simulations of centriole superradiance
+
+Dynamic organization of the MT network is coordinated in vertebrate cells from the centrosome
+(76), which is comprised of two perpendicular centrioles (77) in most eukaryotes. The centriole
+
+(Fig. 1c) is one of the largest (protein-based) structures of the cell, exhibiting a cartwheel-like
+arrangement of microtubules that can be as large as 250 nm in diameter and up to 500 nm in
+length in vertebrates (77). It is a pinwheel-shaped, barrel-like organelle that coordinates cellular
+
+orientation and division processes.
+   We modeled a prototype centriole of increasing length as an array of nine microtubule
+triplets, where each simulated microtubule was generated from the structure of tubulin PDB
+
+entry 1JFF (74) following past work (32). We numerically solved the spectrum of each centri-
+olar Trp arrangement to predict the enhancement factors max(Γj /γ) shown in the top panel of
+Fig. S5. We found the maximum superradiant enhancement increased with growing length until
+
+saturating at max(Γj /γ) ≈ 4000, in the realistic length scale of vertebrate centrioles. This large
+superradiant enhancement is identified with a state in the lowest band of excitonic eigenstates
+of the Hamiltonian of Eq. 5, as displayed in the center panel of Fig. S5 for a 320-nm centriole
+
+Trp architecture, where the variation in the energies spans about E0 ± 100 cm−1 .
+   We developed an analytical approximation for the quantum state with the largest value of
+Γ (i.e., the most superradiant) state of each centriole, modeled as a weighted superposition of
+
+the most superradiant states of a set of 104 nm (13-spiral) microtubule segments, using the
+expression
+                                            N X
+                                              M
+                                  |φcent              cm,n |φseg
+                                            X
+                                    0 i ∝                    m,n i ,                           (13)
+                                             n   m
+
+where |φcent
+        0 i is the bi-orthogonally normalized (52) estimate of the most superradiant centriole
+
+state, M = 27 is the number of microtubules comprising a centriole, and N is the number
+of 104-nm microtubule segments comprising the length of the centriole (e.g., N = 2 for a
+
+
+                                                 38
+Figure S5: Prediction of superradiant states in the centriole and the robustness of super-
+radiance to on-site disorder in centriolar tryptophan architectures. Top panel shows red
+superradiance data points max(Γj /γ) calculated from numerical diagonalization of the radia-
+tive Hamiltonian in Eq. 6 for a model centriole Trp architecture, approximated by the curve
+  cent
+f1JFF  (`) = λn`0D [2nD tanh(`/2nS `0 ) − 1], where ` denotes the centriole length along its lon-
+gitudinal axis (in nm), `0 = 8 nm denotes the longitudinal length of a single tubulin spiral,
+λ = 280 nm is the excitation wavelength, nD = 8 is the number of Trp transition dipoles (1La )
+per tubulin dimer, and nS = 13 is the number of dimers per tubulin spiral. Blue stars represent
+the approximate predicted values for the brightest state given by Eq. 13. The top panel inset
+shows the centriole cross-section as point dipoles representing the Trp transition states. Center
+panel shows the spectrum of a 320 nm-long centriole containing 112320 Trp dipoles, plotted
+on linear and semi-log (inset) scales. Bottom panel shows superradiance data points with static
+disorder for model centrioles of lengths {`}. The bottom panel inset shows the spectrum for
+a 256 nm-long centriole containing 89856 Trp dipoles at W = 200 cm−1 (i.e., commensurate
+with kB T at a temperature T ≈ 288 K).          39
+208 nm-long centriole). The indices m, n thus designate the locations of each segment state
+|φseg
+  m,n i, in effect defining the 27N microtubule segments making up the centriole. The real-
+
+valued coefficients are defined as
+                                                                    !
+                                       πn               2 π dm/3e
+                                               
+                           cm,n = sin               sin                 ,                     (14)
+                                      N +1                   9
+
+where dxe denotes the ceiling function (i.e., the nearest integer larger than x). Although inexact,
+this approach allowed us to validate our fit with an estimate of the complex expectation value of
+the approximate superradiant state at a computational cost of O(n2 ) numerical operations rather
+
+than the usual O(n3 ) required to perform the full matrix diagonalization of the Hamiltonian in
+Eq. 6.
+   To account for the influence of structural disorder, we carried out additional centriole sim-
+
+ulations, introducing variability into the values of Trp peak excitation energies to test the en-
+semble’s robustness to static disorder (Fig. S5, right panel). We considered disorder in the
+on-site energy of each Trp transition dipole using a random uniform distribution of energies
+
+within the range given by E0 ± W/2 for each emitter, introducing W as the disorder parame-
+ter. The right panel of Fig. S5 shows the scaling of the normalized superradiant enhancement
+max[Γ(W )]/ max[Γ(0)] for Γ(W ) = {Γj (W )} as a function of on-site disorder W . The nor-
+
+malization factor 1/ max[Γ(0)] is introduced to allow the direct comparison of enhancements
+of centrioles of varying length `. As one can see from the bottom panel of Fig. S5, as the
+centriole length increases, a larger value of disorder strength is required to degrade the super-
+
+radiant enhancement by the same amount. This demonstrates that the Trp network can exhibit
+cooperative robustness to disorder with increasing network size. The disorder parameter used
+to obtain the inset in the right panel of Fig. S5 was W = 200 cm−1 , which corresponds to the
+
+Boltzmann energy kB T at approximately 288 K, revealing that order-of-magnitude max(Γj /γ)
+enhancements are plausible at physiological temperatures.
+
+
+                                                40
+a)                                 b)                                   c)
+
+
+
+
+d)                                 e)                                   f)
+
+
+
+
+Figure S6: Neuronal microtubule bundles are predicted to exhibit exceptionally bright
+states that saturate in superradiant scaling as they approach micron lengths. Pan-
+els a)-e) show linear-linear scale plots of superradiance data max(Γ/γ) for model ax-
+ons (MT bundles in hexagonal honeycomb arrangement) of increasing length compris-
+ing NMT ∈ {7,19,37,61,91} MTs, in that order. In each panel a)-e), the main figure
+                                                                                  axon
+shows the exact max(Γj /γ) in colored points, approximated by the curve f1JFF          (`, NMT ) =
+               1/d
+nD (NMT /N0 ) [(λnD /`0 ) tanh(`/2nS `0 ) − nS ], where ` is the axon length (in nm) and NMT
+gives the number of MTs it contains. N0 = 7 is the number of MTs in the smallest hexagonal
+bundle, `0 = 8 nm is the length along the longitudinal axis of a single MT spiral, λ = 280 nm is
+the excitation wavelength, nD = 8 is the number of Trp 1La transition dipoles per tubulin dimer
+shown in Fig. 1a, nS = 13 is the number of tubulin dimers per MT spiral shown in Fig. 1b, and
+d = 3 is the spatial dimension. The axon cross-section is shown inset in the upper left of each
+panel a)-e), and the complex spectrum (Γ/γ vs. E − E0 ) for the longest exactly-solved axon
+Trp architecture in the lower right of each panel. Panel f) summarizes plots of the superradiance
+data max(Γj /γ) and extrapolates to larger length scales using the analytical function above.
+The legend of panel f) reflects the color scheme exhibited across panels a)-e). Red, orange,
+yellow, green, and blue solid curves reflect fits for NMT = 7, 19, 37, 61, and 91, respectively,
+whereas violet, grey, and black curves predict data for axonal MT bundles with NMT = 127,
+169, and 217, respectively.
+
+
+
+
+                                               41
+S7     Simulations of microtubule bundles in neuronal axons
+
+Axons in neurons can extend vast distances limited only by the scale of the organism (78), rang-
+ing from millimeters to meters or longer in mammals, and varying from hundreds of nanometers
+
+to microns in diameter (79). Inside an axon, wall-to-wall MT spacings most frequently range
+from 20 nm to 30 nm (49). We simulated Trp networks in hexagonal bundles of MTs, spaced
+50 nm center-to-center (corresponding to a wall-to-wall MT spacing of ∼ 25 nm), with bun-
+
+dle diameters ranging from ∼ 100 nm to ∼ 0.5 µm and containing 7, 19, 37, 61, or 91 MTs
+(Fig. S6). The resulting superradiance data max(Γj /γ) data were well-approximated by a set
+of curves as a function of merely two variables NMT and `, where NMT is the number of bun-
+
+dled MTs and ` is the bundle length, with no free parameters. This allowed us to extrapolate
+our predictions of max(Γj /γ) to larger and longer MT bundles (panel S6f), with projected en-
+hancements approaching ∼ 7000. Like that of the centriole, the spectra of these bundles span
+
+a range of about E0 ± 100 cm−1 , with similar energy band structure in the absence of disor-
+der. For numerical simulations, the Hilbert space dimensions were limited in each case by the
+available computational resources, which is why the maximum axon lengths diminish as one
+
+proceeds from panel S6a to panel S6e. Overall, the results we have obtained from simula-
+tions of various hierarchical Trp architectures present the prospect of collective and cooperative
+UV excitonic states in biological media with different characteristic superradiant maxima and
+
+subradiant minima (Table S3).
+
+
+S8     Robustness of quantum yield to disorder
+
+In this section we analyze the robustness to static disorder of the quantum yield (QY) enhance-
+ments presented in the main text. Here we consider how time-independent fluctuations of the
+
+Trp excitation energies, which are commonly attributed to interaction with distinct local envi-
+
+
+                                               42
+ronments, can affect the QY dependence on the Trp network size. To account for the influence
+of structural disorder, we considered time-independent fluctuations in the on-site energies of
+
+each Trp transition dipole using a random uniform distribution of energies within the range
+given by E0 ± W/2 for each emitter, introducing W as the disorder strength parameter. The
+QY was computed for each realization of disorder and then averaged over ten realizations for
+
+each Trp network. Alternatively, one can average over multiple realizations of disorder W the
+thermally averaged radiative decay rate hΓith and then use Eq. 2 in the Materials and Methods
+section of the main text to compute the QY in the presence of structural disorder. We checked
+
+that both methods give very similar results.
+   In Fig. S7 we show the cases of a single microtubule (top panel) and of a centriole (bottom
+panel). As one can see, the QY enhancement is extremely robust to static disorder. Indeed, even
+
+for a static disorder strength of the same magnitude as room-temperature energy (200 cm−1 ),
+the QY dependence on the microtubule and centriole lengths is basically unaffected.
+   The robustness of the QY to structural disorder is remarkable given that such disorder
+
+strongly suppresses the superradiant enhancement factor. For instance, in the case of a cen-
+triole, the superradiant enhancement goes from ∼ 3600 in the absence of disorder to ∼ 20
+for W = 200 cm−1 (see Fig. S5). Nevertheless the values of the QY for W = 0 cm−1 and
+
+W = 200 cm−1 are very close to each other. The origin of this robustness can be explained
+as follows: In the presence of static disorder, the superradiant dipole strength gets distributed
+among other excitonic states, but states close to the superradiant state in energy will still exhibit
+
+most of the dipole strength, if the disorder is not overwhelming. If in the absence of disorder
+the superradiant state is close to the lowest excitonic state and in the presence of disorder its
+dipole strength gets distributed within kB T from it, then the QY is not affected drastically. This
+
+means that the QY is a very robust figure of merit for cooperativity. These results strengthen
+our prediction that an enhancement of the QY will persist even under ambient conditions in
+
+
+                                                 43
+Figure S7: Quantum yield robustness to static disorder. The average of the quantum yield
+as a function of microtubule (top panel) and centriole (bottom panel) length, expressed as the
+number of tryptophans in each architecture, for ten realizations of each static disorder strength
+W (see legend) is shown. In the top (bottom) panel a single microtuble (centriole) is considered
+with a maximum length of ∼ 800 (∼ 192) nm.
+
+biological systems.
+
+
+S9     Hamiltonian matrix structure for microtubules
+
+We have plotted the real and imaginary parts of the inter-chromophore tryptophan couplings
+
+from the matrix elements Hij of Eq. 6, taking the on-site energies <(Hjj ) as zero. Thus, Fig. S8
+shows <(Hij ) and =(Hij ) of Ĥ for a 1-, 10-, and 100-spiral microtubule, respectively.
+
+
+
+
+                                               44
+a)                                                     b)
+
+
+
+
+c)                                                     d)
+
+
+
+
+e)                                                     f)
+
+
+
+
+Figure S8: Panels show real and imaginary matrix elements of Hamiltonians for microtubule
+(MT) tryptophan networks of varying length: a) <(Hij ) for a 1-spiral MT, b) =(Hij ) for a 1-
+spiral MT, c) <(Hij ) for a 10-spiral MT, d) =(Hij ) for a 10-spiral MT, e) <(Hij ) for a 100-spiral
+MT, and f) =(Hij ) for a 100-spiral MT.
+
+
+                                                45
+

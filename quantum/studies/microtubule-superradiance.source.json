@@ -1,0 +1,26 @@
+{
+  "title": "Ultraviolet Superradiance from Mega-Networks of Tryptophan in Biological Architectures",
+  "authors": [
+    "N. S. Babcock",
+    "G. Montes-Cabrera",
+    "K. E. Oberhofer",
+    "M. Chergui",
+    "G. L. Celardo",
+    "P. Kurian"
+  ],
+  "year": 2024,
+  "doi": "10.1021/acs.jpcb.3c07936",
+  "original_url": "https://arxiv.org/abs/2302.01469",
+  "publication_url": "https://doi.org/10.1021/acs.jpcb.3c07936",
+  "download_url": "https://inspirehep.net/files/6115406523475e8ba11e3d65b3b2121d",
+  "access_status": "open_access_full_text",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "version": "Published version of record, Journal of Physical Chemistry B 128(17), 4035–4046; original preprint posted February 2023.",
+  "local_file": "studies/microtubule-superradiance.pdf",
+  "text_file": "studies/microtubule-superradiance.txt",
+  "downloaded_date": "2026-10-18",
+  "file_size_bytes": 4604505,
+  "sha256": "0b177f011e527bd580d276619e585da7e2b4fdb1373855f4a5a79343945addd6",
+  "verified_pdf_signature": true
+}

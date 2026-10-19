@@ -1,0 +1,373 @@
+{
+  "description": "Local research copies and provenance for the Quantum / Mind article. Original source links remain on the website.",
+  "sources": [
+    {
+      "id": "gran-sasso-collapse",
+      "title": "Underground test of gravity-related wave function collapse",
+      "authors": [
+        "Sandro Donadi",
+        "Kristian Piscicchia",
+        "Catalina Curceanu",
+        "Lajos Diósi",
+        "Matthias Laubenstein",
+        "Angelo Bassi"
+      ],
+      "year": 2021,
+      "journal": "Nature Physics 17, 74–78 (2021)",
+      "doi": "10.1038/s41567-020-1008-4",
+      "original_url": "https://arxiv.org/abs/2111.13490",
+      "publisher_url": "https://doi.org/10.1038/s41567-020-1008-4",
+      "download_url": "https://arxiv.org/pdf/2111.13490v1",
+      "local_file": "studies/gran-sasso-collapse.pdf",
+      "text_file": "studies/gran-sasso-collapse.txt",
+      "access_status": "Full text downloaded from the authors’ public arXiv deposit, including Methods and Supplementary Information.",
+      "version": "arXiv:2111.13490v1, submitted 26 November 2021; journal article published in 2020 online / 2021 volume.",
+      "license": "arXiv non-exclusive license to distribute",
+      "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html",
+      "license_note": "The arXiv license grants distribution rights to arXiv; it is not a blanket Creative Commons reuse license.",
+      "pages": 66,
+      "source_kind": "Peer-reviewed experimental paper, author-deposited full text",
+      "bytes": 1235457,
+      "sha256": "f4a89602fb9ec29f2bec7d4d416d1d654c3491a4d42ba70ddab9a3275c5e79a7",
+      "retrieved_date": "2026-10-18"
+    },
+    {
+      "slug": "hameroff-penrose-2014",
+      "title": "Consciousness in the universe: A review of the ‘Orch OR’ theory",
+      "authors": [
+        "Stuart Hameroff",
+        "Roger Penrose"
+      ],
+      "year": 2014,
+      "doi": "10.1016/j.plrev.2013.08.002",
+      "original_url": "https://pubmed.ncbi.nlm.nih.gov/24070914/",
+      "publisher_url": "https://doi.org/10.1016/j.plrev.2013.08.002",
+      "download_url": "https://www.openzone.it/assets/consciousness_in_the_universe_hameroff_penrose.pdf",
+      "download_origin": "Public mirror of publisher PDF; publisher and author-host PDF endpoints returned 403. Title, authors, DOI and 40-page count checked against publication record.",
+      "local_file": "studies/hameroff-penrose-2014.pdf",
+      "text_file": "studies/hameroff-penrose-2014.txt",
+      "access_status": "full_text_pdf_downloaded",
+      "license": {
+        "article_license": "CC BY-NC-ND 4.0 reported by ScienceOpen; CC BY-NC-ND reported by OpenAlex.",
+        "license_evidence_urls": [
+          "https://api.openalex.org/works/https://doi.org/10.1016/j.plrev.2013.08.002",
+          "https://www.scienceopen.com/document?id=e1b78c52-4be3-4467-9aa0-30bf71390f8f"
+        ],
+        "pdf_notice": "© 2013 Elsevier B.V. All rights reserved.",
+        "note": "Mirrored 2014 PDF predates current repository license metadata; attribution and noncommercial/no-derivatives conditions apply to reuse under that license."
+      },
+      "publication_type": "peer-reviewed review/theoretical proposal",
+      "pages": 40,
+      "retrieved_date": "2026-10-18",
+      "sha256": "9d3712f19ddca565ca6339e36b3059252604d9563174bebbf09d17dfb4aab2a3",
+      "full_text_reviewed": true,
+      "reviewed_sections": [
+        "Introduction",
+        "5.1 Orchestrated objective reduction",
+        "5.2 Tubulin qubits and Orch OR conscious moments",
+        "5.3 Microtubules and environmental decoherence",
+        "5.6 Orch OR criticisms and responses",
+        "5.7 Testable predictions of Orch OR - current status",
+        "Conclusions"
+      ]
+    },
+    {
+      "title": "Supporting Information for Electronic Energy Migration in Microtubules",
+      "authors": [
+        "Aarat P. Kalra",
+        "Alfy Benny",
+        "Sophie M. Travis",
+        "Eric A. Zizzi",
+        "Austin Morales-Sanchez",
+        "Daniel G. Oblinsky",
+        "Travis J. A. Craddock",
+        "Stuart R. Hameroff",
+        "M. Bruce MacIver",
+        "Jack A. Tuszyński",
+        "Sabine Petry",
+        "Roger Penrose",
+        "Gregory D. Scholes"
+      ],
+      "year": 2023,
+      "doi": "10.1021/acscentsci.2c01114",
+      "original_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10037452/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10037452/supplementaryFiles",
+      "archive_member": "oc2c01114_si_001.pdf",
+      "access_status": "open_access_supporting_information",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "local_file": "studies/microtubule-energy-migration-2023-supplement.pdf",
+      "text_file": "studies/microtubule-energy-migration-2023-supplement.txt",
+      "downloaded_date": "2026-10-18",
+      "file_size_bytes": 5058825,
+      "sha256": "ed038f4887ffef2a0cfa696df3eba057d3609218046808166cd939034dbbdad0",
+      "verified_pdf_signature": true
+    },
+    {
+      "title": "Electronic Energy Migration in Microtubules",
+      "authors": [
+        "Aarat P. Kalra",
+        "Alfy Benny",
+        "Sophie M. Travis",
+        "Eric A. Zizzi",
+        "Austin Morales-Sanchez",
+        "Daniel G. Oblinsky",
+        "Travis J. A. Craddock",
+        "Stuart R. Hameroff",
+        "M. Bruce MacIver",
+        "Jack A. Tuszyński",
+        "Sabine Petry",
+        "Roger Penrose",
+        "Gregory D. Scholes"
+      ],
+      "year": 2023,
+      "doi": "10.1021/acscentsci.2c01114",
+      "original_url": "https://doi.org/10.1021/acscentsci.2c01114",
+      "download_url": "https://iris.polito.it/retrieve/4ffffcdf-553b-4b06-a10b-f578a6249072/acscentsci.2c01114.pdf",
+      "access_status": "open_access_full_text",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "Publisher PDF, advance-online version with provisional page letters A–J; journal citation ACS Central Science 9(3), 352–361.",
+      "verification_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10037452/fullTextXML",
+      "local_file": "studies/microtubule-energy-migration-2023.pdf",
+      "text_file": "studies/microtubule-energy-migration-2023.txt",
+      "downloaded_date": "2026-10-18",
+      "file_size_bytes": 7792067,
+      "sha256": "8f525a7f4820dcd1994f338adf2f803ae7adaef091e093a2229df6ec0f25180b",
+      "verified_pdf_signature": true
+    },
+    {
+      "title": "Ultraviolet superradiance from mega-networks of tryptophan in biological architectures",
+      "authors": [
+        "N. S. Babcock",
+        "G. Montes-Cabrera",
+        "K. E. Oberhofer",
+        "M. Chergui",
+        "G. L. Celardo",
+        "P. Kurian"
+      ],
+      "year": 2023,
+      "doi": "10.48550/arXiv.2302.01469",
+      "original_url": "https://arxiv.org/abs/2302.01469",
+      "download_url": "https://arxiv.org/pdf/2302.01469",
+      "access_status": "public_full_text_preprint",
+      "license": "arXiv non-exclusive distribution license; downloaded for local reference. Use the CC BY 4.0 published version for site downloads.",
+      "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "version": "arXiv v1, 3 February 2023; superseded by 2024 journal publication.",
+      "local_file": "studies/microtubule-superradiance-preprint-2023.pdf",
+      "text_file": "studies/microtubule-superradiance-preprint-2023.txt",
+      "downloaded_date": "2026-10-18",
+      "file_size_bytes": 5941026,
+      "sha256": "5be0952970fb1840d4788fc265c923a0e19465571eabb4d06fdf67248591130a",
+      "verified_pdf_signature": true
+    },
+    {
+      "title": "Supporting Information for Ultraviolet Superradiance from Mega-Networks of Tryptophan in Biological Architectures",
+      "authors": [
+        "N. S. Babcock",
+        "G. Montes-Cabrera",
+        "K. E. Oberhofer",
+        "M. Chergui",
+        "G. L. Celardo",
+        "P. Kurian"
+      ],
+      "year": 2024,
+      "doi": "10.1021/acs.jpcb.3c07936",
+      "original_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11075083/",
+      "download_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11075083/supplementaryFiles",
+      "archive_member": "jp3c07936_si_001.pdf",
+      "access_status": "open_access_supporting_information",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "local_file": "studies/microtubule-superradiance-supplement.pdf",
+      "text_file": "studies/microtubule-superradiance-supplement.txt",
+      "downloaded_date": "2026-10-18",
+      "file_size_bytes": 2330918,
+      "sha256": "aaa166f46c040f2b41f32663b79f0300a9fb7b9c8b7a5ca8c946eeac7abd5dfd",
+      "verified_pdf_signature": true
+    },
+    {
+      "title": "Ultraviolet Superradiance from Mega-Networks of Tryptophan in Biological Architectures",
+      "authors": [
+        "N. S. Babcock",
+        "G. Montes-Cabrera",
+        "K. E. Oberhofer",
+        "M. Chergui",
+        "G. L. Celardo",
+        "P. Kurian"
+      ],
+      "year": 2024,
+      "doi": "10.1021/acs.jpcb.3c07936",
+      "original_url": "https://arxiv.org/abs/2302.01469",
+      "publication_url": "https://doi.org/10.1021/acs.jpcb.3c07936",
+      "download_url": "https://inspirehep.net/files/6115406523475e8ba11e3d65b3b2121d",
+      "access_status": "open_access_full_text",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "version": "Published version of record, Journal of Physical Chemistry B 128(17), 4035–4046; original preprint posted February 2023.",
+      "local_file": "studies/microtubule-superradiance.pdf",
+      "text_file": "studies/microtubule-superradiance.txt",
+      "downloaded_date": "2026-10-18",
+      "file_size_bytes": 4604505,
+      "sha256": "0b177f011e527bd580d276619e585da7e2b4fdb1373855f4a5a79343945addd6",
+      "verified_pdf_signature": true
+    },
+    {
+      "title": "Towards a Brain-Quantum Computer Interface: Identifying Potential Coupling Mechanisms via Anesthetic Isotope Effects",
+      "authors": [
+        "Hartmut Neven"
+      ],
+      "year": 2026,
+      "original_url": "https://tsc2026.org/abstracts_html/hartmut-neven.html",
+      "download_url": "https://tsc2026.org/abstracts_html/hartmut-neven.html",
+      "local_file": "studies/neven-2026-abstract.html",
+      "text_file": "studies/neven-2026-abstract.txt",
+      "access_status": "Complete conference abstract HTML downloaded; this source is not a full experimental paper.",
+      "source_kind": "Conference abstract",
+      "license": "No explicit reuse license on source page.",
+      "sha256": "c0aa1f5c96dd9a37e38bbb9b0d89eb5b6779b62d8ceeafac23f69e02d6d1239a",
+      "bytes": 9036,
+      "retrieved_date": "2026-10-18"
+    },
+    {
+      "title": "Testing the Conjecture That Quantum Processes Create Conscious Experience",
+      "authors": [
+        "Hartmut Neven",
+        "Adam Zalcman",
+        "Peter Read",
+        "Kenneth S. Kosik",
+        "Tjitse van der Molen",
+        "Dirk Bouwmeester",
+        "Eve Bodnia",
+        "Luca Turin",
+        "Christof Koch"
+      ],
+      "year": 2024,
+      "doi": "10.3390/e26060460",
+      "original_url": "https://doi.org/10.3390/e26060460",
+      "download_url": "https://mdpi-res.com/d_attachment/entropy/entropy-26-00460/article_deploy/entropy-26-00460.pdf",
+      "local_file": "studies/neven-conscious-experience-2024.pdf",
+      "text_file": "studies/neven-conscious-experience-2024.txt",
+      "access_status": "Full publisher PDF downloaded.",
+      "source_kind": "Research proposal, supplemental to the seven requested sources",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "sha256": "88e0ca8a546a460b82f4a0ca4d632823686a04a4b27a8171e7024bbe2fcc8291",
+      "bytes": 4285911,
+      "retrieved_date": "2026-10-18"
+    },
+    {
+      "slug": "xenon-isotopes-2018",
+      "title": "Nuclear Spin Attenuates the Anesthetic Potency of Xenon Isotopes in Mice: Implications for the Mechanisms of Anesthesia and Consciousness",
+      "authors": [
+        "Na Li",
+        "Dongshi Lu",
+        "Lei Yang",
+        "Huan Tao",
+        "Younian Xu",
+        "Chenchen Wang",
+        "Lisha Fu",
+        "Hui Liu",
+        "Yatisha Chummum",
+        "Shihai Zhang"
+      ],
+      "year": 2018,
+      "doi": "10.1097/ALN.0000000000002226",
+      "original_url": "https://pubmed.ncbi.nlm.nih.gov/29642079/",
+      "publisher_url": "https://doi.org/10.1097/ALN.0000000000002226",
+      "download_url": "https://www.researchgate.net/profile/Younian-Xu/publication/324457187_Nuclear_Spin_Attenuates_the_Anesthetic_Potency_of_Xenon_Isotopes_in_Mice_Implications_for_the_Mechanisms_of_Anesthesia_and_Consciousness/links/5b7d03b0a6fdcc5f8b5b1378/Nuclear-Spin-Attenuates-the-Anesthetic-Potency-of-Xenon-Isotopes-in-Mice-Implications-for-the-Mechanisms-of-Anesthesia-and-Consciousness.pdf",
+      "download_origin": "Public full-text PDF uploaded by coauthor Younian Xu to ResearchGate on 2018-08-22, read through web index.",
+      "local_file": "studies/xenon-isotopes-2018.txt",
+      "text_file": "studies/xenon-isotopes-2018.txt",
+      "access_status": "full_text_extraction_saved_original_pdf_download_blocked",
+      "pdf_file": null,
+      "access_notes": "All 576 indexed source lines covering seven PDF pages were saved and read. Direct binary download returned HTTP 403; publisher access returned 402/403. Saved text explicitly identifies itself as web extraction. No original PDF binary saved.",
+      "license": {
+        "pdf_notice": "Copyright © 2018, the American Society of Anesthesiologists, Inc. Wolters Kluwer Health, Inc. All Rights Reserved.",
+        "repository_notice": "Content may be subject to copyright.",
+        "reuse": "No open redistribution license found. PDF page 7 states journal articles become freely accessible for personal use six months after cover date."
+      },
+      "publication_type": "peer-reviewed animal experiment",
+      "pages": 7,
+      "version": "Author-uploaded early online publisher PDF with placeholder pagination; final publication Anesthesiology 129(2):271–277",
+      "retrieved_date": "2026-10-18",
+      "sha256": "b7702ae6ffd4d631d2ff6355027c3525c86c3c735d54a66c9f09fe9216149b2d",
+      "abstract_record_file": "studies/xenon-isotopes-2018.abstract.xml",
+      "abstract_record_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:29642079%20AND%20SRC:MED&resultType=core&format=xml",
+      "full_text_reviewed": true,
+      "reviewed_sections": [
+        "Materials and Methods",
+        "Results",
+        "Discussion",
+        "Figures 1–4"
+      ],
+      "observed_combination_results": {
+        "endpoint": "Loss of righting reflex: inability to roll over within 10 seconds",
+        "constant_isoflurane_percent": 0.5,
+        "n_per_isotope": 20,
+        "animals": "7-week-old C57BL/6 male mice",
+        "uncertainty": "standard deviation",
+        "measure": "reported loss of righting reflex ED50; xenon concentration percent",
+        "rows": [
+          {
+            "isotope": "132Xe",
+            "spin": 0,
+            "mean": 15,
+            "sd": 4
+          },
+          {
+            "isotope": "134Xe",
+            "spin": 0,
+            "mean": 16,
+            "sd": 5
+          },
+          {
+            "isotope": "131Xe",
+            "spin": "3/2",
+            "mean": 22,
+            "sd": 5
+          },
+          {
+            "isotope": "129Xe",
+            "spin": "1/2",
+            "mean": 23,
+            "sd": 7
+          }
+        ],
+        "source_pages": [
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "id": "xenon-radical-pairs",
+      "title": "Radical pairs may play a role in xenon-induced general anesthesia",
+      "authors": [
+        "Jordan Smith",
+        "Hadi Zadeh Haghighi",
+        "Dennis Salahub",
+        "Christoph Simon"
+      ],
+      "year": 2021,
+      "journal": "Scientific Reports 11, 6287 (2021)",
+      "doi": "10.1038/s41598-021-85673-w",
+      "original_url": "https://arxiv.org/abs/2009.01661",
+      "publisher_url": "https://www.nature.com/articles/s41598-021-85673-w",
+      "download_url": "https://www.nature.com/articles/s41598-021-85673-w.pdf",
+      "local_file": "studies/xenon-radical-pairs.pdf",
+      "text_file": "studies/xenon-radical-pairs.txt",
+      "access_status": "Full text downloaded from publisher open-access PDF.",
+      "version": "Publisher version of record, published 18 March 2021. Linked arXiv version is v2, revised 18 March 2021.",
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "license_note": "License appears on page 13 of the publisher PDF; original file is unmodified.",
+      "pages": 13,
+      "source_kind": "Peer-reviewed theoretical and computational model",
+      "bytes": 2388958,
+      "sha256": "21851a1309bd4f4886f7d8acb5d9f6d5bc972a568c43236c188f18d14df37278",
+      "retrieved_date": "2026-10-18"
+    }
+  ]
+}

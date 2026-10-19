@@ -1,0 +1,643 @@
+                                          POLITECNICO DI TORINO
+                                          Repository ISTITUZIONALE
+
+
+
+Electronic energy migration in Microtubules
+
+
+
+ Original
+ Electronic energy migration in Microtubules / Kalra, A.P., Benny, A., Travis, S.M., Zizzi, E.A., Morales-Sanchez, A.,
+ Oblinsky, D.G., Craddock, T.J.A., Hameroff, S.R., Bruce MacIver, M., Tuszynski, J.A., Petry, S., Penrose, R., Scholes,
+ G.D.. - In: ACS CENTRAL SCIENCE. - ISSN 2374-7951. - (2023). [10.1021/acscentsci.2c01114]
+
+
+
+ Availability:
+ This version is available at: 11583/2974600 since: 2023-01-13T13:28:00Z
+
+ Publisher:
+ American Chemical Society
+
+ Published
+ DOI:10.1021/acscentsci.2c01114
+
+
+ Terms of use:
+
+ This article is made available under terms and conditions as specified in the corresponding bibliographic description in
+ the repository
+
+
+
+
+ Publisher copyright
+
+
+
+
+                                               (Article begins on next page)
+
+
+
+
+ 19 October 2026
+                                                                                                          http://pubs.acs.org/journal/acscii                                                                                                        Research Article
+
+
+
+                                                                                                          Electronic Energy Migration in Microtubules
+                                                                                                          Aarat P. Kalra, Alfy Benny, Sophie M. Travis, Eric A. Zizzi, Austin Morales-Sanchez, Daniel G. Oblinsky,
+                                                                                                          Travis J. A. Craddock, Stuart R. Hameroff, M. Bruce MacIver, Jack A. Tuszyński, Sabine Petry,
+                                                                                                          Roger Penrose, and Gregory D. Scholes*
+                                                                                                                  Cite This: https://doi.org/10.1021/acscentsci.2c01114                            Read Online
+
+
+                                                                                                          ACCESS                               Metrics & More                           Article Recommendations              * Supporting Information
+                                                                                                                                                                                                                             sı
+
+
+
+
+       Downloaded via POLITECNICO DI TORINO on January 13, 2023 at 09:36:08 (UTC).
+                                                                                                          ABSTRACT: The repeating arrangement of tubulin dimers confers
+                                                                                                          great mechanical strength to microtubules, which are used as
+                                                                                                          scaffolds for intracellular macromolecular transport in cells and
+                                                                                                          exploited in biohybrid devices. The crystalline order in a
+                                                                                                          microtubule, with lattice constants short enough to allow energy
+                                                                                                          transfer between amino acid chromophores, is similar to synthetic
+                                                                                                          structures designed for light harvesting. After photoexcitation, can
+                                                                                                          these amino acid chromophores transfer excitation energy along the
+                                                                                                          microtubule like a natural or artificial light-harvesting system? Here, we use tryptophan autofluorescence lifetimes to probe energy
+                                                                                                          hopping between aromatic residues in tubulin and microtubules. By studying how the quencher concentration alters tryptophan
+                                                                                                          autofluorescence lifetimes, we demonstrate that electronic energy can diffuse over 6.6 nm in microtubules. We discover that while
+                                                                                                          diffusion lengths are influenced by tubulin polymerization state (free tubulin versus tubulin in the microtubule lattice), they are not
+                                                                                                          significantly altered by the average number of protofilaments (13 versus 14). We also demonstrate that the presence of the
+                                                                                                          anesthetics etomidate and isoflurane reduce exciton diffusion. Energy transport as explained by conventional Förster theory
+                                                                                                          (accommodating for interactions between tryptophan and tyrosine residues) does not sufficiently explain our observations. Our
+                                                                                                          studies indicate that microtubules are, unexpectedly, effective light harvesters.
+
+
+
+
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+                                                                                                          ■    INTRODUCTION
+                                                                                                          Microtubules are cylindrical polymers of the protein α,β-
+                                                                                                                                                                                              incorporates periodic arrays of aromatic amino acids, however,
+                                                                                                                                                                                              is qualitatively similar to the structure of molecular
+                                                                                                          tubulin that play a variety of structural roles in the cell.                        aggregates16−19 and light-harvesting complexes like phycobili-
+                                                                                                          Microtubules facilitate chromosome segregation during                               somes,20,21 potentially enabling excitation energy transport
+                                                                                                          mitosis, generate intracellular forces, form a “railroad network”                   over long distances.22 How long are these distances?
+                                                                                                          for macromolecular transport, and provide mechanical support                           Here, we exploit tryptophan autofluorescence to show that
+                                                                                                          for organelle positioning.1,2 Tubulin is packed in an exquisitely                   the 2D photoexcitation diffusion length in microtubules (6.6 ±
+                                                                                                          systematic manner in a microtubule, ordered both vertically in                      0.1 nm) is substantially higher than that predicted by
+                                                                                                          columns called protofilaments and horizontally in helical rings                     conventional Fö rster theory (1.11 nm for intertyrosine
+                                                                                                          (Figure 1A−C3). The emergence of a lattice (which, despite                          interactions and 1.54 nm including tyrosine-tryptophan
+                                                                                                          the nanometer-scale dimensions of constituent tubulin dimers,                       interactions). The diffusion length for electronic energy
+                                                                                                          can stretch unbroken across several hundreds of micrometers4)                       migration in microtubules is thus close to the size of tubulin
+                                                                                                          and the hollow cross section of a microtubule confer structural                     dimer, comparable to that reported in some photosynthetic
+                                                                                                          rigidity, allowing robust execution of a variety of mechanical                      complexes.23−26 Changing the number of protofilaments from
+                                                                                                          tasks.5 Beyond the cell, these properties have allowed the                          13 to 14 has a negligible effect on the 2D photoexcitation
+                                                                                                          widespread use of microtubules scaffolds in transport-based                         diffusion length. While a high background signal made it
+                                                                                                          nanodevices,6−10 wherein motor proteins transport macro-                            difficult to quantify signal from vinblastine-induced tubulin
+                                                                                                          molecular cargo across large distances up to the millimeter                         oligomers, our data also suggest that photoexcitation diffusion
+                                                                                                          range by “walking” along the microtubule lattice.11                                 lengths decrease in tubulin oligomers (formed in the presence
+                                                                                                             It is well-known that interaromatic residue energy transfer
+                                                                                                          over small distances takes place in proteins.12−14 Compared to
+                                                                                                          pigments that absorb light in the visible region of the spectrum,                   Received: September 21, 2022
+                                                                                                          aromatic residues absorb and emit UV light and have low
+                                                                                                          molar extinction coefficients and small photoluminescence
+                                                                                                          quantum yields. Consequently, proteins are not optimal light-
+                                                                                                          harvesting systems for long-range photoexcitation energy
+                                                                                                          migration.15 The lattice-type structure of microtubules that
+                                                                                                                                                     © XXXX The Authors. Published by
+                                                                                                                                                           American Chemical Society                                              https://doi.org/10.1021/acscentsci.2c01114
+                                                                                                                                                                                          A                                              ACS Cent. Sci. XXXX, XXX, XXX−XXX
+ACS Central Science                                        http://pubs.acs.org/journal/acscii                                     Research Article
+
+                                                                             fluorescence quenching through electronic energy transfer,
+                                                                             also observed AMCA fluorescence emission on tryptophan
+                                                                             photoexcitation in steady-state experiments (Figure 2E,F). To
+                                                                             quantify energy transfer between tryptophan and AMCA, we
+                                                                             used the Stern−Volmer equation for static quenching, (
+                                                                              0
+                                                                                = 1 + k Q [Q] 0 ) where τ is the tryptophan lifetime at
+                                                                             AMCA concentration [Q], τ0 is the tryptophan lifetime in the
+                                                                             absence of AMCA, and kQ is the rate constant for quenching
+                                                                             by electronic energy transfer (Figure 5A). Our analysis for
+                                                                             microtubules and free GTP-tubulin in solution revealed
+                                                                             quenching constants of 23.8 ± 0.8 ns−1 and 7.5 ± 0.4 ps−1,
+                                                                             respectively (Figure 4A, Table 1). AMCA itself contributed a
+                                                                             negligible signal over the relevant wavelength range (Figure
+                                                                             S6). The higher quenching rate in microtubules can be
+                                                                             explained by sensitization of AMCA quenching sites remote
+                                                                             from the photoexcited tubulin dimer, which can occur by
+                                                                             multiple energy transfer steps (as energy migrates from
+                                                                             tryptophan to other aromatic residues in its vicinity).
+                                                                                To analyze our experimental results, we estimated photo-
+                                                                             excitation diffusion lengths using Stern−Volmer analysis.27
+                                                                             The measured lifetimes τ and τ0 in the Stern−Volmer equation
+                                                                             are related to the diffusion coefficient D as shown in eq 1:
+                                                                                1       1
+                                                                                    =       + 4 rD[Q]
+                                                                                        0                                                            (1)
+
+                                                                                Here, r is the sum of the tryptophan and AMCA radii
+                                                                             (assumed here to be 1 nm). The diffusion coefficient can be
+                                                                             used to calculate the photoexcitation diffusion length L over
+                                                                             the time duration τ to which a photoexcitation migrates on a
+                                                                             microtubule before being quenched by AMCA as shown in eq
+                                                                             2.
+
+                                                                                L=      4D                                                           (2)
+
+                                                                                Our data yielded a 2D diffusion coefficient of 3.15 ± 0.1 ×
+                                                                             10−5 cm2·s−1 and a corresponding diffusion length of 6.64 ±
+Figure 1. The structure of microtubules from a lattice of tubulin. (A)       0.1 nm for microtubules (Table 1, Figure 5B,C). Given that a
+The tubulin dimer with tryptophan residues marked in red; the C-             single tubulin dimer occupies the same volume as a sphere of
+termini “tails” can be seen protruding from each monomer. (B) The            diameter 7.4 nm (from its dimensions of 4 nm × 6.5 nm × 8
+structure of a microtubule, showing constituent arrangement of               nm), a diffusion length of 6.64 nm suggests that energy transfer
+tubulin dimers, and the presence of a “seam”. (C) The repeating              between tryptophan residues across a single tubulin dimer can
+“lattice” of tubulin dimers in a microtubule.                                occur in a microtubule. Depending on the locations of the
+                                                                             residue where the initial photoexcitation occurred, it could
+of vinblastine), indicating that photoexcitation may migrate                 reasonably migrate to the adjacent tubulin dimer within the
+more effectively along protofilaments, as opposed to rings.                  microtubule lattice.
+Notably, we find that the presence of the anesthetics etomidate                 We simulated (incoherent) energy migration in micro-
+and isoflurane lowered photoexcitation diffusion coefficients                tubules using a computational microtubule model composed of
+(and thus diffusion lengths) in microtubules. Considering the                31 stacked tubulin rings (SI Appendix, Figure 6A). Because of
+factors (enumerated above) that make tryptophan a far-from-                  its spectral overlap with tryptophan,12 tyrosine could serve as
+optimal chromophore, our results demonstrate that electronic                 an activated intermediate. While the spectral overlap for
+energy migration is surprisingly efficient in microtubules.                  tryptophan to tyrosine (uphill) energy transfer is small and
+
+■   RESULTS
+   Tryptophan Quenching Rates Can Distinguish be-
+                                                                             tryptophan has a higher transition dipole moment (μTYR = 1.18
+                                                                             D, μTRP = 2.07 D; SI Appendix), the large number of tyrosine
+                                                                             residues compared to tryptophan (34 tyrosine residues versus
+tween Free GTP-Tubulin and Microtubules. We intro-                           8 tryptophan residues in the tubulin structure 1JFF28) raises
+duced an externally conjugated tryptophan fluorescence                       the possibility of significant energy transfer between them.
+quencher, 7-amino-4-methyl coumarin-3-acetic acid (AMCA,                     Thus, we accounted for both tyrosine and tryptophan
+Figure 2A) to study intertryptophan hopping in microtubules                  chromophores in the simulations.
+(SI Appendix, Figure 3E). We found that tryptophan                              We calculated the coupling strengths for homo (between
+fluorescence lifetimes in microtubules shortened on increasing               same residues) and hetero (between tyrosine and tryptophan)
+AMCA concentration (Figure 4A) and, consistent with                          energy transfer using the ideal dipole approximation:29
+                                                                         B                                      https://doi.org/10.1021/acscentsci.2c01114
+                                                                                                                       ACS Cent. Sci. XXXX, XXX, XXX−XXX
+ACS Central Science                                       http://pubs.acs.org/journal/acscii                                       Research Article
+
+
+
+
+Figure 2. Steady-state spectra of tubulin and microtubules. (A) Absorbance spectra of free tubulin (teal) and free AMCA (purple) in solution.
+Intensity normalized fluorescence spectra of (B), free DL tryptophan in solution showing highest fluorescence emission at excitation wavelengths
+between 270 and 300 nm. (C) Unpolymerized GTP-tubulin, (D) microtubules polymerized using GTP-tubulin, (E) free AMCA, and (F)
+microtubules polymerized using AMCA-labeled GTP-tubulin. An energy transfer peak not observed in Figure 1A,B (at excitation 280−300 nm, and
+emission at 420−450 nm) is clearly visible. Colors represent photoluminescence intensity.
+
+                 1         | i || j |                                         Absorbance and emission spectra accommodating the
+    ij
+   VCoul =             2                                                   tryptophan peak wavelength to our experimental observations
+             4   0n          r3                                  (3)       were used to calculate the spectral overlap (JSO)31 by
+   Here, μi and μj denote the transition dipole moments of the
+ith and jth residues, κ is the orientation factor, r is the                    JSO =           f ( )a ( ) d
+                                                                                        0                                                             (5)
+separation distance, ϵ0 is the permittivity of free space, and n is
+the refractive index of the medium surrounding the micro-                     Here, f(ϵ) and a(ϵ) are the emission and absorption spectra
+tubule (assumed to be n = 1.4). The heteromolecular coupling               of the donor and acceptor residues, respectively, which are area
+between tyrosine and tryptophan residues shows the highest                 normalized on an energy scale (SI Appendix, Table S11).
+contribution to the VCoul, followed by tyrosine-tyrosine                      We simulated 3000 trajectories, first considering only
+coupling strengths. Tryptophan-tryptophan coupling strengths               intertyrosine interactions and then considering tyrosine-
+are the lowest, as a result of longer intermolecular distances             tryptophan interactions. In both simulations, the obtained
+between them (Figure 6B,C).                                                diffusion lengths (1.11 and 1.54 nm, respectively) are
+   We calculated the diffusion lengths on the microtubule                  appreciably lower than the diffusion lengths obtained
+model using a kinetic Monte Carlo algorithm (SI Appendix,                  experimentally. A possible explanation could be that some of
+Figure S14). The FRET rate (kFRET) between residues i and j                the interchromophore separations are too close for the dipole
+was calculated using eq 4:30                                               approximation to be accurate. It is even possible that short-
+                                                                           range contributions to the electronic coupling arising from
+    ij       2        ij
+   kFRET =           VCoul |2 JSO                                          intermolecular orbital overlap may be significant, as has been
+                                                                 (4)       found to be the case in other tightly packed aggregates.32−34
+                                                                       C                                         https://doi.org/10.1021/acscentsci.2c01114
+                                                                                                                        ACS Cent. Sci. XXXX, XXX, XXX−XXX
+ACS Central Science                                        http://pubs.acs.org/journal/acscii                                       Research Article
+
+
+
+
+Figure 3. Confirmation and polymerization of tubulin polymorphs. Negative stain electron microscopy of tubulin polymorphic geometries for (A)
+free GTP-tubulin in solution, (B) GTP-tubulin polymerized 13 protofilament microtubules, (C) free GTP-tubulin oligomers polymerized using
+100 μM vinblastine in solution, and (D) GMPCPP-tubulin polymerized 14 protofilament microtubules. Insets show schematics of tubulin polymer
+structures. Methodology used to perform negative staining is described in SI Appendix. Due to MAPs and drugs that induce microtubule bundling
+being absent in our solutions and the highly charged C-termini tail of tubulin (expected to cause intermicrotubule repulsion), intermicrotubule
+separation distances were large enough in solution for electronic energy transfer to be insignificant. (E) Routine to polymerize microtubules with
+different AMCA labeled tubulin: unlabeled tubulin ratios, thus different AMCA concentrations. See SI Appendix for protocols used to assemble
+different tubulin polymerization states and perform electron microscopy.
+
+To obtain a rough estimate of the extent of short-range effects,               Electronic Energy Migration Is Dampened by Anes-
+we calculated the hole (th) and electron (te) transfer Integrals            thetics Etomidate and Isoflurane. While microtubules have
+for five representative TYR dimers present in close proximity               been hypothesized to support long-range dipole-switching of
+(interaromatic distance (RIA) < 6.3 Å) (Table S12, Figure S15,              aromatic residues for information processing roles in
+Supporting Information).35 We observed charge transfer                      neurons,36,37 experimental support has not yet been provided.
+integral magnitudes ranging up to 419 cm−1, which suggests                  Anesthetics have been modeled to bind to tubulin in the
+that the intermolecular orbital overlap mediated interactions               microtubule interfering with such long-range interactions, and
+could increase the electronic coupling and therefore the                    thereby inhibiting dipole-based information processing.38−40
+predicted exciton diffusion length.                                         An experimental evaluation of anesthetic action on long-range
+                                                                        D                                         https://doi.org/10.1021/acscentsci.2c01114
+                                                                                                                         ACS Cent. Sci. XXXX, XXX, XXX−XXX
+ACS Central Science                                         http://pubs.acs.org/journal/acscii                                        Research Article
+
+
+
+
+Figure 4. Average weighted tryptophan fluorescence lifetime of different tubulin polymerization states as a function of AMCA concentration. (A)
+Free GTP tubulin compared to that of microtubules polymerized using GTP-tubulin, (B), microtubules polymerized using GTP-tubulin to that of
+those polymerized using GMPCPP-tubulin, (C) microtubules polymerized using GTP-tubulin in the presence and absence of etomidate and
+isoflurane. Dashed lines and shaded regions represent mean and standard deviation of tryptophan lifetimes in different tubulin polymerization states
+in the absence of AMCA. p-Values were calculated to determine significance of differences in average weighted lifetimes between GTP
+microtubules and other tubulin polymerization states (see Figure S10). Error bars represent standard deviation of experiments conducted n = 3 to n
+= 5 times.
+
+
+
+
+Figure 5. Parameters extracted from Stern−Volmer analysis to estimate extent of diffusion . (A) Stern−Volmer plot for fitting different tubulin
+polymers with the static quenching model as shown in main text. Lines represent line of best fit to data points shown in the scatterplot. Note the
+use of a logarithmic scale for the x-axis. (B) Diffusion coefficients and (C) diffusion lengths of tryptophan excitation in different tubulin
+polymerization states. Data are shown in Table S5. The errors associated with (B) are standard errors for the fit to determine the diffusion
+coefficient. The error bars associated with (C) are calculated after propagating errors from experimental values included in eqs 1 and 2.
+
+Table 1. KQ (Mean ± Standard Error of Fit) and Adjusted                      tryptophan quenching by AMCA in GTP-polymerized micro-
+R2 Values for Fitting Different Tubulin Polymers with the                    tubules (Figure 4C; Figure S16). The presence of etomidate
+Static Quenching Model As Shown in the Main Text                             and isoflurane decreased the 2D diffusion lengths from 6.6 ±
+                                                                  Adj        0.1 nm to 5.6 ± 0.1 nm and 5.8 ± 0.2 nm, respectively (Figure
+           tubulin polymerization state            KQ (ns−1)      R2         5C). To further investigate the possible binding between
+Free GTP-tubulin                                   7.46 ± 0.4    0.96        etomidate and isoflurane to tubulin in the MT lattice, we built
+13 protofilament microtubules (GTP-tubulin        23.84 ± 0.8    0.98        and refined computational models of human tubulin dimers
+  polymerized)
+14 protofilament microtubules (GMPCPP-tubulin     21.59 ± 0.9    0.98
+                                                                             and performed docking simulations (SI Appendix, Figure S11).
+  polymerized)                                                                  Our results showed that both macromolecules exhibited
+13 protofilament microtubules with 50 μM          17.47 ± 0.5    0.99        affinities to 16 distinct binding sites (including the vinca, taxol,
+  etomidate
+                                                                             and colchicine sites), but with low predicted binding energies,
+13 protofilament microtubules with 50 μM          18.43 ± 1.2    0.91
+  isoflurane                                                                 which indicates weak to moderate interactions with tubulin,
+                                                                             with no distinct preference for any of these sites. Taken
+dipole switching in microtubules has also not yet been                       together, these findings suggest that etomidate and isoflurane
+performed.                                                                   “dampen” energy transfer between tryptophan and AMCA due
+   To investigate the influence of anesthetics on tryptophan                 to changes in the dielectric screening of electronic couplings.
+fluorescence quenching, we introduced the anesthetics                           Notably, these anesthetics did not contribute to overall
+etomidate and isoflurane41,42 into our assay and measured                    solution fluorescence nor the fluorescence spectra of free GTP-
+their effect on tryptophan fluorescence lifetimes. Introducing               tubulin or AMCA (Figure S6), demonstrating that they did not
+50 μM etomidate and isoflurane significantly lowered                         chemically interfere with either tryptophan or AMCA lifetime.
+                                                                         E                                          https://doi.org/10.1021/acscentsci.2c01114
+                                                                                                                           ACS Cent. Sci. XXXX, XXX, XXX−XXX
+ACS Central Science                                      http://pubs.acs.org/journal/acscii                                      Research Article
+
+
+
+
+Figure 6. Theoretical estimation of interactions among tryptophan and tyrosine residues. (A) Crystal structure of a microtubule composed of 31
+tubulin dimers stacked vertically showing the dipole moment orientations of representative tryptophan (green; TRP) and tyrosine (cyan; TYR)
+residues. (B) Distribution of the coupling constant VCoul between TYR-TYR, TRP-TRP and (C), TYR-TRP residues in 31-dimer long microtubule
+crystal structure. A projection of VCoul with orientation factor (κ2) of 2/3 is represented as solid lines.
+
+   Long-Range Electronic Energy Migration Also Occurs                        We showed that tryptophan autofluorescence can distinguish
+in 14 Protofilament Microtubules. Tubulin polymerization                  between polymerized and unpolymerized tubulin. Stern−
+in the presence of GMPCPP, a slowly hydrolyzable analog of                Volmer analysis revealed that the 2D diffusion length of
+GTP,43 results in the formation of a predominantly 14                     tryptophan photoexcitation in microtubules is comparable to
+protofilament microtubule with different distances between                that observed in some photosynthetic complexes23−25 and
+aromatic residues within each tubulin dimer, as well as between           organic photovoltaic devices.45−47 Our observations suggest
+neighboring dimers44 compared to 13 protofilament micro-                  that photoexcitation diffusion takes place in a manner that is
+tubules (Figure 3B; Table S1, Table S2). We asked if energy               dependent on the tubulin polymorph type (tubulin dimers
+migration would be significantly altered in 14 protofilament              versus oligomers versus microtubules). Polymerizing into
+microtubules as a consequence. Our results showed that while              microtubules enhances diffusion lengths from 4 ± 0.1 nm in
+unlabeled tryptophan fluorescence lifetimes in GMPCPP-                    free GTP tubulin to 6.64 ± 0.1 nm in microtubules.
+microtubules were significantly lower than those in GTP-                  Subsequently adding tubulin-binding agents (such as anes-
+microtubules (p-values < 0.005; Figure S10B), the lifetime                thetics) decreases the observed diffusion length. The finding of
+trend in the presence of AMCA in GMPCPP-microtubules                      long-range electronic energy transfer shows the versatility of
+resembled that of GTP-microtubules (p-values > 0.005; Figure              tubulin-based polymers. Of course, it is unlikely that biological
+4B). Stern−Volmer analysis revealed different tryptophan                  systems utilize the light-harvesting properties of tubulin, but it
+quenching rates in GMPCPP-microtubules, which we ascribe                  is fascinating that this protein macrostructure exhibits such
+to differences in tryptophan fluorescence lifetime in the                 photoexcitation diffusion lengths.
+absence of AMCA. Consequently, long-range electronic energy                  Photoexcitation diffusion in molecular systems is widely
+transfer was observed in GMPCPP-microtubules (diffusion                   studied by a variety of techniques, often relying on exciton−
+lengths of 6.1 ± 0.1 nm; Figure 5B,C), consistent with multiple           exciton annihilation.17,20,21,25,27,48−52 Like many other fluo-
+step hopping.                                                             rophores, tryptophan has a multiexponential fluorescence
+                                                                          lifetime decay.53−55 Multiexponential fluorescence decays are
+
+■    DISCUSSION AND CONCLUSION
+While the mechanical properties of microtubules and their
+                                                                          also observed when electronic energy transfer takes place in a
+                                                                          population of fluorophores in proteins (where a fraction of
+                                                                          molecules may not undergo electronic energy transfer and may
+interaction with molecular machines have been used as key                 be present in different environments).56−58 Here, we take these
+components in transport-based nanodevices,6 their autofluor-              possibilities together, analyzing the average weighted trypto-
+escence has not yet been exploited. In this work, we find that            phan fluorescence lifetime. Therefore, the diffusion length
+microtubules are more effective light-harvesters than antici-             calculated using the method employed in this work is not
+pated for a protein devoid of bound chromophores.                         definite but should be a reliable order of magnitude estimate.
+                                                                      F                                        https://doi.org/10.1021/acscentsci.2c01114
+                                                                                                                      ACS Cent. Sci. XXXX, XXX, XXX−XXX
+ACS Central Science                                   http://pubs.acs.org/journal/acscii                                    Research Article
+
+The two-dimensional tryptophan photoexcitation diffusion               biologically sourced electronic devices where UV photo-
+length of 6.64 nm is surprisingly high in microtubules, given          excitation is desired.
+that they are optimized to play structural roles in the cell and
+that the equivalent value for chlorophyll a, which is optimized
+for electronic energy transfer, is only 20−80 nm.23−25,59
+                                                                       ■    METHODS
+                                                                          Tubulin Polymerization. Tubulin was polymerized and
+Because tryptophan absorbs light poorly (molar extinction              stabilized as described in previous literature.10,67 Briefly,
+coefficient of ∼5600 M−1 cm−160) compared to chlorophyll a             porcine brain tubulin stock was prepared by reconstituting
+(molar extinction coefficient of ∼110,000 M−1 cm−161)                  lyophilized tubulin powder (T240; Cytoskeleton Inc., Denver,
+photoexcitation diffusion on a lengths scale of several                CO, USA) in BRB80 buffer supplemented with 10% glycerol at
+nanometers was not expected.                                           1 mM GTP. AMCA labeled tubulin solution was prepared by
+   We also attempted to understand the preferred path of               reconstituting lyophilized AMCA labeled tubulin powder
+photoexcitation migration. It is likely that photoexcitation           (TL440m; Cytoskeleton Inc., Denver, CO, USA) in BRB80
+energy migration takes place preferentially along a protofila-         supplemented with 10% glycerol and 1 mM GTP, to a final
+ment or along the tubulin ring along a helical path (Figure            concentration of 45 μM tubulin. Labeling efficiency was 1−2
+S13). To determine if long-range photoexcitation migration             AMCA molecules per tubulin dimer, attached at random
+could take place in the absence of lateral contacts between            surface lysines. Different volumes of labeled tubulin solution
+tubulin dimers, we polymerized GTP-tubulin in the presence             were added to tubulin solution to prepare solutions containing
+of 100 μM vinblastine, which binds at the axial interface              different AMCA labeling ratios. These solutions were
+between two tubulin dimers, forming tubulin oligomers                  incubated for 45 min at 37 °C to polymerize microtubules
+(Figure 3C). 62 Vinblastine produced a signal in our                   and subsequently stabilized using 100 μM paclitaxel
+fluorescence lifetime measurement (Figure S3B), making it              (BRB80T) to ensure no microtubule depolymerization.
+difficult to quantify the tryptophan fluorescence because of           Isoflurane and etomidate were added after microtubule
+overlapping fluorescence. Thus, after estimating the time-             polymerization and stabilization using paclitaxel had been
+resolved fluorescence decay of tubulin oligomers, we                   performed. All microtubule containing solutions contained
+subtracted the short lifetime component (Figures S8 and                excess paclitaxel (a potent microtubule stabilizing agent;68 100
+S9), using only two lifetimes to determine the diffusion               μM paclitaxel used to stabilize 2.2 μM tubulin). The binding of
+parameters of tryptophan (Figure S7, Figure 5A). Never-                paclitaxel counters the conformational effect of GTP-hydrolysis
+theless, the diffusion length obtained from such analysis (4.6 ±       on microtubules, stabilizing microtubules against depolymeri-
+0.1 nm) indicates long-range electronic energy transport in            zation.69,70 Consequently, conformational changes in the
+oligomers. While these diffusion lengths are lower than those          tubulin structure within the microtubule lattice in the presence
+observed in microtubules, we speculate that longitudinal               of paclitaxel are not expected. Free GTP-tubulin stock was
+contacts between tubulin dimers, resembling those in a                 incubated with 100 μM vinblastine (BRB80V) for 45 min at 37
+protofilament, are sufficient to induce long-range energy              °C to stabilize GTP-tubulin oligomers. Measurements on free
+transport in tubulin polymers. The diffusion lengths observed          tubulin in solution were performed in the presence of 10 mM
+in GMPCPP microtubules also support the notion that a                  CaCl2 (BRB80Ca) to ensure that free tubulin remained in
+                                                                       solution. Stock solutions of isoflurane, etomidate, and
+repeating arrangement of tubulin dimers is sufficient to allow
+                                                                       vinblastine were prepared in DMSO.
+long-range photoexcitation energy transfer.
+                                                                          Steady-State Measurements. The sample absorbance
+   It is also worth noting that introducing a convulsant (50 μM
+                                                                       was measured as a function of light frequency using a UV−vis
+picrotoxin) also decreased tryptophan quenching by AMCA.
+                                                                       spectrometer complemented with an integrating sphere (Cary
+These additional experiments that we do not report here
+                                                                       6000i, Agilent Technologies, Santa Clara, CA, USA). The
+suggest that anesthetics are not the only macromolecules that          absorption spectra were recorded using a background
+decrease photoexcitation diffusion in microtubules. Thus, we           consisting of BRB80T (BRB80 supplemented with 1 mM
+anticipate that in addition to anesthetics, microtubule                GTP or GMPCPP and 100 μM paclitaxel), for microtubules,
+associated proteins (MAPs), microtubule associated drugs               and BRB80Ca (BRB80 supplemented with 1 mM GTP or
+(MADs), and other tubulin interacting agents form a                    GMPCPP and 1 mM CaCl2) for free GTP-tubulin solutions.
+“cytoexcitonic” framework for altering electronic energy               Steady-state fluorescence spectroscopy was performed using a
+migration in microtubule-based devices. Biochemically tuned            Photon Technology International (PTI) QuantaMaster 40-F
+electronic energy migration would allow microtubule archi-             NA spectrofluorometer. All steady-state measurements were
+tectures to be used as targets for photobiomodulation9,63 and          performed at room temperature.
+to transduce photonic energy in biohybrid devices.64                      Time-Correlated Single Photon Counting (TCPSC).
+   A key finding of our study is that photoexcitation diffusion        The time-resolved fluorescence of each sample was measured
+cannot be explained via conventional Förster theory, which            using a DeltaFlex TCSPC instrument Horiba (Kyoto, Kyoto,
+accounts for only dipole−dipole interactions between                   Japan). The input light was provided using a 305 nm LED light
+tryptophan and tyrosine residues. A satisfactory explanation           source (DD300; Horiba, Kyoto, Kyoto, Japan). The usage of
+of our observations may include solvent screening by the               305 nm light ensured that tyrosine and phenylalanine were not
+protein matrix,56 electronic coupling beyond the point dipole          photoexcited. A long pass dielectric filter with a transition
+approximation in Förster theory,65,66 and accommodation for           wavelength of 325 nm was placed after the solution and before
+molecular exciton states in tubulin.26 The tuning of photo-            the detector to reduce scatter signal. The fluorescence
+excitation diffusion length through biochemical parameters of          emission was detected at 335 nm. These excitation and
+microtubules (tubulin polymerization, introduction of anes-            detection wavelengths were selected to ensure that tyrosine
+thetics) was a further intriguing observation. Our work shows          and phenylalanine were not photoexcited. The time-resolved
+that protein polymers may be suitable for active materials in          spectra were corrected for instrument response function (IRF)
+                                                                   G                                      https://doi.org/10.1021/acscentsci.2c01114
+                                                                                                                 ACS Cent. Sci. XXXX, XXX, XXX−XXX
+ACS Central Science                                   http://pubs.acs.org/journal/acscii                                    Research Article
+
+using an aqueous Ludox colloidal silica solution (Figure S3a).            Alfy Benny − Department of Chemistry, New Frick Chemistry
+The measurement range was set from 0 to 100 ns, with the                    Building, Princeton University, Princeton, New Jersey 08544,
+recording set to stop measurements when a maximum of                        United States
+10,000 counts was attained. Obtained time-resolved fluo-                  Sophie M. Travis − Department of Molecular Biology, Schultz
+rescence decays were fit to eq S1:                                          Laboratory, Princeton University, Princeton, New Jersey
+                                                                            08544, United States
+    I (t ) = A1e Tt1 + A 2e T2t + A3e T3t                  (S1)           Eric A. Zizzi − Department of Mechanical and Aerospace
+   The fit parameters T1 and T2 represented tryptophan                      Engineering (DIMEAS), Politecnico di Torino, Torino
+lifetimes in the protein, while T3 represented the fit parameter            10129, Italy
+for residual scattering from different tubulin polymers, and A1,          Austin Morales-Sanchez − Department of Chemistry, New
+A2, and A3 represented the relative contributions of each                   Frick Chemistry Building, Princeton University, Princeton,
+lifetime (amplitude). Average weighted values were estimated                New Jersey 08544, United States
+by finding the weighted lifetime of tryptophan fluorescence               Daniel G. Oblinsky − Department of Chemistry, New Frick
+lifetime (the parameters T1, T2, and T3 were weighted using                 Chemistry Building, Princeton University, Princeton, New
+amplitudes A1, A2, and A3) and then determining the average of              Jersey 08544, United States; orcid.org/0000-0001-7460-
+this value over n = 3 to 5 experiments.                                     8260
+    Negative Stain Electron Microscopy. 2 μM tubulin was                  Travis J. A. Craddock − Departments of Psychology &
+polymerized as described as above, then either used at 2 μM or              Neuroscience, Computer Science, and Clinical Immunology,
+diluted immediately prior to grid preparation to 400 nM.                    Nova Southeastern University, Ft. Lauderdale, Florida
+Dilution was performed in the appropriate polymerization                    33314, United States; orcid.org/0000-0001-7244-6317
+buffer at room temperature. A 3 μL tubulin mixture was added              Stuart R. Hameroff − Department of Anesthesiology, Center
+to glow-discharged CF400-Cu grids (Electron Microscopy                      for Consciousness Studies, University of Arizona, Tucson,
+Sciences, Hatfield, PA, USA) and stained with 0.75% uranyl                  Arizona 85721, United States
+formate. Samples were imaged using a Thermo Scientific Talos              M. Bruce MacIver − Department of Anesthesiology, Stanford
+L120C transmission electron microscope operating at 200 keV.                University School of Medicine, Stanford, California 94305,
+The nominal magnification was 72,000, and defocus values                    United States
+ranged from −0.5 to −2.0 μm. Micrographs were recorded on                 Jack A. Tuszyński − Department of Mechanical and Aerospace
+a Thermo Scientific Ceta-M 4k × 4k-pixel CMOS camera                        Engineering (DIMEAS), Politecnico di Torino, Torino
+using the TIA data collection software (Thermo Scientific,                  10129, Italy; Department of Physics, University of Alberta,
+Waltham, MA, USA), at a calibrated pixel size of 2.02 Å. All                Edmonton, Alberta T6G 2E1, Canada; Department of
+TCSPC experiments were performed at room temperature.                       Oncology, University of Alberta, Edmonton, Alberta T6G
+                                                                            1Z2, Canada; orcid.org/0000-0001-9976-0429
+■    ASSOCIATED CONTENT
+Data Availability Statement
+                                                                          Sabine Petry − Department of Molecular Biology, Schultz
+                                                                            Laboratory, Princeton University, Princeton, New Jersey
+                                                                            08544, United States; orcid.org/0000-0002-8537-9763
+The authors declare that the data supporting the findings of
+                                                                          Roger Penrose − Mathematical Institute, Andrew Wiles
+this study are available within the paper and its Supporting
+                                                                            Building, University of Oxford, Oxford OX2 6GG, United
+Information files, as well as from the corresponding author
+                                                                            Kingdom
+upon reasonable request.
+*
+sı Supporting Information                                              Complete contact information is available at:
+The Supporting Information is available free of charge at              https://pubs.acs.org/10.1021/acscentsci.2c01114
+https://pubs.acs.org/doi/10.1021/acscentsci.2c01114.
+                                                                       Author Contributions
+      Tubulin polymerization, steady-state optical absorption          A.P.K., A.B., D.G.O., T.J.A.C., S.R.H., M.B.M., J.A.T., S.P.,
+      spectroscopy, steady-state fluorescence spectroscopy,            R.P., and G.D.S. designed the research, A.P.K., A.B., S.M.T.,
+      time correlated single photon counting (tcpsc), negative         E.A.Z., and A.M.S. performed the research, M.B.M., J.A.T.,
+      stain electron microscopy, ret characteristic length             S.P., and G.D.S. provided new reagents/analytic tools, A.P.K.
+      determination, docking of etomidate, isoflurane, and             and A.B. analyzed the data, and A.P.K., A.B., and G.D.S. wrote
+      picrotoxin to human tubulin, homology modeling,                  the paper.
+      structure equilibration, site identification and docking,
+      supplementary figures (PDF)                                      Notes
+                                                                       The authors declare no competing financial interest.
+
+■    AUTHOR INFORMATION
+Corresponding Author                                                   ■   ACKNOWLEDGMENTS
+  Gregory D. Scholes − Department of Chemistry, New Frick              This work was supported by the Templeton World Charity
+   Chemistry Building, Princeton University, Princeton, New            Forum (Project ID: TWCF0530). T.J.A.C. acknowledges
+   Jersey 08544, United States; orcid.org/0000-0003-3336-              funding from the U.S. Army Research Office, Department of
+   7960; Email: gscholes@princeton.edu                                 Defense, under contract no. W911NF-19-1-0373-(74884-PH)
+                                                                       and from the Nova Southeastern University President’s Faculty
+Authors                                                                Research Development grant (PFRDG334807). The authors
+  Aarat P. Kalra − Department of Chemistry, New Frick                  thank Dr. Kyu Hyung Park, Dr. Junwoo Kim (Chungbuk
+   Chemistry Building, Princeton University, Princeton, New            National University, Korea), and Prof. Aristide Dogariu
+   Jersey 08544, United States; orcid.org/0000-0002-1877-              (University of Central Florida, FL, USA) for useful comments
+   0439                                                                during the preparation of this manuscript. The authors thank
+                                                                   H                                      https://doi.org/10.1021/acscentsci.2c01114
+                                                                                                                 ACS Cent. Sci. XXXX, XXX, XXX−XXX
+ACS Central Science                                            http://pubs.acs.org/journal/acscii                                          Research Article
+
+Dr. Gary Laevsky at the Princeton Confocal Microscopy                            excitons inhabit soft supramolecular nanotubes. Proc. Natl. Acad. Sci.
+Facility for assisting with fluorescence microscopy. The authors                 U. S. A. 2014, 111 (33), No. E3367.
+acknowledge the Princeton Imaging and Analysis Center                              (20) Lunt, R. R.; Benziger, J. B.; Forrest, S. R. Relationship between
+(IAC), which is partially supported by the Princeton Center                      Crystalline Order and Exciton Diffusion Length in Molecular Organic
+                                                                                 Semiconductors. Adv. Mater. 2010, 22 (11), 1233.
+for Complex Materials (PCCM), a National Science                                   (21) Najafov, H.; Lee, B.; Zhou, Q.; Feldman, L. C.; Podzorov, V.
+Foundation (NSF) Materials Research Science and Engineer-                        Observation of long-range exciton diffusion in highly ordered organic
+ing Center (MRSEC; DMR-2011750). A.P.K. dedicates this                           semiconductors. Nature materials 2010, 9 (11), 938.
+work to his father, Prof. Prem Kumar Kalra.                                        (22) Kurian, P.; Obisesan, T.; Craddock, T. J. Oxidative species-
+                                                                                 induced excitonic transport in tubulin aromatic networks: Potential
+■    REFERENCES
+ (1) Kapitein, L. C.; Hoogenraad, C. C. Building the Neuronal
+                                                                                 implications for neurodegenerative disease. Journal of Photochemistry
+                                                                                 and Photobiology B: Biology 2017, 175, 109.
+                                                                                   (23) Amarnath, K.; Bennett, D. I. G.; Schneider, A. R.; Fleming, G.
+Microtubule Cytoskeleton. Neuron 2015, 87 (3), 492.                              R. Multiscale model of light harvesting by photosystem II in plants.
+ (2) Matis, M. The Mechanical Role of Microtubules in Tissue                     Proc. Natl. Acad. Sci. U. S. A. 2016, 113 (5), 1156.
+Remodeling. BioEssays 2020, 42 (5), 1900244.                                       (24) Bennett, D. I. G.; Fleming, G. R.; Amarnath, K. Energy-
+ (3) Li, H.; DeRosier, D. J.; Nicholson, W. V.; Nogales, E.; Downing,            dependent quenching adjusts the excitation diffusion length to
+K. H. Microtubule Structure at 8Å Resolution. Structure 2002, 10                 regulate photosynthetic light harvesting. Proc. Natl. Acad. Sci. U. S. A.
+(10), 1317.                                                                      2018, 115 (41), No. E9523.
+ (4) Schaedel, L.; Triclin, S.; Chrétien, D.; Abrieu, A.; Aumeier, C.;             (25) Geacintov, N. E.; Breton, J.; Swenberg, C. E.; Paillotin, G. A
+Gaillard, J.; Blanchoin, L.; Théry, M.; John, K. Lattice Defects Induce          Single Pulse Picosecond Laser Study of Exciton Dynamics in
+Microtubule Self-Renewal. Nat. Phys. 2019, 15 (8), 830.                          Chloroplasts. Photochem. Photobiol. 1977, 26 (6), 629.
+ (5) Mohrbach, H.; Johner, A.; Kulić, I. M. Cooperative lattice                   (26) Mirkovic, T.; Ostroumov, E. E.; Anna, J. M.; van Grondelle, R.;
+dynamics and anomalous fluctuations of microtubules. Eur. Biophys. J.            Govindjee; Scholes, G. D. Light Absorption and Energy Transfer in
+2012, 41 (2), 217.                                                               the Antenna Complexes of Photosynthetic Organisms. Chem. Rev.
+ (6) Saper, G.; Hess, H. Synthetic Systems Powered by Biological                 2017, 117 (2), 249.
+Molecular Motors. Chem. Rev. 2020, 120, 288.                                       (27) Lin, J. D. A.; Mikhnenko, O. V.; Chen, J.; Masri, Z.; Ruseckas,
+ (7) Reuther, C.; Catalano, R.; Salhotra, A.; Vemula, V.; Korten, T.;            A.; Mikhailovsky, A.; Raab, R. P.; Liu, J.; Blom, P. W. M.; Loi, M. A.;
+Diez, S.; Månsson, A. Comparison of actin- and microtubule-based                 et al. Systematic study of exciton diffusion length in organic
+motility systems for application in functional nanodevices. New J.               semiconductors by six experimental methods. Materials Horizons
+Phys. 2021, 23 (7), 075007.                                                      2014, 1 (2), 280.
+ (8) Korten, T.; Månsson, A.; Diez, S. Towards the application of                  (28) Löwe, J.; Li, H.; Downing, K. H.; Nogales, E. Refined Structure
+cytoskeletal motor proteins in molecular detection and diagnostic                of αβ-tubulin at 3.5 Å Resolution. J. Mol. Biol. 2001, 313 (5), 1045.
+devices. Curr. Opin. Biotechnol. 2010, 21 (4), 477.                                (29) Krueger, B. P.; Scholes, G. D.; Fleming, G. R. Calculation of
+ (9) Kalra, A. P.; Eakins, B. B.; Patel, S. D.; Ciniero, G.; Rezania, V.;        Couplings and Energy-Transfer Pathways between the Pigments of
+Shankar, K.; Tuszynski, J. A. All Wired Up: An Exploration of the                LH2 by the ab Initio Transition Density Cube Method. J. Phys. Chem.
+Electrical Properties of Microtubules and Tubulin. ACS Nano 2020,                B 1998, 102 (27), 5378.
+14 (12), 16301.                                                                    (30) Scholes, G. D.; Fleming, G. R. On the Mechanism of Light
+ (10) Kalra, A. P.; Eakins, B. B.; Vagin, S. I.; Wang, H.; Patel, S. D.;         Harvesting in Photosynthetic Purple Bacteria: B800 to B850 Energy
+Winter, P.; Aminpour, M.; Lewis, J. D.; Rezania, V.; Shankar, K. A               Transfer. J. Phys. Chem. B 2000, 104 (8), 1854.
+Nanometric Probe of the Local Proton Concentration in Micro-                       (31) Taniguchi, M.; Du, H.; Lindsey, J. S. PhotochemCAD 3:
+tubule-Based Biophysical Systems. Nano Lett. 2022, 22, 517.                      Diverse Modules for Photophysical Calculations with Multiple
+ (11) Sweeney, H. L.; Holzbaur, E. L. F. Motor Proteins. Cold Spring             Spectral Databases. Photochem. Photobiol. 2018, 94 (2), 277.
+Harbor Perspectives in Biology 2018, 10 (5), a021931.                              (32) Scholes, G. D.; Ghiggino, K. P.; Oliver, A. M.; Paddon-Row, M.
+ (12) Karreman, G.; Steele, R. H.; Szent-Györgyi, A. On Resonance                N. Intramolecular electronic energy transfer between rigidly linked
+Transfer of Excitation Energy Between Aromatic Amino Acids in                    naphthalene and anthracene chromophores. J. Phys. Chem. 1993, 97
+Proteins. Proc. Natl. Acad. Sci. U. S. A. 1958, 44 (2), 140.                     (46), 11871.
+ (13) Bannister, T. T. Energy transfer between chromophore and                     (33) Hestand, N. J.; Spano, F. C. Expanded Theory of H- and J-
+protein in phycocyanin. Arch. Biochem. Biophys. 1954, 49 (1), 222.               Molecular Aggregates: The Effects of Vibronic Coupling and
+ (14) Weber, G. Fluorescence-polarization spectrum and electronic-               Intermolecular Charge Transfer. Chem. Rev. 2018, 118 (15), 7069.
+energy transfer in proteins. Biochem. J. 1960, 75 (2), 345.                        (34) Scholes, G. D.; Ghiggino, K. P.; Oliver, A. M.; Paddon-Row, M.
+ (15) Scholes, G. D.; Fleming, G. R.; Olaya-Castro, A.; van                      N. Through-space and through-bond effects on exciton interactions in
+Grondelle, R. Lessons from nature about solar light harvesting. Nat.             rigidly linked dinaphthyl molecules. J. Am. Chem. Soc. 1993, 115 (10),
+Chem. 2011, 3 (10), 763.                                                         4345.
+ (16) Rehhagen, C.; Stolte, M.; Herbst, S.; Hecht, M.; Lochbrunner,                (35) Baumeier, B.; Kirkpatrick, J.; Andrienko, D. Density-functional
+S.; Würthner, F.; Fennel, F. Exciton Migration in Multistranded                 based determination of intermolecular charge transfer properties for
+Perylene Bisimide J-Aggregates. J. Phys. Chem. Lett. 2020, 11 (16),              large-scale morphologies. Phys. Chem. Chem. Phys. 2010, 12 (36),
+6612.                                                                            11103.
+ (17) Caram, J. R.; Doria, S.; Eisele, D. M.; Freyria, F. S.; Sinclair, T.         (36) Hameroff, S.; Penrose, R. Orchestrated reduction of quantum
+S.; Rebentrost, P.; Lloyd, S.; Bawendi, M. G. Room-Temperature                   coherence in brain microtubules: A model for consciousness.
+Micron-Scale Exciton Migration in a Stabilized Emissive Molecular                Mathematics and Computers in Simulation 1996, 40 (3), 453.
+Aggregate. Nano Lett. 2016, 16 (11), 6808.                                         (37) Hameroff, S.; Penrose, R. Consciousness in the universe: A
+ (18) Haedler, A. T.; Kreger, K.; Issac, A.; Wittmann, B.; Kivala, M.;           review of the ‘Orch OR’ theory. Physics of Life Reviews 2014, 11 (1),
+Hammer, N.; Köhler, J.; Schmidt, H.-W.; Hildner, R. Long-range                   39.
+energy transport in single supramolecular nanofibres at room                       (38) Craddock, T. J. A.; St. George, M.; Freedman, H.; Barakat, K.
+temperature. Nature 2015, 523 (7559), 196.                                       H.; Damaraju, S.; Hameroff, S.; Tuszynski, J. A. Computational
+ (19) Eisele, D. M.; Arias, D. H.; Fu, X.; Bloemsma, E. A.; Steiner, C.          predictions of volatile anesthetic interactions with the microtubule
+P.; Jensen, R. A.; Rebentrost, P.; Eisele, H.; Tokmakoff, A.; Lloyd, S.;         cytoskeleton: Implications for side effects of general anesthesia. PLoS
+Nelson, K. A.; Nicastro, D.; Knoester, J.; Bawendi, M. G. Robust                 One 2012, 7 (6), No. e37251.
+
+                                                                             I                                           https://doi.org/10.1021/acscentsci.2c01114
+                                                                                                                                ACS Cent. Sci. XXXX, XXX, XXX−XXX
+ACS Central Science                                             http://pubs.acs.org/journal/acscii                                           Research Article
+
+  (39) Craddock, T. J.; Kurian, P.; Preto, J.; Sahu, K.; Hameroff, S. R.;            (58) Petrich, J.; Chang, M.; McDonald, D.; Fleming, G. On the
+Klobukowski, M.; Tuszynski, J. A. Anesthetic alterations of collective             origin of nonexponential fluorescence decay in tryptophan and its
+terahertz oscillations in tubulin correlate with clinical potency:                 derivatives. J. Am. Chem. Soc. 1983, 105 (12), 3824.
+Implications for anesthetic action and post-operative cognitive                      (59) Swenberg, C. E.; Geacintov, N. E.; Breton, J. Laser Pulse
+dysfunction. Sci. Rep. 2017, 7 (1), 1.                                             Excitation Studies of the Fluorescence of Chloroplasts. Photochem.
+  (40) Craddock, T. J. A.; Friesen, D.; Mane, J.; Hameroff, S.;                    Photobiol. 1978, 28 (6), 999.
+Tuszynski, J. A. The feasibility of coherent energy transfer in                      (60) Fasman, G. D.CRC Handbook of Biochemistry and Molecular
+microtubules. J. R. Soc., Interface 2014, 11 (100), 20140677.                      Biology: Proteins; CRC Press, 2018.
+  (41) Forman, S. A.; Warner, D. S. Clinical and Molecular                           (61) Strain, H. H.; Thomas, M. R.; Katz, J. J. Spectral absorption
+Pharmacology of Etomidate. Anesthesiology 2011, 114 (3), 695.                      properties of ordinary and fully deuteriated chlorophylls a and b.
+  (42) Constantinides, C.; Murphy, K.Molecular and Integrative                     Biochim. Biophys. Acta 1963, 75, 306.
+Physiological Effects of Isoflurane Anesthesia: The Paradigm of                      (62) Gigant, B.; Wang, C.; Ravelli, R. B. G.; Roussi, F.; Steinmetz,
+                                                                                   M. O.; Curmi, P. A.; Sobel, A.; Knossow, M. Structural basis for the
+Cardiovascular Studies in Rodents using Magnetic Resonance
+                                                                                   regulation of tubulin by vinblastine. Nature 2005, 435 (7041), 519.
+Imaging. Frontiers in Cardiovascular Medicine2016, 3.
+                                                                                     (63) Hamblin, M. R.; Huang, Y.-Y.; Heiskanen, V. Non-mammalian
+DOI: 10.3389/fcvm.2016.00023                                                       Hosts and Photobiomodulation: Do All Life-forms Respond to Light?
+  (43) Hyman, A. A.; Salser, S.; Drechsel, D.; Unwin, N.; Mitchison,               Photochem. Photobiol. 2019, 95 (1), 126.
+T. J. Role of GTP Hydrolysis in Microtubule Dynamics: Information                    (64) Brédas, J.-L.; Sargent, E. H.; Scholes, G. D. Photovoltaic
+from a Slowly Hydrolyzable Analogue, GMPCPP. Molecular biology of                  concepts inspired by coherence effects in photosynthetic systems. Nat.
+the cell 1992, 3 (10), 1155.                                                       Mater. 2017, 16 (1), 35.
+  (44) Zhang, R.; LaFrance, B.; Nogales, E. Separating the effects of                (65) Wiesenhofer, H.; Beljonne, D.; Scholes, G. D.; Hennebicq, E.;
+nucleotide and EB binding on microtubule structure. Proc. Natl. Acad.              Brédas, J.-L.; Zojer, E. Limitations of the Förster Description of
+Sci. U. S. A. 2018, 115 (27), No. E6191.                                           Singlet Exciton Migration: The Illustrative Example of Energy
+  (45) Penwell, S. B.; Ginsberg, L. D. S.; Noriega, R.; Ginsberg, N. S.            Transfer to Ketonic Defects in Ladder-type Poly(para-phenylenes).
+Resolving ultrafast exciton migration in organic solids at the                     Adv. Funct. Mater. 2005, 15 (1), 155.
+nanoscale. Nat. Mater. 2017, 16 (11), 1136.                                          (66) Khan, Y. R.; Dykstra, T. E.; Scholes, G. D. Exploring the Förster
+  (46) Markov, D. E.; Amsterdam, E.; Blom, P. W. M.; Sieval, A. B.;                limit in a small FRET pair. Chem. Phys. Lett. 2008, 461 (4), 305.
+Hummelen, J. C. Accurate Measurement of the Exciton Diffusion                        (67) Kalra, A. P.; Patel, S. D.; Bhuiyan, A. F.; Preto, J.; Scheuer, K.
+Length in a Conjugated Polymer Using a Heterostructure with a Side-                G.; Mohammed, U.; Lewis, J. D.; Rezania, V.; Shankar, K.; Tuszynski,
+Chain Cross-Linked Fullerene Layer. J. Phys. Chem. A 2005, 109 (24),               J. A. Investigation of the Electrical Properties of Microtubule
+5266.                                                                              Ensembles under Cell-Like Conditions. Nanomaterials 2020, 10 (2),
+  (47) Mikhnenko, O. V.; Blom, P. W. M.; Nguyen, T.-Q. Exciton                     265.
+diffusion in organic semiconductors. Energy Environ. Sci. 2015, 8 (7),               (68) Arnal, I.; Wade, R. H. How Does Taxol Stabilize Microtubules?
+1867.                                                                              Current Biology 1995, 5 (8), 900.
+  (48) Malý, P.; Lüttig, J.; Turkin, A.; Dostál, J.; Lambert, C.; Brixner,         (69) Schiff, P. B.; Fant, J.; Horwitz, S. B. Promotion of Microtubule
+T. From wavelike to sub-diffusive motion: exciton dynamics and                     Assembly in Vitro by Taxol. Nature 1979, 277 (5698), 665.
+interaction in squaraine copolymers of varying length. Chemical                      (70) Amos, L. A.; Löwe, J. How Taxol® stabilises microtubule
+                                                                                   structure. Chemistry & Biology 1999, 6 (3), R65.
+Science 2020, 11 (2), 456.
+  (49) Kriete, B.; Lüttig, J.; Kunsel, T.; Malý, P.; Jansen, T. L. C.;
+Knoester, J.; Brixner, T.; Pshenichnikov, M. S. Interplay between
+structural hierarchy and exciton diffusion in artificial light harvesting.
+Nat. Commun. 2019, 10 (1), 4615.
+  (50) Mikhnenko, O. V.; Kuik, M.; Lin, J.; van der Kaap, N.; Nguyen,
+T.-Q.; Blom, P. W. M. Trap-Limited Exciton Diffusion in Organic
+Semiconductors. Adv. Mater. 2014, 26 (12), 1912.
+  (51) Bressan, G.; Jirasek, M.; Anderson, H. L.; Heisler, I. A.; Meech,
+S. R. Exciton-Exciton Annihilation as a Probe of Exciton Diffusion in
+Large Porphyrin Nanorings. J. Phys. Chem. C 2020, 124 (34), 18416.
+  (52) Menke, S. M.; Luhman, W. A.; Holmes, R. J. Tailored exciton
+diffusion in organic photovoltaic cells for enhanced power conversion
+efficiency. Nat. Mater. 2013, 12 (2), 152.
+  (53) Ghisaidoobe, A. B.; Chung, S. J. Intrinsic tryptophan
+fluorescence in the detection and analysis of proteins: a focus on
+Förster resonance energy transfer techniques. International journal of
+molecular sciences 2014, 15 (12), 22518.
+  (54) Albani, J. Origin of tryptophan fluorescence lifetimes part 1.
+Fluorescence lifetimes origin of tryptophan free in solution. J. Fluoresc.
+2014, 24 (1), 93.
+  (55) Albani, J. Origin of tryptophan fluorescence lifetimes. Part 2:
+Fluorescence lifetimes origin of tryptophan in proteins. J. Fluoresc.
+2014, 24 (1), 105.
+  (56) Curutchet, C.; Kongsted, J.; Muñoz-Losa, A.; Hossein-Nejad,
+H.; Scholes, G. D.; Mennucci, B. Photosynthetic Light-Harvesting Is
+Tuned by the Heterogeneous Polarizable Environment of the Protein.
+J. Am. Chem. Soc. 2011, 133 (9), 3078.
+  (57) Scholes, G. D.; Curutchet, C.; Mennucci, B.; Cammi, R.;
+Tomasi, J. How Solvent Controls Electronic Energy Transfer and
+Light Harvesting. J. Phys. Chem. B 2007, 111 (25), 6978.
+
+                                                                               J                                           https://doi.org/10.1021/acscentsci.2c01114
+                                                                                                                                  ACS Cent. Sci. XXXX, XXX, XXX−XXX
+

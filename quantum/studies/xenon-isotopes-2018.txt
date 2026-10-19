@@ -1,0 +1,606 @@
+EXTRACTED FULL TEXT — WEB-INDEXED AUTHOR PDF
+Source: https://www.researchgate.net/profile/Younian-Xu/publication/324457187_Nuclear_Spin_Attenuates_the_Anesthetic_Potency_of_Xenon_Isotopes_in_Mice_Implications_for_the_Mechanisms_of_Anesthesia_and_Consciousness/links/5b7d03b0a6fdcc5f8b5b1378/Nuclear-Spin-Attenuates-the-Anesthetic-Potency-of-Xenon-Isotopes-in-Mice-Implications-for-the-Mechanisms-of-Anesthesia-and-Consciousness.pdf
+Downloaded source text on 2026-10-18. Original PDF download returned HTTP 403. This is indexed text extraction of all seven pages, not the original PDF; layout and equations may be imperfect. PDF pages are 1-based below. Early online version has placeholder journal pagination.
+
+
+[PDF page 1]
+Anesthesiology, V XXX • No X 1 XXX 2018
+T HE mechanism by which general anesthetics cause reversible loss of consciousness, and by which the
+brain produces consciousness, are both unknown.1
+ Meyer
+and Overton showed that anesthetic potency correlated
+with solubility in nonpolar olive oil, which was taken to
+imply that anesthetics act in lipid membranes.2
+ However,
+proteins were found to mediate membrane excitability,
+and Franks and Lieb3
+ found that anesthetics bind and act
+in nonpolar, lipid-like regions within proteins, using the
+membrane-free light-emitting protein enzyme luciferase.
+Accordingly, anesthetics are recognized to act directly in
+proteins, still consistent with Meyer-Overton.3
+ These stud-ies focused on intermolecular actions of general anesthetics
+with nonpolar lipid and nonpolar regions within proteins.
+The intermolecular attractions are due to weak, quantum-level van der Waals London force couplings between anes-thetic electron shells and electron clouds of nonpolar groups
+within particular proteins, e.g., π-electron resonance groups
+What We Already Know about This Topic
+• Xenon is a noncompetitive N-methyl-D-aspartate (NMDA)
+receptor antagonist. The interaction of xenon with the
+NMDA receptor is determined by quantum-level van der
+Waals London forces between the electron shells of xenon
+and the electron clouds of nonpolar regions of the NMDA
+receptor.
+• In addition to the van der Waals forces, several xenon isotopes
+have nuclear spin. Whether the quantum property of nuclear
+spin affects the potency of xenon is not known.
+What This Article Tells Us That Is New
+• The potency of two xenon isotopes with nuclear spin, xenon
+129 and xenon 131, is less than the potency of two xenon
+isotopes, xenon 132 and xenon 134, that do not have nuclear
+spin. This difference in potency cannot be explained, either
+by differences in outer electron shells (there are none) or the
+variations in atomic mass.
+• The results suggest that some of the effects of xenon on
+consciousness may be mediated by quantum mechanisms.
+Copyright © 2018, the American Society of Anesthesiologists, Inc. Wolters Kluwer Health, Inc. All Rights Reserved. Anesthesiology 2018; XXX:00-00
+ABSTRACT
+Background: Xenon is an elemental anesthetic with nine stable isotopes. Nuclear spin is a quantum property which may dif-fer among isotopes. Xenon 131 (131Xe) has nuclear spin of 3/2, xenon 129 (129Xe) a nuclear spin of 1/2, and the other seven
+isotopes have no nuclear spin. This study was aimed to explore the effect of nuclear spin on xenon anesthetic potency.
+Methods: Eighty C57BL/6 male mice (7 weeks old) were randomly divided into four groups, xenon 132 (132Xe), xenon 134
+(
+134Xe), 131Xe, and 129Xe groups. Due to xenon’s low potency, loss of righting reflex ED50 for mice to xenon was determined
+with 0.50% isoflurane. Loss of righting reflex ED50 of isoflurane was also measured, and the loss of righting reflex ED50
+values of the four xenon isotopes were then calculated. The exact polarizabilities of the isotopes were calculated.
+Results: Combined with 0.50% isoflurane, the loss of righting reflex ED50 values were 15 ± 4%, 16 ± 5%, 22 ± 5%, and
+23 ± 7% for 132Xe, 134Xe, 131Xe, and 129Xe, respectively. For xenon alone, the loss of righting reflex ED50 values of 132Xe,
+134Xe, 131Xe, and 129Xe were 70 ± 4%, 72 ± 5%, 99 ± 5%, and 105 ± 7%, respectively. Four isotopes had a same exact polariz-ability of 3.60 Å3
+.
+Conclusions: Xenon isotopes with nuclear spin are less potent than those without, and polarizability cannot account for the
+difference. The lower anesthetic potency of 129Xe may be the result of it participating in conscious processing and therefore
+partially antagonizing its own anesthetic potency. Nuclear spin is a quantum property, and our results are consistent with
+theories that implicate quantum mechanisms in consciousness. (Anesthesiology 2018; XXX:00-00)
+N.L., D.L., L.Y., and H.T. contributed equally to this article.
+Submitted for publication September 3, 2017. Accepted for publication March 7, 2018. From the Department of Anesthesiology, Union
+Hospital (N.L., D.L., L.Y., H.T., Y.X., C.W., L.F., Y.C., S.Z.), and Department of Pharmacology, School of Basic Medicine (H.L.), Tongji Medical
+College, Huazhong University of Science and Technology, Wuhan, China.
+Nuclear Spin Attenuates the Anesthetic Potency of
+Xenon Isotopes in Mice
+Implications for the Mechanisms of Anesthesia
+and Consciousness
+Na Li, M.D., Dongshi Lu, M.D., Lei Yang, M.D., Ph.D., Huan Tao, M.D., Younian Xu, M.D., Ph.D.,
+Chenchen Wang, M.D., Lisha Fu, M.D., Hui Liu, Ph.D., Yatisha Chummum, M.D., Shihai Zhang, M.D., Ph.D.
+PERIOPERATIVE MEDICINE
+
+[PDF page 1-2]
+Copyright © 2018, the American Society of Anesthesiologists, Inc. Wolters Kluwer Health, Inc. Unauthorized reproduction of this article is prohibited. <zdoi;10.1097/ALN.0000000000002226>Anesthesiology 2018; XXX:00-00 2 Li et al.
+
+[PDF page 2]
+Nuclear Spin Contributes to Less Potency of Xenon Isotopes
+of aromatic amino acid rings.4 Craddock et al.
+4
+ point out
+that Meyer-Overton defines a quantum-friendly environ-ment for electron cloud dipoles and spin processes, and
+propose that anesthetics act in quantum channels in brain
+microtubules to prevent consciousness. However, the effect
+of the atomic nucleus on the anesthetic potencies of general
+anesthetics is unknown. The atomic nucleus shows some
+quantum features, including spin, a fundamental feature of
+the universe. Exploring the effects of nuclear spin of gen-eral anesthetics may help reveal quantum mechanisms in
+anesthetic action and consciousness. Xenon is an elemental
+gaseous anesthetic5
+ that has nine stable isotopes. Xenon 129
+(
+129Xe) has a nuclear spin of 1/2 and xenon 131 (131Xe) of
+3/2, and the other seven isotopes have no nuclear spin (0).6
+Xenon isotopes have differences in nuclear spin, making
+them suitable to study the effect of the atomic nucleus on
+anesthetic action. We thus postulated that xenon isotopes
+might have different anesthetic potencies.
+In order to test our hypothesis in this study, we aimed
+to measure the anesthetic potencies of 129Xe, 131Xe, xenon
+132 (132Xe), and xenon 134 (134Xe) in mice. There are two
+classical methods to measure anesthetic potency in animals:
+loss of righting reflex and tail clipping. The concentrations
+of anesthetics that are necessary to produce loss of conscious-ness in humans are similar to those needed to induce loss of
+righting reflex in animals7
+; therefore, loss of righting reflex is
+a correlate of consciousness, while tail clipping is a measure
+of immobility.8
+ In order to match consciousness, we aimed
+to determine loss of righting reflex for mice to xenon iso-topes in this study. In order to compare the different effects
+of outer electron shells of xenon isotopes on their anesthetic
+potencies, the exact polarizabilities of the four isotopes were
+also calculated.
+Materials and Methods
+Animals
+C57BL/6 male mice (aged 7 weeks) were ordered
+from Hunan SJA Laboratory Animal Co., Ltd.
+(SCXK[xiang]2016-0002; China). All animal procedures
+were approved by the Institutional Animal Care and Use
+Committee (S164) at Tongji Medical College, Huazhong
+University of Science and Technology, Wuhan, China. The
+study protocol was designed according to the recommen-dations of the Helsinki convention for the use and care of
+animals. In all experiments, mice were not in a great deal of
+pain and were not euthanized.
+Reagents
+129Xe, 131Xe, 132Xe, and 134Xe were made in Georgia, and we
+purchased them from NUKEM Isotopes Imaging GmbH
+(Germany) with purity all greater than 99.99% and abun-dance of 93.5%. Isoflurane was purchased from Abbott Lab-oratories Co., Ltd. (USA).
+Study Design
+In this study, we chose four isotopes: 129Xe, 131Xe, 132Xe,
+and 134Xe. 132Xe and 134Xe were chosen for controls because
+both have no nuclear spin. We aimed to determine loss of
+righting reflex for mice to each isotope and then calculate
+the corresponding values of loss of righting reflex ED50 in
+this study. Loss of righting reflex ED50 of xenon is as high
+as 95% in mice.9
+ Under normobaric conditions, it is dif-ficult to administer more than 70% xenon to determine loss
+of righting reflex ED50 because it would make the animals
+at risk of hypoxia. Therefore, a measurement of anesthetic
+potency of xenon would require either hyperbaric conditions
+to maintain an adequate partial pressure of oxygen,9
+ or the
+combination of xenon with another potent anesthetic under
+normobaric conditions.10 Because hyperbaric xenon may
+cause inadequate respiration or apnea to the animals,11 in
+this study we determined the loss of righting reflex ED50 of
+xenon by combining it with isoflurane.
+Determination of Loss of Righting Reflex for Mice to the
+Combination of Xenon with Isoflurane
+According to a computer-generated random number table,
+80 mice were divided into four groups, 129Xe, 131Xe, 132Xe,
+and 134Xe groups, with 20 mice in each group. According to
+the method described by Miller et al.9
+ to determine ED50
+of xenon in mice, 20 mice in each group would be powerful
+enough to determine ED50 in this study. We used a plastic
+mesh chamber of 6 l capable of simultaneously holding 20
+mice in isolated cells to determine loss of righting reflex for
+mice to xenon in this study. The chamber was designed to
+test capably 20 mice in a group simultaneously. A powerful
+electrical fan was fixed in the chamber to ensure adequate
+mixing of the gases. The chamber was connected to an iso-flurane vaporizer and oxygen source. A daily gas leak test
+in the chamber and associated tubing was performed by
+increasing the within-chamber air pressure with pure oxy-gen to 10 mmHg and then immersing the entire system in
+a water bath. After 20 mice were placed in the chamber, the
+chamber was sealed and gas leak was tested. Loss of righting
+reflex was accomplished using stepwise incremental increases
+in the concentration of xenon isotope. At first, 0.50% iso-flurane combined with pure oxygen from the vaporizer was
+introduced into the chamber at a rate of 800ml/min. A con-centration of 0.50% of isoflurane was maintained for 1h in
+the tightly sealed chamber, and loss of righting reflex was
+tested by an experimenter who was blinded to isotope type.
+After the first loss of righting reflex testing, 150ml xenon
+was then slowly injected into the chamber with a syringe
+to increase the concentration of xenon to 2.5%. The injec-tion time was about 8min to ensure the pressure within the
+chamber did not exceed 2 mmHg. Mice consume oxygen,
+and it is estimated that 150ml oxygen are consumed by 20
+mice in 8min. After injection, xenon concentration was
+equilibrated for 15min. During the equilibration, pure oxy-gen was slowly introduced into the chamber to compensate
+
+[PDF page 2-3]
+Copyright © 2018, the American Society of Anesthesiologists, Inc. Wolters Kluwer Health, Inc. Unauthorized reproduction of this article is prohibited.Anesthesiology 2018; XXX:00-00 3 Li et al.
+
+[PDF page 3]
+Perioperative Medicine
+the amount of oxygen consumed by the mice. In this way,
+the concentration of xenon was maintained constant within
+the chamber. After equilibration, loss of righting reflex was
+tested immediately. Concentration of xenon was increased
+by 2.5% until successful loss of righting reflex was observed.
+Isoflurane, oxygen, and carbon dioxide concentrations
+were continuously monitored using an infrared gas moni-tor (PM8050; Drägerwerk, Germany), calibrated just before
+each use according to the manufacturer’s instructions. The
+sample gas was returned to the chamber after analysis.
+Within the chamber, carbon dioxide was maintained at less
+than 1% by using carbon dioxide absorbent, and the tem-perature was maintained at 36.0 ±0.2°C. The chamber pres-sure and temperature were also monitored continuously. For
+temperature maintenance, the mice were warmed with a heat
+lamp. After any experiment, mouse rectal temperature was
+measured immediately. Rectal temperature at 35.0±0.2°C
+was regarded as normal. The pressure in the chamber was
+maintained at a range of 0 to 2 mmHg. A tank contain-ing 5% isoflurane in pure oxygen was available. If isoflurane
+concentration within the chamber reduced to 0.49% due
+to isoflurane metabolized, the amount of isoflurane needed
+to keep 0.50% of isoflurane in the chamber was calculated,
+and the gas of the amount of isoflurane was drawn from the
+tank and was then introduced into the chamber to increase
+isoflurane concentration to 0.50%. In this way, the concen-tration of isoflurane within the chamber was controlled at
+0.50±0.01%. Only one experimenter who did not partici-pate in determining righting response knew which xenon
+isotope was used in each experiment. The other experiment-ers were blinded.
+Xenon Concentration Determination
+Because the chamber was tightly sealed and the pressure
+within the chamber changed at a range of 0 to 2 mmHg,
+the concentration of xenon within the chamber was guar-anteed to be constant. However, the accurate concentra-tion of xenon within the chamber was verified. After each
+experiment of measurement of loss of righting reflex of
+any xenon isotope, a gas sample was drawn from the sealed
+chamber. The concentration of xenon was measured by
+gas chromatography/mass spectrometry in direct injection
+mode (without sample pretreatment). The gas chromatog-raphy/mass spectrometry system consisted of an Agilent
+5973N spectrometer interfaced with an Agilent 6890 gas
+chromatograph (Agilent Technologies Inc., USA). Gases
+were separated with a HP-PLOT-Molesieve-5 Å, 30 m,
+0.32mm, 0.25 μm ID molecular sieve column (Agilent
+Technologies Inc.). The column temperature was 100°C.
+The split ratio was 50:1. The volume of the sample loop was
+5ml. The injector temperature was 120°C. The sample vol-ume was 50 μl. The driving gas was helium (0.92ml/min).
+The electrospray ionization temperature was 230°C, and
+the quadrupole temperature was 150°C. The other opti-mized parameters were ionization energy of 70 eV, emission
+current of 40 mA, cathode voltage of 27 mV, focus voltage
+of 85 mV, and lens compensation of 20 V.
+Standardization of xenon isotope gas was the volumes
+of pure xenon gas from NUKEM Isotopes Imaging GmbH
+(Germany). Scanning ions were mass/charge 132, 134, 131,
+and 129, respectively. Scanning residence time was 100ms.
+Peak areas (areas under the curves) were determined for the
+four isotopes in autointegration mode, and then the stan-dard curves of the four isotopes were drawn. Quality control
+was made by replicate determinations of standard xenon gas.
+Samples of each xenon isotope were measured three times,
+and the mean concentration was regarded as the accurate
+concentration of the isotope within the chamber. The esti-mated concentration of xenon was the end concentration we
+expected within the chamber. The measured concentration
+was the accurate concentration of xenon measured by gas
+chromatography/mass spectrometer. The two concentrations
+were then compared to verify whether the concentration of
+xenon within the chamber was what we expected or not.
+Definition of Loss of Righting Reflex
+After each xenon concentration increment in xenon experi-ments, with the concentration at constant maintenance for
+15min, the chamber was gently rotated to place the mice on
+their backs, and the righting response was observed for 10s.
+Loss of righting reflex was defined as any mouse that could
+not roll over during the observation period.12 For each mouse,
+its loss of righting reflex ED50 was calculated by averaging
+successful loss of righting reflex and previous concentration
+of xenon. The definition was the same in the isoflurane exper-iment. Mouse rolling was also videoed and recorded with an
+iPad (Apple, Inc., USA). Any doubtful judgment during the
+tests was rejudged and confirmed by a second blinded experi-menter by watching the video after experiments.
+Determination of Loss of Righting Reflex for Mice to
+Isoflurane
+After xenon experiments, the mice were housed for 4 days.
+All 80 mice were then used to determine loss of righting
+reflex of isoflurane. Determination of isoflurane loss of right-ing reflex was as the same as with xenon. The groups of mice
+were not changed. A group of 20 mice was tested each day.
+Mice were equilibrated with 0.50% isoflurane for 15min,
+and then loss of righting reflex was tested. Concentration
+of isoflurane was increased by 0.02% until successful loss of
+righting reflex was observed. After experiments, loss of right-ing reflex ED50 for each mouse to isoflurane was calculated,
+and then loss of righting reflex ED50 data of the four groups
+were merged.
+Calculation of Loss of Righting Reflex ED50 of Xenon
+Isotopes
+We first calculated the fraction of any xenon isotope attribut-able to 0.50% isoflurane according to the method described
+by Whitehurst et al.
+10 Because the loss of righting reflex
+
+[PDF page 3-4]
+Copyright © 2018, the American Society of Anesthesiologists, Inc. Wolters Kluwer Health, Inc. Unauthorized reproduction of this article is prohibited.Anesthesiology 2018; XXX:00-00 4 Li et al.
+
+[PDF page 4]
+Nuclear Spin Contributes to Less Potency of Xenon Isotopes
+ED50 for mice to isoflurane was 0.64%, the fraction of loss
+of righting reflex ED50 of xenon attributable to the constant
+0.50% isoflurane maintained during the xenon studies was
+calculated as 0.50/0.64 = 0.78, leaving 1 to 0.78 = 0.22 loss
+of righting reflex ED50 fraction attributable to the xenon
+isotope. The four values of xenon-bracketing loss of righting
+reflex ED50 were divided by the 0.22 loss of righting reflex
+ED50 fraction attributable to xenon, yielding the values of
+loss of righting reflex ED50 of the four isotopes.
+Quantum Chemical Calculation of Exact Polarizability
+Quantum chemical calculation of the exact polarizabil-ity of each xenon isotope was performed by using Gauss-ian 09 software (version D.01, Gaussian Inc., USA). The
+exact polarizability of each xenon isotope was optimized by
+b31yp/3-21G and the density functional theory method.
+Statistical Analyses
+The sample size in each experiment was determined based on
+the sample size used by Miller et al.9
+ in their study. A larger
+number of mice were enrolled in this study to allow for pos-sible incomplete data collection. GraphPad Prism software
+(version 6.07 for Windows, GraphPad Software Inc., USA)
+was used for statistical analyses. The dose-response curve was
+fitted by sigmoidal dose-response model as a four-parameter
+logistic in nonlinear regression. The nonlinear regression was
+used according to the equation
+Y= Y+ minmY- ax Y1 min +10logED50- XH () 
+ 
+()×
+where Y is the percentage of the population showing loss of right-ing reflex; Ymin and Ymax are the minimal and maximal values of
+Y, respectively; ED50 is the averaging successful loss of righting
+reflex and the previous concentration; X is the logarithmic iso-tope dose; and H is the Hill slope constant.
+Comparison of loss of righting reflex ED50 values among
+groups was performed with one-way ANOVA, and multiple
+comparisons among different groups were performed using
+post hoc tests (Bonferroni test). Data were expressed as mean
+± SD. A P value less than 0.05 (two-tailed) was considered
+to be statistically significant.
+Results
+Anesthetic Potencies of Xenon Isotopes with 0.50%
+Isoflurane
+There were no missing data during the experiments. After
+the chamber was opened, all mice invariably revived rapidly.
+Dose-response curves of the four xenon isotopes with
+a constant 0.50% isoflurane were plotted (fig.  1). Dose-response curves of xenon isotopes with nuclear spin (129Xe
+and 131Xe) separated from those without (132Xe and
+134Xe). One-way ANOVA analysis showed F3,76 = 15.96
+(P < 0.0001) for isotope types. The values of loss of righting reflex
+ED50 of the four isotopes, combined with 0.50% isoflurane,
+were 15±4% (95% CI, 15 to 17%), 16±5% (95% CI, 14 to
+16%), 22±5% (95% CI, 21 to 22%), and 23±7% (95% CI, 22
+to 24%) for 132Xe, 134Xe, 131Xe, and 129Xe, respectively. The ED50
+values were then compared by a Bonferroni multiple compari-sons test. The comparisons showed that, combined with 0.50%
+isoflurane, the values of loss of righting reflex ED50 of 132Xe and
+134Xe were comparable (P = 0.9993) with the lowest values. Loss of
+righting reflex ED50 of 131Xe was significantly higher than 132Xe
+(P < 0.0001) but significantly lower than 129Xe (P = 0.004). Loss
+of righting reflex ED50 of 129Xe was significantly higher than
+132Xe (P < 0.0001; fig. 2). Because the higher the loss of right-ing reflex ED50 the lower the anesthetic potency, these results
+showed that, combined with 0.50% isoflurane, xenon isotopes
+with nuclear spin had lower anesthetic potencies than those
+without.
+Anesthetic Potencies of Xenon Isotopes Alone
+In order to determine the anesthetic potencies of xenon iso-topes without isoflurane, we determined isoflurane loss of
+righting reflex ED50 in the same mice. Our result showed
+that the loss of righting reflex ED50 for the same mice to iso-flurane was 0.64± 0.01% (95% CI, 0.64 to 0.65%; fig. 3).
+Using 0.64% as the loss of righting reflex ED50 for the mice
+to isoflurane, we calculated the fraction of loss of righting
+reflex ED50 of any xenon isotope attributable to the con-stant 0.50% isoflurane, and then the fractions yielded the
+values of loss of righting reflex ED50 of the four isotopes
+alone according to the method described by Whitehurst
+et al.
+10 We found that the values of loss of righting reflex
+ED50 of 132Xe, 134Xe, 131Xe, and 129Xe were 71±4% (95%
+CI, 70 to 72%), 72±5% (95% CI, 71 to 73%), 99±5%
+(95% CI, 96 to 99%), and 105±7% (95% CI, 104 to 106%),
+respectively. Again, the values of loss of righting reflex ED50
+Fig. 1. The dose-response curves for four xenon isotopes
+with a constant concentration of 0.50% isoflurane. Best-fit
+sigmoidal dose-response curves are shown. The abscissa
+represents the concentrations of each isotope. Each point
+represents number of mice with loss of righting reflex under
+the corresponding concentration of each isotope combined
+with constant 0.50% isoflurane. The curves of xenon 132
+(
+132Xe) and xenon 134 (134Xe) are separated from those of xe-non 131 (131Xe) and xenon 129 (129Xe), showing that, com-bined with constant 0.50% isoflurane, the anesthetic poten-cies of 131Xe and 129Xe are lower than those of 132Xe and 134Xe
+(n = 20 mice per group).
+
+[PDF page 4-5]
+Copyright © 2018, the American Society of Anesthesiologists, Inc. Wolters Kluwer Health, Inc. Unauthorized reproduction of this article is prohibited.Anesthesiology 2018; XXX:00-00 5 Li et al.
+
+[PDF page 5]
+Perioperative Medicine
+of 132Xe and 134Xe were comparable (P = 0.42). 129Xe loss
+of righting reflex ED50 was significantly higher than 132Xe
+(P < 0.0001). 131Xe loss of righting reflex ED50 was signifi-cantly higher than 132Xe (P < 0.0001) but significantly lower
+than 129Xe (P = 0.003). The values of loss of righting reflex
+ED50 of the four isotopes are shown in figure 4.
+Xenon Concentrations
+At the end of any xenon experiment, a gas sample was drawn
+from the chamber, and the concentration of xenon was
+detected with gas chromatography/mass spectrometer. We
+found that the detected concentrations of the xenon isotopes
+were respectively the same as expected concentrations within
+the chamber.
+Exact Polarizabilities of Xenon Isotopes
+We calculated the values of exact polarizabilities for all four
+isotopes using a density functional theory approach. The
+results of our quantum chemical calculations showed that
+all four isotopes had the same value of exact polarizability
+of 3.60 Å3
+.
+Discussion
+In this paper, we present that xenon isotopes with nuclear
+spin (129Xe and 131Xe) are less potent to prevent conscious-ness than those without (132Xe and 134Xe). Because they are
+chemically the same, it is their physical properties that might
+contribute to the differences of the anesthetic potencies.
+There are two main physical properties of xenon isotopes:
+atomic mass and nuclear spin. The difference of atomic
+mass between 129Xe and 132Xe is the mass of three neutrons,
+but the 129Xe loss of righting reflex ED50 is 149% of that
+of 132Xe. The difference of atomic mass between 134Xe and
+132Xe is the mass of two neutrons, and their values of loss of
+righting reflex ED50 are comparable. Therefore, the differ-ences of the values of loss of righting reflex ED50 among the
+four xenon isotopes cannot be explained by the differences
+Fig. 2. The values of ED50 of loss of righting reflex for mice to
+four xenon isotopes with a constant concentration of 0.50%
+isoflurane. The values of loss of righting reflex (LORR) ED50
+of xenon 132 (132Xe) and xenon 134 (134Xe) are comparable.
+Loss of righting reflex ED50 of xenon 131 (131Xe) is signifi-cantly higher than 132Xe and 134Xe but significantly lower than
+xenon 129 (129Xe). Loss of righting reflex ED50 of 129Xe is
+significantly higher than 132Xe and 134Xe. Data are shown as
+mean (SD), n = 20 mice per group. **P < 0.001; ****P < 0.0001;
+N.S. = not significantly different (one-way ANOVA followed by
+the Bonferroni correction as a post hoc test).
+Fig. 3. The dose-response curve for mice to isoflurane. The best-fit sigmoidal dose-response curve is shown. The abscissa rep-resents for isoflurane concentrations. Each point represents the
+percent of sum number of mice with loss of righting reflex under
+the corresponding concentration of isoflurane (n = 80 mice).
+Fig. 4. The values of loss of righting reflex ED50 for mice to
+four xenon isotopes alone. The data of loss of righting reflex
+were calculated by the fractions of loss of righting reflex ED50
+of xenon isotopes attributable to constant 0.50% isoflurane
+with isoflurane ED50 as 0.64%. The values of loss of right-ing reflex ED50 of xenon 132 (132Xe) and xenon 134 (134Xe)
+are identical. Loss of righting reflex ED50 of xenon 129 (129Xe)
+is significantly higher than 132Xe and 134Xe. Loss of righting
+reflex ED50 of xenon 131 (131Xe) is significantly higher than 132Xe and 134Xe but significantly lower than 129Xe. Data are
+shown as mean (SD), n = 20 mice per group. **P < 0.001;
+****P < 0.0001; N.S. = not significantly different (one-way ANO-VA followed by the Bonferroni correction as a post hoc test).
+
+[PDF page 5-6]
+Copyright © 2018, the American Society of Anesthesiologists, Inc. Wolters Kluwer Health, Inc. Unauthorized reproduction of this article is prohibited.Anesthesiology 2018; XXX:00-00 6 Li et al.
+
+[PDF page 6]
+Nuclear Spin Contributes to Less Potency of Xenon Isotopes
+of atomic mass, leaving nuclear spin the only factor to affect
+xenon isotopes to prevent consciousness.
+Xenon, the simplest general anesthetic, is a monoatomic
+noble gas. N-methyl-D-aspartate receptor as the target of
+xenon has been proposed.5,13 However, xenon follows the
+Meyer-Overton correlation, and thus binds in many pro-teins and nonpolar sites. Targeting of N-methyl-D-aspartate
+receptor cannot explain the huge differences of the anes-thetic potencies between xenon isotopes with nuclear spin
+and those without because they are chemically the same.
+Although we do not know how microscopic nuclear spin can
+affect the macroscopic brain so much, we can anticipate that
+the huge difference of anesthetic potency between 129Xe and
+132Xe should make the two isotopes regarded as two different
+anesthetics, and thus 129Xe and 132Xe may be tools to check
+any hypothesis of mechanism of anesthetic action of general
+anesthetics.
+A unitary correlation between anesthetic polarizability
+and anesthetic potency has been proposed.14 Xenon has a
+high polarizability. There is thus a possibility that different
+polarizabilities among xenon isotopes might account for
+their differences of anesthetic potencies. However, this is not
+the case, as our quantum calculations show that the four iso-topes have an identical exact polarizability.
+A correlation between potency of anesthetics and their
+solubility in hydrophobic pockets of proteins, binding
+there by van der Waals London forces, has been proven.15,16
+The interactions between inhaled anesthetics and proteins,
+including the concepts of van der Waals London forces, have
+been reviewed by Eckenhoff and Johansson.17 For van der
+Waals London forces, in brief, the attractive van der Waals
+forces include dipole–dipole, induced dipole–dipole, and
+London interactions. Dipole–dipole interactions result from
+attraction of unlike partial charges on molecules and groups,
+most of which have a permanent dipole moment. Induced
+dipole–dipole interactions result from the distortion of an
+atom’s electron cloud (polarizability) in the presence of a
+strong dipole moment. London force, also called dispersion
+force, a weak van der Waals force, is the case where momen-tarily opposed dipole moments (transient dipole moments)
+are formed due to normal fluctuations in the charge distri-bution when the electron cloud of one atom influences that
+of one nearby.17 Xenon binding to myoglobin16 must occur
+entirely through van der Waals interactions, being limited
+to induced dipole–dipole and London-type interactions.17 If
+the conclusion is true, van der Waals London forces cannot
+account for the difference in anesthetic potency among the
+four xenon isotopes in this study. It is well known that all
+molecules experience temporary fluctuating dipoles and that
+molecules having permanent dipoles will have boiling points
+rather higher than those only having temporary dipoles. To
+our knowledge, no difference in boiling point among xenon
+isotopes has been reported. Xenon isotopes may thus have
+similar dipole–dipole interactions if xenon has permanent
+dipoles. The strength of dispersion forces (London forces)
+varies considerably with the size of the molecule and its
+shape. The four xenon isotopes have negligible differences
+in mass and all are spheres in shape. Therefore, the four iso-topes may have identical London forces. The last kind of
+interaction arising from van der Waals forces is attributed to
+polarizability. A striking correlation between van der Waals
+force and rare gas (including xenon) polarizability has been
+proven,18 and there is a relationship between atomic polar-izability and properties such as volume, radius, softness,
+hardness, and potential electronegativity.19 Because the four
+xenon isotopes have an identical exact polarizability, their
+induced dipole–dipole interactions should also be identical.
+Taken together, van der Waals forces cannot give rise to the
+difference in anesthetic potency among the xenon isotopes.
+As the four isotopes have negligible difference in atomic
+mass and have no difference in outer electron shell, the
+explanation of the difference in anesthetic potency among
+them may be in the atomic nucleus. Nuclear spin is a
+quantum feature of the atomic nucleus. Quantum calcu-lations20,21 and experimental evidence22,23 have shown that
+atoms with nuclear spin of 1/2 are more capable of form-ing quantum entanglement than those with other types of
+nuclear spins. 129Xe (with a nuclear spin of 1/2) may thus be
+more capable of entangling with the other particles than the
+other xenon isotopes. Entangled particles send information
+at a distance, and this may be the case in conscious process-ing. Fisher20 theoretically presumed that the element host-ing the site for quantum consciousness—a putative “neural
+qubit”—must have nuclear spin of 1/2 because 1/2 spins
+are unlikely to be decohered. This presumption implies that
+the lower anesthetic potency of 129Xe may be due to it par-ticipating in and somehow enhancing conscious process-ing, and therefore partially antagonizing its own anesthetic
+potency. Fisher20 suggested nuclear spin was conveyed by
+adenosine triphosphate phosphorylation. Craddock et al.24
+proposed quantum memory is encoded by synaptically acti-vated calcium-calmodulin kinase II phosphorylation on
+microtubule lattices. The relation between nuclear spin and
+quantum processes in electron clouds as defined by Meyer-Overton is unclear, and deserves further study, as does the
+role of nuclear spin in mental states in general. Our results
+suggest that the quantum property of nuclear spin in the
+monoatomic anesthetic xenon promotes conscious pro-cesses at the xenon site of action, consistent with theories
+proposing quantum mechanisms in consciousness.
+Acknowledgments
+The authors thank Feng Ren, Ph.D., Department of Phys-ics, Wuhan University, Wuhan, China, for xenon quantum
+discussion; Ping Yin, Ph.D., Department of Statistics, Tongji
+Medical College, Huazhong University of Science and Tech-nology, Wuhan, China, for statistical assistance; and Nick.
+P. Franks, F.R.S., F.R.C.A., F.Med.Sci., Biophysics Section,
+Blackett Laboratory, Imperial College of Science, Technol-ogy and Medicine, London, United Kingdom, for reading
+the manuscript.
+
+[PDF page 6-7]
+Copyright © 2018, the American Society of Anesthesiologists, Inc. Wolters Kluwer Health, Inc. Unauthorized reproduction of this article is prohibited.Anesthesiology 2018; XXX:00-00 7 Li et al.
+
+[PDF page 7]
+Perioperative Medicine
+Research Support
+Supported by a grant from National Natural Science Foun-dation of China, Beijing, China (grant No. 81670068) to Dr.
+Zhang.
+Competing Interests
+The authors declare no competing interests.
+Correspondence
+Address correspondence to Dr. Zhang: Department of
+Anesthesiology, Union Hospital, Tongji Medical College,
+Huazhong University of Science and Technology, 1277 Jief-ang Street, Wuhan 430022, Hubei Province, China. zhangshi-hai@vip.163.com. Information on purchasing reprints may
+be found at www.anesthesiology.org or on the masthead
+page at the beginning of this issue. ANESTHESIOLOGY’s articles
+are made freely accessible to all readers, for personal use
+only, 6 months from the cover date of the issue.
+References
+1. Hameroff SR: The entwined mysteries of anesthesia and
+consciousness: Is there a common underlying mechanism?
+ANESTHESIOLOGY 2006; 105:400–12
+2. Katz Y: Anesthesia and the Meyer-Overton rule. II. A solution
+theory view of anesthesia and perturbations. J Theor Biol
+1994; 167:99–105
+3. Franks NP, Lieb WR: Mapping of general anaesthetic target
+sites provides a molecular basis for cutoff effects. Nature
+1985; 316:349–51
+4. Craddock TJ, Hameroff SR, Ayoub AT, Klobukowski M,
+Tuszynski JA: Anesthetics act in quantum channels in brain
+microtubules to prevent consciousness. Curr Top Med Chem
+2015; 15:523–33
+5. Franks NP, Dickinson R, de Sousa SL, Hall AC, Lieb WR: How
+does xenon produce anaesthesia? Nature 1998; 396:324
+6. Makulski W: (129) Xe and (131) Xe nuclear magnetic dipole
+moments from gas phase NMR spectra. Magn Reson Chem
+2015; 53:273–9
+7. Franks NP, Lieb WR: Molecular and cellular mechanisms of
+general anaesthesia. Nature 1994; 367:607–14
+8. Hendrickx JF, Eger EI 2nd, Sonner JM, Shafer SL: Is synergy
+the rule? A review of anesthetic interactions producing hyp-nosis and immobility. Anesth Analg 2008; 107:494–506
+9. Miller KW, Paton WD, Smith EB, Smith RA: Physicochemical
+approaches to the mode of action of general anesthetics.
+ANESTHESIOLOGY 1972; 36:339–51
+10. Whitehurst SL, Nemoto EM, Yao L, Yonas H: MAC of xenon
+and halothane in rhesus monkeys. J Neurosurg Anesthesiol
+1994; 6:275–9
+11. Pittinger CB, Faulconer A Jr, Knott JR, Pender JW, Morris LE,
+Bickford RG: Electro-encephalographic and other observa-tions in monkeys during xenon anesthesia at elevated pres-sures. ANESTHESIOLOGY 1955; 16:551–63
+12. Fukagawa H, Koyama T, Fukuda K: κ-Opioid receptor medi-ates the antinociceptive effect of nitrous oxide in mice. Br J
+Anaesth 2014; 113:1032–8
+13. Franks NP, Lieb WR: Molecular mechanisms of general anaes-thesia. Nature 1982; 300:487–93
+14. Craddock TJA, Kurian P, Preto J, Sahu K, Hameroff SR,
+Klobukowski M, Tuszynski JA: Anesthetic alterations of col-lective terahertz oscillations in tubulin correlate with clinical
+potency: Implications for anesthetic action and post-opera-tive cognitive dysfunction. Sci Rep 2017; 7:9877
+15. Vedula LS, Brannigan G, Economou NJ, Xi J, Hall MA, Liu R,
+Rossi MJ, Dailey WP, Grasty KC, Klein ML, Eckenhoff RG, Loll
+PJ: A unitary anesthetic binding site at high resolution. J Biol
+Chem 2009; 284:24176–84
+16. Akiyama R, Karino Y, Obama H, Yoshifuku A: Adsorption
+of xenon on a protein arising from the translational
+motion of solvent molecules. Phys Chem Chem Phys 2010;
+12:3096–101
+17. Eckenhoff RG, Johansson JS: Molecular interactions between
+inhaled anesthetics and proteins. Pharmacol Rev 1997;
+49:343–67
+18. Weber T, Riedle E, Neusser HJ, Schlag EW: Van der Waals
+bond lengths and electronic spectral shifts of the benzene-Kr and benzene-Xe complexes. Chem Phys Lett 1991;
+183:77–83
+19. Nagle JK: Atomic polarizability and electronegativity. J Am
+Chem Soc 1990; 112:4741–7
+20. Fisher MPA: Quantum cognition: The possibility of pro-cessing with nuclear spins in the brain. Ann Phys 2015;
+362:593–602
+21. Gauger EM, Rieper E, Morton JJ, Benjamin SC, Vedral V:
+Sustained quantum coherence and entanglement in the avian
+compass. Phys Rev Lett 2011; 106:040503
+22. Liu GQ, Po HC, Du J, Liu RB, Pan XY: Noise-resilient quantum
+evolution steered by dynamical decoupling. Nat Commun
+2013; 4:2254
+23. Brown RM, Tyryshkin AM, Porfyrakis K, Gauger EM, Lovett
+BW, Ardavan A, Lyon SA, Briggs GA, Morton JJ: Coherent
+state transfer between an electron and nuclear spin in (15)
+N@C(60). Phys Rev Lett 2011; 106:110504
+24. Craddock TJ, Tuszynski JA, Hameroff S: Cytoskeletal signal-ing: is memory encoded in microtubule lattices by CaMKII
+phosphorylation? PLoS Comput Biol 2012; 8:e1002421
+Copyright © 2018, the American Society of Anesthesiologists, Inc. Wolters Kluwer Health, Inc. Unauthorized reproduction of this article is prohibited.

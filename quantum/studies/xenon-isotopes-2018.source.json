@@ -1,0 +1,85 @@
+{
+  "slug": "xenon-isotopes-2018",
+  "title": "Nuclear Spin Attenuates the Anesthetic Potency of Xenon Isotopes in Mice: Implications for the Mechanisms of Anesthesia and Consciousness",
+  "authors": [
+    "Na Li",
+    "Dongshi Lu",
+    "Lei Yang",
+    "Huan Tao",
+    "Younian Xu",
+    "Chenchen Wang",
+    "Lisha Fu",
+    "Hui Liu",
+    "Yatisha Chummum",
+    "Shihai Zhang"
+  ],
+  "year": 2018,
+  "doi": "10.1097/ALN.0000000000002226",
+  "original_url": "https://pubmed.ncbi.nlm.nih.gov/29642079/",
+  "publisher_url": "https://doi.org/10.1097/ALN.0000000000002226",
+  "download_url": "https://www.researchgate.net/profile/Younian-Xu/publication/324457187_Nuclear_Spin_Attenuates_the_Anesthetic_Potency_of_Xenon_Isotopes_in_Mice_Implications_for_the_Mechanisms_of_Anesthesia_and_Consciousness/links/5b7d03b0a6fdcc5f8b5b1378/Nuclear-Spin-Attenuates-the-Anesthetic-Potency-of-Xenon-Isotopes-in-Mice-Implications-for-the-Mechanisms-of-Anesthesia-and-Consciousness.pdf",
+  "download_origin": "Public full-text PDF uploaded by coauthor Younian Xu to ResearchGate on 2018-08-22, read through web index.",
+  "local_file": "studies/xenon-isotopes-2018.txt",
+  "text_file": "studies/xenon-isotopes-2018.txt",
+  "access_status": "full_text_extraction_saved_original_pdf_download_blocked",
+  "pdf_file": null,
+  "access_notes": "All 576 indexed source lines covering seven PDF pages were saved and read. Direct binary download returned HTTP 403; publisher access returned 402/403. Saved text explicitly identifies itself as web extraction. No original PDF binary saved.",
+  "license": {
+    "pdf_notice": "Copyright © 2018, the American Society of Anesthesiologists, Inc. Wolters Kluwer Health, Inc. All Rights Reserved.",
+    "repository_notice": "Content may be subject to copyright.",
+    "reuse": "No open redistribution license found. PDF page 7 states journal articles become freely accessible for personal use six months after cover date."
+  },
+  "publication_type": "peer-reviewed animal experiment",
+  "pages": 7,
+  "version": "Author-uploaded early online publisher PDF with placeholder pagination; final publication Anesthesiology 129(2):271–277",
+  "retrieved_date": "2026-10-18",
+  "sha256": "b7702ae6ffd4d631d2ff6355027c3525c86c3c735d54a66c9f09fe9216149b2d",
+  "abstract_record_file": "studies/xenon-isotopes-2018.abstract.xml",
+  "abstract_record_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:29642079%20AND%20SRC:MED&resultType=core&format=xml",
+  "full_text_reviewed": true,
+  "reviewed_sections": [
+    "Materials and Methods",
+    "Results",
+    "Discussion",
+    "Figures 1–4"
+  ],
+  "observed_combination_results": {
+    "endpoint": "Loss of righting reflex: inability to roll over within 10 seconds",
+    "constant_isoflurane_percent": 0.5,
+    "n_per_isotope": 20,
+    "animals": "7-week-old C57BL/6 male mice",
+    "uncertainty": "standard deviation",
+    "measure": "reported loss of righting reflex ED50; xenon concentration percent",
+    "rows": [
+      {
+        "isotope": "132Xe",
+        "spin": 0,
+        "mean": 15,
+        "sd": 4
+      },
+      {
+        "isotope": "134Xe",
+        "spin": 0,
+        "mean": 16,
+        "sd": 5
+      },
+      {
+        "isotope": "131Xe",
+        "spin": "3/2",
+        "mean": 22,
+        "sd": 5
+      },
+      {
+        "isotope": "129Xe",
+        "spin": "1/2",
+        "mean": 23,
+        "sd": 7
+      }
+    ],
+    "source_pages": [
+      3,
+      4,
+      5
+    ]
+  }
+}

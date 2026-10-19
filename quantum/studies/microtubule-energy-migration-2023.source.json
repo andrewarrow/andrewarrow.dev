@@ -1,0 +1,33 @@
+{
+  "title": "Electronic Energy Migration in Microtubules",
+  "authors": [
+    "Aarat P. Kalra",
+    "Alfy Benny",
+    "Sophie M. Travis",
+    "Eric A. Zizzi",
+    "Austin Morales-Sanchez",
+    "Daniel G. Oblinsky",
+    "Travis J. A. Craddock",
+    "Stuart R. Hameroff",
+    "M. Bruce MacIver",
+    "Jack A. Tuszyński",
+    "Sabine Petry",
+    "Roger Penrose",
+    "Gregory D. Scholes"
+  ],
+  "year": 2023,
+  "doi": "10.1021/acscentsci.2c01114",
+  "original_url": "https://doi.org/10.1021/acscentsci.2c01114",
+  "download_url": "https://iris.polito.it/retrieve/4ffffcdf-553b-4b06-a10b-f578a6249072/acscentsci.2c01114.pdf",
+  "access_status": "open_access_full_text",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "version": "Publisher PDF, advance-online version with provisional page letters A–J; journal citation ACS Central Science 9(3), 352–361.",
+  "verification_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10037452/fullTextXML",
+  "local_file": "studies/microtubule-energy-migration-2023.pdf",
+  "text_file": "studies/microtubule-energy-migration-2023.txt",
+  "downloaded_date": "2026-10-18",
+  "file_size_bytes": 7792067,
+  "sha256": "8f525a7f4820dcd1994f338adf2f803ae7adaef091e093a2229df6ec0f25180b",
+  "verified_pdf_signature": true
+}

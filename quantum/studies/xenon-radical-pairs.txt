@@ -1,0 +1,669 @@
+                                                                                                      www.nature.com/scientificreports
+
+
+
+
+                OPEN             Radical pairs may play a role
+                                 in xenon‑induced general
+                                 anesthesia
+                                 Jordan Smith1*, Hadi Zadeh Haghighi1, Dennis Salahub2 & Christoph Simon1*
+
+                                 Understanding the mechanisms underlying general anesthesia would be a key step towards
+                                 understanding consciousness. The process of xenon-induced general anesthesia has been shown
+                                 to involve electron transfer, and the potency of xenon as a general anesthetic exhibits isotopic
+                                 dependence. We propose that these observations can be explained by a mechanism in which the
+                                 xenon nuclear spin influences the recombination dynamics of a naturally occurring radical pair of
+                                 electrons. We develop a simple model inspired by the body of work on the radical-pair mechanism in
+                                 cryptochrome in the context of avian magnetoreception, and we show that our model can reproduce
+                                 the observed isotopic dependence of the general anesthetic potency of xenon in mice. Our results are
+                                 consistent with the idea that radical pairs of electrons with entangled spins could be important for
+                                 consciousness.
+
+
+                                 Understanding consciousness remains one of the big open questions in ­neuroscience1, and in science in general.
+                                 The study of anesthesia is one of the key approaches to elucidating the processes underlying ­consciousness2,3, but
+                                 there are still significant open questions regarding the physical mechanisms of anesthesia ­itself4.
+                                     One anesthetic agent that has been studied extensively is xenon. Xenon has been shown experimentally to
+                                 produce a state of general anesthesia in several species, including Drosophila5, ­mice6, and ­humans7. While the
+                                 anesthetic properties of xenon were discovered in ­19398, the exact underlying mechanism by which it produces
+                                 anesthetic effects remains unclear even after decades of ­research9. Our focus here is on this underlying physical
+                                 mechanism, and there are important hints provided by two recent publications.
+                                     First, Turin et al.5 showed that when xenon acts anesthetically on Drosophila specific electron spin resonance
+                                 (ESR) signals, consistent with free electrons, can be observed. Based on this observation, Turin et al.5 proposed
+                                 that the anesthetic action of xenon may involve some form of electron transfer. They supported their proposal
+                                 by density-functional theory (DFT) calculations showing the effect of xenon on nearby molecular orbitals. Sec-
+                                 ond, Li et al.6 showed experimentally that isotopes of xenon with non-zero nuclear spin had reduced anesthetic
+                                 potency in mice compared with isotopes with no nuclear spin.
+                                     If the process by which xenon produces anesthetic effects includes free-electron transfer as well as nuclear-spin
+                                 dependence, a mechanistic framework proposed to explain xenon-induced general anesthesia should possess
+                                 these characteristics. Here we show that a model involving a radical pair of electrons (RP) and the subsequent
+                                 modulation of the RP spin dynamics by hyperfine interactions (HFIs) is consistent with these assumptions.
+                                     The radical pair mechanism (RPM) was first proposed more than 50 years ­ago10. The rupture of a chemical
+                                 bond can create a pair of electrons, where the electrons are localized on two different molecular entities, whose
+                                 spins are entangled in a singlet ­state11. The magnetic dipole moment associated with electron spin can interact
+                                 and couple with other magnetic dipoles and external magnetic fields, including HFIs and Zeeman ­interactions12.
+                                 As a consequence of such interactions, the initial singlet state can evolve into a more complex state that has both
+                                 singlet and triplet components. Eventually, the coherent oscillation of the RP between singlet and triplet states
+                                 ceases and the electrons may recombine (for the singlet component of the state) or diffuse apart to form various
+                                 triplet ­products13. The coherent spin dynamics and spin-dependent reactivity of RPs allow magnetic interactions
+                                 which are six orders of magnitude smaller than the thermal energy, kB T , to have predictable and reproducible
+                                 effects on chemical reaction ­yields14,15.
+
+
+
+                                 1
+                                  Department of Physics and Astronomy, Institute for Quantum Science and Technology, Quantum Alberta,
+                                 and Hotchkiss Brain Institute, University of Calgary, Calgary, AB T2N 1N4, Canada. 2Department of Chemistry,
+                                 Department of Physics and Astronomy, Institute for Quantum Science and Technology, Quantum Alberta,
+                                 Centre for Molecular Simulation, University of Calgary, Calgary, AB T2N 1N4, Canada. *email: jordan.smith1@
+                                 ucalgary.ca; csimo@ucalgary.ca
+
+
+Scientific Reports |   (2021) 11:6287                | https://doi.org/10.1038/s41598-021-85673-w                                                   1
+
+                                                                                                                                               Vol.:(0123456789)
+          www.nature.com/scientificreports/
+
+
+                                                 The RPM has become a prominent concept in quantum ­biology16. In particular, it has been studied in detail
+                                             for the cryptochrome protein as a potential explanation for avian ­magnetoreception14,17–22. In the present work
+                                             we apply the principles and methods used to investigate ­cryptochrome15 to xenon-induced general anesthesia.
+                                                 General anesthetics produce widespread neurodepression in the central nervous system by enhancing inhibi-
+                                             tory neurotransmission and reducing excitatory neurotransmission across ­synapses23,24. Three ligand-gated ion-
+                                             channels in particular have emerged as likely molecular targets for a range of anesthetic ­agents25: the inhibitory
+                                             glycine receptor, the inhibitory γ -aminobutyric acid type-A ­(GABAA) receptor, and the excitatory N-methyl-D-
+                                             aspartate (NMDA) ­receptor26. NMDA receptors require both glycine and glutamate for excitatory ­activation27,
+                                             and it has been suggested that xenon’s anesthetic action is related to xenon atoms participating in competitive
+                                             inhibition of the NMDA receptor in central-nervous-system neurons by binding at the glycine binding site in
+                                             the NMDA ­receptor25,26,28,29. Armstrong et al.25,28 propose that the glycine binding site of the NMDA receptor
+                                             contains aromatic residues such as tryptophan (Trp), similar to those found in cryptochrome, which is consistent
+                                             with the possibility that the anesthetic action of xenon involves a spin-dependent process similar to the RPM
+                                             thought to occur in cryptochrome. Let us note that other targets have also been proposed for many anesthetics,
+                                             e.g. ­tubulin30. In the following we focus on the NMDA receptor to be specific, but our model is quite general
+                                             and could well apply to other targets.
+                                                 We suggest that the (possibly partial) electron transfer related to xenon’s anesthetic action that is evidenced
+                                             by Turin et al.5 plays a role in the recombination dynamics of a naturally occurring RP and that, for isotopes of
+                                             xenon with a non-zero nuclear spin, this nuclear spin couples with (at least one of) the electron spins of such a
+                                             RP, affecting the reaction yields of the RP and hence xenon’s anesthetic action. Such a mechanism is consistent
+                                             with the experimental results of Li et al.6 that xenon isotopes with non-zero nuclear spin have reduced anesthetic
+                                             potency compared to isotopes with zero nuclear spin.
+                                                 Aromatic residues are important for the binding of xenon and glycine at the glycine binding site of the NMDA
+                                             receptor. While Armstrong et al.28 have shown that phenylalanine residues within the NMDA receptor are neces-
+                                             sary for the binding of xenon in the active site, the redox inactivity of ­phenylalanine31,32 makes it unlikely to be
+                                             involved in RP formation. Trp, however, is redox active, as evidenced by its participation in RP formation in the
+                                             context of cryptochrome, and could feasibly be involved in the formation of a RP here. It has been suggested that
+                                             water (a source of oxygen) may be present in the NMDA ­receptor25,27, and Aizenman et al.33 as well as Girouard
+                                             et al.34 suggest that reactive oxygen species (ROS) may be found within the NMDA receptor. Further, Turin and
+                                            ­Skoulakis35 found that when a sample of xenon gas was administered to Drosophila without oxygen gas present
+                                             in the sample, no spin changes were observed in the flies. Motivated by these observations, we propose that a Trp
+                                             residue located in the glycine binding site of the NMDA receptor could be oxidized by a nearby ROS, forming a
+                                             [O·−                                                                                    ·−
+                                                2 TrpH ] RP. We consider a scenario in which a xenon atom interacts with the O 2 radical electron, shifting
+                                                         ·+
+                                             some of the electron density from the oxygen onto the xenon atom (see also “Methods”, Fig. 10), which results in
+                                             HFI between the xenon nuclear spin and the O·−     2 radical electron spin. The xenon nuclear spin is consequently
+                                             able to influence the spin-dynamics and ultimate product yields of the [O·−  2 TrpH ] RP, provided that the hyper-
+                                                                                                                                 ·+
+                                             fine interaction is sufficiently strong compared to the spin relaxation and reaction rates. Similarly to our above
+                                             remark on the target receptor, here we focus on one specific potential radical pair for concreteness, but other
+                                             implementations of the RPM may also be viable explanations for the mentioned experimental observations.
+                                                 Given that cryptochrome is one case in which the RPM has been studied extensively, we propose that by
+                                             recognizing commonalities in the biological and chemical environments in which magnetoreception and xenon-
+                                             induced general anesthesia are thought to take place, analytical and numerical techniques that have been used to
+                                             study cryptochrome may be adapted and applied to the case of xenon-induced anesthesia, potentially providing
+                                             insight into general anesthetic mechanisms. We explore the feasibility of such a mechanism by determining
+                                             and analyzing the necessary parameters and conditions under which the spin-dependent RP product yields can
+                                             explain the experimental isotope-dependent anesthetic effects reported by Li et al.6.
+
+                                            Results
+                                            Predicting experimental xenon anesthesia results using the RPM model. Quantifying experi-
+                                            mental anesthetic potency. In the work of Li et al.6, a metric referred to as the “loss of righting reflex ED50”
+                                            (LRR-ED50) was defined using the concentration of xenon administered to mice, in which the mice were no
+                                            longer able to right themselves within 10 s of being flipped onto their backs. The LRR-ED50 metric was reported
+                                            to be correlated with consciousness in mice, and was measured experimentally for 132Xe, 134Xe, 131Xe, and 129Xe
+                                            to be 70(4)%, 72(5)%, 99(5)%, and 105(7)%, ­respectively6.
+                                                Here we define the anesthetic potency as the inverse of the LRR-ED50 metric. In order to quantify the rela-
+                                            tive anesthetic potency of the various xenon isotopes, the potency of 132Xe (with I = 0) is normalized to 1. The
+                                            inverse of the LRR-ED50 value of isotopes 131Xe and 129Xe is then divided by that of 132Xe. The relative isotopic
+                                            anesthetic potencies are quantified as Pot0 = 1, Pot3/2 = 0.71(8), and Pot1/2 = 0.67(8) for 132Xe, 131Xe, and 129
+                                            Xe, respectively, as shown in Table 1, where Pot0 is the relative potency of xenon with nuclear spin I = 0, and
+                                            likewise for Pot3/2 and Pot1/2.
+
+                                            RPM model. We have developed a RPM model to predict anesthetic potency by making a connection with
+                                            the relative singlet yield for different isotopes, as described in more detail below. The model that we have used
+                                            here was developed using a hypothetical xenon-NMDA receptor RP system, based on the information about
+                                            xenon action sites mentioned previously and shown in Fig. 1. Our model was also developed by considering
+                                            the cryptochrome case as related to magnetoreception. Here we have proposed that the xenon-NMDA receptor
+                                            RP system may involve xenon, ROS, and Trp, located in the glycine-binding site of the NMDA receptor. A spin-
+
+
+
+          Scientific Reports |   (2021) 11:6287 |                https://doi.org/10.1038/s41598-021-85673-w                                                     2
+
+Vol:.(1234567890)
+www.nature.com/scientificreports/
+
+
+                                   Isotope               Nuclear spin, I            LRR-ED50 (%)                Pot
+                                  132Xe                  0                           70 (4)                     1
+                                  134Xe                  0                           72 (5)                     –
+                                  131Xe                  3/2                         99 (5)                     0.71 (8)
+                                  129Xe                  1/2                        105 (7)                     0.67 (8)
+
+
+                                  Table 1.  Xenon isotopic nuclear spin, LRR-ED50, and Pot values for xenon isotopes 132Xe, 134Xe, 131Xe, and 129
+                                  Xe. LRR-ED50 values as reported in the work of Li et al.6
+
+
+
+
+                                  Figure 1.  The image shows the predicted position of xenon atoms (red spheres) in the glycine site of the
+                                  NMDA receptor, together with the aromatic residues phenylalanine 758, phenylalanine 484, and tryptophan
+                                  ­73128.
+
+
+                                  correlated RP of electrons (termed electrons A and B), possibly in the form of [O·−        2 TrpH ], interact with xenon,
+                                                                                                                                     ·+
+                                  where the O·− 2  radical   electron (electron A) spin couples with non-zero    xenon      nuclear spin.
+                                      The number of xenon atoms located in the active site when anesthetic action takes place is not yet completely
+                                  clear, and the work of Dickinson et al.25 suggests that the number of xenon atoms simultaneously present in the
+                                  active site ranges probabilistically between zero and three, with single-xenon occupation proposed to be most
+                                  probable. Here we show that the simplest and most probable case of a single xenon atom occupying the active
+                                  site allows us to explain the anesthetic potency ratios derived from the experimental results of Li et al.6 The
+                                  additional degrees of freedom implicit in more complex Hilbert spaces, such as the cases of two and three-xenon
+                                  occupation states, only aid the model in explaining the experimental results of Li et al.6 We therefore focus our
+                                  analysis on the single-xenon case.
+                                      The Hamiltonian of the RPM in the case of xenon-induced anesthesia depends not only upon Zeeman interac-
+                                  tions and the number of xenon atoms present in the glycine binding site of the NMDA receptor, but also upon the
+                                  assumed HFIs. Due to the likely randomized orientation of the relevant receptors in the brain, we consider only
+                                  the isotropic Fermi contact contribution to the HFIs. In the simulation involving a single xenon atom occupying
+                                  the active site, it is assumed that the O·−2 radical electron couples only to the xenon nucleus. Most of our calcula-
+                                  tions below are based on the simplifying assumption that the TrpH·+ electron (electron B) couples only to the
+                                  nuclear spin of the indole nitrogen in TrpH·+, following the treatment of ­Hore15, but we also briefly consider a
+                                  separate scenario in which electron B couples only to the nuclear spin of the TrpH·+ β-hydrogen, which we select
+                                  because it has the largest isotropic hyperfine coupling constant of all 14 nuclear spins in tryptophan according
+                                  to Maeda et al.36. The Hamiltonian describing these interactions is given as
+                                                                                           
+                                                                         Ĥ = ω ŜAz + ŜBz + a1 ŜA · Î1 + a2 ŜB · Î2 ,                             (1)
+
+                                  where ŜA and ŜB are the spin operators of radical electrons A and B, respectively, Î1 is the nuclear spin operator
+                                  of the xenon nucleus, Î2 is the nuclear spin operator of the TrpH·+ residue (where I = 1 for the indole nitrogen,
+                                  and I = 1/2 for the β-hydrogen), a2 = γe a2′ is the hyperfine coupling constant describing the strength of the HFI
+
+
+Scientific Reports |   (2021) 11:6287 |                 https://doi.org/10.1038/s41598-021-85673-w                                                       3
+
+                                                                                                                                                    Vol.:(0123456789)
+          www.nature.com/scientificreports/
+
+
+
+
+                                            Figure 2.  The dependence of the agreement between relative anesthetic potency and singlet yield ratio on
+                                            changes in the hyperfine coupling constant a1′ and the RP spin-coherence relaxation rate r for a1′ ∈ [0, 5000] µT
+                                            and r ∈ [5.0 × 105 , 1.0 × 109 ] s−1, using a2′ = 347 µT, B = 50 µT, and k = 5.5 × 107 s−1. The singlet yield
+                                            ratio SR is calculated using a1 = (γn /|γ129 Xe |)γe a1′ , where the magnitude of the isotopic nuclear gyromagnetic
+                                            correction factor, (γn /|γ129 Xe |), is normalized for 129Xe. The model can explain the experimentally ­derived6
+                                            relative anesthetic potency of xenon for values of a1′ and r where |Pot1/2 − SR1/2 |, |Pot3/2 − SR3/2 | ≤ 0.08. (a)
+                                            The absolute difference between Pot1/2 and SR1/2. (b) The absolute difference between Pot3/2 and SR3/2.
+
+
+
+                                           between radical electron B and the nuclear spin in TrpH·+ (a2′ = 347 µT for the indole N, and a2′ = 1600 µT
+                                           for the β-hydrogen36), a1 = (γn /|γ129 Xe |)γe a1′ is the hyperfine coupling constant describing the HFI strength
+                                           between radical electron A and the xenon nucleus, where γn is the nuclear gyromagnetic ratio of a given xenon
+                                           isotope, γ129 Xe is the nuclear gyromagnetic ratio of 129Xe, γe is the gyromagnetic ratio of an electron, and ω is
+                                           the Larmor precession frequency of the electrons about an external magnetic ­field15. The Larmor precession
+                                           frequency is defined as ω = γe B, where B is the external magnetic field strength (assumed to be along the z-axis).
+                                           In the calculation of a1, the correction factor of (γn /|γ129 Xe |) is included to account for the unique nuclear
+                                           gyromagnetic ratios of the various xenon isotopes, where the magnitude of this correction factor is normal-
+                                           ized to 1 for 129Xe. The isotopic xenon gyromagnetic ratios are taken to ­be37 γ129 Xe = −7.441 × 107 rad(sT)−1,
+                                           γ131 Xe = 2.206 × 107 rad(sT)−1, and γ132 Xe = 0. Consequently, the hyperfine coupling constant a1′ is multiplied
+                                           by factors [−1, (2.206/7.441), 0] when calculated for each respective isotope. It should be pointed out that we
+                                           focus here on the HFIs previously described, and that interactions between the two electron spins, as well as
+                                           potential interactions between the electron spins and other nuclei are neglected.
+
+                                            Using DFT to calculate hyperfine coupling constants. As a means of checking if the prediction results of our
+                                            xenon-induced anesthesia model are reasonable, we use DFT to study the interaction between O·−    2 and xenon,
+                                            and to calculate the value of the expected hyperfine coupling constant a1,exp
+                                                                                                                     ′    . Depending on the functional and
+                                            basis-set used, we find a range of values a1,exp
+                                                                                       ′     ∈ [955, 2644] µT. We also use DFT analysis to calculate a value
+
+
+          Scientific Reports |   (2021) 11:6287 |                https://doi.org/10.1038/s41598-021-85673-w                                                   4
+
+Vol:.(1234567890)
+www.nature.com/scientificreports/
+
+
+
+
+                                  Figure 3.  The dependence of the agreement between relative anesthetic potency and singlet yield ratio on
+                                  changes in the hyperfine coupling constant a1′ and the RP spin-coherence relaxation rate r for a1′ ∈ [0, 5000] µT
+                                  and r ∈ [5.0 × 105 , 1.0 × 109 ] s−1, using a2′ = 347 µT, B = 50 µT, and k = 5.5 × 107 s−1. The singlet yield
+                                  ratio SR is calculated using a1 = (γn /|γ129 Xe |)γe a1′ , where the magnitude of the isotopic nuclear gyromagnetic
+                                  correction factor, (γn /|γ129 Xe |), is normalized for 129Xe. The model can explain the experimentally ­derived6
+                                  relative anesthetic potency of xenon where (|Pot1/2 − SR1/2 | ≤ 0.08) and (|Pot3/2 − SR3/2 | ≤ 0.08) intersect,
+                                  shaded in yellow.
+
+
+
+                                  of a2,exp
+                                      ′     = 347 µT for the hyperfine coupling between the radical electron on TrpH·+ and the nitrogen nuclear
+                                  spin. Our value for the hyperfine coupling between the radical electron on TrpH·+ and the β-hydgrogen nuclear
+                                  spin is taken from Maeda et al.36. More details about our DFT analysis can be found in “Methods”.
+
+                                  Determination of singlet yield ratios. The eigenvalues and eigenvectors of the Hamiltonian can be used to deter-
+                                  mine the ultimate singlet yield (S ) for all times much greater than the radical-pair lifetime (t ≫ τ)15:
+                                                                            4M 4M
+                                                              1    k      1               2
+                                                                                                       k(k + r)
+                                                      �S =      −       +         �m|P̂ S |n�                        ,                              (2)
+                                                              4 4(k + r) M                       (k + r) + (ωm − ωn )2
+                                                                                                        2
+                                                                                    m=1 n=1
+
+                                  where, following the methodology used by ­Hore15 in the context of cryptochrome, M is the total number of
+                                  nuclear spin configurations, P̂ S is the singlet projection operator, |m� and |n� are eigenstates of Ĥ with correspond-
+                                  ing energies of ωm = �m|Ĥ|m� and ωn = �n|Ĥ|n�, respectively, k = τ −1 is inverse of the RP lifetime, and r = τc−1
+                                  is the inverse of the RP spin-coherence lifetime.
+                                      The spin-dependent RP singlet yield is calculated for each xenon isotope under consideration. The singlet
+                                  yield ratio (SR) for each xenon nuclear spin value is then calculated by dividing the singlet yield obtained using
+                                  the given spin value by the singlet yield obtained using spin I = 0, resulting in the ratio of spin-1/2 singlet yield
+                                  to spin-0 singlet yield being expressed as SR1/2 , and the ratio of spin-3/2 singlet yield to spin-0 singlet yield
+                                  expressed as SR3/2 , with the singlet yield ratio of spin-0 being normalized to SR0 = 1. The calculated singlet
+                                  yield ratios are compared with the xenon potency ratios (Pot) derived using the data reported by Li et al.6, as
+                                  described above.
+                                      Here we analyze the sensitivity of the singlet yield ratios to changes in the HFI between radical electron A
+                                  and the xenon nucleus (a1′ ), RP reaction rate (k), RP spin-coherence relaxation rate (r), and external magnetic
+                                  field strength (B). The dependence of the quantity |Pot − SR| on a1′ and r is shown in Figs. 2 and 3, the depend-
+                                  ence of |Pot − SR| on a1′ and k is shown in Figs. 4 and 5, and the dependence of |Pot − SR| on r and k is shown
+                                  in Figs. 6 and 7. The relationship between SR and B can be seen in Fig. 8. We also look at the dependence of the
+                                  singlet yield ratios on the RP spin-coherence relaxation rate and the RP reaction rate in the case where electron
+                                  B couples with the TrpH·+ β-hydrogen. The dependence of |Pot − SR| on r and k in the electron B-β-hydrogen
+                                  case can be seen in Fig. 9. Our goal is to find regions in parameter space such that the spin-dependent singlet
+                                  yield ratios match the anesthetic isotopic potency ratios, i.e., the quantities |Pot1/2 − SR1/2 | and |Pot3/2 − SR3/2 |
+                                  should be smaller than the experimental uncertainties in the anesthetic potency.
+
+
+
+Scientific Reports |   (2021) 11:6287 |                 https://doi.org/10.1038/s41598-021-85673-w                                                      5
+
+                                                                                                                                                  Vol.:(0123456789)
+          www.nature.com/scientificreports/
+
+
+
+
+                                            Figure 4.  The dependence of the agreement between relative anesthetic potency and singlet yield ratio
+                                            on changes in the hyperfine coupling constant a1′ and the RP reaction rate k for a1′ ∈ [0, 5000] µT and
+                                            k ∈ [5.0 × 105 , 1.0 × 109 ] s−1, using a2′ = 347 µT, B = 50 µT, and r = 5.0 × 106 s−1. The singlet yield ratio
+                                            SR is calculated using a1 = (γn /|γ129 Xe |)γe a1′ , where the magnitude of the isotopic nuclear gyromagnetic
+                                            correction factor, (γn /|γ129 Xe |), is normalized for 129Xe. The model can explain the experimentally ­derived6
+                                            relative anesthetic potency of xenon for values of a1′ and k where |Pot1/2 − SR1/2 |, |Pot3/2 − SR3/2 | ≤ 0.08. (a)
+                                            The absolute difference between Pot1/2 and SR1/2. (b) The absolute difference between Pot3/2 and SR3/2.
+
+
+
+                                                The parameter space for which our model correctly predicts the experimentally derived anesthetic potency
+                                            results within uncertainty is quite broad for any given parameter, depending on the fixed values of the other
+                                            parameters, and is found to be a1′ ∈ [1207, 5000] µT (normalized for 129Xe), r ∈ [5.0 × 105 , 1.7 × 108 ] s−1,
+                                            k ∈ [1.8 × 107 , 5.5 × 108 ] s−1 for a2′ = a2,exp
+                                                                                        ′     = 347 µT and B = 50 µT, where the searched parameter space
+                                            includes a1 ∈ [0, 5000] µ T, and r, k ∈ [5.0 × 105 , 1.0 × 109 ] s−1. The parameter values that minimize the
+                                                       ′
+                                            “combined error” CE = |Pot1/2 − SR1/2 | + |Pot3/2 − SR3/2 | are found to be a1′ = 1896 µT, k = 8.6 × 107 s−1,
+                                            and r = 1.0 × 106 s−1, where a2′ = a2,exp′    = 347 µT and B = 50 µ T are fixed, resulting in SR1/2 = 0.70 and
+                                            SR3/2 = 0.71. It should be noted here that while |Pot3/2 − SR3/2 | is less than |Pot1/2 − SR1/2 | for these parameter
+                                            values, both SR3/2 and SR1/2 are consistent with the experimental results of Li et al.6, within their uncertainties.
+                                            Further experiments with less uncertainty about the relative anesthetic potencies of spin-3/2 and spin-1/2 xenon
+                                            isotopes would be of interest.
+
+                                            Discussion
+                                            The main question that we set out to answer in this study was whether the RPM can provide a viable explanation
+                                            for the isotope effects observed by Li et al.6. Our above results answer this question in the affirmative. A simple
+                                            radical pair model with reasonable parameter values can reproduce the observed anesthetic potencies.
+                                                To be concrete, we proposed a specific scenario involving a [O·−
+                                                                                                               2 TrpH ] RP, where the oxygen molecule inter-
+                                                                                                                      ·+
+                                            acts with a single xenon atom. This proposal is motivated by the suggestions that Trp is present in the relevant
+
+
+          Scientific Reports |   (2021) 11:6287 |                https://doi.org/10.1038/s41598-021-85673-w                                                       6
+
+Vol:.(1234567890)
+www.nature.com/scientificreports/
+
+
+
+
+                                  Figure 5.  The dependence of the agreement between relative anesthetic potency and singlet yield ratio
+                                  on changes in the hyperfine coupling constant a1′ and the RP reaction rate k for a1′ ∈ [0, 5000] µT and
+                                  k ∈ [5.0 × 105 , 1.0 × 109 ] s−1, using a2′ = 347 µT, B = 50 µT, and r = 5.0 × 106 s−1. The singlet yield ratio
+                                  SR is calculated using a1 = (γn /|γ129 Xe |)γe a1′ , where the magnitude of the isotopic nuclear gyromagnetic
+                                  correction factor, (γn /|γ129 Xe |), is normalized for 129Xe. The model can explain the experimentally ­derived6
+                                  relative anesthetic potency of xenon where (|Pot1/2 − SR1/2 | ≤ 0.08) and (|Pot3/2 − SR3/2 | ≤ 0.08) intersect,
+                                  shaded in yellow.
+
+
+
+                                  binding site of the NMDA ­receptor28 and that ROS may be found within the NMDA ­receptor33,34, as well as the
+                                  observation that oxygen should be present when xenon is administered to Drosophila in order to observe the
+                                  ESR signals that correlate with xenon-induced general ­anesthesia35. The RP spin-coherence relaxation rate, RP
+                                  reaction rate, and hyperfine coupling parameters were varied to reproduce the experimental results of Li et al.6,
+                                  and the resulting range of values of the hyperfine coupling constant a1′ was found to agree with the range of values
+                                  calculated for xenon in the proximity of O·−2 using DFT analysis.
+                                      One potential challenge for the specific scenario involving O·− 2 are the requirements on the spin relaxation
+                                  rate r. Hogben et al.38 and Player and ­Hore39 have discussed a radical pair involving O·− 2 in the context of mag-
+                                  netoreception. These authors argue that for free O ·− 2 in solution the spin relaxation lifetime is expected to be
+                                  below 1 ns due to molecular rotation. The relaxation rate requirements that we find from our calculations come
+                                  within about an order of magnitude of this value, as shown in Figs. 2, 3, 6 and 7. The gap widens to about two
+                                  orders of magnitude if one considers β-hydrogen as the dominant nuclear spin for the electron on Trp instead of
+                                  nitrogen, as shown in Fig. 9. However, the same authors have also pointed out that the oxygen spin relaxation rate
+                                  could be reduced if the biological environment reduces the molecular symmetry and inhibits molecular rotation.
+                                  Moreover ­Kattnig40 has shown that the involvement of a paramagnetic scavenger can significantly reduce the
+                                  constraints on the spin relaxation rate in the context of magnetoreception, which suggests the possibility that
+                                  the same principle may apply to isotope effects in the present context. Alternatively, other RPs not including O·− 2
+                                  might also be able to explain the isotope effects.
+                                      To gain a deeper understanding of the RP formation and recombination dynamics within our proposed
+                                  scenario, it would be of interest to perform DFT modelling of the electron transfer between ROS and Trp with
+                                  and without the presence of xenon. Such modelling could be expanded on by exploring the molecular dynamics
+                                  of the binding site using quantum mechanics/molecular mechanics (QM/MM) simulation techniques, similar
+                                  to those used in the case of ­cryptochrome41, to more clearly understand the stability of the radicals and other
+                                  characteristics of the currently proposed RP system. In particular it would be of interest to attempt to theoreti-
+                                  cally reproduce the experimental ESR results of Turin et al.5.
+                                      When considering the sensitivity of the model to changes in external magnetic field, as shown in Fig. 8, the
+                                  range of B values that produce agreement between SR and Pot is given as B ∈ [0, 2525] µT, and includes the
+                                  geomagnetic field at different geographic locations (25 to 65 µT)42. This result indicates that for external field
+                                  values vastly larger (by approximately 2 orders of magnitude) than the geomagnetic field, the anesthetic potency
+                                  of xenon may be significantly different than that observed by Li et al.6; specifically, the potency of 131Xe may be
+                                  greater than experimentally observed. It would be of interest to investigate the experimental effects of the external
+                                  magnetic field strength on xenon-induced general anesthesia in vivo. For example, such an experiment could
+
+
+Scientific Reports |   (2021) 11:6287 |                https://doi.org/10.1038/s41598-021-85673-w                                                    7
+
+                                                                                                                                                Vol.:(0123456789)
+          www.nature.com/scientificreports/
+
+
+
+
+                                           Figure 6.  The dependence of the agreement between relative anesthetic potency and singlet yield ratio
+                                           on the relationship between r and k for r ∈ [1.0 × 106 , 1.0 × 108 ] s−1 and k ∈ [5.0 × 106 , 5.0 × 108 ]
+                                           s−1, using a1′ = 1896 µT, a2′ = 347 µT, and B = 50 µT. The singlet yield ratio SR is calculated using
+                                           a1 = (γn /|γ129 Xe |)γe a1′ , where the magnitude of the isotopic nuclear gyromagnetic correction factor,
+                                           (γn /|γ129 Xe |), is normalized for 129Xe. The model can explain the experimentally ­derived6 relative anesthetic
+                                           potency of xenon for values of r and k where |Pot1/2 − SR1/2 |, |Pot3/2 − SR3/2 | ≤ 0.08. (a) The absolute
+                                           difference between Pot1/2 and SR1/2. (b) The absolute difference between Pot3/2 and SR3/2.
+
+
+                                             involve the measurement of anesthetic potency of xenon isotopes with various nuclear spin values, including
+                                             both zero spin and non-zero spin, in an environment with controllable external magnetic field.
+                                                In conclusion, our results suggest that xenon-induced general anesthesia may fall within the realm of quantum
+                                             biology, and be similar in nature to the proposed mechanism of magnetoreception involving the cryptochrome
+                                            ­protein17.
+                                                This also raises the question whether the action of other anesthetics involves similar mechanisms to the one
+                                             proposed here. It would be interesting to explore isotopic nuclear-spin effects as well as magnetic field effects in
+                                             experiments with other general anesthetic agents that are thought to function similarly to xenon, such as nitrous
+                                             oxide and ­ketamine43,44.
+                                                General anesthesia is clearly related to consciousness, and it has been proposed that consciousness (and other
+                                             aspects of cognition) could be related to large-scale ­entanglement45–48. RPs are entangled and could be a key
+
+
+
+
+          Scientific Reports |   (2021) 11:6287 |                https://doi.org/10.1038/s41598-021-85673-w                                                    8
+
+Vol:.(1234567890)
+www.nature.com/scientificreports/
+
+
+
+
+                                 Figure 7.  The dependence of the agreement between relative anesthetic potency and singlet yield ratio
+                                 on the relationship between r and k for r ∈ [1.0 × 106 , 1.0 × 108 ] s−1 and k ∈ [5.0 × 106 , 5.0 × 108 ]
+                                 s−1, using a1′ = 1896 µT, a2′ = 347 µT, and B = 50 µT. The singlet yield ratio SR is calculated using
+                                 a1 = (γn /|γ129 Xe |)γe a1′ , where the magnitude of the isotopic nuclear gyromagnetic correction factor,
+                                 (γn /|γ129 Xe |), is normalized for 129Xe. The model can explain the experimentally ­derived6 relative anesthetic
+                                 potency of xenon where |Pot1/2 − SR1/2 | ≤ 0.08 and |Pot3/2 − SR3/2 | ≤ 0.08 intersect, shaded in yellow.
+
+
+
+                                  element in the creation of such large-scale entanglement, especially when combined with the suggested ability of
+                                  axons to serve as waveguides for ­photons49. Viewed in this—admittedly highly speculative—context, the results
+                                  of the present study are consistent with the idea that general anesthetic agents, such as xenon, could interfere
+                                  with this large-scale entanglement process, and thus with consciousness.
+
+                                  Methods
+                                  DFT analysis. We used the Gaussian ­package50 with B3LYP functional and TZVP basis set for our DFT
+                                  calculation of a2,exp
+                                                   ′   .
+                                      The range of values calculated for a1,exp
+                                                                          ′      using DFT analysis varied widely (a1,exp
+                                                                                                                    ′     ∈ [955, 2644] µT), depending
+                                  on the functional and basis set used. The calculation is also very sensitive to the separation between O·− 2 and Xe,
+                                  and the potential energy is minimized for a separation of ∼ 3 Å. Ultimately, the ORCA ­package51 was used for
+                                  our Xe–O·−  2 DFT calculations, and the molecular structure was optimized using the dispersion-corrected PBE0
+                                  functional and def2-TZVP basis set. The resulting calculation gives a1,exp′   = 1767 µT, which is close to the value
+                                  of a1′ for which our model minimizes the quantity CE = (|Pot3/2 − SR3/2 | + |Pot1/2 − SR1/2 |).
+                                      The orbitals obtained from the molecular structure optimization were used to calculate orbital energies as
+                                  well as the hyperfine coupling constant a1,exp
+                                                                               ′    , using the B3LYP functional and def2-TZVP basis set. Relativistic
+                                  effects were treated by a scalar relativistic Hamiltonian using the zeroth-order regular approximation (ZORA).
+                                  Solvent effects were included with the conductor-like polarizable continuum model (CPCM), using a dielectric
+                                  constant of 2.
+                                      Our DFT computations show that the unpaired Xe–O·−          2 electron is bound, and that the highest occupied
+                                  molecular orbital (HOMO) resides primarily on the O 2 molecule but is extended slightly onto the xenon atom,
+                                  as shown in Fig. 10.
+
+
+
+
+Scientific Reports |   (2021) 11:6287 |                https://doi.org/10.1038/s41598-021-85673-w                                                    9
+
+                                                                                                                                                Vol.:(0123456789)
+          www.nature.com/scientificreports/
+
+
+
+
+                                            Figure 8.  The dependence of the singlet yield and singlet yield ratio on an external magnetic field, with
+                                            B ∈ [0, 5000] µT, k = 5.5 × 107 s−1, r = 5.0 × 106 s−1, and hyperfine constants of a1′ = 1896 µT, a2′ = 347 µT.
+                                            The singlet yield and the singlet yield ratio SR are calculated using a1 = (γn /|γ129 Xe |)γe a1′ , where the magnitude
+                                            of the isotopic nuclear gyromagnetic correction factor, (γn /|γ129 Xe |), is normalized for 129Xe. (a) The absolute
+                                            singlet yield using xenon isotopic nuclear spin values of I ∈ {0, 1/2, 3/2}. (b) The relative singlet yield ratios
+                                            SR1/2 and SR3/2 with the singlet yield ratio of spin I = 0 being normalized to SR0 = 1. Values of SR and Pot
+                                            agree for B ∈ [0, 2525] µT.
+
+
+                                                Isotropic hyperfine coupling is a result of the Fermi contact interaction between a nucleus and ­electron52,
+                                            and here this is a measure of the contribution of the valence s-orbital to the molecular orbital occupied by the
+                                            unpaired radical electron. If the unpaired electron resides mainly in a p- or a d-orbital, the Fermi contact inter-
+                                            action can also be significant where the spin density at the nucleus is induced by configuration interaction or
+                                            spin ­polarization53. In our case, the unpaired electron mainly occupies the p-orbital which results in a significant
+                                            isotropic HFI. The isotropic hyperfine coupling constant can be calculated ­as54,55
+                                                                                               2
+                                                                                         aj = − ge γe γn µ0 |�(0)|2                                            (3)
+                                                                                               3
+                                            where ge is the electron g-factor, µ0 is the permeability of free space, and |�(0)|2 is the electron probability
+                                            density evaluated at the nucleus.
+
+
+
+
+          Scientific Reports |   (2021) 11:6287 |                 https://doi.org/10.1038/s41598-021-85673-w                                                    10
+
+Vol:.(1234567890)
+www.nature.com/scientificreports/
+
+
+
+
+                                 Figure 9.  The dependence of the agreement between relative anesthetic potency and singlet yield ratio on
+                                 r and k for the case where the dominant HFI for electron B is assumed to be with the TrpH·+ β-hydrogen
+                                 instead of nitrogen. Here a1′ = 1896 µT, a2′ = 1600 µT, and B = 50 µT. The singlet yield ratio SR is calculated
+                                 using a1 = (γn /|γ129 Xe |)γe a1′ , where the magnitude of the isotopic nuclear gyromagnetic correction factor,
+                                 (γn /|γ129 Xe |), is normalized for 129Xe. The model can explain the experimentally ­derived6 relative anesthetic
+                                 potency of xenon where |Pot1/2 − SR1/2 | ≤ 0.08 and |Pot3/2 − SR3/2 | ≤ 0.08 intersect, shaded in yellow.
+
+
+
+
+                                  Figure 10.  The highest occupied molecular orbital (HOMO) of Xe–O·−
+                                                                                                   2 . Image generated using IboView
+                                  v20150427 (http://​www.​ibovi​ew.​org).
+
+
+
+
+Scientific Reports |   (2021) 11:6287 |               https://doi.org/10.1038/s41598-021-85673-w                                                     11
+
+                                                                                                                                              Vol.:(0123456789)
+          www.nature.com/scientificreports/
+
+
+                                            Data availability
+                                            The datasets generated and analysed during the current study are available from the corresponding author on
+                                            reasonable request.
+
+                                            Received: 24 August 2020; Accepted: 3 March 2021
+
+
+                                            References
+                                             1. Koch, C., Massimini, M., Boly, M. & Tononi, G. Neural correlates of consciousness: progress and problems. Nat. Rev. Neurosci. 17,
+                                                307–321 (2016).
+                                             2. Alkire, M. T., Hudetz, A. G. & Tononi, G. Consciousness and anesthesia. Science 322, 876–880 (2008).
+                                             3. Mashour, G. A. Integrating the science of consciousness and anesthesia. Anesth. Anal. 103, 975–982 (2006).
+                                             4. Franks, N. P. General anaesthesia: From molecular targets to neuronal pathways of sleep and arousal. Nat. Rev. Neurosci. 9, 370–386
+                                                (2008).
+                                             5. Turin, L., Skoulakis, E. M. & Horsfield, A. P. Electron spin changes during general anesthesia in drosophila. Proc. Natl. Acad. Sci.
+                                                111, E3524–E3533 (2014).
+                                             6. Li, N. et al. Nuclear spin attenuates the anesthetic potency of xenon isotopes in miceimplications for the mechanisms of anesthesia
+                                                and consciousness. Anesthesiology 129, 271–277 (2018).
+                                             7. Rex, S. et al. Positron emission tomography study of regional cerebral metabolism during general anesthesia with xenon in humans.
+                                                Anesthesiology 105, 936–943 (2006).
+                                             8. Jordan, B. D. & Wright, E. L. Xenon as an anesthetic agent. AANA J. 78, 387–392 (2010).
+                                             9. Liu, L. T., Xu, Y. & Tang, P. Mechanistic insights into xenon inhibition of nmda receptors from md simulations. J. Phys. Chem. B
+                                                114, 9010–9016 (2010).
+                                            10. Closs, G. L. Mechanism explaining nuclear spin polarizations in radical combination reactions. J. Am. Chem. Soc. 91, 4552–4554
+                                                (1969).
+                                            11. Bagryansky, V. A., Borovkov, V. I. & Molin, Y. N. Quantum beats in radical pairs. Russ. Chem. Rev. 76, 493 (2007).
+                                            12. Steiner, U. E. & Ulrich, T. Magnetic field effects in chemical kinetics and related phenomena. Chem. Rev. 89, 51–147 (1989).
+                                            13. Timmel, C. R., Till, U., Brocklehurst, B., Mclauchlan, K. A. & Hore, P. J. Effects of weak magnetic fields on free radical recombina-
+                                                tion reactions. Mol. Phys. 95, 71–89 (1998).
+                                            14. Fay, T. P., Lindoy, L. P., Manolopoulos, D. E. & Hore, P. How quantum is radical pair magnetoreception?. Faraday Discuss. 221,
+                                                77–91 (2019).
+                                            15. Hore, P. J. Upper bound on the biological effects of 50/60 hz magnetic fields mediated by radical pairs. Elife 8, e44179 (2019).
+                                            16. Lambert, N. et al. Quantum biology. Nat. Phys. 9, 10–18 (2013).
+                                            17. Hore, P. J. & Mouritsen, H. The radical-pair mechanism of magnetoreception. Annu. Rev. Biophys. 45, 299–344 (2016).
+                                            18. Hiscock, H. G. et al. The quantum needle of the avian magnetic compass. PrProc. Natl. Acad. Sci. 113, 4634–4639 (2016).
+                                            19. Solov’yov, I. A., Chandler, D. E. & Schulten, K. Magnetic field effects in arabidopsis thaliana cryptochrome-1. Biophys. J. 92,
+                                                2711–2726 (2007).
+                                            20. Ball, P. Physics of life: The dawn of quantum biology. Nature 474, 272 (2011).
+                                            21. Lee, A. A. et al. Alternative radical pairs for cryptochrome-based magnetoreception. J. R. Soc. Interface 11, 20131063 (2014).
+                                            22. Schulten, K., Swenberg, C. E. & Weller, A. A biomagnetic sensory mechanism based on magnetic field modulated coherent electron
+                                                spin motion. Z. Phys. Chem 111, 1–5 (1978).
+                                            23. Son, Y. Molecular mechanisms of general anesthesia. Korean J. Anesth. 59, 3 (2010).
+                                            24. Furukawa, H., Singh, S. K., Mancusso, R. & Gouaux, E. Subunit arrangement and function in nmda receptors. Nature 438, 185–192
+                                                (2005).
+                                            25. Dickinson, R. et al. Competitive inhibition at the glycine site of the n-methyl-d-aspartate receptor by the anesthetics xenon and
+                                                isoflurane: Evidence from molecular modeling and electrophysiology. Anesthesiology 107, 756–767 (2007).
+                                            26. Franks, N., Dickinson, R., De Sousa, S., Hall, N. A. & Lieb, W. How does xenon produce anaesthesia?. Nature 396, 324–324 (1998).
+                                            27. Furukawa, H. & Gouaux, E. Mechanisms of activation, inhibition and specificity: Crystal structures of the nmda receptor nr1
+                                                ligand-binding core. EMBO J. 22, 2873–2885 (2003).
+                                            28. Armstrong, S. P. et al. Identification of two mutations (f758w and f758y) in the n-methyl-d-aspartate receptor glycine-binding site
+                                                that selectively prevent competitive inhibition by xenon without affecting glycine binding. Anesthesiology 117, 38–47 (2012).
+                                            29. Esencan, E. et al. Xenon in medical area: Emphasis on neuroprotection in hypoxia and anesthesia. Med. Gas Res. 3, 4 (2013).
+                                            30. Craddock, T. J. et al. Anesthetic alterations of collective terahertz oscillations in tubulin correlate with clinical potency: Implica-
+                                                tions for anesthetic action and post-operative cognitive dysfunction. Sci. Rep. 7, 1–12 (2017).
+                                            31. Byrdin, M., Villette, S., Eker, A. P. & Brettel, K. Observation of an intermediate tryptophanyl radical in w306f mutant dna photolyase
+                                                from Escherichia coli supports electron hopping along the triple tryptophan chain. Biochemistry 46, 10072–10077 (2007).
+                                            32. Li, Y. F., Heelis, P. F. & Sancar, A. Active site of dna photolyase: Tryptophan-306 is the intrinsic hydrogen atom donor essential for
+                                                flavin radical photoreduction and dna repair in vitro. Biochemistry 30, 6322–6329 (1991).
+                                            33. Aizenman, E., Hartnett, K. A. & Reynoldst, I. J. Oxygen free radicals regulate nmda receptor function via a redox modulatory site.
+                                                Neuron 5, 841–846 (1990).
+                                            34. Girouard, H. et al. Nmda receptor activation increases free radical production through nitric oxide and nox2. J. Neurosci. 29,
+                                                2545–2552 (2009).
+                                            35. Turin, L. & Skoulakis, E. M. Electron spin resonance (epr) in drosophila and general anesthesia. in Methods in enzymology, vol.
+                                                603, 115–128 (Elsevier, 2018).
+                                            36. Maeda, K. et al. Magnetically sensitive light-induced reactions in cryptochrome are consistent with its proposed role as a magne-
+                                                toreceptor. Proc. Natl. Acad. Sci. 109, 4774–4779 (2012).
+                                            37. Jokisaari, J. Nmr spectroscopy, 129xe, 131xe. In Lindon, J. C., Tranter, G. E. & Koppenaal, D. W. (eds.) Encyclopedia of Spectroscopy
+                                                and Spectrometry (Third Edition), 260–273, https://​doi.​org/​10.​1016/​B978-0-​12-​409547-​2.​05191-X (Academic Press, 2017).
+                                            38. Hogben, H. J., Efimova, O., Wagner-Rundell, N., Timmel, C. R. & Hore, P. Possible involvement of superoxide and dioxygen with
+                                                cryptochrome in avian magnetoreception: Origin of zeeman resonances observed by in vivo epr spectroscopy. Chem. Phys. Lett.
+                                                480, 118–122 (2009).
+                                            39. Player, T. C. & Hore, P. Viability of superoxide-containing radical pairs as magnetoreceptors. J. Chem. Phys. 151, 225101 (2019).
+                                            40. Kattnig, D. R. Radical-pair-based magnetoreception amplified by radical scavenging: Resilience to spin relaxation. J. Phys. Chem.
+                                                B 121, 10215–10227 (2017).
+                                            41. Mendive-Tapia, D. et al. Multidimensional quantum mechanical modeling of electron transfer and electronic coherence in plant
+                                                cryptochromes: The role of initial bath conditions. J. Phys. Chem. B 122, 126–136 (2018).
+                                            42. Finlay, C. C. et al. International geomagnetic reference field: The eleventh generation. Geophys. J. Int. 183, 1216–1230 (2010).
+                                            43. Yamakura, T. & Harris, R. A. Effects of gaseous anesthetics nitrous oxide and xenon on ligand-gated ion channelscomparison with
+                                                isoflurane and ethanol. Anesthesiology 93, 1095–1101 (2000).
+
+
+          Scientific Reports |   (2021) 11:6287 |                    https://doi.org/10.1038/s41598-021-85673-w                                                                     12
+
+Vol:.(1234567890)
+www.nature.com/scientificreports/
+
+
+                                  44. Nagele, P., Metz, L. B. & Crowder, C. M. Xenon acts by inhibition of non-n-methyl-d-aspartate receptor-mediated glutamatergic
+                                      neurotransmission in caenorhabditis elegans. Anesthesiology 103, 508–513 (2005).
+                                  45. Adams, B. & Petruccione, F. Quantum effects in the brain: A review. AVS Quant. Sci. 2, 022901 (2020).
+                                  46. Fisher, M. P. Quantum cognition: The possibility of processing with nuclear spins in the brain. Ann. Phys. 362, 593–602 (2015).
+                                  47. Hameroff, S. & Penrose, R. Consciousness in the universe: A review of the ‘orch or’ theory. Phys. Life Rev. 11, 39–78 (2014).
+                                  48. Simon, C. Can quantum physics help solve the hard problem of consciousness?. J. Consciousness Stud. 26, 204–218 (2019).
+                                  49. Kumar, S., Boone, K., Tuszyński, J., Barclay, P. & Simon, C. Possible existence of optical communication channels in the brain. Sci.
+                                      Rep. 6, 1–13 (2016).
+                                  50. Frisch, M. J. et al. Gaussian∼16 Revision C.01 (Gaussian Inc., 2016).
+                                  51. Neese, F. The orca program system. Wires Comput. Mol. Sci. 2, 73–78 (2012).
+                                  52. Bucher, M. The electron inside the nucleus: An almost classical derivation of the isotropic hyperfine interaction. Eur. J. Phys. 21,
+                                      19 (2000).
+                                  53. Karunakaran, C. Spin Resonance Spectroscopy: Principles and Applications (Elsevier, 2018).
+                                  54. Improta, R. & Barone, V. Interplay of electronic, environmental, and vibrational effects in determining the hyperfine coupling
+                                      constants of organic free radicals. Chem. Rev. 104, 1231–1254 (2004).
+                                  55. Atkins, P. W. & Friedman, R. S. Molecular Quantum Mechanics (Oxford University Press, 2011).
+
+                                  Acknowledgements
+                                  The authors would like to thank Peter Hore, Robert Dickinson, Sourabh Kumar, Parisa Zarkeshian, Rishabh,
+                                  Sumit Goswami, Faezeh Kimiaee Asadi, Stephen Wein, Jiawei Ji, Yufeng Wu, Kenneth Sharman, Rogelio Del-
+                                  gado Venegas, Jiri Hostas, Morteza Chehel Amirani, Lizandra Barrios Herrera, and Sridhar Dwadasi for their
+                                  input, comments, and insights. C.S. particularly thanks Stuart Hameroff for bringing the results of Li et al.6 to
+                                  his attention. The authors would like to acknowledge Compute Canada for its computing resources. This work
+                                  was supported by the Natural Sciences and Engineering Research Council of Canada.
+
+                                  Author contributions
+                                  J.S. performed calculations and modelling with help from H.Z.H. and C.S.; H.Z.H. performed DFT analysis with
+                                  help from J.S., D.S., and C.S.; J.S. and C.S. wrote the paper with feedback from D.S. and H.Z.H.; C.S. conceived
+                                  and supervised the project.
+
+                                  Competing interests
+                                  The authors declare no competing interests.
+
+                                  Additional information
+                                  Correspondence and requests for materials should be addressed to J.S. or C.S.
+                                  Reprints and permissions information is available at www.nature.com/reprints.
+                                  Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and
+                                  institutional affiliations.
+                                                Open Access This article is licensed under a Creative Commons Attribution 4.0 International
+                                                License, which permits use, sharing, adaptation, distribution and reproduction in any medium or
+                                  format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the
+                                  Creative Commons licence, and indicate if changes were made. The images or other third party material in this
+                                  article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the
+                                  material. If material is not included in the article’s Creative Commons licence and your intended use is not
+                                  permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from
+                                  the copyright holder. To view a copy of this licence, visit http://​creat​iveco​mmons.​org/​licen​ses/​by/4.​0/.
+
+                                  © The Author(s) 2021
+
+
+
+
+Scientific Reports |   (2021) 11:6287 |                   https://doi.org/10.1038/s41598-021-85673-w                                                                   13
+
+                                                                                                                                                                  Vol.:(0123456789)
+

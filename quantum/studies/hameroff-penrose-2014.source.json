@@ -1,0 +1,40 @@
+{
+  "slug": "hameroff-penrose-2014",
+  "title": "Consciousness in the universe: A review of the ‘Orch OR’ theory",
+  "authors": [
+    "Stuart Hameroff",
+    "Roger Penrose"
+  ],
+  "year": 2014,
+  "doi": "10.1016/j.plrev.2013.08.002",
+  "original_url": "https://pubmed.ncbi.nlm.nih.gov/24070914/",
+  "publisher_url": "https://doi.org/10.1016/j.plrev.2013.08.002",
+  "download_url": "https://www.openzone.it/assets/consciousness_in_the_universe_hameroff_penrose.pdf",
+  "download_origin": "Public mirror of publisher PDF; publisher and author-host PDF endpoints returned 403. Title, authors, DOI and 40-page count checked against publication record.",
+  "local_file": "studies/hameroff-penrose-2014.pdf",
+  "text_file": "studies/hameroff-penrose-2014.txt",
+  "access_status": "full_text_pdf_downloaded",
+  "license": {
+    "article_license": "CC BY-NC-ND 4.0 reported by ScienceOpen; CC BY-NC-ND reported by OpenAlex.",
+    "license_evidence_urls": [
+      "https://api.openalex.org/works/https://doi.org/10.1016/j.plrev.2013.08.002",
+      "https://www.scienceopen.com/document?id=e1b78c52-4be3-4467-9aa0-30bf71390f8f"
+    ],
+    "pdf_notice": "© 2013 Elsevier B.V. All rights reserved.",
+    "note": "Mirrored 2014 PDF predates current repository license metadata; attribution and noncommercial/no-derivatives conditions apply to reuse under that license."
+  },
+  "publication_type": "peer-reviewed review/theoretical proposal",
+  "pages": 40,
+  "retrieved_date": "2026-10-18",
+  "sha256": "9d3712f19ddca565ca6339e36b3059252604d9563174bebbf09d17dfb4aab2a3",
+  "full_text_reviewed": true,
+  "reviewed_sections": [
+    "Introduction",
+    "5.1 Orchestrated objective reduction",
+    "5.2 Tubulin qubits and Orch OR conscious moments",
+    "5.3 Microtubules and environmental decoherence",
+    "5.6 Orch OR criticisms and responses",
+    "5.7 Testable predictions of Orch OR - current status",
+    "Conclusions"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "xenon-radical-pairs",
+  "title": "Radical pairs may play a role in xenon-induced general anesthesia",
+  "authors": [
+    "Jordan Smith",
+    "Hadi Zadeh Haghighi",
+    "Dennis Salahub",
+    "Christoph Simon"
+  ],
+  "year": 2021,
+  "journal": "Scientific Reports 11, 6287 (2021)",
+  "doi": "10.1038/s41598-021-85673-w",
+  "original_url": "https://arxiv.org/abs/2009.01661",
+  "publisher_url": "https://www.nature.com/articles/s41598-021-85673-w",
+  "download_url": "https://www.nature.com/articles/s41598-021-85673-w.pdf",
+  "local_file": "studies/xenon-radical-pairs.pdf",
+  "text_file": "studies/xenon-radical-pairs.txt",
+  "access_status": "Full text downloaded from publisher open-access PDF.",
+  "version": "Publisher version of record, published 18 March 2021. Linked arXiv version is v2, revised 18 March 2021.",
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_note": "License appears on page 13 of the publisher PDF; original file is unmodified.",
+  "pages": 13,
+  "source_kind": "Peer-reviewed theoretical and computational model",
+  "bytes": 2388958,
+  "sha256": "21851a1309bd4f4886f7d8acb5d9f6d5bc972a568c43236c188f18d14df37278",
+  "retrieved_date": "2026-10-18"
+}

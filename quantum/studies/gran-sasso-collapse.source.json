@@ -1,0 +1,30 @@
+{
+  "id": "gran-sasso-collapse",
+  "title": "Underground test of gravity-related wave function collapse",
+  "authors": [
+    "Sandro Donadi",
+    "Kristian Piscicchia",
+    "Catalina Curceanu",
+    "Lajos Diósi",
+    "Matthias Laubenstein",
+    "Angelo Bassi"
+  ],
+  "year": 2021,
+  "journal": "Nature Physics 17, 74–78 (2021)",
+  "doi": "10.1038/s41567-020-1008-4",
+  "original_url": "https://arxiv.org/abs/2111.13490",
+  "publisher_url": "https://doi.org/10.1038/s41567-020-1008-4",
+  "download_url": "https://arxiv.org/pdf/2111.13490v1",
+  "local_file": "studies/gran-sasso-collapse.pdf",
+  "text_file": "studies/gran-sasso-collapse.txt",
+  "access_status": "Full text downloaded from the authors’ public arXiv deposit, including Methods and Supplementary Information.",
+  "version": "arXiv:2111.13490v1, submitted 26 November 2021; journal article published in 2020 online / 2021 volume.",
+  "license": "arXiv non-exclusive license to distribute",
+  "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html",
+  "license_note": "The arXiv license grants distribution rights to arXiv; it is not a blanket Creative Commons reuse license.",
+  "pages": 66,
+  "source_kind": "Peer-reviewed experimental paper, author-deposited full text",
+  "bytes": 1235457,
+  "sha256": "f4a89602fb9ec29f2bec7d4d416d1d654c3491a4d42ba70ddab9a3275c5e79a7",
+  "retrieved_date": "2026-10-18"
+}

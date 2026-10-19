@@ -1,0 +1,3276 @@
+                                            Underground test of gravity-related wave function col-
+                                            lapse
+                                                                †                        ?
+                                            Sandro Donadi,1, Kristian Piscicchia,2,3, Catalina Curceanu,3,2
+
+                                            Lajos Diósi,4 Matthias Laubenstein,5 Angelo Bassi,6,1,∗
+
+
+
+
+arXiv:2111.13490v1 [quant-ph] 26 Nov 2021
+                                            1
+                                                Istituto Nazionale di Fisica Nucleare, Trieste Section, Via Valerio 2, 34127, Trieste, Italy.
+
+                                            2
+                                                Centro Fermi - Museo Storico della Fisica e Centro Studi e Ricerche “Enrico Fermi”, Piazza del
+
+                                            Viminale 1, 00184 Rome, Italy.
+
+                                            3
+                                                INFN, Laboratori Nazionali di Frascati, Via Enrico Fermi 40, 00044 Frascati, Italy.
+
+                                            4
+                                                Wigner Research Centre for Physics, H-1525 Budapest 114 , P.O.Box 49, Hungary.
+
+                                            5
+                                                INFN, Laboratori Nazionali del Gran Sasso, Via G. Acitelli 22, 67100 Assergi, Italy.
+
+                                            6
+                                                Department of Physics, University of Trieste, Strada Costiera 11, 34151 Trieste, Italy.
+
+                                            Email: † sandro.donadi@ts.infn.it, ? kristian.piscicchia@cref.it, ∗ abassi@units.it
+
+
+                                            Roger Penrose proposed that a spatial quantum superposition collapses as a back-reaction
+
+                                            from spacetime, which is curved in different ways by each branch of the superposition. In
+
+                                            this sense, one speaks of gravity-related wave function collapse. He also provided a heuristic
+
+                                            formula to compute the decay time of the superposition — similar to that suggested earlier by
+
+                                            Lajos Diósi, hence the name Diósi-Penrose model. The collapse depends on the effective size
+
+                                            of the mass density of particles in the superposition, and is random: this randomness shows
+
+                                            up as a diffusion of the particles’ motion, resulting, if charged, in the emission of radiation.
+
+                                            Here, we compute the radiation emission rate, which is faint but detectable. We then report
+
+
+                                                                                                 1
+the results of a dedicated experiment at the Gran Sasso underground laboratory to measure
+
+this radiation emission rate. Our result sets a lower bound on the effective size of the mass
+
+density of nuclei, which is about three orders of magnitude larger than previous bounds. This
+
+rules out the natural parameter-free version of the Diósi-Penrose model.
+
+
+
+
+Main text
+
+Quantum Mechanics beautifully accounts for the behaviour of microscopic systems while, in an
+
+equally beautiful but radically different way, Classical Mechanics accounts for the behaviour of
+
+macroscopic objects. The reason why the quantum properties of microscopic systems—most no-
+
+tably, the possibility of being in the superposition of different states at once—do not seem to carry
+
+over to larger objects, has been the subject of a debate which is as old as the quantum theory itself,
+
+as exemplified by Schrödinger’s cat paradox 1 .
+
+
+      It has been conjectured that the superposition principle, the building block of quantum theory,
+
+progressively breaks down when atoms glue together to form larger systems 2–7 . The reason is
+
+that the postulate of wave function collapse introduced by von Neumann, and now part of the
+
+standard mathematical formulation of the theory, according to which the quantum state of a system
+
+suddenly collapses at the end of a measurement process, though being very effective in describing
+
+what happens in measurements, clearly has a phenomenological flavour. There is no reason to
+
+believe that measurements are so special to temporarily suspend the quantum dynamics given by
+
+the Schrödinger equation and replace it with a completely different one. More realistically, if
+
+
+                                                   2
+collapses occur at all, they are part of the dynamics: in some cases, they are weak and can be
+
+neglected; in some other cases, such as in measurements, they become strong and rapidly change
+
+the state of a system. Decades of research in this direction has produced well-defined models
+
+accounting for the collapse of the wave function and the breakdown of the quantum superposition
+
+principle for larger systems 5, 8–10 , and now the rapid technological development has opened the
+
+possibility of testing them 11 . One question is left open: what triggers the collapse of the wave
+
+function?
+
+
+      In his lectures on gravitation, Feynman discusses how a breakdown of the quantum super-
+
+position principle at a macroscopic scale leaves open the possibility that gravity might not be
+
+quantized 12 . Along this line of thinking, Penrose (and Diósi, independently) suggested that grav-
+
+ity, whose effects are negligible at the level of atoms and molecules, but increase significantly at
+
+the level of macroscopic objects, could be the source of the wave function collapse: “My own point
+
+of view is that as soon as a ‘significant’ amount of space-time curvature is introduced, the rules
+
+of quantum linear superposition must fail” 13 . When a system is in a spatial quantum superposi-
+
+tion, a corresponding superposition of two different space-times is generated. Penrose then gives
+
+arguments 14–16 as to why nature “dislikes” and, therefore, suppresses superpositions of different
+
+space-times; the more massive the system in the superposition, the larger the difference in the two
+
+space-times and the faster the wave-function collapse.
+
+
+
+
+                                                 3
+Figure 1: The Diósi-Penrose (DP) model of gravity-related wave function collapse. a. Ac-
+
+cording to quantum gravity, a spatial quantum superposition of a system generates a superposition
+
+of different space-time curvatures, corresponding to the possible different locations of the system.
+
+Penrose argues that a superposition of different space-times is unstable and decays in time, mak-
+
+ing also the system’s wave function collapse. He provides an estimate for the time of collapse
+
+as given in Eq. (1), which is the faster the larger the system, similar to that suggested earlier by
+
+Diósi. b. The master equation of the DP model (Eq. (3)) predicts not only the collapse of the
+
+wave function, but also an omnipresent Brownian-like diffusion for each constituent of the system.
+
+When the constituents are charged (protons and electrons), the diffusion comes with the emission
+
+of radiation, with a spectrum that depends on the configuration of the system. This is given by Eq.
+
+(4) in the range ∆E = (10 ÷ 105 )keV of photon energies. The predicted radiation emission is
+
+faint but potentially detectable by an experiment performed in a very low-noise environment. We
+
+performed such an experiment to rule out the original parameter-free version of the DP model.
+
+
+
+
+                                                 4
+      Even without proposing a detailed mathematical model, Penrose provides a formula which
+
+estimates, in non-relativistic and weak gravitational field limits, the expected time τDP of the col-
+
+lapse of a quantum superposition 14 :
+                                                        ~
+                                              τDP =         ,                                      (1)
+                                                       ∆EDP
+
+where ∆EDP measures how large, in gravitational terms, the superposition is. Given a system with
+
+mass density µ(r), in the simple case of the center-of-mass being in a superposition of two states
+
+displaced by a distance d:
+
+                                                              µ(r) [µ(r 0 + d) − µ(r 0 )]
+                                          Z        Z
+                     ∆EDP (d) = −8πG          dr       dr 0                               .        (2)
+                                                                      |r − r 0 |
+
+Eqs. (1) and (2), which are valid in the Newtonian limit, were previously proposed by Diósi 17, 18 ,
+
+following a different approach. For a point-like mass density µ(r) = mδ(r − r 0 ), Eq. (2) diverges
+
+because of the 1/r factor, leading to an instantaneous collapse, which is clearly wrong. To avoid
+
+this problem, one has to smear the mass density. This is implemented in different ways by Diósi
+
+and Penrose. Diósi suggests to introduce a new phenomenological parameter, measuring the spatial
+
+resolution of the mass density 19, 20 ; Penrose instead suggests that the mass density of a particle is
+
+given by µ(r) = m|ψ(r, t)|2 15 , where ψ(r, t) is a stationary solution of the Schrödinger-Newton
+
+equation 21, 22 . For either choice, we will call R0 the size of the particle’s mass density.
+
+
+      A direct test of Eq. (1) requires creating a large superposition of a massive system, to guar-
+
+antee that τDP is short enough for the collapse to become effective before any kind of external
+
+noise disrupts the measurement (see 23 for an alternative approach). One of the first proposals in
+
+this direction was put forward by Penrose himself and collaborators 24 , who suggested a setup for
+
+
+                                                       5
+creating a spatial superposition of a mirror of mass ∼ 10−12 Kg that, according to Eq. (2), has a
+
+decay time of order τDP ≃ 0.002 ÷ 0.013 s (see Supplementary Information), which is competitive
+
+with standard decoherence times. The major difficulty in implementing this and similar proposals
+
+consists in creating a superposition of a relatively large mass and keep it stable for times compa-
+
+rable to τDP . To give some examples, the largest spatial superposition so far achieved 25 is of about
+
+0.5 m, but the systems involved are Rb atoms (mass = 1.42 × 10−25 Kg), which are too light. In
+
+matter-wave interferometry with macromolecules 26 , states are delocalized over distances of hun-
+
+dreds nm, and masses beyond 25 kDa (∼ 10−23 Kg), still not enough. By manipulating phononic
+
+states 27 , collective superpositions of estimated 1016 carbon atoms (mass ∼ 10−10 Kg) are created
+
+over distances of 10−11 m, but the life-time of phonons is of order ∼ 10−12 s, which is too short.
+
+These numbers show that keeping the superposition time, distance and mass large enough poses
+
+still huge technological challenges. Research towards creating larger and larger superpositions is
+
+very active 28–34 , but further development is needed to reach the required sensitivity.
+
+
+      Here we show how to test gravitational-related collapse in an indirect way, by exploiting an
+
+unavoidable side effect of the collapse: a Brownian-like diffusion of the system in space. The
+
+reason is the following. Although Penrose restrains from proposing any detailed dynamics for the
+
+collapse, as suggested in 14, 15 and used explicitly in 16 , the simplest assumption is that the collapse
+
+is Poissonian, as for particle decay. This minimal requirement, together with the collapse time
+
+given in Eqs. (1) and (2), implies the following Lindblad dynamics for the statistical operator ρ(t)
+
+describing the state of the system (see Supplementary Information):
+                                          Z     Z
+            dρ(t)       i             4πG                1    h       h            ii
+                  = − [H, ρ(t)] −            dx dy             M̂ (y), M̂ (x), ρ(t) .                (3)
+             dt         ~              ~              |x − y|
+
+                                                   6
+which is equivalent to the master equation derived in 17, 18 . The first term describes the standard
+
+quantum evolution while the second term accounts for the gravity-related collapse. In Eq. (3)
+                                                       P
+H is the system’s Hamiltonian and M̂ (x) =                 n µn (x, x̂n ) gives the total mass density, with
+
+
+µn (x, x̂n ) the mass density of the n-th particle, centered around x̂n . Taking for example a free
+
+particle with momentum operator p̂, the contribution of the second term to the average momentum
+
+hpi ≡ Tr[p̂ρ] is zero, while the contribution to the average square momentum hp2 i increases in
+
+time. This is diffusion.
+
+
+      This diffusion causes a progressive heating of the system 19 , specifically a steady temperature
+
+increase. Assuming a mass distribution of the nuclei with an effective size R0 ∼ 10−15 m, the
+                                                                             √
+heating rate for a gas of non-interacting particles amounts to: dT (t)/dt = 4 πm0 G~/3kB R03 ∼
+
+10−4 K/s (kB is Boltzmann’s constant and m0 the nucleon mass), which is in contradiction with
+
+experimental evidence 35 . The value R0 ∼ 10−14 m is also excluded by gravitational wave detection
+
+experiments 36 . However, both results do not include the possibility of dissipative effects, which
+
+are always associated to fluctuations, which may lead to equilibrium instead of a steady growth in
+
+temperature.
+
+
+      Whether at thermal equilibrium or not, particles will keep fluctuating under the collapse
+
+dynamics. Since matter is made of charged particles, this process makes them constantly radiate.
+
+Therefore, a detection of the collapse-induced radiation emission is a more robust test of the model
+
+(cf. 37 ) , even in presence of dissipative effects.
+
+
+      Starting from Eq. (3), we computed the radiation emission rate, i.e. the number of photons
+
+                                                       7
+emitted per unit time and unit frequency, integrated over all directions, in the range λ ∈ (10−5 ÷
+
+10−1 ) nm, corresponding to energies E ∈ (10 ÷ 105 ) keV. The reason for choosing this range
+
+can be understood in terms of a semi-classical picture: each time a collapse occurs, particles are
+
+slightly and randomly moved. This random motion makes them emit radiation, if charged. When
+
+their separation is smaller than λ, they emit as a single object with charge equal to the total charge,
+
+which can be zero for opposite charges as for an atom. Opposite to this, when their separation is
+
+larger than λ, they emit independently. Therefore, in order to maximize the emission rate, electrons
+
+and nuclei should be independent (λ < atomic radius), while protons in the same nucleus should
+
+behave coherently (λ > nuclear radius). This is achieved by considering the emission of photons
+
+with wavelength in the range mentioned above. In this range, the coherent emission of protons
+
+contributes with a term proportional to (N e)2 (N is the atomic number), while electrons contribute
+
+incoherently with a weaker term proportional to N e2 . For this reason, and also because in the
+
+range of energies considered in our experiment the electrons are relativistic, while our derivation
+
+is not, to be conservative we will neglect the contribution of the electrons in the emission rate.
+
+
+      The photon emission rate is discussed in the Section Methods and derived in the Supplemen-
+
+tary Information. The calculation is lengthy. In a nutshell, starting from Eq. (3), we compute the
+
+expectation value of the photon number operator at time t, i.e. ha†kµ akµ it , to the first perturbative
+
+order. By taking the time derivative, summing over the photon’s polarizations µ and integrating
+
+over all the directions of the emitted photon, we eventually obtain:
+
+                                       dΓt   2 Ge2 N 2 Na
+                                           =                     ,                                   (4)
+                                       dω    3 π 3/2 ε0 c3 R03 ω
+
+where G, e, ε0 and c are constants of nature with the usual meaning and Na is the total number
+
+                                                   8
+of atoms. We leave R0 as a free parameter to be bounded by experiments. Clearly, the number
+
+of emitted photons increases with the size (Na ) of the system, as there are more protons affected
+
+by the noise. The factor N 2 accounts for the quadratic dependence on the atomic number, which
+
+significantly increases the predicted effect.
+
+
+      We performed, for the first time, a dedicated experiment to test this model of gravity-related
+
+collapse by measuring the spontaneous radiation emission rate from a Germanium crystal and the
+
+surrounding materials in the experimental apparatus. The strong point of the experiment is that
+
+there was no need to create a spatial superposition, since according to Eq. (3) the collapse induced
+
+diffusion and the associated photons emission occur for any state, also for localized states of the
+
+system. The experiment was carried out in the low background environment of the Gran Sasso
+
+underground National Laboratory (LNGS) of INFN. The Gran Sasso Laboratory is particularly
+
+suitable for high sensitivity measurements of extremely low rate physical processes, since it is
+
+characterized by a rock overburden corresponding to a minimum thickness of 3100 m w.e. (meters
+
+of water equivalent). The environmental emissions are generated by the rock radioactivity and the
+
+residual cosmic muon flux. Given that the cosmic radiation flux is reduced by almost six orders
+
+of magnitude, the main background source in the LNGS consists of γ radiation produced by long
+
+lived γ emitting primordial isotopes and their decay products. They are part of the rocks of the
+
+Gran Sasso mountains and the concrete used to stabilize the cavity.
+
+
+      The setup consisted of a coaxial p-type High Purity Germanium (HPGe) detector surrounded
+
+by a complex shielding structure with the outer part made of pure lead and the inner part made of
+
+
+
+                                                 9
+electrolytic copper. The Germanium crystal is characterized by a diameter of 8.0 cm and a length
+
+of 8.0 cm, with an inactive layer of lithium-doped germanium of 0.075 mm all around the crystal.
+
+The active germanium volume of the detector is 375 cm3 . The outer part of the passive shielding of
+
+the HPGe detector consists of lead (30 cm from the bottom and 25 cm from the sides). The inner
+
+layer of the shielding (5 cm) is composed of electrolytic copper. The sample chamber has a volume
+
+of about 15 l ((250 × 250 × 240) mm3 ). The shield together with the cryostat are enclosed in an air
+
+tight steel housing of 1 mm thickness, which is continuously flushed with boil-off nitrogen from
+
+a liquid nitrogen storage tank, in order to reduce the contact with external air (and thus radon) to
+
+a minimum. The experimental setup is schematically shown in Fig. 2 (see also 38, 39 ). The data
+
+acquisition system is a Lynx Digital Signal Analyzer controlled via personal computer software
+
+GENIE 2000, both from Canberra-Mirion. In this measurement, the sample placed around the
+
+detector was 62 kg of electropolished oxygen free high conductivity copper in Marinelli geometry.
+
+
+
+
+                                                10
+Figure 2: Schematic representation of the experimental setup. The experimental apparatus is
+
+based on a coaxial p-type high purity germanium detector, with the dimensions of 8.0 cm diameter
+
+and 8.0 cm length, the active volume is 375 cm3 . The detector is shielded by layers of electrolitic
+
+copper and pure lead. The inner part of the apparatus consists of the following main elements: 1
+
+- Ge crystal, 2 - Electric contact, 3 - Plastic insulator, 4 - Copper cup, 5 - Copper end-cup, 6 -
+
+Copper block and plate, 7 - Inner Copper shield, 8 - Lead shield. In order to minimize the radon
+
+contamination an air tight steel casing (not shown) encloses the shield and is continuously flushed
+
+with boil-off nitrogen from a liquid nitrogen storage tank.
+
+
+
+
+                                                11
+         The measured emission spectrum, corresponding to a data taking period of about 62 days
+
+(August 2014 and August 2015), is shown in Fig. 3, where emission lines generated by residual
+
+radionuclides present in the setup materials are also visible. In particular, the region of the 60 Co
+
+lines (corresponding to the shadowed green area highlighted in the total plot) is enlarged in the
+
+inset.
+
+
+         Data analysis was carried out to extract the probability distribution function (pdf ) of the R0
+
+parameter of the model. The novelty, with respect to previous investigations 40, 41 , is not only the
+
+dedicated experiment but also an accurate Monte Carlo (MC) characterisation, with a validated MC
+
+code based on the GEANT4 software library, of the experimental setup, which allowed to compute
+
+the background originated from known sources, determining the contribution of each component
+
+of the setup; the background simulation is described in greater detail in the Section Methods.
+
+The residual spectrum was then compared with the theoretical prediction for the collapse-induced
+
+radiation, to extract a bound on R0 .
+
+
+         The experimental and the MC simulated spectra agree to 88% in the energy range ∆E =
+
+(1000 ÷ 3800) keV, whereas in the low energy region there are larger deviations. This is mostly
+
+due to the impossibility to perfectly account for the residual cosmic rays and the bremsstrahlung
+
+caused by 210 Pb and its daughters in the massive lead shield. The energy range falls within the
+
+interval previously discussed for the validity of the theoretical model. Therefore we take ∆E as
+
+the energy Region Of Interest (ROI) for the following statistical analysis, the ROI is represented
+
+by the grey area in Fig. 3. In Fig. 4 the measured spectrum is compared, in the ROI, with the
+
+
+
+                                                    12
+simulated background distribution. The total number of simulated background counts within ∆E
+
+is zb = 506 events, to be compared with the measured number zc = 576 events. The reason for this
+
+low rate consists in the fact that the detector setup is especially designed for ultra low background
+
+measurements. The spectrum in Fig. 3 only contains “real” events as the digital DAQ system has
+
+a filter rejecting noise events, by their pulse shape, with efficiency better then 99%.
+
+
+
+
+Figure 3: Measured radiation spectrum. The measured emission spectrum, corresponding to a
+
+data taking period of about 62 days, is represented as a dark grey histogram. The natural binning
+
+of 1 keV is used; the bin contents are shown without error bars, in order to appreciate the relative
+
+intensities of the residual radionuclides emission lines. The 60 Co and 40 K lines are also indicated.
+
+The inset zooms in the region of the 60 Co lines (which is highlighted in the total plot by the
+
+shadowed green area); here the error bars are shown and represent one standard deviation. The
+
+grey area shows the Region Of Interest (ROI) which is defined as ∆E = (1000 ÷ 3800) keV.
+
+
+
+
+                                                 13
+Figure 4: Comparison between the measured and the simulated background spectra. The
+
+measured emission spectrum is shown in the region of interest as a dark grey histogram, with error
+
+bars representing one standard deviation. The simulated background distribution is shown in green
+
+for comparison. The simulation is based on a GEANT 4 validated MC characterization of the
+
+whole detector. The MC has as input the measured activities of the residual radionuclides, for each
+
+material present in the experimental setup. The simulation accounts for the emission probabilities
+
+and the decay schemes, the photon propagation and interactions in the materials of the apparatus
+
+and the detection efficiencies (see Section Methods).
+
+
+
+
+      Then, we estimated the number of signal events which would be measured during the acqui-
+
+sition time, generated in the materials of the apparatus as collapse-induced photons. To this end the
+
+detection efficiencies were taken into account, which are shown, for the setup components which
+
+give an appreciable contribution, in Fig. 1 of the Supplementary Information.
+
+
+      Given the rate in Eq. (4) the expected signal contribution zs (R0 ), which is a function of the
+
+
+                                                 14
+parameter R0 , turns out to be:
+
+                                         XZ     dΓt               a
+                            zs (R0 ) =               T i (E)dE = 3 ,                           (5)
+                                         i   ∆E dE i             R0
+
+where T is the total acquisition time of the experiment, i (E) is the energy dependent efficiency
+
+function for the i-th component of the setup and a ∼ 1.8 × 10−29 m3 . By substituting the values
+
+zc , zb and zs in the pdf of the parameter R0 the following constraint is obtained:
+
+
+                                         R0 > 0.54 × 10−10 m                                    (6)
+
+
+with probability 0.95. The data analysis is extensively described in the Supplementary Information,
+
+where the pdf is explicitly derived.
+
+
+      It is important to stress that the energy range in which spontaneous photon emission is ex-
+
+pected, extends from the upper threshold of the detector sensitive region (3.8 MeV) to 100 MeV
+
+(according to the emission rate given in Eq. (4)). A fraction of these primary photons could be
+
+degraded in energy due to Compton scattering, thus producing additional events in the ROI. Such
+
+a process would result in a stronger lower bound on R0 . We made an estimate of the improvement
+
+(I) on the bound by considering the limiting case in which all the primary spontaneously emitted
+
+photons generated in the i-th component of the setup, in the energy range (3.8 ÷ 100) MeV, are
+
+degraded, due to scattering, to the energy Eimax, ef f within the ROI, corresponding to the maximal
+
+detection efficiency for the i-th material. We obtain I ∼ 1.620, which is not sizeable (even un-
+
+der the exaggerated assumptions we considered); this is mainly due to the fact that spontaneous
+
+emission decreases with energy as 1/E.
+
+
+
+                                                 15
+Figure 5: Lower bounds on the spatial cut-off R0 of the Diósi-Penrose (DP) model. According
+
+to Penrose, the value of R0 is estimated to be the size of the wave function of the nuclei of the
+
+system, which amounts to R0 = 0.05 × 10−10 m for the Ge crystal used in the experiment (red
+
+bullet on the horizontal scale). Our experiment sets a lower bound on R0 at 0.54 × 10−10 m (green
+
+bar and arrow), which is one order of magnitude larger than what predicted following Penrose’s
+
+argument. Therefore, this parameter-free version of the DP model is excluded. The figure shows
+
+also previous lower bounds in the literature, similarly based on the monitoring of the Brownian-
+
+like diffusion predicted by the DP model. They refer to data analysis from gravitational wave
+
+detectors 36 (R0 ≥ (40.1 ± 0.5) × 10−15 m, red bar and arrow) and neutron stars 42 (R0 & 10−13
+
+m, blue bar and arrow).
+
+
+
+
+      Our experiment sets a lower bound on R0 of the order of 1Å, which is about three orders of
+
+magnitude stronger than previous bounds in the literature 36 ; see Fig. 5. If R0 is the size of the
+
+nucleus’s wave function as suggested by Penrose, we have to confront our result with known prop-
+                                                 p
+erties of nuclei in matter. In a crystal, R0 =    hu2 i where hu2 i is the mean square displacement
+
+                                                  16
+of a nucleus in the lattice, which can be computed by using the relation 43, 44 hu2 i = B/8π 2 , where
+
+B = 0.20 Å2 is the Debye-Waller factor for the Germanium crystal 45 , cooled down at the liquid
+
+Nitrogen temperature. One obtains R0 = 0.05 × 10−10 m, which is more than one order of mag-
+
+nitude smaller than the lower limit set by our experiment. Therefore, we conclude that Penrose’s
+
+proposal for a gravity-related collapse of the wave function, in the present formulation, is ruled
+
+out.
+
+
+        Of course, alternatives are always possible. Following Diósi, one option is to let R0 com-
+
+pletely free; but this comes at the price of having a parameter whose value is unjustified, apparently
+
+disconnected from the mass density of the system as well as from gravitational effects. Another
+
+option is to change the way the collapse is modeled (Poissonian decay), therefore adding extra
+
+terms and parameters to take into account a more complex dynamics, as done for other collapse
+
+models 46–48 . This kind of extensions was not envisaged in the literature so far. Our result indi-
+
+cates that the idea of gravity-related wave function collapse, which remains very appealing, will
+
+probably require a radically new approach.
+
+
+
+ 1. Schrödinger, E. Die gegenwärtige Situation in der Quantenmechanik. Naturwissenschaften
+
+       23, 823–828 (1935).
+
+
+ 2. Leggett, A. J. Macroscopic quantum systems and the quantum theory of measurement. Prog.
+
+       Theor. Phys. Suppl. 69, 80–100 (1980).
+
+
+ 3. Weinberg, S. Precision tests of quantum mechanics. Phys. Rev. Lett. 62, 485–488 (1989).
+
+
+
+                                                 17
+ 4. Bell, J. S. Speakable and unspeakable in quantum mechanics: Collected papers on quantum
+
+    philosophy (Cambridge university press, 2004).
+
+
+ 5. Ghirardi, G. C., Rimini, A. & Weber, T. Unified dynamics for microscopic and macroscopic
+
+    systems. Phys. Rev. D 34, 470–491 (1986).
+
+
+ 6. Adler, S. L. Quantum theory as an emergent phenomenon: The statistical mechanics of matrix
+
+    models as the precursor of quantum field theory (Cambridge University Press, 2004).
+
+
+ 7. Weinberg, S. Collapse of the state vector. Phys. Rev. A 85, 062116 (2012).
+
+
+ 8. Ghirardi, G. C., Pearle, P. & Rimini, A. Markov processes in Hilbert space and continuous
+
+    spontaneous localization of systems of identical particles. Phys. Rev. A 42, 78–89 (1990).
+
+
+ 9. Bassi, A. & Ghirardi, G. Dynamical reduction models. Phys. Rep. 379, 257–426 (2003).
+
+
+10. Bassi, A., Lochan, K., Satin, S., Singh, T. P. & Ulbricht, H. Models of wave-function collapse,
+
+    underlying theories, and experimental tests. Rev. Mod. Phys. 85, 471–527 (2013).
+
+
+11. Arndt, M. & Hornberger, K.       Testing the limits of quantum mechanical superpositions.
+
+    Nat. Phys. 10, 271–277 (2014).
+
+
+12. Feynman, R. Feynman lectures on gravitation (CRC Press, 2018).
+
+
+13. Penrose, R. & Mermin, N. D. The emperor’s new mind: Concerning computers, minds, and
+
+    the laws of physics (Oxford University Press, Oxford, 1990).
+
+
+14. Penrose, R. On gravity’s role in quantum state reduction. Gen. Rel. Gravit. 28, 581–600
+
+    (1996).
+
+                                                18
+15. Penrose, R. On the gravitization of quantum mechanics 1: Quantum state reduction. Found.
+
+    Phys. 44, 557–575 (2014).
+
+
+16. Howl, R., Penrose, R. & Fuentes, I. Exploring the unification of quantum theory and general
+
+    relativity with a bose–einstein condensate. New J. Phys. 21, 043047 (2019).
+
+
+17. Diósi, L. A universal master equation for the gravitational violation of quantum mechanics.
+
+    Phys. Lett. A 120, 377–381 (1987).
+
+
+18. Diósi, L. Models for universal reduction of macroscopic quantum fluctuations. Phys. Rev. A
+
+    40, 1165–1174 (1989).
+
+
+19. Ghirardi, G., Grassi, R. & Rimini, A. Continuous-spontaneous-reduction model involving
+
+    gravity. Phys. Rev. A 42, 1057–1064 (1990).
+
+
+20. Diósi, L. Gravity-related wave function collapse: mass density resolution. J. Phys. Conf. Ser.,
+
+    442, 012001 (2013).
+
+
+21. Diósi, L. Gravitation and quantum-mechanical localization of macro-objects. Phys. Lett. A
+
+    105, 199 – 202 (1984).
+
+
+22. Bahrami, M., Großardt, A., Donadi, S. & Bassi, A. The Schrödinger–Newton equation and its
+
+    foundations. New J. Phys. 16, 115007 (2014).
+
+
+23. Salart, D., Baas, A., van Houwelingen, J. A., Gisin, N. & Zbinden, H. Spacelike separation in
+
+    a bell test assuming gravitationally induced collapses. Phys. Rev. Lett. 100, 220404 (2008).
+
+
+
+
+                                                19
+24. Marshall, W., Simon, C., Penrose, R. & Bouwmeester, D. Towards quantum superpositions of
+
+    a mirror. Phys. Rev. Lett. 91, 130401 (2003).
+
+
+25. Kovachy, T. et al. Quantum superposition at the half-metre scale. Nature 528, 530–533 (2015).
+
+
+26. Fein, Y. Y. et al. Quantum superposition of molecules beyond 25 kDa. Nature Physics 15,
+
+    1242–1245 (2019).
+
+
+27. Lee, K. C. et al. Entangling macroscopic diamonds at room temperature. Science 334, 1253–
+
+    1256 (2011).
+
+
+28. Chan, J. et al. Laser cooling of a nanomechanical oscillator into its quantum ground state.
+
+    Nature 478, 89–92 (2011).
+
+
+29. Teufel, J. et al. Sideband cooling of micromechanical motion to the quantum ground state.
+
+    Nature 475, 359–363 (2011).
+
+
+30. Wollman, E. E. et al. Quantum squeezing of motion in a mechanical resonator. Science 349,
+
+    952–955 (2015).
+
+
+31. Jain, V. et al. Direct measurement of photon recoil from a levitated nanoparticle. Phys. Rev.
+
+    Lett. 116, 243601 (2016).
+
+
+32. Hong, S. et al. Hanbury brown and twiss interferometry of single phonons from an optome-
+
+    chanical resonator. Science 358, 203–206 (2017).
+
+
+33. Vovrosh, J. et al. Parametric feedback cooling of levitated optomechanics in a parabolic mirror
+
+    trap. J. Opt. Soc. Am. B 34, 1421–1428 (2017).
+
+                                                20
+34. Riedinger, R. et al. Remote quantum entanglement between two micromechanical oscillators.
+
+    Nature 556, 473–477 (2018).
+
+
+35. Bahrami, M., Smirne, A. & Bassi, A. Role of gravity in the collapse of a wave function: A
+
+    probe into the Diósi-Penrose model. Phys. Rev. A 90, 062105 (2014).
+
+
+36. Helou, B., Slagmolen, B., McClelland, D. E. & Chen, Y. Lisa pathfinder appreciably con-
+
+    strains collapse models. Phys. Rev. D 95, 084054 (2017).
+
+
+37. Diósi, L. & Lukács, B. Calculation of X-ray signals from Károlyházy hazy space-time. Phys.
+
+    Lett. A 181, 366–368 (1993).
+
+
+38. Neder, H., Heusser, G. & Laubenstein, M. Low level γ-ray germanium-spectrometer to mea-
+
+    sure very low primordial radionuclide concentrations. Appl. Radiat. Isot. 53, 191–195 (2000).
+
+
+39. Heusser, G., Laubenstein, M. & Neder, H. Low-level germanium gamma-ray spectrometry
+
+    at the µbq/kg level and future developments towards higher sensitivity. Radioactivity in the
+
+    Environment 8, 495–510 (2006).
+
+
+40. Fu, Q. Spontaneous radiation of free electrons in a nonrelativistic collapse model. Phys. Rev. A
+
+    56, 1806–1811 (1997).
+
+
+41. Piscicchia, K. et al. CSL collapse model mapped with the spontaneous radiation. Entropy 19,
+
+    319 (2017).
+
+
+42. Tilloy, A. & Stace, T. M. Neutron Star Heating Constraints on Wave-Function Collapse Mod-
+
+    els. Phys. Rev. Lett. 123, 080402 (2019).
+
+
+                                                21
+43. Debye, P. Interferenz von Röntgenstrahlen und Wärmebewegung. Ann. d. Physik 348, 49–92
+
+    (1913).
+
+
+44. Waller, I.    Zur Frage der Einwirkung der Wärmebewegung auf die Interferenz von
+
+    Röntgenstrahlen. Zeitschrift für Physik 17, 398–408 (1923).
+
+
+45. Gao, H. & Peng, L.-M. Parameterization of the temperature dependence of the Debye–Waller
+
+    factors. Acta Crystallogr., Sect. A: Found. Crystallogr. 55, 926–932 (1999).
+
+
+46. Adler, S. L. & Bassi, A. Collapse models with non-white noises. J. Phys. A 40, 15083 (2007).
+
+
+47. Adler, S. L. & Bassi, A. Collapse models with non-white noises: II. Particle-density coupled
+
+    noises. J. Phys. A 41, 395308 (2008).
+
+
+48. Gasbarri, G., Toroš, M., Donadi, S. & Bassi, A. Gravity induced wave function collapse. Phys.
+
+    Rev. D 96, 104013 (2017).
+
+
+49. Breuer, H. P. & Petruccione, F. The Theory of Open Quantum Systems (Oxford University
+
+    Press, Oxford, 2002).
+
+
+50. Boswell, M. et al.      Mage-a Geant4-based Monte Carlo application framework for low-
+
+    background germanium experiments. IEEE Trans. Nucl. Sci. 58, 1212–1220 (2011).
+
+
+51. Adler S.L. & Ramazanoglu F.M., Photon-emission rate from atomic systems in the CSL
+
+    model. J. Phys. A 40, 13395 (2007). Corrigendum: Photon-emission rate from atomic sys-
+
+    tems in the CSL model. J. Phys. A 42, 109801 (2009).
+
+
+
+
+                                                22
+52. Adler S.L., Bassi A. & Donadi S., On spontaneous photon emission in collapse models. J.
+
+    Phys. A 46, 245304 (2013).
+
+
+53. Bassi A. & Donadi S., Spontaneous photon emission from a non-relativistic free charged par-
+
+    ticle in collapse models: A case study. Phys. Lett. A 378, 761–765 (2014).
+
+
+54. Donadi S., Deckert D.-A., & Bassi A., On the spontaneous emission of electromagnetic radi-
+
+    ation in the CSL model. Ann. Phys. (N.Y.) 340, 70–86 (2014).
+
+
+55. Penrose R., Wavefunction collapse as a real gravitational effect. Math. Phys. 2000, 266–282
+
+    (2000).
+
+
+56. Schlosshauer M. A., Decoherence: and the quantum-to-classical transition (Springer Science
+
+    & Business Media, 2007).
+
+
+57. Gisin, N. Stochastic quantum dynamics and relativity. Helv. Phys. Acta 62, 363–371 (1989).
+
+
+58. Holevo, A. S. A note on covariant dynamical semigroups. Reports on mathematical physics
+
+    32, 211–216 (1993).
+
+
+59. Holevo, A. S. On conservativity of covariant dynamical semigroups. Reports on Mathematical
+
+    Physics 33, 95–110 (1993).
+
+
+60. Vacchini, B. & Hornberger, K. Quantum linear boltzmann equation. Physics Reports 478, 71–
+
+    120 (2009).
+
+
+61. Donadi, S. & Bassi, A. The emission of electromagnetic radiation from a quantum system
+
+    interacting with an external noise: a general result. J. Phys. A 48, 035305 (2014).
+
+                                                23
+Acknowledgments
+
+
+
+The authors thank Prof. S.L. Adler, Prof. M. Arndt and Prof. H. Ulbricht for useful discussions
+
+and comments, and C. Capoccia, Dr. M. Carlesso and Dr. R. Del Grande for their help in prepar-
+
+ing the figures. S.D. acknowledges support from The Foundation BLANCEFLOR Boncompagni
+
+Ludovisi, née Bildt, INFN and the Fetzer Franklin Fund. K.P. and C.C. acknowledge the support
+
+of the Centro Fermi - Museo Storico della Fisica e Centro Studi e Ricerche “Enrico Fermi” (Open
+
+Problems in Quantum Mechanics project), the John Templeton Foundation (ID 58158) and FQXi.
+
+L.D. acknowledges support of National Research Development and Innovation Office of Hungary
+
+Nos. 2017-1.2.1-NKP-2017-00001 and K12435, and support by FQXI minigrant. A.B. acknowl-
+
+edges support from the H2020 FET TEQ (grant n. 766900), the University of Trieste and INFN.
+
+All authors acknowledge support from the COST Action QTSpace (n. CA15220).
+
+
+
+Authors contributions
+
+
+S.D. and A.B. conceived and designed the theoretical aspects of the research; M.L., K.P. and C.C.
+
+designed the experimental part of the research; S.D. performed the theoretical calculations, with
+
+the assistance of A.B. and L.D.; M.L., K.P. and C.C. performed the experimental measurements;
+
+K.P. performed the data analysis, with the assistance of C.C., M.L. and L.D.; S.D., K.P. and A.B.
+
+prepared the manuscript and Supplementary Information in coordination with all authors.
+
+
+
+
+                                               24
+Methods
+
+Calculation of the radiation emission rate. We summarize the main steps for deriving Eq. (4)
+
+for the emission rate of the main text. The starting point is the quantum mechanical formula for
+
+the radiation emission rate
+
+                                        k2 X
+                                                    Z
+                                 d                                d †
+                                   Γt =                    dΩk      ha akµ it ,                                     (7)
+                                dω      c µ                       dt kµ
+
+where ha†kµ akµ it gives the average number of photons emitted at time t with wave vector k and po-
+
+larization µ. The time derivative accounts for the fact that we are computing a rate; the integration
+
+over the directions and polarizations of the photons for the fact that we are interested in the total
+
+number of photons emitted in a given energy range, independently from these degrees of freedom;
+                2
+and the factor kc for the density of wave vectors with modulus k.
+
+
+       The expectation value ha†kµ akµ it is computed starting from the master equation (3) of the
+
+main text, which is convenient to rewrite in the following form 35 :
+
+                          Z                                                                                         o
+dρ(t)    i                         X                     i
+                                                           Q·xn           − ~i Q·xn0     1 n − i Q·xn0 i Q·xn
+      = − [H, ρ(t)] +         dQ          Γ̃n,n0 (Q) e   ~        ρ(t)e                −    e ~       e~      , ρ(t)
+ dt      ~                         n,n0
+                                                                                         2
+                                                                                                                    (8)
+
+where
+                                                   4G µ̃n (Q)µ̃∗n0 (Q)
+                                    Γ̃n,n0 (Q) =                       .                                            (9)
+                                                   π~2      Q2
+
+with
+                                                       Z
+                                            1                               i
+                                   µ̃(Q) =                  dyµ(y)e− ~ Q·y                                        (10)
+                                           2π~3
+
+the Fourier transform of the mass density µ(y).
+
+                                                       25
+      We moved to the Heisenberg picture, introducing the adjoint master equation of Eq. (8),
+
+which for a generic operator O takes the form 49 :
+
+d        i
+                    Z                  
+                                                                   1n                          o
+                                         − ~i Q·xk0       i
+                                                                            − ~i Q·xk0 ~i Q·xk
+                        X
+                                                            Q·xk
+   O(t) = [H, O(t)]+ dQ      Γ̃k,k0 (Q) e           O(t)e ~      −   O(t), e          e           .
+dt       ~              k,k0
+                                                                   2
+                                                                                                (11)
+
+The total Hamiltonian H is the sum of three contributions:
+
+
+                                        H = HS + HR + HINT .                                    (12)
+
+
+The first term is:
+                                                                         !
+                                 X       p2j             X
+                          HS =               + V (xj ) +     U (xj − xi )                       (13)
+                                  j
+                                        2mj              i<j
+
+where the sums run over all particles of the system; V is an external potential and U the potential
+
+among the particles of the system. We specialize on the emission from a crystal, therefore the sum
+
+will run over all the electrons and the nuclei of the system (given the energy range of the emitted
+
+photons we consider, we do not need to resolve the internal structure of the nuclei by considering
+
+their protons). The free electromagnetic Hamiltonian is
+
+                                       XZ                                  
+                                                           1
+                                HR =          dk~ωk          + a†k,µ ak,µ                       (14)
+                                        µ
+                                                           2
+
+where ωk = kc and ak,µ , a†k,µ are, respectively, the annihilation and creation operators of a photon
+
+with wave-vector k and polarization µ. The last term describes the usual interaction between the
+
+electromagnetic field and the particles (at the non-relativistic level):
+
+                               X  ej                X e2j
+                        HINT =    −     A(xj ) · pj +         A2 (xj ),                         (15)
+                               j
+                                    m j               j
+                                                        2m  j
+
+
+
+
+                                                  26
+where ej , mj are the charge and the mass of the j-th particle of the system and A(x) is the vector
+
+potential which can be expanded in plane waves as:
+                                Z        X     h                                      i
+                       A(x) =       dk       αk ~k,µ ak,µ eik·x + ~k,µ a†k,µ e−ik·x               (16)
+                                         µ
+            q
+                     ~
+with αk =       2ε0 ωk (2π)3
+                             , ε0 the vacuum permittivity and ~k,µ the (real) polarization vectors. Note
+
+that in Eq. (15) the term proportional to pj · A(xj ) is missing because we are working in the
+
+Coulomb gauge where ∇ · A = 0, implying ~k,µ · k = 0; therefore this term contributes in the
+
+same way as the term A(xj ) · pj and the two can be added.
+
+
+      Starting from Eq. (83), the average number of photons emitted at time t ha†kµ akµ it is com-
+
+puted and then inserted in Eq. (82) to find the rate. The calculation is long but conceptually simple:
+
+the integral form of Eq. (83) is expanded perturbatively up to the second order (the first order terms
+
+give no contribution), similarly to what is usually done when the evolution operator is expanded
+
+using the Dyson series. Then one has to compute the nine terms resulting from this expansion.
+
+The calculation is fully reported in the Supplementary Information; here we give the physical pic-
+
+ture underlying the calculations, which proved to be successful when applied to other models of
+
+spontaneous wave function collapse 40, 51–54 .
+
+
+      One can understand the mechanism of radiation emission in terms of a semi-classical pic-
+
+ture. Each time there is a collapse, particles are “kicked”, corresponding to an acceleration with
+
+associated radiation emission. The radiation emitted from different particles may add coherently
+
+or incoherently and to understand under which conditions they occur, it is instructive to study the
+
+radiation emission from two charged particles in the context of classical electrodynamics.
+
+                                                     27
+      Suppose the two particles are accelerated by the same external force. At a point “x” very far
+
+away from the charges, the values of the emitted radiation crucially depends both on the distance
+
+L between the particles and the wavelength λ of the emitted radiation. If the charges have opposite
+
+signs, when L  λ, given x  L, λ, the electric fields E1 (x) generated by the positive charge
+
+and E2 (x) generated by the negative charge will be the same, just with opposite sign, due to the
+
+opposite value of the charges. Then in this case Etot (x) = E1 (x) + E2 (x) ≃ 0, and because the
+
+emitted radiation is proportional to |Etot (x)|2 , there is almost a full cancellation of the radiation
+
+field. On the contrary, if both charges have the same sign, Etot (x) = E1 (x) + E2 (x) ≃ 2E1 (x),
+
+hence the emitted radiation becomes four times larger than that emitted by a single charge. In more
+
+informal terms, we can say that for L  λ a detector at x sees the charges as if they are sitting in
+
+the same point. This leads to a coherent emission which suppresses the radiation emitted when the
+
+particles have opposite charges and maximizes it when they have the same charge.
+
+
+      On the contrary, let us now consider the case L  λ. Still assuming x  L, λ, the two
+
+electric fields E1 (x) and E2 (x) have in general different intensities. In fact, if we label by x1 (x2 )
+
+the distance between the point “x” and the point where the first (second) particle is located, we have
+
+|x1 − x2 | ∼ L. Then the electric fields oscillate many times in the distance |x1 − x2 |. Therefore,
+
+even if at a given point “x” they perfectly cancel, in a nearby point “x+dx” they add constructively.
+
+As for the intensity, one has I(x) ∝ |Etot (x)|2 = |E1 (x)|2 + |E2 (x)|2 + E1∗ (x)E2 (x) + E1 (x)E2∗ (x),
+
+and when we integrate over a spherical surface of radius |x|, to find the total emission rate, the last
+
+two terms average to zero due to the fast oscillating behavior, and one gets that the two particles
+
+emit independently.
+
+
+                                                   28
+      Going back to the calculation in the main text, since the distance between electrons and
+
+nuclei is of order of one Angstrom, while the wavelength of the photons we are considering in
+
+the experiment is much smaller (3.3 × 10−3 < λ < 1.2 × 10−2 Angstrom), we are precisely in
+
+the second situations described here above, so electrons and nuclei emit independently. On the
+
+contrary, protons in the same nucleus are much closer than the smallest wavelength of the photons
+
+we are considering, which explains why they emit coherently. As a result, the emission rate from
+
+the crystal is given by Eq. (4) of the main text, where the emission from the electrons is neglected
+
+and the incoherent emission from all atoms in the crystal is considered.
+
+
+      As a final note, in the DP model there is another reason for the incoherent radiation by
+
+electrons and nuclei, as long as R0  L (which holds in our case). The gravitational fluctuations,
+
+underlying the decoherence term of Eq. (3), which accelerate the charges, become uncorrelated
+
+beyond the range R0 : the electrons and the nuclei are accelerated by uncorrelated “kicks”, resulting
+
+in an induced incoherent emission.
+
+
+Statistical analysis. Each component of the experimental apparatus was characterized by means
+
+of MC simulations (see 50 ) based on the GEANT4 software library (verified by participating to
+
+international proficiency tests organised by the IAEA). The simulations were used to determine i)
+
+the expected background due to residual radionuclides in the materials of the setup, ii) the expected
+
+spontaneous radiation emission contribution to the measured spectrum. More in detail:
+
+
+
+    • i) the MC simulation of the background is based on the measured activities of the residual
+
+
+
+                                                 29
+      radionuclides, in all the components of the setup. The simulation accounts for the emission
+
+      probabilities and the decay schemes, the photon propagation and interactions in the materials
+
+      of the apparatus and the detection efficiencies. The obtained spectrum is compared with the
+
+      measured distribution in Fig. 4.
+
+
+    • ii) the efficiency, as a function of the energy, for the detection of spontaneously emitted
+
+      photons was obtained by generating 108 photons, for each component of the setup, in steps
+
+      of 200 keV (i.e. 15 points in the ROI ∆E = E1 ÷ E2 = (1000 ÷ 3800) keV). The efficiency
+
+      functions i (E), i labelling the material of the detector, were then estimated from polynomial
+
+      fits of the corresponding distributions. Given the rate in Eq. (4) one expects to measure a
+
+      number of events:
+                                           Z
+                                                dΓt
+                                                     T i (E)dE,                                (17)
+                                             ∆E dE i
+
+      due to the spontaneous emission by protons belonging to the i-th material, during the acqui-
+
+      sition time T . Summing over all the materials, the total signal contribution (see Eq. (5)) is
+
+      obtained: zs (R0 ) = a/R03 .
+
+
+
+     The stochastic variable, representing the total number of photon counts measured in the range
+
+∆E, follows a Poisson distribution:
+
+                                                        Λzcc e−Λc
+                                         p(zc |Λc ) =             ,                             (18)
+                                                           zc !
+
+with Λc the corresponding expected value. Two sources contribute to the measured spectrum: a
+
+background (b) originated by all known emission processes, together with a potential signal (s) due
+
+to spontaneously emitted photons induced by the collapse process. The total number of counts,
+
+                                                   30
+respectively zb and zs , which would be measured in the period T , were estimated according to
+
+i and ii. The corresponding independent stochastic variables can be also associated to Poisson
+
+distributions, whose expected values (Λb and Λs ) are then related by:
+
+
+                            Λc (R0 ) = Λb + Λs (R0 ) = zb + zs (R0 ) + 2                               (19)
+
+
+where the dependence on R0 is explicitly shown.
+
+
+      The pdf of Λc (R0 ) can then be obtained from Eq. (18) by applying the Bayes theorem:
+
+                                                        p(zc |Λc (R0 )) · p̃0 (Λc (R0 ))
+              p̃ (Λc (R0 )|p(zc |Λc (R0 ))) = R                                                    ,   (20)
+                                                  D
+                                                    p(zc |Λ c (R0 )) · p̃ 0 (Λc (R0 )) d[Λc (R0 )]
+
+with D the domain of Λc and p̃0 the prior distribution. R0 is constrained by the requirement
+
+R0 > R0min = 10−14 m, which implies an upper bound on Λc (see Eq. (19)). We then used a
+
+Heaviside function for the prior
+
+
+                                   p̃0 (Λc (R0 )) = θ(Λmax
+                                                       c   − Λc (R0 )),                                (21)
+
+
+with Λmax
+      c   = Λc (R0min ). From Eq. (20) the pdf of Λc (R0 ) is:
+
+                                                  Λzcc e−Λc θ(Λmax
+                                                                c   − Λc )
+                               p̃ (Λc (R0 )) =      R Λmax                 .                           (22)
+                                                        c
+                                                           Λ zc e−Λc dΛ
+                                                      0      c          c
+
+
+In order to obtain the bound given in Eq. (6) one then has to solve the following integral equation
+
+for the cumulative pdf :
+                                            γ(zc + 1, Λ̄c )
+                                   P̃ Λ̄c =                    = 0.95                                  (23)
+                                            γ(zc + 1, Λmax
+                                                       c     )
+
+which yields Λc < Λ̄c = 617. As a consequence
+                                                                   r
+                                           a                             a
+          Λc (R0 ) = Λs (R0 ) + Λb < 617 ⇒ 3 + Λb + 1 < 617 ⇒ R0 > 3          .                        (24)
+                                          R0                         616 − Λb
+
+                                                      31
+      The analysis was performed in the energy range E1 ÷ E2 in which all the hypotheses of the
+
+model, for the spontaneous emission of protons, are fulfilled. However the energy range in which
+
+spontaneous photon emission is expected, according to Eq. (4), extends up to 100 MeV. A fraction
+
+of spontaneously emitted photons with energy E ∈ E2 ÷E3 = (3.8÷100) MeV could be degraded
+
+in energy due to Compton scattering, thus contributing to Λs (R0 ); for this reason we estimated the
+
+corresponding improvement (I) to the bound in Eq. (6). Any improvement in the description of
+
+the expected background (or signal) contribution would lead to a bigger value of Λb (or a), and
+
+from Eq. (24) one can infer that this would translate in a stronger bound on R0 .
+
+
+      Regarding Λb , since the MC simulation is based on the measured activities, we do not expect
+
+a contribution to photon emission, at energies higher than 3.8 MeV, originated from radionuclides
+
+decays.
+
+
+      The total number of spontaneously emitted photons which are generated in the materials of
+
+the detector in the energy range E2 ÷ E3 is given by:
+
+                 X Z E3 dΓt                X Z E3                   1        b
+                                  T dE =             Ni2 Nai β T    3
+                                                                        dE = 3 > 0,             (25)
+                  i   E2   dE i             i   E2                 R0 E     R0
+
+where Ni and Nai are, respectively, the number of protons contained in each atom and the number
+
+of atoms of the i-th material, while the constant β is defined as:
+
+                                                2 Ge2
+                                           β=                 ,                                 (26)
+                                                3 π 3/2 ε0 c3
+
+G, e, ε0 and c are constants of nature with the usual meaning. Let us indicate with f the fraction of
+
+these photons which, due to Compton scattering, produce events in the ROI and are detected. The
+
+                                                  32
+total signal contribution turns then to be:
+
+                                                   a   fb   a
+                                      zs (R0 ) =    3
+                                                      + 3 > 3.                               (27)
+                                                   R0 R0   R0
+
+Since a + f b > a, the contribution of the spontaneous emission in the range E2 ÷ E3 improves the
+                        p
+bound on R0 by a factor 3 (a + f b)/a.
+
+
+      We extracted the maximal improvement I under the extreme - nontheless most conservative
+
+- assumption that all the primary spontaneously emitted photons generated in the i-th material, in
+
+the energy range E2 ÷ E3 , are degraded, due to scattering, to the energy Eimax, ef f ∈ E1 ÷ E2
+
+which corresponds to the maximal efficiency for the corresponding material (see Fig. 1 of the
+
+Supplementary Information). The total signal contribution then amounts to:
+
+                          X Z E2 dΓ                                   Z E3
+                                                           X                 dΓ
+             zs (R0 ) =                    T i (E) dE +       max
+                                                                i                 T dE =
+                           i   E1   dE i                   i           E2    dE i
+                                                                                             (28)
+                                                     m3    a+fb
+                          = (1.756 + 5.712) × 10−29       =
+                                                      R03    R03
+
+which corresponds to an improvement I ∼ 1.620. The improvement is not sizeable, as stated in
+
+the main text, even under the exaggerated assumptions we considered.
+
+
+
+
+                                                    33
+Supplementary Information
+
+1   Statistical Analysis
+
+
+
+Expected value of the integral number of detected photons
+
+
+
+The measured emission spectrum, corresponding to a data taking period of about 62 days, is shown
+
+in Fig. 3. As described in section 1.0.2 a MC investigation of the background caused by known
+
+emission processes was performed. 88% of the measured counts can be interpreted in terms of
+
+background in the energy range ∆E = (1000 ÷ 3800) keV. ∆E satisfies all the theoretical con-
+
+straints on the spontaneous emission rate (Eq. (4) in the main text) provided that the dominant
+
+contribution of protons is considered only, since electrons are relativistic in this range. We than
+
+took ∆E as the region of interest for the following analysis.
+
+
+      Following the notation introduced in the main text, we call zc the total number of exper-
+
+imentally measured photon counts in the energy range ∆E, zc = 576. The stochastic variable
+
+representing the measured number of photons follows a Poisson distribution:
+
+                                                      Λzcc e−Λc
+                                       p(zc |Λc ) =             ,                             (29)
+                                                         zc !
+
+where we represent the parameter of a Poisson distribution with the capital letter (Λ); Λc is the
+
+expected value for the total number of measured counts in ∆E.
+
+
+      Two sources can be considered to contribute to the measured spectrum: a background (b)
+
+component accounting for all the known emission processes, together with a potential signal (s) of
+
+                                                 34
+spontaneously emitted photons originated by the collapse process. Since both the spontaneous and
+
+background radiations can be associated to Poissonian distributions we can rewrite the expected
+
+number of measured counts as Λc = Λb + Λs . The expected number of signal counts Λs can be
+
+predicted on the base of the collapse model, as a consequence Λs and Λc are functions of the model
+
+parameters; in the present analysis Λs = Λs (R0 ) and Λc = Λc (R0 ).
+
+
+        In the following sections 1.0.1 and 1.0.2 Λs (R0 ) and Λb are estimated.
+
+
+
+
+1.0.1    Estimate of the signal contribution to the measured spectrum
+
+
+
+In this section an estimate of the signal component will be given, i.e. the total number of spon-
+
+taneously emitted photons which would be measured by the Germanium detector during the ac-
+
+quisition time T , as a consequence of the contribution of all the protons inside the experimental
+
+apparatus. The contribution of each material of the setup to the spontaneous emission rate (Eq. (4)
+
+in the main text), depends on its mass, atomic weight and density. The detection efficiency for the
+
+emitted photons strongly depends on the composition and the geometry of the setup. MC simula-
+
+tions (see 50 ), based on the GEANT4 software library were performed by generating 108 photons in
+
+each component of the detector, spaced by 200 keV (i.e. 15 points in the ROI ∆E = (1000÷3800)
+
+keV). The efficiency spectra in the region of interest ∆E, for all the materials which give a signif-
+
+icant contribution, are shown in Fig. 6.
+
+
+        Polinomial fits were performed of each efficiency distribution in order to obtain the efficiency
+
+
+                                                   35
+Figure 6: MC simulations of the photon detection efficiencies. The figure shows the detection
+
+efficiency distributions as a function of the energy in the ROI. The efficiencies were obtained
+
+by means of MC simulations, generating 108 photons in each component of the detector, spaced
+
+by 200 keV. Colours are used to distinguish different materials of the experimental apparatus, as
+
+explained in the legend top right in the figure.
+
+
+functions i (E) (the index i labels the materials of the apparatus):
+
+                                                    ci
+                                                    X
+                                         i (E) =         ξij E j ,                          (30)
+                                                    j=0
+
+
+where ci represents the degree of the polinomial expansion for the efficiency function of the i-th
+
+component, ξij is the matrix of the coefficients.
+
+
+      The total number of signal counts expected to be emitted by the i-th component, in the
+
+
+                                                    36
+energy range ∆E, is calculated by integrating the theoretical rate (Eq. (4) in the main text) over
+
+∆E, weighted with the corresponding efficiency function and multiplying for the acquisition time
+
+T . The contributions are then summed to get the total number of detected spontaneously emitted
+
+photons:
+                                     X Z E2 dΓt
+                        zs (R0 ) =                    T i (E) dE =
+                                      i   E1   dE i
+                                     X Z E2                         ci
+                                                              1 X
+                                =              Ni2 Nai β T             ξij E j dE            (31)
+                                      i   E1                 R03 E j=0
+
+                                                      m3   a
+                                = 1.756 × 10−29        3
+                                                         = 3.
+                                                      R0  R0
+Ni and Nai are, respectively, the number of protons contained in each atom and the number of
+
+atoms of the i-th material while the constant β is defined as:
+
+                                                  2 Ge2
+                                           β=                                                (32)
+                                                  3 π 3/2 ε0 c3
+
+where G, e, ε0 and c are constants of nature with the usual meaning. In Eq. (31) the depen-
+
+dence of the total number of detected spontaneously emitted photons on the parameter R0 ap-
+
+pears explicitely. Since zs follows a Poissonian distribution the corresponding expected value is
+
+Λs = zs + 1.
+
+
+
+
+1.0.2   Background contribution to the measured spectrum
+
+
+
+In order to evaluate the background from known emission processes, the activities of the residual
+
+radionuclides in the components of the setup were measured. The background characterization
+
+was performed by means of MC simulations of the decays of each radionuclide contained in each
+
+                                                   37
+material, taking into account the emission probabilities and the decay schemes, the photon prop-
+
+agation and interactions inside the materials of the detector (giving rise to the continuum part of
+
+the background spectrum) as well as the detection efficiencies. In Fig. 4 of the main text the mea-
+
+sured spectrum (dark grey histogram with error bars), is compared, in the ROI, with the simulated
+
+background distribution (green curve).
+
+
+     Given a total number Nij of generated MC events for the i-th material and the j-th radionu-
+
+clide the corresponding number of background counts is:
+
+                                                 mi Aij T Nrec,ij
+                                       zb,ij =                    ,                           (33)
+                                                       Nij
+
+where mi is the mass of the i-th component, Aij s are the measured activities and Nrec,ij is the
+
+number of detected photons. The experimental and the MC simulated spectra agree at 88% for
+
+energies greater then 1 MeV whereas the low energy region has some deviations. This is mostly
+
+due to the impossibility to perfectly account for the residual cosmic rays and the bremsstrahlung
+
+caused by 210 Pb and its daughters in the massive lead shield. The total number of background
+
+counts in ∆E is estimated to be:
+                                                 X
+                                        zb =           zb,ij = 506,                           (34)
+                                                 i,j
+
+zb is also Poissonian, consequently the corresponding expected value is Λb = zb + 1.
+
+
+     The expected value for the integral number of detected photons in ∆E is then :
+
+                                                              a
+                                   Λc (R0 ) = Λs + Λb =           + 508.                      (35)
+                                                              R03
+
+In the next section the probability distribution function (pdf ) of Λc (R0 ) will be obtained, from
+
+                                                       38
+which the lower limit on R0 is extracted.
+
+
+
+
+1.0.3    Lower limit on the R0 parameter of the model
+
+
+
+The pdf of Λc (R0 ), which we will simply denote as Λc in this section, can be obtained from
+
+Eq. (29) by applying the Bayes theorem:
+
+                                                        p(zc |Λc ) · p̃0 (Λc )
+                            p̃ (Λc |p(zc |Λc )) = R                                .              (36)
+                                                      D
+                                                        p(zc |Λc ) · p̃0 (Λc ) dΛc
+
+If no information or constraint is given on Λc , then the prior p̃0 (Λc ) should be taken constant, and
+
+the posterior would be a gamma pdf for Λc :
+
+                                                             Λzcc e−Λc
+                                    p̃ (Λc |p(zc |Λc )) =              ,                          (37)
+                                                             Γ(zc + 1)
+
+with Γ being the Gamma function. In order to estimate what is the lower limit on the parameter R0
+
+which is compatible with the measured number of photons zc in ∆E and the estimated background
+
+zb , within a probability of 0.95, we should then solve the integral equation:
+                                   R Λ̄c
+                                   0
+                                         Λzcc e−Λc dΛc   γ(zc + 1, Λ̄c )
+                        P̃ Λ̄c =                       =                 = 0.95,                  (38)
+                                        Γ(zc + 1)         Γ(zc + 1)
+
+with γ being the upper incomplete gamma function, which yields Λc < Λ̄c = 617.
+
+
+        Since R0 is constrained by the requirement R0 > R0min = 10−14 m the following prior is to
+
+be considered accordingly:
+
+                                        p̃0 (Λc ) = θ(Λmax
+                                                       c   − Λc ),                                (39)
+
+
+
+                                                       39
+where θ is the Heaviside function and Λmax
+                                       c   is defined as:
+
+                                                         a
+                                        Λmax
+                                         c   =                    + 508.                        (40)
+                                                      [R0min ]3
+
+As a consequence the pdf for Λc assumes the expression:
+
+                                                      Λzcc e−Λc θ(Λmax
+                                                                    c   − Λc )
+                              p̃ (Λc |p(zc |Λc )) =     R Λmax                 ,                (41)
+                                                            c
+                                                               Λ zc e−Λc dΛ
+                                                          0      c          c
+
+
+the integral equation to be solved for the cumulative pdf is then:
+
+                                           γ(zc + 1, Λ̄c )
+                                  P̃ Λ̄c =                    = 0.95                            (42)
+                                           γ(zc + 1, Λmax
+                                                      c     )
+
+The value of Λ̄c is not significantly affected by the cutoff R0min = 10−14 m, introduced to guarantee
+
+that protons in the nuclei emit coherently. From the relation Λc (R0 ) < 617 we then obtain:
+
+                                                            r
+                                    a                             a
+              Λs (R0 ) + Λb < 617 ⇒ 3 + Λb + 1 < 617 ⇒ R0 > 3          .                        (43)
+                                   R0                         616 − Λb
+
+which implies
+
+                                          R0 > 0.54 × 10−10 m                                   (44)
+
+with a probability of 0.95.
+
+
+
+
+                                                        40
+2   Derivation of ∆EDP
+
+
+
+In deriving Eq. (2) of the main text, Penrose assumes that the discrepancy between the spacetimes
+
+generated by two terms of a spatial superposition can be quantified, in the non-relativistic and
+
+Newtonian limit, by the expression
+
+                                                Z
+                                       1
+                                ∆EDP =                dr (ga (r) − gb (r))2 ,                       (45)
+                                       G
+
+where ga (r) and gb (r) represent the accelerations experienced by a test mass at point r, when the
+
+mass density of the system generating the gravitational field is centered around point a and b re-
+
+spectively. The key idea is that, at r, the square of the difference of the accelerations corresponding
+
+to each branch of the superposition is a good measure of how much the two space-times differ in
+
+that point. Then, the total difference is given by integrating this quantity over space. The factor
+
+1/G, not present in the 1996 paper 14 but later introduced 55 , is required for dimensional reasons.
+
+
+      Next, by using the relation g(r) = −∇Φ(r), performing an integration by parts and using
+                                                                 R    µ(y)
+the Poisson equation ∇2 Φ(r) = 4πGµ(r) and its solution Φ(r) = −G dy |r−y| , one arrives at
+
+the following relation:
+
+                                                      [µa (r) − µb (r)] [µa (r 0 ) − µb (r 0 )]
+                                  Z        Z
+                   ∆EDP = 4πG         dr       dr 0                                             .   (46)
+                                                                    |r − r 0 |
+
+Here, µa and µb represent the mass density distribution of the system centered respectively around
+
+position a and position b in space, corresponding to the two terms of the superposition. Note that,
+
+compared to the result in 14 , Eq. (46) has a positive sign in front of it, which is required to avoid
+
+negative decay times of the superposition (see Eq. (1) of the main text).
+
+                                                         41
+          A specific dynamic leading to a decay time of the form as in Eq. (46) were already introduced
+
+by Diósi1 in the form of a unitary stochastic model 17 and of a collapse model 18 .
+
+
+          It is also interesting to note that, in more recent papers 15, 16 , Penrose derives Eq. (46) through
+
+requiring the validity of equivalence principle at the quantum level.
+
+
+          To conclude, in our analysis we assume that µa (r) and µb (r) represent the same mass distri-
+
+bution (but differently located): µa (r) = µ(r−a) and µb (r) = µ(r−b). This condition is fulfilled
+
+by rigid bodies, the kind of systems we consider in this work. In this case Eq. (46) simplifies to
+
+Eq. (2) of the main text, with d := a − b.
+
+
+
+3       Decay time τDP for a crystal structure
+
+
+
+Following Penrose 15, 24 , we consider a mono-atomic simple cubic crystal, with lattice constant a.
+
+The contribution from the electrons can be neglected for two reasons: first, their mass is negligible
+
+compared to that of the nucleons; second, their wave function and therefore their mass distribution,
+
+according to Penrose, is much more spread out in space, making the self-gravitational energy
+
+smaller.
+
+
+          Let us suppose the crystal is initially in a superposition of two different positions in space,
+
+separated by a distance d such that d = |d|  R0 (as an example, d ∼ 10−13 m is considered in 24 ),
+    1
+        The factor in front of the integrals in Eq. (46) changes in different articles of Penrose: in the original derivation 14
+
+it is equal to 4πG as in the derivation here, in 55 is just equal to G while in 16 is equal to 4πGγ with γ a constant later
+
+set γ = 1/(8π). This last choice is equivalent to that of Diósi in 17 , where the factor is equal to G/2.
+
+
+                                                                42
+such that the mass distributions in the two terms of the superposition are non-overlapping; see Fig.
+
+7. The mass density distribution of the crystal is the sum of the mass density distributions of each
+
+
+
+
+Figure 7: Spatial superposition at distance d of a crystal with lattice constant a. The figure
+
+shows a crystal lattice set in a spatial superposition at a distance d. A detailed proposal to achieve
+
+such a superposition for d ≃ 10−13 m, using an optomechanical setup, was given in 24 .
+
+
+
+nucleus of its N atoms (we assume that each nucleus has the same mass density distribution):
+
+                                              N
+                                              X
+                                     µ(r) =         µR0 (r − xi ),                               (47)
+                                              i=1
+
+
+where xi is the equilibrium position of the center of mass of the i-th nucleus and µR0 (r) is the
+
+mass distribution of a single nucleus. We model it as a sphere of radius R0 :
+
+                                          3m
+                             µR0 (r) =         θ(R0 − r),        r = |r|.                        (48)
+                                         4πR03
+
+                                                    43
+We first compute ∆EDP (d) for a single nucleus in a superposition state and then generalise the
+
+result to the whole crystal.
+
+
+         From Eq. (2) of the main text we have:
+                                                 Z
+                         ∆EDP (d) = −8πG             dr 0 [µR0 (r 0 + d) − µR0 (r 0 )] IR0 (r 0 )
+                                                 Z
+                                     = −8πG          dr 0 µR0 (r 0 ) [IR0 (r 0 − d) − IR0 (r 0 )] ,             (49)
+
+
+where we introduced
+                                                    
+                                                              r02
+                                                                 
+                                                      3m
+                                                    
+                                                           2
+                                                     3 R0 −                           if r0 ≤ R0 ,
+                                    Z               
+                                                    
+                                         µR0 (r)      2R0      3
+                       IR0 (r 0 ) := dr           =                                                             (50)
+                                        |r − r 0 |  m
+                                                                                       if r0 ≥ R0 ;
+                                                    
+                                                    
+                                                     0
+                                                      r
+in the last step, we used Eq. (48) for µR0 (r). Taking into account that the mass density µR0 (r 0 ) in
+
+Eq. (49) is such that r0 ≤ R0 , one gets:
+                                      
+                                                    d2
+                                                      
+                                      
+                                         m    0
+                                       3 r ·d−                                           if |r 0 − d| ≤ R0 ,
+                                      
+                                      
+                 0               0       R0          2
+           IR0 (r − d) − IR0 (r ) =                                                                             (51)
+                                                              r02
+                                                                 
+                                      
+                                           m      3m     2
+                                                 −       R0 −                             if |r 0 − d| ≥ R0 .
+                                      
+                                      
+                                         |r − d| 2R03
+                                       0
+                                                               3
+There are two limiting cases of interest. The first case occurs when d  R0 and for almost2 all
+
+points r 0 it holds |r 0 − d| ≤ R0 . Then we have:
+
+                                                                         d2               4πGm2 d2
+                                                 Z                               
+                                  8πGm                 0         0       0
+                     ∆EDP (d) ≃ −                    dr µR0 (r ) r · d −              =            .            (52)
+                                   R03                                   2                  R03
+
+In the second case, the one we are interested in, d ≥ 2R0 , so that |r 0 − d| ≥ R0 ; one then has:
+
+                                                                           r02      8πGm2 6 R0
+                          Z                                                                 
+                                 0       0     m     3m                2
+  ∆EDP (d) = −8πG             dr µR0 (r )          −                  R0 −        =          −     . (53)
+                                          |r 0 − d| 2R03                    3         R0   5   d
+   2
+       “Almost” refers to the fact that the inequality is violated by some points for which R0 ≤ |r 0 − d| ≤ R0 + d.
+
+However, for small d, the contribution of these points is negligible.
+
+
+                                                            44
+Note that in the first case one has a quadratic increase of the collapse time with the square of
+
+the superposition distance, which is typical of decoherence phenomena in the regime of small
+
+spatial superpositions 56 . In the second case, the collapse time saturates to a finite value; this is
+
+also a typical feature in open quantum system’s dynamics e.g. collisional decoherence. Results in
+
+Eqs. (52), (53) are in agreement with those in 15, 16 , apart for a factor 8π due to a different definition
+
+of ∆EDP used in these references, precisely by the same factor.
+
+
+      Considering the whole crystal we have:
+
+                         N Z                                             0
+                                               0 µR0 (r − xi ) [µR0 (r        + d − xj ) − µR0 (r 0 − xj )]
+                         X            Z
+    ∆EDP (d) = −8πG              dr       dr                                                                ;   (54)
+                         i,j=1
+                                                                             |r − r 0 |
+
+we focus only on the case d ≥ 2R0 , which is consistent with the above mentioned values d ∼
+
+10−13 m and the fact that the nucleus dimensions are of the order R0 ∼ 10−15 − 10−14 m. The
+
+contribution of all terms with i = j is given by Eq. (53). The contribution of the terms with i 6= j is
+
+negligible compared to that from the diagonal terms, as shown at the end of this section. Therefore
+
+we have:
+                                              8πGm2
+                                                                               
+                                                                   6 R0
+                                 ∆EDP (d) = N                        −              .                           (55)
+                                                R0                 5   d
+
+Note that this formula cannot be obtained by simply replacing the single particle mass m with the
+
+total mass M = N m of the system in Eq. (53). In that case one would get a factor N 2 in place
+
+of N . This is due to the fact that ∆EDP does not depend only on the mass of the object and the
+
+distance between the different branches of the superposition, but also on how the mass is spatially
+
+distributed. The reason why here we get a linear scaling in N is related to the fact that R0  a
+
+and thus the contribution from the off diagonal terms of Eq. (54) is negligible (see below). On the
+
+
+                                                        45
+contrary, if R0 ≃ a, as for a fully homogeneous body, the contribution from the off diagonal terms
+
+would have been of the same order as that from the diagonal one, and we would have obtained a
+
+factor N 2 in Eq. (55), making ∆EDP proportional to the square of the total mass, consistently with
+
+Eq. (53).
+
+
+      In the specific situation considered in 24 , the speck of matter which is in the superposition
+
+state at distance d = 10−13 m is a mirror with total mass M ≃ 5 × 10−12 Kg and the number of
+
+atoms is of order N ≃ 1014 , implying that each nucleus has a mass m ≃ 5 × 10−26 Kg. From this
+
+and Eq. (55), choosing R0 = 10−14 m, one gets:
+
+
+                                     ∆EDP (d) ≃ 4.61 × 10−32 J,                                (56)
+
+
+corresponding to a decay time
+
+                                               ~
+                                     τDP =            ≃ 0.0023 s.                              (57)
+                                             ∆EDP (d)
+
+This decay time is about two orders of magnitudes smaller than the value usually considered by
+
+Penrose, which is τDP ∼ 0.1 s. If however, following 15 , the superposition is taken at a distance
+
+d ≃ 10−14 m, then the decay time becomes:
+
+                                                ~
+                                      τDP =            ≃ 0.013 s                               (58)
+                                              ∆EDP (d)
+
+which is closer to the value suggested by Penrose.
+
+
+Contribution from the off diagonal terms in Eq. (54) We now set an upper bound on the con-
+
+tribution of the off diagonal terms in Eq. (54) i.e.:
+
+
+                                              D := −8πGI                                       (59)
+
+                                                   46
+with
+                                     N Z
+                                                             µR0 (y)[µR0 (y 0 + d) − µR0 (y 0 )]
+                                     X            Z
+                             I :=            dy       dy 0                                                               (60)
+                                     i6=j
+                                                                   |y − y 0 + xi − xj |
+
+where, starting from Eq. (54), we performed the change of variables y = r − xi and y 0 = r 0 − xj .
+
+
+       We introduce xij := xi − xj and xij = |xij | and use the fact that R0  d  xij (in the first
+
+and third steps):
+
+            N Z                                   0            0       N 
+                                                                              m2       m2
+                                                                                             
+                                 0 µR0 (y)[µR0 (y + d) − µR0 (y )]
+            X            Z                                           X
+       I=           dy        dy                                   ≃                 −
+            i6=j
+                                         |y − y 0 + xi − xj |        i6=j
+                                                                           |d + xij | |xij |
+                                                     
+          N                                             N                                    2 !                N
+            m2                                           m2                                           d2 m 2 X 1
+                                                                                   
+                r 1                                                        1           d
+          X                                          X
+        =                                        − 1 ≃
+                                                                         −                         =−               .   (61)
+            xij   2
+            i6=j                d
+                                                          xiji6=j
+                                                                            2          xij               2 i6=j x3ij
+                               xij
+                                            +1
+
+Considering a cubic geometry of the crystal, we write:
+
+
+                                                 xi = i1 ax̂ + i2 aŷ + i3 aẑ,
+
+
+with i1 , i2 and i3 integers labelling the site where the i-th nucleus is located. The conclusions of
+
+this analysis, are not affected by the specific choice of this geometry, what is relevant here are the
+
+differences in magnitude among a, d and R0 . Then
+
+                                       p
+                                xij = a (i1 − j1 )2 + (i2 − j2 )2 + (i3 − j3 )2 ,
+
+
+and
+                                                                    d2 m2
+                                                          I≃−             S,
+                                                                     2a3
+
+with
+                                N N
+                                X X                                            1
+                         S :=                                                                            3   .
+                                                           2            2            2 2
+                                 i=1 j=1,(j6=i) [(i1 − j1 ) + (i2 − j2 ) + (i3 − j3 ) ]
+
+
+                                                                    47
+      We now provide an upper bound for S. Because of the double sum, each nucleus interacts
+
+with all the others. However, the terms of the sums between nuclei at large distances are smaller
+
+than those between closer nuclei. This implies that the largest term of the sum over i is that given
+
+by the nucleus in the center of the cube. Therefore:
+                                             n/2             n/2        n/2
+                                             X               X          X                  1
+                                 SN                                                                   3   ,                         (62)
+                                                                         2    2    2 2
+                                            j1 =−n/2 j2 =−n/2 j3 =−n/2 (j1 + j2 + j3 )
+                                                  (j1 ,j2 ,j3 )6=(0,0,0)
+                                      √
+                                      3
+where we introduced n =                   N − 1, which is consistent with the fact that the sum over j runs
+
+over N − 1 particles. Since the sums in Eq. (62) are symmetric under the change j` → −j` (with
+
+` = 1, 2, 3), one can also write
+                n/2 n/2 n/2
+            3
+                X   X X                      1
+  SN2                                                   3                                                                           (63)
+                                       2 2    2 2
+                j1 =0 j2 =0 j3 =0 (j1 + j2 + j3 )
+                (j1 ,j2 ,j3 )6=(0,0,0)
+                                                                                                              
+            1 1 1    1 X n/2
+                       1 X        n/2 n/2
+                                1 X         n/2 n/2 n/2
+          X
+           3
+              X X    X          X     X X       X X                                                                        1
+     = N2        +3         +3           +                                                                                          3
+                                                                                                                   (j12 + j22 + j32 ) 2
+                                                        
+                 j1 =0 j2 =0 j3 =0          j1 =0 j2 =0 j3 =2         j1 =0 j2 =2 j3 =2    j1 =2 j2 =2 j3 =2
+                 (j1 ,j2 ,j3 )6=(0,0,0)
+
+The first term can be computed directly and it is equal to 3 + 2√3 2 + 3√1 3 ≃ 4.25. For the other
+
+terms, one can make use of the fact that the function in the sums of j1 , j2 and j3 is monotocally
+
+decreasing, and so for any a ≥ 0 and n > k > 0
+                                          n                           Z n
+                                          X          1                                 1
+                                                              3   ≤          dx                3   .                                 (64)
+                                                    2                             (a + x2 ) 2
+                                          j=k (a + j )
+                                                              2        k−1
+
+
+Using Eq. (64) in each sum in Eq. (63) and changing to polar coordinates, we get
+                          "          Z n/2                                    !
+                                               1          2            1
+               S  N 23 4.25 + 3           dx     +             +               +                                                    (65)
+                                      1        x3 (1 + x2 ) 23              3
+                                                                  (2 + x2 ) 2
+                          Z √                           !     Z √3n/2      #
+                         π n/ 2         1       r           π            1
+                     +3           dr       +              +           dr
+                         2 1            r2 (1 + r2 ) 23     2 1          r
+
+                                                                   48
+where for the last two terms we choose the range of radius of integration in such a way that the
+
+new integration region embeds the original one. We focus on each integral:
+                                                      !                          √
+    Z n/2
+                    1         2             1                6n     3n   6   √    3 3
+3             dx      3
+                        +           3 +           3       =√    + √    − 2 −3 2−   + ≃
+      1             x     (1 + x2 ) 2   (2 + x2 ) 2         n +4 2 n +8 n
+                                                             2       2           2  2
+                                                            √
+                                                 √      3
+                                             ≃9−3 2−      ≃ 3.89 ,
+                                                       2
+      Z n/√2                            !            √       √            !
+  π                     1      r            3       2 2     2 2 √             3 √       
+3                  dr     +               =   π − √       −       + 2 + 2   ≃   π  2 + 2   ≃ 8.04
+  2       1             r2 (1 + r2 ) 32     4      n2 + 2    n                4
+
+and
+                                             Z √3n/2             √    !
+                                         π               1 π     3n
+                                                       dr = ln
+                                         2    1          r 2     2
+
+Substituting in Eq. (65)
+                                              √           !
+                                         π      3 √
+                                                  3          4π
+                        S  N 23     17 + ln[    ( N − 1)] ∼    N ln (N ) ∼ 1016 ,
+                                         2     2              3
+
+for a crystal with N = 1014 atoms, which implies
+
+                               d2 m2       10−26 (5 × 10−26 )2 16
+                         |I| =     3
+                                     |S|             −30
+                                                              10 ∼ 10−31 Kg2 m−1 ,
+                                2a             2 × 10
+
+which results in
+
+                                         |D| = 8πG|I|  1.7 × 10−40 J,                       (66)
+
+much smaller than the contributions from the terms with i = j, which is given in Eq. (56).
+
+
+
+4     The Master Equation
+
+
+In this section, we show how Eqs. (1) and (2) necessarily imply Eq. (3) of the main text, if one
+
+phenomenologically assumes a Poissonian decay of superpositions as done in 16 .
+
+                                                           49
+      A Poissonian collapse implies that in an infinitesimal time dt there is a probability λdt of
+
+having a collapse which will map ρ(t) → G[ρ(t)], with G the superoperator describing the effect
+
+of a collapse on a given state ρ(t); and a probability (1 − λdt) of having no collapse, therefore the
+
+standard Schrödinger evolution. In mathematical terms:
+
+                                                            
+                                                i
+                    ρ(t + dt) = (1 − λdt) ρ(t) − [H, ρ(t)] dt + λdtG[ρ(t)],                       (67)
+                                                ~
+
+which can be easily rewritten as
+
+                              dρ(t)    i
+                                    = − [H, ρ(t)] + λ (G[ρ(t)] − ρ(t)) .                          (68)
+                               dt      ~
+
+The superoperator L[ρ(t)] := λ (G[ρ(t)] − ρ(t)) is known in the theory of open quantum systems as
+
+the “Lindblad term”. It must act linearly in ρ(t) in order to preserve the probabilistic interpretation
+
+of the statistical operator, as well as to avoid faster than light signaling 57 .
+
+
+      Since Eq. (2) of the main text is translational invariant, a general theorem by Holevo 58–60
+
+fully characterizes the structure of Eq. (68). The Lindblad term must be of the form:
+
+         Z         ∞                                                                      o
+                  X       i
+                            Q·x̂           †         − i
+                                                         Q·x̂   1n †
+L[ρ(t)] = dQΓ̃(Q)       e ~ Lj (Q, p̂)ρ(t)Lj (Q, p̂)e ~       −   Lj (Q, p̂)Lj (Q, p̂), ρ(t) ,
+                  j=1
+                                                                2
+                                                                                                  (69)
+
+with Γ̃(Q) a function, Lj (Q, p̂) operators depending on the momentum p̂.
+
+
+      Gravity-related collapse makes no reference to the momentum of the system, therefore Lj (Q, p̂) =
+
+Lj (Q). In this case Lj (Q) become functions that can be reabsorbed in the definition of Γ̃(Q) (note
+
+that there are no problems with possible divergent quantities since, in writing Eq. (69), it is assumed
+
+
+
+                                                    50
+       R             P∞                   2
+that       dQΓ̃(Q)         j=1 |Lj (Q, ·)| < ∞). Then, Eq. (69) becomes:
+
+                                             Z               i                           
+                                                                             i
+                                 L[ρ(t)] =           dQΓ̃(Q) e ~ Q·x̂ ρ(t)e− ~ Q·x̂ − ρ(t) ,                               (70)
+
+
+which implies that Eq. (68) takes the form:
+                                                           Z
+                       dρ(t)    i                                      i              i
+                                                                                                    
+                             = − [H, ρ(t)] +                   dQΓ̃(Q) e ~ Q·x̂ ρ(t)e− ~ Q·x̂ − ρ(t) .                     (71)
+                        dt      ~
+
+In order to determine Γ̃(Q) in agreement with Penrose’s decay rate (see Eqs. (1) and (2) of the
+
+main text), we have to impose:
+
+                                                                                        0
+                                                                                         − b) − µ(r)µ(r 0 )
+                                                                                                           
+                                                                 0 µ(r − a)µ(r
+                                          Z            Z
+                             8πG
+             ha|L[ρ(t)]|bi =                     dr         dr                                                ha|ρ̂t |bi   (72)
+                              ~                                                        |r − r 0 |
+
+which, taking the matrix element of Eq. (70), implies
+
+                                                 0
+                                0 µ(r − a)µ(r   − b) − µ(r)µ(r 0 )
+              Z        Z                                                                Z
+       8πG                                                                                          i             
+                  dr       dr                                      =                        dQΓ̃(Q) e ~ Q·(a−b) − 1 .      (73)
+        ~                                     |r − r 0 |
+
+Introducing
+                                                                       Z
+                                                  1                                         i
+                                         Γ(y) =                             dQΓ̃(Q)e ~ Q·y ,                               (74)
+                                                (2π~)3
+
+and d = a − b, Eq. (73) gives
+
+                                                                                      µ(r)µ(r 0 + d)
+                                                               Z           Z
+                                            8πG
+                                   Γ(d) =                          dr          dr 0                  .                     (75)
+                                          ~(2π~)3                                        |r − r 0 |
+
+Taking the Fourier transform of both sides and using the relation
+                                                                   i
+                                                              e− ~ Q·s   4π~2
+                                                      Z
+                                                           ds          =      ,                                            (76)
+                                                                |s|       Q2
+
+it is straightforward to prove that
+
+                                                            8πG         4π~2
+                                        Γ̃(Q) =                   µ̃(Q)      µ̃(−Q).                                       (77)
+                                                          ~(2π~)3        Q2
+
+                                                                       51
+Simplifying the constants and using the property µ̃(−Q) = µ̃(Q)∗ (which follows from the fact
+
+that µ(r) is real) we get
+                                                   4G |µ̃(Q)|2
+                                        Γ̃(Q) =                .                                            (78)
+                                                   π~2 Q2
+
+Note that compared to Eq. (17) of 35 there is a factor 8π difference: this is due to the fact that their
+
+master equation differs from the one we are considering precisely by a factor 8π (compare also the
+
+Master Equation (6) of 35 with the one here derived).
+
+
+        To conclude, we proved that Eq. (1) and (2) of the main text, requiring only a Poissonian
+
+decay and translation invariance, imply that the statistical operator for a single particle follows the
+
+Master Equation (ME):
+
+                                            Z
+                  dρ(t)    i                            i
+                                                            Q·x̂      − ~i Q·x̂
+                                                                                      
+                        = − [H, ρ(t)] +         dQΓ̃(Q) e ~      ρ(t)e          − ρ(t) ,                    (79)
+                   dt      ~
+
+with Γ̃(Q) given in Eq. (78). Performing the integration over Q, one can rewrite this ME in the
+
+form:
+                                            Z        Z
+             dρ(t)    i            4πG                            1
+                   = − [H, ρ(t)] −              dx        dy           [µ(y, x̂), [µ(x, x̂), ρ(t)]] ,       (80)
+              dt      ~             ~                          |x − y|
+
+where µ(x, x̂) represents the mass density distribution centered in x̂.
+
+
+        The generalization for multiparticle systems is straightforward, one just needs to replace the
+                                                                                             P
+single particle mass density with the total mass density i.e. µ(x, x̂) → M̂ (x) =               n µn (x, x̂n ):
+
+                                            Z        Z
+             dρ(t)    i            4πG                            1    h       h            ii
+                   = − [H, ρ(t)] −              dx        dy            M̂ (y), M̂ (x), ρ(t) ,              (81)
+              dt      ~             ~                          |x − y|
+
+which is precisely Eq. (3) of the main text.
+
+
+
+                                                     52
+5   Calculation of the radiation emission rate
+
+
+
+In this section Eq. (4) of the main text, namely the power emission formula from a generic system,
+
+will be derived.
+
+
+      The goal is to compute the radiation emission rate already introduced in the Methods in Eq.
+
+(7) and that we report here for convenience:
+
+                                                k2 X
+                                                                 Z
+                                        d                                   d †
+                                           Γt =                       dΩk     ha akν it ,                                    (82)
+                                       dωk      c ν                         dt kν
+
+The starting point of our analysis is the adjoint master equation (ME) introduced in the methods in
+
+Eq. (11):
+
+                    Z                                                                     o
+d        i              X
+                                          − ~i Q·xk0       i
+                                                             Q·x 1 n
+                                                                           − i
+                                                                               Q·x   i
+                                                                                       Q·x
+   O(t) = [H, O(t)]+ dQ       Γ̃k,k0 (Q) e           O(t)e ~ k −                   0
+                                                                    O(t), e ~ k e ~ k         .
+dt       ~              k,k 0
+                                                                 2
+                                                                                                                             (83)
+
+
+Perturbative Master Equation We start by moving to the interaction picture with respect to the
+                                                                                          i             i
+system and the free EM Hamiltonians, introducing OI (t) = e− ~ (HS +HR )t Oe ~ (HS +HR )t , so Eq. (83)
+
+becomes:
+                                        d I
+                                           O (t) = CtI [OI (t)] + LIt [OI (t)]                                               (84)
+                                        dt
+
+where
+                                                             i I
+                                         CtI [OI (t)] :=       HINT (t), OI (t) ,
+                                                                               
+                                                                                                                             (85)
+                                                             ~
+                  Z                                                                                                          o
+                           X
+                                               − ~i Q·xIn0 (t)            i
+                                                                            Q·xIn (t)     1n I      − ~i Q·(xIn0 (t)−xIn (t))
+LIt [OI (t)] :=       dQ          Γ̃n,n0 (Q) e                    I
+                                                                 O (t)e   ~             −   O (t), e                             .
+                           n,n0
+                                                                                          2
+                                                                                                                             (86)
+
+
+                                                                 53
+The interaction picture introduced here has opposite signs in the exponents compared to the stan-
+
+dard one. This is a consequence of the fact that our analysis is starting from the adjoint ME, which
+
+plays the role of the Heisenberg picture in the framework of open quantum systems. In order
+
+to lighten the notation, the superscript “I” will be removed in what follows and the calculations
+
+are meant to be performed in the interaction picture. In addition, when the superoperators Ct and
+
+Lt apply to all the operators on their right, we will omit the square brackets denoting on which
+
+operators they are applied (e.g. Ct1 [Lt2 [O(t)]] will be simply written as Ct1 Lt2 O(t)).
+
+
+          We start the standard perturbative expansion by integrating Eq. (84)
+                                                                    Z t                              Z t
+                                      O(t) = O(0) +                       dt1 Ct1 O(t1 ) +                  dt1 Lt1 O(t1 )                                   (87)
+                                                                     0                                 0
+
+
+and substituting this expression into each integral of Eq. (87)
+                                       Z t                               Z t                               Z t         Z t1
+               O(t) = O(0) +                   dt1 Ct1 O(0) +                  dt1 Lt1 O(0) +                    dt1           dt2 Ct1 Ct2 O(t2 )+           (88)
+                                           0                              0                                 0              0
+          Z t         Z t1                                Z t             Z t1                                       Z t         Z t1
+      +         dt1          dt2 Ct1 Lt2 O(t2 ) +                   dt1            dt2 Lt1 Ct2 O(t2 ) +                    dt1           dt2 Lt1 Lt2 O(t2 ).
+           0           0                                    0              0                                           0             0
+
+The last term can be neglected since we are interested to the lowest relevant order in G. Substituting
+
+one more time, keeping only the contributions of order e2 and G, setting t3 = 0 and O(0) = O we
+
+get
+                           Z t                     Z t                         Z t         Z t1                                Z t         Z t1
+      O(t) = O +                 dt1 Ct1 O +             dt1 Lt1 O +                 dt1             dt2 Ct1 Ct2 O +                 dt1          dt2 Ct1 Lt2 O
+                             0                      0                        0              0                                    0          0
+                 Z t         Z t1                          Z t            Z t1            Z t2
+            +          dt1           dt2 Lt1 Ct2 O +                dt1             dt2          dt3 Ct1 Ct2 Lt3 O
+                  0              0                              0              0           0
+                 Z t         Z t1          Z t2                                    Z t         Z t1             Z t2
+            +          dt1           dt2           dt3 Ct1 Lt2 Ct3 O +                   dt1           dt2             dt3 Lt1 Ct2 Ct3 O                     (89)
+                  0              0             0                                     0           0               0
+
+
+which is the lowest order relevant contribution for the calculation of O(t).
+
+                                                                                   54
+Computation of the emission rate Let us consider the average number of emitted photons:
+
+                                                      h                        i
+                                  ha†kν akν it = Tr        a†kν akν       (t)ρ                     (90)
+
+                                                                              
+Note that since we are working with the adjoint equation, in principle a†kν akν (t) should repre-
+
+sent the operators evolution in Heisenberg picture i.e. given by Eq. (83). However, moving to the
+                                            
+interaction picture does not change a†kν akν (t), which is why we can proceed working in this
+
+picture. We assume ρi = ρg ⊗ |0ih0| with ρg the ground state of the system and |0ih0| the EM
+
+vacuum.
+
+
+      Using Eq. (89) for O = a†kν akν , multiplying by ρi and taking the trace, we can notice the
+
+following: (i) the first two terms are zero because of the average over the EM vacuum; (ii) the
+
+third term is zero because Lt1 a†kν akν = 0, since a†kν akν commute with the system operators (so the
+
+first term in the round bracket of Eq. (86) cancels with those coming from the anticommutator);
+
+(iii) precisely for the same reason, also the fifth and the seventh terms are zero; (iv) the fourth term
+
+describes emission not due to the noise. Assuming, as we are doing, that the crystal in its ground
+
+state, makes this contribution equal to zero. If this is not the case, this term adds a contribution to
+
+the final emission rate formula Eq. (4) in the main text, leading to a stronger bound on R0 . The
+
+assumption that the system is in the ground state is the most conservative one.
+
+
+      Thus, we are left with
+
+                                     ha†kµ akµ it = A1 + A2 + A3                                   (91)
+
+
+
+
+                                                  55
+where
+
+                                 Z t         Z t1             h                             i
+                        A1 :=          dt1          dt2 Tr         ρi Lt1 Ct2 a†kν akν           ,                              (92)
+                                  0            0
+                                 Z t         Z t1         Z t2            h                       i
+                        A2 :=          dt1          dt2             dt3 Tr ρi Ct1 Lt2 Ct3 a†kν akν ,                            (93)
+                                  0            0              0
+                                 Z t         Z t1         Z t2            h                       i
+                        A3 :=          dt1          dt2             dt3 Tr ρi Lt1 Ct2 Ct3 a†kν akν .                            (94)
+                                  0            0              0
+
+
+The evaluation of these terms is given below, where we will show that A1 and A2 give no contri-
+
+bution to the emission rate, while the time derivative of A3 is given by:
+
+                                  "X                                                             y2 +x2                        #
+                        αk2 ~2               e2n
+                                                    Z  Z
+d        1 4πG                                                                       1             −   2
+   A3 = 2 2                                          2 dx dy                                      e 2R0n (~k,ν · y) (~k,ν · x)     .
+dt     ~ ωk ~           (2π)3          n
+                                              10
+                                             R0n                                  |x − y|
+                                                                                                                                (95)
+
+The emission rate in Eq. (82) then becomes
+
+                                                    k2 X
+                                                                         Z
+                                            d                                          d
+                                               Γt =                              dΩk      A3 ,                                  (96)
+                                           dωk      c ν                                dt
+
+and using
+                                           Z          X                      8
+                                               dΩk                ikν jkν = πδ ij ,
+                                                          ν
+                                                                             3
+
+we get
+
+                                              "X 2 Z                   2   2   #
+           k 2 1 4πG             αk2 ~2
+                                                          Z
+   d                                          8     en            1     − y +x
+                                                                             2
+      Γt =                                  2   π        dx dy         e 2R0n y · x .
+  dωk       c ~2 ωk2 ~           (2π)3        3   n
+                                                    R 10
+                                                     0n        |x − y|
+
+
+
+      We now focus on the integrals, which can be computed with the change of variable s = x−y
+
+and performing the integrations in polar coordinates. Then one obtains:
+
+                            Z          Z                             2       2
+                                                 1     − y +x
+                                                      e 2R0n y · x = 4π 5/2 R0n
+                                                                             7
+                                                            2
+                                 dx        dy                                   .                                               (97)
+                                              |x − y|
+
+                                                                   56
+Then, replacing αk2 = 2ε0 ωk~(2π)3 , we finally get the result:
+                                                    "      #
+                                   d         2G       X e2
+                                                         n
+                                      Γt = 3/2 3         3
+                                                             .                                      (98)
+                                  dωk     3π ε0 c ωk n R0n
+
+When we apply this result to an atom with atomic number N , there is a contribution due to the N
+
+electrons with charge e and one from the nucleus with charge N e leading to:
+
+                                           2Ge2          N2
+                                                           
+                                  d                  N
+                                     Γt = 3/2 3       3
+                                                        + 3 ,                                       (99)
+                                 dωk     3π ε0 c ωk R0e  R0
+
+
+
+      In the case of electrons, R0e is at least of order of the Bohr radius while for the nuclei R0 is of
+
+order of few femtometers. Therefore, the contribution from the nuclei is dominant and, considering
+
+a crystal with NA atoms, one gets:
+
+                                          d       2Ge2 N 2 NA
+                                             Γt = 3/2 3 3 ,                                        (100)
+                                         dωk     3π ε0 c R0 ωk
+
+which is precisely Eq. (4) of the main text.
+
+
+Evaluation of A1 , A2 and A3 . The interaction Hamiltonian, introduced in Eq. (15) of the Meth-
+
+ods, is the sum of two terms:
+
+                                         HINT (t) = H1 (t) + H2 (t),                               (101)
+
+both depending on A evolved in the (inverse) interaction picture i.e.
+                            Z        X     h                                                 i
+                A(x, t) =       dk       αk ~k,ν ak,ν eik·x+iωk t + ~k,ν a†k,ν e−ik·x−iωk t .    (102)
+                                     ν
+
+
+Explicitly they are:
+
+              X  ej                         Z   X                  †
+                                                                                    
+    H1 (t) :=    −     A(xj (t), t) · pj (t) = dk    Rk,ν (t) ak,ν + Rk,ν (t) a†k,ν                (103)
+              j
+                   mj                             ν
+
+
+                                                      57
+with
+                                                         Np
+                                                         X  ej
+                          Rk,ν (t) := −αk e     +iωk t
+                                                                    ~k,ν · pj (t)eik·xj (t)   (104)
+                                                         j=1
+                                                               mj
+
+and
+                                                X e2j
+                                     H2 (t) =                  A2 (xj (t), t).                 (105)
+                                                  j
+                                                         2mj
+
+
+
+Evaluation of A1
+
+
+
+We start with evaluating A1 of Eq. (92). As a first step we need to compute
+
+                                    ih                  i
+                    Ct a†kν akν =      HINT (t), akν akν = a†kν Ct akν + Ct [a†kν ]akν .
+                                                  †
+                                                                                               (106)
+                                    ~
+
+The application of the superoperator Lt1 does not affect the EM operators akν and a†kν , therefore
+
+from Eqs. (92), (106) we see immediately that A1 is the sum of two terms, one having an a†kν on
+
+the left and one having an akν on the right. When the quantum average over the EM vacuum is
+
+taken, both contributions are equal to zero, which implies A1 = 0.
+
+
+
+
+Evaluation of A3
+
+
+
+We are left only with the two terms A2 and A3 , both containing twice the superoperator Ct . Since
+
+we are interested only in the contributions up to order e2 , we can neglect H2 (t).
+
+
+       In the next subsection we show how the term A2 gives no contribution. Therefore, we focus
+
+
+
+
+                                                         58
+here on the relevant term A3 defined in Eq. (94). Using the relations
+
+                                                            i                   i †
+                                             Ct akν =         [H1 (t), akν ] = − Rk,ν (t)                                               (107)
+                                                            ~                   ~
+
+and
+                                                                                          i
+                                                 Ct [a†kν ] = (Ct akν )† =                  Rk,ν (t),                                   (108)
+                                                                                          ~
+
+one obtains:
+                                                         i               i
+                                          Ct a†kν akν = − a†kν Rk,ν
+                                                                †
+                                                                    (t) + Rk,ν (t)akν .                                                 (109)
+                                                         ~               ~
+
+Then
+                                                                                                             
+                                       Ct2 Ct3 a†kν akν = Ct2            a†kν Ct3 akν + Ct3 [a†kν ]akν            =                     (110)
+
+                                                                           1             †                      †
+                                                                                                                          
+          = Ct2 [a†kν ]Ct3 [akν ] + Ct3 [a†kν ]Ct2 [akν ] =                    Rk,ν (t2 )Rk,ν (t3 ) + Rk,ν (t3 )Rk,ν (t2 ) ,
+                                                                           ~2
+
+where in the third step we neglected the terms that are null when the average on the EM vacuum is
+
+taken. We make use of the fact that this term enters in Eq. (94) inside a double integral over t2 and
+
+t3 , which implies:
+   Z t1         Z t2                                   Z t1              Z t2
+                                                  1                                   
+                                                                                                     †                      †
+                                                                                                                                        
+          dt2          dt3 Ct2 Ct3 a†kν akν =                    dt2            dt3       Rk,ν (t2 )Rk,ν (t3 ) + Rk,ν (t3 )Rk,ν (t2 )       =
+      0          0                                ~2       0              0
+                     Z t1         Z t2                                              Z t1          Z t1
+                1                                       †                      1                                        †
+                            dt2          dt3 Rk,ν (t2 )Rk,ν (t3 ) +                         dt3          dt2 Rk,ν (t3 )Rk,ν (t2 ) =
+                ~2     0           0                                           ~2     0            t3
+                                                     Z t1            Z t1
+                                                1                                            †
+                                            =                  dt2            dt3 Rk,ν (t2 )Rk,ν (t3 ),
+                                                ~2     0              0
+
+where in the last step we just exchanged the variables of the second integral t2 ←→ t3 .
+
+
+    Then, we can rewrite Eq. (94) as follows:
+     Z t Z t1 Z t1               "             Z
+                                          1              X                h i
+                                                                             − ~ Q·xn0 (t1 )              †         i
+                                                                                                                      Q·xn (t1 )
+A3 = dt1        dt2      dt3 Tr ρg          2
+                                                  dQ          Γ̃n,n 0 (Q)  e                 Rk,ν (t 2 )Rk,ν (t3 )e ~
+
+       0     0        0                   ~              n,n0
+
+     1n                                                     o
+                    †           − ~i Q·(xn0 (t1 )−xn (t1 ))
+   −     Rk,ν (t2 )Rk,ν (t3 ), e                                                                                        (111)
+     2
+
+                                                                            59
+where, using Eq. (104),
+
+             †
+                                                      X ej ej 0
+                 (t3 ) = αk2 e+iωk (t2 −t3 )                                    ~k,ν · pj (t2 )eik·xj (t2 )        ~k,ν · pj 0 (t3 )e−ik·xj0 (t3 ) .
+                                                                                                                                                   
+  Rk,ν (t2 )Rk,ν
+                                                       j,j 0
+                                                                  mj mj 0
+
+We now focus on the first term of Eq. (111) and in particular on
+
+                Z t1           Z t1
+                                                  i                      †                          i
+     T1 :=               dt2          dt3 hg|e− ~ Q·xn0 (t1 ) Rk,ν (t2 )Rk,ν (t3 )e ~ Q·xn (t1 ) |gi =
+                 0              0
+                                  Z t1                        Z t1               
+                                                                                       i
+                 − ~i Q·xn0 (t1 )
+            X                                                              †
+          =  hg|e                       dt2 Rk,ν (t2 ) |f ihf |       dt3 Rk,ν (t3 ) e ~ Q·xn (t1 ) |gi                                          (112)
+                f                                0                                                  0
+
+                                                              P
+where the completeness relation 1 =                            f |f ihf | is written in terms of the free Hamiltonian eigen-
+
+
+states |f i with eigenvalues Ef . The first matrix element in Eq. (112) is
+                               Z t1                                     Z t1
+                                                                                                        i
+           − ~i Q·xn0 (t1 )
+                                                                                        X
+     hg|e                                dt2 Rk,ν (t2 ) |f i =                    dt2           hg|e− ~ Q·xn0 (t1 ) |EihE|Rk,ν (t2 )|f i =
+                                    0                                       0               E
+                                        Z t1                                    
+                     i                                i                                         i
+          X
+      =          e− ~ (Eg −E)t1                 dt2 e− ~ (E−Ef −~ωk )t2 hg|e− ~ Q·xn0 |EihE|Rk,ν (0)|f i =
+            E                             0
+                          i                               i
+                                                                          !
+          X          e− ~ (Eg −Ef −~ωk )t1 − e− ~ (Eg −E)t1                             i
+      =                                                                         hg|e− ~ Q·xn0 |EihE|Rk,ν (0)|f i.                                (113)
+            E
+                            − ~i (E − Ef − ~ωk )
+
+The second term in the round bracket is a consequence of the implicit assumption that the interac-
+
+tion is suddenly switch on at time t = 0. This is clearly not true for the problem we are studying,
+
+since both the interaction with the EM vacuum as well as the gravitational related collapse are
+
+always present. This term gives rise to unphysical contributions, a problem which has been studied
+
+in detail in several articles 52–54, 61 . The simplest way to fix it is to assume an adiabatic switch
+
+on of the potential, which is implemented by adding an exponential factor et with  > 0 to the
+
+interaction, start the time integration at minus infinity so that
+                                                                                                                    i
+                                                                                                                e[− ~ (E−Ef −~ωk )+]t1
+   Z t1                                               Z t1
+                 − ~i (E−Ef −~ωk )t2                                  − ~i (E−Ef −~ωk )t2 +t2
+          dt2 e                               −→                  dt2 e                                     =                                    (114)
+     0                                                 −∞                                                      − ~i (E − Ef − ~ωk )
+
+                                                                            60
+and take the limit  → 0 at the end of the calculation, after all the time integrations or derivatives
+
+are performed. Using Eq. (114), the matrix element we are computing becomes:
+
+                                                                 i
+                                                                                       !
+                                                             e[− ~ (Eg −Ef −~ωk )+]t1
+                         Z t1
+                                                                                              i
+      − ~i Q·xn0 (t1 )
+                                                       X
+ hg|e                           dt2 Rk,ν (t2 )|f i =             i                      hg|e− ~ Q·xn0 |EihE|Rk,ν (0)|f i
+                          0                            E
+                                                             − ~ (E − Ef − ~ωk )
+          − ~i (Eg −Ef −~ωk )+ t1  ]
+      e[                                      i
+  ≃                                     hg|e− ~ Q·xn0 Rk,ν (0)|f i,                                                (115)
+                 + iωk
+
+where in the last step we used the fact that the typical binding energies between electrons and
+
+nuclei are of the order 10 keV, those between the nuclei in the crystal are even weaker and both are
+
+much smaller than the energies of the emitted photons considered in the analysis (which are in the
+
+range 1000 ÷ 3800 keV). Going back to Eq. (112) we find
+
+                                    X e2t1         i                        †        i
+                          T1 =         2    2
+                                              hg|e− ~ Q·xn0 Rk,ν (0)|f ihf |Rk,ν (0)e ~ Q·xn (t1 ) |gi
+                                    f
+                                       + ωk
+
+                                      e2t1       − ~i Q·xn0           †       i
+                                                                                 Q·xn (t1 )
+                                =           2
+                                              hg|e           Rk,ν (0)Rk,ν (0)e ~            |gi.                   (116)
+                                    2 + ωk
+
+The same argument can be applied to the anticommutator in Eq. (111) and we will get the same
+
+factor.
+
+
+        Since we are interested in computing the emission rate, we will need
+
+                          Z t
+   d           d                      e3t1 1                      e3t 1               1
+      A3 = lim                   dt1 2     2 2
+                                               Tr [ρ g X] = lim  2     2 2
+                                                                           Tr [ρg X] = 2 2 Tr [ρg X] , (117)
+   dt      →0 dt             −∞     + ωk ~                →0  + ω ~
+                                                                       k              ~ ωk
+
+where we introduced
+
+    Z                                                                                                  o
+        X
+                           − ~i Q·xn0          †        i
+                                                          Q·x    1n         †         − i
+                                                                                          Q·(x    −x  )
+X := dQ       Γ̃n,n0 (Q) e            Rk,ν (0)Rk,ν (0)e ~    n
+                                                               −   Rk,ν (0)Rk,ν (0), e ~      n 0   n
+                                                                                                           .
+        n,n 0
+                                                                 2
+                                                                                                                   (118)
+
+
+
+                                                                  61
+In order to make explicit some symmetry properties of the calculation, it is convenient to rewrite X
+
+by performing the integration over Q. After a straightforward calculation (see also 35 ), this gives:
+           Z Z                                                                                  o
+       8πG              1                     †              1n                            †
+ X=         dx dy             M (x)Rk,ν (0)Rk,ν (0)M (y) −       M (x)M (y), Rk,ν (0)Rk,ν (0)
+        ~            |x − y|                                 2
+             Z      Z
+         4πG                 1    h       h
+                                                             †
+                                                                  ii
+    =−          dx dy              M (y), M (x), Rk,ν (0)Rk,ν  (0)                              (119)
+          ~               |x − y|
+
+where
+                                                                            (x−xn )2
+                        X                     X              1          −       2
+                                                                              2R0n
+                                                                                            X
+              M (x) =         µn (x, xn ) =        mn             3 e                  :=       mn gn (x).   (120)
+                                                            2 2
+                          n                    n        (2πR0n )                            n
+
+R0n represents the spatial extension of the mass density of the n-th particle (since we are consider-
+
+ing both electrons and nuclei, it is important to consider distinct values for R0 ). Writing explicitly
+
+the “R” terms we get
+                                            Np
+                         †
+                                           X       ej ej 0
+                             (0) = αk2                     ~k,ν · pj eik·xj ~k,ν · pj 0 e−ik·xj0
+                                                                                                  
+                Rk,ν (0)Rk,ν
+                                          j,j 0 =1
+                                                   mj mj 0
+                                            Np
+                                           X       ej ej 0 ik·(xj −xj0 )
+                                  = αk2
+                                                                                               
+                                                           e             ~k,ν · pj ~k,ν · pj 0 ,           (121)
+                                          j,j 0 =1
+                                                   mj mj 0
+
+where in the second step we used the fact that we are working in Coulomb gauge, so ~k,ν · k = 0.
+
+Then
+
+                                           gn0 (y), gn (x), eik·(xj −xj0 ) ~k,ν · pj ~k,ν · pj 0
+                                                                                                
+      4πGαk2 X mn0 mn ej ej 0
+                              Z Z
+ X=−                            dx dy
+        ~ n,n0 ,j,j 0 mj mj 0                                     |x − y|
+                                                                                            
+     4πGαk2 X mn0 mn ej ej 0 ik·(xj −xj0 )            gn0 (y), gn (x), ~k,ν · pj ~k,ν · pj 0
+                                         Z Z
+  =−                          e             dx dy                                                    .
+       ~ n,n0 ,j,j 0 mj mj 0                                           |x − y|
+                                                                                                             (122)
+
+We now focus on the double commutator:
+
+                                                
+     C := gn0 (y), gn (x), ~k,ν · pj ~k,ν · pj 0                                                           (123)
+                                                                                            
+        = gn0 (y), ~k,ν · pj     gn (x), ~k,ν · pj 0 + gn (x), ~k,ν · pj     gn0 (y), ~k,ν · pj 0
+
+
+                                                        62
+where we used the fact that each commutator is just a function of position operators, indeed:
+                                           "             #                                   !
+                                                (x−xn )2                            (x−xn )2
+                              ~k,ν        −    2             ~
+                                                                 k,ν             −     2
+     gn (x), ~k,ν · pj    =           3 ·   e 2R0n , pj =             3 ·  i~∇j e 2R0n
+                                     2 2                            2 2
+                              (2πR0n )                        (2πR0n )
+                                                                                           (x−xn )2
+                                                                                       −       2
+                                                                                             2R0n
+                                                                                      e
+                                = δjn i~ (~k,ν · (x − xn ))                                           .                           (124)
+                                                                                     (2π)3/2 R0n
+                                                                                              5
+
+
+Then C becomes
+                                                              (y−xn0 )2
+                                                                                                                              !
+            2                                                             (x−xn )2
+           ~ (δ δ + δjn δ
+                jn0   j0n            j 0 n0   )           −
+                                                                2R2 0
+                                                                        −     2
+                                                                            2R0n
+  C=−                                                 e           0n                 (~k,ν · (x − xn )) (~k,ν · (y − xn0 ))      (125)
+              (2π)3 R0n
+                     5    5
+                       0 R0n
+
+
+and inserting it in Eq. (122) we get
+                    2 X
+          4πGαk2       ~          en0 en
+   X=                     3        5     5
+                                           {2 cos [k · (xn − xn0 )] ×
+             ~       (2π) n,n0 R0n   0 R0n
+
+                               " (y−x )2                                                      #)
+         Z      Z                       n0   (x−xn )2
+                          1      −     2   −     2
+      × dx dy                   e 2R0n0        2R0n
+                                                      (~k,ν · (x − xn )) (~k,ν · (y − xn0 ))   .                                 (126)
+                       |x − y|
+
+Our goal is to compute Tr [ρg X] and substitute it in Eq. (117). Since ρg describes the state of
+
+the crystal, where the distances between the nuclei and the electrons are much larger than the
+
+photons wavelengths we are measuring (which are in the range [10−4 , 10−3 ] nm), this implies
+
+k · (xn − xn0 )  1 for n 6= n0 . Such contributions, when the sum over the different directions of
+
+k is taken, averages to zero. Then, the only relevant terms are those with n = n0 and, by taking the
+
+trace in the position basis (so that the position operators xn in Eq. (126) become simple integration
+
+variables), performing the change of variables x − xn → x and y − xn → y one gets:
+                   2 2  "X 2  Z              Z             y2 +x2                        #
+             4πG αk ~             en                    1      −   2
+Tr [ρg X] ≃              3         10
+                                        2 dx dy               e 2R0n (~k,ν · y) (~k,ν · x)     .
+               ~    (2π)       n
+                                 R0n                 |x − y|
+
+where we used the fact that, after the change of variables, the trace gives Tr [ρg ] = 1. We finally
+
+get:
+                                      "X                                                              y2 +x2                        #
+                            αk2 ~2                    e2n
+                                                                 Z  Z
+d        1 4πG                                                                               1          −   2
+   A3 = 2 2                                                       2 dx dy                              e 2R0n (~k,ν · y) (~k,ν · x)
+dt     ~ ωk ~               (2π)3                 n
+                                                       10
+                                                      R0n                                 |x − y|
+
+                                                                           63
+which is precisely Eq. (95).
+
+
+
+
+Evaluation of A2
+
+
+
+In this section we compute the A2 term in Eq. (93):
+
+                               Z t         Z t1         Z t2            h                             i
+                       A2 :=         dt1          dt2          dt3 Tr       ρi Ct1 Lt2 Ct3 a†kν akν       .   (127)
+                                0           0            0
+
+
+It will be shown that A2 gives no contribution to the emission rate. We focus on the action of the
+
+superoperators C and L on a†kν akν . Using Eqs. (107), (108) and (109) one gets:
+
+                                     i                         i
+             Ct1 Lt2 Ct3 a†kν akν = − Ct1 a†kν Lt2 [Rk,ν
+                                                     †
+                                                         (t3 )] + Ct1 (Lt2 [Rk,ν (t3 )]akν )                  (128)
+                                     ~                           ~
+
+where we used the fact that Lt2 does not affect akν and a†kν . Using the relations
+
+
+                                                  Lt O† = [Lt O]† ,                                           (129)
+
+                                                                          †
+                             i                                i
+                           †
+                                H1 (t), O† =                  − [O, H1 (t)] = (Ct O)† ,
+                                          
+                      Ct O =
+                             ~                                 ~
+
+Eq. (128) can be written as follows
+
+                                                   i
+                        Ct1 Lt2 Ct3 a†kν akν =       Ct (Lt2 [Rk,ν (t3 )]akν ) + H.c. ,                       (130)
+                                                   ~ 1
+
+where “H.c.” stands for “Hermitian conjugate”. The first term of Eq. (130) is
+
+                                                                                            
+                                                                                  i †
+      Ct1 (Lt2 [Rk,ν (t3 )]akν ) = Ct1 (Lt2 [Rk,ν (t3 )]) akν + Lt2 [Rk,ν (t3 )] − Rk,ν (t1 ) .               (131)
+                                                                                  ~
+
+
+
+
+                                                             64
+The first term of Eq. (131) gives a zero contribution when the average on the EM vacuum is taken.
+
+Then, writing explicitly the last term, we get
+
+                                                      Z
+                                                 1             X                 i                           i
+                 Ct1 Lt2 Ct3 a†kν akν =                   dQ          Γ̃n,n0 (Q) e− ~ Q·xn0 (t2 ) Rk,ν (t3 )e ~ Q·xn (t2 )
+                                                 ~2            n,n0
+
+                                             1n                                         o            
+                                                            − ~i Q·(xn0 (t2 )−xn (t2 ))       †
+                                           −   Rk,ν (t3 ), e                                 Rk,ν (t1 ) + H.c. .                       (132)
+                                             2
+
+Going back to A2 and taking on its time derivative, we have
+
+                                 Z                             Z t          Z t2
+          d        1                      X                                                i                           i
+             A2 := 2                 dQ          Γ̃n,n0 (Q)           dt2          dt3 hg| e− ~ Q·xn0 (t2 ) Rk,ν (t3 )e ~ Q·xn (t2 )
+          dt      ~                       n,n0                  0            0
+
+                         1n                                         o          
+                                        − ~i Q·(xn0 (t2 )−xn (t2 ))       †
+                       −   Rk,ν (t3 ), e                                 Rk,ν (t) |gi + H.c. .                                         (133)
+                         2
+
+We consider the first term in the round bracket and we follow the same steps used for computing
+
+d
+  A : we insert a completeness in the energy eigenstates of the system and also the adiabatic switch
+dt 3
+
+
+on of the interactions:
+
+  Z t                  Z t2
+                                            i                                           i
+                                    X                                                                         †
+        dt2 e    t2
+                           dt3 et3   hg|e− ~ Q·xn0 (t2 ) |E 0 ihE 0 |Rk,ν (t3 )|EihE|e ~ Q·xn (t2 ) |f ihf |Rk,ν (t)|gi =
+    −∞                  −∞           f,E,E 0
+        X Z t                    i
+                                                                    Z t2
+                                                                                      i
+                          dt e[− ~ (Eg −E +E−Ef )t2 +t2 ]                  dt3 e[− ~ (E −E−~ωk )t3 +t3 ] e− ~ (Ef +~ωk −Eg )t ×
+                                         0                                                0                      i
+   =                         2
+       f,E,E 0       −∞                                               −∞
+
+                 i                                            † i
+  × hg|e− ~ Q·xn0 |E 0 ihE 0 |Rk,ν (0)|EihE|e ~ Q·xn |f ihf |Rk,ν (0)|gi =
+           X                         ~2 e2t
+   =−                    0 + ~(ω − i)] [E − E + ~(ω − 2i)]
+                                                             ×
+          f,E,E 0
+                  [E − E        k         f   g     k
+
+                 i                                            † i
+  × hg|e− ~ Q·xn0 |E 0 ihE 0 |Rk,ν (0)|EihE|e ~ Q·xn |f ihf |Rk,ν (0)|gi ≃
+                    e2t                 i                 i       †
+   ≃−                              hg|e− ~ Q·xn0 Rk,ν (0)e ~ Q·xn Rk,ν (0)|gi →
+          [(ωk − i)] [(ωk − 2i)]
+                 1        i                 i       †
+   −→ −           2
+                    hg|e− ~ Q·xn0 Rk,ν (0)e ~ Q·xn Rk,ν (0)|gi.                                                                        (134)
+   →0           ωk
+
+                                                                            65
+Proceeding in the same way for the terms in the anticommutator of Eq. (133), we get
+
+                       Z
+    d            1             X
+       A2 := − 2 2 dQ               Γ̃n,n0 (Q)×                                                      (135)
+    dt         ~ ωk            n,n0
+                                                                               o
+                   − ~i Q·xn0           i
+                                          Q·x    1n           − i
+                                                                  Q·(x    −x  )     †
+          × hg| e             Rk,ν (0)e ~    n
+                                               −   Rk,ν (0), e ~      n 0   n
+                                                                                   Rk,ν (0)|gi + H.c. .
+                                                 2
+
+Performing the integration over Q, we get
+
+          Z                   
+                                                      i        1n                             o
+                                 − ~i Q·xn0                                    i
+                 X
+                                                        Q·x                  −   Q·(x   −x  )
+           dQ       Γ̃n,n0 (Q) e            Rk,ν (0)e ~    n
+                                                             −    Rk,ν (0), e ~      n0   n
+
+
+              n,n 0
+                                                               2
+                    Z       Z
+             4πG                      1
+          =−           dx dy                [M (y), [M (x), Rk,ν (0)]]                              (136)
+              ~                 |x − y|
+
+with M (x) defined in Eq. (120) and Rk,ν (0) in Eq. (104) setting t = 0. Since Rk,ν (0) is linear in
+
+the momentum operator, the first commutator will result in a function of position operators only
+
+(see Eq. (124)) which implies that the second commutation gives zero. Therefore
+
+                                               d
+                                                  A2 = 0.                                           (137)
+                                               dt
+
+This concludes the calculations.
+
+
+
+
+                                                   66
+
