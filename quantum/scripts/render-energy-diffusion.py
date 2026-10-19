@@ -18,16 +18,17 @@ OUT = Path(__file__).resolve().parents[1] / "assets"
 
 # Table S5: estimated energy-diffusion length, not directly tracked travel or
 # coherence length. No values are derived or altered here.
-LABELS = ["Microtubules", "+ etomidate", "+ isoflurane"]
+LABELS = ["No anesthetic", "+ etomidate", "+ isoflurane"]
 VALUES = [6.64, 5.61, 5.81]
 ERRORS = [0.10, 0.10, 0.20]
 VALUE_LABELS = ["6.64 ± 0.10", "5.61 ± 0.10", "5.81 ± 0.20"]
 
-BG = "#111411"
-FG = "#efeee7"
-MUTED = "#a7ada1"
-AMBER = "#deb97f"
-GRID = "#33382f"
+BG = "#1c252b"
+FG = "#e8edef"
+MUTED = "#b0bdc5"
+TEAL = "#8fd4c2"
+AMBER = "#e1bd82"
+GRID = "#34434b"
 
 plt.rcParams.update({
     "font.family": "sans-serif",
@@ -52,31 +53,34 @@ def style_axis(ax):
     ax.tick_params(axis="x", labelsize=9.5, length=0, pad=7)
     for spine in ax.spines.values():
         spine.set_visible(False)
-    ax.errorbar(
-        VALUES, [2, 1, 0], xerr=ERRORS, fmt="o",
-        color=AMBER, ecolor=AMBER, markersize=6.2,
-        elinewidth=1.5, capsize=4, capthick=1.4, zorder=3,
-    )
+    for value, error, y, color, marker in zip(
+        VALUES, ERRORS, [2, 1, 0], [TEAL, AMBER, AMBER], ["o", "s", "s"]
+    ):
+        ax.errorbar(
+            value, y, xerr=error, fmt=marker,
+            color=color, ecolor=color, markersize=6.2,
+            elinewidth=1.5, capsize=4, capthick=1.4, zorder=3,
+        )
 
 
 def render_desktop():
-    fig = plt.figure(figsize=(6.8, 3.0), dpi=100, facecolor=BG)
-    ax = fig.add_axes([0.30, 0.235, 0.54, 0.58])
+    fig = plt.figure(figsize=(6.8, 2.6), dpi=100, facecolor=BG)
+    ax = fig.add_axes([0.28, 0.27, 0.56, 0.50])
     style_axis(ax)
 
     # Stable label and value columns keep the actual readings easy to scan.
     for label, value, y in zip(LABELS, VALUE_LABELS, [2, 1, 0]):
-        ax.text(-0.48, y, label, transform=ax.get_yaxis_transform(),
+        ax.text(-0.43, y, label, transform=ax.get_yaxis_transform(),
                 ha="left", va="center", color=MUTED, fontsize=9.8,
                 clip_on=False)
         ax.text(8.16, y, value, ha="left", va="center", color=FG,
                 fontsize=9.5, clip_on=False)
 
-    fig.text(0.04, 0.925, "Estimated energy-diffusion length",
+    fig.text(0.04, 0.90, "Estimated excitation-diffusion length",
              ha="left", va="center", color=FG, fontsize=12)
-    fig.text(0.57, 0.105, "Nanometers", ha="center", va="center",
+    fig.text(0.56, 0.12, "Nanometers", ha="center", va="center",
              color=MUTED, fontsize=9.5)
-    fig.text(0.04, 0.035,
+    fig.text(0.04, 0.04,
              "Anesthetics: 50 μM · reported propagated error",
              ha="left", va="center", color=MUTED, fontsize=8.9)
     fig.savefig(OUT / "energy-diffusion.svg", format="svg", transparent=False)
@@ -86,8 +90,8 @@ def render_desktop():
 
 
 def render_mobile():
-    fig = plt.figure(figsize=(3.46, 3.9), dpi=100, facecolor=BG)
-    ax = fig.add_axes([0.085, 0.205, 0.83, 0.605])
+    fig = plt.figure(figsize=(3.46, 3.0), dpi=100, facecolor=BG)
+    ax = fig.add_axes([0.085, 0.26, 0.83, 0.53])
     style_axis(ax)
 
     # Each label/value pair gets a dedicated band above its whisker row.
@@ -97,11 +101,11 @@ def render_mobile():
         ax.text(8, y + 0.29, value, ha="right", va="center",
                 color=FG, fontsize=9.5, clip_on=False)
 
-    fig.text(0.06, 0.94, "Estimated energy-diffusion length",
+    fig.text(0.06, 0.94, "Estimated excitation-diffusion length",
              ha="left", va="center", color=FG, fontsize=10.5)
-    fig.text(0.50, 0.105, "Nanometers", ha="center", va="center",
+    fig.text(0.50, 0.13, "Nanometers", ha="center", va="center",
              color=MUTED, fontsize=9.5)
-    fig.text(0.06, 0.035,
+    fig.text(0.06, 0.045,
              "Anesthetics: 50 μM · reported propagated error",
              ha="left", va="center", color=MUTED, fontsize=8.2)
     fig.savefig(OUT / "energy-diffusion-mobile.svg", format="svg",
@@ -113,3 +117,7 @@ if __name__ == "__main__":
     OUT.mkdir(parents=True, exist_ok=True)
     render_desktop()
     render_mobile()
+    # Matplotlib leaves trailing spaces in SVG path data; keep assets diff-clean.
+    for name in ("energy-diffusion.svg", "energy-diffusion-mobile.svg"):
+        path = OUT / name
+        path.write_text("\n".join(line.rstrip() for line in path.read_text().splitlines()) + "\n")

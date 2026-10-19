@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#181818">
+  <meta name="theme-color" content="#14191d">
   <meta name="description" content="Reading the evidence for quantum consciousness: energy transfer in microtubules, xenon isotope experiments, collapse tests, and the measurements still missing.">
   <title>What the quantum consciousness experiments measured</title>
   <link rel="stylesheet" href="main.css">
@@ -15,7 +15,7 @@
   <main id="main" tabindex="-1">
     <article aria-labelledby="article-title">
       <header id="question">
-        <h1 id="article-title">What the quantum consciousness experiments measured</h1>
+        <h1 id="article-title">What the <span>quantum consciousness</span> experiments measured</h1>
         <p>In 2023, researchers shone ultraviolet light on microtubules, the protein tubes that help cells hold their shape. From the fluorescence, <a href="https://doi.org/10.1021/acscentsci.2c01114">they estimated that an excitation could travel about 6.6 nanometers</a>. Adding an anesthetic shortened that distance.</p>
         <p>It’s an intriguing connection: a drug that alters consciousness also alters energy transfer in a structure found inside neurons. But the sample was purified protein in solution. What carried the excitation, and would the same process matter inside a neuron?</p>
         <p>Reading these papers as one accumulating case for quantum consciousness misses their disagreements. They propose different mechanisms, and some of the experiments don’t involve consciousness at all.</p>
@@ -31,17 +31,13 @@
       <section id="evidence" aria-labelledby="evidence-title">
         <h2 id="evidence-title">Energy transfer in microtubules</h2>
         <p>In <a href="https://doi.org/10.1021/acscentsci.2c01114">Kalra and colleagues’ 2023 experiment</a>, ultraviolet light excited purified proteins in solution at room temperature. A fluorescent quencher attached to the proteins shortened the light-emission lifetime. From that change, the team inferred how far the excitation could diffuse through the structure. This gives an estimated two-dimensional diffusion length, not a direct observation of an excitation traveling along a tube.</p>
-        <p>Here are the values from <a href="studies/microtubule-energy-migration-2023-supplement.pdf">supplementary Table S5</a>. Both anesthetics were used at 50 micromolar.</p>
-        <table>
-          <caption>Estimated excitation-diffusion length</caption>
-          <thead><tr><th scope="col">Microtubule preparation</th><th scope="col">Length (nm)</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">No anesthetic</th><td>6.64 ± 0.10</td></tr>
-            <tr><th scope="row">With etomidate</th><td>5.61 ± 0.10</td></tr>
-            <tr><th scope="row">With isoflurane</th><td>5.81 ± 0.20</td></tr>
-          </tbody>
-        </table>
-        <p class="table-note">Reported propagated errors. These do not include all the uncertainty in the diffusion model.</p>
+        <p>Here are the values from <a href="studies/microtubule-energy-migration-2023-supplement.pdf">supplementary Table S5</a>. Both anesthetics were used at 50 micromolar. The error bars show propagated measurement errors; they don’t include all the uncertainty in the diffusion model.</p>
+        <figure class="data-figure">
+          <picture>
+            <source media="(max-width: 600px)" srcset="assets/energy-diffusion-mobile.svg" width="346" height="300">
+            <img src="assets/energy-diffusion.svg" width="680" height="260" loading="lazy" decoding="async" alt="Estimated excitation-diffusion length in isolated microtubules: no anesthetic, 6.64 ± 0.10 nanometers; with etomidate, 5.61 ± 0.10; with isoflurane, 5.81 ± 0.20. Both anesthetics at 50 micromolar; reported propagated errors.">
+          </picture>
+        </figure>
         <p>The conventional Förster-based simulations gave 1.11 or 1.54 nanometers under two different assumptions about which amino acids exchange energy. The estimates differ by several times from the experiment, so the transfer model deserves another look. The paper discusses short-range orbital overlap, which a point-dipole approximation misses. That offers an explanation to investigate before attributing the discrepancy to long-lived quantum coherence. The authors themselves describe their diffusion length as an order-of-magnitude estimate.</p>
         <p>The anesthetic result is what makes this tempting to connect to consciousness. But these drugs act on many targets. To make that connection, the same energy-transfer process would have to matter in a working neuron, and changing it would have to explain some part of the drug’s effect on experience.</p>
 
@@ -61,8 +57,8 @@
             <tbody>
               <tr><th scope="row">Xenon-132</th><td>0</td><td>15 ± 4%</td></tr>
               <tr><th scope="row">Xenon-134</th><td>0</td><td>16 ± 5%</td></tr>
-              <tr><th scope="row">Xenon-131</th><td>3/2</td><td>22 ± 5%</td></tr>
-              <tr><th scope="row">Xenon-129</th><td>1/2</td><td>23 ± 7%</td></tr>
+              <tr class="spin-bearing"><th scope="row">Xenon-131</th><td>3/2</td><td>22 ± 5%</td></tr>
+              <tr class="spin-bearing"><th scope="row">Xenon-129</th><td>1/2</td><td>23 ± 7%</td></tr>
             </tbody>
           </table>
           <p class="table-note">Mean ± standard deviation; 20 mice per isotope, all with 0.50% isoflurane. ED50 is the concentration associated with the endpoint in half the animals.</p>
