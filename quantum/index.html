@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101110">
-  <meta name="description" content="A clear-eyed guide to the proposals and experiments asking whether quantum physics plays a role in the brain.">
+  <meta name="theme-color" content="#111411">
+  <meta name="description" content="Could quantum physics help explain consciousness? Start with a simple explanation, then explore the theories, experiments, and open questions.">
   <title>A quantum world. A conscious mind. — Quantum / Mind</title>
   <link rel="stylesheet" href="main.css">
+  <link rel="preload" href="assets/neuron-hero.webp" as="image">
+  <script src="main.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the article</a>
@@ -21,22 +23,24 @@
     </a>
     <nav class="top-nav" aria-label="Main navigation">
       <a href="#question">The question</a>
-      <a href="#theory">The theory</a>
-      <a href="#evidence">The evidence</a>
-      <a href="#future">What's next</a>
+      <a href="#simply">Explain it simply</a>
+      <a href="#challenge">The science</a>
+      <a href="#sources">Sources <span aria-hidden="true">↗</span></a>
     </nav>
-    <a class="header-link" href="#sources">Explore the research <span aria-hidden="true">↗</span></a>
   </header>
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-image" role="img" aria-label="An abstract scientific illustration of a branching neuron in a dark field"></div>
-      <div class="hero-shade"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-copy">
         <p class="eyebrow"><span class="eyebrow-line"></span> Neuroscience × quantum physics</p>
         <h1 id="hero-title">A quantum world.<br><em>A conscious mind.</em></h1>
         <p class="hero-deck">Could the strange rules of the very small shape how we think, feel, and experience being here?</p>
-        <a class="text-link hero-link" href="#question">Explore the science <span aria-hidden="true">↓</span></a>
+        <div class="hero-actions">
+          <a class="primary-link" href="#simply">Explain it like I’m 5 <span aria-hidden="true">↓</span></a>
+          <a class="text-link hero-link" href="#challenge">Explore the science <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
       <div class="hero-caption"><span>01 — THE BIG QUESTION</span><span>Artistic visualization</span></div>
     </section>
@@ -55,8 +59,9 @@
 
     <div class="reading-layout">
       <aside class="reading-rail" aria-label="In this article">
-        <p class="rail-title">IN THIS ARTICLE</p>
-        <nav>
+        <p class="rail-title">In this guide</p>
+        <nav aria-label="Article chapters">
+          <a class="simple-nav" href="#simply"><span aria-hidden="true">↳</span> The simple version</a>
           <a href="#challenge"><span>01</span> The challenge</a>
           <a href="#theory"><span>02</span> Orch-OR</a>
           <a href="#evidence"><span>03</span> Microtubules</a>
@@ -67,24 +72,57 @@
       </aside>
 
       <article class="article-content">
-        <section class="story-section" id="challenge">
+        <section class="simple-section" id="simply" aria-labelledby="simple-title">
+          <p class="section-number">START HERE <span>THE SIMPLE VERSION</span></p>
+          <h2 id="simple-title">Explain it like I’m 5</h2>
+          <p class="simple-deck">A big question, in three small steps.</p>
+          <ol class="simple-steps" role="list">
+            <li class="simple-step">
+              <span class="step-number" aria-hidden="true">1</span>
+              <div>
+                <h3>Your brain is a busy team.</h3>
+                <p>Imagine lots of tiny teammates passing messages. Those teammates are brain cells, called neurons. Together, they help you think, feel, and notice the world. But how does all that activity become the feeling of being <em>you</em>?</p>
+              </div>
+            </li>
+            <li class="simple-step">
+              <span class="step-number" aria-hidden="true">2</span>
+              <div>
+                <h3>Tiny things follow surprising rules.</h3>
+                <p>Zoom in much, much closer than a brain cell. At this tiny scale, things can behave like waves, and several possibilities can exist together before we measure a result. We call these quantum rules. They apply to the stuff your brain is made of, too.</p>
+              </div>
+            </li>
+            <li class="simple-step">
+              <span class="step-number" aria-hidden="true">3</span>
+              <div>
+                <h3>Could those rules help make a thought?</h3>
+                <p>Some scientists wonder whether tiny tubes inside brain cells help these quantum effects last long enough to matter for thought. These tubes, called microtubules, already help cells hold their shape. But the brain is a busy, jostling place, which can quickly disturb the special quantum behavior those scientists are looking for.</p>
+              </div>
+            </li>
+          </ol>
+          <aside class="simple-takeaway" aria-label="What we know so far">
+            <p><strong>Do we know this explains consciousness? Not yet.</strong> Experiments have found interesting clues in tiny structures. They haven’t shown that those clues explain what it feels like to be you.</p>
+          </aside>
+          <a class="text-link continue-link" href="#challenge">Now, a little deeper <span aria-hidden="true">↓</span></a>
+        </section>
+
+        <section class="story-section" id="challenge" aria-labelledby="challenge-title">
           <p class="section-number">01 <span>THE CHALLENGE</span></p>
-          <h2>The brain is a difficult place for quantum effects.</h2>
+          <h2 id="challenge-title">The brain is a difficult place for quantum effects.</h2>
           <p>At the scale of atoms, particles can behave like waves and hold several possible states at once. But in a warm, crowded environment, those delicate quantum states tend to lose their coherence as they interact with their surroundings. The brain is about as far from an isolated laboratory as a system can get.</p>
           <p>That is why the question is not simply whether quantum mechanics applies to the brain. It applies to all matter. The harder question is whether a quantum effect can last long enough, and influence enough biology, to matter for thought or consciousness.</p>
           <aside class="pull-note"><span class="note-mark" aria-hidden="true">↳</span><p>Finding a quantum effect in a biological molecule is a beginning. Showing that it helps explain conscious experience is a much bigger claim.</p></aside>
         </section>
 
-        <section class="story-section" id="theory">
+        <section class="story-section" id="theory" aria-labelledby="theory-title">
           <p class="section-number">02 <span>THE THEORY</span></p>
-          <h2>Orch-OR puts microtubules at the center.</h2>
+          <h2 id="theory-title">Orch-OR puts microtubules at the center.</h2>
           <p>Physicist Roger Penrose and anesthesiologist Stuart Hameroff developed <em>orchestrated objective reduction</em>, or Orch-OR, in the 1990s, publishing a central account in 1996. Penrose hypothesized that gravity makes certain quantum superpositions unstable, causing an objective collapse. He argued that explaining consciousness could require physics beyond classical computation.</p>
           <p>Hameroff proposed microtubules—the hollow protein tubes that help organize neurons—as candidate hosts for quantum states, with their structure potentially shielding those states from the cell. Orch-OR proposes that states coordinated across neurons end in Penrose’s gravity-related collapse, producing moments of conscious experience. This coordination and its role in consciousness have not been demonstrated.</p>
         </section>
 
-        <section class="story-section" id="evidence">
+        <section class="story-section" id="evidence" aria-labelledby="evidence-title">
           <p class="section-number">03 <span>THE EVIDENCE</span></p>
-          <h2>Intriguing signals. A long way to go.</h2>
+          <h2 id="evidence-title">Intriguing signals. A long way to go.</h2>
           <p>A study of isolated microtubules measured an energy-migration distance of 6.6 ± 0.1 nm, compared with 1.11–1.54 nm predicted by conventional Förster theory. The anesthetics etomidate and isoflurane also reduced exciton diffusion. Separate work reported superradiance—a collective light-emission effect—and enhanced fluorescence yield. These results describe isolated preparations; they do not show quantum computation or consciousness in a living brain.</p>
           <a class="inline-link" href="https://doi.org/10.1021/acscentsci.2c01114" target="_blank" rel="noreferrer">Read the microtubule energy-migration study <span aria-hidden="true">↗</span></a>
           <p>Anesthetics act on many targets throughout the nervous system, so their effects do not single out Orch-OR.</p>
@@ -92,17 +130,17 @@
           <p>A separate line of work uses underground detectors such as Gran Sasso to look for radiation from proposed gravity-driven collapses. Those measurements can constrain particular versions of objective-collapse models. They do not test every Orch-OR mechanism or settle whether the brain uses quantum effects. <a class="inline-link" href="https://arxiv.org/abs/2111.13490" target="_blank" rel="noreferrer">Read the Gran Sasso analysis <span aria-hidden="true">↗</span></a></p>
         </section>
 
-        <section class="story-section" id="xenon">
+        <section class="story-section" id="xenon" aria-labelledby="xenon-title">
           <p class="section-number">04 <span>ANESTHESIA &amp; NEW MODELS</span></p>
-          <h2>Xenon offers a careful clue.</h2>
+          <h2 id="xenon-title">Xenon offers a careful clue.</h2>
           <p>Different xenon isotopes have nearly identical chemistry but different nuclear spins. A 2018 mouse study reported lower anesthetic potency for spin-bearing xenon-129 and xenon-131 than for spin-zero xenon-132 and xenon-134, tested alongside a low concentration of isoflurane. One proposed explanation involves radical pairs: pairs of molecules with unpaired electrons whose reaction dynamics nuclear spin might influence. This mechanism remains unproven; the result does not show that consciousness depends on quantum processes.</p>
           <p>Meanwhile, a research program associated with Hartmut Neven has reported isotope effects in fruit flies and proposed studying brain organoids with NMR and electrophysiology. Organoids are small, simplified models of neural tissue. These experiments may help test physical mechanisms; they are not evidence of conscious experience.</p>
           <a class="inline-link" href="https://pubmed.ncbi.nlm.nih.gov/29642079/" target="_blank" rel="noreferrer">Read the xenon isotope study <span aria-hidden="true">↗</span></a>
         </section>
 
-        <section class="story-section" id="future">
+        <section class="story-section" id="future" aria-labelledby="future-title">
           <p class="section-number">05 <span>WHAT COMES NEXT</span></p>
-          <h2>Could a quantum computer couple to a brain?</h2>
+          <h2 id="future-title">Could a quantum computer couple to a brain?</h2>
           <p>Neven’s proposal suggests a conscious moment may arise when a quantum superposition forms, rather than when it collapses. A multiverse interpretation describes these possibilities as parallel branches of reality; this connection to consciousness remains speculative. The proposal also asks whether coupling a quantum computer to a brain could enlarge a joint superposition and test reports of richer subjective experience. This has not been achieved; it remains a proposed research direction.</p>
           <p>Testing the idea would first require measuring a proposed quantum effect in a relevant biological setting, showing that it persists under realistic conditions, and checking whether changing it changes neural activity. Connecting any such result to subjective experience would require further evidence.</p>
           <p class="closing-line">Curiosity is warranted. Certainty can wait.</p>
