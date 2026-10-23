@@ -1,0 +1,127 @@
+.start-page #main {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+  display: grid;
+  grid-template-columns: 208px minmax(0, 1fr);
+  align-items: start;
+  gap: 48px;
+}
+
+.start-page .hero {
+  min-height: 0;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+}
+
+.start-page .hero::after {
+  content: none;
+}
+
+.start-page .hero-copy {
+  padding: 0;
+  animation: none;
+}
+
+.start-page h1 {
+  max-width: none;
+  margin: 0;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 750;
+  letter-spacing: -.035em;
+  line-height: 1.08;
+  text-transform: none;
+}
+
+.start-page .intro {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.start-page ol.dashboard {
+  min-width: 0;
+  margin: 0;
+  padding: 0 0 0 2em;
+  display: block;
+  list-style: decimal;
+  background: transparent;
+}
+
+.start-page .panel {
+  min-width: 0;
+  margin: 0 0 28px;
+  padding: 0;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.start-page .panel:last-child {
+  margin-bottom: 0;
+}
+
+.start-page .panel::marker {
+  color: var(--cyan);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.start-page .section-head {
+  display: block;
+  min-height: 0;
+  margin: 0 0 8px;
+}
+
+.start-page .section-head h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-transform: none;
+}
+
+.start-page .panel p {
+  max-width: 75ch;
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.start-page .panel p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .start-page #main {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+    padding: 28px 24px 40px;
+  }
+
+  .start-page h1 {
+    max-width: none;
+    font-size: 32px;
+  }
+
+  .start-page .panel {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .start-page #main {
+    gap: 20px;
+    padding: 24px 20px 32px;
+  }
+
+  .start-page h1 {
+    font-size: 30px;
+  }
+}
