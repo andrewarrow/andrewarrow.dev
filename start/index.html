@@ -23,9 +23,10 @@
   <meta name="twitter:image:alt" content="Illustrated portrait of Andrew Arrow at his laptop in a sunlit workspace">
   <meta name="theme-color" content="#03101b">
   <link rel="stylesheet" href="/assets/css/home.css">
+  <link rel="stylesheet" href="/start/layout.css">
   <link rel="icon" href="https://i.imgur.com/KKoEmhn.png" type="image/png">
 </head>
-<body>
+<body class="start-page">
   <a class="skip" href="#main">Skip to content</a>
   <header class="header">
     <a class="brand" href="/">andrewarrow.dev</a>
@@ -44,8 +45,8 @@
         <p class="intro">Start here.</p>
       </div>
     </section>
-    <div class="dashboard">
-      <section class="panel paths" id="paths" aria-labelledby="paths-title">
+    <ol class="dashboard">
+      <li class="panel paths" id="paths" aria-labelledby="paths-title">
         <div class="section-head"><h2 id="paths-title">Understand hosting</h2></div>
         <p class="panel-intro">There is 
         <a href="https://aws.amazon.com/">AWS (Amazon Web Services)</a> and 
@@ -63,8 +64,8 @@
         <p>
         And seperate from these are the App Stores. Apple has their <a href="https://apps.apple.com">App Store</a> for iphone/ipad apps. And Google has the <a href="https://play.google.com/">Play Store</a> for android apps. Often you'll need both a hosting provider and these app stores.
         </p>
-      </section>
-      <section class="panel roadmap" id="roadmap" aria-labelledby="roadmap-title">
+      </li>
+      <li class="panel roadmap" id="roadmap" aria-labelledby="roadmap-title">
         <div class="section-head"><h2 id="roadmap-title">Understand claude vs chatgpt</h2></div>
         <p>
         The original best AI Coding tool was <a href="https://claude.com/product/claude-code">claude-code</a> by the company <a href="https://www.anthropic.com/">Anthropic</a>. But then <a href="https://openai.com/codex/">codex</a> by <a href="https://openai.com/">OpenAI</a> caught up and is just as good if not better. The name codex is confusing because openai also calls codex just <a href="https://chatgpt.com/">ChatGPT</a> and has a desktop version. Anthropic is doing the same with desktop version of something called just claude.
@@ -76,8 +77,8 @@
         <p>
         You need to pick codex or claude-code and pay their monthly fees, starting around $20 a month.
         </p>
-      </section>
-      <section class="panel method" id="method" aria-labelledby="method-title">
+      </li>
+      <li class="panel method" id="method" aria-labelledby="method-title">
         <div class="section-head"><h2 id="method-title">Understand reddit</h2></div>
         <p>
         This one might be the easiest as anyone can use <a href="https://www.reddit.com">reddit</a>. You might already be someone that does.
@@ -88,8 +89,8 @@
         <p>
         When you become a student here we walk you through building a reddit clone called <a href="https://yapern.com/">yapern</a> which is like a tavern but no drinking just yaping.
         </p>
-      </section>
-    </div>
+      </li>
+    </ol>
   </main>
   <footer>
     <div><a class="brand" href="/">andrewarrow.dev</a><p>From first local page to a Reddit-like platform, one working step at a time.</p></div>
