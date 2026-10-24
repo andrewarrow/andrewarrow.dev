@@ -1,0 +1,66 @@
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Vibe coding.<br>Build with AI.</h1>
+        <p class="intro">Lesson 4</p>
+    <a class="button green header-contact" href="/lesson-00003/">Back to Lesson 3</a>
+      </div>
+    </section>
+    <ol class="dashboard">
+      <li class="panel paths" id="paths" aria-labelledby="paths-title">
+        <div class="section-head"><h2 id="paths-title">Each message has a sub-yap</h2></div>
+        <p>
+        Did you notice on the live
+        <a href="https://yapern.com/">yapern</a> site when you post a message you
+        have to select a sub-yap? Notice <a href="https://github.com/yapern/backend/blob/main/migrations/003_boards_messages_replies.sql#L26">line 26 here</a>. Oh? What is this? Code? Well, sort of. This is SQL.
+        </p>
+        <p>
+        Not really code code. This is just database stuff. The database schema just described
+        how each row of data is stored and with what other meta data. What is meta data? Data about data.
+        Why am I making you look at code? You thought the whole point of vibe coding is you don't have to look?
+        Yes and no. It's a balancing act. You want to understand enough to notice when codex does something
+        wrong. Copy and paste the 
+        <a href="https://github.com/yapern/backend/blob/main/migrations/003_boards_messages_replies.sql">migrations/003_boards_messages_replies.sql</a> file into your codex and explain you need this same schema.
+        </p>
+        <p>
+        <img src="10.png" width="600"/>
+        </p>
+        <p>
+        Also tell it you need a way to create new sub-yaps.
+        </p>
+      </li>
+      <li class="panel roadmap" id="roadmap" aria-labelledby="roadmap-title">
+        <div class="section-head"><h2 id="roadmap-title">Why are sub-yaps called boards?</h2></div>
+        <p>
+        Excellent question. This is common in software for there to be a consumer
+        facing name like sub-yap and a code name that's completely different.
+        The representation in the database of our data is just messages and each message belongs
+        to a board. Maybe in another version of this code the consumer name isn't sub-yap. It
+        doesn't matter what the name is as long as we are consistant. And something like sub-yap that might
+        change is better left as a consumer name and not something actually in the code.
+        </p>
+      </li>
+      <li class="panel method" id="method" aria-labelledby="method-title">
+        <div class="section-head"><h2 id="method-title">How do I get images in my messages?</h2></div>
+        <p>
+        Another great question. It's time for buckets. The original bucket system is
+        <a href="https://en.wikipedia.org/wiki/Amazon_S3">Amazon S3</a> which stands for Simple Storage Service hence the 3 S-words. But on CloudFlare their version of this is called <a href="https://www.cloudflare.com/products/r2/">R2</a>. Cloudflare R2 is named as a deliberate play on Amazon S3. The idea is
+
+S3 − 1 = R2 (R is the letter before S in the alphabet)
+
+Cloudflare wanted to offer everything developers liked about S3, minus the thing they hated: egress fees (charges for downloading data). It's also Ridiculously Reliable. And it's also the nickname of that little droid. </p>
+
+        <p>
+        <img src="11.png" width="600"/>
+        </p>
+        <p>
+        There's no fee
+for buckets on Cloudflare in the free plan up to 10GB of storage. But you do have to put down a credit card
+and agree to pay for storage if it exceeds that limit. Go ahead and turn on your R2 bucket in <a href="https://dash.cloudflare.com">dash</a>.
+        </p>
+        <p>
+    <a class="button green header-contact" href="/lesson-00005/">Lesson 5</a>
+        </p>
+      </li>
+    </ol>
+  </main>

@@ -1,0 +1,66 @@
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Vibe coding.<br>Build with AI.</h1>
+        <p class="intro">Lesson 3</p>
+    <a class="button green header-contact" href="/lesson-00002/">Back to Lesson 2</a>
+      </div>
+    </section>
+    <ol class="dashboard">
+      <li class="panel paths" id="paths" aria-labelledby="paths-title">
+        <div class="section-head"><h2 id="paths-title">Time to make the frontend</h2></div>
+        <p>
+        The <a href="https://api.yapern.com/docs">yapern api docs</a> and the
+        <a href="https://api.yapern.com/openapi.json">openapi.json</a> file are what asking
+        for hono and zod did for our code. It made it so there are very clear docs on how to call
+        our backend api endpoints. These docs can be used by a human to test them and the large json file
+        can be used by codex when it's building the frontend.
+        </p>
+        <p>
+        Speaking of frontend, let's do that next. "Hi codex, now let's make a cloudflare pages frontend html javascript and css only that speaks to this backend. Make a homepage with a way to sign up as a new user and then logout if the user is logged in. The site is a reddit clone but make it our own version called yapern and it has sub-yaps vs sub-reddits. It's going to be open source GPL v3."
+        </p>
+        <p>
+        <img src="4.png" width="600"/>
+        </p>
+      </li>
+      <li class="panel roadmap" id="roadmap" aria-labelledby="roadmap-title">
+        <div class="section-head"><h2 id="roadmap-title">Make sure SQLite is working</h2></div>
+        <p>
+        Trust but verify! After running `npm run dev` you should see this:
+        </p>
+        <p>
+        <img src="1.png" width="600"/>
+        </p>
+        <p>
+        And when you press E for open local Explorer you get:
+        </p>
+        <p>
+        <img src="2.png" width="600"/>
+        </p>
+        <p>
+        In this example I've already registered a few test users. See if you can signup with your
+        email and get a row to show here. The thing you are verifying is did codex actually wire up
+        the code right so when you register as a new user a row in the sqlite database is actually 
+        written. And this is the process. You ask codex to do something. Then as the human developer you
+        spot check things and make sure everything is cool.
+        </p>
+        <p>
+        If you can't get a row here, don't go on to the next step yet. Keep asking codex why and how to fix.
+        </p>
+      </li>
+      <li class="panel method" id="method" aria-labelledby="method-title">
+        <div class="section-head"><h2 id="method-title">Time to do more than login</h2></div>
+        <p>
+        Login is great but now let's make this an actual message board where a user can post a message.
+        "Hey codex, make a migration for a new table called messages that have a title, a body and are
+        written by a specific user. Add to the frontend a new create message modal and wire this up."
+        </p>
+        <p>
+        You can also try this on the live <a href="https://yapern.com/">https://yapern.com</a> site.
+        </p>
+        <p>
+    <a class="button green header-contact" href="/lesson-00004/">Lesson 4</a>
+        </p>
+      </li>
+    </ol>
+  </main>
