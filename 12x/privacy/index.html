@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f8f6ef">
-    <meta name="description" content="How 12x handles your saved plans, optional approximate location, destination links, and support messages.">
+    <meta name="description" content="How 12x handles guest plans, email and password accounts, synced events, login sessions, optional location, and privacy requests.">
     <title>Privacy Policy — 12x</title>
     <link rel="canonical" href="https://andrewarrow.dev/12x/privacy/">
     <link rel="icon" href="../assets/app-icon.jpg" type="image/jpeg">
@@ -21,9 +21,23 @@
       <p class="updated">Effective date: <time datetime="2026-11-02">November 2, 2026</time></p>
       <p>12x is an iPhone and iPad year planner developed by Andrew Arrow. This policy explains how the app and this website handle information, and how to contact us about privacy.</p>
 
-      <h2>Your plans stay on your device</h2>
-      <p>12x saves your yearly plans, selected destinations, event sizes, selected year, and preferred destination state locally on your device. The current app does not require an account or send these plans to a developer-operated server.</p>
-      <p>The app does not include advertising, third-party analytics, or tracking software. We do not sell your personal information or use your plans to target advertising.</p>
+      <h2>Planning as a guest</h2>
+      <p>You can use 12x without an account. Guest plans are stored on your device and can be edited offline. They are not sent to our server unless you sign in or create an account. Your selected year and preferred destination state are also saved as device preferences.</p>
+
+      <h2>Accounts and synced plans</h2>
+      <p>If you choose Login / Create Account, we receive your email address and password to create an account or authenticate an existing one. We store your email address, an account identifier, a profile label, the account creation time, and a salted password hash. We do not store your password in plain text.</p>
+      <p>Signing in or creating an account automatically imports guest plans from all supported years into that account. Account events are stored on our server and linked to your account identifier. Each event includes its year, month, event size, name, and destination identifier, if present. The server also keeps import identifiers so retrying an interrupted import does not recreate events you later remove.</p>
+      <p>The app retrieves account plans when you sign in, open the app with a saved session, or return to the foreground. Creating, editing, and removing account events sends those changes to the server and requires an internet connection. Guest events awaiting import may remain on your device, associated with the intended account, until the import succeeds.</p>
+      <p>We use account and event information to authenticate you, save and synchronize your plans, and operate the service. The app does not include advertising, third-party analytics, or advertising trackers. We do not sell your personal information or use your plans to target advertising.</p>
+
+      <h2>Login sessions and security</h2>
+      <p>After sign-in, the app stores a session token and basic account information in Apple’s Keychain on that device. The server stores a hash of the token with your account identifier and session creation time. Sessions do not have an automatic expiry and remain valid until you log out or the session is revoked.</p>
+      <p>Log Out requires a connection so the server can revoke that device’s session before the app removes its saved credentials. Logging out on one device does not revoke sessions on other devices or delete your account or server-stored plans.</p>
+      <p>The released app uses HTTPS to communicate with our API. To limit abusive login attempts, the server stores hashed email and IP-address identifiers, attempt counts, and time windows. These security records are periodically cleaned up as login requests are processed.</p>
+
+      <h2>Hosting and service providers</h2>
+      <p>We use Cloudflare Workers to operate the account API and Cloudflare D1 to store account records, password and session hashes, account events, import identifiers, and login-abuse records. Cloudflare processes this information to provide hosting and database services. Network requests may also involve technical information such as your IP address, request time, and error information for service delivery, security, and troubleshooting. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s Privacy Policy</a>.</p>
+      <p>We may also disclose information when required by law or when reasonably necessary to address fraud, security incidents, or threats to people’s rights or safety.</p>
 
       <h2>Optional approximate location</h2>
       <p>When you browse destinations, 12x may ask for permission to use your approximate location while you use the app. This helps select your current U.S. state when it is supported by the destination catalog. You can decline permission and choose a state manually.</p>
@@ -34,9 +48,11 @@
       <p>Destination names, website links, and available logos are bundled with the app. Opening a destination’s website takes you to your default browser. The destination website may collect information, use cookies, or process bookings under its own privacy policy; 12x does not control that website.</p>
       <p>Apple may process App Store information, device backups, or diagnostics according to your settings and its own policies. See <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>. We do not receive your payment card details from Apple.</p>
 
-      <h2>Keeping and deleting your plans</h2>
-      <p>Plans and preferences remain on your device until you change or remove them, or delete the app. You can remove an individual experience by opening its month and choosing Remove event. Deleting the app removes its local data; offloading the app may keep that data.</p>
-      <p>Depending on your settings, app data may be included in iCloud or computer backups. You manage those copies through your backup provider. Because we do not hold your plans, we cannot retrieve, restore, or delete them for you.</p>
+      <h2>Keeping and deleting your information</h2>
+      <p>Guest plans remain locally until you change or remove them, import them into an account, or delete the app. Guest plans awaiting import are kept locally until the upload succeeds. Device preferences remain until changed, removed, or deleted with the app’s local data. Offloading the app may keep its local data. Depending on your settings, local data may also be included in device backups, which you manage through your backup provider. We cannot retrieve guest plans that have never been uploaded.</p>
+      <p>To remove an individual experience, open its month and choose Remove event. When signed in, a successful removal deletes that event from the active server plan, and the change appears on other signed-in devices when they next refresh.</p>
+      <p>Account records and synced events are retained to provide your account until removed or your account is deleted. Deleting the app or logging out does not delete server-stored information. Deleting the app also does not revoke its server-side session. Use Log Out before removing the app if you want to revoke that session.</p>
+      <p>The current app does not have an in-app account-deletion control. To request access to, correction of, or deletion of your account and associated information, email <a href="mailto:12x@andrewarrow.dev">12x@andrewarrow.dev</a>. We may need to verify that you control the account before acting. We may retain limited information where necessary for legal obligations or security; deleted information may also remain in service-provider backups until those copies are replaced or expire.</p>
 
       <h2>This website</h2>
       <p>This website does not set advertising or analytics cookies and does not include third-party analytics scripts. Its images and stylesheet are served from this site.</p>
@@ -47,7 +63,7 @@
       <p>To ask about or request deletion of information you have sent us, email <a href="mailto:12x@andrewarrow.dev">12x@andrewarrow.dev</a>. Please include only the information needed to explain your question.</p>
 
       <h2>Children’s privacy</h2>
-      <p>12x does not collect children’s personal information through the planner. If you believe a child has sent personal information to us in a support message, contact us so we can address it and delete it as appropriate.</p>
+      <p>The app does not ask for a date of birth. Account creation collects an email address and password as described above. If you believe a child has provided personal information to us without appropriate permission, contact <a href="mailto:12x@andrewarrow.dev">12x@andrewarrow.dev</a> so we can investigate and delete it as appropriate.</p>
 
       <h2>Changes to this policy</h2>
       <p>We will update this page and its effective date if the app or our privacy practices change. Material changes will be communicated where required.</p>
